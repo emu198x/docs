@@ -2,9 +2,42 @@
 title: blargg_nes_cpu_test5/official.nes — investigation notes
 type: handoff
 date: 2026-05-30
+status: superseded
+superseded: 2026-08-10
 ---
 
 # blargg_nes_cpu_test5/official.nes investigation
+
+> ## ⚠ SUPERSEDED — 2026-08-10
+>
+> **Both ROMs pass. All eleven sub-tests pass. There was no emulator defect.**
+>
+> Two readings below are wrong, and both were load-bearing. They were carried
+> into `nes_sweep`'s grader and made it report a passing emulator as failing for
+> the whole NES accuracy campaign:
+>
+> 1. **`$00FF == 0xFF` is not a failure sentinel.** Mesen2 — which runs these
+>    ROMs correctly — ends with `$00FF == 0xFF` too. The byte is residue.
+> 2. **`01-implied` did not fail.** The shell writes each *passing* sub-test's
+>    `$00` marker one row BELOW that sub-test's name, so the last marker lands
+>    on the separator line and the first test's row is always bare. There are
+>    eleven markers for eleven sub-tests.
+>
+> Three independent measurements settle it: all 20 of `01-implied`'s expected
+> CRCs (from blargg's own `source/01-implied.a`) appear in zero page during the
+> run, in order; Emu198x's nametable is byte-identical to Mesen2's for both
+> ROMs; and `$00FF` is `0xFF` in both. The ROM also never printed a failing
+> opcode — `instr_test_end.a`'s `@wrong` handler prints one on any CRC
+> mismatch, and it never fired.
+>
+> The section below on **what test 01 covers** is therefore chasing a defect
+> that does not exist. Its opcode list is still accurate as reference.
+>
+> What holds up: the MCP-tooling account, the `JMP $8003` finding, and the
+> observation that the ROM's real channel is on-screen rather than `$6000`.
+>
+> Full record: `knowledge/decisions/nes-accuracy-closure-campaign.md` in the
+> `emu198x` repo, "Stage 4: the sentinel that was not one". Fixed at `c1d21d12`.
 
 Recorded while exercising the newly-fleshed-out NES MCP tools (`7e68c83`). The findings are non-trivial and worth keeping for whoever picks this up next.
 
@@ -39,6 +72,11 @@ Recorded while exercising the newly-fleshed-out NES MCP tools (`7e68c83`). The f
 
    The trailing `.` on each line is the test framework's `0x00` "passed" marker. Tests 02-11 all have it. Test 01-implied **doesn't**.
 
+   > ⚠ **Wrong.** The marker for sub-test N is written one row BELOW N's name.
+   > Count them: eleven markers (rows for 02 through 11, plus the separator)
+   > for eleven sub-tests. The bare row against `01-implied` is where the
+   > layout starts, not a missing marker. Mesen2's nametable is byte-identical.
+
 3. **memory_read $00F0 len=16** → `00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF`. Address `$00FF = 0xFF` after the run — same value as `cpu.nes` (which is the failing-`cpu_test5`-family signature). So the test runner detected a failure somewhere and stored a sentinel.
 
 ## What test 01-implied covers
@@ -71,3 +109,15 @@ If picked up:
 The MCP tool surface fleshed out in `7e68c83` (`query_cpu`, `memory_read`, `dump_nametable`, `run_until_pc`, `step`) turned a hidden timeout into a concrete, actionable diagnostic in about 5 MCP calls. The infrastructure is now in place to investigate any sweep failure / timeout the same way.
 
 This investigation also surfaces a wider sweep-harness improvement: `$00FF == 0xFF` after a run is a reliable indicator of a `blargg_nes_cpu_test5`-family fail. Adding that to the multi-protocol grader would flip `official.nes` (and possibly `cpu.nes` — which currently reports "Failed" via the nametable grader anyway) from TIMEOUT to a properly classified FAIL.
+
+> ⚠ **This recommendation was adopted, and it was wrong.** It turned a
+> TIMEOUT — an honest "unexamined" — into a confident, false FAIL, and that
+> verdict stood until 2026-08-10. A manufactured failure is worse than a
+> timeout: it sends real work after a defect that does not exist, and it
+> consumed part of the NES campaign's stated fault budget from the outset.
+>
+> The lesson generalises beyond this ROM. A byte that stops changing is an
+> *inference*; text the ROM deliberately prints is a *declaration*. Grade on
+> declarations, and check any inferred channel against a reference emulator
+> before building a verdict on it. `cpu_timing_test6` was misgraded the same
+> way at `$00F0`, independently, in the same sweep.
