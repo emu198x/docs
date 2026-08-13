@@ -71,6 +71,28 @@ That second rule is the part worth having from a reference rather than deriving:
 it is why CPC interrupts stay locked to the frame rather than drifting, and it
 would not fall out of "count to 52" on its own.
 
+MAME agrees exactly (`amstrad_m.cpp:849-867`): the same 52-count reset, and the
+same VSYNC branch — `if (hsync_counter >= 32) assert INT;` then reset to zero.
+Two independent implementations, identical logic.
+
+**Note a live disagreement before implementing this.** The Grimware wiki's prose,
+as fetched, states the *inverse* of the VSYNC branch: that a counter ≥ 32 issues
+**no** interrupt and one < 32 does. MAME and Arnold both do the opposite, and the
+physical reasoning favours them — a counter most of the way to 52 is close enough
+to a due interrupt that resetting without issuing would swallow it. The fetched
+text was an automated summary rather than a verbatim quote, so the wiki may not
+actually say this. Check the page directly before writing the branch, and if the
+wiki really does disagree, trust the two agreeing implementations.
+
+Grimware also supplies figures the emulators do not state outright, worth
+capturing here: the counter is **6-bit**; HSync every 64 µs at 50 Hz CRTC
+settings gives a **300 Hz** interrupt rate; the Gate Array decodes I/O at
+**&7F00**, testing bits 15 *and* 14 and responding to reads as well as writes
+(the PAL tests bit 15 only, and writes only); register select is the top bits of
+the data byte; RMR carries video mode in bits 1-0, lower-ROM enable in bit 2,
+upper-ROM enable in bit 3 (0 = enabled) and interrupt-counter reset in bit 4; and
+INKR's 5-bit colour code spans 0-31 for 27 distinct colours.
+
 **Firmware is staged.** `~/.emu198x/roms/amstrad-cpc/` now holds `cpc464.rom`,
 `cpc664.rom`, `cpc6128.rom` (each the 16 KB OS concatenated with its 16 KB
 BASIC, per MAME's layout) and `cpcados.rom`. All four are **byte-verified
@@ -104,22 +126,40 @@ exactly as `irq` is driven. That much was established while checking whether
 wait-state machines threatened the cadence work in
 [`z80-machines-should-share-a-cadence-driver.md`](../../emu198x/knowledge/decisions/z80-machines-should-share-a-cadence-driver.md).
 
-What is *not* established is what to validate it against. **None of the three
-vendored references models `/WAIT` as a pin.** MAME's `amstrad_base` configures a
-flat 4 MHz Z80 (`16_MHz_XTAL / 4`) with no wait configuration whatsoever. Arnold
-appears to bake the wait states into its per-instruction cycle counts instead —
-the only trace is a comment at `z80/z80funcs2.h:52` noting a figure "two more
-than normal due to the two added wait states". Caprice32 has no wait handling in
-its Z80 either. And the 139 CPC files in `198x/reference/by-system/amstrad-cpc/`
-do not mention wait states at all.
+**The primary source was already in the library.** An earlier draft of this plan
+said the 139 CPC reference files "do not mention wait states at all". They do not
+use that phrase, which is why a keyword search missed it — Amstrad describes the
+mechanism instead. `1984-cpc464-firmware.txt:353`, the official AMSOFT firmware
+guide:
 
-So a pin-level model would be *more* accurate than any reference we hold, which
-is precisely the position rule 32 exists to prevent walking into blind. Three
-ways out, in preference order: find primary documentation (the Grimware /
-CPC-wiki Gate Array material is the usual source and is not yet in the reference
-library); measure a reference emulator's *observable* timing with a test program
-rather than reading its source; or, last resort, derive from the service manual's
-circuit detail. Settle this before step 6, because step 6 depends on it.
+> Accesses to memory are synchronised with the video logic — they are
+> constrained to occur on microsecond boundaries. This has the effect of
+> stretching each Z80 M cycle (machine cycle) to be a multiple of 4 T states
+> (clock cycles). In practice this alters the instruction timing so that the
+> effective clock rate is approximately 3.3 MHz.
+
+Three things fall out of that, and the first is a correction to how this plan
+described the behaviour elsewhere:
+
+- **The rounding is per M-cycle, not per instruction.** Each machine cycle is
+  stretched up to a multiple of 4 T-states; an instruction's cost is the sum of
+  its rounded M-cycles. That is a stronger and more testable statement than
+  "instruction timings quantise to multiples of 4".
+- **The cause is memory access synchronisation to the video logic**, not a
+  general clock divider — so it applies to memory cycles, which is what makes
+  the effective rate load-dependent.
+- **There is a checkable figure**: ~3.3 MHz effective against a 4 MHz clock, so
+  roughly 21 % more T-states than the Zilog figures. That is what the CPC's
+  `cpu_rate` gate should be built around.
+
+Still worth knowing: **none of the three vendored emulators models `/WAIT` as a
+pin.** MAME's `amstrad_base` configures a flat 4 MHz Z80 (`16_MHz_XTAL / 4`) with
+no wait configuration; Arnold appears to fold the stretching into per-instruction
+cycle counts (`z80/z80funcs2.h:52` mentions a figure "two more than normal due to
+the two added wait states"); Caprice32 has no wait handling in its Z80. So a
+pin-level model would be *more* accurate than the emulators, and must be
+validated against the firmware guide's figure and against observed program
+timing rather than by reading their source.
 
 **The interrupt source is independently valuable.** The cross-machine interrupt
 review that
