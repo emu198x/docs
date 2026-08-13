@@ -44,11 +44,32 @@ manufacturer of the later Spectrums — and is used only by
    already records making about the Master System. A CPC-specialist emulator
    (**Arnold**, **ACE-DL**) would still add value and should be vendored when
    convenient, but it does not gate the work.
-2. **Write `knowledge/chips/amstrad-gate-array.md`,** citing
-   `198x/reference/by-system/amstrad-cpc/`. That library already holds 139 files
-   including the **1990 CPC464 Plus service manual** and the **CPC464 firmware
-   guide**, both of which cover the Gate Array — so the chip work is
-   prose-sourced rather than deduced.
+2. **Gather the Gate Array's hardware facts — into this plan, not
+   `knowledge/chips/`.** An earlier draft had step 2 writing
+   `knowledge/chips/amstrad-gate-array.md` up front. That is the wrong order:
+   `knowledge/SCHEMA.md` requires chip pages to describe the *current codebase*
+   ("every claim must reflect the current codebase"), and every existing page
+   carries a `## Crate` section naming the crate it documents. The chip page gets
+   written when the crate exists, describing it. Facts gathered beforehand live
+   here.
+
+   Sources: `198x/reference/by-system/amstrad-cpc/` (139 files, including the
+   **1990 CPC464 Plus service manual** and the **CPC464 firmware guide**), plus
+   the three vendored emulators at `198x/emulators/amstrad-cpc/`.
+
+### Interrupt generation — established
+
+From Arnold's `src/cpc/garray.c:530-575`, which is the clearest of the three:
+
+- The Gate Array counts CRTC HSYNCs in a line counter.
+- At **count 52** it fires `/INT` and resets the counter to zero.
+- **VSYNC resynchronises it.** Two scanlines into VSYNC, if the counter has
+  reached **32 or more**, an interrupt is fired; either way the counter is then
+  reset to zero.
+
+That second rule is the part worth having from a reference rather than deriving:
+it is why CPC interrupts stay locked to the frame rather than drifting, and it
+would not fall out of "count to 52" on its own.
 
 **Firmware is staged.** `~/.emu198x/roms/amstrad-cpc/` now holds `cpc464.rom`,
 `cpc664.rom`, `cpc6128.rom` (each the 16 KB OS concatenated with its 16 KB
@@ -75,12 +96,30 @@ machine:
   scanline period (52, to confirm), rather than the VBlank-driven interrupt most
   of the fleet uses.
 
-**The timing job is already expressible.** `Z80::wait` is a modelled public pin
-and the core's state machine honours it (`if self.wait { stay in this state }`),
-so the quantisation needs no new CPU mechanism — the Gate Array drives a pin
-before the tick, exactly as `irq` is driven. This was established while checking
-whether wait-state machines threatened the cadence work in
+**The timing job is expressible, but not yet sourceable — treat this as the
+plan's main risk.** `Z80::wait` is a modelled public pin and the core's state
+machine honours it (`if self.wait { stay in this state }`), so the quantisation
+needs no new CPU mechanism: the Gate Array would drive a pin before the tick,
+exactly as `irq` is driven. That much was established while checking whether
+wait-state machines threatened the cadence work in
 [`z80-machines-should-share-a-cadence-driver.md`](../../emu198x/knowledge/decisions/z80-machines-should-share-a-cadence-driver.md).
+
+What is *not* established is what to validate it against. **None of the three
+vendored references models `/WAIT` as a pin.** MAME's `amstrad_base` configures a
+flat 4 MHz Z80 (`16_MHz_XTAL / 4`) with no wait configuration whatsoever. Arnold
+appears to bake the wait states into its per-instruction cycle counts instead —
+the only trace is a comment at `z80/z80funcs2.h:52` noting a figure "two more
+than normal due to the two added wait states". Caprice32 has no wait handling in
+its Z80 either. And the 139 CPC files in `198x/reference/by-system/amstrad-cpc/`
+do not mention wait states at all.
+
+So a pin-level model would be *more* accurate than any reference we hold, which
+is precisely the position rule 32 exists to prevent walking into blind. Three
+ways out, in preference order: find primary documentation (the Grimware /
+CPC-wiki Gate Array material is the usual source and is not yet in the reference
+library); measure a reference emulator's *observable* timing with a test program
+rather than reading its source; or, last resort, derive from the service manual's
+circuit detail. Settle this before step 6, because step 6 depends on it.
 
 **The interrupt source is independently valuable.** The cross-machine interrupt
 review that
