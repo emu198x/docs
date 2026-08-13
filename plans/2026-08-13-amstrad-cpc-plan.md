@@ -110,9 +110,17 @@ Each step ends green, in the spirit of one commit's worth of work:
 ## Questions, answered against the reference
 
 **CRTC type: implement type 0, fixed at construction.** `motorola-6845` models
-no variant at all today — a plain 6845 with 18 registers. MAME fits `HD6845S`
-on every classic CPC and explicitly *removed* runtime type selection
-(`amstrad.cpp:76`: "the (runtime) selection of CRTC type has been removed").
+no variant at all today — a plain 6845 with 18 registers. Three independent
+references agree on type 0 for the classic machines: MAME fits `HD6845S` and
+explicitly *removed* runtime type selection (`amstrad.cpp:76`: "the (runtime)
+selection of CRTC type has been removed"); **Arnold** compiles for `HD6845S` by
+default (`src/cpc/crtc.c:32`) and enumerates the same taxonomy at `crtc.c:25`;
+**Caprice32**'s CRTC header reads "Hitachi HD6845S CRT Controller (CRTC Type 0)
+emulation" (`src/crtc.cpp:19`). Arnold additionally carries per-type register
+**read/write mask tables** — `HD6845S_ReadMaskTable`, `HD6845R_ReadMaskTable`
+and a `UM6845R_StatusRegister` flag — which are the concrete artefact to port if
+a variant seam is ever needed. Both are vendored at
+`198x/emulators/amstrad-cpc/`; see its `INDEX.md`.
 Its type map, left in a comment block at `amstrad.cpp:315-321`, is: type 0 =
 UM6845 / HD6845S, type 1 = UM6845R, type 2 = MC6845, type 3 = AMS40489, type 4 =
 Pre-ASIC. The first-order behavioural difference is documented at
