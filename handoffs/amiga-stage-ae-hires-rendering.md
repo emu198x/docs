@@ -28,7 +28,11 @@ again — with the palette gap as the next thing to fix.
 
 `docs/amiga-fs-uae-cross-check.png` from Stage AA still represents
 the gap accurately: our left panel shows real WB content in wrong
-colours; fs-uae right panel shows correct grey Workbench.
+colours; fs-uae right panel shows correct grey Workbench. (Both
+panels show Workbench 3.1 under Kickstart 3.1 on an A1200 —
+Commodore-Amiga system software, rights now held by its successors;
+the right-hand window is FS-UAE. Our capture, their software,
+reproduced to diagnose our rendering.)
 
 ## What was wrong about the original Stage AE hypothesis
 
@@ -140,7 +144,8 @@ renders with yellow / red / green primaries at COLOR1/2/3 instead
 of WB's standard grey/blue scheme. Stage AB documented this via
 the `poke_word` proof in `docs/amiga-forced-grey-palette.png` —
 forcing the palette to grey/black/white/mid-grey produces a
-pixel-perfect WB desktop.
+pixel-perfect WB desktop. (Also Workbench 3.1, captured in our
+emulator; the software is Commodore-Amiga's, the frame is ours.)
 
 The reason KS writes the test-pattern values is upstream of our
 chipset reads — something different from what fs-uae's KS does on
