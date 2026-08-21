@@ -46,9 +46,30 @@ AY-3-8910 + WD1770 floppy (`western-digital-wd1770` crate).
   `kbd_int_pending` line — the Ctrl-BREAK boot routine probably depends on the
   proper daisy-chain IM2 vectoring (and possibly the CTC). This is the next
   concrete step to a full disk boot.
-- **Z80 CTC** — channel 0 stubbed at `$28`; MOS uses IM 1 so boot doesn't need it,
-  but disk-loaded software (and possibly the Ctrl-BREAK path above) likely will
-  (CTC crate exists, wiring is port work).
+- **Z80 CTC** — channel 0 stubbed at `$28`. The service manual gives it **two**
+  documented jobs and we do neither: a real-time-clock interrupt at a
+  programmable interval (§3.2.9), and the **PCI's transmit/receive clocks** for
+  the serial port, which the MOS sets to 153.85 kHz (§3.2.10) — that over 16 is
+  9615 baud, the standard ÷16 receiver clock for 9600. **The RS-232 port cannot
+  work without the CTC**, whatever else is implemented. Two consequences of one
+  one-byte stub, neither visible from the CTC's own port.
+- **Interrupt daisy chain — not implemented, which is not the same as wrong.**
+  One source is wired, so there is no chain for the documented order to be wrong
+  in. Tatung §3.2.8 gives it: **KYBDINT → CTC → ADC → PIO → FIREINT**, keyboard
+  at the top, fire-button lowest. Vectors for the non-Z80
+  peripherals come from a priority encoder (I056) via a tri-state buffer (I057);
+  the Z80-family CTC and PIO supply their own.
+- **ADC conversion is instantaneous.** §1.2.1 specifies four channels at 8-bit
+  resolution, conversion in under 40 µs and a 2 V input range; §3.2.7 adds
+  an `INTR` end-of-conversion interrupt masked by D0 of ADCINTMSK and disabled by
+  RESET. Software that starts a conversion and waits, or that expects the
+  interrupt, sees a different machine.
+- **Drive select ignores motor-on.** §3.2.6: the drive-select outputs are gated
+  with the FDC's `MON` signal. We select regardless of motor state.
+- **The PSG does not reset the FDC.** §3.2.6 and §3.2.4: two of the PSG's port
+  addresses assert a software reset (`SFTRST`) wired to the floppy controller's
+  reset pin. On hardware, touching them resets the FDC as a side effect; here the
+  two devices are unconnected. A cross-device behaviour no port map would reveal.
 - **Cassette / printer** unwired. **Snapshot** deferred. **No native window.**
 
 ## Known unknowns / disproven hypotheses
@@ -59,6 +80,15 @@ AY-3-8910 + WD1770 floppy (`western-digital-wd1770` crate).
   probably, a real Z80 daisy-chain interrupt model rather than the single-line
   approximation. Disk *reading* itself is proven, so the controller is not the
   suspect.
+
+  ⚠ **The 2026-08-21 primary-source pass supports this hypothesis rather than
+  settling it.** Tatung §3.2.8 documents the chain we lack — KYBDINT → CTC → ADC
+  → PIO → FIREINT — and §3.2.9/§3.2.10 give the stubbed CTC two real jobs. So
+  both suspects named above are confirmed to exist in hardware. What the manual
+  does **not** give is the vector values: §3.2.8 describes how the encoder
+  generates them and never says what they are, so our `$F7` remains unsourced
+  (see below). Building the daisy chain therefore needs the vectors from the
+  circuit diagram, or from a trace.
 - **DISPROVEN (donor): "ROM pages out once at `$21`."** The ROM toggles in/out via
   *any* access to port `$24`; the MOS copies ROM→RAM toggling between bytes, and
   the missing `$24` handler left it spinning ~32,000× in the copy loop.
@@ -66,12 +96,50 @@ AY-3-8910 + WD1770 floppy (`western-digital-wd1770` crate).
   keyboard on AY port A(row)/port B(col), `$02`=AY addr/data select, `$03`=AY
   data, `$20`=kbd int mask; the keyboard interrupt is a 50 Hz IM2 device, not the
   CTC.
+- **Open: the keyboard interrupt vector `$F7` is unsourced.** §3.2.8 describes
+  the mechanism — four inputs on priority encoder I056, three encoded outputs
+  through tri-state buffer I057 — and never states the vector byte, because it
+  depends on I057's data-bus wiring. Inferring `$F1/$F3/$F5/$F7` from typical
+  74LS148 wiring is a guess and is not recorded as fact. The circuit diagram, or a
+  trace of a real machine, would settle it.
+- **Open: does a *read* of `$24` toggle the ROM latch?** We toggle on read and
+  write. §3.2.2 says the latch toggles when an output port is addressed, which
+  leans write-only and does not state whether the decode gates `WR`. Behaviour
+  left unchanged until the diagram settles it — changing it on one ambiguous
+  sentence would swap a sourced guess for an unsourced one.
+- **RESOLVED 2026-08-21: the ROM window is 32K, not 8K.** `mem_read` gated on
+  `addr < 0x2000`, returning RAM for `$2000-$7FFF` with ROM paged in, where the
+  hardware asserts a ROM chip select (§3.2.2 — A15 gating, two ROM devices
+  selected by A14). 8K is the ROM *fitted* (§1.2.1); 32K is the space *decoded*;
+  the code conflated two different facts. `bios_boot` and `disk_boot` never
+  caught it because the MOS does not read there.
+- **Correct by absence: there is no CPU/video memory contention.** The 16K
+  display memory is dedicated to the VDP and is not in the CPU's address space;
+  the CPU's 64K is its own; nothing in §3.4 stalls the CPU for video. Worth
+  stating positively — "no contention because there is none" and "no contention
+  because we did not model it" look identical in code and are opposite claims.
 - **Verification target** — CTC timing for disk-loaded software.
 
 ## Validated against
 
+- **Tatung EINSTEIN TC01 Service Manual, 70pp** (indexed and OCR'd 2026-08-21) —
+  the manufacturer's own circuit description. Claim-by-claim status in
+  [`reference/by-system/tatung-einstein/verification.md`][ver]: 50 claims, with
+  each marked verified, corroborated, contradicted or unsourced.
 - MAME `tatung/einstein.cpp` — `$24` ROM toggle, WD1770 at `$18-$1B`, INDEX pulse,
   AY-port keyboard. MOS v1.2 → `Ready`.
+
+⚠ **Only `$24` is verified from Tatung documentation.** It is the single hex port
+address printed anywhere in the service manual, which names every other port by
+its decoded signal (`KYBDINTMSK`, `ADCINTMSK`, `DRSEL`, `VDP`, `FDC`, `PSG`,
+`CTC`) because Tatung documented this machine for servicing rather than for
+programming. The rest of the I/O map came from MAME and is **corroborated** —
+§3.2.3-3.2.4 decodes peripherals onto eight-port blocks with one block
+sub-decoded into single-bit latches, and our addresses land exactly on that
+structure. That is real evidence; it is not a printed table. The circuit diagram
+would settle it and is a diagram, so OCR does not reach it.
+
+[ver]: https://github.com/emu198x/emu198x — `reference/by-system/tatung-einstein/verification.md` in the 198x reference library
 
 ## Timing & cycle-accuracy
 
