@@ -103,8 +103,9 @@ The MCP toolkit assembled this session (AE-q through AE-w) is sufficient for thi
 ## Reproduce
 
 ```bash
+# from your emu198x checkout
 cargo build --release -p emu198x-amiga
-~/Projects/198x/Emu198x/target/release/emu198x-amiga --model a1200 --headless
+./target/release/emu198x-amiga --model a1200 --headless
 # Insert: ~/.emu198x/media/commodore-amiga/wb31/Workbench v3.1 rev 40.42 (1996)(ESCOM)(M10)(Disk 2 of 6)(Workbench).adf
 # Run ~3000 frames after disk insert. Screenshot shows black/red/green/yellow desktop.
 ```

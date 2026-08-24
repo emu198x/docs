@@ -141,7 +141,7 @@ Working hypothesis from the LoC survey already done:
 | `commodore-paula-8364` / OCS denise | — | overscan-aware ✓ | — |
 
 Numbers above are working estimates — must be sourced from each
-chip's datasheet in `~/Projects/198x/reference/by-system/` before
+chip's datasheet in `reference/by-system/` before
 implementation.
 
 ### 1.3 Per-chip work

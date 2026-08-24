@@ -174,5 +174,5 @@ Phase 4 is the big one — multi-paragraph body explaining the start-end phase s
 
 - [knowledge/decisions/nes-cpu-cycle-multi-phase.md](../../knowledge/decisions/nes-cpu-cycle-multi-phase.md) — binding decision.
 - [knowledge/decisions/nes-clock-topology.md](../../knowledge/decisions/nes-clock-topology.md) — original NES clock topology, which this refactor refines, not replaces.
-- `~/Projects/198x/emulators/nes/Mesen2/Core/NES/NesCpu.cpp` — reference implementation. `StartCpuCycle` / `EndCpuCycle` at lines 294 / 317; `_masterClock` and `_ppuOffset` are the relevant state.
-- `~/Projects/198x/emulators/nes/Mesen2/Core/NES/NesPpu.h:140` — `Run(runTo)` template, the exact shape `Ppu::run(target)` should mirror.
+- `emulators/nes/Mesen2/Core/NES/NesCpu.cpp` — reference implementation. `StartCpuCycle` / `EndCpuCycle` at lines 294 / 317; `_masterClock` and `_ppuOffset` are the relevant state.
+- `emulators/nes/Mesen2/Core/NES/NesPpu.h:140` — `Run(runTo)` template, the exact shape `Ppu::run(target)` should mirror.

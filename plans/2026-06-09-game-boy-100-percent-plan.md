@@ -162,6 +162,6 @@ one direction and should be corrected:
 - MBCs (RTC advance gap; MBC1M): `crates/nintendo-game-boy-mbc/src/{mbc1,mbc2,mbc3,mbc5}.rs` (RTC `mbc3.rs:14`).
 - Runtime / models / `.sav` / CGB-deferred: `crates/runtime-nintendo-game-boy/src/{profiles,runtime}.rs`; system harness `crates/runtime-nintendo-game-boy/tests/phase2_verification.rs`.
 - Status docs to correct: `docs/status/outstanding-work.md:113-130`, `knowledge/systems/nintendo-game-boy/overview.md`.
-- Test corpora (all present): `/Users/stevehill/Projects/198x/assets/test-suites/gameboy/{blargg,mooneye-test-suite,dmg-acid2,mealybug-tearoom,v1,v2}`.
-- Reference: SameBoy (`/Users/stevehill/Projects/198x/emulators/gameboy/SameBoy`), Pan Docs; `/Users/stevehill/Projects/198x/reference/by-system/nintendo-gameboy`.
+- Test corpora (all present): `assets/test-suites/gameboy/{blargg,mooneye-test-suite,dmg-acid2,mealybug-tearoom,v1,v2}`.
+- Reference: SameBoy (`emulators/gameboy/SameBoy`), Pan Docs; `reference/by-system/nintendo-gameboy`.
 

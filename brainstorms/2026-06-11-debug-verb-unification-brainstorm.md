@@ -151,7 +151,7 @@ debug tool *not* on the `ScriptStep` path until there's a reason to move it.
 ## Resolved with Steve (2026-06-11)
 
 1. **Code198x impact — CLEAR TO CHANGE FREELY.** Audited
-   `~/Projects/198x/Code198x`: scripts use only `run_frames` / `input` /
+   `Code198x`: scripts use only `run_frames` / `input` /
    `poke_byte` / `type_string` / media / capture actions — *no* `disasm` /
    `step` / `query_cpu` / `run_until*` / `memory_read`. `code-samples/_capture/
    capture.py` reads `observations` but filters only on `kind ∈
