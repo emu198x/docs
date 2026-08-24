@@ -100,11 +100,64 @@ A build-time check enforces three things:
    the build.
 2. No two captures of the same kind claim the same `machineId`.
 3. Machines with no capture are collected and rendered as "no capture yet",
-   not omitted. Today those are `amstrad-cpc` and `sega-game-gear`.
+   not omitted. Today those are `amstrad-cpc` and `sega-game-gear`; see
+   "Closing the capture gap" below, which closes one of them and reclassifies
+   the other.
 
 Point 3 is the reason the registry drives the list. A page built from the
 captures can only ever show what it already has, which is how 28 came to look
 like the whole fleet.
+
+## The registry contract, and a check that holds it
+
+The site now depends on a file in another repo, so the dependency needs a
+stated contract and something that notices when it breaks.
+
+**The contract.** The site reads four fields per entry — `machine_id`, `crate`,
+`label`, `milestone` — and nothing else. It does not read the file's comments,
+ordering, or any field added later.
+
+**The check** runs in the site's build, before any page renders, and fails on:
+
+- the file missing or not parsing
+- zero `[[system]]` entries
+- any entry missing one of the four fields
+- any capture naming a `machineId` the registry does not contain
+- two captures of the same kind claiming one `machineId`
+
+**Noticing drift within a day.** The site builds only on a push to its own
+`main`, so a flagship change that breaks the contract would sit undetected until
+somebody happened to touch the site. The workflow gains a daily `schedule`
+trigger, which is the backstop asm198x already runs for the same reason: a
+sibling repo owns content the site publishes, and a week is a long time for a
+break to wait.
+
+A `repository_dispatch` from the flagship would cut the latency from a day to
+minutes, but it needs a workflow change and a token in the other repo. The
+schedule needs neither and closes most of the gap; add the dispatch if a day
+proves too slow.
+
+## Closing the capture gap
+
+Two machines in the registry have no capture. They are not the same case, and
+treating them the same is what made the current page misleading.
+
+**Amstrad CPC — capturable now.** `~/.emu198x/roms/amstrad-cpc/cpc464.rom` is
+present at 32,768 bytes, which is the size `emu198x-amstrad-cpc` expects
+(16 KB OS + 16 KB BASIC), and the crate ships a `--rom PATH` script argument.
+This becomes an ordinary boot capture with `machineId: "amstrad-cpc"`, made the
+same way as the other twenty-eight.
+
+**Sega Game Gear — not a boot capture at all.** `emu198x-sega-game-gear`
+requires `--cart PATH`; the machine has no BIOS to boot into, so there is no
+firmware-only screen to photograph. Capturing it means running commercial
+software, which is the case the site already models: a `software` capture gated
+behind a `mediaEnv` variable, exactly as the NES entry is gated behind
+`EMU198X_BOOT_NES_ROM`. It gets `EMU198X_BOOT_GAME_GEAR_CART` and renders as
+"Waiting on local media" until media is supplied.
+
+After this the fleet reads: twenty-nine machines captured, one waiting on media
+— instead of twenty-eight captured and two invisible.
 
 ## Information architecture
 
@@ -183,6 +236,7 @@ support.
 | Flagship checkout absent | Build fails, naming the variable and the path |
 | `machineId` not in the registry | Build fails, naming the capture |
 | Registry machine with no capture | Rendered as "no capture yet" |
+| Registry contract broken | Build fails before any page renders |
 | Evidence file unparseable | Build fails; a silently empty table is the failure being designed out |
 
 Every one of these is a hard failure by choice. The bug this rebuild exists to
@@ -192,8 +246,11 @@ fix was a skipped step that reported success.
 
 - The a11y sweep already gates the deploy; it covers every new route in both
   themes and must stay at zero serious or critical defects.
-- The registry join check runs in the build, so a capture naming an unknown
-  machine cannot ship.
+- The registry contract check runs in the build, so a capture naming an unknown
+  machine cannot ship and a change to the file's shape cannot pass silently.
+- A daily scheduled build runs the contract check against whatever the flagship
+  currently holds, so drift surfaces within a day instead of at the next
+  unrelated push.
 - The rendered-spacing check stays.
 - A route check compares the built route set against the current live set, so a
   page cannot silently disappear the way the docs pages silently never appeared.
@@ -212,8 +269,9 @@ fix was a skipped step that reported success.
 
 **The site's content is no longer entirely in the site's hands.** A change to
 `systems.toml` changes the site. That is the intent — it is what stops the
-drift — but it means a flagship edit can break a site build. The join check and
-the hard failures are there so it breaks loudly and at build time.
+drift — but it means a flagship edit can break a site build. The stated
+contract, the check that enforces it and the daily scheduled build are what turn
+that from a silent break into a loud one within a day.
 
 **Thirty per-machine pages start thin.** Each has a capture, two crate counts
 and two links. They earn their place through deep links and search results; if
