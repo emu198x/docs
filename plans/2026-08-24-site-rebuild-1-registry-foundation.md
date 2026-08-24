@@ -132,7 +132,7 @@ Expected: FAIL — `Cannot find module '../src/lib/registry.js'`
 
 ```bash
 npm pkg set dependencies.smol-toml="$(node -p "require('smol-toml/package.json').version")"
-npm pkg set scripts.test="node --test tests/"
+npm pkg set scripts.test="node --test 'tests/**/*.test.mjs'"
 npm install
 ```
 
