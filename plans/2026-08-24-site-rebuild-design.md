@@ -101,8 +101,8 @@ A build-time check enforces three things:
 2. No two captures of the same kind claim the same `machineId`.
 3. Machines with no capture are collected and rendered as "no capture yet",
    not omitted. Today those are `amstrad-cpc` and `sega-game-gear`; see
-   "Closing the capture gap" below, which closes one of them and reclassifies
-   the other.
+   "Closing the capture gap with synthetic cartridges" below, which closes
+   both, along with six of the eight machines currently showing as pending.
 
 Point 3 is the reason the registry drives the list. A page built from the
 captures can only ever show what it already has, which is how 28 came to look
@@ -137,27 +137,64 @@ minutes, but it needs a workflow change and a token in the other repo. The
 schedule needs neither and closes most of the gap; add the dispatch if a day
 proves too slow.
 
-## Closing the capture gap
+## Closing the capture gap with synthetic cartridges
 
-Two machines in the registry have no capture. They are not the same case, and
-treating them the same is what made the current page misleading.
+The gap is wider than two machines, and the flagship has already solved most
+of it.
 
-**Amstrad CPC — capturable now.** `~/.emu198x/roms/amstrad-cpc/cpc464.rom` is
-present at 32,768 bytes, which is the size `emu198x-amstrad-cpc` expects
-(16 KB OS + 16 KB BASIC), and the crate ships a `--rom PATH` script argument.
-This becomes an ordinary boot capture with `machineId: "amstrad-cpc"`, made the
-same way as the other twenty-eight.
+**What the site shows today.** Eight of its twenty-eight entries have no image
+and render "Waiting on local media": `nes`, `game-boy`, `sega-master-system`,
+`sord-m5`, `sega-sg-1000`, `atari-2600`, `atari-5200` and `atari-7800`. Add the
+two machines the site does not list at all, and twenty of thirty machines
+show a capture. The page reads as a fleet with a few gaps; it is a
+fleet with a third missing.
 
-**Sega Game Gear — not a boot capture at all.** `emu198x-sega-game-gear`
-requires `--cart PATH`; the machine has no BIOS to boot into, so there is no
-firmware-only screen to photograph. Capturing it means running commercial
-software, which is the case the site already models: a `software` capture gated
-behind a `mediaEnv` variable, exactly as the NES entry is gated behind
-`EMU198X_BOOT_NES_ROM`. It gets `EMU198X_BOOT_GAME_GEAR_CART` and renders as
-"Waiting on local media" until media is supplied.
+Those eight are gated because the machines need a cartridge, and a cartridge
+meant commercial software the site cannot distribute.
 
-After this the fleet reads: twenty-nine machines captured, one waiting on media
-— instead of twenty-eight captured and two invisible.
+**The flagship already builds cartridges for exactly this.** Two families, both
+ours from source, both committed and deterministic:
+
+| Family | Machines | What it draws |
+|---|---|---|
+| `test-data/synthetic-cartridges/*-plate.*` | NES, Game Boy, Atari 2600, 5200, 7800 | The Emu198x divider plate, set in each machine's own tiles |
+| `test-data/{sega}/synthetic-cart/` | Master System, Game Gear, SG-1000 | A known colour through CRAM and the VDP registers |
+
+Both draw through the real video path instead of poking a framebuffer, so a
+capture proves the CPU ran, the video chip took its programming and a frame
+reached the screen. The plate cartridges are assembled with Asm198x, and the
+NES one picks its prefix-cell colour by citing `family-visual-identity.md` and
+choosing the nearest entry the NES palette offers to `#0d4a7d`.
+
+**So the site captures them.** Every cartridge machine gets a real screenshot
+made from a cartridge the project owns:
+
+| Machine | Cartridge | Result |
+|---|---|---|
+| `nintendo-nes`, `nintendo-game-boy`, `atari-2600`, `atari-5200`, `atari-7800` | plate | The wordmark, rendered by the machine |
+| `sega-master-system`, `sega-game-gear`, `sega-sg-1000` | Sega boot cart | The boot-evidence colour |
+| `amstrad-cpc` | its own firmware, present locally | An ordinary firmware boot |
+| `sord-m5` | none exists | Remains pending |
+
+That takes the fleet from twenty captured to twenty-nine, and removes the
+`mediaEnv` gate from seven entries. Nobody needs to supply anything to see the
+site complete.
+
+**Sord M5 is the one left.** It needs a cartridge and has no synthetic one. It
+is a Z80 with a TMS9918, the same pairing as the SG-1000, so a cartridge for it
+is a plausible piece of work in the flagship — but it is flagship work, not site
+work, and this design leaves it pending instead of pretending otherwise.
+
+**These captures carry a different rights note.** The standing notice exists
+because captures were made from firmware and media supplied locally. A synthetic
+cartridge is the project's own work, so the per-image note says so instead of
+implying a third-party provenance question that does not arise here. The
+site-wide notice stays, because firmware captures still need it.
+
+**One inconsistency, stated and not hidden.** The five plate cartridges show
+the wordmark; the three Sega cartridges show a colour field. As a set they do
+not match. Giving the Sega machines plate cartridges too would fix it and is
+flagship work; until then the site shows what each cartridge draws.
 
 ## Information architecture
 
