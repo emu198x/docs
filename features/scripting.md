@@ -1,5 +1,32 @@
 # Scripting
 
+> **Mixed status — the shape is right, the details are not.** Checked against
+> `emu198x-spectrum` 0.5.0 on 2026-08-25:
+>
+> - **The action table below lists 12 actions. The binaries accept 47**, and
+>   the same 47 on every machine. Feeding an unknown action to `--script`
+>   makes the loader list the real set, which is the quickest way to see it.
+> - **The per-machine flag list is two machines merged.** The ten flags given
+>   here for the Spectrum — `--wait-for-tape-stop`, `--firmware`, `--media`,
+>   `--start-slot`, `--audio-capture` among them — are all rejected by the
+>   Spectrum binary with `unknown flag`, exit 2. Most are genuine C64 flags.
+> - **`--script` is not limited to Spectrum and C64.** It is wired fleet-wide;
+>   machines that need media simply fail earlier without it.
+> - `stop_reason` is emitted as `ReachedTarget`, not `reached_target`.
+> - `--machine`, `set_machine`, the `program` media kind, and
+>   `--headless --help` are missing here entirely. The last matters most:
+>   plain `--help` and `--headless --help` print two disjoint flag lists, and
+>   neither mentions the other.
+> - MCP flows described as historical are current.
+> - The `--no-default-features` in the examples is unnecessary; script and MCP
+>   modes compile in regardless of the `ui` feature.
+>
+> The loader's own rejection message is the authority on actions. The
+> user-facing account is published at
+> https://emu198x.github.io/docs/scripting/, written from the binaries.
+>
+> Treat the detail below as the design this grew from.
+
 > **Current fresh-workspace status.** Shared headless scripting exists today in
 > `emu198x-shell`, and the current fresh-workspace runners exposing that path
 > are `emu198x-spectrum` and `emu198x-c64`. References in older
