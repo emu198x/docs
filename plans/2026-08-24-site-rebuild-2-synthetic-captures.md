@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Take the fleet from twenty captured machines to twenty-nine, using cartridges the project owns, so nobody needs to supply media to see the site complete.
+**Goal:** Take the fleet from twenty captured machines to thirty, using cartridges the project owns and firmware already to hand, so nobody needs to supply media to see the site complete.
 
 **Architecture:** Eight site entries currently render "Waiting on local media" because their machines need a cartridge. The flagship already builds free cartridges for exactly this: plate cartridges that draw the Emu198x wordmark in each machine's own tiles, and Sega boot cartridges that put a known colour through CRAM. The capture script gains a `{source}` token so it can point at them, and the `mediaEnv` gate comes off.
 
@@ -17,7 +17,7 @@
 - A capture made from a cartridge the project owns carries a different per-image note from one made from supplied firmware. Do not reuse the standing "Captured from locally supplied firmware or media" wording for synthetic captures; it implies a provenance question that does not arise.
 - The site-wide rights notice in the footer stays. Firmware captures still need it.
 - Never commit a cartridge or firmware image to the site repo. Cartridges are referenced in the flagship checkout, and only the resulting PNG is committed here.
-- Sord M5 has no synthetic cartridge and stays uncaptured. Do not fabricate one in the site repo; that is flagship work.
+- Sord M5 takes `--cart` as optional and boots its own BIOS, present locally. It is an ordinary firmware boot capture, not a pending machine.
 - The a11y gate must stay at zero serious/critical defects: `npm run a11y`.
 
 ---
@@ -361,7 +361,7 @@ console.log(p, statSync(p).size, 'bytes');
 ```
 Expected: `32768 bytes` — 16 KB OS plus 16 KB BASIC, which is what `emu198x-amstrad-cpc` expects.
 
-If it is absent, this task cannot proceed; the CPC stays uncaptured and the fleet reads twenty-eight. That is a legitimate outcome, not a failure to hide.
+If it is absent, this task cannot proceed and the CPC keeps reading "waiting on local media". That is a legitimate outcome, not a failure to hide — report the real count either way.
 
 - [ ] **Step 2: Add the entry**
 
@@ -458,11 +458,11 @@ import('./src/data/boot-screenshots.js').then(({ bootScreenshots }) => {
 ```
 Expected: `every capture has an image`
 
-- [ ] **Step 3: Say why Sord M5 is uncaptured**
+- [ ] **Step 3: Confirm every machine now carries a capture**
 
 In `src/pages/systems/index.astro`, where an entry has no capture, render the reason instead of a bare absence. Add a short note beneath the fleet list:
 
-> One machine has no capture. The Sord M5 needs a cartridge to show anything and has no synthetic one yet — it pairs a Z80 with a TMS9918, the same as the SG-1000, so one is possible; it has not been written.
+> Every machine in the registry now has a capture. If any does not, name it and say why, in the page's own words — a silent gap is what this rebuild exists to remove.
 
 - [ ] **Step 4: Build and run the gate**
 
@@ -478,20 +478,16 @@ Expected: `0 defect(s)`
 git add src/pages/systems/index.astro
 git commit -m "docs: name the one machine still without a capture, and why
 
-The fleet reads twenty-nine of thirty. The Sord M5 needs a cartridge to
-show anything and has no synthetic one, so the page says that instead of
-leaving a silent gap for a reader to interpret.
+The fleet reads thirty of thirty. Report the number the built page
+actually shows; never edit a count to match this plan.
 
-It pairs a Z80 with a TMS9918, the same as the SG-1000, so a cartridge for
-it is a plausible piece of flagship work. Naming the reason is what makes
-that visible as a task instead of as an oversight."
 ```
 
 ---
 
 ## Self-Review
 
-**Spec coverage.** The `{source}` token → Task 1. Sega machines including Game Gear → Task 2. Plate cartridges for the NES, Game Boy and Ataris → Task 3. Amstrad CPC → Task 4. The rights-note split between synthetic and firmware captures → Tasks 2, 3 (synthetic wording) and 4 (standing wording). Sord M5 stated and not hidden → Task 5. The visual inconsistency between plate and colour-field cartridges is recorded in the spec as accepted, and Task 5 Step 3 names the remaining gap; no task attempts to resolve it, because writing Sega plate cartridges is flagship work.
+**Spec coverage.** The `{source}` token → Task 1. Sega machines including Game Gear → Task 2. Plate cartridges for the NES, Game Boy and Ataris → Task 3. Amstrad CPC → Task 4. The rights-note split between synthetic and firmware captures → Tasks 2, 3 (synthetic wording) and 4 (standing wording). Sord M5 captured from its own BIOS → Task 5. The visual inconsistency between plate and colour-field cartridges is recorded in the spec as accepted, and Task 5 Step 3 names the remaining gap; no task attempts to resolve it, because writing Sega plate cartridges is flagship work.
 
 **Type consistency.** `resolveToken` and `missingInputs` both gain `sourceRoot` as their final parameter in Task 1 and are used with that signature in every later step. `machineId` on the new Game Gear, CPC and converted entries matches the registry ids verified in Plan 1 Task 2. `requiredFiles` entries use the same `{source}` prefix that `missingInputs` expands.
 
