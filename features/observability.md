@@ -1,5 +1,39 @@
 # Observability
 
+> **Design document, and wrong in both directions.** Checked against the
+> shipped binaries on 2026-08-25. Unlike the other documents in this folder,
+> this one both promises things that do not exist *and* omits things that do.
+>
+> **Described here, absent from every machine:** the CPU table's `registers`,
+> `current_instruction`, `cycle_in_instruction` and `interrupt_pending`; the
+> whole of the Memory, Video, Audio and Timing tables (`read(address)`,
+> `bank_state`, `raster_line`, `palette`, `framebuffer`, `channels`,
+> `master_clock`); and `DisassembledInstruction`'s `cycles` and
+> `affects_flags`. Four of the eight lines in this document's own Query Paths
+> example resolve on no machine — including `sid.voice0.freq`, and there are
+> **no `sid.` paths at all** on the C64.
+>
+> **Listed here as planned, but shipped:** CPU trace recording — the Amiga has
+> `cpu_trace_arm`, `cpu_trace_log`, `cpu_trace_disarm` and `cpu_trace_clear`,
+> with PC-range capture filters and head-or-tail windows, which is this
+> document's own TraceBuffer/TraceFilter design, built. I/O tracing ships on
+> nine machines via `io_trace`. Memory-write and AY watch logs ship. And
+> `session.profile.*` ships while appearing nowhere in this document — its
+> `session.profile.media_slots.ids` answers a question the MCP surface could
+> not previously answer at all.
+>
+> Genuinely still unbuilt: a readable whole-machine snapshot, breakpoints and
+> conditions, labelled memory, and a visual debugger.
+>
+> `query_paths` on a running binary is the authority — it answers with that
+> machine's real paths (65 on the Spectrum, 164 on the C64, 1321 on the
+> Amiga). The user-facing account is at
+> https://emu198x.github.io/docs/observability/, written by running all thirty.
+>
+> The mental model — paths rather than a per-machine API, so a tool can
+> discover what a machine exposes — is sound and is why this is a banner
+> rather than a deletion.
+
 > **Partially implemented.** Path-based state inspection already exists through
 > the shared `Observable` trait and MCP `query` / `query_paths` tools. Shared
 > snapshots, trace recording, breakpoint conditions, and the visual debugger are
