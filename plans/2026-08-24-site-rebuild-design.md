@@ -174,16 +174,20 @@ made from a cartridge the project owns:
 | `nintendo-nes`, `nintendo-game-boy`, `atari-2600`, `atari-5200`, `atari-7800` | plate | The wordmark, rendered by the machine |
 | `sega-master-system`, `sega-game-gear`, `sega-sg-1000` | Sega boot cart | The boot-evidence colour |
 | `amstrad-cpc` | its own firmware, present locally | An ordinary firmware boot |
-| `sord-m5` | none exists | Remains pending |
+| `sord-m5` | none needed — boots its own BIOS | An ordinary firmware boot |
 
-That takes the fleet from twenty captured to twenty-nine, and removes the
+That takes the fleet from twenty captured to thirty, and removes the
 `mediaEnv` gate from seven entries. Nobody needs to supply anything to see the
 site complete.
 
-**Sord M5 is the one left.** It needs a cartridge and has no synthetic one. It
-is a Z80 with a TMS9918, the same pairing as the SG-1000, so a cartridge for it
-is a plausible piece of work in the flagship — but it is flagship work, not site
-work, and this design leaves it pending instead of pretending otherwise.
+**Sord M5 needs no cartridge either.** An earlier draft of this section said it
+did, and that it would stay pending. That was read off the site's own media gate
+rather than the machine's: `emu198x-sord-m5` takes `--cart` as *optional* and
+boots its own BIOS — monitor and BASIC-I — which is present locally. It gets an
+ordinary firmware boot capture like the Spectrum or the C64.
+
+So every machine in the registry can be captured, and the fleet target is thirty
+of thirty.
 
 **These captures carry a different rights note.** The standing notice exists
 because captures were made from firmware and media supplied locally. A synthetic
