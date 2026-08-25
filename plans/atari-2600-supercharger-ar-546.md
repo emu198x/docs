@@ -74,8 +74,8 @@ proven first deliverable.
 - `Phaser Patrol.a26` (8448 B, single-load proto) — `a2600_cass/ppatrol.zip`
   (`ppatrolp/…(prototype).a26`). **Primary boot target.**
 - `Excalibur.a26` (8448 B, Dragonstomper single-load proto) — `a2600_cass/dstomper.zip`.
-- Full MAME cassette softlist: `/Volumes/Data/ToSort/MAME 0.288 Software List
-  ROMs (merged)/a2600_cass/` (commumut, dstomper, fireball, killsat, mindmstr,
+- Full MAME cassette softlist: the merged MAME 0.288 software-list ROMs,
+  `a2600_cass/` (commumut, dstomper, fireball, killsat, mindmstr,
   offifrog, partymix, ppatrol, rabbit, saros, suicidem, survival, sweat). Main
   releases are FLAC (tape path); `xcalibur*`/`ppatrolp` are the binaries.
   Sandbox gotcha: copy off `/Volumes` to `/tmp` in one command (no loops).

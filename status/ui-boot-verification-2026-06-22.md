@@ -78,7 +78,7 @@ interrupt-bit semantics.
 ### Cart-only consoles — verified with TOSEC carts (5 of 5)
 
 These runners require `--cart`. Tested against commercial titles from the full
-TOSEC at `/Volumes/Data/Library/ROMs/TOSEC/`:
+local TOSEC library:
 
 - **Sega Master System — ✅.** Alex Kidd in Miracle World (US) boots straight to
   its title screen — VDP, mapper, Z80 all good. So the earlier **black** screen

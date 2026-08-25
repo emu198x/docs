@@ -264,7 +264,7 @@ watch) remain legitimate additions on top.
 
 Parity-on-paper is necessary but not sufficient: a machine can declare uniform
 input verbs and still drop them on the floor before they reach the chip. This
-pass boots **real commercial ROMs** from `/Volumes/Data/TOSEC` on the
+pass boots **real commercial ROMs** from the local TOSEC library on the
 freshly-wired machines, drives input through `--script`, screenshots, and
 confirms a visible response. It is the integration test the per-crate unit tests
 can't be — and it has already paid for itself.
@@ -376,8 +376,8 @@ Method notes for reproducers:
 - TOSEC ROMs are TorrentZipped; unzip first. Pick the mapper from the dump, not
   the filename — Nemesis's `[SCC]` tag is misleading; it is a plain Konami
   mapper (`--mapper konami`), and `konami-scc` rendered a blank screen.
-- Per-game documentation (correct mapper, controls) is in
-  `/Volumes/Data/TOSEC-PIX`.
+- Per-game documentation (correct mapper, controls) is in the local
+  TOSEC-PIX set.
 - Two diagnostic query paths were added to make 2600 input observable from a
   script/MCP session — `vcs.input.swcha/swchb/inpt4/inpt5` — exposing the
   joystick, console-switch, and fire-button registers. That turned an invisible

@@ -494,7 +494,8 @@ So:
 - **S3 — switch the default ✅ LANDED.** The sequencer is now the shipping
   default (`use_sprite_sequencer: true`); `FRAME_ROUTING_VERSION` bumped 1→2.
   Validated against the **real catalogue games** (media at
-  `EMU198X_CATALOGUE_MEDIA_ROOT=/Volumes/…/TOSEC`, release captures proven
+  `EMU198X_CATALOGUE_MEDIA_ROOT` pointed at the local TOSEC library, release
+  captures proven
   bit-identical to debug — Rust keeps strict IEEE-754, no fast-math): all 7 C64
   catalogue entries re-blessed and `catalogue run` **PASS 7/7**. boot-to-ready
   (no sprites) is byte-unchanged; the six sprite-bearing titles re-hash on both
