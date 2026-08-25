@@ -1,5 +1,31 @@
 # MCP Integration
 
+> **Mixed status — read the mental model, verify every name.** The framing
+> below is sound and the server is real: `--mcp` is wired in all 30 crates.
+> The concrete detail is not current. Checked against `emu198x-spectrum`
+> 0.5.0 on 2026-08-25:
+>
+> - **The protocol shape in every example here is wrong.** These frames send a
+>   bare method (`"method": "screenshot"`), which the server answers with
+>   `-32601 method not found`. It handles `initialize`, `tools/list` and
+>   `tools/call`; tools are invoked through `tools/call`, not as methods.
+> - **Most of the Tool reference does not match the shipped names.** 29 of the
+>   names below do not exist as written. Many were renamed — `screenshot` is
+>   `save_screenshot`, `poke` is `poke_byte`, `query_memory` is `memory_read`,
+>   `query_registers` is `query_cpu` — and `run`, `pause`, `shutdown`,
+>   `inject` and the three breakpoint tools have no counterpart at all.
+> - **"Event Notifications" describes push that does not exist.**
+> - Two caveats here are stale in the reader's favour: snapshots work
+>   (`save_snapshot`/`load_snapshot`), and `run_until_mem_change` is in the
+>   shared core rather than only "where supported".
+>
+> `tools/list` on a running binary is the authority — it answers with that
+> machine's real surface (48 tools on the Spectrum, 40 on the C64, 32 common
+> to every machine measured). The user-facing account is published at
+> https://emu198x.github.io/docs/mcp/, written from the binaries.
+>
+> Treat everything below as the design this grew from.
+
 MCP is the agent and automation surface for Emu198x. It lets a tool boot a
 machine, run frames, press keys, capture output, and inspect chip state without
 knowing each machine's internal timing loop.
