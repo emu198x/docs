@@ -1,5 +1,35 @@
 # Capture
 
+> **Design document — do not follow the commands here.** Checked against all
+> 30 binaries on 2026-08-25, and the concrete detail does not describe the
+> shipped software:
+>
+> - **`emu198x-cli -s <system>` does not exist**, and every example here uses
+>   it. There is no such binary and no such crate; captures run through the
+>   per-machine binaries (`emu198x-nes`, `emu198x-spectrum`, and so on).
+> - **The action names are wrong**: `screenshot`, `audio_capture` and
+>   `record start` are `save_screenshot`, `save_audio_capture`,
+>   `start_video_recording`.
+> - **Nine flags here exist on no binary at all** — `--format`, `--codec`,
+>   `--bitrate`, `--sample-rate`, `--aspect`, `--border`, `--palette`,
+>   `--palette-file`, `--frame-dump`. The palette section built on them
+>   describes nothing that exists.
+> - **The formats are fixed, not chosen.** Stills are PNG and the extension is
+>   ignored — ask for `shot.jpg` and a PNG arrives under that name. Video is
+>   MP4 only; audio is WAV only.
+> - **The aspect and border tables are wrong in both directions.** Measured:
+>   Spectrum 352×296, C64 416×312, CPC 832×288, Master System 280×240,
+>   NES 256×240, Game Boy 160×144.
+> - The Rust API named here (`screenshot_png_scaled`, `RecordingOptions`,
+>   `start_audio_capture`, `grab_frame`) has no counterpart in the crates.
+> - Dithering settings are QP 12 with `yuv444p`, not the CRF figure in the
+>   older notes.
+>
+> What the binaries actually do is published at
+> https://emu198x.github.io/docs/capture/, written by running all thirty.
+>
+> Kept for the design reasoning. Nothing below is a usable instruction.
+
 > **Partially implemented.** Capture works today through per-system runners
 > plus MCP or script methods.
 
