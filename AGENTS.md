@@ -1,5 +1,7 @@
 # Emu198x docs
 
+> Read [`PRINCIPLES.md`](PRINCIPLES.md) first.
+
 This repo owns Emu198x documentation and current status summaries. It sits inside the `Emu198x/` org container alongside the emulator source repo (`../emu198x/`) and public site repo (`../emu198x.github.io/`).
 
 ## Read first
@@ -8,7 +10,7 @@ This repo owns Emu198x documentation and current status summaries. It sits insid
 - [`status.md`](status.md) — current status router.
 - [`status/current-system-usability.md`](status/current-system-usability.md) — current boot/usability status by system.
 - [`status/outstanding-work.md`](status/outstanding-work.md) — current cross-system remaining work.
-- [`../emu198x/CLAUDE.md`](../emu198x/CLAUDE.md) and [`../emu198x/RULES.md`](../emu198x/RULES.md) — emulator source rules before code changes.
+- [`../emu198x/CLAUDE.md`](../emu198x/AGENTS.md) and [`../emu198x/RULES.md`](../emu198x/RULES.md) — emulator source rules before code changes.
 
 ## Current-state rule
 
