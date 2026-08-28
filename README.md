@@ -1,6 +1,6 @@
 # Emu198x docs
 
-This repo is the current documentation and status surface for Emu198x. It complements the emulator source repo at [`../emu198x/`](../emu198x/) and the public site repo at [`../emu198x.github.io/`](../emu198x.github.io/).
+This repo is the current documentation and status surface for Emu198x. It complements the emulator source repo at [`emu198x`](https://github.com/emu198x/emu198x) and the public site repo at [`emu198x.github.io`](https://github.com/emu198x/emu198x.github.io).
 
 ## Start here
 
