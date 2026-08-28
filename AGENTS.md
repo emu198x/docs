@@ -1,6 +1,6 @@
 # Emu198x docs
 
-> Read [`PRINCIPLES.md`](PRINCIPLES.md) first.
+> Read [`PRINCIPLES.md`](PRINCIPLES.md) first. [`MANIFESTO.md`](MANIFESTO.md) is why the project exists.
 
 This repo owns Emu198x documentation and current status summaries. It sits inside the `Emu198x/` org container alongside the emulator source repo (`../emu198x/`) and public site repo (`../emu198x.github.io/`).
 
