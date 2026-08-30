@@ -43,7 +43,7 @@ the standalone internet-capability verdict.
 | [ColecoVision](coleco/colecovision.md) | BIOS title | per-dot VDP (3:2 phase) | mcp | Marginal |
 | [Atari 2600](atari/2600.md) | Combat playable | pixel-level TIA | mcp | Yes |
 | [Atari 5200](atari/5200.md) | Pac-Man menu | beam GTIA + windowed DMA | mcp | No |
-| [Atari 7800](atari/7800.md) | Asteroids renders | zone-DMA | mcp | No |
+| [Atari 7800](atari/7800.md) | Asteroids renders | zone-DMA | win+mcp | No |
 | [Acorn Atom](acorn/atom.md) | Prompt; types | relaxed (text VDG) | mcp | Marginal |
 | [Sinclair ZX81](sinclair/zx81.md) | Boot screen | relaxed (NMI/HALT) | mcp | Marginal |
 | [Sinclair ZX80](sinclair/zx80.md) | Boot (FAST only) | relaxed (FAST only) | mcp | No |

@@ -13,6 +13,7 @@ This repo is the current documentation and status surface for Emu198x. It comple
 | Adding a system | [`adding-a-system.md`](adding-a-system.md) |
 | Testing policy/audit | [`testing-policy.md`](testing-policy.md), [`testing-audit.md`](testing-audit.md) |
 | Feature docs | [`features/`](features/) |
+| Chip docs | [`chips/`](chips/) |
 | System docs | [`systems/`](systems/) |
 
 ## Historical and planning material
