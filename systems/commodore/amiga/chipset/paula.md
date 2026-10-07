@@ -88,27 +88,28 @@ Channel offsets: ch0 = $A0, ch1 = $B0, ch2 = $C0, ch3 = $D0.
 
 ### DMA Pipeline
 
-Audio DMA uses a two-word buffer with a return-latency model:
+Audio DMA requests travel through Agnus's retained reservation, address and
+service stages. The word reaches Paula at service retirement. Sample output
+continues on the shared colour clock; there is no separate return countdown.
 
-1. **DMA request:** When the channel's buffer needs data, it sets a DMA request
-   flag. Agnus services this request during the channel's fixed DMA slot
-   (CCK $07-$0A).
+The first DMA word is discarded, reloads the location pointer, and requests a
+startup interrupt. The next word starts playback on its high byte. Ordinary
+and volume-attached playback request data on high-byte entry; period attachment
+requests it on low-byte entry. A held request remains asserted until served.
 
-2. **Return latency:** After the DMA slot is serviced, the data takes 14 CCKs
-   to become available to the channel (models the chip-bus return path). During
-   these 14 CCKs, certain bus conditions stall the countdown:
-   - DMA slots owned by Agnus (refresh, disk, sprite, audio, bitplane) stall
-   - Copper slots stall only if the copper actually performs a chip-bus fetch
-   - CPU/free slots do not stall
+A length wrap holds a loop-interrupt condition until the attachment-selected
+byte transition. That transition requests an interrupt; INTREQ becomes visible
+one CCK later. Startup requests use the same delay. This is the audio request
+to INTREQ boundary, distinct from subsequent CPU interrupt recognition.
 
-3. **Word consumption:** The channel consumes one word at a time, outputting
-   the high byte first, then the low byte. Each byte is output for AUDxPER
-   colour clocks.
+Snapshot version 58 retains the loop condition and delayed request and rejects
+version 57. The two pending stages are exposed in each channel's diagnostics.
+CPU-fed playback has separate confirmed startup and acknowledgement faults;
+the DMA validation does not close those.
 
-4. **Block repeat:** When all words in the current block are consumed (counter
-   reaches 0), the channel reloads the pointer from AUDxLC and the length from
-   AUDxLEN, and raises the audio interrupt (INTREQx). This enables continuous
-   playback using double-buffered interrupt handlers.
+See the [interrupt investigation](../../../../plans/2026-10-07-amiga-paula-audio-interrupts.md)
+and the emulator's `knowledge/decisions/amiga-paula-audio-interrupts.md` for
+reference evidence and validation limits.
 
 ### Period and Sample Rate
 
