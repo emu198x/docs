@@ -1,7 +1,7 @@
 # Paula CPU-fed playback investigation
 
 Lane: best-in-class Amiga accuracy campaign. Start at the merged version-58
-DMA interrupt correction. Production changes await a resolved timing design.
+DMA interrupt correction. The user approved the manual stage extension and snapshot version 59.
 
 1. Trace the manual start, data holding and stop paths in the original HRM,
    vAmiga and WinUAE. Inspect the origin of WinUAE's early IRQ sample and the
@@ -56,7 +56,7 @@ The native research probe fails with functional mismatch counts
 output/IRQ observations. Its 3,072 state-name differences are recorded separately;
 our current public diagnostic deliberately labels CPU-fed playback Idle, so
 that count is not independent proof of an output fault. Existing component
-regressions remain intact. Production code is unchanged.
+regressions remained intact at that baseline.
 
 Minimig's source uses a boundary-time check and supplies no early decision
 latch; it does not resolve the conflict. The inspected vAmigaTS audtim1/audtim7
@@ -64,7 +64,7 @@ sources trigger CPU interrupt handlers and vary periods/lengths, but do not
 control acknowledgements immediately around the disputed edge. Their hardware
 photos have not been used as proof of this particular timing.
 
-## Recommended design — requires snapshot approval
+## Approved design
 
 Follow the documented WinUAE correction at the disputed edge. Extend the
 existing AudioChannel with `manual_stop_pending: Option<bool>`: None means
@@ -101,8 +101,8 @@ writes, and existing DMA reference closure. Retain the three-case waveform
 gate and run release build, formatting and strict Clippy.
 
 The root AGENTS.md requires agreement for “Breaking changes to APIs or data
-schemas”. The previous approval covers version 58's DMA stages, not this
-additional manual decision. No production or snapshot change is made here.
+schemas”. The user explicitly approved this additional manual decision and version 59
+on 2026-10-07. The implementation uses exactly this bounded design.
 
 Exact implementation targets in `Emu198x/emu198x/`:
 
@@ -119,3 +119,43 @@ The new research example builds under strict Clippy; all 109 existing Paula
 component tests still pass. Ruff and formatting pass. The reference generator
 checks both row counts and the full 440-scenario inventory, then checks that
 producer input/clock keys agree before counting disagreements.
+
+## Correction and validation
+
+The corrected native path matches all 4,312 WinUAE boundary observations,
+including playback state. The initial 480-row vAmiga startup/holding schedule
+also passes after aligning its adapter to deliver/action/finish ordering;
+its reference observations are unchanged. Both now run as component regressions.
+
+A directed attachment extension executes the same WinUAE methods for four
+channels, four settings and acknowledgement enabled/disabled: 576 observations
+of state, IRQ and target period/volume. It covers startup, writes during both
+bytes, selected interrupt edges and stopping. All agree. It deliberately does
+not compare the attached source's muted raw DAC buffer.
+
+All 112 component tests and 41 board tests pass. Board writes verify immediate
+startup, early stop sampling, late reversal of INTREQ, holding-only DAT writes
+and next-CCK IRQ delivery on all four channels. The fixture initially assumed
+the board serviced audio on the second half CCK; the failing assertion exposed
+that mistake. The corrected checkpoint uses the existing first-half service.
+No production timing was moved to satisfy the test.
+
+OCS/ECS/AGA snapshots preserve both sampled decisions for periods 1, 2, 8 and
+65,536 at whole and half CCKs: 48 saved boundaries. Every restore reverses the
+live IRQ bit and changes the holding word, then checks the saved decision
+actually governs the next output edge. Period-one continue setup injects an
+acknowledgement between the existing component begin/finish stages; it is a
+saved-stage test, not a claim that a CPU can acknowledge within one CCK.
+Existing unsampled-counter restore tests remain enabled.
+
+Strict Clippy and the release Amiga build pass. Snapshot version 59 rejects 58
+before decoding its changed payload. Wider DMA/manual transitions, live
+attachment switching, target PWM and analogue response remain open.
+
+Final validation also passes 56 runtime library, 45 query and all 63 snapshot
+tests. The three-case ROM-backed waveform gate retains the previous routing,
+cadence and volume measurements (3,463.2276 Hz; full-scale RMS approximately
+0.35497, half-volume RMS 0.17749). This gate exercises ordinary DMA output,
+not the manual interrupt boundary. Exact logs and hashes are retained in
+`manual-probe/validation.json` and its compressed logs. Formatting and Ruff
+pass. The initial failing native log remains alongside the corrected results.
