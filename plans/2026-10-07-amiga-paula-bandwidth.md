@@ -66,7 +66,7 @@ work), or a multistage decimator (more state and intermediate filters to
 design and validate). Both remain possible if actual Rust performance
 invalidates the candidate; do not quietly substitute either architecture.
 
-Production files, pending agreement:
+Production files (approved on 2026-10-08):
 
 1. Add a generic helper under
    `crates/emu198x-shell/src/audio/band_limited.rs`, exposed by `audio.rs`.
@@ -114,3 +114,44 @@ three generated reference artifacts reproduce byte-for-byte. Normal and
 bypassed candidate runs produce the required 66-case inventories, respectively
 zero and 48 failures. Source hashes and compressed logs are in the corpus's
 `validation.json`. Production and snapshot v61 remain unchanged.
+
+## Approval
+
+The user approved the shared filter, delayed LED history and snapshot v62
+on 2026-10-08. Proceed with this bounded integration; no further approval
+is needed for the agreed design. Pushing remains deferred.
+
+## Implemented and verified
+
+The shared helper and Amiga integration now use the approved 96-frame,
+256-phase step response. Snapshot v62 rejects v61, preserving all pending
+signal and LED-control state. There are no new dependencies or chip clocks.
+The actual runtime passes 198 spectral cases, including in-band response
+checks against the existing board filters, and all 36 one-tick pulse cases
+against independent continuous-kernel integration. Shared area checks include
+512 narrow pulses in a single interval. All 48 live restore checkpoints,
+14 atomic malformed-state cases, instruction-step equivalence and eight
+board/region LED-alignment checks pass.
+
+Two initial test failures were resolved at their cause. The longer replay
+had exhausted its last source transition, so each checkpoint now creates a
+new volume edge. The pulse oracle initially used an arbitrary 3e-7 absolute
+limit, below the finite table's measured 3.80e-7 approximation error in eight
+cases; it now asserts the specified 0.1% amplitude accuracy relative to pulse
+peak. The independent signed-area invariant remains 1e-8.
+
+All 589 shared/runtime tests pass (31 ordinary-suite skips: 30 existing
+explicit diagnostics plus the explicitly-run timing benchmark). This includes
+65 snapshot tests. Strict Clippy, native release build and wasm32 check pass.
+The unchanged ROM audio gate passes all three cases without changing its
+cadence/amplitude thresholds: full RMS 0.357098373, half RMS 0.178549095,
+correct routing and 3463.397548 Hz finite-window cadence estimate.
+
+The real Rust conversion benchmark includes identical synthetic mixer writes
+for the historical v61 box policy and the new ring. Three-run median added
+cost per emulated PAL second is 13.327 ms at period 124, 48.294 ms at period 8,
+210.084 ms at period 1, and 409.390 ms for every-tick mixed stress. Absolute
+new-path costs are 62.454, 97.847, 259.544 and 458.663 ms respectively. This
+excludes CPU/chip execution; the expensive dense-input case remains visible.
+No claim is made that physical PWM or rapid switched-analogue behaviour is
+closed by this correction. Source/log hashes are retained with the corpus.
