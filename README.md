@@ -6,7 +6,7 @@ This repo is the current documentation and status surface for Emu198x. It comple
 
 | Need | Read |
 |---|---|
-| Current system boot/usability status | [`status/current-system-usability.md`](status/current-system-usability.md) |
+| System surfaces and boot/usability evidence | [`status/current-system-usability.md`](status/current-system-usability.md) |
 | Current cross-system remaining work | [`status/outstanding-work.md`](status/outstanding-work.md) |
 | Status overview | [`status.md`](status.md) |
 | Architecture overview | [`architecture.md`](architecture.md) |

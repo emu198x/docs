@@ -8,7 +8,7 @@ This repo owns Emu198x documentation and current status summaries. It sits insid
 
 - [`README.md`](README.md) — docs repo front door and reading routes.
 - [`status.md`](status.md) — current status router.
-- [`status/current-system-usability.md`](status/current-system-usability.md) — current boot/usability status by system.
+- [`status/current-system-usability.md`](status/current-system-usability.md) — routes to system surfaces and boot/usability evidence.
 - [`status/outstanding-work.md`](status/outstanding-work.md) — current cross-system remaining work.
 - [`../emu198x/CLAUDE.md`](../emu198x/AGENTS.md) and [`../emu198x/RULES.md`](../emu198x/RULES.md) — emulator source rules before code changes.
 
