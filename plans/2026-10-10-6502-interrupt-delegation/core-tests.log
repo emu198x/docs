@@ -1,0 +1,48 @@
+   Compiling serde_json v1.0.151
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.13s
+     Running unittests src/lib.rs (target/debug/deps/emu198x_mos_6502-7f5aeeabe6117e06)
+
+running 39 tests
+test registers::tests::flag_operations ... ok
+test registers::tests::power_on_state ... ok
+test registers::tests::nz_flags_follow_input ... ok
+test tests::asl_zero_page_x_with_zero_index_keeps_rmw_timing ... ok
+test tests::decode_table_categories_for_representative_opcodes ... ok
+test tests::brk_pushes_state_and_reads_irq_vector ... ok
+test tests::cli_has_one_instruction_irq_delay ... ok
+test tests::decode_table_classifies_key_opcodes ... ok
+test tests::decode_table_covers_all_256_opcodes ... ok
+test tests::decode_table_jam_opcodes_all_resolve_to_jam ... ok
+test tests::falling_so_edge_sets_overflow_before_branch_eval ... ok
+test tests::inx_increments_x_register ... ok
+test tests::irq_asserted_before_instruction_is_serviced_at_boundary ... ok
+test tests::irq_ignored_when_i_bit_set ... ok
+test tests::jam_ignores_nmi_and_irq_until_reset ... ok
+test tests::jam_opcode_halts_cpu ... ok
+test tests::jmp_absolute_sets_pc ... ok
+test tests::lda_immediate_sets_a_and_flags ... ok
+test tests::nmi_does_not_re_fire_while_held_high ... ok
+test tests::nmi_pulse_during_rdy_hold_survives_until_current_instruction_finishes ... ok
+test tests::nmi_rising_edge_vectors_to_handler ... ok
+test tests::nmi_taken_with_interrupt_disable_set ... ok
+test tests::nmi_takes_priority_over_irq ... ok
+test tests::nmi_vector_window_distinguishes_short_pulses_from_held_levels ... ok
+test tests::nop_takes_two_cycles ... ok
+test tests::ora_zero_page_x_with_zero_index_keeps_extra_cycle ... ok
+test tests::plp_clearing_i_has_one_instruction_irq_delay ... ok
+test tests::post_reset_sp_is_fd ... ok
+test tests::power_on_state ... ok
+test tests::rdy_high_allows_tick_to_advance ... ok
+test tests::rdy_low_stalls_read_without_cycle_advance ... ok
+test tests::rdy_stalls_reads_but_lets_writes_through ... ok
+test tests::reset_clears_interrupt_lines ... ok
+test tests::reset_executes_seven_cycles_and_loads_vector ... ok
+test tests::reset_preserves_a_x_y_and_decimal ... ok
+test tests::reset_restores_so_high ... ok
+test tests::reset_schedules_seven_cycle_sequence ... ok
+test tests::sei_has_one_instruction_irq_delay ... ok
+test tests::sta_absolute_writes_correct_address ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
