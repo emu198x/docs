@@ -1,0 +1,4 @@
+bruce-lee-1571:
+  boot.frame_hash = "xxh64:bc99c5b7a536f896"
+  audio.hash      = "xxh64:e45531b9387b986f"
+  outcome         = boot mismatch (expected xxh64:41bdf490f9df6341)
