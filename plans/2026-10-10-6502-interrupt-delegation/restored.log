@@ -1,0 +1,16 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+   Compiling machine-nintendo-nes v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-nintendo-nes)
+    Finished `release` profile [optimized] target(s) in 4.03s
+     Running tests/nes_sweep.rs (target/release/deps/nes_sweep-dccd23fb2206a998)
+
+running 1 test
+rom_singles/1-cli_latency.nes: Ok(Pass { ticks: 1523091 })
+rom_singles/2-nmi_and_brk.nes: Ok(Pass { ticks: 9563874 })
+rom_singles/3-nmi_and_irq.nes: Ok(Pass { ticks: 11350698 })
+rom_singles/4-irq_and_dma.nes: Ok(Pass { ticks: 6168849 })
+rom_singles/5-branch_delays_irq.nes: Ok(Pass { ticks: 33954057 })
+cpu_interrupts.nes: Ok(Pass { ticks: 65123712 })
+test cpu_interrupts_v2 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 3.22s
+

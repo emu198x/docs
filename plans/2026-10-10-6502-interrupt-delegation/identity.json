@@ -1,0 +1,37 @@
+{
+  "source_base": "1387dd925ffbba6f0b6b87e5a418eced4dd4b38e",
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)",
+  "roms": [
+    {
+      "path": "cpu_interrupts.nes",
+      "bytes": 81936,
+      "sha256": "ccbac4e824eb96ecfe8b82d331a083be186eb6776aa57e25c52251eaf7df9c4f"
+    },
+    {
+      "path": "rom_singles/1-cli_latency.nes",
+      "bytes": 40976,
+      "sha256": "e402d36118f77dcbbe8ddca90c15fc76a46bcb30b25cb028c383e4a621de5fc0"
+    },
+    {
+      "path": "rom_singles/2-nmi_and_brk.nes",
+      "bytes": 40976,
+      "sha256": "6e6bf6205930afcfebdc213c583df53986a688a8b36f8856b805ef4c1853e6eb"
+    },
+    {
+      "path": "rom_singles/3-nmi_and_irq.nes",
+      "bytes": 40976,
+      "sha256": "3008a9524d174a8aca562ff0361eba81da53e38cf1ebb5125322fe151f14d945"
+    },
+    {
+      "path": "rom_singles/4-irq_and_dma.nes",
+      "bytes": 40976,
+      "sha256": "6d7b4c1947ada64679af56cf0c227286b2408afe1747dfaa4dc7363d57ff87f6"
+    },
+    {
+      "path": "rom_singles/5-branch_delays_irq.nes",
+      "bytes": 40976,
+      "sha256": "f9e10b4a24d8f3cd3e51fb7457c72858aab96a6467fdbbd806d0661c2d32fdc7"
+    }
+  ],
+  "source_commit": "fd431e8b0023d3d3725ea3923d36b5439d5424e0"
+}

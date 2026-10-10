@@ -1,0 +1,28 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+   Compiling machine-nintendo-nes v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-nintendo-nes)
+    Finished `release` profile [optimized] target(s) in 3.34s
+     Running tests/nes_sweep.rs (target/release/deps/nes_sweep-dccd23fb2206a998)
+
+running 1 test
+rom_singles/1-cli_latency.nes: Ok(Pass { ticks: 1523091 })
+rom_singles/2-nmi_and_brk.nes: Ok(Pass { ticks: 9563874 })
+rom_singles/3-nmi_and_irq.nes: Ok(Pass { ticks: 11350698 })
+rom_singles/4-irq_and_dma.nes: Ok(Pass { ticks: 6168849 })
+rom_singles/5-branch_delays_irq.nes: Ok(Fail { code: 1, text: "test_jmp\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 02 08 \n06 01 08 \n07 03 08 \n08 02 08 \n09 01 08 \n\ntest_branch_not_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 02 06 \n03 01 06 \n04 02 07 \n05 01 07 \n06 04 0A \n07 03 0A \n08 02 0A \n09 01 0A \n\ntest_branch_taken_pagecross\nT+ CK PC\n00 02 0D \n01 01 0D \n02 04 00 \n03 03 00 \n04 02 00 \n05 01 00 \n06 04 03 \n07 03 03 \n08 02 03 \n09 01 03 \n\ntest_branch_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 04 0A \n06 03 0A \n07 02 0A \n08 01 0A \n09 03 0A \n\n\nCA0FBC6A\n5-branch_delays_irq\n\nFailed\n", ticks: 34400760 })
+cpu_interrupts.nes: Ok(Fail { code: 1, text: "test_jmp\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 02 08 \n06 01 08 \n07 03 08 \n08 02 08 \n09 01 08 \n\ntest_branch_not_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 02 06 \n03 01 06 \n04 02 07 \n05 01 07 \n06 04 0A \n07 03 0A \n08 02 0A \n09 01 0A \n\ntest_branch_taken_pagecross\nT+ CK PC\n00 02 0D \n01 01 0D \n02 04 00 \n03 03 00 \n04 02 00 \n05 01 00 \n06 04 03 \n07 03 03 \n08 02 03 \n09 01 03 \n\ntest_branch_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 04 0A \n06 03 0A \n07 02 0A \n08 01 0A \n09 03 0A \n\n\nCA0FBC6A\n5-branch_delays_irq\n\nFailed\n\nWhile running test 5 of 5\n\n\n", ticks: 65481075 })
+
+thread 'cpu_interrupts_v2' (86103691) panicked at crates/machine-nintendo-nes/tests/nes_sweep.rs:653:5:
+cpu_interrupts_v2 failures:
+rom_singles/5-branch_delays_irq.nes: Ok(Fail { code: 1, text: "test_jmp\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 02 08 \n06 01 08 \n07 03 08 \n08 02 08 \n09 01 08 \n\ntest_branch_not_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 02 06 \n03 01 06 \n04 02 07 \n05 01 07 \n06 04 0A \n07 03 0A \n08 02 0A \n09 01 0A \n\ntest_branch_taken_pagecross\nT+ CK PC\n00 02 0D \n01 01 0D \n02 04 00 \n03 03 00 \n04 02 00 \n05 01 00 \n06 04 03 \n07 03 03 \n08 02 03 \n09 01 03 \n\ntest_branch_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 04 0A \n06 03 0A \n07 02 0A \n08 01 0A \n09 03 0A \n\n\nCA0FBC6A\n5-branch_delays_irq\n\nFailed\n", ticks: 34400760 })
+cpu_interrupts.nes: Ok(Fail { code: 1, text: "test_jmp\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 02 08 \n06 01 08 \n07 03 08 \n08 02 08 \n09 01 08 \n\ntest_branch_not_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 02 06 \n03 01 06 \n04 02 07 \n05 01 07 \n06 04 0A \n07 03 0A \n08 02 0A \n09 01 0A \n\ntest_branch_taken_pagecross\nT+ CK PC\n00 02 0D \n01 01 0D \n02 04 00 \n03 03 00 \n04 02 00 \n05 01 00 \n06 04 03 \n07 03 03 \n08 02 03 \n09 01 03 \n\ntest_branch_taken\nT+ CK PC\n00 02 04 \n01 01 04 \n02 03 07 \n03 02 07 \n04 01 07 \n05 04 0A \n06 03 0A \n07 02 0A \n08 01 0A \n09 03 0A \n\n\nCA0FBC6A\n5-branch_delays_irq\n\nFailed\n\nWhile running test 5 of 5\n\n\n", ticks: 65481075 })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test cpu_interrupts_v2 ... FAILED
+
+failures:
+
+failures:
+    cpu_interrupts_v2
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 3 filtered out; finished in 3.29s
+
+error: test failed, to rerun pass `-p machine-nintendo-nes --test nes_sweep`

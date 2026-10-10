@@ -1,0 +1,22 @@
+crates/machine-acorn-atom/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-acorn-atom/src/lib.rs:176: let mut cpu = M6502::new();
+crates/machine-acorn-bbc-micro/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-acorn-bbc-micro/src/lib.rs:731: let mut cpu = M6502::new();
+crates/machine-acorn-electron/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-acorn-electron/src/lib.rs:408: let mut cpu = M6502::new();
+crates/machine-atari-2600/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-atari-2600/src/lib.rs:140: let mut cpu = M6502::new();
+crates/machine-atari-5200/Cargo.toml:14: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-atari-5200/src/lib.rs:164: let mut cpu = M6502::new();
+crates/machine-atari-7800/Cargo.toml:14: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-atari-7800/src/lib.rs:138: let mut cpu = M6502::new();
+crates/machine-atari-800xl/Cargo.toml:16: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-atari-800xl/src/lib.rs:230: let mut cpu = M6502::new();
+crates/machine-commodore-pet/Cargo.toml:11: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-commodore-pet/src/lib.rs:154: let mut cpu = M6502::new();
+crates/machine-commodore-vic-20/Cargo.toml:11: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-commodore-vic-20/src/lib.rs:365: let mut cpu = M6502::new();
+crates/machine-oric-atmos/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-oric-atmos/src/lib.rs:297: let mut cpu = M6502::new();
+crates/machine-nintendo-nes/Cargo.toml:12: emu198x-mos-6502 = { path = "../emu198x-mos-6502", version = "0.6.0" }
+crates/machine-nintendo-nes/src/lib.rs:312: let mut cpu = M6502::new_2a03();
