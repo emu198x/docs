@@ -1,0 +1,24 @@
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.52s
+     Running tests/pokey_restore_probe.rs (target/debug/deps/pokey_restore_probe-d0e429cc70575fa4)
+
+running 1 test
+test restored_pokey_keeps_the_next_sample_phase ... FAILED
+
+failures:
+
+---- restored_pokey_keeps_the_next_sample_phase stdout ----
+
+thread 'restored_pokey_keeps_the_next_sample_phase' (86690736) panicked at crates/machine-atari-7800/tests/pokey_restore_probe.rs:16:9:
+assertion `left == right` failed: cycle 21
+  left: [0.24523441]
+ right: []
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    restored_pokey_keeps_the_next_sample_phase
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --test pokey_restore_probe`

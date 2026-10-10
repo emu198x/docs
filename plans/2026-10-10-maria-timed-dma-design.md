@@ -55,8 +55,11 @@ probes during implementation. Do not treat this list as already-run coverage.
 5. Clock the NMI stage independently of whether the CPU executes an instruction
    or is waiting for WSYNC. Preserve both assertion and release state. The
    exact shutdown-to-assertion phase is still a research gate: the primary guide
-   states one 7.16-MHz cycle, while the current reference trace yields 17 supplied
-   14.32-MHz ticks after HALT release. Do not choose an arbitrary compromise.
+   states one 7.16-MHz cycle. The isolated DMA reference yielded 17 supplied
+   native ticks after HALT release; the full-clock reference yields 18 on fast
+   accesses and 20 on slow accesses in the measured matrix. Its two-CPU-cycle
+   pulse also differs from the acceptance specification's one-cycle width.
+   See `2026-10-10-maria-native-clock.md`. Do not choose an arbitrary compromise.
    Record the adjudication before locking a production timing expectation.
 6. Preserve the current public scanline helper only if it can drive this same
    pipeline without a second implementation. If that contract cannot be kept,
@@ -119,3 +122,28 @@ lists alone.
 
 A counter-only pulse patch is not proposed as closure: it leaves a confirmed
 wrong-zone interrupt and cannot prove the requested timing behaviour.
+
+## First implementation slice: clock contract
+
+Implemented and validated in source commit `7ffb356b`, intentionally unmerged
+until the full correction is ready. Results and the separate POKEY restore
+finding are in `2026-10-10-maria-native-clock.md`.
+
+Establish native oscillator units before wiring pending DMA stages. In
+`machine-atari-7800/src/lib.rs`, derive existing CPU, RIOT, POKEY, TIA and line
+slots from the single native counter. Preserve this slice's existing raster
+length and fetch behaviour; the staged DMA change will replace those next.
+Expose the regional clock rate and frame budget for runtime metadata to use.
+Correct the runtime's 262/312 budget disagreement with the actual 263/313-line
+machine. Update stepping units and retain its existing wall-time safety cap.
+
+In `runtime-atari-7800/src/profiles.rs`, use the machine's regional oscillator
+rate and frame budget; in `snapshot.rs`, reject v5 and start the approved v6
+branch layout. This branch stays unmerged until the full staged correction is
+validated, so v6 is not released with an intermediate pipeline layout.
+
+Tests: instruction native ticks versus actual CPU cycle advancement; runtime
+host budget versus actual machine frame advancement for both regions; unchanged
+TIA sample stream against a standalone sound core; resumed execution at every
+native phase; v5 rejection before mutation. Run package tests, frontend tests,
+Clippy and formatting. Record red controls before production edits.
