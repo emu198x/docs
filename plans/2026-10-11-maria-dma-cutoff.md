@@ -123,8 +123,8 @@ also recorded in the umbrella primary-source timing evidence note.
 
 ## Next boundary
 
-Keep this commit limited to raster cutoff. Step 3, DMA disable/restart and
-register propagation at legal CPU boundaries, is the next independent gate.
-The current native path gates requests on CTRL, but CTRL delivery and pending
-requests still need qualification. Holey-object termination, native machine
-ownership, physical NMI timing and POKEY remain open; PR #1704 stays draft.
+This commit is limited to raster cutoff. Step 3, DMA disable/restart and
+register propagation at legal CPU boundaries, is covered by the subsequent
+[restart stage](2026-10-11-maria-dma-restart.md). Holey-object termination,
+native machine ownership, physical NMI timing and POKEY remain open;
+PR #1704 stays draft.
