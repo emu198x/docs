@@ -1,0 +1,15 @@
+{
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/README.txt": "a68ec2425d92d98a78f8f00295399985841714aedeafabfd62bd9de94481f1ac",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/lightpen.asm": "9a30004c970e1d0e266aa8316f2d8c24618ec5b32f272461f23afe048823f4f5",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/lightpen.prg": "3915d69df941e881a285261515ddbb8e239e07cd7dbd3a8468d71fc08b445ce1",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/dumps/dump6569.prg": "3cac165bfa7ab11c41f0a9ab7dd7a79e0f9e85452e6adeaf5337bee13ff55525",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/dumps/dump8565.prg": "3603050621c3bcf61f9bba470af30c29cefad9e5bdf99357b6e3ac419914f6d2",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/dumps/dump6567.prg": "1e149a89cad86d51c61daa887f64d74a7f30edca397f12bbf3111acd8b032e92",
+  "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/dumps/dump8562r4.prg": "931670eb1489748b9381bbcb41294c5c9c6a0101db92b23807ca95f4a9a7cf99",
+  "/Users/stevehill/.emu198x/roms/commodore-c64/basic.rom": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d",
+  "/Users/stevehill/.emu198x/roms/commodore-c64/kernal.rom": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721",
+  "/Users/stevehill/.emu198x/roms/commodore-c64/chargen.rom": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420",
+  "../../emulators/c64/vice-3.10/src/viciisc/vicii-lightpen.c": "13df6db43bddfc563a759043335952192d119c6e2aaab029267e2c0af15e2d80",
+  "../../emulators/c64/vice-3.10/src/viciisc/vicii-cycle.c": "561876187fde8bfe8636e64593543aa77a5e0855ebbd9fe56d9da4fa6eb564ba",
+  "/opt/homebrew/bin/x64sc": "4150756993038b8fb87ec40b6837e0c82c050cf0d94d783ddf86f5641d655fbd"
+}
