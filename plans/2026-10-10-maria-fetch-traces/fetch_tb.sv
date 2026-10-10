@@ -26,6 +26,8 @@ module fetch_tb;
  integer height,flag,slow,expected,measured_lines,completed_pulses;
  integer object_mode,width,graphics,last_fetch,trace_reads;
  integer line_graphics,zone_offset,expected_address,hpos_reads;
+ integer trace_clocks;
+ reg last_drive=0,last_released=0,last_noslow=0;
  reg last_halt=1,last_nmi=1;
  maria dut(.AB_in(ab),.AB_out(dma_ab),.d_in(data_in),.write_DB_in(cpu_data),.DB_out(data_out),
  .reset(reset),.clk_sys(clk_sys),.ce(ce),.mclk0(mclk0),.mclk1(mclk1),.pclk0(phi2),.pclk1(phi1),.pclk2(phi2),
@@ -35,6 +37,9 @@ module fetch_tb;
    dut.dma_inst.LONGHDR=0; dut.dma_inst.IND=0; dut.dma_inst.sel5_cnt=0;
    // Clock-generator registers also omitted from the reference's reset.
    dut.old_men=0; dut.men_count=0; dut.pclk=0;
+   // The reference only clears this after DMA release, not at reset.
+   dut.dma_inst.noslow=0;
+   if ($test$plusargs("unknown_clocks")) force dut.sel_slow_clock=1'bx;
    if (!$value$plusargs("height=%d",height)) height=2;
    if (!$value$plusargs("flag=%d",flag)) flag=2;
    if (!$value$plusargs("slow=%d",slow)) slow=0;
@@ -42,6 +47,7 @@ module fetch_tb;
    if (!$value$plusargs("object=%d",object_mode)) object_mode=1;
    if (!$value$plusargs("width=%d",width)) width=1;
    trace_reads=$test$plusargs("trace_reads");
+   trace_clocks=$test$plusargs("trace_clocks");
    graphics=0;last_fetch=-1;line_graphics=0;hpos_reads=0;
    expected=flag==0 ? 0 : (flag==1 ? 1+23/height : 1);
    measured_lines=0; completed_pulses=0;
@@ -73,7 +79,10 @@ module fetch_tb;
      for(sub=0;sub<1;sub=sub+1)begin
        ce=1;
        #5;
+       if(t>256 && (dut.sel_slow_clock===1'bx || dut.slow_clk_latch===1'bx || phi1===1'bx || phi2===1'bx))$fatal(1,"unknown clock selection");
        if(t>256 && drive && !cpu_released) $fatal(1,"CPU/MARIA bus collision");
+       if(trace_clocks && t>14000 && t<18000 && (phi1 || phi2))
+         $display("PHASE tick=%0d phase=%0d halt=%b released=%b drive=%b noslow=%b address=%h",t,phi2?2:1,halt_n,cpu_released,drive,dut.noslow,ab);
        if(t>256 && mclk0)begin
          if(dut.dma_inst.data_en && dut.dma_inst.DPRLLD && data_in!==8'h00)
            $fatal(1,"wrong descriptor low byte: address=%h data=%h",fetched_address,data_in);
@@ -93,6 +102,9 @@ module fetch_tb;
          end
        end
        clk_sys=1;#1;
+       if(trace_clocks && t>14000 && t<18000 && (drive!==last_drive || cpu_released!==last_released || dut.noslow!==last_noslow))
+         $display("BUS tick=%0d row=%0d col=%0d halt=%b released=%b drive=%b noslow=%b address=%h",t,dut.sync_inst.row,dut.sync_inst.col,halt_n,cpu_released,drive,dut.noslow,ab);
+       last_drive=drive;last_released=cpu_released;last_noslow=dut.noslow;
        if(t>256 && (halt_n===1'bx || nmi_n===1'bx || drive===1'bx))$fatal(1,"unknown bus control");
        if(t>256 && halt_n!==last_halt)begin
          $display("HALT tick=%0d sub=%0d row=%0d col=%0d level=%b ab=%h",t,sub,dut.sync_inst.row,dut.sync_inst.col,halt_n,ab);

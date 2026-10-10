@@ -200,6 +200,7 @@ def main() -> None:
     # compile raises above, so an older binary can never supply a passing result.
     for option, expected in [
         ("+old_bus", "wrong descriptor low byte"),
+        ("+unknown_clocks", "unknown clock selection"),
         ("+suppress_nmi", "wrong inventory"),
     ]:
         negative = run(
