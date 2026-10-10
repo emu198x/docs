@@ -28,6 +28,7 @@ module fetch_tb;
  integer line_graphics,zone_offset,expected_address,hpos_reads;
  integer trace_clocks;
  reg last_drive=0,last_released=0,last_noslow=0;
+ reg [15:0] last_trace_address=0;
  reg last_halt=1,last_nmi=1;
  maria dut(.AB_in(ab),.AB_out(dma_ab),.d_in(data_in),.write_DB_in(cpu_data),.DB_out(data_out),
  .reset(reset),.clk_sys(clk_sys),.ce(ce),.mclk0(mclk0),.mclk1(mclk1),.pclk0(phi2),.pclk1(phi1),.pclk2(phi2),
@@ -104,6 +105,9 @@ module fetch_tb;
        clk_sys=1;#1;
        if(trace_clocks && t>14000 && t<18000 && (drive!==last_drive || cpu_released!==last_released || dut.noslow!==last_noslow))
          $display("BUS tick=%0d row=%0d col=%0d halt=%b released=%b drive=%b noslow=%b address=%h",t,dut.sync_inst.row,dut.sync_inst.col,halt_n,cpu_released,drive,dut.noslow,ab);
+       if(trace_clocks && t>14000 && t<18000 && ab!==last_trace_address)
+         $display("ADDRESS tick=%0d row=%0d col=%0d drive=%b released=%b address=%h",t,dut.sync_inst.row,dut.sync_inst.col,drive,cpu_released,ab);
+       last_trace_address=ab;
        last_drive=drive;last_released=cpu_released;last_noslow=dut.noslow;
        if(t>256 && (halt_n===1'bx || nmi_n===1'bx || drive===1'bx))$fatal(1,"unknown bus control");
        if(t>256 && halt_n!==last_halt)begin

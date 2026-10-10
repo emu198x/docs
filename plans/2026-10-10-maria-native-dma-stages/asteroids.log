@@ -1,0 +1,9 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.02s
+     Running tests/cart_boot.rs (target/debug/deps/cart_boot-7a760707a0ca2c75)
+
+running 1 test
+test cart_boots_without_panic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.30s
