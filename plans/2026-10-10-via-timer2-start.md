@@ -36,7 +36,7 @@ reference-only. Primary sources are the MOS preliminary 6522 datasheet
 Local disk space is about 5 GB free. Reuse existing build artifacts and inspect
 actual build failures; do not disable tests or remove unrelated artifacts.
 
-Status: reproducing and auditing; no production changes approved or made.
+Status: approved fix committed and pushed; full C64 catalogue verification awaits the unavailable external media library.
 
 ## Confirmed baseline and concrete design
 
@@ -71,7 +71,7 @@ Files: the VIA chip, `crates/machine-commodore-vic-20/tests/via_timer_probe.rs`
 and its two synthetic fixtures; the six runtime `src/snapshot.rs` files and
 applicable snapshot/version tests. Preserve a mid-load snapshot in chip and
 runtime regressions. No new clock, timing counter, dependency or architecture.
-This schema change is awaiting user approval.
+The user approved this schema change on 2026-10-10.
 
 The reference and datasheet also say T2 continues counting after its one
 interrupt; the current implementation stops it. That is a separate observed
@@ -85,3 +85,62 @@ and a restart reads 4 where 5 was loaded. The existing PB6 pulse-count test
 passes. `chip-red.log.gz` and `failing-regressions.patch.gz` preserve this
 reproduction while schema approval is pending. The archived patch changes
 tests only; the synthetic machine fixtures regenerate from `probe.py`.
+
+
+## Implemented correction and verification
+
+Source commit `0a3c6c5dc5433f303fc967f15d8347427b1ed949` retains the
+interval-mode load phase and leaves PB6 pulse-mode loads immediate. All six
+snapshot envelopes have the approved versions. The five decoders that used
+to parse the entire payload first now reject a leading incompatible version
+before reading chip data. Tests cover the version-only old envelope and
+unchanged runtime state after rejection.
+
+The synthetic guest now agrees with all 136 native VICE observations (eight
+mismatches before). Chip checks cover zero through 65535, restarts, low-latch
+writes before and after consuming the phase, and immediate PB6 edges. The
+runtime test saves both VIC-20 VIAs before the load tick and during counting
+on PAL/NTSC, then checks the counter against elapsed machine cycles and the
+entire state against uninterrupted execution. A deliberate `serde(skip)` on
+the new field makes it fail: `left: 65277`, `right: 65278`. The field was
+restored before the passing checks and commit.
+
+Validation records alongside this plan:
+
+- `suites.log.gz`: 542 ordinary tests pass across the shared VIA, IEC drive
+  board, seven machine consumers and six runtimes; 110 fixture/diagnostic
+  tests ignored by default. The subsequent doctest invocation encountered
+  `error[E0463]: can't find crate for machine_commodore_1541` while other
+  invocations rebuilt the shared artifacts. The separate all-consumer
+  doctest rerun in `doctests.log.gz` completes successfully (no runnable
+  doctest examples).
+- `focused-green.log.gz`: 35 chip/runtime tests pass after adding the
+  first-PB6-edge control and strengthening the low-latch regression.
+- `fixtures.log.gz`: 32 explicitly enabled fixture tests pass under strict
+  fixture mode across the six machines with fixture suites. This includes
+  BBC MOS timing, keyboard, display and tape checks, Atom tape round trips,
+  PET/VIC-20 boot and keyboard checks, 1571 ROM boot and Oric boot/display.
+- `survey.log.gz`: the VIC-20 reference survey and its wrong-frame negative
+  control both pass; the expected pixel counts are unchanged.
+- `drive-roundtrip.log.gz`: the real-ROM 1571 SAVE/LOAD/RUN and both 1541
+  save/read/load/run checks pass in release mode.
+- `clippy.log.gz`: all affected packages and targets pass with warnings
+  denied. Workspace formatting and the doc-link/fixture-guard/ignore-reason
+  checker self-tests pass.
+- `source-identity.json`: the committed files and their SHA-256 identities.
+  The committed synthetic ROM matches `reference.json`, and its 68-byte
+  golden result matches both native model records exactly.
+
+The complete C64 catalogue is **not validated yet**. `catalogue.log.gz`
+records the firmware-only boot and snapshot replay passing, then the run
+stopping because `/Volumes/Data/Library/ROMs/TOSEC/commodore/c64/Games/Arcade/[D64]/Bruce Lee (1984)(Datasoft).zip`
+is missing. `/Volumes/Data` is not mounted. The user has been asked to reconnect
+it or provide the current library path. No reference hashes were changed;
+keep the source PR draft and issue 1677 open until this gate passes.
+
+Run the remaining gate from the source repository, overriding
+`EMU198X_CATALOGUE_MEDIA_ROOT` if the library has moved:
+
+```sh
+EMU198X_CATALOGUE_SYSTEMS=c64 EMU198X_STRICT_FIXTURES=1 cargo test -p emu198x-catalogue --release --test run -- --ignored --nocapture
+```

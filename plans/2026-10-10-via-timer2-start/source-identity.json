@@ -1,0 +1,18 @@
+{
+  "commit": "0a3c6c5dc5433f303fc967f15d8347427b1ed949",
+  "sha256": {
+    "crates/machine-commodore-vic-20/test-data/README.md": "371b12102ad13298bb2348ad884e01f29b61f1c170126048c67d39928397dc36",
+    "crates/machine-commodore-vic-20/test-data/via-timer-start.bin": "1c50ee7f020132d23cae742d99b99ba9c73b9dda49b5ace50d7f6eb76e2548cb",
+    "crates/machine-commodore-vic-20/test-data/via-timer-start.rom": "003f1e79bcc75cf9227a5f0b4fc5887ca6c207c6cb1a49d309b10c9c049f46ef",
+    "crates/machine-commodore-vic-20/tests/via_timer_probe.rs": "7dc25cbaae9bacb278b50a0820d49f6f46806b3a350ce27bad8399212cb14a1a",
+    "crates/mos-via-6522/src/lib.rs": "e003d747bc0bc5e45169048ecf4c368ee649a0babcdf026044a71abf63d79565",
+    "crates/runtime-acorn-atom/src/snapshot.rs": "e317d869745629053ba4a260ea87e7ca4c4cbe3b321506d6156b943078c9edf7",
+    "crates/runtime-acorn-bbc-micro/src/snapshot.rs": "fd37dbf2a0141e1fe01c8fac1355aa5faa6668c80c27db87e050672906881992",
+    "crates/runtime-commodore-c64/src/snapshot.rs": "d41ddd74c006171537b84a226fe1a0f40a80ff235318b2f60e0d1ecda7ecef3c",
+    "crates/runtime-commodore-c64/tests/boot_invariants.rs": "6141fa04f575f1e10478485546abeca5983c30424300b7590b0cc7a5a461434a",
+    "crates/runtime-commodore-c64/tests/snapshot_roundtrip.rs": "53ea786d5a02fc357775af98b514321531c88b8a8352d7c35d75fadd76db1006",
+    "crates/runtime-commodore-pet/src/snapshot.rs": "43d099c4670cf1be278bd600f78e90cfd057ef542c1988da3fd36e82f47193b9",
+    "crates/runtime-commodore-vic-20/src/snapshot.rs": "950f773566b12c40921d32294e993536ca26ad9346b30beed783ad662f5f198e",
+    "crates/runtime-oric-atmos/src/snapshot.rs": "e7a755eb6d41b4f43734cef1ef00a924c55ce2fd0c738765d07dadd2212b5216"
+  }
+}
