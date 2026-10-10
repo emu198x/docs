@@ -1,0 +1,11 @@
+{
+  "source_commit": "080459342bee90b767437a2dd9665a56063f1e3a",
+  "source_tree": "d20953987d3cee922c9f7cf37371686c59904aa0",
+  "files": {
+    "crates/mos-via-6522/src/lib.rs": "1aa695040f5b70ceb486fe38cf218d073e336af15de5c14b640cfd21ccbd143d",
+    "crates/machine-acorn-atom/src/lib.rs": "ae17935f139d5f0dd0e0a73961bc93436c88aa82a9c828c5829fc43c6c038bef",
+    "crates/runtime-acorn-atom/src/snapshot.rs": "16c7ef8ba9133f943adbe935a40987e96017661cda2a69929e98d02f315e6c61"
+  },
+  "catalogue_binary_sha256": "1904eb9aa594d15c3416f6ab112f6161d4b54fd7ba89e08e2c441a59a9fa7268",
+  "pin_probe_binary_sha256": "fcaf8707ad50f2a2c3ee9ff4551cc1e41e3e5c166c6dfb428da5fa9ab69faaae"
+}

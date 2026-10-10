@@ -48,4 +48,45 @@ pulse width or phase.
 The retained probe links a fresh VIA build from clean source commit
 `05de4cf9`. Its exact source/library hashes and compiler command are in
 `identity.json`; `build.log` retains the library build result.
-No production correction has been made for this follow-up yet.
+The correction now uses these existing latches; validation is in progress.
+
+## Waveform and consumer check
+
+The original November 1977 scan was recovered from the Zimmers `6522.zip`
+archive (24 GIF pages). Page 5, Figures 3 and 4, shows an active-low pulse
+lasting one complete Phi2 period. It also distinguishes the sub-cycle
+launch edge of reads and writes. The current core observes whole Phi2
+periods; this correction will verify the period and handshake sequencing
+at that existing observation granularity, without claiming half-cycle pin
+phase accuracy. VICE's immediate pulse callbacks are not a phase oracle.
+
+Add a master-clock regression in `crates/machine-acorn-atom/src/lib.rs`:
+a synthetic CPU program writes and reads normal/alternate ORA addresses;
+record every CA2 sample and the Centronics bytes. Existing Atom writes
+already reach the printer with one sampled low period. The read correction
+must use the same existing pulse latch and deliver one additional strobe,
+while alternate accesses deliver none. Chip tests separately cover both
+CA1/CB1 polarities and edge-delivery paths. No API or save-state field is
+added or changed by this bounded correction.
+
+## Regression evidence
+
+Before correction, the chip checks fail with `normal access 1 must assert
+CA2` and `access must assert handshake: B=false, rising=false,
+polled=false, access=0`. The master-clock printer guest emits `[72, 74]`
+instead of `[72, 72, 74]`, proving its normal ORA read loses a real strobe.
+The Port B pulse-read control already passes and remains a control.
+
+After correction, all focused chip/machine checks pass and the retained
+public-pin probe improves from 12/18 mismatches to 0/18. The Atom test
+observes exactly three isolated low clocks on normal port accesses and
+three Centronics bytes. Alternate accesses add no strobe. The snapshot
+regression in `crates/runtime-acorn-atom/src/snapshot.rs` saves at 32
+instruction boundaries across pulse and handshake mode and checks future
+printer bytes and full state after each continued instruction. It passes.
+All affected-target Clippy checks pass with warnings denied.
+
+The 554 ordinary consumer tests and all doctests pass on source commit
+`08045934`. Real-firmware checks and the full C64 catalogue remain merge
+gates. Expected catalogue hashes will not be changed to make
+a discrepancy pass. No public API, data field or snapshot version changed.
