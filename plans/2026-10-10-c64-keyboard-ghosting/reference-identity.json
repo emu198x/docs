@@ -1,0 +1,10 @@
+{
+  "cases": 20736,
+  "vice_source_sha256": "d09183226bb6a63aee01f0847ce81fe3843d043adb33ea4fef651ad5d0e428c0",
+  "extracted_functions_sha256": "381885140275f58a3157d0bb988a320950985ae60a70b1ab3a5dde42d7e41d31",
+  "harness_sha256": "7bc84dd87b85071167a9b54f7f453d4b1b1a0411bc87aff1517a05d6197450af",
+  "fixture_sha256": "842947a9f51a781f2331251173e8e1ad6a2e9797e654bb7bcb61ed3e944871e0",
+  "inputs_sha256": "0a82aade8d8d0b43f2850ee41734cda2dcb1a32cdd4e3006708e81dd4d8ab19a",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "scope": "Ordinary keys, no SHIFT LOCK; no timer outputs; digital pins and VICE contention rules, not an analogue simulation."
+}

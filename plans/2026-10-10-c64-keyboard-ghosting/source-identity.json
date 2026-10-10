@@ -1,0 +1,9 @@
+{
+  "emulator_revision": "dab2ee70169d960b55d129757de5cc6e9f836c47",
+  "baseline_revision": "75761b0006a2c0e812912234cfdbd6d6ea803ed5",
+  "sha256": {
+    "crates/machine-commodore-c64/src/keyboard.rs": "4e3d22c26311f2e86b98222c906c2a6bf3240c069f1159a44e4ea8e92c002ec1",
+    "crates/machine-commodore-c64/src/machine.rs": "2d194d3b6089a1e9ba437bd50434d2dbdcde24b986942ada3c30b8d7896f89b8",
+    "crates/machine-commodore-c64/test-data/vice-matrix-2x2.bin": "842947a9f51a781f2331251173e8e1ad6a2e9797e654bb7bcb61ed3e944871e0"
+  }
+}
