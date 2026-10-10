@@ -1,0 +1,24 @@
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.57s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 1 test
+test tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase ... FAILED
+
+failures:
+
+---- tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase stdout ----
+
+thread 'tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase' (86863607) panicked at crates/machine-atari-7800/src/lib.rs:552:21:
+assertion `left == right` failed: Ntsc address 0000
+  left: 56
+ right: 60
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 25 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
