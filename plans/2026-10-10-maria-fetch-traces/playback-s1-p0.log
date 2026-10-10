@@ -1,0 +1,71 @@
+SETUP t=256 ctrl=40 zp=1800 row=0 col=112 mclk=10 phi=00 pclk=0 men=0 old=1 div=0 toggle=0
+PIXEL tick=13838 row=15 col=93 yc=02
+PIXEL tick=14478 row=15 col=413 yc=00
+HALT tick=14564 sub=0 row=16 col=2 level=0 ab=0280
+HALT tick=14590 sub=0 row=16 col=15 level=1 ab=1802
+PIXEL tick=14746 row=16 col=93 yc=02
+PIXEL tick=15386 row=16 col=413 yc=00
+HALT tick=15441 sub=0 row=16 col=441 level=0 ab=0280
+HALT tick=15506 sub=0 row=17 col=19 level=1 ab=1c07
+PIXEL tick=15654 row=17 col=93 yc=02
+PIXEL tick=16294 row=17 col=413 yc=00
+HALT tick=16352 sub=0 row=17 col=442 level=0 ab=0280
+HALT tick=16431 sub=0 row=18 col=28 level=1 ab=1805
+NMI tick=16450 sub=0 row=18 col=37 level=0 release_delay=19
+NMI tick=16474 sub=0 row=18 col=49 level=1 release_delay=43
+WIDTH 24
+PIXEL tick=16562 row=18 col=93 yc=4e
+PIXEL tick=16594 row=18 col=109 yc=02
+PIXEL tick=17202 row=18 col=413 yc=00
+HALT tick=17257 sub=0 row=18 col=441 level=0 ab=0280
+HALT tick=17322 sub=0 row=19 col=19 level=1 ab=1c07
+PIXEL tick=17470 row=19 col=93 yc=4e
+PIXEL tick=17502 row=19 col=109 yc=02
+PIXEL tick=18110 row=19 col=413 yc=00
+HALT tick=18168 sub=0 row=19 col=442 level=0 ab=0280
+HALT tick=18247 sub=0 row=20 col=28 level=1 ab=1808
+PIXEL tick=18378 row=20 col=93 yc=4e
+PIXEL tick=18410 row=20 col=109 yc=02
+PIXEL tick=19018 row=20 col=413 yc=00
+HALT tick=19073 sub=0 row=20 col=441 level=0 ab=0280
+HALT tick=19138 sub=0 row=21 col=19 level=1 ab=1c07
+HALT tick=19984 sub=0 row=21 col=442 level=0 ab=0280
+HALT tick=20063 sub=0 row=22 col=28 level=1 ab=180b
+HALT tick=20889 sub=0 row=22 col=441 level=0 ab=0280
+HALT tick=20954 sub=0 row=23 col=19 level=1 ab=1c07
+HALT tick=21800 sub=0 row=23 col=442 level=0 ab=0280
+HALT tick=21879 sub=0 row=24 col=28 level=1 ab=180e
+HALT tick=22705 sub=0 row=24 col=441 level=0 ab=0280
+HALT tick=22770 sub=0 row=25 col=19 level=1 ab=1c07
+HALT tick=23616 sub=0 row=25 col=442 level=0 ab=0280
+HALT tick=23695 sub=0 row=26 col=28 level=1 ab=1811
+HALT tick=24521 sub=0 row=26 col=441 level=0 ab=0280
+HALT tick=24586 sub=0 row=27 col=19 level=1 ab=1c07
+HALT tick=25432 sub=0 row=27 col=442 level=0 ab=0280
+HALT tick=25511 sub=0 row=28 col=28 level=1 ab=1814
+HALT tick=26337 sub=0 row=28 col=441 level=0 ab=0280
+HALT tick=26402 sub=0 row=29 col=19 level=1 ab=1c07
+HALT tick=27248 sub=0 row=29 col=442 level=0 ab=0280
+HALT tick=27327 sub=0 row=30 col=28 level=1 ab=1817
+HALT tick=28153 sub=0 row=30 col=441 level=0 ab=0280
+HALT tick=28218 sub=0 row=31 col=19 level=1 ab=1c07
+HALT tick=29064 sub=0 row=31 col=442 level=0 ab=0280
+HALT tick=29143 sub=0 row=32 col=28 level=1 ab=181a
+HALT tick=29969 sub=0 row=32 col=441 level=0 ab=0280
+HALT tick=30034 sub=0 row=33 col=19 level=1 ab=1c07
+HALT tick=30880 sub=0 row=33 col=442 level=0 ab=0280
+HALT tick=30959 sub=0 row=34 col=28 level=1 ab=181d
+HALT tick=31785 sub=0 row=34 col=441 level=0 ab=0280
+HALT tick=31850 sub=0 row=35 col=19 level=1 ab=1c07
+HALT tick=32696 sub=0 row=35 col=442 level=0 ab=0280
+HALT tick=32775 sub=0 row=36 col=28 level=1 ab=1820
+HALT tick=33601 sub=0 row=36 col=441 level=0 ab=0280
+HALT tick=33666 sub=0 row=37 col=19 level=1 ab=1c07
+HALT tick=34512 sub=0 row=37 col=442 level=0 ab=0280
+HALT tick=34591 sub=0 row=38 col=28 level=1 ab=1823
+HALT tick=35417 sub=0 row=38 col=441 level=0 ab=0280
+HALT tick=35482 sub=0 row=39 col=19 level=1 ab=1c07
+RESULT height=2 flag=2 slow=1 pal=0 starts=24 releases=24 edges=1
+FETCH_RESULT object=1 width=2 graphics=46
+PLAYBACK_RESULT checked=7680 graphics=352
+/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-fetch-traces/playback_tb.sv:145: $finish called at 363200 (1s)

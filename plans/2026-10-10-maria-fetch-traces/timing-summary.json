@@ -1,0 +1,22 @@
+{
+  "0": {
+    "assertion_delays_native": {
+      "15": 736,
+      "17": 184,
+      "18": 680
+    },
+    "pulse_widths_native": {
+      "16": 1600
+    }
+  },
+  "1": {
+    "assertion_delays_native": {
+      "17": 184,
+      "19": 736,
+      "20": 680
+    },
+    "pulse_widths_native": {
+      "24": 1600
+    }
+  }
+}
