@@ -1,0 +1,2 @@
+FATAL: /Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-clock-handoff/clock_tb.sv:43: unknown clock selection
+       Time: 2565  Scope: clock_tb

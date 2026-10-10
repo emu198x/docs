@@ -39,6 +39,9 @@ module playback_tb;
    dut.dma_inst.LONGHDR=0; dut.dma_inst.IND=0; dut.dma_inst.sel5_cnt=0;
    // Clock-generator registers also omitted from the reference's reset.
    dut.old_men=0; dut.men_count=0; dut.pclk=0;
+   // The reference only clears this after DMA release, not at reset.
+   dut.dma_inst.noslow=0;
+   if ($test$plusargs("unknown_clocks")) force dut.sel_slow_clock=1'bx;
    if (!$value$plusargs("height=%d",height)) height=2;
    if (!$value$plusargs("flag=%d",flag)) flag=2;
    if (!$value$plusargs("slow=%d",slow)) slow=0;
@@ -79,6 +82,7 @@ module playback_tb;
      for(sub=0;sub<1;sub=sub+1)begin
        ce=1;
        #5;
+       if(t>256 && (dut.sel_slow_clock===1'bx || dut.slow_clk_latch===1'bx || phi1===1'bx || phi2===1'bx))$fatal(1,"unknown clock selection");
        if(t>256 && drive && !cpu_released) $fatal(1,"CPU/MARIA bus collision");
        if(t>256 && mclk0)begin
          if(dut.dma_inst.data_en && dut.dma_inst.DPRLLD && data_in!==8'h00)
