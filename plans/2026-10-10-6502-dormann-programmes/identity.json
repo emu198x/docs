@@ -1,0 +1,44 @@
+{
+  "source_base": "1387dd925ffbba6f0b6b87e5a418eced4dd4b38e",
+  "fixtures": [
+    {
+      "name": "6502_decimal_test.a65",
+      "bytes": 9186,
+      "sha256": "6297bb2190f4c635b0a59724ca3471a08d64837aebcabb0b13b5bd011c39fd71"
+    },
+    {
+      "name": "6502_decimal_test.bin",
+      "bytes": 258,
+      "sha256": "03798ab778456cc350044fdbe28b4078278648892712b994cdbdda09018674e7"
+    },
+    {
+      "name": "6502_decimal_test.lst",
+      "bytes": 18901,
+      "sha256": "439d0826a8882e900325cfc8b30b848991396cfc61a86104d665e1edf62e4a88"
+    },
+    {
+      "name": "6502_interrupt_test.a65",
+      "bytes": 30987,
+      "sha256": "441f93ccc2d39b02a8556f30e1e8727e869da42ff486ea1cd6475e5f22c3c15a"
+    },
+    {
+      "name": "6502_interrupt_test.bin",
+      "bytes": 65536,
+      "sha256": "986cfecf0f36a398235b5e936b4ceabef4eccf3d447d5bae3fc2a08c12b5b666"
+    },
+    {
+      "name": "6502_interrupt_test.bin.gz",
+      "bytes": 580,
+      "sha256": "40e457dbe2035c31bcfbcc48abc4d6db661a79e51e1fcc61e7f77298d13d6b0a"
+    },
+    {
+      "name": "6502_interrupt_test.lst",
+      "bytes": 73549,
+      "sha256": "77f9625886bccd14c563bdadf98aa9d2d3d075e3c24efbfaef4baabde0dd5f9d"
+    }
+  ],
+  "source_tested_commit": "ccb953774b96a47cc9897264bec49cea6cb40d00",
+  "source_submitted_commit": "cf594222f73c60d5a5e5ec49ee09a4aedd1f04d5",
+  "source_submitted_tree": "1d42a75f4346ef0a91c10cdc0dbb2fed8764e712",
+  "rebase_validation": "Affected CPU crate, staging script and validation report unchanged by rebase onto AY port-B merge 3c29872a; git diff --exit-code passed."
+}

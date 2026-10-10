@@ -1,0 +1,22 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `release` profile [optimized] target(s) in 4.34s
+     Running tests/dormann_programmes.rs (target/release/deps/dormann_programmes-4d712046b44db9ae)
+
+running 1 test
+delay=0: Err("trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=1: Err("trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=2: Err("trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=3: Err("trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=4: Err("trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=5: Ok(Activity { cycles: 3016, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 11, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 })
+delay=6: Err("trapped at $0834 with Activity { cycles: 197, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 1, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=7: Err("trapped at $0834 with Activity { cycles: 197, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 1, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=8: Err("trapped at $0834 with Activity { cycles: 197, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 1, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=9: Err("trapped at $0834 with Activity { cycles: 197, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 1, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=10: Err("trapped at $0834 with Activity { cycles: 78, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=11: Err("trapped at $0834 with Activity { cycles: 78, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+delay=12: Err("trapped at $0834 with Activity { cycles: 78, irq_assertions: 1, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+test feedback_delay_sweep ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 7 filtered out; finished in 0.00s
+

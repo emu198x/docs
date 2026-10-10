@@ -1,0 +1,3 @@
+corrupted payload rejected: negative control: SHA-256 e2247e2d0a18ae64dddde4817edc2667df1a8edc117b95edbe27cd640cd7d64f, expected 986cfecf0f36a398235b5e936b4ceabef4eccf3d447d5bae3fc2a08c12b5b666
+existing different fixture rejected: refusing to overwrite different fixture: /private/tmp/dormann-programmes/immutable-control/6502_decimal_test.bin
+destination unchanged; no partial staging before validation

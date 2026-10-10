@@ -1,0 +1,10 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `release` profile [optimized] target(s) in 2.77s
+     Running tests/dormann_tests.rs (target/release/deps/dormann_tests-066cb3d0186f24fd)
+
+running 1 test
+Dormann 6502 functional test passed in 96241367 cycles at success PC $3469
+test run_functional_test ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.87s
+
