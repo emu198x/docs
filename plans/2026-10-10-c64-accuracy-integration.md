@@ -24,8 +24,7 @@ the standing maintainer decision in `test-data/accuracy-corpora.md`.
 Starting main: `f081faa8`. Original commits: `0a3c6c5d`, `145dc6cf`,
 `6de2aba7`, `d75aa434`. The archive's SHA-256 is
 `130a3097ce6216c6857b316642c75efcba6ebdda42c5605ccae08631b68b1521`.
-All 17 internal checksums pass. This clears the missing-media prerequisite;
-it does not yet prove the catalogue passes.
+All 17 internal checksums pass.
 
 ## Combined-tree checks
 
@@ -42,6 +41,9 @@ The [evidence directory](2026-10-10-c64-accuracy-integration/) retains these
 logs, exact commands, the source tree identity and the mirrored files'
 checksums. It contains no private firmware or media payloads.
 
-The complete 13-entry catalogue is running. A firmware boot and selected
-game passes are not sufficient to clear the gate: require every manifest
-entry's unchanged frame/audio hashes and a `SNAP-PASS` before merging.
+The complete 13-entry catalogue passes in 1,956.02 seconds (exit 0). Every
+manifest ID has exactly one `PASS` and `SNAP-PASS`, including the 1571,
+1581 and raw GCR disk guests. All expected frame/audio hashes are unchanged.
+`catalogue-result.json` records the checked IDs and log identity;
+`catalogue.log.gz` retains the terminal output. Source PR 1695 CI also
+passes on the same head.
