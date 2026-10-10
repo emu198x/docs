@@ -1,0 +1,25 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `release` profile [optimized] target(s) in 3.12s
+     Running tests/dormann_programmes.rs (target/release/deps/dormann_programmes-4d712046b44db9ae)
+
+running 8 tests
+test decimal_programme ... decimal programme passed: Activity { cycles: 53953825, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, nmi_vectors_with_break: 0, decimal_adds: 131072, decimal_subtracts: 131072 }
+ok
+test decimal_programme_rejects_binary_only_cpu ... binary-only CPU rejected: Err(RunError { reason: "decimal result ERROR=1", pc: 587, activity: Activity { cycles: 3824, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, nmi_vectors_with_break: 0, decimal_adds: 10, decimal_subtracts: 9 } })
+ok
+test decimal_success_requires_the_operand_sweep ... ok
+test immediate_feedback_preserves_nmi_hijacked_brk_status ... feedback delay 0: documented NMOS collision: trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, nmi_vectors_with_break: 1, decimal_adds: 0, decimal_subtracts: 0 }
+feedback delay 1: documented NMOS collision: trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, nmi_vectors_with_break: 1, decimal_adds: 0, decimal_subtracts: 0 }
+feedback delay 2: documented NMOS collision: trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, nmi_vectors_with_break: 1, decimal_adds: 0, decimal_subtracts: 0 }
+feedback delay 3: documented NMOS collision: trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, nmi_vectors_with_break: 1, decimal_adds: 0, decimal_subtracts: 0 }
+feedback delay 4: documented NMOS collision: trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, nmi_vectors_with_break: 1, decimal_adds: 0, decimal_subtracts: 0 }
+ok
+test interrupt_programme_rejects_disconnected_feedback ... disconnected feedback rejected: Err(RunError { reason: "trapped", pc: 2100, activity: Activity { cycles: 78, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, nmi_vectors_with_break: 0, decimal_adds: 0, decimal_subtracts: 0 } })
+ok
+test interrupt_programme_with_five_cycle_feedback ... interrupt programme passed: Activity { cycles: 3016, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 11, nmi_vectors: 6, nmi_vectors_with_break: 0, decimal_adds: 0, decimal_subtracts: 0 }
+ok
+test interrupt_success_requires_interrupt_activity ... ok
+test unfinished_programme_exhausts_the_budget ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.59s
+

@@ -1,0 +1,19 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `release` profile [optimized] target(s) in 4.47s
+     Running tests/dormann_programmes.rs (target/release/deps/dormann_programmes-4d712046b44db9ae)
+
+running 1 test
+
+thread 'immediate_feedback_preserves_nmi_hijacked_brk_status' (86326745) panicked at crates/emu198x-mos-6502/tests/dormann_programmes.rs:281:14:
+overlapping NMI must preserve BRK's already-pushed B bit: Activity { cycles: 3016, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 11, nmi_vectors: 6, nmi_vectors_with_break: 0, decimal_adds: 0, decimal_subtracts: 0 }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test immediate_feedback_preserves_nmi_hijacked_brk_status ... FAILED
+
+failures:
+
+failures:
+    immediate_feedback_preserves_nmi_hijacked_brk_status
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 7 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p emu198x-mos-6502 --test dormann_programmes`

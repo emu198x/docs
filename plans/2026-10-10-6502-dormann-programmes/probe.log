@@ -1,0 +1,28 @@
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Finished `release` profile [optimized] target(s) in 2.93s
+     Running tests/dormann_programmes.rs (target/release/deps/dormann_programmes-4d712046b44db9ae)
+
+running 7 tests
+disconnected feedback rejected: Err("trapped at $0834 with Activity { cycles: 78, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 0, decimal_subtracts: 0 }")
+test interrupt_success_requires_interrupt_activity ... ok
+binary-only CPU rejected: Err("decimal result ERROR=1 with Activity { cycles: 3824, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 10, decimal_subtracts: 9 }")
+
+thread 'interrupt_programme' (86250835) panicked at crates/emu198x-mos-6502/tests/dormann_programmes.rs:152:6:
+Dormann interrupt programme must reach its success loop: "trapped at $0B5C with Activity { cycles: 2721, irq_assertions: 6, nmi_assertions: 6, irq_vectors: 9, nmi_vectors: 6, decimal_adds: 0, decimal_subtracts: 0 }"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test decimal_success_requires_the_operand_sweep ... ok
+test unfinished_programme_exhausts_the_budget ... ok
+test interrupt_programme_rejects_disconnected_feedback ... ok
+test decimal_programme_rejects_binary_only_cpu ... ok
+test interrupt_programme ... FAILED
+decimal programme passed: Activity { cycles: 53953825, irq_assertions: 0, nmi_assertions: 0, irq_vectors: 0, nmi_vectors: 0, decimal_adds: 131072, decimal_subtracts: 131072 }
+test decimal_programme ... ok
+
+failures:
+
+failures:
+    interrupt_programme
+
+test result: FAILED. 6 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+
+error: test failed, to rerun pass `-p emu198x-mos-6502 --test dormann_programmes`
