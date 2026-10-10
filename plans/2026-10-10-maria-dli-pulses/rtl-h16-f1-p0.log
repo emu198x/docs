@@ -1,0 +1,4 @@
+HALT t=1 line=0 dot=1 level=1 zone=0003 offset=0 dli=0
+RESULT height=16 flag=1 phase=0 edges=0 expected=3
+FATAL: /private/tmp/maria-dli-pulses/dma_tb.sv:70: incomplete DMA: starts=1 releases=0
+       Time: 1459200  Scope: dma_tb

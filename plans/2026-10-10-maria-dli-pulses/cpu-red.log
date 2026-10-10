@@ -1,0 +1,45 @@
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.11s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 1 test
+region=Ntsc height=1 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Ntsc height=1 mode=1 requests=240 edges=1 handlers=1 first_edge=Some((3876, 1, 5))
+region=Ntsc height=1 mode=2 requests=120 edges=120 handlers=120 first_edge=Some((3876, 1, 5))
+region=Ntsc height=2 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Ntsc height=2 mode=1 requests=120 edges=120 handlers=120 first_edge=Some((4104, 1, 2))
+region=Ntsc height=2 mode=2 requests=60 edges=60 handlers=60 first_edge=Some((4104, 1, 2))
+region=Ntsc height=3 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Ntsc height=3 mode=1 requests=80 edges=80 handlers=80 first_edge=Some((4332, 1, 2))
+region=Ntsc height=3 mode=2 requests=40 edges=40 handlers=40 first_edge=Some((4332, 1, 2))
+region=Ntsc height=16 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Ntsc height=16 mode=1 requests=15 edges=15 handlers=15 first_edge=Some((7296, 1, 2))
+region=Ntsc height=16 mode=2 requests=8 edges=8 handlers=8 first_edge=Some((7296, 1, 2))
+region=Pal height=1 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Pal height=1 mode=1 requests=240 edges=1 handlers=1 first_edge=Some((3876, 1, 5))
+region=Pal height=1 mode=2 requests=120 edges=120 handlers=120 first_edge=Some((3876, 1, 5))
+region=Pal height=2 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Pal height=2 mode=1 requests=120 edges=120 handlers=120 first_edge=Some((4104, 1, 2))
+region=Pal height=2 mode=2 requests=60 edges=60 handlers=60 first_edge=Some((4104, 1, 2))
+region=Pal height=3 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Pal height=3 mode=1 requests=80 edges=80 handlers=80 first_edge=Some((4332, 1, 2))
+region=Pal height=3 mode=2 requests=40 edges=40 handlers=40 first_edge=Some((4332, 1, 2))
+region=Pal height=16 mode=0 requests=0 edges=0 handlers=0 first_edge=None
+region=Pal height=16 mode=1 requests=15 edges=15 handlers=15 first_edge=Some((7296, 1, 2))
+region=Pal height=16 mode=2 requests=8 edges=8 handlers=8 first_edge=Some((7296, 1, 2))
+
+thread 'dli_probe::consecutive_zone_interrupts_reach_the_cpu' (86495818) panicked at crates/machine-atari-7800/src/lib.rs:674:9:
+assertion `left == right` failed: every chip DLI request must reach the CPU
+  left: 2
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test dli_probe::consecutive_zone_interrupts_reach_the_cpu ... FAILED
+
+failures:
+
+failures:
+    dli_probe::consecutive_zone_interrupts_reach_the_cpu
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 21 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
