@@ -1,0 +1,40 @@
+   Compiling runtime-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.04s
+     Running tests/clock_contract.rs (target/debug/deps/clock_contract-7ac9b44d639780e8)
+
+running 3 tests
+test profile_rate_uses_the_regional_native_oscillator ... FAILED
+test host_budget_matches_live_machine_frames ... FAILED
+test version_five_is_rejected_without_mutating_live_state ... FAILED
+
+failures:
+
+---- profile_rate_uses_the_regional_native_oscillator stdout ----
+
+thread 'profile_rate_uses_the_regional_native_oscillator' (86660329) panicked at crates/runtime-atari-7800/tests/clock_contract.rs:42:9:
+assertion `left == right` failed: A7800Ntsc
+  left: 3579545
+ right: 14318180
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- host_budget_matches_live_machine_frames stdout ----
+
+thread 'host_budget_matches_live_machine_frames' (86660328) panicked at crates/runtime-atari-7800/tests/clock_contract.rs:31:13:
+assertion `left == right` failed: A7800Ntsc
+  left: 59964
+ right: 59736
+
+---- version_five_is_rejected_without_mutating_live_state stdout ----
+
+thread 'version_five_is_rejected_without_mutating_live_state' (86660330) panicked at crates/runtime-atari-7800/tests/clock_contract.rs:55:39:
+colour-clock saves must be rejected: ()
+
+
+failures:
+    host_budget_matches_live_machine_frames
+    profile_rate_uses_the_regional_native_oscillator
+    version_five_is_rejected_without_mutating_live_state
+
+test result: FAILED. 0 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+error: test failed, to rerun pass `-p runtime-atari-7800 --test clock_contract`

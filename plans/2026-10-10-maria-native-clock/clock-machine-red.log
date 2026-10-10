@@ -1,0 +1,25 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.58s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 1 test
+test tests::instruction_ticks_are_native_oscillator_periods ... FAILED
+
+failures:
+
+---- tests::instruction_ticks_are_native_oscillator_periods stdout ----
+
+thread 'tests::instruction_ticks_are_native_oscillator_periods' (86659928) panicked at crates/machine-atari-7800/src/lib.rs:531:17:
+assertion `left == right` failed: Ntsc
+  left: 6
+ right: 24
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::instruction_ticks_are_native_oscillator_periods
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 22 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
