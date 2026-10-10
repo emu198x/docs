@@ -1,0 +1,14 @@
+{
+  "emulator_revision": "aff1a48477d809aeb10e6e31efe1f3f9835929f9",
+  "baseline_revision": "6d55ce6ffa59754ba7279d689e8a1f8a6ad774a7",
+  "sha256": {
+    "crates/machine-commodore-c64/src/keyboard.rs": "cbc622a6f4aefdbb4e6fdbbdc17b912df242f8c36e39911e07226936058eca4e",
+    "crates/machine-commodore-c64/src/machine.rs": "1e329b09fd68cba3b0fd37d7e26735ba3dba2e49ba197b49429450cee30a6b25",
+    "crates/machine-commodore-c64/test-data/README.md": "871ddb547ca0c29cd8e356ae033635aed7c802fbae6eed772c29f5c0145bba68",
+    "crates/machine-commodore-c64/test-data/vice-shift-lock.bin": "18ebbbac5069ce38e3a98b7b666e80c9b8605f4dae73f9dec1a639fb7b924649",
+    "crates/runtime-commodore-c64/src/input.rs": "beb98804807eb16d90a3b547e2584ffab35eb7aed13ba1dc0997af87b8e17e11",
+    "crates/runtime-commodore-c64/src/snapshot.rs": "de9211a061ae1fd0a270501cd721608c1b6e90bd5a9099040bdf43880228695f",
+    "crates/runtime-commodore-c64/tests/boot_invariants.rs": "423cd48189af3ea257dbbafbd4d43adcc43e6044f2784138355d6423d6a0411f",
+    "crates/runtime-commodore-c64/tests/snapshot_roundtrip.rs": "798936aeea1be00e1f9d815622577bf373cbb0daff8167a7bf55c1f20bb61a1f"
+  }
+}
