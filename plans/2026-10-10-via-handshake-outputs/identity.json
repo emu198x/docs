@@ -1,0 +1,19 @@
+{
+  "source_commit": "05de4cf9f59537e52e3527eae11e61c0e44b5f33",
+  "source_file_sha256": "2f7d3303e08d7f3989a54bafaf348c50e0cfea08e6bce067c11c56b9e61a6c38",
+  "library": "/Users/stevehill/Projects/198x/Emu198x/emu198x/target/debug/libmos_via_6522.rlib",
+  "library_sha256": "b64e6e5f52c565df5791eb06f51c89e4558ca41cc2603dc1e70ce9eb25b6c4a4",
+  "features": [],
+  "probe_exit_code": 1,
+  "compile_command": [
+    "rustc",
+    "--edition=2024",
+    "/private/tmp/via-handshake-probe/probe.rs",
+    "--extern",
+    "mos_via_6522=/Users/stevehill/Projects/198x/Emu198x/emu198x/target/debug/libmos_via_6522.rlib",
+    "-L",
+    "dependency=/Users/stevehill/Projects/198x/Emu198x/emu198x/target/debug/deps",
+    "-o",
+    "/private/tmp/via-handshake-probe/probe"
+  ]
+}

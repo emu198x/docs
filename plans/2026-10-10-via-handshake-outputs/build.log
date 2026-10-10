@@ -1,0 +1,3 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/iec-via-alternate/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/7d652175a5f78928: Operation not permitted (os error 1)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/iec-via-alternate/crates/mos-via-6522)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.98s
