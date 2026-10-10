@@ -97,8 +97,11 @@ per byte, which the measured matrix confirms. DMA scheduling and abort costs
 remain separate work under #196. The line comparator also advances #431,
 without claiming a complete guest-frame comparator against MAME/ProSystem.
 Keep #194 open until the source PR merges; PR #1704 remains draft for machine
-ownership wiring, cutoff/restart, register propagation, physical NMI timing
+ownership wiring, restart, register propagation, physical NMI timing
 and POKEY clock/sampling separation.
+
+The subsequent [cutoff stage](2026-10-11-maria-dma-cutoff.md) qualifies bounded
+line shutdown and both banks across 896 overrun/near-terminator cases.
 
 Fixture SHA-256 values:
 
