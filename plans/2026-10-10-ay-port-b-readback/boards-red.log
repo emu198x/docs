@@ -1,0 +1,42 @@
+    Finished `release` profile [optimized] target(s) in 0.21s
+     Running unittests src/lib.rs (target/release/deps/machine_mattel_aquarius-952c3512944f44d5)
+
+running 1 test
+
+thread 'tests::controller_contacts_remain_visible_with_ay_ports_in_output_mode' (85986148) panicked at crates/machine-mattel-aquarius/src/lib.rs:1147:13:
+assertion `left == right` failed: up + fire grounds pins
+  left: 255
+ right: 187
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::controller_contacts_remain_visible_with_ay_ports_in_output_mode ... FAILED
+
+failures:
+
+failures:
+    tests::controller_contacts_remain_visible_with_ay_ports_in_output_mode
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 21 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-mattel-aquarius --lib`
+     Running unittests src/lib.rs (target/release/deps/machine_tatung_einstein-b0133e5cf3278ea7)
+
+running 1 test
+
+thread 'tests::keyboard_contacts_remain_visible_with_ay_port_b_in_output_mode' (85986152) panicked at crates/machine-tatung-einstein/src/lib.rs:1026:9:
+assertion `left == right` failed: pressed keys ground columns
+  left: 255
+ right: 171
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::keyboard_contacts_remain_visible_with_ay_port_b_in_output_mode ... FAILED
+
+failures:
+
+failures:
+    tests::keyboard_contacts_remain_visible_with_ay_port_b_in_output_mode
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 16 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-tatung-einstein --lib`
+error: 2 targets failed:
+    `-p machine-mattel-aquarius --lib`
+    `-p machine-tatung-einstein --lib`

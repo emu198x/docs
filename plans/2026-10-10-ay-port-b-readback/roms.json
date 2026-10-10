@@ -1,0 +1,14 @@
+{
+  "/Users/stevehill/.emu198x/roms/mattel-aquarius/aquarius.rom": {
+    "bytes": 8192,
+    "sha256": "277b2655a0599861302e6ec86b027c65a29e284fe7aadc296c4570498ab0e249"
+  },
+  "/Users/stevehill/.emu198x/roms/mattel-aquarius/aquarius-char.rom": {
+    "bytes": 2048,
+    "sha256": "0bf4b08b4514f2c437d6f00e13499b6dab0e771c937ea2675df3ec52c8d9f29e"
+  },
+  "/Users/stevehill/.emu198x/roms/tatung-einstein/einstein.rom": {
+    "bytes": 8192,
+    "sha256": "401d0e0bf6f64ba82e68137525749171fbcf9bd9055a49e5ac9a47941a6a0ae1"
+  }
+}

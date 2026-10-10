@@ -1,0 +1,30 @@
+{
+  "source_commit": "e7d4241f61e7f477f429056d82f77d2573ba2ab3",
+  "source_tree": "51d1bb36dcdc33daf8a2862c5a3e0e6cbe288aeb",
+  "baseline_commit": "44bdba6c9f97dcf1f24629b4c3b095722c83fc1b",
+  "artifacts": {
+    "red.log": "95a4994bcd53aab8159eb59787171ef49cc0c55f6ffceee1c45e1d58af130ec5",
+    "boards-red.log": "fb85a8325700bd7ddc8fdf23e9740f8e2c1404fb5d2cd7d51dbae4293276b21d",
+    "green.log": "5e0b1ffe606d9b66086d4d7751b59b146da47ddf37ea2c7ae73f7dcd1e4488b5",
+    "aquarius-rom.log": "e7e397464090ec7a1b33b74135895ad628db2725b4697d80a56611fef6041138",
+    "einstein-rom.log": "56143448b3d1a2aeb9e7f8c29e4e23d7a408e140cc596503ba6022d6acbfc154",
+    "clippy.log": "8f6a431a01f114c1716333864cacbbe704301dceb821e95a1568e740da8380c2",
+    "fmt.log": "e2f72b0a093e1a345193713ddb5245cb5024e96badf15f2c08b51f9e875e6100",
+    "fmt-green.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "roms.json": "66d1d7487f2e87580b56c886f4d028b64ba654bdbe3d416497a7cd731be34ce4"
+  },
+  "exit_codes": {
+    "core_red": 101,
+    "boards_red": 101,
+    "affected_suites": 0,
+    "aquarius_rom": 0,
+    "einstein_rom": 0,
+    "clippy": 0,
+    "initial_format": 1,
+    "final_format": 0
+  },
+  "core_sweep_cases": 131072,
+  "submitted_commit": "cae1522bf80bb3626b222099b7bc407c0aa95ee6",
+  "submitted_tree": "51d1bb36dcdc33daf8a2862c5a3e0e6cbe288aeb",
+  "source_pr": "https://github.com/emu198x/emu198x/pull/1700"
+}

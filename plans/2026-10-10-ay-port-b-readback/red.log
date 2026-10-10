@@ -1,0 +1,43 @@
+   Compiling common-z80-machine v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/common-z80-machine)
+   Compiling emu198x-gi-ay-3-8910 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-gi-ay-3-8910)
+   Compiling ti-tms9918 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/ti-tms9918)
+   Compiling machine-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-mattel-aquarius)
+   Compiling machine-tatung-einstein v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-tatung-einstein)
+    Finished `release` profile [optimized] target(s) in 4.83s
+     Running unittests src/lib.rs (target/release/deps/emu198x_gi_ay_3_8910-1725bbcc920403c0)
+
+running 19 tests
+
+thread 'tests::both_io_ports_resolve_external_pins_without_changing_their_latches' (85981754) panicked at crates/emu198x-gi-ay-3-8910/src/lib.rs:653:21:
+assertion `left == right` failed: identical pins and latches: output=true, data=01, external=00
+  left: 1
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::detection_pattern_works ... ok
+test tests::envelope_shape_14_makes_a_triangle ... ok
+test tests::envelope_shape_8_repeats_a_falling_sawtooth ... ok
+test tests::envelope_steps_every_16_ep_ticks ... ok
+test tests::envelope_shapes_9_and_15_hold_at_zero ... ok
+test tests::envelope_continue_zero_shapes_fall_and_hold_at_zero ... ok
+test tests::envelope_shape_10_makes_a_triangle ... ok
+test tests::envelope_shapes_11_and_13_hold_at_max ... ok
+test tests::noise_lfsr_advances_every_16_np_ticks ... ok
+test tests::noise_period_masked ... ok
+test tests::both_io_ports_resolve_external_pins_without_changing_their_latches ... FAILED
+test tests::port_a_input_mask_defaults_to_no_pull ... ok
+test tests::register_read_write ... ok
+test tests::selected_register_and_registers_expose_full_state ... ok
+test tests::silent_by_default ... ok
+test tests::sinclair_128k_port_a_pull_returns_bf_for_register_14 ... ok
+test watch::tests::clear_drops_records_but_keeps_capture_armed ... ok
+test watch::tests::records_writes_until_cap ... ok
+test tests::tone_produces_output ... ok
+
+failures:
+
+failures:
+    tests::both_io_ports_resolve_external_pins_without_changing_their_latches
+
+test result: FAILED. 18 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p emu198x-gi-ay-3-8910 --lib`
