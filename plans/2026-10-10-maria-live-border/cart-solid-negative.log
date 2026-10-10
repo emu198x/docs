@@ -1,0 +1,18 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.18s
+     Running tests/cart_boot.rs (target/debug/deps/cart_boot-7a760707a0ca2c75)
+
+running 1 test
+
+thread 'cart_boots_without_panic' (86445305) panicked at crates/machine-atari-7800/tests/cart_boot.rs:78:5:
+screen never rendered (1 colours, 76800 non-background px) — MARIA DMA/DLI likely not running
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test cart_boots_without_panic ... FAILED
+
+failures:
+
+failures:
+    cart_boots_without_panic
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.53s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --test cart_boot`

@@ -1,0 +1,10 @@
+    Checking thiserror v2.0.20
+    Checking emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Checking mos-riot-6532 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-riot-6532)
+    Checking atari-tia v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-tia)
+    Checking atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-pokey)
+    Checking atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Checking cobs v0.3.0
+    Checking postcard v1.1.3
+    Checking machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.83s

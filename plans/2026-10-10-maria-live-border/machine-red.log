@@ -1,0 +1,18 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.10s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 1 test
+
+thread 'tests::cpu_wsync_colour_bars_extend_into_live_maria_borders' (86431946) panicked at crates/machine-atari-7800/src/lib.rs:514:17:
+border differs from background on row 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::cpu_wsync_colour_bars_extend_into_live_maria_borders ... FAILED
+
+failures:
+
+failures:
+    tests::cpu_wsync_colour_bars_extend_into_live_maria_borders
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 21 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
