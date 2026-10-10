@@ -1,0 +1,21 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.45s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+running 1 test
+
+thread 'video::tests::native_pixels_match_all_128_full_clock_reference_windows' (87045381) panicked at crates/atari-maria/src/video.rs:124:21:
+assertion `left == right` failed: case [0, 0, 0, 0, 0], tick 14692, raster 16, column 66
+  left: 4278190080
+ right: 4282400832
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test video::tests::native_pixels_match_all_128_full_clock_reference_windows ... FAILED
+
+failures:
+
+failures:
+    video::tests::native_pixels_match_all_128_full_clock_reference_windows
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 43 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-maria --lib`

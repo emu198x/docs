@@ -1,0 +1,42 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.24s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+running 4 tests
+
+thread 'video::tests::horizontal_positions_count_two_pixel_cells' (87022196) panicked at crates/atari-maria/src/video.rs:47:9:
+assertion `left == right` failed
+  left: [4293717228, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4293717228]
+ right: [4293717228, 4293717228, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'video::tests::extended_write_mode_stores_two_cells_per_byte' (87022195) panicked at crates/atari-maria/src/video.rs:60:9:
+assertion `left == right` failed
+  left: [4293717228, 4294751412, 4294751412, 4293717228, 4293717228, 4294751412, 4293717228, 4293717228]
+ right: [4288995580, 4288995580, 4288985340, 4288985340, 4293717228, 4293717228, 4293717228, 4293717228]
+
+thread 'video::tests::palette_changes_remain_live_until_playback' (87022197) panicked at crates/atari-maria/src/video.rs:27:9:
+assertion `left == right` failed
+  left: [4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412, 4294751412]
+ right: [4288995580, 4288995580, 4288995580, 4288995580, 4288995580, 4288995580, 4288995580, 4288995580]
+
+thread 'video::tests::read_mode_selects_320a_and_uses_colour_two' (87022198) panicked at crates/atari-maria/src/video.rs:37:9:
+assertion `left == right` failed
+  left: [4288985340, 4288985340, 4288985340, 4288985340, 4294751412, 4294751412, 4294751412, 4294751412]
+ right: [4288985340, 4293717228, 4288985340, 4293717228, 4293717228, 4288985340, 4293717228, 4288985340]
+test video::tests::horizontal_positions_count_two_pixel_cells ... FAILED
+test video::tests::palette_changes_remain_live_until_playback ... FAILED
+test video::tests::extended_write_mode_stores_two_cells_per_byte ... FAILED
+test video::tests::read_mode_selects_320a_and_uses_colour_two ... FAILED
+
+failures:
+
+failures:
+    video::tests::extended_write_mode_stores_two_cells_per_byte
+    video::tests::horizontal_positions_count_two_pixel_cells
+    video::tests::palette_changes_remain_live_until_playback
+    video::tests::read_mode_selects_320a_and_uses_colour_two
+
+test result: FAILED. 0 passed; 4 failed; 0 ignored; 0 measured; 38 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-maria --lib`

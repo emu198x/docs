@@ -116,3 +116,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 plans/2026-10-10-maria-native-dma-stages/captu
 The matrix raw logs remain scratch evidence; only own harnesses and measured
 vectors are committed. Reference RTL remains unmodified and is not copied
 into the production repository.
+
+The subsequent [line RAM/playback stage](2026-10-10-maria-line-playback.md)
+connects native pixel output and line transfer, with all six graphics modes
+and separate saved construction/playback buffers. It records source commit
+`9a82da3c` and its reference gates; machine ownership and the remaining timing
+gates above are still unmerged work.
