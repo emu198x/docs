@@ -1,0 +1,12 @@
+{
+  "source_commit": "145dc6cf81f4b93c9d36abd2221b84c5a592a8ea",
+  "parent_commit": "0a3c6c5dc5433f303fc967f15d8347427b1ed949",
+  "files": {
+    "crates/mos-via-6522/src/lib.rs": "2f7d3303e08d7f3989a54bafaf348c50e0cfea08e6bce067c11c56b9e61a6c38",
+    "crates/machine-commodore-vic-20/tests/via_timer_probe.rs": "5f41a9ca230048ef9a794a2f9070dd5959be954c1d3b98e160230414dec5be5c",
+    "crates/machine-commodore-vic-20/test-data/README.md": "f2bf135d20a8e4482e6dee6e2a60e2e2d03c4b54300fa6cb25a950453e1e04af",
+    "crates/machine-commodore-vic-20/test-data/via-timer2-underflow.rom": "80b8d6255cf279e9bb1ef9d01c6b9f22713764bbacbfce7abec3dd395d9e0f18",
+    "crates/machine-commodore-vic-20/test-data/via-timer2-underflow.bin": "6c9613ce77ae1979124848a167cf6523fad752f52d0f8e3c6321ec69e942091f",
+    "crates/runtime-commodore-vic-20/src/snapshot.rs": "00a140c6a008a4c44994b4b42ee533d583a0d61f9975b9e1b672a2a361d41b43"
+  }
+}
