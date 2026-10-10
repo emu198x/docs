@@ -1,0 +1,4 @@
+    Checking mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-via-6522)
+    Checking machine-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-oric-atmos)
+    Checking runtime-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-oric-atmos)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.06s

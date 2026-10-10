@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "831a02b06bd1e110447abb84d3934de62ffad3b7",
+  "tested_commit": "8ca72def767afe5f73d054fd7c05df12c188023e",
+  "tested_tree": "1effd4e8e19e3cd1cfc5f0ced3296aa0d07a00fc",
+  "rom_sha256": "4ee38987c85ab007761cfd382f1c726c41a0a47dfddc6c3700d503dca150bfda",
+  "machine_source_sha256": "12bb3414ab765ffd69d4ea1afb9804f0208fc5ef240c8730e1f374f962c57308",
+  "artifacts": {
+    "ay-handshake-probe.rs": "2bce7485a7aaa9bcc2d0f1aee1ce5459b0e9221781539cb699f68e01fb2f8be4",
+    "ay-handshake-red.log": "19f14f884690d760a57d76d8ed9d99b8f751f20eeb09eaf1b0c7307a22d5bacc",
+    "ay-handshake-green.log": "f6e592813dd2d28f668c624a31a159f52aca3b8bef547366b4a5acbcdd0c61bb",
+    "ay-tests-red.log": "39fbca74aa6975560cb789dba31a71a540a5c55be445cb426805fa2d64c62275",
+    "ay-tests-green.log": "f4ad8ad37dbdf90eefacf3f8d5ff6d8c7588ef2ac25538c15160cf3ad22a8bcd",
+    "ay-suites.log": "a24270bf813f39f896de23df67d3000b8bdcd78e0cc7775c41a4129740cc0d25",
+    "ay-bios.log": "0949be9f1e7270d2befca0e7a4991b80c743335063ce98e8d9906033d6742544",
+    "ay-clippy.log": "3bbf25c4f6d28ab06f71f2237af591d903325d91ee46e62ac142fdab0a02c2d2",
+    "ay-fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rom-audio-probe.rs": "1ad0f35d29c49c245d412df5a797a2d280755ce5613bc6f9abaac7632bc06064",
+    "rom-before.log": "786bb0cd70c6147d45b468bc1fd6d895e691b11ad7b1ad578a58cf8de5f96be6",
+    "rom-after.log": "786bb0cd70c6147d45b468bc1fd6d895e691b11ad7b1ad578a58cf8de5f96be6",
+    "rom-comparison.json": "0f714984db209dafab581dc274bb513245ffa01a8ca7c9d4a126217373770b18"
+  },
+  "binaries": {
+    "ay-handshake-probe": "94260975808eaf014d06376e63e124ad98a3efa10e8449ae23efc7cb13fc230e",
+    "ay-handshake-green": "9f39960b8a0c4c85b23db9a89be70282c93d51199696ec76f01ddfa5daf14de9",
+    "rom-audio-before": "458964dd8f054a6d4f66eaa9604864f3f469aac372ac393273e1b4025169018e",
+    "rom-audio-after": "7eeb47c51f582d372bdeb5a2bce1d4b71895981aa782d55aad0ff69065656390"
+  },
+  "exit_codes": {
+    "public_probe_before": 1,
+    "public_probe_after": 0,
+    "regressions_before": 101,
+    "regressions_after": 0,
+    "affected_suites": 0,
+    "strict_bios": 0,
+    "clippy": 0,
+    "format": 0,
+    "rom_before": 0,
+    "rom_after": 0,
+    "rom_comparison": 0
+  },
+  "submitted_commit": "44bdba6c9f97dcf1f24629b4c3b095722c83fc1b",
+  "submitted_tree": "1effd4e8e19e3cd1cfc5f0ced3296aa0d07a00fc",
+  "source_pr": "https://github.com/emu198x/emu198x/pull/1699"
+}
