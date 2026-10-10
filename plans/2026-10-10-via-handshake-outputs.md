@@ -48,7 +48,7 @@ pulse width or phase.
 The retained probe links a fresh VIA build from clean source commit
 `05de4cf9`. Its exact source/library hashes and compiler command are in
 `identity.json`; `build.log` retains the library build result.
-The correction now uses these existing latches; validation is in progress.
+The correction uses these existing latches; completed validation is recorded below.
 
 ## Waveform and consumer check
 
@@ -107,3 +107,20 @@ low strobe; pulse mode emits three. All 32 snapshot positions pass again,
 as do affected Clippy and formatting. The final successful catalogue build
 is byte-identical to the binary already running the three catalogue shards
 (SHA-256 `1904eb9aa594d15c3416f6ab112f6161d4b54fd7ba89e08e2c441a59a9fa7268`).
+
+The complete 554-test consumer suite and all doctests subsequently pass
+again on final head `092f61c4`; `final-suites.log.gz` retains the terminal
+result. There are 115 explicitly ignored fixture/diagnostic cases in this
+ordinary run; the separately retained strict commands select their stated
+firmware, survey and drive regressions.
+
+## Complete C64 catalogue
+
+All three shard commands exit 0. Every one of the manifest's 13 entry IDs
+occurs exactly once in the ordinary PASS results and exactly once in the
+SNAP-PASS results, checked against the manifest's round-robin assignment.
+All expected frame and audio hashes remain unchanged, including the
+1541/1571/1581, tape, cartridge and G64 paths. The terminal logs, commands,
+manifest hash and binary hash are retained in `catalogue-result.json` and
+the three `production-shard-*` records. No private media or firmware is
+included. CI remains the final source merge gate.

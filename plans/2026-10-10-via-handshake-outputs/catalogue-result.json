@@ -1,0 +1,96 @@
+{
+  "source_commit": "092f61c454c108d8a545ccd74e7c6ea9bf63b504",
+  "manifest_sha256": "2271167c57d412411a6296139de13ca62d20e3daa16d7dead89d127c7475bade",
+  "binary_sha256": "1904eb9aa594d15c3416f6ab112f6161d4b54fd7ba89e08e2c441a59a9fa7268",
+  "expected_entries": [
+    "boot-to-ready",
+    "bruce-lee",
+    "aztec-challenge",
+    "bomb-jack",
+    "thing-on-a-spring",
+    "wizball",
+    "monty-on-the-run",
+    "prince-of-persia",
+    "final-cartridge-iii",
+    "action-replay",
+    "empire-1581-load",
+    "bruce-lee-1571",
+    "bomb-jack-2-g64"
+  ],
+  "passed": 13,
+  "snapshot_passed": 13,
+  "shards": [
+    {
+      "command": [
+        "/private/tmp/via-handshake-fix/catalogue-production",
+        "run",
+        "--shard",
+        "1/3",
+        "--manifest",
+        "crates/emu198x-catalogue/manifest/c64.toml"
+      ],
+      "exit_code": 0,
+      "passed": [
+        "boot-to-ready",
+        "bomb-jack",
+        "monty-on-the-run",
+        "action-replay",
+        "bomb-jack-2-g64"
+      ],
+      "snapshot_passed": [
+        "boot-to-ready",
+        "bomb-jack",
+        "monty-on-the-run",
+        "action-replay",
+        "bomb-jack-2-g64"
+      ]
+    },
+    {
+      "command": [
+        "/private/tmp/via-handshake-fix/catalogue-production",
+        "run",
+        "--shard",
+        "2/3",
+        "--manifest",
+        "crates/emu198x-catalogue/manifest/c64.toml"
+      ],
+      "exit_code": 0,
+      "passed": [
+        "bruce-lee",
+        "thing-on-a-spring",
+        "prince-of-persia",
+        "empire-1581-load"
+      ],
+      "snapshot_passed": [
+        "bruce-lee",
+        "thing-on-a-spring",
+        "prince-of-persia",
+        "empire-1581-load"
+      ]
+    },
+    {
+      "command": [
+        "/private/tmp/via-handshake-fix/catalogue-production",
+        "run",
+        "--shard",
+        "3/3",
+        "--manifest",
+        "crates/emu198x-catalogue/manifest/c64.toml"
+      ],
+      "exit_code": 0,
+      "passed": [
+        "aztec-challenge",
+        "wizball",
+        "final-cartridge-iii",
+        "bruce-lee-1571"
+      ],
+      "snapshot_passed": [
+        "aztec-challenge",
+        "wizball",
+        "final-cartridge-iii",
+        "bruce-lee-1571"
+      ]
+    }
+  ],
+  "expected_hashes_changed": false
+}
