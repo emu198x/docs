@@ -1,0 +1,5 @@
+before condition=288f wildcard=1 masked=1
+after condition=2887 wildcard=x masked=1 direct=1
+FATAL: /private/tmp/maria-dli-trace/split_driver_tb.sv:17: continuous wildcard differs from mask on split-driven vector
+       Time: 3  Scope: split_driver_tb
+EXIT_STATUS=1

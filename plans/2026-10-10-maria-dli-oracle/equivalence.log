@@ -1,0 +1,2 @@
+COMPARISONS=1011936 MISMATCHES=0
+/private/tmp/maria-dli-trace/generated/comparator_tb.sv:193: $finish called at 0 (1s)
