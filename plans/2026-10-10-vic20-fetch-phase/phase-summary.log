@@ -1,0 +1,12 @@
+Pal dump6561e.prg phase 4 {'idle': 186, 'matrix': 164, 'glyph': 162} differences 0
+Pal dump6561e.prg phase 3 {'idle': 184, 'matrix': 164, 'glyph': 164} differences 334
+Pal dump6561e.prg phase 5 {'idle': 188, 'matrix': 162, 'glyph': 162} differences 332
+Pal dump6561-101.prg phase 4 {'idle': 186, 'matrix': 164, 'glyph': 162} differences 186
+Pal dump6561-101.prg phase 3 {'idle': 184, 'matrix': 164, 'glyph': 164} differences 512
+Pal dump6561-101.prg phase 5 {'idle': 188, 'matrix': 162, 'glyph': 162} differences 512
+Ntsc dump6560-101.prg phase 4 {'glyph': 172, 'matrix': 172, 'idle': 168} differences 0
+Ntsc dump6560-101.prg phase 3 {'matrix': 172, 'glyph': 172, 'idle': 168} differences 352
+Ntsc dump6560-101.prg phase 5 {'matrix': 172, 'glyph': 172, 'idle': 168} differences 352
+Ntsc dump6560.prg phase 4 {'glyph': 172, 'matrix': 172, 'idle': 168} differences 168
+Ntsc dump6560.prg phase 3 {'matrix': 172, 'glyph': 172, 'idle': 168} differences 512
+Ntsc dump6560.prg phase 5 {'matrix': 172, 'glyph': 172, 'idle': 168} differences 512
