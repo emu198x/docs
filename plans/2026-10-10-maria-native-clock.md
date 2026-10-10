@@ -37,6 +37,11 @@ from the restoration claim.
 
 ## Full-clock reference sweep
 
+The populated follow-up in `2026-10-10-maria-fetch-traces.md` supersedes this
+harness's bus handoff. Zero-filled lists concealed its premature return to the
+CPU bus. These 48 rows establish only the recorded empty-list control behaviour;
+use the corrected harness for descriptor, graphics and shutdown timing.
+
 Reference: `Atari7800_MiSTer`, revision
 `29aaacbbed127c670972c8a0a950ca82dc87e5df`. The own testbench drives the reference's
 actual clock generator and video-sync module, unlike the earlier DMA-only

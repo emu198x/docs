@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-fetch-traces/run_fetch.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-fetch-traces/run_fetch.py", line 155, in main
+    run(
+    ~~~^
+        [
+        ^
+    ...<13 lines>...
+        output / "build.log",
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-fetch-traces/run_fetch.py", line 18, in run
+    raise RuntimeError(f"unexpected status {result.returncode}: {log}")
+RuntimeError: unexpected status 42: /private/tmp/maria-dma-fetch/compile-negative/build.log

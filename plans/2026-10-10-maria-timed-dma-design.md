@@ -59,7 +59,9 @@ probes during implementation. Do not treat this list as already-run coverage.
    native ticks after HALT release; the full-clock reference yields 18 on fast
    accesses and 20 on slow accesses in the measured matrix. Its two-CPU-cycle
    pulse also differs from the acceptance specification's one-cycle width.
-   See `2026-10-10-maria-native-clock.md`. Do not choose an arbitrary compromise.
+   The corrected populated harness further spans 15–18 fast and 17–20 slow
+   native ticks; see `2026-10-10-maria-fetch-traces.md` for its qualified bus
+   handoff. Do not choose an arbitrary compromise.
    Record the adjudication before locking a production timing expectation.
 6. Preserve the current public scanline helper only if it can drive this same
    pipeline without a second implementation. If that contract cannot be kept,

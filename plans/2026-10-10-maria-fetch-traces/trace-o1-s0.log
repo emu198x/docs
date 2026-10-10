@@ -1,0 +1,298 @@
+SETUP t=256 ctrl=40 zp=1800 row=0 col=112 mclk=10 phi=00 pclk=0 men=0 old=1 div=0 toggle=0
+HALT tick=14566 sub=0 row=16 col=3 level=0 ab=8000
+READ tick=14588 row=16 col=14 drive=1 ab=1800 data=01 reload=180 offset= 0
+READ tick=14592 row=16 col=16 drive=1 ab=1801 data=1c reload=040 offset= 1
+READ tick=14596 row=16 col=18 drive=0 ab=1802 data=00 reload=020 offset= 1
+HALT tick=14598 sub=0 row=16 col=19 level=1 ab=1802
+HALT tick=15441 sub=0 row=16 col=441 level=0 ab=8000
+READ tick=15460 row=16 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=15464 row=16 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=15468 row=17 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=15472 row=17 col=2 address=1c03 data=00
+GFX tick=15478 row=17 col=5 drive=1 ab=9100 data=55
+GFX tick=15484 row=17 col=8 drive=1 ab=9101 data=55
+READ tick=15488 row=17 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=15492 row=17 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=15496 row=17 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=15502 sub=0 row=17 col=17 level=1 ab=1c07
+HALT tick=16350 sub=0 row=17 col=441 level=0 ab=8000
+READ tick=16372 row=17 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=16376 row=18 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=16380 row=18 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=16384 row=18 col=4 address=1c03 data=00
+GFX tick=16390 row=18 col=7 drive=1 ab=9000 data=55
+GFX tick=16396 row=18 col=10 drive=1 ab=9001 data=55
+READ tick=16400 row=18 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=16404 row=18 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=16408 row=18 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=16418 row=18 col=21 drive=1 ab=1803 data=81 reload=180 offset= 0
+READ tick=16422 row=18 col=23 drive=1 ab=1804 data=1c reload=040 offset= 1
+HALT tick=16425 sub=0 row=18 col=25 level=1 ab=1805
+READ tick=16426 row=18 col=25 drive=0 ab=1805 data=00 reload=020 offset= 1
+NMI tick=16440 sub=0 row=18 col=32 level=0 release_delay=15
+NMI tick=16456 sub=0 row=18 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=17257 sub=0 row=18 col=441 level=0 ab=8000
+READ tick=17276 row=18 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=17280 row=18 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=17284 row=19 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=17288 row=19 col=2 address=1c03 data=00
+GFX tick=17294 row=19 col=5 drive=1 ab=9100 data=55
+GFX tick=17300 row=19 col=8 drive=1 ab=9101 data=55
+READ tick=17304 row=19 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=17308 row=19 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=17312 row=19 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=17318 sub=0 row=19 col=17 level=1 ab=1c07
+HALT tick=18166 sub=0 row=19 col=441 level=0 ab=8000
+READ tick=18188 row=19 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=18192 row=20 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=18196 row=20 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=18200 row=20 col=4 address=1c03 data=00
+GFX tick=18206 row=20 col=7 drive=1 ab=9000 data=55
+GFX tick=18212 row=20 col=10 drive=1 ab=9001 data=55
+READ tick=18216 row=20 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=18220 row=20 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=18224 row=20 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=18234 row=20 col=21 drive=1 ab=1806 data=01 reload=180 offset= 0
+READ tick=18238 row=20 col=23 drive=1 ab=1807 data=1c reload=040 offset= 1
+HALT tick=18241 sub=0 row=20 col=25 level=1 ab=1808
+READ tick=18242 row=20 col=25 drive=0 ab=1808 data=00 reload=020 offset= 1
+HALT tick=19073 sub=0 row=20 col=441 level=0 ab=8000
+READ tick=19092 row=20 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=19096 row=20 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=19100 row=21 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=19104 row=21 col=2 address=1c03 data=00
+GFX tick=19110 row=21 col=5 drive=1 ab=9100 data=55
+GFX tick=19116 row=21 col=8 drive=1 ab=9101 data=55
+READ tick=19120 row=21 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=19124 row=21 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=19128 row=21 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=19134 sub=0 row=21 col=17 level=1 ab=1c07
+HALT tick=19982 sub=0 row=21 col=441 level=0 ab=8000
+READ tick=20004 row=21 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=20008 row=22 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=20012 row=22 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=20016 row=22 col=4 address=1c03 data=00
+GFX tick=20022 row=22 col=7 drive=1 ab=9000 data=55
+GFX tick=20028 row=22 col=10 drive=1 ab=9001 data=55
+READ tick=20032 row=22 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=20036 row=22 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=20040 row=22 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=20050 row=22 col=21 drive=1 ab=1809 data=01 reload=180 offset= 0
+READ tick=20054 row=22 col=23 drive=1 ab=180a data=1c reload=040 offset= 1
+HALT tick=20057 sub=0 row=22 col=25 level=1 ab=180b
+READ tick=20058 row=22 col=25 drive=0 ab=180b data=00 reload=020 offset= 1
+HALT tick=20889 sub=0 row=22 col=441 level=0 ab=8000
+READ tick=20908 row=22 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=20912 row=22 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=20916 row=23 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=20920 row=23 col=2 address=1c03 data=00
+GFX tick=20926 row=23 col=5 drive=1 ab=9100 data=55
+GFX tick=20932 row=23 col=8 drive=1 ab=9101 data=55
+READ tick=20936 row=23 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=20940 row=23 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=20944 row=23 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=20950 sub=0 row=23 col=17 level=1 ab=1c07
+HALT tick=21798 sub=0 row=23 col=441 level=0 ab=8000
+READ tick=21820 row=23 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=21824 row=24 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=21828 row=24 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=21832 row=24 col=4 address=1c03 data=00
+GFX tick=21838 row=24 col=7 drive=1 ab=9000 data=55
+GFX tick=21844 row=24 col=10 drive=1 ab=9001 data=55
+READ tick=21848 row=24 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=21852 row=24 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=21856 row=24 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=21866 row=24 col=21 drive=1 ab=180c data=01 reload=180 offset= 0
+READ tick=21870 row=24 col=23 drive=1 ab=180d data=1c reload=040 offset= 1
+HALT tick=21873 sub=0 row=24 col=25 level=1 ab=180e
+READ tick=21874 row=24 col=25 drive=0 ab=180e data=00 reload=020 offset= 1
+HALT tick=22705 sub=0 row=24 col=441 level=0 ab=8000
+READ tick=22724 row=24 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=22728 row=24 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=22732 row=25 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=22736 row=25 col=2 address=1c03 data=00
+GFX tick=22742 row=25 col=5 drive=1 ab=9100 data=55
+GFX tick=22748 row=25 col=8 drive=1 ab=9101 data=55
+READ tick=22752 row=25 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=22756 row=25 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=22760 row=25 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=22766 sub=0 row=25 col=17 level=1 ab=1c07
+HALT tick=23614 sub=0 row=25 col=441 level=0 ab=8000
+READ tick=23636 row=25 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=23640 row=26 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=23644 row=26 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=23648 row=26 col=4 address=1c03 data=00
+GFX tick=23654 row=26 col=7 drive=1 ab=9000 data=55
+GFX tick=23660 row=26 col=10 drive=1 ab=9001 data=55
+READ tick=23664 row=26 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=23668 row=26 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=23672 row=26 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=23682 row=26 col=21 drive=1 ab=180f data=01 reload=180 offset= 0
+READ tick=23686 row=26 col=23 drive=1 ab=1810 data=1c reload=040 offset= 1
+HALT tick=23689 sub=0 row=26 col=25 level=1 ab=1811
+READ tick=23690 row=26 col=25 drive=0 ab=1811 data=00 reload=020 offset= 1
+HALT tick=24521 sub=0 row=26 col=441 level=0 ab=8000
+READ tick=24540 row=26 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=24544 row=26 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=24548 row=27 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=24552 row=27 col=2 address=1c03 data=00
+GFX tick=24558 row=27 col=5 drive=1 ab=9100 data=55
+GFX tick=24564 row=27 col=8 drive=1 ab=9101 data=55
+READ tick=24568 row=27 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=24572 row=27 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=24576 row=27 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=24582 sub=0 row=27 col=17 level=1 ab=1c07
+HALT tick=25430 sub=0 row=27 col=441 level=0 ab=8000
+READ tick=25452 row=27 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=25456 row=28 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=25460 row=28 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=25464 row=28 col=4 address=1c03 data=00
+GFX tick=25470 row=28 col=7 drive=1 ab=9000 data=55
+GFX tick=25476 row=28 col=10 drive=1 ab=9001 data=55
+READ tick=25480 row=28 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=25484 row=28 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=25488 row=28 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=25498 row=28 col=21 drive=1 ab=1812 data=01 reload=180 offset= 0
+READ tick=25502 row=28 col=23 drive=1 ab=1813 data=1c reload=040 offset= 1
+HALT tick=25505 sub=0 row=28 col=25 level=1 ab=1814
+READ tick=25506 row=28 col=25 drive=0 ab=1814 data=00 reload=020 offset= 1
+HALT tick=26337 sub=0 row=28 col=441 level=0 ab=8000
+READ tick=26356 row=28 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=26360 row=28 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=26364 row=29 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=26368 row=29 col=2 address=1c03 data=00
+GFX tick=26374 row=29 col=5 drive=1 ab=9100 data=55
+GFX tick=26380 row=29 col=8 drive=1 ab=9101 data=55
+READ tick=26384 row=29 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=26388 row=29 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=26392 row=29 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=26398 sub=0 row=29 col=17 level=1 ab=1c07
+HALT tick=27246 sub=0 row=29 col=441 level=0 ab=8000
+READ tick=27268 row=29 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=27272 row=30 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=27276 row=30 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=27280 row=30 col=4 address=1c03 data=00
+GFX tick=27286 row=30 col=7 drive=1 ab=9000 data=55
+GFX tick=27292 row=30 col=10 drive=1 ab=9001 data=55
+READ tick=27296 row=30 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=27300 row=30 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=27304 row=30 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=27314 row=30 col=21 drive=1 ab=1815 data=01 reload=180 offset= 0
+READ tick=27318 row=30 col=23 drive=1 ab=1816 data=1c reload=040 offset= 1
+HALT tick=27321 sub=0 row=30 col=25 level=1 ab=1817
+READ tick=27322 row=30 col=25 drive=0 ab=1817 data=00 reload=020 offset= 1
+HALT tick=28153 sub=0 row=30 col=441 level=0 ab=8000
+READ tick=28172 row=30 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=28176 row=30 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=28180 row=31 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=28184 row=31 col=2 address=1c03 data=00
+GFX tick=28190 row=31 col=5 drive=1 ab=9100 data=55
+GFX tick=28196 row=31 col=8 drive=1 ab=9101 data=55
+READ tick=28200 row=31 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=28204 row=31 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=28208 row=31 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=28214 sub=0 row=31 col=17 level=1 ab=1c07
+HALT tick=29062 sub=0 row=31 col=441 level=0 ab=8000
+READ tick=29084 row=31 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=29088 row=32 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=29092 row=32 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=29096 row=32 col=4 address=1c03 data=00
+GFX tick=29102 row=32 col=7 drive=1 ab=9000 data=55
+GFX tick=29108 row=32 col=10 drive=1 ab=9001 data=55
+READ tick=29112 row=32 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=29116 row=32 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=29120 row=32 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=29130 row=32 col=21 drive=1 ab=1818 data=01 reload=180 offset= 0
+READ tick=29134 row=32 col=23 drive=1 ab=1819 data=1c reload=040 offset= 1
+HALT tick=29137 sub=0 row=32 col=25 level=1 ab=181a
+READ tick=29138 row=32 col=25 drive=0 ab=181a data=00 reload=020 offset= 1
+HALT tick=29969 sub=0 row=32 col=441 level=0 ab=8000
+READ tick=29988 row=32 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=29992 row=32 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=29996 row=33 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=30000 row=33 col=2 address=1c03 data=00
+GFX tick=30006 row=33 col=5 drive=1 ab=9100 data=55
+GFX tick=30012 row=33 col=8 drive=1 ab=9101 data=55
+READ tick=30016 row=33 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=30020 row=33 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=30024 row=33 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=30030 sub=0 row=33 col=17 level=1 ab=1c07
+HALT tick=30878 sub=0 row=33 col=441 level=0 ab=8000
+READ tick=30900 row=33 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=30904 row=34 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=30908 row=34 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=30912 row=34 col=4 address=1c03 data=00
+GFX tick=30918 row=34 col=7 drive=1 ab=9000 data=55
+GFX tick=30924 row=34 col=10 drive=1 ab=9001 data=55
+READ tick=30928 row=34 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=30932 row=34 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=30936 row=34 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=30946 row=34 col=21 drive=1 ab=181b data=01 reload=180 offset= 0
+READ tick=30950 row=34 col=23 drive=1 ab=181c data=1c reload=040 offset= 1
+HALT tick=30953 sub=0 row=34 col=25 level=1 ab=181d
+READ tick=30954 row=34 col=25 drive=0 ab=181d data=00 reload=020 offset= 1
+HALT tick=31785 sub=0 row=34 col=441 level=0 ab=8000
+READ tick=31804 row=34 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=31808 row=34 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=31812 row=35 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=31816 row=35 col=2 address=1c03 data=00
+GFX tick=31822 row=35 col=5 drive=1 ab=9100 data=55
+GFX tick=31828 row=35 col=8 drive=1 ab=9101 data=55
+READ tick=31832 row=35 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=31836 row=35 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=31840 row=35 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=31846 sub=0 row=35 col=17 level=1 ab=1c07
+HALT tick=32694 sub=0 row=35 col=441 level=0 ab=8000
+READ tick=32716 row=35 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=32720 row=36 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=32724 row=36 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=32728 row=36 col=4 address=1c03 data=00
+GFX tick=32734 row=36 col=7 drive=1 ab=9000 data=55
+GFX tick=32740 row=36 col=10 drive=1 ab=9001 data=55
+READ tick=32744 row=36 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=32748 row=36 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=32752 row=36 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=32762 row=36 col=21 drive=1 ab=181e data=01 reload=180 offset= 0
+READ tick=32766 row=36 col=23 drive=1 ab=181f data=1c reload=040 offset= 1
+HALT tick=32769 sub=0 row=36 col=25 level=1 ab=1820
+READ tick=32770 row=36 col=25 drive=0 ab=1820 data=00 reload=020 offset= 1
+HALT tick=33601 sub=0 row=36 col=441 level=0 ab=8000
+READ tick=33620 row=36 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=33624 row=36 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=33628 row=37 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=33632 row=37 col=2 address=1c03 data=00
+GFX tick=33638 row=37 col=5 drive=1 ab=9100 data=55
+GFX tick=33644 row=37 col=8 drive=1 ab=9101 data=55
+READ tick=33648 row=37 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=33652 row=37 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=33656 row=37 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=33662 sub=0 row=37 col=17 level=1 ab=1c07
+HALT tick=34510 sub=0 row=37 col=441 level=0 ab=8000
+READ tick=34532 row=37 col=452 drive=1 ab=1c00 data=00 reload=002 offset= 0
+READ tick=34536 row=38 col=0 drive=1 ab=1c01 data=1e reload=018 offset= 0
+READ tick=34540 row=38 col=2 drive=1 ab=1c02 data=90 reload=004 offset= 0
+HPOS tick=34544 row=38 col=4 address=1c03 data=00
+GFX tick=34550 row=38 col=7 drive=1 ab=9000 data=55
+GFX tick=34556 row=38 col=10 drive=1 ab=9001 data=55
+READ tick=34560 row=38 col=12 drive=1 ab=1c04 data=00 reload=002 offset= 0
+READ tick=34564 row=38 col=14 drive=1 ab=1c05 data=00 reload=018 offset= 0
+READ tick=34568 row=38 col=16 drive=1 ab=1c06 data=00 reload=004 offset= 0
+READ tick=34578 row=38 col=21 drive=1 ab=1821 data=01 reload=180 offset= 0
+READ tick=34582 row=38 col=23 drive=1 ab=1822 data=1c reload=040 offset= 1
+HALT tick=34585 sub=0 row=38 col=25 level=1 ab=1823
+READ tick=34586 row=38 col=25 drive=0 ab=1823 data=00 reload=020 offset= 1
+HALT tick=35417 sub=0 row=38 col=441 level=0 ab=8000
+READ tick=35436 row=38 col=450 drive=1 ab=1c00 data=00 reload=002 offset= 1
+READ tick=35440 row=38 col=452 drive=1 ab=1c01 data=1e reload=018 offset= 1
+READ tick=35444 row=39 col=0 drive=1 ab=1c02 data=90 reload=004 offset= 1
+HPOS tick=35448 row=39 col=2 address=1c03 data=00
+GFX tick=35454 row=39 col=5 drive=1 ab=9100 data=55
+GFX tick=35460 row=39 col=8 drive=1 ab=9101 data=55
+READ tick=35464 row=39 col=10 drive=1 ab=1c04 data=00 reload=002 offset= 1
+READ tick=35468 row=39 col=12 drive=1 ab=1c05 data=00 reload=018 offset= 1
+READ tick=35472 row=39 col=14 drive=1 ab=1c06 data=00 reload=004 offset= 1
+HALT tick=35478 sub=0 row=39 col=17 level=1 ab=1c07
+RESULT height=2 flag=2 slow=0 pal=0 starts=24 releases=24 edges=1
+FETCH_RESULT object=1 width=2 graphics=46
+/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-10-maria-fetch-traces/fetch_tb.sv:128: $finish called at 363200 (1s)
