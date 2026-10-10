@@ -1,0 +1,24 @@
+
+running 1 test
+test fetch::tests::byte_latches_match_all_64_measured_reference_vectors ... FAILED
+
+failures:
+
+---- fetch::tests::byte_latches_match_all_64_measured_reference_vectors stdout ----
+
+thread 'fetch::tests::byte_latches_match_all_64_measured_reference_vectors' (86809511) panicked at crates/atari-maria/src/fetch.rs:316:13:
+assertion `left == right` failed: 1/1/0
+  left: [(4, 7168), (8, 7169), (12, 7170), (16, 7171), (21, 36864), (25, 7172), (29, 7173), (33, 7174)]
+ right: [(4, 7168), (8, 7169), (12, 7170), (16, 7171), (22, 36864), (26, 7172), (30, 7173), (34, 7174)]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    fetch::tests::byte_latches_match_all_64_measured_reference_vectors
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 28 filtered out; finished in 0.00s
+
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.37s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+error: test failed, to rerun pass `-p atari-maria --lib`
