@@ -1,0 +1,10 @@
+   Compiling machine-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-oric-atmos)
+    Finished `release` profile [optimized] target(s) in 3.15s
+     Running tests/bios_boot.rs (target/release/deps/bios_boot-fe2222aeb2fe7f6e)
+
+running 2 tests
+test rom_boots_to_initial_screen ... ok
+test rom_switches_hires_and_refresh_rate_through_the_ula ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+

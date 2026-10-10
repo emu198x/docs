@@ -1,0 +1,17 @@
+{
+  "audio": {
+    "bytes": 4096,
+    "sha256": "826741a1a481ffc0ca2c2b0f5d89b32d574b58b2fdc0eb827e71f1e0a54b05f0",
+    "identical": true
+  },
+  "frame": {
+    "bytes": 215040,
+    "sha256": "b2520a5c491fd08fe6f647192c268c17b6fcb3638f2d36f047e299425514f507",
+    "identical": true
+  },
+  "writes": {
+    "bytes": 13933,
+    "sha256": "5cc2e4e8e53fb859618af8d7ed33bf405991482707c5acc213586447d1dcfc92",
+    "identical": true
+  }
+}

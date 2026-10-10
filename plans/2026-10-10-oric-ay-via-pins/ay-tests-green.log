@@ -1,0 +1,25 @@
+   Compiling machine-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-oric-atmos)
+    Finished `release` profile [optimized] target(s) in 3.93s
+     Running unittests src/lib.rs (target/release/deps/machine_oric_atmos-e1eaa052268e88f2)
+
+running 5 tests
+test tests::ay_bus_follows_cb2_pulse_release_without_repeating_held_writes ... ok
+test tests::ay_bus_decodes_all_four_ca2_cb2_phases ... ok
+test tests::ay_bus_receives_cb2_handshake_release_from_tape_cb1 ... ok
+test tests::ay_bus_follows_port_a_read_strobes_and_their_release ... ok
+test tests::ay_bus_uses_driven_levels_in_all_idle_high_output_modes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 31 filtered out; finished in 0.00s
+
+     Running tests/bios_boot.rs (target/release/deps/bios_boot-fe2222aeb2fe7f6e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (target/release/deps/synthetic_firmware_boot-ad534a0064540ae6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+

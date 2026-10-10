@@ -1,0 +1,10 @@
+PCR=88 pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=a8 pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=e8 pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=8a pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=aa pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=ea pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=8e pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=ae pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+PCR=ee pins=(true, true, true, true) premature=0 writes=[(7, 56)] PASS
+0/9 mismatches

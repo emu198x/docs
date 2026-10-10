@@ -1,0 +1,53 @@
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-via-6522)
+   Compiling machine-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-oric-atmos)
+    Finished `release` profile [optimized] target(s) in 4.56s
+     Running unittests src/lib.rs (target/release/deps/machine_oric_atmos-e1eaa052268e88f2)
+
+running 5 tests
+test tests::ay_bus_decodes_all_four_ca2_cb2_phases ... ok
+test tests::ay_bus_receives_cb2_handshake_release_from_tape_cb1 ... FAILED
+test tests::ay_bus_follows_port_a_read_strobes_and_their_release ... FAILED
+test tests::ay_bus_follows_cb2_pulse_release_without_repeating_held_writes ... FAILED
+test tests::ay_bus_uses_driven_levels_in_all_idle_high_output_modes ... FAILED
+
+failures:
+
+---- tests::ay_bus_receives_cb2_handshake_release_from_tape_cb1 stdout ----
+
+thread 'tests::ay_bus_receives_cb2_handshake_release_from_tape_cb1' (85625388) panicked at crates/machine-oric-atmos/src/lib.rs:1239:9:
+assertion `left == right` failed
+  left: 0
+ right: 1
+
+---- tests::ay_bus_follows_port_a_read_strobes_and_their_release stdout ----
+
+thread 'tests::ay_bus_follows_port_a_read_strobes_and_their_release' (85625387) panicked at crates/machine-oric-atmos/src/lib.rs:1175:13:
+assertion `left == right` failed
+  left: 0
+ right: 7
+
+---- tests::ay_bus_follows_cb2_pulse_release_without_repeating_held_writes stdout ----
+
+thread 'tests::ay_bus_follows_cb2_pulse_release_without_repeating_held_writes' (85625386) panicked at crates/machine-oric-atmos/src/lib.rs:1211:9:
+assertion `left == right` failed: rising BDIR performs the transfer
+  left: 0
+ right: 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- tests::ay_bus_uses_driven_levels_in_all_idle_high_output_modes stdout ----
+
+thread 'tests::ay_bus_uses_driven_levels_in_all_idle_high_output_modes' (85625389) panicked at crates/machine-oric-atmos/src/lib.rs:1156:17:
+assertion `left == right` failed: both driven-high pins select the address, PCR=88
+  left: 0
+ right: 7
+
+
+failures:
+    tests::ay_bus_follows_cb2_pulse_release_without_repeating_held_writes
+    tests::ay_bus_follows_port_a_read_strobes_and_their_release
+    tests::ay_bus_receives_cb2_handshake_release_from_tape_cb1
+    tests::ay_bus_uses_driven_levels_in_all_idle_high_output_modes
+
+test result: FAILED. 1 passed; 4 failed; 0 ignored; 0 measured; 31 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-oric-atmos --lib`
