@@ -1,0 +1,8 @@
+{
+  "emulator_commit": "a1679f5d9736c8c519c593039cdbeb08344602b2",
+  "samples_commit": "f67d4aeb6921d5fefa87b529f996c20bf39de211",
+  "source_sha256": {
+    "crates/machine-commodore-c64/src/keyboard.rs": "9a46833e5f6d75b5d8ac39200d0ca04817f68c3d96733e38321d44f23022cb44",
+    "crates/machine-commodore-c64/src/machine.rs": "b9aa19f7d8267af06ed67a068f0f0cdf4f3b05868c99c45e0da99e3322fe4c64"
+  }
+}
