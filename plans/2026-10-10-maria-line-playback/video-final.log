@@ -1,0 +1,16 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.43s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+running 9 tests
+test video::tests::palette_changes_remain_live_until_playback ... ok
+test video::tests::read_mode_selects_320a_and_uses_colour_two ... ok
+test video::tests::extended_write_mode_stores_two_cells_per_byte ... ok
+test video::tests::native_playback_samples_live_registers_without_repainting_pixels ... ok
+test video::tests::horizontal_positions_count_two_pixel_cells ... ok
+test video::tests::native_line_transfer_matches_the_measured_edges ... ok
+test video::tests::line_ram_matches_every_reference_byte_mode_palette_and_overlap ... ok
+test video::tests::native_pixels_match_all_160_full_clock_reference_windows ... ok
+test video::tests::snapshots_resume_both_buffers_and_pending_output_pixels ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 39 filtered out; finished in 0.32s

@@ -1,0 +1,21 @@
+
+running 1 test
+test video::tests::native_pixels_match_all_160_full_clock_reference_windows ... FAILED
+
+failures:
+
+failures:
+    video::tests::native_pixels_match_all_160_full_clock_reference_windows
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 47 filtered out; finished in 0.00s
+
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.42s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+thread 'video::tests::native_pixels_match_all_160_full_clock_reference_windows' (87072762) panicked at crates/atari-maria/src/video.rs:321:21:
+assertion `left == right` failed: early pixel: case [0, 0, 0, 0, 0, 0], tick 14691
+  left: 4282400832
+ right: 4278190080
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p atari-maria --lib`
