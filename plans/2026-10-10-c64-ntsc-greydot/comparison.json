@@ -1,0 +1,110 @@
+[
+  {
+    "model": "ntsc",
+    "boot_frames": 150,
+    "phase": 0,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "ntsc",
+    "boot_frames": 151,
+    "phase": 0,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "ntsc",
+    "boot_frames": 152,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "ntsc",
+    "boot_frames": 153,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "ntsc",
+    "boot_frames": 154,
+    "phase": 0,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "ntsc",
+    "boot_frames": 155,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 150,
+    "phase": 0,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 151,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 152,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 153,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 154,
+    "phase": 0,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  },
+  {
+    "model": "c64cntsc",
+    "boot_frames": 155,
+    "phase": 1,
+    "stores": 408,
+    "pixels": 94848,
+    "store_mismatches": 0,
+    "pixel_mismatches": 0
+  }
+]
