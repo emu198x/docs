@@ -1,0 +1,6 @@
+   Compiling emu198x-gi-ay-3-8910 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-gi-ay-3-8910)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-via-6522)
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+   Compiling gi-ay-3-8912 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/gi-ay-3-8912)
+   Compiling machine-oric-atmos v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-oric-atmos)
+    Finished `release` profile [optimized] target(s) in 0.78s

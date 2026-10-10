@@ -1,0 +1,14 @@
+{
+  "source_commit": "831a02b06bd1e110447abb84d3934de62ffad3b7",
+  "rom_sha256": "4ee38987c85ab007761cfd382f1c726c41a0a47dfddc6c3700d503dca150bfda",
+  "library_sha256": "d4c5e65c3c302887083a443ed76b1b426e9f01cb3c46b4f6dd60b4b3db0196ce",
+  "probe_sha256": "af35b62830df7ce844dea5880f926e273763fd664b5d9a1ec7f276e0446973c1",
+  "commands": [
+    "cargo build --release -p machine-oric-atmos",
+    "rustc --edition=2024 -C opt-level=3 -C lto=thin /private/tmp/oric-wiring-audit/probe.rs -L dependency=target/release/deps --extern machine_oric_atmos=target/release/libmachine_oric_atmos.rlib -o /private/tmp/oric-wiring-audit/probe",
+    "/private/tmp/oric-wiring-audit/probe /Users/stevehill/.emu198x/roms/oric/oric.rom"
+  ],
+  "positive_exit": 0,
+  "negative_exit": 101,
+  "observation_granularity": "Instruction boundaries; confirms pin route and activity, not exact edge phase or pulse widths."
+}
