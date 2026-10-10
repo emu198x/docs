@@ -1,0 +1,85 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.78s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-a8fba6ef51e4f019)
+
+running 21 tests
+test tests::dll_entry_min_max ... ok
+test tests::dll_entry_parsing ... ok
+test tests::dl_entry_parsing ... ok
+test tests::ctrl_register ... ok
+test tests::mode_160a_pixel_decode ... ok
+test tests::background_fills_line ... ok
+test tests::mode_320a_pixel_decode ... ok
+test tests::mstat_vblank_bit ... ok
+test tests::each_region_holds_exactly_the_field_a_set_shows ... ok
+test tests::dli_pending_flag ... ok
+test tests::the_active_display_fits_the_field_with_the_border_around_it ... ok
+test tests::framebuffer_dimensions ... ok
+test tests::pal_border_rows_follow_the_existing_window_across_frame_wrap ... ok
+test tests::kangaroo_mode_makes_zero_pixels_opaque_background ... ok
+test tests::palette_write_read_back ... ok
+test tests::register_backgrnd_write ... ok
+test tests::frame_completion ... ok
+test tests::border_uses_each_scanlines_background_without_repainting_prior_rows ... ok
+test tests::transparent_pixels_dont_overwrite ... ok
+test tests::wsync_flag ... ok
+test tests::border_control_and_colour_kill_apply_to_both_sides ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 22 tests
+test cartridge::tests::canonical_a78_magic_is_stripped ... ok
+test cartridge::tests::v4_fields_override_v3_fields ... ok
+test cartridge::tests::supergame_bank_switching ... ok
+test cartridge::tests::declared_size_must_match_payload ... ok
+test cartridge::tests::unsupported_mapper_is_not_guessed_from_size ... ok
+test cartridge::tests::v3_supergame_ram_is_selected_and_writable ... ok
+test cartridge::tests::headerless_sizes_select_legacy_layouts ... ok
+test tests::rejects_oversized_rom ... ok
+test tia_audio::tests::audio_and_collision_reads_return_zero ... ok
+test tests::console_switches_drive_riot_port_b ... ok
+test tia_audio::tests::audio_registers_generate_samples ... ok
+test tests::maria_register_route ... ok
+test tests::joystick_drives_riot_port_a ... ok
+test tia_audio::tests::buttons_drive_the_inpt_registers ... ok
+test tia_audio::tests::video_writes_are_ignored ... ok
+test tests::memory_map_routes_ram_and_cart ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::frame_produces_tia_audio_at_native_rate ... ok
+test tests::cpu_wsync_colour_bars_extend_into_live_maria_borders ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::a78_pokey_feature_installs_and_routes_the_chip ... ok
+test tests::snapshot_round_trips_live_state ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/cart_boot.rs (target/debug/deps/cart_boot-7a760707a0ca2c75)
+
+running 1 test
+test cart_boots_without_panic ... ignored, FIXTURE: needs an Atari 7800 cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (target/debug/deps/synthetic_cart_boot-d59f8a72d5c951c4)
+
+running 2 tests
+
+thread 'the_atari_7800_boots_a_cartridge_and_paints_its_background' (86434620) panicked at crates/machine-atari-7800/tests/synthetic_cart_boot.rs:51:5:
+assertion `left == right` failed: the cartridge should have written BACKGRND; black means it never ran
+  left: None
+ right: Some(4292138104)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test the_atari_7800_boots_a_cartridge_and_paints_its_background ... FAILED
+test a_cartridge_that_writes_no_colour_does_not_look_like_a_boot ... ok
+
+failures:
+
+failures:
+    the_atari_7800_boots_a_cartridge_and_paints_its_background
+
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --test synthetic_cart_boot`

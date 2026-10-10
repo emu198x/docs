@@ -1,0 +1,35 @@
+   Compiling serde-big-array v0.5.1
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.31s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+running 4 tests
+test tests::the_active_display_fits_the_field_with_the_border_around_it ... ok
+
+thread 'tests::pal_border_rows_follow_the_existing_window_across_frame_wrap' (86430319) panicked at crates/atari-maria/src/lib.rs:1167:13:
+assertion failed: maria.framebuffer[row *
+                    width..(row + 1) *
+                    width].iter().all(|&p|
+        p == PAL_PALETTE[usize::from(colour >> 1)])
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tests::border_uses_each_scanlines_background_without_repainting_prior_rows' (86430318) panicked at crates/atari-maria/src/lib.rs:1100:13:
+assertion failed: maria.framebuffer[first..first +
+                    width].iter().all(|&p| p == palette[0x4e >> 1])
+test tests::pal_border_rows_follow_the_existing_window_across_frame_wrap ... FAILED
+test tests::border_uses_each_scanlines_background_without_repainting_prior_rows ... FAILED
+
+thread 'tests::border_control_and_colour_kill_apply_to_both_sides' (86430317) panicked at crates/atari-maria/src/lib.rs:1134:25:
+assertion failed: row[..left].iter().all(|&p| p == expected_border)
+test tests::border_control_and_colour_kill_apply_to_both_sides ... FAILED
+
+failures:
+
+failures:
+    tests::border_control_and_colour_kill_apply_to_both_sides
+    tests::border_uses_each_scanlines_background_without_repainting_prior_rows
+    tests::pal_border_rows_follow_the_existing_window_across_frame_wrap
+
+test result: FAILED. 1 passed; 3 failed; 0 ignored; 0 measured; 17 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-maria --lib`
