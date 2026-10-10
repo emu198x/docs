@@ -1,0 +1,10 @@
+Error - failed to retrieve executable path, falling back to getcwd() + argv[0]
+DriveROM: Error - 2000 ROM image not found. Hardware-level 2000 emulation is not available.
+DriveROM: Error - 4000 ROM image not found. Hardware-level 4000 emulation is not available.
+DriveROM: Error - CMDHD ROM image not found. Hardware-level CMDHD emulation is not available.
+#1 (Stop on  exec e000)    0/$000,   6/$06
+.C:e000  78          SEI            - A:00 X:00 Y:00 SP:00 ..-..IZ.          6
+BREAK: 1  C:$e407  (Stop on exec)
+#1 (Stop on  exec e407)   97/$061,  12/$0c
+.C:e407  4C 07 E4    JMP $E407      - A:00 X:00 Y:00 SP:00 ..-..IZ.     803672
+Saving file '/private/tmp/via-timer2-underflow/native-final/vic20ntsc.bin' from $0200 to $025f

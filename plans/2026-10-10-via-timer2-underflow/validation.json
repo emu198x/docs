@@ -1,0 +1,28 @@
+{
+  "tests": {
+    "suites": {
+      "passed": 546,
+      "failed": 0,
+      "ignored": 110
+    },
+    "fixtures": {
+      "passed": 32,
+      "failed": 0,
+      "ignored": 0
+    },
+    "survey": {
+      "passed": 2,
+      "failed": 0,
+      "ignored": 0
+    },
+    "drive-roundtrip": {
+      "passed": 3,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "native_observations": 192,
+  "baseline_mismatches": 84,
+  "fixed_mismatches": 0,
+  "catalogue": "Not run: external media volume absent. Parent failure retained in ../2026-10-10-via-timer2-start/catalogue.log.gz; remains a merge gate."
+}
