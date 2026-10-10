@@ -1,0 +1,16 @@
+   Compiling machine-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-mattel-aquarius)
+    Finished `release` profile [optimized] target(s) in 4.01s
+     Running tests/bios_boot.rs (target/release/deps/bios_boot-a0ddec55477efeaa)
+
+running 1 test
+test bios_boots_to_initial_screen ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.60s
+
+     Running tests/boot_beep.rs (target/release/deps/boot_beep-913aa6623fc1af3c)
+
+running 1 test
+test the_bios_boot_beep_is_audible ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+

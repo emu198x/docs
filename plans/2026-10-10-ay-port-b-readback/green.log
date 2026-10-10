@@ -1,0 +1,275 @@
+   Compiling emu198x-gi-ay-3-8910 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-gi-ay-3-8910)
+   Compiling machine-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-mattel-aquarius)
+   Compiling machine-tatung-einstein v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-tatung-einstein)
+   Compiling gi-ay-3-8912 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/gi-ay-3-8912)
+   Compiling runtime-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-mattel-aquarius)
+   Compiling runtime-tatung-einstein v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-tatung-einstein)
+    Finished `release` profile [optimized] target(s) in 28.68s
+     Running unittests src/lib.rs (target/release/deps/emu198x_gi_ay_3_8910-1725bbcc920403c0)
+
+running 19 tests
+test tests::both_io_ports_resolve_external_pins_without_changing_their_latches ... ok
+test tests::detection_pattern_works ... ok
+test tests::envelope_shape_8_repeats_a_falling_sawtooth ... ok
+test tests::envelope_shapes_11_and_13_hold_at_max ... ok
+test tests::port_a_input_mask_defaults_to_no_pull ... ok
+test tests::envelope_continue_zero_shapes_fall_and_hold_at_zero ... ok
+test tests::envelope_shape_10_makes_a_triangle ... ok
+test tests::envelope_shape_14_makes_a_triangle ... ok
+test tests::envelope_shapes_9_and_15_hold_at_zero ... ok
+test tests::envelope_steps_every_16_ep_ticks ... ok
+test tests::noise_lfsr_advances_every_16_np_ticks ... ok
+test tests::noise_period_masked ... ok
+test tests::register_read_write ... ok
+test tests::silent_by_default ... ok
+test tests::sinclair_128k_port_a_pull_returns_bf_for_register_14 ... ok
+test watch::tests::clear_drops_records_but_keeps_capture_armed ... ok
+test tests::selected_register_and_registers_expose_full_state ... ok
+test tests::tone_produces_output ... ok
+test watch::tests::records_writes_until_cap ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/gi_ay_3_8912-9b8d54ef22577593)
+
+running 3 tests
+test tests::sinclair_128k_port_a_pull_returns_bf_for_register_14 ... ok
+test tests::register_read_write ... ok
+test tests::tone_produces_output ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/machine_mattel_aquarius-195c3775d67fdda4)
+
+running 22 tests
+test tests::ay_watch_captures_psg_data_writes ... ok
+test tests::char_and_colour_ram_round_trip ... ok
+test tests::controller_contacts_remain_visible_with_ay_ports_in_output_mode ... ok
+test tests::controllers_read_through_the_expander_ay_ports ... ok
+test tests::expansion_ram_round_trip_when_present ... ok
+test tests::expansion_ram_returns_ff_without_expansion ... ok
+test tests::key_press_and_release ... ok
+test tests::keyboard_high_byte_selects_row ... ok
+test tests::opposing_directions_cancel_to_centre ... ok
+test tests::rom_visible_at_low_window ... ok
+test tests::the_display_grid_is_the_25_rows_the_hardware_scans ... ok
+test tests::a_silent_machine_emits_a_constant_level ... ok
+test tests::the_audio_buffer_drains ... ok
+test tests::a_frame_yields_close_to_the_declared_sample_rate ... ok
+test tests::render_paints_framebuffer_with_default_colour_ram ... ok
+test tests::writing_fc_drives_the_sound_pin ... ok
+test tests::writing_ff_latches_the_software_lock_and_leaves_the_speaker_alone ... ok
+test tests::toggling_the_speaker_produces_a_waveform ... ok
+test tests::the_last_line_basic_writes_reaches_the_screen ... ok
+test tests::frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/bios_boot.rs (target/release/deps/bios_boot-021deb3b88905186)
+
+running 1 test
+test bios_boots_to_initial_screen ... ignored, FIXTURE: needs Aquarius BASIC ROM (8 KB) — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/boot_beep.rs (target/release/deps/boot_beep-7028131ef5a88b23)
+
+running 1 test
+test the_bios_boot_beep_is_audible ... ignored, FIXTURE: needs Aquarius BASIC ROM (8 KB) — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cart_autostart_probe.rs (target/release/deps/cart_autostart_probe-c8ff95bd63d150e5)
+
+running 2 tests
+test cart_descrambles_and_renders ... ignored, FIXTURE: needs Aquarius BIOS + char + cart
+test cart_detect_reaches_cart_entry ... ignored, FIXTURE: needs Aquarius BIOS + char + cart
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (target/release/deps/cpu_rate-de155f99b781c62c)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (target/release/deps/synthetic_firmware_boot-38f2c6ba0ab57368)
+
+running 2 tests
+test synthetic_firmware_runs_and_floods_the_display ... ok
+test the_control_image_stays_at_power_on ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/release/deps/machine_tatung_einstein-17ed9f7cde53b54c)
+
+running 17 tests
+test tests::analogue_joystick_reads_through_the_adc0844 ... ok
+test tests::cpc_dsk_rejects_non_dsk ... ok
+test tests::fdc_read_with_no_disk_reports_record_not_found ... ok
+test tests::cpc_dsk_round_trips_through_the_fdc ... ok
+test tests::ay_watch_captures_psg_data_writes ... ok
+test tests::fdc_reads_a_sector_from_an_inserted_disk ... ok
+test tests::key_press_and_release ... ok
+test tests::joystick_fire_buttons_read_on_port_20_active_low ... ok
+test tests::keyboard_contacts_remain_visible_with_ay_port_b_in_output_mode ... ok
+test tests::keyboard_row_selected_via_ay_port_a ... ok
+test tests::reading_port_24_also_toggles_the_rom ... ok
+test tests::rom_visible_at_reset_toggles_on_port_24 ... ok
+test tests::writes_always_land_in_ram_even_with_rom_paged_in ... ok
+test tests::pal_frame_runs_one_vdp_frame_of_4mhz_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::vdp_dot_ratio_is_exact_5_369_to_4_mhz ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/bios_boot.rs (target/release/deps/bios_boot-3a9908daf12237fa)
+
+running 1 test
+test bios_boots_to_mos_prompt ... ignored, FIXTURE: needs Tatung Einstein X-TAL MOS ROM (8 KB) — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (target/release/deps/cpu_rate-b81a47a7829e617f)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_boot.rs (target/release/deps/disk_boot-55fd8cd0e938c116)
+
+running 1 test
+test ctrl_break_loads_from_real_disk ... ignored, FIXTURE: needs the Einstein MOS and a bootable CPCEMU .dsk — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/keyboard_type.rs (target/release/deps/keyboard_type-27baa79714703ea3)
+
+running 1 test
+test types_hello_at_the_mos_prompt ... ignored, FIXTURE: needs Tatung Einstein X-TAL MOS ROM — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (target/release/deps/synthetic_firmware_boot-8c01e9e3c7230000)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_einstein_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/release/deps/runtime_mattel_aquarius-2a37ecceeb6c1491)
+
+running 9 tests
+test profiles::tests::profile_uses_ntsc_region ... ok
+test runtime::tests::every_legend_names_a_key_this_machine_has ... ok
+test runtime::tests::legends_are_one_to_one ... ok
+test input::tests::button_events_compose_the_controller_codes ... ok
+test runtime::tests::the_arithmetic_operators_are_reachable ... ok
+test runtime::tests::firmware_set_requires_the_separate_character_rom ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test runtime::tests::firmware_set_builds_with_both_physical_roms ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/audio.rs (target/release/deps/audio-3708a4dce2864b3e)
+
+running 2 tests
+test an_idle_machine_still_reports_the_declared_format ... ok
+test a_beeper_program_produces_a_non_empty_waveform ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/firmware_catalogue.rs (target/release/deps/firmware_catalogue-d89b336709dc5009)
+
+running 1 test
+test single_model_catalogue_builds_the_existing_profile ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (target/release/deps/snapshot_roundtrip-6947c8002e72ac03)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/runtime_tatung_einstein-1805a21639c4c300)
+
+running 8 tests
+test input::tests::digital_directions_snap_the_pots_to_extremes ... ok
+test input::tests::axis_scales_and_routes_to_the_right_adc_channels ... ok
+test input::tests::modifier_keys_drive_the_status_register ... ok
+test input::tests::modifiers_and_matrix_keys_route_to_disjoint_paths ... ok
+test profiles::tests::profile_declares_rom_firmware_and_floppy ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_version_4_before_payload_decode ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/firmware_catalogue.rs (target/release/deps/firmware_catalogue-9873210cc2f410b1)
+
+running 1 test
+test single_model_catalogue_builds_the_existing_profile ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/media.rs (target/release/deps/media-9c1ce8700d72fc83)
+
+running 3 tests
+test runtime_rejects_bad_dsk_and_supports_eject ... ok
+test runtime_loads_dsk_and_preserves_sector_contents_across_reset ... ok
+test profile_exposes_standard_floppy_slot ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (target/release/deps/snapshot_roundtrip-a734ed6777b21776)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests emu198x_gi_ay_3_8910
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests gi_ay_3_8912
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_mattel_aquarius
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_tatung_einstein
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_mattel_aquarius
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_tatung_einstein
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

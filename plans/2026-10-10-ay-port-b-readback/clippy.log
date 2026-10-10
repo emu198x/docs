@@ -1,0 +1,10 @@
+    Checking common-z80-machine v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/common-z80-machine)
+    Checking emu198x-gi-ay-3-8910 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-gi-ay-3-8910)
+    Checking emu198x-zilog-z80 v0.8.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-zilog-z80)
+    Checking ti-tms9918 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/ti-tms9918)
+    Checking gi-ay-3-8912 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/gi-ay-3-8912)
+    Checking machine-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-mattel-aquarius)
+    Checking machine-tatung-einstein v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-tatung-einstein)
+    Checking runtime-mattel-aquarius v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-mattel-aquarius)
+    Checking runtime-tatung-einstein v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-tatung-einstein)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.56s

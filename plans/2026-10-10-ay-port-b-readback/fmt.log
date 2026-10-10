@@ -1,0 +1,13 @@
+Diff in /Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-tatung-einstein/src/lib.rs:1027:
+         sys.io_write(0x03, 0xF0);
+         assert_eq!(sys.io_read(0x02), 0xA0, "latch and contacts both drive");
+         sys.keyboard[5] = 0xFF;
+-        assert_eq!(sys.io_read(0x02), 0xF0, "release preserves the output latch");
++        assert_eq!(
++            sys.io_read(0x02),
++            0xF0,
++            "release preserves the output latch"
++        );
+     }
+ 
+     #[test]
