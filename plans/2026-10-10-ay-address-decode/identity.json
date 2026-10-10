@@ -1,0 +1,14 @@
+{
+  "source_commit": "44bdba6c9f97dcf1f24629b4c3b095722c83fc1b",
+  "source_tree": "1effd4e8e19e3cd1cfc5f0ced3296aa0d07a00fc",
+  "probe_exit": 1,
+  "artifacts": {
+    "probe.rs": "f69b0bbebaa93b8196c064a27b341d3c35b2e72deedadd6fe733da67e0d9698b",
+    "probe.log": "f95d9c6571fce6c2f845ec0cf75501c957e88e2bbe49da3da5f92c56c09f2f5c",
+    "build.log": "a40c1884a95654da1e9ce0b9042cc3b906a7c879f74bfc6527def185ef03cdb2"
+  },
+  "probe_binary_sha256": "119024e556845cda6788126bc257ee3b3f57db26274407daeb548040a5d1684a",
+  "inspected_pdf_sha256": "a783dc24e16326852c27d0d216d6f92493596245f9c5bef55913ca7a145ed0f7",
+  "source_url": "https://map.grauw.nl/resources/sound/generalinstrument_ay-3-8910.pdf",
+  "source_page": "PDF 2, printed 5-19"
+}

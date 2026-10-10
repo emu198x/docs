@@ -1,0 +1,17 @@
+prior=07 address=f0 selected=00 mutated=true read=55
+prior=07 address=f1 selected=01 mutated=true read=05
+prior=07 address=f2 selected=02 mutated=true read=55
+prior=07 address=f3 selected=03 mutated=true read=05
+prior=07 address=f4 selected=04 mutated=true read=55
+prior=07 address=f5 selected=05 mutated=true read=05
+prior=07 address=f6 selected=06 mutated=true read=15
+prior=07 address=f7 selected=07 mutated=true read=55
+prior=07 address=f8 selected=08 mutated=true read=15
+prior=07 address=f9 selected=09 mutated=true read=15
+prior=07 address=fa selected=0a mutated=true read=15
+prior=07 address=fb selected=0b mutated=true read=55
+prior=07 address=fc selected=0c mutated=true read=55
+prior=07 address=fd selected=0d mutated=true read=05
+prior=07 address=fe selected=0e mutated=true read=ff
+prior=07 address=ff selected=0f mutated=true read=ff
+valid_controls=256 invalid_addresses=3840 rejected_write_mutations=3840 changed_register_latches=3600 reads_other_than_ff=3360
