@@ -1,0 +1,99 @@
+{
+  "compiler_command": [
+    "cc",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/makeref.c",
+    "-o",
+    "/private/tmp/lightpen-reference/reproduced/makeref"
+  ],
+  "source_sha256": {
+    "Makefile": "4919f87636c779d69cb2c06648f234c2816baadca969def3fb0810348d0b1b89",
+    "makeref.c": "aeb59bb0c1fe657205727e6ba4aabfec7de48bd63d6486d14fcfa564e71d313a",
+    "lightpen.asm": "9a30004c970e1d0e266aa8316f2d8c24618ec5b32f272461f23afe048823f4f5",
+    "lightpen.prg": "3915d69df941e881a285261515ddbb8e239e07cd7dbd3a8468d71fc08b445ce1"
+  },
+  "comparisons": [
+    {
+      "chip": "6569",
+      "raw_sha256": "3cac165bfa7ab11c41f0a9ab7dd7a79e0f9e85452e6adeaf5337bee13ff55525",
+      "prepared_sha256": "4e5d1e0808559910c27a9fb5a7ce773333eb43ec41791be24e396fb3e1337af4",
+      "changes": [
+        [
+          766,
+          162,
+          166
+        ],
+        [
+          767,
+          166,
+          170
+        ]
+      ],
+      "embedded_address": 6356,
+      "converter_output": "pre r03 dump, correcting\n",
+      "prepared_pass_through": true
+    },
+    {
+      "chip": "8565",
+      "raw_sha256": "3603050621c3bcf61f9bba470af30c29cefad9e5bdf99357b6e3ac419914f6d2",
+      "prepared_sha256": "9f9ab368608f6314c85e1ff8627f8d24118fc19321cb14525aa02e6fdba6174c",
+      "changes": [
+        [
+          766,
+          161,
+          165
+        ],
+        [
+          767,
+          165,
+          169
+        ]
+      ],
+      "embedded_address": 12787,
+      "converter_output": "pre r03 dump, correcting\n",
+      "prepared_pass_through": true
+    },
+    {
+      "chip": "6567",
+      "raw_sha256": "1e149a89cad86d51c61daa887f64d74a7f30edca397f12bbf3111acd8b032e92",
+      "prepared_sha256": "62775f9cdf0c6cae1777ab14cbadf8861008afca913a467a68b8ec8464b08b62",
+      "changes": [
+        [
+          766,
+          130,
+          134
+        ],
+        [
+          767,
+          134,
+          138
+        ]
+      ],
+      "embedded_address": 3779,
+      "converter_output": "pre r03 dump, correcting\n",
+      "prepared_pass_through": true
+    },
+    {
+      "chip": "8562r4",
+      "raw_sha256": "931670eb1489748b9381bbcb41294c5c9c6a0101db92b23807ca95f4a9a7cf99",
+      "prepared_sha256": "a03dac7295849ef340f353f08fc4bbebea92872aa224a27537dbabf578a9b399",
+      "changes": [
+        [
+          766,
+          129,
+          133
+        ],
+        [
+          767,
+          133,
+          137
+        ]
+      ],
+      "embedded_address": 8928,
+      "converter_output": "pre r03 dump, correcting\n",
+      "prepared_pass_through": true
+    }
+  ]
+}

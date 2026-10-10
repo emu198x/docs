@@ -1,16 +1,19 @@
 # Light-pen correction evidence
 
 [The plan](../2026-10-10-c64-hmos-lightpen.md) records the two corrected faults
-and their verification. The native oracle establishes implementation parity;
-it remains two LPX samples per model away from the upstream physical dumps.
+and their verification. The raw dumps need the upstream pre-R03 preparation
+step: [the follow-up](../2026-10-10-c64-lightpen-reference-normalization.md)
+proves all 5,120 prepared physical-reference bytes match native VICE and
+Emu198x, with none excluded.
 
 - `before-*.bin`, `after-*.bin`, `native-*.bin` contain five 256-byte result
   pages (D011, D012, LPX, LPY, IRQ). No load-address prefix or ROM bytes.
-- `native-comparison.json` retains the two physical-dump differences and
+- `native-comparison.json` retains the two raw pre-R03 differences and
   exact native invocation per model. Native logs prove the guest completed.
 - `before.log.gz` and `after.log.gz` compare against physical dumps and are
-  both red. The latter deliberately retains the two unexplained native /
-  physical disagreements. `strict.log.gz` is the final native-parity gate.
+  both red because they compare directly with the raw pre-R03 dumps. The
+  follow-up applies the documented upstream preparation and checks all bytes.
+  `strict.log.gz` is the original successful native-parity gate.
 - `chip-before.log.gz` proves both directed faults before correction;
   `chip-final.log.gz` checks the fixed boundaries and suppression rule.
 - `snapshot.log.gz`, `packages.log.gz`, `clippy-final.log.gz` retain the
