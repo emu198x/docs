@@ -1,0 +1,20 @@
+{
+  "README.md": "91e7c3fe9af58aa562ffbb429a595cea2ff514949f2529c6499a18db419295ba",
+  "capture.py": "ce85bfc02f6ec38c7582085a9e6a12c64863496c4e2ae0d84c2e36995333bdd2",
+  "clippy-final.log.gz": "a2b0b218723b8d45178345c74086da97185ee75b7a36fb6905c88ac025e7533d",
+  "compare.py": "9255b8afe7a17006145d7d27a59d46351e007745bcedb7e99e403e33db323584",
+  "emulated-comparison.json.gz": "d75684cfab2a470810ab7e1b7eea8d3144fad1170d0d31cec52252843115247b",
+  "emulated-ntsc.bin": "30b162cb9b76aace8a594f3e07899ffa26fc7ec2d1ec60cf550acd8501691a47",
+  "emulated-pal.bin": "97e3000b57db9b50b8eeaf885ef0a4d1cb993170f0a3ec386bf37189a5a26004",
+  "failed-monitor-setup.log.gz": "dc12afcae7050c54c689119052db32bd5d522cbef8cb62c04daddbc39b686040",
+  "helper-tests.log.gz": "7dc16b0421ffac6c2463abee1e05009b0f0a3e8fa52bdc5970ddc4da20a5e3e8",
+  "native-comparison.json.gz": "ea3954c3d99ad450a7b16688f5a4a1bb7bd2f22a2a062ab8a0b8a130e3906f53",
+  "native-ntsc-command.json": "6b8c6b615d617e410093d7ac0a13d0beae7f4edd527025fb3d2a354d4b8ab826",
+  "native-ntsc.bin": "982e61e360de48ce24f6d452d1dea5f86aa60fd5f2efc5661818398f198c49e3",
+  "native-ntsc.log.gz": "368768b8ca776fdd795343606ad72bca64a879afac98d08e34c8c5295ad871ef",
+  "native-pal-command.json": "1b63beee2bed6999226e09c7fd940c21c14ec8b1dffdc9301ac2b4d9b5986749",
+  "native-pal.bin": "795ea6af1b277421218bd9223963419b1c100de891bd05785ff98b336572df08",
+  "native-pal.log.gz": "ea95e453bd6e01f627b7db1a3f2a7dc2b17c7cc3c1476db7b2a3c8b8130da58b",
+  "negative.log.gz": "cbaf10abaaad189de5b0a566417025c897306704c65b0af1acba665d45a91b60",
+  "verified.log.gz": "f3a7b37edee46cf536c416f9b75d6e0d17babfd1512c2ac9ac7ff330b822ef4d"
+}
