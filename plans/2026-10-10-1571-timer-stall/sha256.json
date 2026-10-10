@@ -1,0 +1,21 @@
+{
+  "README.md": "9596b3c5f1ce32c32e48f1743d1906d65dd16078e09a5a82620e5ddc4d02fbb4",
+  "alternate-1571-red.log.gz": "c133dd25abc4f9f78d097af48aab9e69ed93f9c45054a533a7f802564f7361f2",
+  "alternate-clippy.log.gz": "85e166a831af2cdaf5228ea6556703795fa2a54f173ff942caa90228645fba58",
+  "alternate-fmt.log.gz": "128cbda267c606cfdc8c185a6c3769905ec5c47dc8546161a14f4810aea79235",
+  "alternate-green.log.gz": "790ed06acf09fc573a10d8d9742299ca68ad44deaf3174309a252824089d9313",
+  "alternate-red.log.gz": "98eed3baf81dea92401296d2f36c8eb3fe5cfe267f6d5638132bbde84350818b",
+  "causal-result.json": "5ad24864d2ca74bac018b7bca2d9331ede3b103b1db3b238d8dfe8ae516efb42",
+  "commands.json": "eebe25a593a5be107325265f6d1e9b7c16221bf1c129f4c2cb1cf3539b50bdba",
+  "corrected-attention.out": "b5aa28f061bb387af13f8213de47cb72861934a6d361bac1f84678a1e55dacee",
+  "corrected-attention.trace.gz": "8650b44dcb4bc3adcd4388d49ca31a6dfde53aee295a29ac25b24262969417c4",
+  "early-alternate.out": "272a851121b5c83c01bf641f312f85d476b31cb1162dc9eaa76858e99e8a9ba4",
+  "early-alternate.trace.gz": "09d928a9d2cbb58cf0190a36ad781a9ca7c9037752c0995a69a94325ff526730",
+  "early-attention.out": "b34b26cecda2a0ebbaaa56a7a641f0e7db88cf35c86ef9e7cc0a9f2403451c09",
+  "early-attention.trace.gz": "013b6b3b9b101eb2397294542374944474953a3d31e40820013c78bac383ea85",
+  "identities.json": "4350596038fd5055e26f7a1d5cad2f322b66dd4c7b1664610cc9329806ea1430",
+  "instrumentation-alternate.patch": "89bc9cb2382280e47f7147199e900ba1568935102cf9ec15b9bc2f2888543d09",
+  "instrumentation-attention.patch": "bab78615ea7f5afb4bb65e6a3d55a1d368cbd6503990abee3910c9a9ceea7941",
+  "run-production.py": "9160c7e9a8e2eb78224bb33e1fcdb6ff3811a7336b25900e67fff4e14f404892",
+  "verify.py": "2047f5da97819d23ae6a91bb5b0c1fa00fab2f2aa8cc3855955aab5f7e9e75e9"
+}

@@ -1,0 +1,11 @@
+{
+  "failed_job_writes": 2945,
+  "recovered_job_writes": 3114,
+  "failed_mechanics_events": 102,
+  "recovered_mechanics_events": 138,
+  "recovered_sequences_match_correct_timer_run": true,
+  "same_atn_edge_cycle": 160142709,
+  "irq_acknowledged_by_rom_cycle": 160142799,
+  "software_attention_flag_written_cycle": 160142804,
+  "wrong_timer_hashes_match_production": false
+}

@@ -1,0 +1,300 @@
+diff --git i/crates/common-commodore-iec-drive/src/lib.rs w/crates/common-commodore-iec-drive/src/lib.rs
+index de0a2ae2..44256446 100644
+--- i/crates/common-commodore-iec-drive/src/lib.rs
++++ w/crates/common-commodore-iec-drive/src/lib.rs
+@@ -315,7 +315,21 @@ impl IecDriveBoard {
+         let atn_high = self.bus_atn_high(bus);
+         self.via1.pa_in = pa_in;
+         self.via1.pb_in = pb_in;
++        let old_ca1 = self.via1.ca1;
++        let old_ifr = self.via1.peek(0x0d);
+         self.via1.set_ca1_level(!atn_high);
++        if old_ca1 != self.via1.ca1 {
++            eprintln!(
++                "ATN cyc={} pc={:04x} asserted={} ifr_before={:02x} ifr_after={:02x} flag7c={:02x} orb={:02x}",
++                self.cpu.total_cycles,
++                self.cpu.regs.pc,
++                !atn_high,
++                old_ifr,
++                self.via1.peek(0x0d),
++                self.ram[0x7c],
++                self.via1.orb()
++            );
++        }
+         let via2_pa_in = self.via2_port_a_input(engine, present);
+         let via2_pb_in = self.via2_port_b_input(engine, present, write_protected);
+         let via2_ca1 = self.byte_ready_not_asserted(engine);
+diff --git i/crates/emu198x-catalogue/src/lib.rs w/crates/emu198x-catalogue/src/lib.rs
+index ed50ca45..07a2c284 100644
+--- i/crates/emu198x-catalogue/src/lib.rs
++++ w/crates/emu198x-catalogue/src/lib.rs
+@@ -1957,9 +1957,42 @@ where
+         run_startup_sequence(session, entry)?;
+     }
+ 
+-    session
+-        .run_frames(entry.boot.wait_frames)
+-        .map_err(|err| CatalogueError::Session(format!("boot wait: {err}")))?;
++    if entry.id == "bruce-lee-1571" {
++        let mut remaining = entry.boot.wait_frames;
++        while remaining > 0 {
++            let count = remaining.min(1000);
++            session
++                .run_frames(count)
++                .map_err(|err| CatalogueError::Session(format!("boot wait: {err}")))?;
++            remaining -= count;
++            for path in [
++                "cpu.pc",
++                "cpu.a",
++                "cpu.x",
++                "cpu.y",
++                "cpu.p",
++                "cpu.sp",
++                "cia2.pa",
++                "cia2.port_a_latch",
++                "memory.ram.0090",
++                "memory.ram.00a4",
++                "memory.ram.00a5",
++                "memory.ram.00ae",
++                "memory.ram.00af",
++            ] {
++                eprintln!(
++                    "HOST frame={} path={} value={:?}",
++                    entry.boot.wait_frames - remaining,
++                    path,
++                    session.query(path)
++                );
++            }
++        }
++    } else {
++        session
++            .run_frames(entry.boot.wait_frames)
++            .map_err(|err| CatalogueError::Session(format!("boot wait: {err}")))?;
++    }
+ 
+     let boot_frame = session
+         .latest_frame()
+diff --git i/crates/machine-commodore-1541/src/lib.rs w/crates/machine-commodore-1541/src/lib.rs
+index 5f1e3af8..a1a6233e 100644
+--- i/crates/machine-commodore-1541/src/lib.rs
++++ w/crates/machine-commodore-1541/src/lib.rs
+@@ -677,7 +677,12 @@ impl Drive1541 {
+             }
+             0x1800..=0x18FF if matches!(addr & 0x0F, 0x01 | 0x0F) => {
+                 let value = self.via1_port_a_read();
+-                self.board.via1_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via1_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1800..=0x18FF => self.board.via1_mut().read((addr & 0x0F) as u8),
+             0x1C00..=0x1CFF if (addr & 0x0F) == 0x00 => {
+@@ -689,7 +694,12 @@ impl Drive1541 {
+                 self.rotate_disk_bus_read();
+                 let value = self.via2_port_a_read();
+                 self.engine.clear_byte_ready_level();
+-                self.board.via2_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via2_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1C00..=0x1CFF => self.board.via2_mut().read((addr & 0x0F) as u8),
+             0xC000..=0xFFFF => self.rom[usize::from(addr - 0xC000)],
+@@ -743,7 +753,12 @@ impl Drive1541 {
+             }
+             0x1800..=0x18FF if matches!(addr & 0x0F, 0x01 | 0x0F) => {
+                 let value = self.via1_port_a_read();
+-                self.board.via1_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via1_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1800..=0x18FF => self.board.via1_mut().read((addr & 0x0F) as u8),
+             0x1C00..=0x1CFF if (addr & 0x0F) == 0x00 => {
+@@ -755,7 +770,12 @@ impl Drive1541 {
+                 self.rotate_disk_bus_read();
+                 let value = self.via2_port_a_read();
+                 self.engine.clear_byte_ready_level();
+-                self.board.via2_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via2_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1C00..=0x1CFF => self.board.via2_mut().read((addr & 0x0F) as u8),
+             0xC000..=0xFFFF => self.rom[usize::from(addr - 0xC000)],
+diff --git i/crates/machine-commodore-1571/src/lib.rs w/crates/machine-commodore-1571/src/lib.rs
+index ead343f2..4db51aa6 100644
+--- i/crates/machine-commodore-1571/src/lib.rs
++++ w/crates/machine-commodore-1571/src/lib.rs
+@@ -751,7 +751,36 @@ impl Drive1571 {
+         let irq = self.board.via1().irq || self.board.via2().irq;
+         self.board.cpu_mut().irq = irq;
+ 
++        let before_mechanics = (self.motor_on(), self.head_position());
+         let addr = self.board.cpu().addr;
++        let cpu = self.board.cpu();
++        if self.cycles.is_multiple_of(1_000_000) {
++            self.trace_timer_event("sample", addr, cpu.data);
++            eprintln!(
++                "BUS cyc={} cpu={:02x} drive={:?} port={:02x}",
++                self.cycles,
++                bus.cpu_bus(),
++                bus.drive_bus(8),
++                bus.drive_port()
++            );
++        }
++        if (160_142_680..160_143_100).contains(&self.cycles)
++            || ((160_000_000..185_000_000).contains(&self.cycles)
++            && ((!cpu.rw && matches!(addr, 0x007c | 0x1800 | 0x180d | 0x180e))
++                || (cpu.rw && matches!(addr, 0x1801 | 0x180d))))
++            || (!cpu.rw && (addr <= 4 || matches!(addr, 0x1805 | 0x1C05)))
++            || (cpu.rw && addr == 0x1C04 && self.board.via2().peek(0x0D) & 0x40 != 0)
++        {
++            self.trace_timer_event(
++                "bus",
++                addr,
++                if cpu.rw {
++                    self.peek_with_iec_bus(addr, bus)
++                } else {
++                    cpu.data
++                },
++            );
++        }
+         if self.board.cpu().rw {
+             let value = self.read_with_iec_bus(addr, bus);
+             self.board.cpu_mut().data_in = value;
+@@ -770,12 +799,50 @@ impl Drive1571 {
+         self.cia.tick();
+         self.fdc.tick();
+         self.refresh_drive_mechanics();
++        if before_mechanics != (self.motor_on(), self.head_position()) {
++            self.trace_timer_event("mechanics", addr, self.board.cpu().data);
++        }
+         self.cycles += 1;
+         self.finish_cycle_rotation();
+         self.apply_drive_inputs(Some(bus));
+         completed
+     }
+ 
++    // Temporary observation only: no clocks or mutating reads.
++    fn trace_timer_event(&self, event: &str, addr: u16, data: u8) {
++        let cpu = self.board.cpu();
++        let ram = self.board.ram();
++        eprintln!(
++            "TRACE event={} cyc={} pc={:04x} rw={} addr={:04x} data={:02x} a={:02x} x={:02x} y={:02x} p={:02x} jobs={:02x?} state={:02x} current={:02x} motorcount={:02x} stepcount={:02x} motor={} head={} t1={:04x} ifr1={:02x} ifr2={:02x} sync={} bytes={} flag7c={:02x} ora={:02x} orb={:02x} ca1={}",
++            event,
++            self.cycles,
++            cpu.regs.pc,
++            cpu.rw,
++            addr,
++            data,
++            cpu.regs.a,
++            cpu.regs.x,
++            cpu.regs.y,
++            cpu.regs.p,
++            &ram[..5],
++            ram[0x20],
++            ram[0x3e],
++            ram[0x48],
++            ram[0x4a],
++            self.motor_on(),
++            self.head_position(),
++            u16::from(self.board.via2().peek(4)) | (u16::from(self.board.via2().peek(5)) << 8),
++            self.board.via1().peek(0x0d),
++            self.board.via2().peek(0x0d),
++            self.sync_event_count(),
++            self.byte_ready_event_count(),
++            ram[0x7c],
++            self.board.via1().ora(),
++            self.board.via1().orb(),
++            self.board.via1().ca1,
++        );
++    }
++
+     #[must_use]
+     pub fn peek_with_iec_bus(&self, addr: u16, bus: &IecBus) -> u8 {
+         match addr {
+@@ -800,7 +867,12 @@ impl Drive1571 {
+             }
+             0x1800..=0x18FF if matches!(addr & 0x0F, 0x01 | 0x0F) => {
+                 let value = self.via1_port_a_read();
+-                self.board.via1_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via1_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1800..=0x18FF => self.board.via1_mut().read((addr & 0x0F) as u8),
+             0x1C00..=0x1CFF if (addr & 0x0F) == 0x00 => {
+@@ -812,7 +884,12 @@ impl Drive1571 {
+                 self.rotate_disk_bus_read();
+                 let value = self.via2_port_a_read();
+                 self.engine.clear_byte_ready_level();
+-                self.board.via2_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via2_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1C00..=0x1CFF => self.board.via2_mut().read((addr & 0x0F) as u8),
+             0x2000..=0x3FFF => self.fdc.read((addr & 0x03) as u8),
+@@ -879,7 +956,12 @@ impl Drive1571 {
+             }
+             0x1800..=0x18FF if matches!(addr & 0x0F, 0x01 | 0x0F) => {
+                 let value = self.via1_port_a_read();
+-                self.board.via1_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via1_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1800..=0x18FF => self.board.via1_mut().read((addr & 0x0F) as u8),
+             0x1C00..=0x1CFF if (addr & 0x0F) == 0x00 => {
+@@ -891,7 +973,12 @@ impl Drive1571 {
+                 self.rotate_disk_bus_read();
+                 let value = self.via2_port_a_read();
+                 self.engine.clear_byte_ready_level();
+-                self.board.via2_mut().read_port_a_with_value(value)
++                // Register $F samples port A without acknowledging CA1/CA2.
++                if addr & 0x0F == 0x01 {
++                    self.board.via2_mut().read_port_a_with_value(value)
++                } else {
++                    value
++                }
+             }
+             0x1C00..=0x1CFF => self.board.via2_mut().read((addr & 0x0F) as u8),
+             0x2000..=0x3FFF => self.fdc.read((addr & 0x03) as u8),
+diff --git i/crates/mos-via-6522/src/lib.rs w/crates/mos-via-6522/src/lib.rs
+index cbeffa0a..694b3a6a 100644
+--- i/crates/mos-via-6522/src/lib.rs
++++ w/crates/mos-via-6522/src/lib.rs
+@@ -479,7 +479,10 @@ impl Via6522 {
+                 // next cycle sees the value written, and the flag sets N + 2
+                 // cycles after the write (MCS6522 data sheet, Timer 1
+                 // One-Shot Mode; emu198x#1642).
+-                self.t1_reload_pending = true;
++                // Temporary negative control for issue 1679; never shipped.
++                static EARLY: std::sync::OnceLock<bool> = std::sync::OnceLock::new();
++                self.t1_reload_pending = !*EARLY
++                    .get_or_init(|| std::env::var_os("VIA_T1_EARLY_NEGATIVE_CONTROL").is_some());
+                 self.t1_pb7_output = false;
+                 self.clear_interrupts(IRQ_T1);
+             }

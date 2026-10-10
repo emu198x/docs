@@ -1,0 +1,10 @@
+{
+  "red_1541": "cargo test -p machine-commodore-1541 -p machine-commodore-1571 alternate_port_a_reads_preserve_pending_interrupts",
+  "red_1571": "cargo test -p machine-commodore-1571 alternate_port_a_reads_preserve_pending_interrupts",
+  "green": "cargo test -p machine-commodore-1541 -p machine-commodore-1571",
+  "clippy": "cargo clippy -p machine-commodore-1541 -p machine-commodore-1571 --all-targets -- -D warnings",
+  "format": "cargo fmt --all -- --check",
+  "build": "cargo build --release -p emu198x-catalogue --bin catalogue",
+  "production_catalogue": "python3 run-production.py",
+  "causal_evidence": "python3 verify.py"
+}

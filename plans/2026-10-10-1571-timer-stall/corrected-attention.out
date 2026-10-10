@@ -1,0 +1,4 @@
+bruce-lee-1571:
+  boot.frame_hash = "xxh64:41bdf490f9df6341"
+  audio.hash      = "xxh64:20d7e4f0c3c90c4b"
+  outcome         = pass
