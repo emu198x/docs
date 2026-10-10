@@ -1,0 +1,18 @@
+diff --git i/crates/machine-commodore-vic-20/src/lib.rs w/crates/machine-commodore-vic-20/src/lib.rs
+index e796ecfe..76621608 100644
+--- i/crates/machine-commodore-vic-20/src/lib.rs
++++ w/crates/machine-commodore-vic-20/src/lib.rs
+@@ -534,6 +534,13 @@ impl Vic20 {
+                 0x9120..=0x912F => self.via2.read((addr & 0x0F) as u8),
+                 _ => self.mem_read(addr),
+             };
++            if self.cpu.regs.pc == 0x168D
++                && matches!(addr, 0x9003 | 0x9004 | 0x9100 | 0x9200)
++                && std::env::var_os("VIC20_FETCH_TRACE").is_some()
++            {
++                let memory: Vec<u8> = (0x1C00..0x2000).map(|a| self.mem_read(a)).collect();
++                eprintln!("FETCH_TRACE {{\"model\":\"{:?}\",\"clock\":{},\"address\":{},\"sample\":{},\"actual\":{},\"registers\":{:?},\"memory\":{:?}}}", self.model, self.master_clock, addr, self.mem_read(2), self.cpu.data_in, self.vic.regs(), memory);
++            }
+         } else {
+             self.mem_write(self.cpu.addr, self.cpu.data);
+         }
