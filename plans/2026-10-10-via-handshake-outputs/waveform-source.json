@@ -1,0 +1,11 @@
+{
+  "url": "https://www.zimmers.net/anonftp/pub/cbm/documents/chipdata/6522.zip",
+  "archive_sha256": "2ddb1669695a5a23978252fbc351f9dda46a6d7e7872adc3ab08aebf0f29e12e",
+  "page": "6522-05.gif",
+  "figures": [
+    "3. Read Handshake Timing Sequence",
+    "4. Write Handshake Timing Sequence"
+  ],
+  "document": "MOS Technology MCS6522 preliminary datasheet, November 1977",
+  "observation_granularity": "one complete Phi2 clock period; no claim of read/write half-cycle launch equivalence"
+}
