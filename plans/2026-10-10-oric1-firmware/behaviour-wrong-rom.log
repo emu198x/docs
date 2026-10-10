@@ -1,0 +1,33 @@
+basic10.rom
+                                    CAPS
+  ORIC EXTENDED BASIC V1.1              
+  ` 1983 TANGERINE                      
+                                        
+                                        
+   37631 BYTES FREE                     
+                                        
+  Ready                                 
+  PRINTASC(STR$(1))                     
+   32                                   
+                                        
+  Ready                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+
+thread 'main' (85697677) panicked at /private/tmp/oric-firmware-audit/behaviour.rs:32:9:
+ROM-specific STR$ result must match
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

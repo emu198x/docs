@@ -1,0 +1,34 @@
+{
+  "source_commit": "44bdba6c9f97dcf1f24629b4c3b095722c83fc1b",
+  "source_tree": "1effd4e8e19e3cd1cfc5f0ced3296aa0d07a00fc",
+  "download_url": "https://www.petergordon.org.uk/oricutron/files/Oricutron_win32_v12.zip",
+  "archive_sha256": "0efcac032645d246b9dc363097a64d97ae5eaab7db6d73d43e5102865f2e4781",
+  "roms": {
+    "basic10.rom": {
+      "sha256": "83d341dab126092f7a6d56f6a92bca0643ff3aa6529d896085004f958c9be2ff",
+      "sha1": "333116e6884d85aaa4dfc7578a91cceeea66d016",
+      "size": 16384
+    },
+    "basic11b.rom": {
+      "sha256": "ed28568574716eef5d7c0fde2568d7a47a6e4b1fbca81daff3be05e45723466d",
+      "sha1": "9451a1a09d8f75944dbd6f91193fc360f1de80ac",
+      "size": 16384
+    }
+  },
+  "artifacts": {
+    "probe.rs": "394172d18d32a45f28efc553518fe69c984dc1f57902cb76cb4d19b43bb43bc2",
+    "probe.log": "811459dfedd7fd42e7109b50fe452ffa058405cb88c1bbb3899181c07d5b75e9",
+    "behaviour.rs": "f83930e209edbe5a908ac3e4d0136430d8b3c7d293afd5d383aa922562b3b34d",
+    "behaviour.log": "bb201c86dd45ddc4d9bd5f2d64e6feddf52826f6a22d39b01485fd0fcec58d9c",
+    "behaviour-wrong-rom.log": "3c48b0e833690b1e3ca94e8764fcc092b2d9609a15a2c3f0186694aa56590587"
+  },
+  "binaries": {
+    "probe": "750597c2cf344f7de28795e112ff1a25b14ca12a332f697477a63a1b9a0f253a",
+    "behaviour": "b913232aa4e56c078afee8a6d9e123e968a5ba7373ca083c0ae0d039efd2b7c9"
+  },
+  "exit_codes": {
+    "wrong_model_reproduction": 1,
+    "both_rom_behaviours": 0,
+    "wrong_rom_negative_control": 101
+  }
+}
