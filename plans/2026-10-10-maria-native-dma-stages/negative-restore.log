@@ -1,0 +1,21 @@
+
+running 1 test
+test dma::tests::direct_snapshots_resume_dma_stages_and_bus_handoffs ... FAILED
+
+failures:
+
+failures:
+    dma::tests::direct_snapshots_resume_dma_stages_and_bus_handoffs
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 37 filtered out; finished in 0.23s
+
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.45s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+thread 'dma::tests::direct_snapshots_resume_dma_stages_and_bus_handoffs' (86982462) panicked at crates/atari-maria/src/dma.rs:281:17:
+assertion `left == right` failed
+  left: Dma { phase: Startup, delay: 10, request_delay: 0, requested: true, sampled_halt: true, slow_inhibit: false, initial: true, next_zone: false }
+ right: Dma { phase: Startup, delay: 10, request_delay: 0, requested: true, sampled_halt: true, slow_inhibit: true, initial: true, next_zone: false }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p atari-maria --lib`

@@ -1,0 +1,186 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+   Compiling runtime-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-7800)
+   Compiling emu198x-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.83s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-460b84ad92a3b9f7)
+
+running 38 tests
+test fetch::tests::memory_and_character_base_remain_live_between_fetches ... ok
+test fetch::tests::short_headers_retain_the_extended_headers_write_mode ... ok
+test dma::tests::descriptors_sample_live_bytes_including_after_address_drive_release ... ok
+test fetch::tests::byte_latches_match_all_four_reference_fetch_modes ... ok
+test fetch::tests::byte_latches_match_all_64_measured_reference_vectors ... ok
+test tests::background_fills_line ... ok
+test state::tests::invalid_clock_countdowns_leave_the_chip_unchanged ... ok
+test tests::border_uses_each_scanlines_background_without_repainting_prior_rows ... ok
+test tests::ctrl_register ... ok
+test tests::border_control_and_colour_kill_apply_to_both_sides ... ok
+test tests::dli_pending_flag ... ok
+test tests::dll_entry_min_max ... ok
+test tests::dll_entry_parsing ... ok
+test tests::each_region_holds_exactly_the_field_a_set_shows ... ok
+test tests::frame_completion ... ok
+test tests::framebuffer_dimensions ... ok
+test tests::kangaroo_mode_makes_zero_pixels_opaque_background ... ok
+test tests::mode_160a_pixel_decode ... ok
+test tests::mode_320a_pixel_decode ... ok
+test tests::mstat_vblank_bit ... ok
+test tests::pal_border_rows_follow_the_existing_window_across_frame_wrap ... ok
+test tests::palette_write_read_back ... ok
+test tests::direct_state_preserves_pending_pixels_and_completed_frame ... ok
+test tests::register_backgrnd_write ... ok
+test tests::the_active_display_fits_the_field_with_the_border_around_it ... ok
+test tests::terminating_header_still_fetches_the_following_high_byte ... ok
+test tests::transparent_pixels_dont_overwrite ... ok
+test tests::wsync_flag ... ok
+test dma::tests::native_dma_matches_qualified_bus_and_read_traces ... ok
+test clock::tests::strobes_match_all_108_measured_clock_vectors ... ok
+test dma::tests::the_upcoming_descriptor_owns_each_zone_event ... ok
+test state::tests::invalid_pending_fetches_leave_the_chip_unchanged ... ok
+test state::tests::invalid_dma_countdowns_leave_the_chip_unchanged ... ok
+test state::tests::legacy_truncated_and_wrong_region_states_leave_the_chip_unchanged ... ok
+test clock::tests::direct_snapshots_resume_every_divider_phase_and_input_latch ... ok
+test fetch::tests::direct_snapshot_resumes_every_fetch_phase_and_pending_input ... ok
+test dma::tests::native_dma_matches_all_768_qualified_schedules ... ok
+test dma::tests::direct_snapshots_resume_dma_stages_and_bus_handoffs ... ok
+
+test result: ok. 38 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.01s
+
+     Running unittests src/main.rs (target/debug/deps/emu198x_atari_7800-0463cbe6ccf77a7c)
+
+running 7 tests
+test ui::tests::pad_on_map_key_and_console_switches_on_map_keys ... ok
+test app::tests::parse_cli_accepts_cart_region_scale_video ... ok
+test app::tests::parse_cli_defaults ... ok
+test app::tests::region_frame_ticks_match ... ok
+test app::tests::parse_cli_accepts_positional_cart ... ok
+test app::tests::a_bad_region_is_a_usage_error ... ok
+test ui::tests::selector_switches_live_region_and_preserves_cartridge ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/variants.rs (target/debug/deps/variants-9740a78940db81ed)
+
+running 4 tests
+test mcp_switch_uses_cartridge_bytes_after_the_source_file_is_removed ... ok
+test launch_and_script_select_both_regions_without_losing_the_cartridge ... ok
+test mcp_loads_flagged_and_positional_cartridges_and_preserves_failed_switches ... ok
+test explicit_missing_cartridges_and_unknown_models_fail_in_both_modes ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-f0a5887cc5cceda0)
+
+running 34 tests
+test cartridge::tests::v3_supergame_ram_is_selected_and_writable ... ok
+test cartridge::tests::headerless_sizes_select_legacy_layouts ... ok
+test cartridge::tests::declared_size_must_match_payload ... ok
+test cartridge::tests::unsupported_mapper_is_not_guessed_from_size ... ok
+test cartridge::tests::supergame_bank_switching ... ok
+test cartridge::tests::v4_fields_override_v3_fields ... ok
+test cartridge::tests::canonical_a78_magic_is_stripped ... ok
+test tests::cpu_bus_reads_sample_memory_in_phase_two ... ok
+test tests::console_switches_drive_riot_port_b ... ok
+test tests::cpu_bus_writes_wait_for_phase_two ... ok
+test tests::cpu_bus_wsync_allows_both_read_modify_write_cycles ... ok
+test tests::cpu_bus_wsync_keeps_nmi_edge_detection_running ... ok
+test tests::instruction_ticks_are_native_oscillator_periods ... ok
+test tests::joystick_drives_riot_port_a ... ok
+test tests::maria_register_route ... ok
+test tests::rejects_oversized_rom ... ok
+test tests::memory_map_routes_ram_and_cart ... ok
+test tests::native_clock_preserves_tia_sample_stream ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::riot_follows_phase_two_while_cpu_execution_is_held ... ok
+test tia_audio::tests::audio_and_collision_reads_return_zero ... ok
+test tests::frame_produces_tia_audio_at_native_rate ... ok
+test tia_audio::tests::audio_registers_generate_samples ... ok
+test tia_audio::tests::buttons_drive_the_inpt_registers ... ok
+test tia_audio::tests::video_writes_are_ignored ... ok
+test tests::cpu_wsync_colour_bars_extend_into_live_maria_borders ... ok
+test tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase ... ok
+test tests::a78_pokey_feature_installs_and_routes_the_chip ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::cpu_bus_pending_reads_resume_with_live_memory_and_peripheral_inputs ... ok
+test tests::cpu_bus_pending_writes_resume_at_the_same_memory_phase ... ok
+test tests::restored_native_phases_preserve_bus_timer_and_audio ... ok
+test tests::restored_slow_accesses_preserve_clock_bus_timer_and_audio ... ok
+
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.04s
+
+     Running tests/cart_boot.rs (target/debug/deps/cart_boot-7730f66edd227c4b)
+
+running 1 test
+test cart_boots_without_panic ... ignored, FIXTURE: needs an Atari 7800 cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (target/debug/deps/synthetic_cart_boot-e8a2c2c9e33757c0)
+
+running 2 tests
+test a_cartridge_that_writes_no_colour_does_not_look_like_a_boot ... ok
+test the_atari_7800_boots_a_cartridge_and_paints_its_background ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/debug/deps/runtime_atari_7800-0312bc7b7955bc4d)
+
+running 4 tests
+test input::tests::maps_directions_and_switches ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test snapshot::tests::old_version_is_rejected_before_decoding_machine_fields ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (target/debug/deps/catalogue-83b0cdc4a4955ea9)
+
+running 3 tests
+test invalid_cartridge_does_not_poison_the_next_reset_or_switch ... ok
+test a78_mapper_ram_and_pokey_configuration_survive_restoration_and_switching ... ok
+test restored_cartridge_survives_reset_and_regional_replacement ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/clock_contract.rs (target/debug/deps/clock_contract-aef4e180f88e1712)
+
+running 3 tests
+test profile_rate_uses_the_regional_native_oscillator ... ok
+test version_five_is_rejected_without_mutating_live_state ... ok
+test host_budget_matches_live_machine_frames ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/snapshot_roundtrip.rs (target/debug/deps/snapshot_roundtrip-44295b8ea4bb0920)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cartridge_boot.rs (target/debug/deps/synthetic_cartridge_boot-34e38e96ddccb01b)
+
+running 1 test
+test the_synthetic_cartridge_boots_and_draws_the_plate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+
+   Doc-tests atari_maria
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_atari_7800
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_atari_7800
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

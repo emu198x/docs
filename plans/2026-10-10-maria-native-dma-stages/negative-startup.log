@@ -1,0 +1,21 @@
+
+running 1 test
+test dma::tests::native_dma_matches_qualified_bus_and_read_traces ... FAILED
+
+failures:
+
+failures:
+    dma::tests::native_dma_matches_qualified_bus_and_read_traces
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 37 filtered out; finished in 0.00s
+
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.31s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+thread 'dma::tests::native_dma_matches_qualified_bus_and_read_traces' (86982254) panicked at crates/atari-maria/src/dma.rs:591:17:
+assertion `left == right` failed: case 0 1 0, event 148
+  left: "14582 A 0002"
+ right: "14581 A 0002"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p atari-maria --lib`
