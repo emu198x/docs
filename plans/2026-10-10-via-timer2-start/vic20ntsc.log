@@ -1,0 +1,10 @@
+Error - failed to retrieve executable path, falling back to getcwd() + argv[0]
+DriveROM: Error - 2000 ROM image not found. Hardware-level 2000 emulation is not available.
+DriveROM: Error - 4000 ROM image not found. Hardware-level 4000 emulation is not available.
+DriveROM: Error - CMDHD ROM image not found. Hardware-level CMDHD emulation is not available.
+#1 (Stop on  exec e000)    0/$000,   6/$06
+.C:e000  78          SEI            - A:00 X:00 Y:00 SP:00 ..-..IZ.          6
+BREAK: 1  C:$e521  (Stop on exec)
+#1 (Stop on  exec e521)   28/$01c,  58/$3a
+.C:e521  4C 21 E5    JMP $E521      - A:20 X:00 Y:00 SP:00 ..-..I..       1878
+Saving file '/private/tmp/via-t2-start-reference/vic20ntsc.bin' from $0200 to $0243
