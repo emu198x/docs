@@ -1,0 +1,76 @@
+{
+  "private_store": "emu198x/accuracy-corpora",
+  "tag": "v1",
+  "archive": "catalogue-c64.tar.zst",
+  "archive_sha256": "130a3097ce6216c6857b316642c75efcba6ebdda42c5605ccae08631b68b1521",
+  "files": [
+    {
+      "path": "roms/commodore-c64/1541.rom",
+      "sha256": "326c289c38753323d7e8167897447cf61ef35189d82eb8d75210ece949adda7c"
+    },
+    {
+      "path": "roms/commodore-c64/1571.rom",
+      "sha256": "1fd73459b54a72a737609a879c283645acc37835de2c121633153db9fac81d45"
+    },
+    {
+      "path": "roms/commodore-c64/1581.rom",
+      "sha256": "8f689277f36be357f5f105e6e606c35c42e73c581cdeec14b58f31850dfbcfcb"
+    },
+    {
+      "path": "roms/commodore-c64/basic.rom",
+      "sha256": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d"
+    },
+    {
+      "path": "roms/commodore-c64/chargen.rom",
+      "sha256": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420"
+    },
+    {
+      "path": "roms/commodore-c64/kernal.rom",
+      "sha256": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721"
+    },
+    {
+      "path": "media/commodore/c128/Games/[D81]/Empire 128 - Enhanced (1987-10)(Blakemore, Cleve)[h Binary Legens][80column].zip",
+      "sha256": "a590dfe029448e2a6397d44d777efc3bc37ba37b61d01f150cfb090ffbc16cfa"
+    },
+    {
+      "path": "media/commodore/c64/Applications/[CRT]/Action Replay v6.0 Professional (1989)(Datel Electronics).zip",
+      "sha256": "fa22c45962e3cb50641079058b293baabf65595b35f14f6d46877d0e532c1649"
+    },
+    {
+      "path": "media/commodore/c64/Applications/[CRT]/Final Cartridge III (1987-11)(Riska H&P).zip",
+      "sha256": "458721db93ce83bf7d1ad5a0edc17e6b902ee7791de1798daa7d537ff8d35d96"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[CRT]/Prince of Persia (2011)(Andreas Varga)[cr Nostalgia][t +9][EasyFlash 2011-11-01].zip",
+      "sha256": "10478f1dc7f7e2e85d6dbaf034c87869c6ecde3b083756411025e5e07f84f61b"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[D64]/Aztec Challenge (1983)(Cosmi).zip",
+      "sha256": "9cd323631562372ad4b6aa6ec89e2fe4e78a14c9b3fd8c0573977052412823c8"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[D64]/Bomb Jack (1986)(Elite).zip",
+      "sha256": "89831c90f6abfd8362d9468e015b93160d83c030dc6634fe78b29054b4b6ab60"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[D64]/Bruce Lee (1984)(Datasoft).zip",
+      "sha256": "4cf04e2c80728b6614692adf219c9d6081bd3b6c08ff05cf44a5836711a87e45"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[G64]/Bomb Jack 2 (1986)(Elite).zip",
+      "sha256": "0838ca47f8fbdb62a0b0856ef3aec0b9f2a4cfc7a804e0b5007bff96acdcece1"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[TAP]/Monty on the Run (1985)(Gremlin).zip",
+      "sha256": "cade8cbc9ad1c1a2fe5b1ca23ad776866b766f06f7c40a4c02a57fd6e2f42c96"
+    },
+    {
+      "path": "media/commodore/c64/Games/Arcade/[TAP]/Thing on a Spring (1985)(Gremlin).zip",
+      "sha256": "49f93ff3a8b3c7af8548231c6b98744af6a1cf743b740ba385f63eb09492fe00"
+    },
+    {
+      "path": "media/commodore/c64/Games/Shoot'em Up/[D64]/Wizball (1987)(Ocean).zip",
+      "sha256": "78ff5e8fbc334d18294cb9701c1418cc15257c86ea3950689b736ae5ec71afa3"
+    }
+  ]
+}
