@@ -8,6 +8,7 @@
   },
   "catalogue_binary_sha256": "1904eb9aa594d15c3416f6ab112f6161d4b54fd7ba89e08e2c441a59a9fa7268",
   "pin_probe_binary_sha256": "fcaf8707ad50f2a2c3ee9ff4551cc1e41e3e5c166c6dfb428da5fa9ab69faaae",
-  "full_suite_commit": "080459342bee90b767437a2dd9665a56063f1e3a",
-  "final_catalogue_binary_identical": true
+  "full_suite_commit": "092f61c454c108d8a545ccd74e7c6ea9bf63b504",
+  "final_catalogue_binary_identical": true,
+  "initial_suite_commit": "080459342bee90b767437a2dd9665a56063f1e3a"
 }
