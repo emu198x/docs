@@ -1,0 +1,4 @@
+condition=288f wildcard=1 masked=1
+condition=2887 wildcard=1 masked=1 direct=1
+/private/tmp/maria-dli-trace/wildcard_tb.sv:11: $finish called at 2 (1s)
+EXIT_STATUS=0

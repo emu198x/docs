@@ -1,0 +1,72 @@
+TRACE t=0 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+HALT t=1 line=0 dot=1 level=1 zone=0003 offset=0 dli=0
+TRACE t=2 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=4 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=6 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=8 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=10 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=12 ab=0002 din=00 zone=0003 off=0 cond=248f pla=10010 dmas=400000000000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001111 direct=0 wire=0
+TRACE t=14 ab=0002 din=00 zone=0003 off=0 cond=248d pla=10010 dmas=000000001000 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=10010010001101 direct=0 wire=0
+TRACE t=16 ab=0002 din=00 zone=0003 off=0 cond=108f pla=01000 dmas=000000000200 rld=0 en=000 addr_latch=0 data_en=1 dli_flag=0 haltreset=0
+COMPARE cond=01000010001111 direct=0 wire=0
+TRACE t=18 ab=0002 din=00 zone=1800 off=0 cond=308f pla=11000 dmas=000000000100 rld=4 en=010 addr_latch=1 data_en=0 dli_flag=0 haltreset=0
+COMPARE cond=11000010001111 direct=0 wire=0
+TRACE t=20 ab=1800 din=81 zone=1801 off=0 cond=088f pla=00100 dmas=000000000080 rld=e en=000 addr_latch=0 data_en=0 dli_flag=0 haltreset=0
+COMPARE cond=00100010001111 direct=0 wire=0
+TRACE t=22 ab=1800 din=81 zone=1801 off=1 cond=2887 pla=10100 dmas=xxxXxxXxxXxx rld=4 en=100 addr_latch=1 data_en=1 dli_flag=1 haltreset=0
+COMPARE cond=10100010000111 direct=1 wire=x
+TRACE t=24 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=000 addr_latch=0 data_en=0 dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=26 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=28 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=30 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=32 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=34 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+COMPARE cond=xxxxx010000111 direct=x wire=x
+TRACE t=36 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=38 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=40 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=42 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=44 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=46 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=48 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=50 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=52 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=54 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=56 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=58 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=60 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=62 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=64 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=66 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=68 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=70 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=72 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=74 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=76 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=78 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=80 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=82 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=84 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=86 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=88 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=90 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=92 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=94 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=96 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+TRACE t=98 ab=1801 din=1c zone=1802 off=1 cond=xX87 pla=xxxxx dmas=XXxXXXXXXXXX rld=x en=xxx addr_latch=x data_en=x dli_flag=1 haltreset=x
+RESULT height=2 flag=1 phase=0 edges=0 expected=20
+FATAL: /private/tmp/maria-dli-trace/trace_tb.sv:76: incomplete DMA: starts=1 releases=0
+       Time: 1459200  Scope: dma_tb

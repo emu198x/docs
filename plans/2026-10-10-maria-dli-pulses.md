@@ -139,3 +139,10 @@ the reasons above. The Python runner passes Ruff checks and formatting.
 No new dependency, public API, snapshot format or production timing changes
 are included. A future staged DMA/DLI correction will need an agreed design;
 the current Atari 7800 runtime snapshot version is 5.
+
+## Reference follow-up
+
+The [comparator diagnosis](2026-10-10-maria-dli-oracle.md) resolves the 36
+longer-zone simulation failures. All 48 rows pass after a checked simulation-only
+comparison adaptation. The [approved staged design](2026-10-10-maria-timed-dma-design.md)
+covers the production correction; the exact assertion delay remains a gate.

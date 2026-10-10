@@ -1,0 +1,2 @@
+FATAL: /private/tmp/maria-dli-trace/negative/comparator_tb.sv:6: comparator mismatch width=5 operand=00001
+       Time: 0  Scope: comparator_tb.check5
