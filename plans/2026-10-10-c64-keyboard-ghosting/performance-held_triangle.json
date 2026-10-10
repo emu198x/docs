@@ -1,0 +1,1 @@
+[{"action": "run_frames", "frames": 150}, {"action": "input", "events": [{"Key": {"name": "RETURN", "pressed": true}}, {"Key": {"name": "W", "pressed": true}}, {"Key": {"name": "3", "pressed": true}}]}, {"action": "run_frames", "frames": 600}]
