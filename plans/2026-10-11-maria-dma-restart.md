@@ -86,7 +86,9 @@ The full-clock restart matrix contains 576 cases: two raster boundaries,
 nine requested write times, enable or disable/re-enable, heights 1/2,
 fast/slow idle addresses, both regions and short/overrunning display lists.
 CPU writes wait until an eligible phase-1 edge; none is inserted while MARIA
-drives the bus. Four complete traces accompany per-stream counts and FNV-1a
+drives the bus. These are cycle-level bus stimuli, not an executed 6502 guest;
+instruction-generated bus sequences remain a machine-integration gate.
+Four complete traces accompany per-stream counts and FNV-1a
 signatures for the full matrix. It matches 176,930 reads, 190,142 address
 transitions, 8,336 HALT edges, 16,560 ownership transitions and 4,608 zone/bank
 observations, as well as all register events.
