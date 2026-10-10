@@ -1,0 +1,17 @@
+flag=0 release_phase=0 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=1 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=2 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=3 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=4 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=5 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=6 edges=0 active_master_ticks=0 first_assertion=-1
+flag=0 release_phase=7 edges=0 active_master_ticks=0 first_assertion=-1
+flag=1 release_phase=0 edges=2 active_master_ticks=32 first_assertion=138
+flag=1 release_phase=1 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=2 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=3 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=4 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=5 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=6 edges=2 active_master_ticks=32 first_assertion=146
+flag=1 release_phase=7 edges=2 active_master_ticks=32 first_assertion=146
+/private/tmp/maria-dli-pulses/pulse_tb.sv:42: $finish called at 96000 (1s)

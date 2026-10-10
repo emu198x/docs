@@ -1,0 +1,202 @@
+HALT t=1 line=0 dot=1 level=1 zone=0003 offset=0 dli=0
+HALT t=33 line=0 dot=33 level=0 zone=1803 offset=0 dli=1
+NMI t=50 line=0 dot=50 level=0 zone=1803 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=66 line=0 dot=66 level=1 zone=1803 offset=0 dli=1
+HALT t=913 line=1 dot=1 level=1 zone=1803 offset=0 dli=1
+HALT t=961 line=1 dot=49 level=0 zone=1806 offset=0 dli=1
+NMI t=978 line=1 dot=66 level=0 zone=1806 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=994 line=1 dot=82 level=1 zone=1806 offset=0 dli=1
+HALT t=1825 line=2 dot=1 level=1 zone=1806 offset=0 dli=1
+HALT t=1873 line=2 dot=49 level=0 zone=1809 offset=0 dli=1
+NMI t=1890 line=2 dot=66 level=0 zone=1809 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=1906 line=2 dot=82 level=1 zone=1809 offset=0 dli=1
+HALT t=2737 line=3 dot=1 level=1 zone=1809 offset=0 dli=1
+HALT t=2785 line=3 dot=49 level=0 zone=180c offset=0 dli=1
+NMI t=2802 line=3 dot=66 level=0 zone=180c offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=2818 line=3 dot=82 level=1 zone=180c offset=0 dli=1
+HALT t=3649 line=4 dot=1 level=1 zone=180c offset=0 dli=1
+HALT t=3697 line=4 dot=49 level=0 zone=180f offset=0 dli=1
+NMI t=3714 line=4 dot=66 level=0 zone=180f offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=3730 line=4 dot=82 level=1 zone=180f offset=0 dli=1
+HALT t=4561 line=5 dot=1 level=1 zone=180f offset=0 dli=1
+HALT t=4609 line=5 dot=49 level=0 zone=1812 offset=0 dli=1
+NMI t=4626 line=5 dot=66 level=0 zone=1812 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=4642 line=5 dot=82 level=1 zone=1812 offset=0 dli=1
+HALT t=5473 line=6 dot=1 level=1 zone=1812 offset=0 dli=1
+HALT t=5521 line=6 dot=49 level=0 zone=1815 offset=0 dli=1
+NMI t=5538 line=6 dot=66 level=0 zone=1815 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=5554 line=6 dot=82 level=1 zone=1815 offset=0 dli=1
+HALT t=6385 line=7 dot=1 level=1 zone=1815 offset=0 dli=1
+HALT t=6433 line=7 dot=49 level=0 zone=1818 offset=0 dli=1
+NMI t=6450 line=7 dot=66 level=0 zone=1818 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=6466 line=7 dot=82 level=1 zone=1818 offset=0 dli=1
+HALT t=7297 line=8 dot=1 level=1 zone=1818 offset=0 dli=1
+HALT t=7345 line=8 dot=49 level=0 zone=181b offset=0 dli=1
+NMI t=7362 line=8 dot=66 level=0 zone=181b offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=7378 line=8 dot=82 level=1 zone=181b offset=0 dli=1
+HALT t=8209 line=9 dot=1 level=1 zone=181b offset=0 dli=1
+HALT t=8257 line=9 dot=49 level=0 zone=181e offset=0 dli=1
+NMI t=8274 line=9 dot=66 level=0 zone=181e offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=8290 line=9 dot=82 level=1 zone=181e offset=0 dli=1
+HALT t=9121 line=10 dot=1 level=1 zone=181e offset=0 dli=1
+HALT t=9169 line=10 dot=49 level=0 zone=1821 offset=0 dli=1
+NMI t=9186 line=10 dot=66 level=0 zone=1821 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=9202 line=10 dot=82 level=1 zone=1821 offset=0 dli=1
+HALT t=10033 line=11 dot=1 level=1 zone=1821 offset=0 dli=1
+HALT t=10081 line=11 dot=49 level=0 zone=1824 offset=0 dli=1
+NMI t=10098 line=11 dot=66 level=0 zone=1824 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=10114 line=11 dot=82 level=1 zone=1824 offset=0 dli=1
+HALT t=10945 line=12 dot=1 level=1 zone=1824 offset=0 dli=1
+HALT t=10993 line=12 dot=49 level=0 zone=1827 offset=0 dli=1
+NMI t=11010 line=12 dot=66 level=0 zone=1827 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=11026 line=12 dot=82 level=1 zone=1827 offset=0 dli=1
+HALT t=11857 line=13 dot=1 level=1 zone=1827 offset=0 dli=1
+HALT t=11905 line=13 dot=49 level=0 zone=182a offset=0 dli=1
+NMI t=11922 line=13 dot=66 level=0 zone=182a offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=11938 line=13 dot=82 level=1 zone=182a offset=0 dli=1
+HALT t=12769 line=14 dot=1 level=1 zone=182a offset=0 dli=1
+HALT t=12817 line=14 dot=49 level=0 zone=182d offset=0 dli=1
+NMI t=12834 line=14 dot=66 level=0 zone=182d offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=12850 line=14 dot=82 level=1 zone=182d offset=0 dli=1
+HALT t=13681 line=15 dot=1 level=1 zone=182d offset=0 dli=1
+HALT t=13729 line=15 dot=49 level=0 zone=1830 offset=0 dli=1
+NMI t=13746 line=15 dot=66 level=0 zone=1830 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=13762 line=15 dot=82 level=1 zone=1830 offset=0 dli=1
+HALT t=14593 line=16 dot=1 level=1 zone=1830 offset=0 dli=1
+HALT t=14641 line=16 dot=49 level=0 zone=1833 offset=0 dli=1
+NMI t=14658 line=16 dot=66 level=0 zone=1833 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=14674 line=16 dot=82 level=1 zone=1833 offset=0 dli=1
+HALT t=15505 line=17 dot=1 level=1 zone=1833 offset=0 dli=1
+HALT t=15553 line=17 dot=49 level=0 zone=1836 offset=0 dli=1
+NMI t=15570 line=17 dot=66 level=0 zone=1836 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=15586 line=17 dot=82 level=1 zone=1836 offset=0 dli=1
+HALT t=16417 line=18 dot=1 level=1 zone=1836 offset=0 dli=1
+HALT t=16465 line=18 dot=49 level=0 zone=1839 offset=0 dli=1
+NMI t=16482 line=18 dot=66 level=0 zone=1839 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=16498 line=18 dot=82 level=1 zone=1839 offset=0 dli=1
+HALT t=17329 line=19 dot=1 level=1 zone=1839 offset=0 dli=1
+HALT t=17377 line=19 dot=49 level=0 zone=183c offset=0 dli=1
+NMI t=17394 line=19 dot=66 level=0 zone=183c offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=17410 line=19 dot=82 level=1 zone=183c offset=0 dli=1
+HALT t=18241 line=20 dot=1 level=1 zone=183c offset=0 dli=1
+HALT t=18289 line=20 dot=49 level=0 zone=183f offset=0 dli=1
+NMI t=18306 line=20 dot=66 level=0 zone=183f offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=18322 line=20 dot=82 level=1 zone=183f offset=0 dli=1
+HALT t=19153 line=21 dot=1 level=1 zone=183f offset=0 dli=1
+HALT t=19201 line=21 dot=49 level=0 zone=1842 offset=0 dli=1
+NMI t=19218 line=21 dot=66 level=0 zone=1842 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=19234 line=21 dot=82 level=1 zone=1842 offset=0 dli=1
+HALT t=20065 line=22 dot=1 level=1 zone=1842 offset=0 dli=1
+HALT t=20113 line=22 dot=49 level=0 zone=1845 offset=0 dli=1
+NMI t=20130 line=22 dot=66 level=0 zone=1845 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=20146 line=22 dot=82 level=1 zone=1845 offset=0 dli=1
+HALT t=20977 line=23 dot=1 level=1 zone=1845 offset=0 dli=1
+HALT t=21025 line=23 dot=49 level=0 zone=1848 offset=0 dli=1
+NMI t=21042 line=23 dot=66 level=0 zone=1848 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=21058 line=23 dot=82 level=1 zone=1848 offset=0 dli=1
+HALT t=21889 line=24 dot=1 level=1 zone=1848 offset=0 dli=1
+HALT t=21937 line=24 dot=49 level=0 zone=184b offset=0 dli=1
+NMI t=21954 line=24 dot=66 level=0 zone=184b offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=21970 line=24 dot=82 level=1 zone=184b offset=0 dli=1
+HALT t=22801 line=25 dot=1 level=1 zone=184b offset=0 dli=1
+HALT t=22849 line=25 dot=49 level=0 zone=184e offset=0 dli=1
+NMI t=22866 line=25 dot=66 level=0 zone=184e offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=22882 line=25 dot=82 level=1 zone=184e offset=0 dli=1
+HALT t=23713 line=26 dot=1 level=1 zone=184e offset=0 dli=1
+HALT t=23761 line=26 dot=49 level=0 zone=1851 offset=0 dli=1
+NMI t=23778 line=26 dot=66 level=0 zone=1851 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=23794 line=26 dot=82 level=1 zone=1851 offset=0 dli=1
+HALT t=24625 line=27 dot=1 level=1 zone=1851 offset=0 dli=1
+HALT t=24673 line=27 dot=49 level=0 zone=1854 offset=0 dli=1
+NMI t=24690 line=27 dot=66 level=0 zone=1854 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=24706 line=27 dot=82 level=1 zone=1854 offset=0 dli=1
+HALT t=25537 line=28 dot=1 level=1 zone=1854 offset=0 dli=1
+HALT t=25585 line=28 dot=49 level=0 zone=1857 offset=0 dli=1
+NMI t=25602 line=28 dot=66 level=0 zone=1857 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=25618 line=28 dot=82 level=1 zone=1857 offset=0 dli=1
+HALT t=26449 line=29 dot=1 level=1 zone=1857 offset=0 dli=1
+HALT t=26497 line=29 dot=49 level=0 zone=185a offset=0 dli=1
+NMI t=26514 line=29 dot=66 level=0 zone=185a offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=26530 line=29 dot=82 level=1 zone=185a offset=0 dli=1
+HALT t=27361 line=30 dot=1 level=1 zone=185a offset=0 dli=1
+HALT t=27409 line=30 dot=49 level=0 zone=185d offset=0 dli=1
+NMI t=27426 line=30 dot=66 level=0 zone=185d offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=27442 line=30 dot=82 level=1 zone=185d offset=0 dli=1
+HALT t=28273 line=31 dot=1 level=1 zone=185d offset=0 dli=1
+HALT t=28321 line=31 dot=49 level=0 zone=1860 offset=0 dli=1
+NMI t=28338 line=31 dot=66 level=0 zone=1860 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=28354 line=31 dot=82 level=1 zone=1860 offset=0 dli=1
+HALT t=29185 line=32 dot=1 level=1 zone=1860 offset=0 dli=1
+HALT t=29233 line=32 dot=49 level=0 zone=1863 offset=0 dli=1
+NMI t=29250 line=32 dot=66 level=0 zone=1863 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=29266 line=32 dot=82 level=1 zone=1863 offset=0 dli=1
+HALT t=30097 line=33 dot=1 level=1 zone=1863 offset=0 dli=1
+HALT t=30145 line=33 dot=49 level=0 zone=1866 offset=0 dli=1
+NMI t=30162 line=33 dot=66 level=0 zone=1866 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=30178 line=33 dot=82 level=1 zone=1866 offset=0 dli=1
+HALT t=31009 line=34 dot=1 level=1 zone=1866 offset=0 dli=1
+HALT t=31057 line=34 dot=49 level=0 zone=1869 offset=0 dli=1
+NMI t=31074 line=34 dot=66 level=0 zone=1869 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=31090 line=34 dot=82 level=1 zone=1869 offset=0 dli=1
+HALT t=31921 line=35 dot=1 level=1 zone=1869 offset=0 dli=1
+HALT t=31969 line=35 dot=49 level=0 zone=186c offset=0 dli=1
+NMI t=31986 line=35 dot=66 level=0 zone=186c offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=32002 line=35 dot=82 level=1 zone=186c offset=0 dli=1
+HALT t=32833 line=36 dot=1 level=1 zone=186c offset=0 dli=1
+HALT t=32881 line=36 dot=49 level=0 zone=186f offset=0 dli=1
+NMI t=32898 line=36 dot=66 level=0 zone=186f offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=32914 line=36 dot=82 level=1 zone=186f offset=0 dli=1
+HALT t=33745 line=37 dot=1 level=1 zone=186f offset=0 dli=1
+HALT t=33793 line=37 dot=49 level=0 zone=1872 offset=0 dli=1
+NMI t=33810 line=37 dot=66 level=0 zone=1872 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=33826 line=37 dot=82 level=1 zone=1872 offset=0 dli=1
+HALT t=34657 line=38 dot=1 level=1 zone=1872 offset=0 dli=1
+HALT t=34705 line=38 dot=49 level=0 zone=1875 offset=0 dli=1
+NMI t=34722 line=38 dot=66 level=0 zone=1875 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=34738 line=38 dot=82 level=1 zone=1875 offset=0 dli=1
+HALT t=35569 line=39 dot=1 level=1 zone=1875 offset=0 dli=1
+HALT t=35617 line=39 dot=49 level=0 zone=1878 offset=0 dli=1
+NMI t=35634 line=39 dot=66 level=0 zone=1878 offset=0 dli=1
+ASSERT after_shutdown=17
+NMI t=35650 line=39 dot=82 level=1 zone=1878 offset=0 dli=1
+RESULT height=1 flag=1 phase=0 edges=40 expected=40
+/private/tmp/maria-dli-pulses/dma_tb.sv:72: $finish called at 1459200 (1s)
