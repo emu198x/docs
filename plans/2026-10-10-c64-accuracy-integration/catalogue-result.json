@@ -1,0 +1,37 @@
+{
+  "entry_count": 13,
+  "passed": [
+    "boot-to-ready",
+    "bruce-lee",
+    "aztec-challenge",
+    "bomb-jack",
+    "thing-on-a-spring",
+    "wizball",
+    "monty-on-the-run",
+    "prince-of-persia",
+    "final-cartridge-iii",
+    "action-replay",
+    "empire-1581-load",
+    "bruce-lee-1571",
+    "bomb-jack-2-g64"
+  ],
+  "snapshot_passed": [
+    "boot-to-ready",
+    "bruce-lee",
+    "aztec-challenge",
+    "bomb-jack",
+    "thing-on-a-spring",
+    "wizball",
+    "monty-on-the-run",
+    "prince-of-persia",
+    "final-cartridge-iii",
+    "action-replay",
+    "empire-1581-load",
+    "bruce-lee-1571",
+    "bomb-jack-2-g64"
+  ],
+  "expected_hashes_changed": false,
+  "exit_code": 0,
+  "log_sha256": "f48b8f7e65bf230c6e8b30157f2e5c9eeac21995f1d9c4d46e5b7f0ab0be26dc",
+  "elapsed_seconds": 1956.02
+}
