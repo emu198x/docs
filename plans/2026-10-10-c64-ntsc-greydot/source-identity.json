@@ -1,0 +1,15 @@
+{
+  "commit": "1d41e2248c63458023a0ff7fea5e1334428025a3",
+  "sha256": {
+    "crates/runtime-commodore-c64/tests/vicii_testbench.rs": "af8e6135321b1a42e978c7787c18d9cbb99993c470b0ef09dd47ad9e8557d0d8",
+    "knowledge/decisions/c64-accuracy-closure-campaign.md": "85da5a3bd25136c5e5f23f1a0806556d16d68a298920ff769211048e6cde84e1",
+    "test-data/commodore/c64/ntsc-greydot/6567r8-cycle15.png": "99497e1f271206ce7a1e5e16b5232e3f978cee9ce4f61cf905b3865653fa2d24",
+    "test-data/commodore/c64/ntsc-greydot/6567r8-cycle16.png": "ff49a170597cea5a4e4c32855405dce98f8c99cd571720ce864ddeea959d3f2f",
+    "test-data/commodore/c64/ntsc-greydot/8562-cycle15.png": "b0ea28b86686eb6f5ebe4bd741544313b657e5df30af60c856b7ced75b5b7357",
+    "test-data/commodore/c64/ntsc-greydot/8562-cycle16.png": "5bd31a42ae5d369ba8a499f08fe0509786ebafb8a6766ed995c2697667209710",
+    "test-data/commodore/c64/ntsc-greydot/README.md": "ddf1351177f2df66537915bbb1e36ab987bb5fe6ffe9ebcb7a51502e9ddb738e",
+    "test-data/commodore/c64/ntsc-greydot/cycle15-stores.bin": "7f61d0d9cd72d3d1d42f976af782cc00cdbbee9c332cb8010cc234c3ad6a8eea",
+    "test-data/commodore/c64/ntsc-greydot/cycle16-stores.bin": "4ef2d582e88a0f677a5537ff8e8ff5569ab8104379228f693ec001c69de36bd0",
+    "test-data/commodore/c64/ntsc-greydot/sha256.json": "330beaacda52dfb4fae7785f88052f238eff79626d84066cd840db73c319088c"
+  }
+}
