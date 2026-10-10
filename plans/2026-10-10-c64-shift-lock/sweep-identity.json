@@ -1,0 +1,8 @@
+{
+  "cases": 20736,
+  "lock_changes_output": 2628,
+  "fixture_sha256": "18ebbbac5069ce38e3a98b7b666e80c9b8605f4dae73f9dec1a639fb7b924649",
+  "inputs_sha256": "33b77d15fea7c35003245429c7078547b0bd2f2314cb7018fff3f71a07c9a8ee",
+  "oracle_sha256": "975a7ebac5546aea74bf15a8591b7db800c7bf81d6e3923384a5700862b42f37",
+  "generator_sha256": "7bcbf7eb919d74ef2402985189c6c1e657b8a7d0dff566d952bac7a747bb84b7"
+}
