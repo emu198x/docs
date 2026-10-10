@@ -6,5 +6,6 @@
   "format": "cargo fmt --all -- --check",
   "build": "cargo build --release -p emu198x-catalogue --bin catalogue",
   "production_catalogue": "python3 run-production.py",
-  "causal_evidence": "python3 verify.py"
+  "causal_evidence": "python3 verify.py",
+  "drive_roundtrip": "EMU198X_C64_ROM_DIR=/private/tmp/c64-catalogue-mirror/catalogue-c64/roms/commodore-c64 EMU198X_STRICT_FIXTURES=1 cargo test --release -p runtime-commodore-c64 --test disk_1571_load --test disk_save_roundtrip -- --ignored --nocapture"
 }
