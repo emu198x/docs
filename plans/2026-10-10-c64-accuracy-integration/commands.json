@@ -1,0 +1,7 @@
+{
+  "catalogue": "EMU198X_CATALOGUE_MEDIA_ROOT=/private/tmp/c64-catalogue-mirror/catalogue-c64/media EMU198X_CATALOGUE_FIRMWARE_ROOT=/private/tmp/c64-catalogue-mirror/catalogue-c64/roms EMU198X_CATALOGUE_SYSTEMS=c64 EMU198X_STRICT_FIXTURES=1 cargo test -p emu198x-catalogue --release --test run -- --ignored --nocapture",
+  "focused": "cargo test --release -p mos-via-6522 -p mos-vic-ii -p machine-commodore-vic-20 -p runtime-commodore-vic-20 -p runtime-commodore-c64",
+  "lightpen": "EMU198X_STRICT_FIXTURES=1 cargo test --release -p runtime-commodore-c64 --test vicii_testbench light_pen -- --ignored --nocapture",
+  "clippy": "cargo clippy --all-targets -p mos-via-6522 -p mos-vic-ii -p common-commodore-iec-drive -p machine-commodore-c64 -p machine-commodore-1541 -p machine-commodore-1571 -p machine-commodore-vic-20 -p machine-commodore-pet -p machine-oric-atmos -p machine-acorn-bbc-micro -p machine-acorn-atom -p runtime-commodore-c64 -p runtime-commodore-vic-20 -p runtime-commodore-pet -p runtime-oric-atmos -p runtime-acorn-bbc-micro -p runtime-acorn-atom -- -D warnings",
+  "format": "cargo fmt --all --check"
+}
