@@ -1,0 +1,42 @@
+{
+  "entry_count": 13,
+  "snapshot_pass_count": 13,
+  "expected_hashes_changed": false,
+  "manifest_sha256": "2271167c57d412411a6296139de13ca62d20e3daa16d7dead89d127c7475bade",
+  "shards": [
+    {
+      "index": 1,
+      "exit_code": 0,
+      "entries": [
+        "boot-to-ready",
+        "bomb-jack",
+        "monty-on-the-run",
+        "action-replay",
+        "bomb-jack-2-g64"
+      ],
+      "log_sha256": "2b4a33d11484d038e60a5e87a4e1a20fb5a136fb9512577e68b7549922a3b555"
+    },
+    {
+      "index": 2,
+      "exit_code": 0,
+      "entries": [
+        "bruce-lee",
+        "thing-on-a-spring",
+        "prince-of-persia",
+        "empire-1581-load"
+      ],
+      "log_sha256": "a16cec3c8e9b55f098e7bdfd4fd15ac0751be41ad6143864ce1650bf6282e62c"
+    },
+    {
+      "index": 3,
+      "exit_code": 0,
+      "entries": [
+        "aztec-challenge",
+        "wizball",
+        "final-cartridge-iii",
+        "bruce-lee-1571"
+      ],
+      "log_sha256": "913002e9d4f6cb250c736d141a8f93bddb8afe7ec4257a87abd3c030dd0ff0be"
+    }
+  ]
+}

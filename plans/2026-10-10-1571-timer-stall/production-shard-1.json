@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/private/tmp/1571-timer-evidence/catalogue-production",
+    "run",
+    "--shard",
+    "1/3",
+    "--manifest",
+    "crates/emu198x-catalogue/manifest/c64.toml"
+  ],
+  "exit_code": 0
+}
