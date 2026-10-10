@@ -1,0 +1,69 @@
+   Compiling emu198x-zilog-z80 v0.8.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-zilog-z80)
+    Finished `release` profile [optimized] target(s) in 6.11s
+     Running tests/z80_fuse.rs (target/release/deps/z80_fuse-ac647c749ad2ecd6)
+
+running 12 tests
+
+thread 'rejects_empty_fuse_corpus' (86154490) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:846:5:
+FUSE corpus contains no cases
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FUSE final-state compatibility: test parse_fuse_inline_sample ... 0/1 exact, 0 accepted disagreements, 1 unexpected
+
+thread 'rejects_zero_fuse_limit' (86154493) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:858:9:
+FUSE case limit must be greater than zero
+ok  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got PC: got 0x0002, expected 0x0000
+
+
+thread 'rejects_unmatched_fuse_selection' (86154492) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:851:9:
+no FUSE case named 'missing' was found
+test rejects_empty_fuse_corpus - should panic ... 
+thread 'rejects_changed_observed_value_in_accepted_field' (86154488) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+ok
+FUSE final-state compatibility: 0test rejects_zero_fuse_limit - should panic ... /1 exact, ok
+0 accepted disagreements, 1 unexpected
+test rejects_unmatched_fuse_selection - should panic ... ok
+  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got AF: got 0x0200, expected 0x0300; PC: got 0x0001, expected 0x0000
+test rejects_changed_observed_value_in_accepted_field - should panic ... ok
+
+thread 'run_fuse_z80_reference_suite' (86154495) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:767:13:
+failed to parse EMU198X_FUSE_Z80_LIMIT='' as usize: cannot parse integer from empty string
+FUSE final-state compatibility: 1/1 exact, 0 accepted disagreements, 
+thread 'rejects_extra_mismatch_in_accepted_case' (86154491) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+0 unexpected
+
+thread 'resolved_disagreement_requires_review' (86154494) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:985:5:
+assertion `left == right` failed: accepted FUSE disagreement count changed
+  left: 0
+ right: 1
+FUSE final-state compatibility: 1/1 exact, 0 accepted disagreements, test rejects_extra_mismatch_in_accepted_case - should panic ... ok
+0 unexpected
+test resolved_disagreement_requires_review - should panic ... accepted 76: PC: got 0x0001, expected 0x0000
+ok
+FUSE final-state compatibility: 0/1 exact, 1 accepted disagreements, 0 unexpected
+test run_fuse_z80_reference_suite ... FAILED
+FUSE final-state compatibility: 0/1 exact, 0 accepted disagreements, 1 unexpected
+  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got PC: got 0x0001, expected 0x1234
+test single_fuse_case_is_valid_coverage ... ok
+
+thread 'rejects_changed_value_in_accepted_field' (86154489) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+test accepts_documented_halt_pc_difference ... ok
+test support::tests::explicit_fixture_never_falls_back ... ok
+test rejects_changed_value_in_accepted_field - should panic ... ok
+
+failures:
+
+failures:
+    run_fuse_z80_reference_suite
+
+test result: FAILED. 11 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p emu198x-zilog-z80 --test z80_fuse`

@@ -1,0 +1,66 @@
+    Finished `release` profile [optimized] target(s) in 0.14s
+     Running tests/z80_fuse.rs (target/release/deps/z80_fuse-ac647c749ad2ecd6)
+
+running 12 tests
+
+thread 'rejects_empty_fuse_corpus' (86157152) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:846:5:
+FUSE corpus contains no cases
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+accepted 76: PC: got 0x0001, expected 0x0000
+
+thread 'rejects_unmatched_fuse_selection' (86157154) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:851:9:
+no FUSE case named 'missing' was found
+test parse_fuse_inline_sample ... ok
+thread 'rejects_zero_fuse_limit' (86157155) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:858:9:
+FUSE case limit must be greater than zero
+
+FUSE final-state compatibility: 0/1 exact, 1 accepted disagreements, 0 unexpected
+test rejects_empty_fuse_corpus - should panic ... FUSE final-state compatibility: 0/1ok
+ exact, 0 accepted disagreements, 1 unexpected
+test rejects_unmatched_fuse_selection - should panic ... ok
+  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got PC: got 0x0002, expected 0x0000
+test rejects_zero_fuse_limit - should panic ... ok
+thread 'rejects_changed_observed_value_in_accepted_field' (86157150) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+
+FUSE final-state compatibility: 1/1 exact, 0 accepted disagreements, 0 unexpected
+test accepts_documented_halt_pc_difference ... FUSE final-state compatibility: 1/1 exact, 0 accepted disagreements, 0 unexpected
+ok
+FUSE final-state compatibility: 0/
+thread 'resolved_disagreement_requires_review' (86157156) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:985:5:
+assertion `left == right` failed: accepted FUSE disagreement count changed
+  left: 0
+ right: 1
+1 exact, 0 accepted disagreements, 1 unexpected
+test rejects_changed_observed_value_in_accepted_field - should panic ... ok
+  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got PC: got 0x0001, expected 0x1234
+test single_fuse_case_is_valid_coverage ... 
+thread 'rejects_changed_value_in_accepted_field' (86157151) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+FUSE final-state compatibility: 0/1 exact, 0 accepted disagreements, 1 unexpected
+  76: expected accepted mismatches ["PC: got 0x0001, expected 0x0000"], got AF: got 0x0200, expected 0x0300; PC: got 0x0001, expected 0x0000
+ok
+
+thread 'rejects_extra_mismatch_in_accepted_case' (86157153) panicked at crates/emu198x-zilog-z80/tests/z80_fuse.rs:984:5:
+assertion `left == right` failed: FUSE reported 1 failures
+  left: 1
+ right: 0
+test resolved_disagreement_requires_review - should panic ... ok
+test rejects_changed_value_in_accepted_field - should panic ... ok
+test support::tests::explicit_fixture_never_falls_back ... ok
+test rejects_extra_mismatch_in_accepted_case - should panic ... ok
+accepted 76: PC: got 0x0001, expected 0x0000
+accepted edb2_1: AF: got 0x8a00, expected 0x8a0c; WZ: got 0x0001, expected 0x0a41
+accepted edb3_1: AF: got 0x3403, expected 0x3417; WZ: got 0x0001, expected 0x02e1
+accepted edb9_2: AF: got 0xffaf, expected 0xffa7
+accepted edba_1: WZ: got 0x0001, expected 0x069e
+accepted edbb_1: AF: got 0x0903, expected 0x0917; WZ: got 0x0001, expected 0x033a
+FUSE final-state compatibility: 1350/1356 exact, 6 accepted disagreements, 0 unexpected
+test run_fuse_z80_reference_suite ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

@@ -1,0 +1,15 @@
+{
+  "source_commit": "fd431e8b0023d3d3725ea3923d36b5439d5424e0",
+  "fixtures": [
+    {
+      "name": "tests.in",
+      "bytes": 161511,
+      "sha256": "9f36e866f22e72ff1f8bf2100bf70ffbf58edd97b453500aab60acf1f403ebbb"
+    },
+    {
+      "name": "tests.expected",
+      "bytes": 323000,
+      "sha256": "15a6946f4addcf97e137b5bdd1d5fdb08124ff91f1b169f36a8bf4afe4bab6e4"
+    }
+  ]
+}
