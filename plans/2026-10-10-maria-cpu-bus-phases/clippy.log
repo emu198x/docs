@@ -1,0 +1,5 @@
+    Blocking waiting for file lock on build directory
+    Checking machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Checking runtime-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-7800)
+    Checking emu198x-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-7800)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.18s

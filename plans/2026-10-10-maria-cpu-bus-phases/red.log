@@ -1,0 +1,49 @@
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.44s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 4 tests
+test tests::cpu_bus_wsync_keeps_nmi_edge_detection_running ... FAILED
+test tests::cpu_bus_reads_sample_memory_in_phase_two ... FAILED
+test tests::cpu_bus_wsync_allows_both_read_modify_write_cycles ... FAILED
+test tests::cpu_bus_writes_wait_for_phase_two ... FAILED
+
+failures:
+
+---- tests::cpu_bus_wsync_keeps_nmi_edge_detection_running stdout ----
+
+thread 'tests::cpu_bus_wsync_keeps_nmi_edge_detection_running' (86901535) panicked at crates/machine-atari-7800/src/lib.rs:603:9:
+NMI edge must still reach the CPU detector
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- tests::cpu_bus_reads_sample_memory_in_phase_two stdout ----
+
+thread 'tests::cpu_bus_reads_sample_memory_in_phase_two' (86901532) panicked at crates/machine-atari-7800/src/lib.rs:588:17:
+assertion `left == right` failed
+  left: 17
+ right: 119
+
+---- tests::cpu_bus_wsync_allows_both_read_modify_write_cycles stdout ----
+
+thread 'tests::cpu_bus_wsync_allows_both_read_modify_write_cycles' (86901534) panicked at crates/machine-atari-7800/src/lib.rs:626:9:
+assertion `left == right` failed: RDY cannot stall NMOS write cycles
+  left: 832
+ right: 8
+
+---- tests::cpu_bus_writes_wait_for_phase_two stdout ----
+
+thread 'tests::cpu_bus_writes_wait_for_phase_two' (86901533) panicked at crates/machine-atari-7800/src/lib.rs:558:21:
+assertion `left == right` failed: write happened in address phase
+  left: 90
+ right: 0
+
+
+failures:
+    tests::cpu_bus_reads_sample_memory_in_phase_two
+    tests::cpu_bus_writes_wait_for_phase_two
+    tests::cpu_bus_wsync_allows_both_read_modify_write_cycles
+    tests::cpu_bus_wsync_keeps_nmi_edge_detection_running
+
+test result: FAILED. 0 passed; 4 failed; 0 ignored; 0 measured; 28 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
