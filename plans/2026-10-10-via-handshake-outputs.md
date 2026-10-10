@@ -90,3 +90,20 @@ The 554 ordinary consumer tests and all doctests pass on source commit
 `08045934`. Real-firmware checks and the full C64 catalogue remain merge
 gates. Expected catalogue hashes will not be changed to make
 a discrepancy pass. No public API, data field or snapshot version changed.
+
+
+## Strict and final-head checks
+
+All 36 explicitly selected strict checks pass: 31 real-firmware checks,
+the VIC-I reference survey and its negative control, and three real-ROM
+1541/1571 disk round trips. All nine commands exit 0. The exact commands
+and terminal output are retained; diagnostic dump generators are not
+selected as regression tests.
+
+Final source head is `092f61c4`. The only revision after the 554-test run
+removes an unproven PCR-rewrite assumption from the snapshot test:
+handshake mode now receives no acknowledgement and must retain its first
+low strobe; pulse mode emits three. All 32 snapshot positions pass again,
+as do affected Clippy and formatting. The final successful catalogue build
+is byte-identical to the binary already running the three catalogue shards
+(SHA-256 `1904eb9aa594d15c3416f6ab112f6161d4b54fd7ba89e08e2c441a59a9fa7268`).
