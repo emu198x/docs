@@ -1,0 +1,4 @@
+/Users/stevehill/.emu198x/test-suites/c64-vicii/split-tests/lightpen/makeref.c:67:14: warning: unused parameter 'argc' [-Wunused-parameter]
+   67 | int main(int argc, char *argv[])
+      |              ^
+1 warning generated.
