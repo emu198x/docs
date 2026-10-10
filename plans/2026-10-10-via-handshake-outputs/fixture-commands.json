@@ -1,0 +1,137 @@
+[
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-acorn-atom",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-acorn-bbc-micro",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-commodore-pet",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-oric-atmos",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-commodore-1571",
+      "--test",
+      "boot_smoke",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-commodore-vic-20",
+      "--test",
+      "joystick_probe",
+      "--test",
+      "keyboard_type",
+      "--test",
+      "rom_boot",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-commodore-vic-20",
+      "--test",
+      "vici_vice_survey",
+      "vic_i_matches_the_vice_survey",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "machine-commodore-vic-20",
+      "--test",
+      "vici_vice_survey",
+      "the_comparator_rejects_a_deliberately_wrong_frame",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "-p",
+      "runtime-commodore-c64",
+      "--test",
+      "disk_1571_load",
+      "--test",
+      "disk_save_roundtrip",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_code": 0
+  }
+]
