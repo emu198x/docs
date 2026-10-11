@@ -59,5 +59,14 @@ Affected all-target Clippy with `-D warnings` and workspace formatting pass.
 No claim of running the ignored cartridge corpus is made.
 
 The correction is source [PR #1731](https://github.com/emu198x/emu198x/pull/1731),
-head `e0739e5afa9e9d08a048a5f90e09edc7adbcfeb0`. Required CI is running;
-merge and exact-tree verification are not yet claimed.
+head `e0739e5afa9e9d08a048a5f90e09edc7adbcfeb0`. All exact-head CI checks pass. The merge is
+`a9fc80042225fc1c27c60a631a5679468f1ada2f`; its tree equals the tested head
+and it is an ancestor of the fetched `origin/main`.
+
+The CI execution ledger records 101 parser passes with no skips, and 23
+machine passes with two explicit fixture skips and 133 ignored tests. No
+failures or unexplained ignores are reported. These ledger counts distinguish
+actual execution from the local libtest summary, which reports fixture skips
+as successful test returns. The new tests have no fixture guards.
+
+CI run: [38164479853](https://github.com/emu198x/emu198x/actions/runs/38164479853).
