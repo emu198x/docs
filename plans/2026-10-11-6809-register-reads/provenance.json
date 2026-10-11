@@ -34,5 +34,6 @@
     "tests.log": "42c48e2cc3fc76ca419f1c60baf3e8f458c9fdffa75c0f74432e3d296e5ed81d",
     "clippy.log": "3f9dbbe4a2213ba11ac26d97b0d3c5baa3a264e5cb54ef1ca5c4a45ccd1094fb"
   },
-  "fixture_sha256": "25a696336e0391ced12a236eb43f5a4695a9146683687b3734e9a5dce81b9dd8"
+  "fixture_sha256": "25a696336e0391ced12a236eb43f5a4695a9146683687b3734e9a5dce81b9dd8",
+  "corrected_commit": "6c1979b06842f9fa02a10cd948be2e83fc444774"
 }
