@@ -1,0 +1,14 @@
+{
+  "source_baseline": "ce91eb0d72b41da2bf092e6d8dc12adfe1937d98",
+  "source_fixed": "6aeae61fce121dff9a7fa1f22eb699436c67f85b",
+  "guest_sha256": "e4536ab778318058fca9df6eed07ce8773070e0876376f3def97200c4818d33a",
+  "mame_version": "0.289 (unknown)",
+  "mame_binary_sha256": "6d40df87963c58cdd3857d203e186af854fea49ae03b2ab555e30ef1029636d9",
+  "mame_source_revision": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "ares_source_revision": "0ac4d8220c507f2554b048a67cb52a745b32e7ba",
+  "genesis_plus_gx_source_revision": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "reference_execution": "Installed MAME full SG-1000 machine; source revisions are separately inspected, not asserted as binary build inputs.",
+  "private_knowledge_commit": "24b4fbcc (local, not pushed)",
+  "capture_source_before_rebase": "047680b48d1eb61224081a71f7f263bafbb965e8",
+  "rebase_note": "Rebased over unrelated Sord M5 correction; affected tests and Clippy rerun; controller source bytes unchanged."
+}
