@@ -1,0 +1,38 @@
+   Compiling machine-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/machine-commodore-vic-20)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.92s
+     Running tests/vici_vice_survey.rs (../emu198x/target/debug/deps/vici_vice_survey-d7622da9e745db2e)
+
+running 1 test
+case                         match      of         %  disagreeing raster lines
+basic-boot                   66240   66240  100.000%
+basic-boot-cursor            66240   66240  100.000%
+vic6561-test36864            66215   66240   99.962%  76-82
+vic6561-test36865-1          66166   66240   99.888%  78-79
+vic6561-test36865-2          66159   66240   99.878%  78-79
+vic6561-test36865-3          66158   66240   99.876%  78-79
+vic6561-test36866-1          66240   66240  100.000%
+vic6561-test36866-2          63255   66240   95.494%  93-107,132-138,140-146,148-154,156-162,164-170,172-178,180-186,188-194,196-202,212-218
+vic6561-test36867-1          66240   66240  100.000%
+vic6561-test36867-2          66240   66240  100.000%
+vic6561-testback             65085   66240   98.256%  76-91
+vic6561-testcharheigh-1      66224   66240   99.976%  83
+vic6561-testcharheigh-2      63473   66240   95.823%  83-90,92-98,100-123,132-138,140-147
+vic6561-testmemfetch-1       65992   66240   99.626%  76-91
+vic6561-testmemfetch-2       65728   66240   99.227%  76-91
+vic-9000test                 66090   66240   99.774%  114,132
+vic-vert0                    66240   66240  100.000%
+split-timing                 66240   66240  100.000%
+raster-border                63109   66240   95.273%  110-182
+raster-background            63837   66240   96.372%  110-118,121-182
+raster-reverse               64193   66240   96.910%  110-111,121-181
+raster-auxiliary             66006   66240   99.647%  110-118,122-147
+ntsc-basic-boot              51360   51360  100.000%
+ntsc-vic-vert0               51360   51360  100.000%
+ntsc-vic-line0               51328   51360   99.938%  54
+ntsc-raster-border           48445   51360   94.324%  110-176
+ntsc-raster-background       48957   51360   95.321%  110-176
+ntsc-raster-reverse          49371   51360   96.127%  110-175
+ntsc-raster-auxiliary        51048   51360   99.393%  110-137
+test vic_i_matches_the_vice_survey ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 30.75s

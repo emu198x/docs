@@ -1,0 +1,23 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.18s
+     Running tests/cartridge.rs (../emu198x/target/debug/deps/cartridge-116b1484f5bb4c2f)
+
+running 1 test
+test kernal_cold_starts_a_blk5_cartridge_loaded_as_standard_media ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/debug_target.rs (../emu198x/target/debug/deps/debug_target-a7468ff7c0a0568f)
+
+running 1 test
+test debug_surface_works_on_6502 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.94s
+
+     Running tests/program.rs (../emu198x/target/debug/deps/program-357e32ac8723fb67)
+
+running 3 tests
+test expanded_basic_prg_loads_through_the_top_of_the_block_1_expansion ... ok
+test expanded_basic_prg_selects_8k_loads_and_queues_run ... ok
+test expanded_basic_prg_executes_its_sys_entry_point ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.62s
