@@ -1,0 +1,1 @@
+selector inventory: expected 24 complete pulses, got {'assertions': 0, 'releases': 0, 'final': 1}
