@@ -23,6 +23,10 @@ from trace_circuit import g, groups, load_cells, top_routing
 TARGETS = ["RCPLA_RCPLA", "RSYNC_RSYNCPLA", g.TARGET, "VCELL_VCELL_GINGER$LOE_LRIC_LY_"]
 CLOCK = "VCELL_VCELL_GINGER$LOE_CLKGEN_L"
 HANDOFF_WIRING = ["VCELL_VCELL_GINGER$LOE_LM_LY_", "VCELL_VCELL_GINGER$LOE_GBFM2_LY"]
+PHASE_BRANCHES = [
+    "VCELL_VCELL_GINGER$LOE_" + suffix
+    for suffix in ["CTRL_LY_", "ADDINV_L", "LUM_LY_", "LUM2_LY_", "BURSTFOR"]
+]
 
 
 def local_network(
@@ -287,6 +291,17 @@ def report(network: dict) -> dict:
         routes["internal_halt_to_halt_pad"] = shared_route(
             network, rsync + "/halt", halt + "/in"
         )
+    if all(root in network["summary"]["local_networks"] for root in PHASE_BRANCHES):
+        routes["clock_n12_to_rsync_phase1"] = shared_route(
+            network, CLOCK + "::" + CLOCK + "/n12", rsync + "/ph1"
+        )
+        routes["clock_n13_to_rsync_phase2"] = shared_route(
+            network, CLOCK + "::" + CLOCK + "/n13", rsync + "/ph2"
+        )
+        require(
+            routes["clock_n12_to_rsync_phase1"] != routes["clock_n13_to_rsync_phase2"],
+            "physical phases are shorted",
+        )
     return {
         "archive_sha256": g.ARCHIVE_SHA,
         "member_sha256": g.MEMBER_SHA,
@@ -316,28 +331,30 @@ def main() -> None:
     parser.add_argument("output", type=Path)
     parser.add_argument(
         "--scope",
-        choices=["controllers", "pads", "routing", "clock"],
+        choices=["controllers", "pads", "routing", "clock", "phases"],
         default="routing",
     )
     parser.add_argument("--summary", type=Path)
     args = parser.parse_args()
     cells = load_cells(args.archive)
     targets = list(TARGETS)
-    if args.scope in ["pads", "routing", "clock"]:
+    if args.scope in ["pads", "routing", "clock", "phases"]:
         targets += ["PADLAY_HPAD06I__", "PADLAY_HPAD06M__", "PADLAY_HPAD06__"]
-    if args.scope in ["routing", "clock"]:
+    if args.scope in ["routing", "clock", "phases"]:
         targets += ["VCELL_VCELL_GINGER$LOE_HVSYNC_L"]
         targets += [name for name in cells if name.startswith("LARRY2_LRC_")]
-    if args.scope == "clock":
+    if args.scope in ["clock", "phases"]:
         targets += ["VCELL_VCELL_GINGER$LOE_RLOG_LY_", CLOCK, *HANDOFF_WIRING]
+    if args.scope == "phases":
+        targets += PHASE_BRANCHES
     result = connect(
         cells,
         targets,
         single_terminal_cells=frozenset([CLOCK])
-        if args.scope == "clock"
+        if args.scope in ["clock", "phases"]
         else frozenset(),
     )
-    if args.scope == "clock":
+    if args.scope in ["clock", "phases"]:
         inventory = result["summary"]["local_networks"][CLOCK]
         require(inventory["devices"] == 114, "clock transistor inventory changed")
         require(

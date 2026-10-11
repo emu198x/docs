@@ -1,0 +1,1092 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "inventory": {
+    "rectangles": 17952,
+    "candidate_devices": 2119,
+    "local_networks": {
+      "PADLAY_HPAD06__@5": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 5,
+          "6": 162
+        },
+        "nets": 12
+      },
+      "PADLAY_HPAD06__@6": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 5,
+          "6": 162
+        },
+        "nets": 12
+      },
+      "PADLAY_HPAD06__@8": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 5,
+          "6": 162
+        },
+        "nets": 12
+      },
+      "PADLAY_HPAD06I__": {
+        "devices": 29,
+        "implants": {
+          "3": 20,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 7,
+          "6": 160
+        },
+        "nets": 14
+      },
+      "PADLAY_HPAD06M__@35": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 3,
+          "6": 115
+        },
+        "nets": 10
+      },
+      "PADLAY_HPAD06M__@40": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 3,
+          "6": 115
+        },
+        "nets": 10
+      },
+      "PADLAY_HPAD06__@46": {
+        "devices": 28,
+        "implants": {
+          "3": 19,
+          "0": 5,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 5,
+          "6": 162
+        },
+        "nets": 12
+      },
+      "VCELL_VCELL_GINGER$LOE_LM_LY_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 116
+        },
+        "nets": 64
+      },
+      "VCELL_VCELL_GINGER$LOE_GBFM2_LY": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 0,
+          "6": 27
+        },
+        "nets": 32
+      },
+      "VCELL_VCELL_GINGER$LOE_RLOG_LY_": {
+        "devices": 137,
+        "implants": {
+          "0": 2,
+          "3": 108,
+          "2": 27
+        },
+        "contact_regions": {
+          "4": 17,
+          "6": 219
+        },
+        "nets": 44
+      },
+      "VCELL_VCELL_GINGER$LOE_CLKGEN_L": {
+        "devices": 114,
+        "implants": {
+          "0": 10,
+          "3": 100,
+          "2": 4
+        },
+        "contact_regions": {
+          "4": 3,
+          "6": 608
+        },
+        "nets": 13,
+        "unmodelled_structures": 2
+      },
+      "VCELL_VCELL_GINGER$LOE_CTRL_LY_": {
+        "devices": 96,
+        "implants": {
+          "3": 61,
+          "0": 8,
+          "2": 27
+        },
+        "contact_regions": {
+          "4": 51,
+          "6": 154
+        },
+        "nets": 65
+      },
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 11,
+          "6": 74
+        },
+        "nets": 31
+      },
+      "RCPLA_RCPLA": {
+        "devices": 341,
+        "implants": {
+          "2": 71,
+          "0": 33,
+          "3": 237
+        },
+        "contact_regions": {
+          "4": 167,
+          "6": 452
+        },
+        "nets": 136
+      },
+      "VCELL_VCELL_GINGER$LOE_LUM_LY_": {
+        "devices": 60,
+        "implants": {
+          "2": 20,
+          "3": 40
+        },
+        "contact_regions": {
+          "4": 46,
+          "6": 114
+        },
+        "nets": 52
+      },
+      "VCELL_VCELL_GINGER$LOE_LUM2_LY_": {
+        "devices": 24,
+        "implants": {
+          "2": 8,
+          "3": 16
+        },
+        "contact_regions": {
+          "4": 16,
+          "6": 33
+        },
+        "nets": 24
+      },
+      "RSYNC_RSYNCPLA": {
+        "devices": 89,
+        "implants": {
+          "2": 29,
+          "3": 60
+        },
+        "contact_regions": {
+          "4": 58,
+          "6": 105
+        },
+        "nets": 48
+      },
+      "VCELL_VCELL_GINGER$LOE_RSYNC_LY": {
+        "devices": 97,
+        "implants": {
+          "3": 68,
+          "2": 25,
+          "0": 4
+        },
+        "contact_regions": {
+          "4": 49,
+          "6": 141
+        },
+        "nets": 64
+      },
+      "VCELL_VCELL_GINGER$LOE_HVSYNC_L": {
+        "devices": 885,
+        "implants": {
+          "0": 45,
+          "3": 629,
+          "2": 211
+        },
+        "contact_regions": {
+          "4": 403,
+          "6": 1368
+        },
+        "nets": 404
+      },
+      "VCELL_VCELL_GINGER$LOE_ADDINV_L": {
+        "devices": 57,
+        "implants": {
+          "3": 41,
+          "2": 16
+        },
+        "contact_regions": {
+          "4": 25,
+          "6": 64
+        },
+        "nets": 39
+      },
+      "VCELL_VCELL_GINGER$LOE_BURSTFOR": {
+        "devices": 22,
+        "implants": {
+          "2": 8,
+          "3": 14
+        },
+        "contact_regions": {
+          "4": 12,
+          "6": 23
+        },
+        "nets": 20
+      },
+      "LARRY2_LRC_89_140_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 70
+        },
+        "nets": 1
+      },
+      "LARRY2_LRC_95_140_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 70
+        },
+        "nets": 1
+      },
+      "LARRY2_LRC_34_100_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 50
+        },
+        "nets": 1
+      },
+      "LARRY2_LRC_42_36_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 18
+        },
+        "nets": 1
+      },
+      "LARRY2_LRC_34_10_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 4
+        },
+        "nets": 1
+      },
+      "LARRY2_LRC_34_6_": {
+        "devices": 0,
+        "implants": {},
+        "contact_regions": {
+          "4": 1,
+          "6": 2
+        },
+        "nets": 1
+      }
+    },
+    "parent_instances_not_expanded": 60,
+    "unmodelled_structures": 2
+  },
+  "alias_groups": {
+    "TOP/ph1": [
+      {
+        "node": 4009,
+        "labels": [
+          "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clkin",
+          "RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph2",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clkin/1",
+          "TOP/PLA.pla_clkin/1",
+          "TOP/RSYNC.ph2",
+          "TOP/ph1",
+          "TOP/ph2",
+          "VCELL_VCELL_GINGER$LOE_ADDINV_L::VCELL_VCELL_GINGER$LOE_ADDINV_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n13",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/hcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/vcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM2_LY_::VCELL_VCELL_GINGER$LOE_LUM2_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM_LY_::VCELL_VCELL_GINGER$LOE_LUM_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph2"
+        ]
+      },
+      {
+        "node": 4012,
+        "labels": [
+          "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clk",
+          "RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph1",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clk/1",
+          "TOP/PLA.pla_clk/1",
+          "TOP/RSYNC.ph1",
+          "TOP/ph1",
+          "VCELL_VCELL_GINGER$LOE_BURSTFOR::VCELL_VCELL_GINGER$LOE_BURSTFOR/ph1",
+          "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n12",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph1",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/p_ph1",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_LUM2_LY_::VCELL_VCELL_GINGER$LOE_LUM2_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_LUM_LY_::VCELL_VCELL_GINGER$LOE_LUM_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph1"
+        ]
+      },
+      {
+        "node": 3761,
+        "labels": [
+          "TOP/ph1",
+          "VCELL_VCELL_GINGER$LOE_CTRL_LY_::VCELL_VCELL_GINGER$LOE_CTRL_LY_/ph1"
+        ]
+      }
+    ],
+    "TOP/ph2": [
+      {
+        "node": 4009,
+        "labels": [
+          "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clkin",
+          "RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph2",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clkin/1",
+          "TOP/PLA.pla_clkin/1",
+          "TOP/RSYNC.ph2",
+          "TOP/ph1",
+          "TOP/ph2",
+          "VCELL_VCELL_GINGER$LOE_ADDINV_L::VCELL_VCELL_GINGER$LOE_ADDINV_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n13",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/hcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/vcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM2_LY_::VCELL_VCELL_GINGER$LOE_LUM2_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM_LY_::VCELL_VCELL_GINGER$LOE_LUM_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph2"
+        ]
+      }
+    ],
+    "TOP/halt": [
+      {
+        "node": 6339,
+        "labels": [
+          "PADLAY_HPAD06I__::PADLAY_HPAD06I__/0:VCELL_VCELL_GINGER$LOE_HPAD06I_/in",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_in2/1",
+          "TOP/PLA.pla_in2/1",
+          "TOP/RSYNC.halt",
+          "TOP/halt",
+          "VCELL_VCELL_GINGER$LOE_GBFM2_LY::VCELL_VCELL_GINGER$LOE_GBFM2_LY/halt",
+          "VCELL_VCELL_GINGER$LOE_LM_LY_::VCELL_VCELL_GINGER$LOE_LM_LY_/halt",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/halt",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/halt"
+        ]
+      }
+    ],
+    "TOP/intf": [
+      {
+        "node": 1841,
+        "labels": [
+          "PADLAY_HPAD06M__@35::PADLAY_HPAD06M__/0:VCELL_VCELL_GINGER$LOE_HPAD06M_/in",
+          "TOP/RSYNC.intf",
+          "TOP/intf",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/intf"
+        ]
+      }
+    ],
+    "TOP/pck2f": [
+      {
+        "node": 3342,
+        "labels": [
+          "PADLAY_HPAD06I__::PADLAY_HPAD06I__/0:VCELL_VCELL_GINGER$LOE_HPAD06I_/pck2f",
+          "TOP/pck2f",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/pck2f"
+        ]
+      }
+    ]
+  },
+  "verified_routes": {
+    "interrupt_latch_to_nmi_pad": 1841,
+    "top_pck2f_to_halt_sample_gate": 3342,
+    "clock_n12_to_controller_output_phase": 4012,
+    "clock_n13_to_controller_input_phase": 4009,
+    "internal_halt_to_halt_pad": 6339,
+    "clock_n12_to_rsync_phase1": 4012,
+    "clock_n13_to_rsync_phase2": 4009
+  },
+  "unmodelled_structure_ports": [
+    {
+      "cell": "VCELL_VCELL_GINGER$LOE_CLKGEN_L",
+      "kind": "single_terminal_gate_region",
+      "gate_labels": [
+        "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n10"
+      ],
+      "terminal_labels": [
+        [
+          "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clkin",
+          "RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph2",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clkin/1",
+          "TOP/PLA.pla_clkin/1",
+          "TOP/RSYNC.ph2",
+          "TOP/ph1",
+          "TOP/ph2",
+          "VCELL_VCELL_GINGER$LOE_ADDINV_L::VCELL_VCELL_GINGER$LOE_ADDINV_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n13",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/hcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph2",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/vcnt_aph2/2",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM2_LY_::VCELL_VCELL_GINGER$LOE_LUM2_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_LUM_LY_::VCELL_VCELL_GINGER$LOE_LUM_LY_/ph2",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph2"
+        ]
+      ]
+    },
+    {
+      "cell": "VCELL_VCELL_GINGER$LOE_CLKGEN_L",
+      "kind": "single_terminal_gate_region",
+      "gate_labels": [
+        "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n5"
+      ],
+      "terminal_labels": [
+        [
+          "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clk",
+          "RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph1",
+          "RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clk/1",
+          "TOP/PLA.pla_clk/1",
+          "TOP/RSYNC.ph1",
+          "TOP/ph1",
+          "VCELL_VCELL_GINGER$LOE_BURSTFOR::VCELL_VCELL_GINGER$LOE_BURSTFOR/ph1",
+          "VCELL_VCELL_GINGER$LOE_CLKGEN_L::VCELL_VCELL_GINGER$LOE_CLKGEN_L/n12",
+          "VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph1",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/p_ph1",
+          "VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_LUM2_LY_::VCELL_VCELL_GINGER$LOE_LUM2_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_LUM_LY_::VCELL_VCELL_GINGER$LOE_LUM_LY_/ph1",
+          "VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph1"
+        ]
+      ]
+    }
+  ],
+  "name_only_binding_rejection": "ambiguous named binding TOP/ph1: 3 components",
+  "phase_schedule_qualified": false,
+  "scope": "partial placed network; remaining driver paths and analogue phase relationships are not qualified",
+  "missing_branch_negatives": {
+    "ph1": "missing physical port route",
+    "ph2": "missing physical port route"
+  },
+  "phase_sweep": {
+    "latch_devices": 13,
+    "controller_truth_rows": 32,
+    "cases": [
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 0,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 0,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 59,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 11
+          },
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 19
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 1,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 1,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 59,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 10
+          },
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 18
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 2,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 2,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 17
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 25
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 3,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 3,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 16
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 24
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 4,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 4,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 15
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 23
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 5,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 5,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 14
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 22
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 6,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 6,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 13
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 21
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 7,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 4,
+        "release_phase_step": 7,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 67,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 12
+          },
+          {
+            "phase_step": 75,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 20
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 0,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 0,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 87,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 15
+          },
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 27
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 1,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 1,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 87,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 14
+          },
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 26
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 2,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 2,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 25
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 37
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 3,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 3,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 24
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 36
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 4,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 4,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 23
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 35
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 5,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 5,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 22
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 34
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 6,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 6,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 21
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 33
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 7,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 7,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 20
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 32
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 8,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 8,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 19
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 31
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 9,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 9,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 18
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 30
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 10,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 10,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 17
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 29
+          }
+        ],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 11,
+        "dli": 0,
+        "events": [],
+        "final_nmi": 1
+      },
+      {
+        "period_maria_cycles": 6,
+        "release_phase_step": 11,
+        "dli": 1,
+        "events": [
+          {
+            "phase_step": 99,
+            "phase": 2,
+            "level": 0,
+            "halt": 0,
+            "since_internal_halt_release": 16
+          },
+          {
+            "phase_step": 111,
+            "phase": 2,
+            "level": 1,
+            "halt": 0,
+            "since_internal_halt_release": 28
+          }
+        ],
+        "final_nmi": 1
+      }
+    ],
+    "transparent_latch_negative": "interrupt edge outside phase 2",
+    "scope": "conditional alternating-phase/constant-period sweep; no native alignment or analogue timing claim"
+  }
+}
