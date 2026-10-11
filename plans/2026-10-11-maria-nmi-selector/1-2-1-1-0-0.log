@@ -1,0 +1,173 @@
+SETUP t=256 ctrl=40 zp=1800 row=0 col=112 mclk=10 phi=00 pclk=0 men=0 old=1 div=0 toggle=0
+HALT tick=14566 sub=0 row=16 col=3 level=0 ab=8000
+HALT tick=14598 sub=0 row=16 col=19 level=1 ab=1802
+SELECTOR tick=14602 row=16 col=21 level=0 halt=1 delay=4 width=14603 sel=1000000 cond=01000
+SELECTOR tick=14604 row=16 col=22 level=1 halt=1 delay=6 width=2 sel=0000001 cond=01011
+NMI tick=14616 sub=0 row=16 col=28 level=0 release_delay=18
+NMI tick=14632 sub=0 row=16 col=36 level=1 release_delay=34
+WIDTH 16
+HALT tick=15441 sub=0 row=16 col=441 level=0 ab=8000
+HALT tick=15513 sub=0 row=17 col=23 level=1 ab=1805
+SELECTOR tick=15516 row=17 col=24 level=0 halt=1 delay=3 width=914 sel=1000000 cond=01000
+SELECTOR tick=15522 row=17 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=15528 sub=0 row=17 col=30 level=0 release_delay=15
+NMI tick=15544 sub=0 row=17 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=16350 sub=0 row=17 col=441 level=0 ab=8000
+HALT tick=16425 sub=0 row=18 col=25 level=1 ab=1808
+SELECTOR tick=16428 row=18 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=16434 row=18 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=16440 sub=0 row=18 col=32 level=0 release_delay=15
+NMI tick=16456 sub=0 row=18 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=17257 sub=0 row=18 col=441 level=0 ab=8000
+HALT tick=17329 sub=0 row=19 col=23 level=1 ab=180b
+SELECTOR tick=17332 row=19 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=17338 row=19 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=17344 sub=0 row=19 col=30 level=0 release_delay=15
+NMI tick=17360 sub=0 row=19 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=18166 sub=0 row=19 col=441 level=0 ab=8000
+HALT tick=18241 sub=0 row=20 col=25 level=1 ab=180e
+SELECTOR tick=18244 row=20 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=18250 row=20 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=18256 sub=0 row=20 col=32 level=0 release_delay=15
+NMI tick=18272 sub=0 row=20 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=19073 sub=0 row=20 col=441 level=0 ab=8000
+HALT tick=19145 sub=0 row=21 col=23 level=1 ab=1811
+SELECTOR tick=19148 row=21 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=19154 row=21 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=19160 sub=0 row=21 col=30 level=0 release_delay=15
+NMI tick=19176 sub=0 row=21 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=19982 sub=0 row=21 col=441 level=0 ab=8000
+HALT tick=20057 sub=0 row=22 col=25 level=1 ab=1814
+SELECTOR tick=20060 row=22 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=20066 row=22 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=20072 sub=0 row=22 col=32 level=0 release_delay=15
+NMI tick=20088 sub=0 row=22 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=20889 sub=0 row=22 col=441 level=0 ab=8000
+HALT tick=20961 sub=0 row=23 col=23 level=1 ab=1817
+SELECTOR tick=20964 row=23 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=20970 row=23 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=20976 sub=0 row=23 col=30 level=0 release_delay=15
+NMI tick=20992 sub=0 row=23 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=21798 sub=0 row=23 col=441 level=0 ab=8000
+HALT tick=21873 sub=0 row=24 col=25 level=1 ab=181a
+SELECTOR tick=21876 row=24 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=21882 row=24 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=21888 sub=0 row=24 col=32 level=0 release_delay=15
+NMI tick=21904 sub=0 row=24 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=22705 sub=0 row=24 col=441 level=0 ab=8000
+HALT tick=22777 sub=0 row=25 col=23 level=1 ab=181d
+SELECTOR tick=22780 row=25 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=22786 row=25 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=22792 sub=0 row=25 col=30 level=0 release_delay=15
+NMI tick=22808 sub=0 row=25 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=23614 sub=0 row=25 col=441 level=0 ab=8000
+HALT tick=23689 sub=0 row=26 col=25 level=1 ab=1820
+SELECTOR tick=23692 row=26 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=23698 row=26 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=23704 sub=0 row=26 col=32 level=0 release_delay=15
+NMI tick=23720 sub=0 row=26 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=24521 sub=0 row=26 col=441 level=0 ab=8000
+HALT tick=24593 sub=0 row=27 col=23 level=1 ab=1823
+SELECTOR tick=24596 row=27 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=24602 row=27 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=24608 sub=0 row=27 col=30 level=0 release_delay=15
+NMI tick=24624 sub=0 row=27 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=25430 sub=0 row=27 col=441 level=0 ab=8000
+HALT tick=25505 sub=0 row=28 col=25 level=1 ab=1826
+SELECTOR tick=25508 row=28 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=25514 row=28 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=25520 sub=0 row=28 col=32 level=0 release_delay=15
+NMI tick=25536 sub=0 row=28 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=26337 sub=0 row=28 col=441 level=0 ab=8000
+HALT tick=26409 sub=0 row=29 col=23 level=1 ab=1829
+SELECTOR tick=26412 row=29 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=26418 row=29 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=26424 sub=0 row=29 col=30 level=0 release_delay=15
+NMI tick=26440 sub=0 row=29 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=27246 sub=0 row=29 col=441 level=0 ab=8000
+HALT tick=27321 sub=0 row=30 col=25 level=1 ab=182c
+SELECTOR tick=27324 row=30 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=27330 row=30 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=27336 sub=0 row=30 col=32 level=0 release_delay=15
+NMI tick=27352 sub=0 row=30 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=28153 sub=0 row=30 col=441 level=0 ab=8000
+HALT tick=28225 sub=0 row=31 col=23 level=1 ab=182f
+SELECTOR tick=28228 row=31 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=28234 row=31 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=28240 sub=0 row=31 col=30 level=0 release_delay=15
+NMI tick=28256 sub=0 row=31 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=29062 sub=0 row=31 col=441 level=0 ab=8000
+HALT tick=29137 sub=0 row=32 col=25 level=1 ab=1832
+SELECTOR tick=29140 row=32 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=29146 row=32 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=29152 sub=0 row=32 col=32 level=0 release_delay=15
+NMI tick=29168 sub=0 row=32 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=29969 sub=0 row=32 col=441 level=0 ab=8000
+HALT tick=30041 sub=0 row=33 col=23 level=1 ab=1835
+SELECTOR tick=30044 row=33 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=30050 row=33 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=30056 sub=0 row=33 col=30 level=0 release_delay=15
+NMI tick=30072 sub=0 row=33 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=30878 sub=0 row=33 col=441 level=0 ab=8000
+HALT tick=30953 sub=0 row=34 col=25 level=1 ab=1838
+SELECTOR tick=30956 row=34 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=30962 row=34 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=30968 sub=0 row=34 col=32 level=0 release_delay=15
+NMI tick=30984 sub=0 row=34 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=31785 sub=0 row=34 col=441 level=0 ab=8000
+HALT tick=31857 sub=0 row=35 col=23 level=1 ab=183b
+SELECTOR tick=31860 row=35 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=31866 row=35 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=31872 sub=0 row=35 col=30 level=0 release_delay=15
+NMI tick=31888 sub=0 row=35 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=32694 sub=0 row=35 col=441 level=0 ab=8000
+HALT tick=32769 sub=0 row=36 col=25 level=1 ab=183e
+SELECTOR tick=32772 row=36 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=32778 row=36 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=32784 sub=0 row=36 col=32 level=0 release_delay=15
+NMI tick=32800 sub=0 row=36 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=33601 sub=0 row=36 col=441 level=0 ab=8000
+HALT tick=33673 sub=0 row=37 col=23 level=1 ab=1841
+SELECTOR tick=33676 row=37 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=33682 row=37 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=33688 sub=0 row=37 col=30 level=0 release_delay=15
+NMI tick=33704 sub=0 row=37 col=38 level=1 release_delay=31
+WIDTH 16
+HALT tick=34510 sub=0 row=37 col=441 level=0 ab=8000
+HALT tick=34585 sub=0 row=38 col=25 level=1 ab=1844
+SELECTOR tick=34588 row=38 col=26 level=0 halt=1 delay=3 width=912 sel=1000000 cond=01000
+SELECTOR tick=34594 row=38 col=29 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=34600 sub=0 row=38 col=32 level=0 release_delay=15
+NMI tick=34616 sub=0 row=38 col=40 level=1 release_delay=31
+WIDTH 16
+HALT tick=35417 sub=0 row=38 col=441 level=0 ab=8000
+HALT tick=35489 sub=0 row=39 col=23 level=1 ab=1847
+SELECTOR tick=35492 row=39 col=24 level=0 halt=1 delay=3 width=904 sel=1000000 cond=01000
+SELECTOR tick=35498 row=39 col=27 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+NMI tick=35504 sub=0 row=39 col=30 level=0 release_delay=15
+NMI tick=35520 sub=0 row=39 col=38 level=1 release_delay=31
+WIDTH 16
+RESULT height=1 flag=1 slow=0 pal=0 starts=24 releases=24 edges=24
+FETCH_RESULT object=1 width=2 graphics=46
+SELECTOR_RESULT assertions=24 releases=24 final=1
+/Users/stevehill/Projects/198x/Emu198x/docs/plans/2026-10-11-maria-nmi-selector/selector_tb.sv:162: $finish called at 363200 (1s)
