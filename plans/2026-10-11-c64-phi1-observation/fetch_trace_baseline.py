@@ -5,11 +5,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 from pathlib import Path
 
 from bank_transient import guest, pixels
 from capture import MODELS, digest, layout
+from verify_fetch_trace import verify
 
 
 def compare(actual: bytes, expected: bytes) -> None:
@@ -26,7 +28,21 @@ def reject_mutation(actual: bytes, expected: bytes) -> None:
     raise AssertionError("changed payload passed")
 
 
-def execute(args: argparse.Namespace, model: str, stem: str, commands: str) -> str:
+def execute(
+    args: argparse.Namespace,
+    model: str,
+    stem: str,
+    commands: str,
+    *,
+    arm_in_monitor: bool = True,
+) -> str:
+    env = os.environ.copy()
+    env.pop("EMU198X_VIC_TRACE", None)
+    if args.trace:
+        env["EMU198X_VIC_TRACE"] = str(args.output / f"{stem}.csv")
+        if arm_in_monitor:
+            assert commands.count("\ng $") == 1
+            commands = commands.replace("\ng $", "\n> $02ff $a5\ng $", 1)
     monitor = args.output / f"{stem}.mon"
     monitor.write_text(commands)
     cmd = [
@@ -63,7 +79,7 @@ def execute(args: argparse.Namespace, model: str, stem: str, commands: str) -> s
     )
     # Headless uses the logger for monitor output. -silent would hide the
     # completion witness; -nativemonitor belongs to the GTK frontend.
-    run = subprocess.run(cmd, capture_output=True, timeout=60, check=True)
+    run = subprocess.run(cmd, capture_output=True, timeout=60, check=True, env=env)
     log = (run.stdout + run.stderr).decode(errors="replace")
     (args.output / f"{stem}.log").write_text(log)
     assert log.count("Stop on store d7ff") == 1, "missing/duplicate completion"
@@ -79,6 +95,7 @@ def main() -> None:
     parser.add_argument("--roms", type=Path, required=True)
     parser.add_argument("--testbench", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--trace", action="store_true")
     args = parser.parse_args()
     args.output = args.output.resolve()
     args.output.mkdir(exist_ok=False)
@@ -168,10 +185,17 @@ def main() -> None:
     assert {(r["model"], r["case"]) for r in rows} == {
         (m, c) for m, _, _ in MODELS for c in ("bank", "io1", "colour")
     }
+    traces = {}
+    if args.trace:
+        for model, _, cycles in MODELS:
+            for case in ("bank", "io1", "colour"):
+                name = f"{model}-{case}"
+                traces[name] = verify(args.output / f"{name}.csv", cycles)
     summary = {
         "binary_sha256": digest(args.binary),
         "rows": rows,
         "mutation_controls_rejected": len(rows),
+        "traces": traces,
     }
     (args.output / "comparison.json").write_text(json.dumps(summary, indent=2) + "\n")
 

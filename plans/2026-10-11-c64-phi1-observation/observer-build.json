@@ -1,0 +1,23 @@
+{
+  "patch_sha256": "c2a25f050d451404200c33e069a45e8f4ac8016c2d8415038c204487abcefade",
+  "baseline_sha256": "348f1fb6d9b3b2d85537b61459bc44d8f47bca4297987518498b40cb551b1257",
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "sources": {
+    "src/viciisc/vicii-fetch.c": {
+      "before": "83fe621bfd6c3f9aadfe7c725f02392ba04db70c36248cdfea88d79883bb21d0",
+      "after": "6d36a08bca4c139b97585f0abd1cda90ef340134bb3cdc7d28414b0c595b4194"
+    },
+    "src/viciisc/vicii-fetch.h": {
+      "before": "45467c0e10d62faf92d5bb3ad6689415eb3a8fdc299bef039ae0803ef20e902e",
+      "after": "f59ff00e19a9c3aa324346de6fcca2a3533e20433ca642aebcca66214243b10e"
+    },
+    "src/viciisc/vicii-cycle.c": {
+      "before": "561876187fde8bfe8636e64593543aa77a5e0855ebbd9fe56d9da4fa6eb564ba",
+      "after": "b16a4f835f1604580b26005403a5f686162f3001259d0cdc85b8bc6f12bd409d"
+    }
+  },
+  "schedule_source_sha256": "95ea3ef61e59a1c850ff516c1a827ae849521dce3199307586e061af97db639d",
+  "sprite_archive_sha256": "82cd95914f5a49b59eaa0f25936f60eb11e60fe740a76e61d3e0c809aa8bc0d1",
+  "original_build_patch_sha256": "7459f4ffe3445d91fe0c0940ad51f1c9d470d959c2a6116ad5bee5196729d09f",
+  "retained_patch_validation": "Zero-context patch applies to the pinned sources and reproduces every compiled observer source SHA-256."
+}
