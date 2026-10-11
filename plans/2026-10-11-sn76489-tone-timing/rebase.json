@@ -1,0 +1,7 @@
+{
+  "tested_pre_rebase": "17e042f6396ba847660f65758f7c9e36c6a4e89d",
+  "rebased_commit": "6e7f652728ec2543bc0b22efbb4ff12df3269357",
+  "base": "07b293108d202855312dbd34cb0451b96171d27b",
+  "combined_chip_tests": 19,
+  "resolution": "Preserve both the new tone regression and both merged register-state regressions; no tone implementation change."
+}

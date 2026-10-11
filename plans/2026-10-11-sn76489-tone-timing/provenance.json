@@ -27,7 +27,13 @@
     "tests.log": "1697552fa78f18cf87254b5ef81277cc550dc3c8ca34961e8a0bab6f7c57864c",
     "consumers.log": "f21e47ae944e2a4ea825c63a7935e9d755a1b09c156e66b21504e51e46c45004",
     "clippy.log": "3a5b8ebfa9f07f0d73424e5e06a1a3a29dcef9cf0fd159c71600522b9e7e096c",
-    "format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "combined-tests.log": "a5ab21a699f587bad8900013f632a3057614da2e5cdd05675441dbee18408c0e",
+    "combined-clippy.log": "39d1a0bc73fdc4693b383151ed42dc313a7787e6bd1cfdadb020444c39da3666",
+    "combined-format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rebase.json": "3ab6fcfc01caaa8ca98f44c072657269ed0d16a169473d0c29275cdbd646cb17"
   },
-  "corrected_commit": "17e042f6396ba847660f65758f7c9e36c6a4e89d"
+  "corrected_commit": "17e042f6396ba847660f65758f7c9e36c6a4e89d",
+  "rebased_commit": "6e7f652728ec2543bc0b22efbb4ff12df3269357",
+  "combined_chip_tests": 19
 }

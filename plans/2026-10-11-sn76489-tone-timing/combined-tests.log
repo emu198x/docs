@@ -1,0 +1,33 @@
+
+running 19 tests
+test tests::attenuation_to_volume_extremes ... ok
+test tests::attenuation_write ... ok
+test tests::latch_write_sets_tone_period_low ... ok
+test tests::data_write_sets_tone_period_high ... ok
+test tests::new_psg_is_silent ... ok
+test tests::noise_mode3_tone2_period_zero_clamps_to_one ... ok
+test tests::noise_mode_3_uses_tone_2_period ... ok
+test tests::noise_mode_sets_period ... ok
+test tests::periodic_noise_period_matches_register_width ... ok
+test tests::register_state_consumes_the_encoder_output_and_leaves_trailing_bytes ... ok
+test tests::sega16_white_noise_matches_legacy_behaviour ... ok
+test tests::sega_zero_tone_period_matches_one_count_interval ... ok
+test tests::register_state_rejects_every_truncated_prefix_before_mutation ... ok
+test tests::white_noise_sequences_differ_by_variant ... ok
+test tests::silent_when_muted ... ok
+test tests::tick_produces_output ... ok
+test tests::downsampler_tracks_48khz_output_rate ... ok
+test tests::output_is_dc_blocked ... ok
+test tests::nonzero_tone_intervals_match_the_full_reference ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.58s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.27s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-90d012b191c4f931)
+   Doc-tests ti_sn76489
