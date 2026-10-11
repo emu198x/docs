@@ -1,0 +1,32 @@
+{
+  "baseline_commit": "6e7f652728ec2543bc0b22efbb4ff12df3269357",
+  "corrected_commit": "ffe6b0bec301e956b5fd85dd25ba0cdbf3852900",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_sha256": {
+    "src/sn76489.c": "62f16a2306785d9380642bf664ab90b34f37ac0fd8266e73901e083465bb1e84",
+    "src/filter.c": "cb6a8a03af42f201b4c9d786ec984f8526da4e7ea367a68773d60e7bbc9f4817",
+    "src/filter.h": "6007c2a3890a480062a03c2097800916a0924d7302fa1b9557ac0d8f9d65f0be"
+  },
+  "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "mame_source_sha256": "eb4db2fa887fecc07aa1c8f890446966cbd5ca74040d02b21f9dabb3dcaee6d5",
+  "transition_rows": 60,
+  "baseline_mismatches": 60,
+  "corrected_mismatches": 0,
+  "nonzero_control_cases": 6138,
+  "public_zero_rows": 6,
+  "passed_tests": 193,
+  "existing_ignored_tests": 18,
+  "sha256": {
+    "build.log": "c7220e01096ef56b51c7ae3613c94e0602330488d96c59478067fad58ccacb96",
+    "clippy.log": "58512c2d479f2ded3850513661916ae2eaae72066d5c93b1535cb7a198b4bde4",
+    "consumers.log": "51b9cc60c091e29534c46cf8f1855edfa87314bdb94f7b15cbc0d12985eb94c6",
+    "corrected-zero.csv": "a1b63f62a2d7b60dbf82a5531eb128b9983e9d6ed5e7d07281b917c3aeff5cfe",
+    "counts.json": "887414b5f177a98a13b6d618656a677b714028b15a297fe1059ec4fda81f9aa2",
+    "format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe.rs": "bd8b629cddc7b4458c0349b9288c16839d0fac000199e65de5435b6b02040048",
+    "red.log": "348cb83ab1403bf6df1f6b608d8d3a57d75304c26909d7f80d74954ec18e3635",
+    "reference.c": "ac5ea886907c0d3be351f6339fb94e0c6e5f4600abd0f75d5fb39003607b77c9",
+    "reference.csv": "7c698ad633c344cbfc412cc3a020cd02f4b78fb2298a3dc8d3e4cb7346be3c02",
+    "tests.log": "979c525c56ab2550912217f9a429f026038d89611234a35ca803b68d352af6ae"
+  }
+}

@@ -1,0 +1,23 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.08s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-90d012b191c4f931)
+
+running 1 test
+test tests::ti_zero_period_transitions_match_the_full_reference ... FAILED
+
+failures:
+
+---- tests::ti_zero_period_transitions_match_the_full_reference stdout ----
+
+thread 'tests::ti_zero_period_transitions_match_the_full_reference' (92911754) panicked at crates/ti-sn76489/src/lib.rs:613:9:
+60 mismatches; first: Some((0, 5, 0, [80, 16, 16, 16, 80, 80]))
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::ti_zero_period_transitions_match_the_full_reference
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 19 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p ti-sn76489 --lib`

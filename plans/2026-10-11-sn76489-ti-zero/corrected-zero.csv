@@ -1,0 +1,7 @@
+variant,channel,period,interval1,interval2
+ti,0,0,16384,16384
+ti,1,0,16384,16384
+ti,2,0,16384,16384
+sega,0,0,16,16
+sega,1,0,16,16
+sega,2,0,16,16
