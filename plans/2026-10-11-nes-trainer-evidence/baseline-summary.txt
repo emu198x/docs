@@ -1,0 +1,1 @@
+controls=28, trainer_faults=28
