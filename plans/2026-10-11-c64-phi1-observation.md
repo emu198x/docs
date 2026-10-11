@@ -683,3 +683,66 @@ row. No new production failure or save/replay result is claimed. Dynamic mode
 and bank changes, character-ROM mapping, late matrix ownership and production
 save/replay remain separate gates. The larger stage/snapshot proposal remains
 pending; this qualification makes no production or schema change.
+
+### Next probe: live banks during sprite DMA
+
+Add `sprite_bank.py` original CPU guests beside the existing observer tools.
+Seed all four banks with distinct sprite pointers and all eight data blocks;
+change CIA2 PRA on line 90 while a selected sprite is active. Sweep CPU delay
+and instruction alignment first, recording actual completed-store times so DMA
+stalls do not become guessed bank timing. Include the custom-glue 1↔2 transient
+and ordinary transitions/no-change controls across the five models. Verify every
+pointer/data physical bank against those CPU events, retain each fetched pointer
+through its three-byte row, and preserve MC through a bank change. Use the
+existing observer and captured RAM, with no production or snapshot changes.
+
+Add `verify_sprite_bank.py` and `test_sprite_bank.py` after the calibration
+identifies reachable boundaries. Mutations must reject stale/early bank
+selection, lost or widened transients, replacing the held pointer, shifted MC,
+missing events/cases, wrong banks/bytes and overwritten Phi1. Retain raw native
+traces, programs, CPU logs, RAM and sentinels; report any inaccessible phase or
+board-specific uncertainty rather than claiming it was covered.
+
+
+### Live PRA bank boundary qualified
+
+All 320 cases pass: five native profiles × two explicitly selected glue types ×
+sixteen old/new bank pairs × two CPU-store boundaries around sprite 0's active
+line-90 row. The 1,653,056 records verify 20,160 sprite bytes, all pointer sources,
+live physical banks and uninterrupted MC. Each guest seeds and dumps all four
+banks' pointer tables and eight sprite blocks. These are controlled glue/chip
+combinations; the matrix does not claim all were shipped boards.
+
+The actual completed stores occur at 90/55 and 90/62 on PAL/current NTSC, and
+90/56 and 90/63 on old NTSC. One extra NOP produces a seven-clock actual gap in
+all 160 pairs. Custom glue's twenty 1↔2 cases use bank 3 for one observed fetch;
+four hit inactive-sprite pointer reads and return that bank's pointer byte.
+Discrete glue and all other bank pairs switch without that transient. The
+132-run delay/alignment calibration verifies another 678,840 records and 8,316
+bytes, including thirteen transient pointer reads across 66 transients.
+
+All 151 evidence tests pass, including 22 new bank tests. Mutations reject wrong
+bank timing, lost/widened or inappropriate transients, wrong pointers, MC resets,
+wrong/missing data, missing CPU/completion events, overwritten Phi1 and missing
+or duplicated cases. Coherently shifted CPU timestamps and metadata still fail
+the independent physical-bank observation. Ruff and diff checks pass.
+
+The runner accepts an explicit glue type while keeping earlier callers' default
+unchanged; each new capture reads back the native resource. Full original
+guests, traces, logs, commands, source dumps and sentinels are retained in
+`sprite-bank-native.zip` and `sprite-bank-calibration.zip`. Identities and scope
+are in `sprite-bank-summary.json`; the full suite result is in
+`sprite-bank-tests.log`.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_bank.py sprite-bank-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_bank.py sprite-bank-calibration.zip --calibration
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+No active three-byte row is split by these ordinary CPU writes. Between-phase
+writes and late invalid ownership remain distinct probes; DDRA and production
+save/replay are also outside this evidence. Production already holds a relative
+pointer base and applies its live bank, and the earlier PRA fix is merged.
+This establishes no additional production failure and changes no production or
+snapshot state. The larger Phi1 correction remains pending approval.
