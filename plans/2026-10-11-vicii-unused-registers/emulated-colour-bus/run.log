@@ -1,0 +1,52 @@
+
+running 1 test
+PalBreadbin: 544/544 wrong, values {10: 544}
+NtscBreadbin: 544/544 wrong, values {10: 544}
+PalC64c: 544/544 wrong, values {10: 544}
+NtscC64c: 544/544 wrong, values {10: 544}
+test machine::tests::colour_ram_bus_matches_native_idle_fetches ... FAILED
+
+failures:
+
+failures:
+    machine::tests::colour_ram_bus_matches_native_idle_fetches
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 146 filtered out; finished in 0.47s
+
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling thiserror v2.0.20
+   Compiling common-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-c64)
+   Compiling emu198x-esp-at-modem v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-esp-at-modem)
+   Compiling format-commodore-c64-prg v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-prg)
+   Compiling peripheral-ultimate-uci-net v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/peripheral-ultimate-uci-net)
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling format-commodore-c64-g64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-g64)
+   Compiling format-commodore-c64-d64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-d64)
+   Compiling format-commodore-c64-crt v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-crt)
+   Compiling common-commodore-iec v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec)
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-6502)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-via-6522)
+   Compiling common-commodore-drive-gcr v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-drive-gcr)
+   Compiling serde-big-array v0.5.1
+   Compiling mos-cia-6526 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-cia-6526)
+   Compiling emu198x-mos-sid-6581 v0.9.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-sid-6581)
+   Compiling format-commodore-c64-tap v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-tap)
+   Compiling mos-vic-ii v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-vic-ii)
+   Compiling common-commodore-iec-drive v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec-drive)
+   Compiling machine-commodore-1541 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-1541)
+   Compiling machine-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-c64)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.90s
+     Running unittests src/lib.rs (target/debug/deps/machine_commodore_c64-93b5c42e80cdcea8)
+
+thread 'machine::tests::colour_ram_bus_matches_native_idle_fetches' (90873669) panicked at crates/machine-commodore-c64/src/machine.rs:3375:9:
+assertion `left == right` failed: colour RAM differs from native VICE
+  left: 2176
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p machine-commodore-c64 --lib`

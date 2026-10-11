@@ -1,0 +1,8 @@
+{
+  "mutation": "Fill idle/refresh/pointer sources with 26 instead of 96; retain expected 9A",
+  "models": 5,
+  "rejected_samples": 2720,
+  "actual": 42,
+  "expected": 154,
+  "exit": 1
+}

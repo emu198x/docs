@@ -1,0 +1,50 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/426966148660c1: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling thiserror v2.0.20
+   Compiling emu198x-esp-at-modem v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-esp-at-modem)
+   Compiling peripheral-ultimate-uci-net v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/peripheral-ultimate-uci-net)
+   Compiling format-commodore-c64-prg v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-prg)
+   Compiling common-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-c64)
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling format-commodore-c64-g64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-g64)
+   Compiling format-commodore-c64-d64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-d64)
+   Compiling format-commodore-c64-crt v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-crt)
+   Compiling serde v1.0.229
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-6502)
+   Compiling common-commodore-iec v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec)
+   Compiling common-commodore-drive-gcr v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-drive-gcr)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-via-6522)
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-mos-sid-6581 v0.9.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-sid-6581)
+   Compiling mos-cia-6526 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-cia-6526)
+   Compiling format-commodore-c64-tap v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-tap)
+   Compiling mos-vic-ii v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-vic-ii)
+   Compiling common-commodore-iec-drive v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec-drive)
+   Compiling machine-commodore-1541 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-1541)
+   Compiling machine-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-c64)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.14s
+     Running unittests src/lib.rs (target/debug/deps/machine_commodore_c64-07dee4290076f5c5)
+
+running 1 test
+test machine::tests::unused_vic_registers_match_native_reads_through_every_mirror ... FAILED
+
+failures:
+
+---- machine::tests::unused_vic_registers_match_native_reads_through_every_mirror stdout ----
+
+thread 'machine::tests::unused_vic_registers_match_native_reads_through_every_mirror' (90839344) panicked at crates/machine-commodore-c64/src/machine.rs:2743:17:
+assertion `left == right` failed: PalBreadbin: mirror 0, register 2F, after write false
+  left: 0
+ right: 255
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    machine::tests::unused_vic_registers_match_native_reads_through_every_mirror
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 145 filtered out; finished in 0.13s
+
+error: test failed, to rerun pass `-p machine-commodore-c64 --lib`

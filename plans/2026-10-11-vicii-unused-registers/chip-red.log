@@ -1,0 +1,33 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/426966148660c1: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling serde-big-array v0.5.1
+   Compiling mos-vic-ii v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-vic-ii)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.51s
+     Running unittests src/lib.rs (target/debug/deps/mos_vic_ii-551e237f587388f2)
+
+running 1 test
+test tests::unused_registers_read_ff_independently_of_dma_bus_and_writes ... FAILED
+
+failures:
+
+---- tests::unused_registers_read_ff_independently_of_dma_bus_and_writes stdout ----
+
+thread 'tests::unused_registers_read_ff_independently_of_dma_bus_and_writes' (90837777) panicked at crates/mos-vic-ii/src/lib.rs:3353:25:
+assertion `left == right` failed: Pal6569 2F 00
+  left: 0
+ right: 255
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::unused_registers_read_ff_independently_of_dma_bus_and_writes
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 117 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p mos-vic-ii --lib`

@@ -1,0 +1,13 @@
+pal 544 differences
+c64c 544 differences
+ntsc 544 differences
+c64cntsc 544 differences
+oldntsc 544 differences
+Traceback (most recent call last):
+  File "/private/tmp/vicii-colour-bus-negative.py", line 146, in <module>
+    main()
+    ~~~~^^
+  File "/private/tmp/vicii-colour-bus-negative.py", line 142, in main
+    assert len(rows) == 5 and all(not row["differences"] for row in rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
