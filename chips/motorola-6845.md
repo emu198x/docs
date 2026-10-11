@@ -55,7 +55,7 @@ one shared interlace formula cannot establish complete variant accuracy.
 ## Implementation boundary
 
 At source commit
-[`34d793f`](https://github.com/emu198x/emu198x/blob/34d793f52d33275b0edfda428adf0a4582e1cb52/crates/motorola-6845/src/lib.rs),
+[`34d793f`](https://github.com/emu198x/emu198x/blob/f7c6b0342e76ab604d7d1a2feb5cc2ee64f067d6/crates/motorola-6845/src/lib.rs),
 the core ticks once per character clock. BBC and CPC select `Hd6845s`; PET uses
 the default `Mc6845` personality. All three consume live CRTC addresses. BBC
 applies separate bitmap/teletext decoding and bitmap wrapping in its machine
@@ -64,7 +64,7 @@ or coverage of every CPC CRTC type.
 
 The core implements variant readback, R0 = 255 wrapping, RA field parity and
 cursor blinking. It still lacks half-line sync displacement, chip-level skew,
-light-pen capture. R7 = 0 does not trigger vertical sync, and interlaced vertical
+and light-pen capture. R7 = 0 does not trigger vertical sync, and interlaced vertical
 programming still needs variant-specific work. [Issue #166](https://github.com/emu198x/emu198x/issues/166)
 tracks the interlace/skew boundary.
 
