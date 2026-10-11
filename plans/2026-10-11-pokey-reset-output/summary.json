@@ -1,0 +1,19 @@
+{
+  "renderer_sha256": "d79effe1aa9967e50bb189ebec6fd1cb850e29e63d78ae878695409da9b29aa6",
+  "reset_methods_sha256": "7afaee8d4b6905a2249279dc92413b4d936dc9d4f92942c1af95dfcd5659cae1",
+  "driver_sha256": "2ee98c4f3ef09d7ec3a187ffe43aa9a382ba7a6a6a72928fdd02ad9790b9d48f",
+  "baseline": {
+    "cases": 960,
+    "output_transitions": 624,
+    "capture_sha256": "687128497ae4c6ead80a04eea04ec56c308bce84e97d3e961781863159ce8063"
+  },
+  "no-reset": {
+    "rejected": "reset hidden-state mismatch: (0, 0, 0, 0, -2, 1)"
+  },
+  "wrong-preset": {
+    "rejected": "reset hidden-state mismatch: (0, 0, 0, 0, -4, 1)"
+  },
+  "late-reset": {
+    "rejected": "reset hidden-state mismatch: (0, 0, 0, 0, -2, 1)"
+  }
+}

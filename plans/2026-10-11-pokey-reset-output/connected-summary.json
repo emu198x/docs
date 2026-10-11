@@ -1,0 +1,15 @@
+{
+  "assembled_source_sha256": "7eb6d9584bfbd722f381a8ddebc51e4649185390e2073c855c8ca81366394175",
+  "connected": {
+    "cases": 1440,
+    "timer_events": 7560,
+    "irq_calls": 5172,
+    "reset_calls": 1080,
+    "capture_sha256": "d9fd1e7b52360bd39c7f040ddc37d6f6a89ee3c8c9bdaed92bd0b2debf7bf71c",
+    "output_transitions": 7808,
+    "combined_capture_sha256": "1451eb7b53220a29422ee2b74507dc4d9622160f8d25d10c194fce15b01242e7"
+  },
+  "disconnected-reset": {
+    "rejected": "connected reset waveform mismatch: ['0', '0', '0', '-6', '1']"
+  }
+}

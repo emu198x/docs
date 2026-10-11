@@ -1,0 +1,86 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.18s
+     Running tests/reset_output_probe.rs (../emu198x/target/debug/deps/reset_output_probe-cf7d7c2316caae4f)
+
+running 1 test
+RESET_OUTPUT clock=1789772 channel=0 previous=false volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=0 previous=false volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1789772 channel=0 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=0 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1789772 channel=0 previous=true volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=0 previous=true volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=0 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=0 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=false volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=false volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1789772 channel=1 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1789772 channel=1 previous=true volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=true volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=1 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=false volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=false volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1789772 channel=2 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1789772 channel=2 previous=true volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=true volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=2 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=false volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=false volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1789772 channel=3 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1789772 channel=3 previous=true volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=true volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1789772 channel=3 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=false volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=false volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1773447 channel=0 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1773447 channel=0 previous=true volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=true volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=0 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=false volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=false volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1773447 channel=1 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0, 1.0] expected=0 matches=false
+RESET_OUTPUT clock=1773447 channel=1 previous=true volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=true volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=1 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=false volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=false volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1773447 channel=2 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1773447 channel=2 previous=true volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=true volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=2 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=false volume=false reset=false visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=false volume=false reset=true visible=[0.0, 0.0, 0.0, 0.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1773447 channel=3 previous=false volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=0 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=false volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0] exposed=[0.0, 0.0, 0.0, 0.0, 0.0] expected=1 matches=false
+RESET_OUTPUT clock=1773447 channel=3 previous=true volume=false reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=true volume=false reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=true volume=true reset=false visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT clock=1773447 channel=3 previous=true volume=true reset=true visible=[1.0, 1.0, 1.0, 1.0, 1.0] exposed=[1.0, 1.0, 1.0, 1.0] expected=1 matches=true
+RESET_OUTPUT_SUMMARY cases=64 controls=32 failures=16
+
+thread 'stimer_presets_audio_and_retains_it_beneath_volume_only' (89421066) panicked at crates/atari-pokey/tests/reset_output_probe.rs:94:5:
+assertion `left == right` failed: STIMER must preset the retained audio flip-flops
+  left: 16
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test stimer_presets_audio_and_retains_it_beneath_volume_only ... FAILED
+
+failures:
+
+failures:
+    stimer_presets_audio_and_retains_it_beneath_volume_only
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+error: test failed, to rerun pass `-p atari-pokey --test reset_output_probe`
