@@ -57,7 +57,7 @@ CC/DP direction and D/A/B alias results.
 Validation completed locally:
 
 - `cargo test -p motorola-6809 -p machine-dragon-32`: 90 CPU tests,
-  75 machine unit tests and 2 Dragon BASIC integration tests pass; none ignored.
+  75 machine unit tests and 2 synthetic-firmware integration tests pass; none ignored.
 - `cargo clippy -p motorola-6809 -p machine-dragon-32 --all-targets -- -D warnings`:
   pass.
 - The fixture checks six/eight cycles and next-opcode fetch pins for every case.
