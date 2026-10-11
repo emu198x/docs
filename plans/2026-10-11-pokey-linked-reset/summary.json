@@ -1,0 +1,21 @@
+{
+  "assembled_source_sha256": "7ff5858043651276267678e1fcc0edd755b9a730eaf58f7bfa692f749711e2c4",
+  "driver_sha256": "d08af047a0c90425ab8182b174b6720197ce47a5066c39c80741df59a33cfd79",
+  "baseline": {
+    "cases": 6912,
+    "timer_events": 2532866,
+    "irq_calls": 1285651,
+    "reset_calls": 5184,
+    "output_transitions": 1158200,
+    "capture_sha256": "a8f5e57f04d2ed504af9da92b178356abf1a8816be34bff5929bcce7e0fc0181"
+  },
+  "no-high12": {
+    "rejected": "linked borrow sequence mismatch: (0, 0, 0, 0, 0, -6, 0): first observed [(1031, 0), (1059, 0), (1087, 0), (1115, 0), (1143, 0), (1171, 0)] expected [(1031, 0), (1034, 1), (1059, 0), (1062, 1), (1087, 0), (1090, 1), (1115, 0), (1118, 1)]"
+  },
+  "no-high34": {
+    "rejected": "linked borrow sequence mismatch: (1, 0, 0, 0, 0, -6, 0): first observed [(1031, 2), (1059, 2), (1087, 2), (1115, 2), (1143, 2), (1171, 2)] expected [(1031, 2), (1034, 3), (1059, 2), (1062, 3), (1087, 2), (1090, 3), (1115, 2), (1118, 3)]"
+  },
+  "no-cancel": {
+    "rejected": "linked borrow sequence mismatch: (0, 0, 0, 0, 0, -6, 3): first observed [(1031, 0), (1034, 1), (1059, 0), (1062, 1), (1087, 0), (1090, 1), (1115, 0), (1118, 1)] expected [(1031, 0), (1034, 1), (1087, 0), (1090, 1), (1115, 0), (1118, 1), (1143, 0), (1146, 1)]"
+  }
+}
