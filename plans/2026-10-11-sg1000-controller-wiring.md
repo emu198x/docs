@@ -60,7 +60,12 @@ Affected suites: 25 passes, zero failures, one explicit commercial-cartridge
 fixture ignore. That fixture is unavailable in the default media/Downloads
 locations, so no commercial-gameplay claim is made. All-target Clippy and
 formatting pass. Exact source head `6aeae61fce121dff9a7fa1f22eb699436c67f85b`
-is committed/pushed; CI and merge verification remain pending.
+passed [CI](https://github.com/emu198x/emu198x/actions/runs/38169812639) and
+merged as `10892b445182cc5d8106cff7cd142f9a64d4cf10`. The tested and merged
+trees are identical, and the merge is an ancestor of fetched main. The
+executed ledger confirms 16 machine passes and 9 runtime passes, zero
+failures/skips/unexplained ignores, and one explicit machine fixture ignore.
+See `ci-evidence.json` in the capture bundle.
 
 The private distillation, index/log and reviewed source note are committed in
 local umbrella `24b4fbcc` (not pushed). The current schema uses
@@ -70,8 +75,9 @@ profiles/snapshots and the SC-3000 canonical-catalogue entry.
 
 The distillation found a separate PAL audio clock mismatch: runtime profiles
 use 3,579,545 CPU T-states/second while the PAL PSG constructor uses 3,546,893.
-This is recorded accurately and left for a separate probe/correction; no
-clock value changed in the controller fix.
+A separate original-guest probe now measures 48,441–48,443 PAL samples per
+runtime second against 48,000 in three NTSC controls; [draft #124](https://github.com/emu198x/docs/pull/124)
+retains that investigation. No clock value changed in the controller fix.
 
 
 The source was rebased over the verified Sord M5 merge, with affected tests
