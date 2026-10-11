@@ -1,0 +1,338 @@
+{
+  "clock_stages": [
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 0,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 0,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 1,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 1,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 1,
+      "pck0": 1,
+      "slowf": 0
+    },
+    {
+      "initial": 1,
+      "ph2": 0,
+      "epck0f": 0,
+      "slow": 0,
+      "pck0": 1,
+      "slowf": 1
+    }
+  ],
+  "pad_clock": {
+    "devices": 4,
+    "rows": [
+      {
+        "pck2": 0,
+        "pck2f": 1
+      },
+      {
+        "pck2": 1,
+        "pck2f": 0
+      },
+      {
+        "pck2": 1,
+        "pck2f": 0
+      },
+      {
+        "pck2": 0,
+        "pck2f": 1
+      },
+      {
+        "pck2": 0,
+        "pck2f": 1
+      },
+      {
+        "pck2": 1,
+        "pck2f": 0
+      }
+    ],
+    "negative": "missing pulldown fails PCLK2 inversion"
+  },
+  "negatives": {
+    "halt": "HALT changes outside phase 1",
+    "pad": "HALT pad changes during CPU phase 2",
+    "slow": "slow latch sampling mismatch",
+    "ph2": "PCLK0 sampling mismatch"
+  },
+  "samples": [
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "reset_step": 100,
+      "mode_change": 100,
+      "return_delay": 0,
+      "dli": 1,
+      "request": "start",
+      "slow_order": "control-first"
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "reset_step": 100,
+      "mode_change": 100,
+      "return_delay": 0,
+      "dli": 1,
+      "request": "start",
+      "slow_order": "control-first"
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "reset_step": 100,
+      "mode_change": 100,
+      "return_delay": 0,
+      "dli": 1,
+      "request": "start",
+      "slow_order": "control-first"
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "reset_step": 100,
+      "mode_change": 100,
+      "return_delay": 0,
+      "dli": 1,
+      "request": "start",
+      "slow_order": "control-first"
+    }
+  ]
+}
