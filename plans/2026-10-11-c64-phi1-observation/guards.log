@@ -7,8 +7,17 @@ test_missing_model_rejected (test_probe.ProbeGuards.test_missing_model_rejected)
 test_retained_red_run (test_probe.ProbeGuards.test_retained_red_run) ... ok
 test_short_measurement_rejected (test_probe.ProbeGuards.test_short_measurement_rejected) ... ok
 test_unexpected_process_exit_rejected (test_probe.ProbeGuards.test_unexpected_process_exit_rejected) ... ok
+test_duplicate_row_rejected (test_refresh.RefreshGuards.test_duplicate_row_rejected) ... ok
+test_empty_capture_rejected (test_refresh.RefreshGuards.test_empty_capture_rejected) ... ok
+test_missing_row_rejected (test_refresh.RefreshGuards.test_missing_row_rejected) ... ok
+test_observations_and_counter_mutations (test_refresh.RefreshGuards.test_observations_and_counter_mutations) ... ok
+test_short_page_rejected (test_refresh.RefreshGuards.test_short_page_rejected) ... ok
+test_wrong_address_rejected (test_refresh.RefreshGuards.test_wrong_address_rejected) ... ok
+test_wrong_byte_rejected (test_refresh.RefreshGuards.test_wrong_byte_rejected) ... ok
+test_wrong_model_length_rejected (test_refresh.RefreshGuards.test_wrong_model_length_rejected) ... ok
+test_zero_trace_rejected (test_refresh.RefreshGuards.test_zero_trace_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.005s
+Ran 18 tests in 0.018s
 
 OK
