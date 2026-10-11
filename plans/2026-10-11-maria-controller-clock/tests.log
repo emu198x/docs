@@ -1,0 +1,16 @@
+test_collinear_spur_changes_no_filled_area (test_flatten_layout.FlattenTests.test_collinear_spur_changes_no_filled_area) ... ok
+test_concave_boundary_preserves_shape (test_flatten_layout.FlattenTests.test_concave_boundary_preserves_shape) ... ok
+test_exact_real_and_reflection_before_rotation (test_flatten_layout.FlattenTests.test_exact_real_and_reflection_before_rotation) ... ok
+test_nested_composition_matches_sequential_coordinates (test_flatten_layout.FlattenTests.test_nested_composition_matches_sequential_coordinates) ... ok
+test_nested_reference_geometry_and_missing_cells (test_flatten_layout.FlattenTests.test_nested_reference_geometry_and_missing_cells) ... ok
+test_proper_crossing_and_diagonal_boundary_fail (test_flatten_layout.FlattenTests.test_proper_crossing_and_diagonal_boundary_fail) ... ok
+test_square_extended_path_retains_bend_and_end_caps (test_flatten_layout.FlattenTests.test_square_extended_path_retains_bend_and_end_caps) ... ok
+test_unsupported_transform_fails (test_flatten_layout.FlattenTests.test_unsupported_transform_fails) ... ok
+test_missing_sample_gate_and_invalid_load_fail (test_transfer.TransferTests.test_missing_sample_gate_and_invalid_load_fail) ... ok
+test_sampled_inputs_drive_inverters_without_feedback_race (test_transfer.TransferTests.test_sampled_inputs_drive_inverters_without_feedback_race) ... ok
+test_settled_supply_conflict_fails (test_transfer.TransferTests.test_settled_supply_conflict_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

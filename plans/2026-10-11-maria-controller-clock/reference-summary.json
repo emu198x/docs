@@ -1,0 +1,62 @@
+{
+  "source_sha256": {
+    "maria.sv": "2069171f3fbfdfe067fd6bdcaf355936440c5d7fbb209f065526b4685ab372a7",
+    "video_sync.sv": "cfa7caf057629c700ad824f9678ffa0bfeee2995701ab55fcdd4705e572c8216",
+    "DMA.masked.sv": "b055738d86d2d936044b158fb280789df04961a284687c1ff7908b01ad620704",
+    "control.sv": "b1b7a06f61bc9ce0e43740df77658342c15c4ad251deb3f6791d59d6cc6bfa77",
+    "line_ram.sv": "fb0fbd9046aedbb808b1b7d5bb346a97a99277606bff1f817bccb9c8a11c43fb"
+  },
+  "bench_sha256": "6578fdfae8ea0d8cc860510c12b36af96e2e32bd10d670b5b8fde9e09d695ff9",
+  "observer_sha256": "405f64c388d9eb2cd2d7497e149cb3f381a4e91c76619a64a583b03b22d5de77",
+  "cases": [
+    {
+      "slow": 0,
+      "pal": 0,
+      "observations": 256,
+      "complete_periods": 63,
+      "period_maria_cycles": [
+        4
+      ],
+      "high_maria_cycles": [
+        2
+      ]
+    },
+    {
+      "slow": 0,
+      "pal": 1,
+      "observations": 256,
+      "complete_periods": 63,
+      "period_maria_cycles": [
+        4
+      ],
+      "high_maria_cycles": [
+        2
+      ]
+    },
+    {
+      "slow": 1,
+      "pal": 0,
+      "observations": 256,
+      "complete_periods": 42,
+      "period_maria_cycles": [
+        6
+      ],
+      "high_maria_cycles": [
+        3
+      ]
+    },
+    {
+      "slow": 1,
+      "pal": 1,
+      "observations": 256,
+      "complete_periods": 42,
+      "period_maria_cycles": [
+        6
+      ],
+      "high_maria_cycles": [
+        3
+      ]
+    }
+  ],
+  "negative": "missing clock-input observations"
+}

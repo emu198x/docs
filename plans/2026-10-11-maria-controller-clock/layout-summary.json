@@ -1,0 +1,775 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "geometry_elements": 7565,
+  "unique_cells": 75,
+  "cell_instances": 1631,
+  "network": {
+    "devices": 341,
+    "implants": {
+      "2": 71,
+      "0": 33,
+      "3": 237
+    },
+    "contact_regions": {
+      "4": 167,
+      "6": 452
+    },
+    "nets": 136
+  },
+  "ports": [
+    [
+      "PLA.pla_clk/1",
+      "RCPLA_RCPLA/RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clk",
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph1",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/p_ph1",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph1",
+      "ph1"
+    ],
+    [
+      "PLA.pla_clkin/1",
+      "RCPLA_RCPLA/RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clkin",
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph2",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph2",
+      "ph2"
+    ],
+    [
+      "PLA.pla_in1/1",
+      "RCPLA_RCPLA/RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/out10",
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/pckedge",
+      "RSYNC.pckedge",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/pckedge",
+      "pckedge"
+    ],
+    [
+      "RCPLA_RCPLA/RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/out9",
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/epck0f",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/epck0f",
+      "epck0f"
+    ],
+    [
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/pck0",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/pck0",
+      "pck0"
+    ],
+    [
+      "RCPLA_RCPLA/RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/slow",
+      "VCELL_VCELL_GINGER$LOE_LRIC_LY_/slow",
+      "slow"
+    ]
+  ],
+  "input_combinations": 1024,
+  "truth_sha256": "a5e1d984bad7ba627e8b28ab059fd5ca9a500121cdbc5b4598f551ddff6cfe9d",
+  "clock_sequences": [
+    {
+      "mode": "fast",
+      "edge_cycles": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44
+      ],
+      "period_maria_cycles": 4,
+      "rows": [
+        {
+          "cycle": 0,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 1,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 2,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 3,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 4,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 5,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 6,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 7,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 8,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 9,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 10,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 11,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 12,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 13,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 14,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 15,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 16,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 17,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 18,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 19,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 20,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 21,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 22,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 23,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 24,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 25,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 26,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 27,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 28,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 29,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 30,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 31,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 32,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 33,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 34,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 35,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 36,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 37,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 38,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 39,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 40,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 41,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 42,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 43,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 44,
+          "state": 0,
+          "next": 17,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 45,
+          "state": 17,
+          "next": 48,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 46,
+          "state": 48,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 47,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        }
+      ]
+    },
+    {
+      "mode": "slow",
+      "edge_cycles": [
+        1,
+        7,
+        13,
+        19,
+        25,
+        31,
+        37,
+        43
+      ],
+      "period_maria_cycles": 6,
+      "rows": [
+        {
+          "cycle": 0,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 1,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 2,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 3,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 4,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 5,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 6,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 7,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 8,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 9,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 10,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 11,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 12,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 13,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 14,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 15,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 16,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 17,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 18,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 19,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 20,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 21,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 22,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 23,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 24,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 25,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 26,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 27,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 28,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 29,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 30,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 31,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 32,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 33,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 34,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 35,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 36,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 37,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 38,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 39,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 40,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 41,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 42,
+          "state": 0,
+          "next": 33,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 43,
+          "state": 33,
+          "next": 16,
+          "epck0f": 1,
+          "pckedge": 1
+        },
+        {
+          "cycle": 44,
+          "state": 16,
+          "next": 49,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 45,
+          "state": 49,
+          "next": 8,
+          "epck0f": 1,
+          "pckedge": 0
+        },
+        {
+          "cycle": 46,
+          "state": 8,
+          "next": 41,
+          "epck0f": 0,
+          "pckedge": 0
+        },
+        {
+          "cycle": 47,
+          "state": 41,
+          "next": 0,
+          "epck0f": 0,
+          "pckedge": 0
+        }
+      ]
+    }
+  ],
+  "negative": "wrong 4-cycle edge period",
+  "scope": "candidate electrical interpretation; combinational transfer, not physical phase simulation"
+}
