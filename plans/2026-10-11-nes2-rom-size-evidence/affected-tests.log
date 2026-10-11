@@ -1,0 +1,540 @@
+   Compiling emu198x-test-skip v0.31.0 (<source>/crates/emu198x-test-skip)
+   Compiling emu198x-mos-6502 v0.6.0 (<source>/crates/emu198x-mos-6502)
+   Compiling emu198x-ricoh-apu-2a03 v0.6.0 (<source>/crates/emu198x-ricoh-apu-2a03)
+   Compiling format-nintendo-nes-ines v0.31.0 (<source>/crates/format-nintendo-nes-ines)
+   Compiling emu198x-shell v0.31.0 (<source>/crates/emu198x-shell)
+   Compiling ricoh-ppu-2c02 v0.31.0 (<source>/crates/ricoh-ppu-2c02)
+   Compiling machine-nintendo-nes v0.31.0 (<source>/crates/machine-nintendo-nes)
+   Compiling runtime-nintendo-nes v0.31.0 (<source>/crates/runtime-nintendo-nes)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.55s
+     Running unittests src/lib.rs (<target>/debug/deps/format_nintendo_nes_ines-75f00fccce06e781)
+
+running 6 tests
+test mappers::mmc5::tests::exram_is_cpu_readable_only_in_ram_modes ... ok
+test mappers::mmc5::tests::multiplier_product_reads_back_over_the_expansion_bus ... ok
+test mappers::mmc5::tests::unclaimed_expansion_addresses_float ... ok
+test mappers::mmc5::tests::reading_5204_acknowledges_the_scanline_irq ... ok
+test mappers::mmc1::tests::mmc1_reset_write_clears_shift_register_and_sets_prg_mode_3 ... ok
+test mappers::mmc1::tests::mmc1_loads_registers_lsb_first ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/nes2_rom_sizes.rs (<target>/debug/deps/nes2_rom_sizes-4f83cdca777bc1e5)
+
+running 6 tests
+test nes2_extreme_sizes_return_errors_without_overflow_or_allocating_payloads ... ok
+test nes2_partial_banks_do_not_construct_mappers_that_can_index_past_rom ... ok
+test nes2_odd_multipliers_place_chr_after_the_exact_prg_extent ... ok
+test nes2_linear_and_exponent_images_deliver_identical_rom_bytes ... ok
+test nes2_supported_mapper_windows_remain_readable_with_exponent_headers ... ok
+test nes2_linear_high_nibbles_keep_prg_and_chr_payloads_separate ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/parser.rs (<target>/debug/deps/parser-ad475aae5ba7feeb)
+
+running 88 tests
+test axrom_chr_ram_roundtrip ... ok
+test bxrom_chr_ram_roundtrip ... ok
+test action53_switches_chr_ram_banks ... ok
+test camerica_mirroring_control_selects_single_screen ... ok
+test camerica_chr_ram_roundtrip ... ok
+test axrom_selects_single_screen_mirroring ... ok
+test cnrom_chr_rom_not_writable ... ok
+test cnrom_prg_is_unbanked_32k ... ok
+test cnrom_prg_is_unbanked_and_16k_mirrors_high_half ... ok
+test cnrom_chr_bank_write_obeys_bus_conflict ... ok
+test color_dreams_bank_write_obeys_bus_conflict ... ok
+test action53_supports_unrom_fixed_high_mode_and_mirroring ... ok
+test color_dreams_switches_32k_prg_and_8k_chr ... ok
+test cnrom_switches_8k_chr_banks ... ok
+test action53_switches_32k_prg_banks ... ok
+test camerica_switches_low_16k_prg_bank_and_fixes_last ... ok
+test mmc1_chr_ram_writes_through_selected_bank ... ok
+test bxrom_switches_32k_prg_bank ... ok
+test mmc1_chr_4k_mode_selects_two_pages ... ok
+test bxrom_bank_write_obeys_bus_conflict ... ok
+test mmc1_chr_8k_mode_ignores_low_bank_bit ... ok
+test mmc1_mirroring_is_dynamic ... ok
+test ines1_still_works_after_nes2_support ... ok
+test axrom_switches_32k_prg_bank ... ok
+test axrom_bank_write_obeys_bus_conflict ... ok
+test mmc1_prg_ram_roundtrip ... ok
+test mmc3_chr_ram_writes_through_selected_bank ... ok
+test mmc1_prg_mode_2_fixes_first_and_switches_high_bank ... ok
+test mmc1_prg_mode_3_switches_low_and_fixes_last_bank ... ok
+test mmc1_prg_32k_mode_ignores_low_bank_bit ... ok
+test mmc3_irq_counter_clocks_on_debounced_a12_edges ... ok
+test mmc3_irq_disable_acknowledges_pending_irq ... ok
+test mmc3_mirroring_is_dynamic ... ok
+test mmc5_multiplier_reports_product ... ok
+test mmc5_cpu_tick_clears_in_frame_after_ppu_read_gap ... ok
+test mmc5_nametables_can_map_exram_and_fill_mode ... ok
+test mmc5_pcm_write_mode_outputs_audio_and_irq_on_zero ... ok
+test mmc3_prg_ram_respects_enable_and_write_protect ... ok
+test mmc5_prg_ram_requires_protection_sequence ... ok
+test mmc5_pulse_expansion_audio_produces_samples_when_enabled ... ok
+test mmc5_scanline_irq_detects_three_matching_nametable_reads_then_next_read ... ok
+test nina001_chr_rom_not_writable ... ok
+test nina001_register_writes_are_prg_ram_writes_too ... ok
+test mmc5_chr_mode_3_maps_1k_banks ... ok
+test mmc5_prg_mode_0_maps_one_32k_rom_window ... ok
+test mmc3_prg_mode_0_maps_r6_r7_second_last_last ... ok
+test mmc3_chr_mode_0_maps_two_2k_then_four_1k_banks ... ok
+test nina001_switches_two_4k_chr_banks ... ok
+test nina001_switches_32k_prg_bank_via_7ffd ... ok
+test nes2_mapper_number_12bit ... ok
+test mmc3_prg_mode_1_swaps_r6_with_second_last ... ok
+test nrom_chr_ram_roundtrip ... ok
+test mmc5_prg_mode_3_maps_four_8k_windows ... ok
+test nrom_16k_mirrors_high_half ... ok
+test nes2_detected_and_parsed ... ok
+test nrom_chr_rom_not_writable ... ok
+test parse_rejects_bad_magic ... ok
+test mmc3_chr_mode_1_inverts_chr_windows ... ok
+test parse_rejects_short_file ... ok
+test nrom_default_irq_not_pending ... ok
+test nrom_cpu_write_prg_ram_roundtrip ... ok
+test parse_rejects_truncated_prg ... ok
+test parse_rejects_unsupported_mapper ... ok
+test parse_valid_axrom ... ok
+test nrom_prg_rom_not_writable ... ok
+test parse_battery_flag ... ok
+test parse_four_screen_mirroring ... ok
+test parse_valid_camerica ... ok
+test parse_valid_cnrom ... ok
+test parse_mapper_34_with_chr_rom_selects_nina001 ... ok
+test parse_valid_nrom_16k ... ok
+test parse_valid_action53_mapper_28 ... ok
+test parse_valid_color_dreams_mapper_11 ... ok
+test parse_valid_bxrom ... ok
+test sunsoft4_can_source_nametables_from_chr_rom ... ok
+test sunsoft4_switches_prg_and_chr_banks ... ok
+test uxrom_chr_ram_roundtrip ... ok
+test vrc2a_mirroring_and_latch_are_writable ... ok
+test vrc2a_switches_1k_chr_banks_with_a1_a0_register_order ... ok
+test parse_valid_nrom_32k ... ok
+test parse_valid_uxrom ... ok
+test vrc2a_switches_two_prg_banks_and_fixes_last_16k ... ok
+test uxrom_switches_low_prg_bank_and_fixes_high_bank ... ok
+test parse_valid_mmc3 ... ok
+test parse_valid_mmc5 ... ok
+test parse_valid_vrc2a_mapper_22 ... ok
+test parse_valid_mmc1 ... ok
+test parse_valid_sunsoft4_mapper_68 ... ok
+
+test result: ok. 88 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (<target>/debug/deps/machine_nintendo_nes-80bcf5f4e75467a4)
+
+running 23 tests
+test tests::diagnostic_nes_suite ... ignored, DIAGNOSTIC: diagnostic: run a directory of blargg NES test ROMs (EMU198X_NES_SUITE)
+test serde_skip_audit::tests::matcher_only_counts_annotation_lines ... ok
+test tests::cpu_ticks_every_3rd_dot ... ok
+test tests::controller_2_strobe_active_returns_button_a_bit ... ok
+test tests::mapper_read_serves_prg_rom ... ok
+test tests::cpu_executes_nop_after_reset_bootstrap ... ok
+test tests::constructs_with_expected_initial_state ... ok
+test tests::controller_2_strobe_latches_independently_of_controller_1 ... ok
+test tests::controller_strobe_latches_state ... ok
+test tests::dmc_dma_request_stalls_cpu_and_fetches_sample_byte ... ok
+test tests::audio_controls_proxy_to_apu ... ok
+test tests::oamdma_write_arms_sprite_dma ... ok
+test tests::probe_combined_dma_by_dmc_offset ... ignored, DIAGNOSTIC: diagnostic: prints combined OAM+DMC stall per DMC offset
+test tests::probe_dmc_dma_length_by_alignment ... ignored, DIAGNOSTIC: diagnostic: prints DMC DMA length at each get/put alignment
+test tests::probe_oamdma_length_by_alignment ... ignored, DIAGNOSTIC: diagnostic: prints OAM DMA length at each get/put alignment
+test tests::ram_mirrors_within_2k ... ok
+test tests::ram_read_write_roundtrip ... ok
+test tests::reset_vector_read_correctly ... ok
+test tests::oamdma_copies_256_bytes ... ok
+test tests::single_tick_advances_master_clock ... ok
+test serde_skip_audit::tests::every_serde_skip_in_nes_stack_is_locked ... ok
+test tests::run_frame_advances_frame_counter ... ok
+test tests::ppu_nmi_routes_to_cpu ... ok
+
+test result: ok. 19 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/blargg_legacy.rs (<target>/debug/deps/blargg_legacy-01dc229a5da10313)
+
+running 4 tests
+test cpu_dummy_reads ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test cpu_timing_all_undocumented ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test cpu_timing_official ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test cpu_timing_official_plus_nops ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/blargg_ppu.rs (<target>/debug/deps/blargg_ppu-ed81d693b94a75f9)
+
+running 20 tests
+test cpu_interrupts_nmi_and_brk ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test cpu_interrupts_nmi_and_irq ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test mmc3_1_clocking ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test mmc3_2_details ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test mmc3_3_a12_clocking ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test mmc3_4_scanline_timing ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test mmc3_5_mmc3 ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test oam_read ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test oam_stress ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_read_buffer ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_01_vbl_basics ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_02_vbl_set_time ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_03_vbl_clear_time ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_04_nmi_control ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_05_nmi_timing ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_06_suppression ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_07_nmi_on_timing ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_08_nmi_off_timing ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_09_even_odd_frames ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+test ppu_vbl_nmi_10_even_odd_timing ... ignored, FIXTURE: blargg ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_test5_probe.rs (<target>/debug/deps/cpu_test5_probe-7715b72ff6097358)
+
+running 5 tests
+test probe_cpu_nes ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_cpu_test5_raw_nametable ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_implied_checksums ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_official_nes ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_official_screen_during_run ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_timing_probe.rs (<target>/debug/deps/cpu_timing_probe-3a331d182dff0e3d)
+
+running 1 test
+test probe_cpu_timing_test ... ignored, DIAGNOSTIC: diagnostic: prints cpu_timing_test's on-screen result
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/dmc_dma_read4_crc.rs (<target>/debug/deps/dmc_dma_read4_crc-2c4361cdd570bcc0)
+
+running 2 tests
+test dma_2007_read_crc ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test double_2007_read_crc ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/dmc_tests_audio.rs (<target>/debug/deps/dmc_tests_audio-b9b0e7b558bfa948)
+
+running 6 tests
+test buffer_retained ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test counter_separates_passing_from_failing_roms ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test latency ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test probe_tone_shape ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test status ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test status_irq ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 6 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mmc5_expansion.rs (<target>/debug/deps/mmc5_expansion-b5df470be624c147)
+
+running 1 test
+test cpu_reads_mmc5_multiplier_through_the_expansion_bus ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mmc5_screen.rs (<target>/debug/deps/mmc5_screen-35652e04e012c9fd)
+
+running 4 tests
+test mmc5_executes_code_from_exram ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test probe_dma_read4_crcs ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_dmc_tests_output_channels ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_mmc5_screens ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/nes_sweep.rs (<target>/debug/deps/nes_sweep-a5d37ef8a9e89349)
+
+running 4 tests
+test cpu_interrupts_v2 ... ignored, FIXTURE: local cpu_interrupts_v2 ROMs; run with --release --ignored --nocapture
+test probe_timeout_screens ... ignored, DIAGNOSTIC: diagnostic: prints screen text for triage
+test sweep ... ignored, SLOW: long survey; run with --release --ignored --nocapture
+test every_directory_is_accounted_for ... ok
+
+test result: ok. 1 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/nestest.rs (<target>/debug/deps/nestest-f3cd05b708fd5301)
+
+running 2 tests
+test run_all ... ignored, FIXTURE: needs nestest.nes + nestest.log — run with --ignored
+test nestest_smoke ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pal_apu.rs (<target>/debug/deps/pal_apu-6a3f62f105b2f1c2)
+
+running 11 tests
+test clock_jitter ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test irq_flag ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test irq_flag_timing ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test irq_timing ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_ctr ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_halt_timing ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_reload_timing ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_table ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_timing_mode0 ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test len_timing_mode1 ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test probe_pal_roms_discriminate ... ignored, DIAGNOSTIC: diagnostic: shows which PAL ROMs discriminate by region
+
+test result: ok. 0 passed; 0 failed; 11 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pal_geometry.rs (<target>/debug/deps/pal_geometry-e52159220c636f06)
+
+running 6 tests
+test ntsc_does_skip_a_dot_on_odd_frames ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test ntsc_frame_is_262_scanlines ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test pal_cpu_runs_at_one_cycle_per_3_2_dots ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test pal_frame_is_312_scanlines ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test pal_never_skips_a_dot ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test pal_vblank_spans_70_scanlines ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 6 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pal_screen.rs (<target>/debug/deps/pal_screen-0898d6f7fe808d6f)
+
+running 1 test
+test region_sensitivity_of_each_rom ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ppu_onscreen.rs (<target>/debug/deps/ppu_onscreen-9d2d0ad1a24ecf7d)
+
+running 22 tests
+test ppu2005_palette_ram ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test ppu2005_power_up_palette ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test ppu2005_sprite_ram ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test ppu2005_vbl_clear_time ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test ppu2005_vram_access ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_01_basics ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_02_alignment ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_03_corners ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_04_flip ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_05_left_clip ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_06_right_edge ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_07_screen_bottom ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_08_double_height ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_09_timing_basics ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_10_timing_order ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_hit_11_edge_timing ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_overflow_1_basics ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_overflow_2_details ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_overflow_3_timing ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_overflow_4_obscure ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test sprite_overflow_5_emulator ... ignored, FIXTURE: requires local nes-test-roms; run with --ignored
+test survey_onscreen_suites ... ignored, FIXTURE: survey: requires local nes-test-roms; run with --ignored --nocapture
+
+test result: ok. 0 passed; 0 failed; 22 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ppu_read_buffer_probe.rs (<target>/debug/deps/ppu_read_buffer_probe-04bae38f5b6df7d1)
+
+running 19 tests
+test long_run_pc_distribution ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test one_loop_iteration_with_vbl_set ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_6000_console ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_cpu_cycles_per_frame ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_dma_costs_in_the_loop ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_first_2002_read_per_frame ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_nametable_at_late_frames ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_nametable_change_frames ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_nmi_vs_poll_race ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_oam_dma_cost ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_palette_phase_boundaries ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_palette_write_trace ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_polls_near_vbl_set ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_ppu_read_buffer ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_subtest_loop_pcs ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_vbl_wait_cpu_cycles ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_wait_durations ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test vblank_flag_during_stall ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test what_the_cpu_actually_reads_from_2002 ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 19 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/screen_goldens.rs (<target>/debug/deps/screen_goldens-ba146906dc641a9a)
+
+running 15 tests
+test count_errors ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test count_errors_fast ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test demo_ntsc ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test demo_pal ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test dma_4016_read ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test dpcmletterbox ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test flowing_palette ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test full_palette ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test full_palette_smooth ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test mmc5exram ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test mmc5test ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test mmc5test_v2 ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test probe_frame_alignment ... ignored, DIAGNOSTIC: diagnostic: find frame alignment against the golden
+test test_buttons ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+test volumes ... ignored, FIXTURE: ROM run — requires test-suites/nes-test-roms
+
+test result: ok. 0 passed; 0 failed; 15 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sprdma_dmc_probe.rs (<target>/debug/deps/sprdma_dmc_probe-a9b5dc33d4562be5)
+
+running 9 tests
+test probe_dma_episodes_around_transfers ... ignored, DIAGNOSTIC: diagnostic: lists DMA episodes bracketing the first OAM transfers
+test probe_dmc_rearm_vs_fetch ... ignored, DIAGNOSTIC: diagnostic: $4015 re-arms interleaved with DMC sample fetches
+test probe_dmc_tests_6000_protocol ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_dmc_tests_audio ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_dmc_tests_text ... ignored, DIAGNOSTIC: diagnostic: prints dmc_tests on-screen text
+test probe_oam_dma_stall_from_trace ... ignored, DIAGNOSTIC: diagnostic; requires local nes-test-roms
+test probe_sprdma_and_dmc_dma ... ignored, DIAGNOSTIC: diagnostic: prints the ROM's measured clock table
+test probe_sprdma_and_dmc_dma_512 ... ignored, DIAGNOSTIC: diagnostic: prints the ROM's measured clock table
+test trace_sprdma_and_dmc_dma ... ignored, DIAGNOSTIC: diagnostic: prints the DMA bus-op trace for diffing against Mesen2
+
+test result: ok. 0 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (<target>/debug/deps/synthetic_cart_boot-c83e88727f57ee21)
+
+running 2 tests
+test a_cartridge_that_writes_no_palette_does_not_look_like_a_boot ... ok
+test the_nes_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (<target>/debug/deps/runtime_nintendo_nes-2b4f8e22413d0ff4)
+
+running 9 tests
+test profiles::tests::nes_profile_declares_cartridge_bootstrap_scope ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test input::tests::gamepad_alias_east_maps_to_b_button ... ok
+test input::tests::port_1_button_lands_on_controller_1 ... ok
+test input::tests::key_event_defaults_to_controller_1 ... ok
+test input::tests::gamepad_alias_south_maps_to_a_button ... ok
+test input::tests::port_2_button_lands_on_controller_2 ... ok
+test input::tests::release_clears_the_bit ... ok
+test input::tests::port_3_button_is_dropped ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/battery_save.rs (<target>/debug/deps/battery_save-7a58fc5829faf4bc)
+
+running 2 tests
+test save_ram_round_trips_through_a_sav_image ... ok
+test battery_flag_gates_save_ram_exposure ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/boot_invariants.rs (<target>/debug/deps/boot_invariants-23085de32d9c2df9)
+
+running 7 tests
+test nestest_loads_and_runs ... ignored, FIXTURE: requires nestest.nes — set NES_TEST_DATA or place under ~/Projects/Emu198x-Unclean/...
+test minimal_ines_cartridge_loads ... ok
+test snapshot_envelope_version_is_locked_at_v1 ... ok
+test both_controllers_survive_snapshot_round_trip ... ok
+test minimal_ines_runs_one_frame ... ok
+test cartridge_bytes_survive_snapshot_round_trip ... ok
+test snapshot_round_trip_is_fixed_point_after_one_frame ... ok
+
+test result: ok. 6 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/catalogue.rs (<target>/debug/deps/catalogue-31ac180724a09120)
+
+running 3 tests
+test region_switch_and_reset_keep_cartridge_ram_and_mixer_but_restart_cpu_and_ram ... ok
+test snapshots_restore_battery_metadata_and_reject_a_different_region_atomically ... ok
+test catalogue_regions_drive_the_existing_machine_clock_dividers ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/debug_target.rs (<target>/debug/deps/debug_target-a0faf9ccc7e54df6)
+
+running 1 test
+test debug_surface_works_on_nes_6502 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/frame_pacing.rs (<target>/debug/deps/frame_pacing-90dfaf3d2122eb28)
+
+running 3 tests
+test the_short_field_does_not_buy_a_second_frame ... ok
+test a_run_of_frames_keeps_the_clock_on_the_nominal_grid ... ok
+test a_hundred_scripted_frames_emit_a_hundred_frames ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.37s
+
+     Running tests/lifecycle.rs (<target>/debug/deps/lifecycle-7a9c1e1decc718d0)
+
+running 20 tests
+test real_ines_super_mario_bros_runs_and_draws ... ignored, FIXTURE: uses local NES reference ROM
+test load_media_rejects_wrong_kind_for_cartridge_slot ... ok
+test load_media_rejects_unknown_slot ... ok
+test machine_core_profile_and_capabilities_match_profile_for ... ok
+test command_reports_unsupported_operation ... ok
+test reset_on_blank_runtime_stays_blank ... ok
+test blank_runtime_has_no_machine_or_audio_controls ... ok
+test load_media_rejects_invalid_ines_bytes ... ok
+test audio_controls_mutate_loaded_machine_mixer ... ok
+test run_until_returns_waiting_for_input_when_blank ... ok
+test reset_with_corrupt_cached_cartridge_bytes_blanks_machine ... ok
+test set_audio_controls_applies_when_cartridge_loaded ... ok
+test run_ticks_advances_sub_frame_precisely ... ok
+test non_port1_button_and_other_events_are_ignored ... ok
+test button_input_updates_controller_state ... ok
+test reset_rebuilds_machine_from_cached_cartridge_bytes ... ok
+test unknown_button_name_does_not_alter_controller_state ... ok
+test runtime_loads_cartridge_and_runs_one_frame ... ok
+test key_events_route_to_controller1_press_and_release ... ok
+test every_button_name_maps_to_distinct_bit ... ok
+
+test result: ok. 19 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/queries.rs (<target>/debug/deps/queries-ca8520531df50333)
+
+running 12 tests
+test unknown_query_path_returns_none ... ok
+test sprite_paths_are_unavailable_without_a_cartridge ... ok
+test query_paths_filters_by_prefix ... ok
+test query_provider_reports_loaded_cartridge_state ... ok
+test every_advertised_query_path_resolves_or_reports_unavailable_when_blank ... ok
+test folded_chip_snapshots_resolve_grouped_and_as_leaves ... ok
+test every_advertised_query_path_resolves_with_cartridge_loaded ... ok
+test query_provider_exposes_oam_and_counts_sprites_per_scanline ... ok
+test blargg_valid_is_false_without_signature_bytes ... ok
+test blargg_text_passes_whitespace_and_replaces_non_printable_bytes ... ok
+test query_provider_reports_blargg_result_block ... ok
+test sprite_scanline_counts_follow_the_sprite_height_bit ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/snapshot_roundtrip.rs (<target>/debug/deps/snapshot_roundtrip-ad15be129e448c29)
+
+running 6 tests
+test restore_rejects_empty_byte_slice ... ok
+test restore_rejects_corrupt_postcard_bytes ... ok
+test restore_rejects_unsupported_snapshot_version ... ok
+test snapshot_round_trips_blank_runtime ... ok
+test runtime_snapshot_round_trips_loaded_machine_state ... ok
+test restore_repopulates_rgba_framebuffer ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/synthetic_cartridge_boot.rs (<target>/debug/deps/synthetic_cartridge_boot-ee28bac8d5b96f11)
+
+running 1 test
+test the_synthetic_cartridge_boots_and_draws_the_plate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.75s
+
+   Doc-tests format_nintendo_nes_ines
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_nes
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_nintendo_nes
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

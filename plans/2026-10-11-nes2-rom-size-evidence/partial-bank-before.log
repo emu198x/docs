@@ -1,0 +1,22 @@
+   Compiling format-nintendo-nes-ines v0.31.0 (<source>/crates/format-nintendo-nes-ines)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.36s
+     Running tests/nes2_rom_sizes.rs (<target>/debug/deps/nes2_rom_sizes-3f113d8db15431d6)
+
+running 1 test
+test nes2_partial_banks_do_not_construct_mappers_that_can_index_past_rom ... FAILED
+
+failures:
+
+---- nes2_partial_banks_do_not_construct_mappers_that_can_index_past_rom stdout ----
+
+thread 'nes2_partial_banks_do_not_construct_mappers_that_can_index_past_rom' (93859328) panicked at crates/format-nintendo-nes-ines/src/mappers/nrom.rs:91:17:
+index out of bounds: the len is 4096 but the index is 4096
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    nes2_partial_banks_do_not_construct_mappers_that_can_index_past_rom
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 3 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p format-nintendo-nes-ines --test nes2_rom_sizes`
