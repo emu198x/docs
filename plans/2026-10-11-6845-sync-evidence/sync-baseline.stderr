@@ -1,0 +1,7 @@
+62 mismatches across 64 pin-level sync cases
+
+thread 'main' (94437722) panicked at /private/tmp/198x-6845-chip-evidence/sync-probe.rs:23:2:
+assertion `left == right` failed: CRTC sync outputs must remain high for the programmed interval
+  left: 62
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

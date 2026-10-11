@@ -1,0 +1,11 @@
+{
+  "source_commit": "10892b445182cc5d8106cff7cd142f9a64d4cf10",
+  "probe_exit_code": 101,
+  "cases": 64,
+  "expected_failures": 62,
+  "files": {
+    "sync-baseline.csv": "b51c479a95615661a8a5337b9c115ceedfdfbd3f9c50e622eef0ed5301c1b500",
+    "sync-baseline.stderr": "bc689ee812946e976aee86e827f9b0b211df298ee9171e305f32a2913f27d6a4",
+    "sync-probe.rs": "ca1898b64bd8f14b6dea86c45cd0e4292adb70918774a552b7cf91563d42b807"
+  }
+}

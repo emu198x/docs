@@ -6,3 +6,5 @@ current emulator; primary-library paths are provenance records as described in
 the repository [README](../README.md#citations-to-the-primary-reference-library).
 
 - [Atari MARIA](atari-maria.md) — Atari 7800 display-list processor
+- [Motorola 6845 and Hitachi HD6845S](motorola-6845.md) — shared CRTC sources,
+  register map, variant differences and measured implementation limits
