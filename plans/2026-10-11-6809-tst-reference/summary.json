@@ -1,0 +1,27 @@
+{
+  "reference_cases": 131072,
+  "core_executions": 393216,
+  "full_cc_mismatches": 0,
+  "reference_cycles": 3,
+  "verified_core_cycles": 2,
+  "core_bus_sequence": [
+    "opcode",
+    "FFFF"
+  ],
+  "negative_controls": [
+    {
+      "test": "wrong-cycles",
+      "exit": 101
+    },
+    {
+      "test": "wrong-address",
+      "exit": 101
+    }
+  ],
+  "hashes": {
+    "reference.c": "539de04cd01f0bf9da07339e21e52abcbd3e75e65d2adc52aff683a1356b1499",
+    "probe.rs": "ad5795c7f2293d31ea131f0912d1975bf774284ce7ee5df20bd9378f21f45de2",
+    "reference-flags.bin": "be72b301dc532d9a4675b6acc09841dec422e2cfaffdbdf43cc08a979d765821",
+    "actual-flags.bin": "c9d21cefb9af92809970fde3d04a65bff400bb8a12e57849c21c2739f80b4e80"
+  }
+}
