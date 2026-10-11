@@ -629,3 +629,57 @@ no additional production fault, frame-wrap guarantee or save/replay result is
 claimed. Active graphics, dynamic banks during DMA, other invalid ownership
 cases and production save/replay remain open. The schema proposal is unchanged
 and still pending; no production or snapshot implementation follows here.
+
+### Next probe: active graphics and matrix sources
+
+Add `graphics_fetch.py` original guests beside the observer tools. Seed the
+screen matrix and the full RAM graphics area, enable display before the first
+DMA line, and capture idle graphics plus several complete badline/non-badline
+groups. Cover all eight stable ECM/BMM/MCM combinations, five native models and
+four banks; keep mode transitions and character-ROM mappings separate. Verify
+physical addresses and data from captured RAM, the 40-column sequence, row
+counter progression and retained matrix bytes between badlines. Add
+`verify_graphics_fetch.py` and `test_graphics_fetch.py`, with mutations for wrong
+mode/address bits, stale matrix rows, shifted counters, missing columns and
+Phi2 overwriting the retained Phi1 byte. This extends reference observations
+only, leaving production and snapshot proposals unchanged.
+
+
+### Stable graphics and matrix source gate qualified
+
+All 160 native captures pass: five VIC profiles × four banks × eight stable
+ECM/BMM/MCM modes. The guests seed and dump the complete 1 KiB matrix and 8 KiB
+RAM graphics source. Their 760,960 raw records verify 160,000 active graphics
+reads, 64,000 idle graphics reads and 25,600 matrix reads. Of the active reads,
+134,400 use matrix data retained between badlines. All forty columns, RC steps,
+VC row changes, physical banks and data bytes match.
+
+Text uses the captured character code; bitmap uses VC. ECM masks address bits
+9–10 even in invalid modes, and selects `$39FF` for idle graphics. MCM does not
+alter stable source addressing. Matrix reads occur on lines 51, 59, 67 and 75 at
+native cycles 14–53, with matching graphics at cycles 15–54. Matrix Phi2 keeps
+the current cycle label after the Phi1 latch; sprite Phi2 keeps the previous
+cycle label before cycle advance. The checker validates each observation point
+and ensures matrix reads preserve the retained Phi1 byte.
+
+All 129 evidence tests pass, including 21 graphics tests and mutations for wrong
+address sources/masks, stale screen rows, RC shifts, wrong banks/bytes, missing
+columns, wrong phase labels, overwritten Phi1, missing completion and incomplete
+case coverage. A coherently altered fetch and latch fails the independent RAM
+source check. Ruff and diff checks pass.
+
+`graphics-native.zip` retains the original programs, complete traces, CPU logs,
+monitor commands, source dumps and sentinels. `graphics-summary.json` pins its
+identity, native binary, counts and scope; `graphics-tests.log` retains the full
+suite result.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_graphics_fetch.py graphics-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+Production source already selects these stable addresses and retains the matrix
+row. No new production failure or save/replay result is claimed. Dynamic mode
+and bank changes, character-ROM mapping, late matrix ownership and production
+save/replay remain separate gates. The larger stage/snapshot proposal remains
+pending; this qualification makes no production or schema change.

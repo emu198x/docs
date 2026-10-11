@@ -1,0 +1,12 @@
+{
+  "cases": 160,
+  "records": 760960,
+  "idle_graphics": 64000,
+  "active_graphics": 160000,
+  "retained_matrix_graphics": 134400,
+  "matrix_bytes": 25600,
+  "tests_passed": 129,
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "archive_sha256": "8d5be31fa50ce334070cb7f1a97780bf8f7fd29a552605ac1661d91264366dc7",
+  "scope": "Eight stable ECM/BMM/MCM modes, five profiles, four banks, seeded RAM graphics and matrix sources. No dynamic mode/bank, character-ROM, late matrix ownership or production save/replay claim."
+}
