@@ -14,7 +14,8 @@
     "failures_after": 0
   },
   "files": {
-    "README.md": "ed5d2158623e4d749bebd84acd0ad71f493e983da4557e6b2b79666e2f7860a5",
+    "README.md": "375f22755bb45f1e87edd3606d58a07bc6595dcb71dfd30099cbe36cfadb93af",
+    "ci-status-evidence.json.gz": "0e3f0614349ff1f8d905c2921b74ec9989fa0fb730c89906ff46deddfd86467c",
     "clippy.txt": "12815435dc95df407fdde313a9854273689eaec9a42e25040cf790f617a30719",
     "firmware-tests.txt": "d6da41e0a566fd9d0bef115e5bc95e7c262feee41a7309bb3b0fa08074afc803",
     "machines-tests.txt": "45dc4c6823e9591430bf2bf216d064ccacfc03c4252280574a7a5dc3787a95c4",
@@ -25,5 +26,8 @@
     "sync-after.stderr": "07a1b599e7afc81b51b900b0b692c70a3e38dd83b9403d92b3fbfef4d61195d6",
     "tests-before.txt": "9651e9834006e7284caa55e36ce0e2256cd7918da94e4758c19b7c4e9cb26883",
     "verify.py": "0c7a966cce425ca9c99a780358897ec805fe5e69a0de591b1c6fa662ee0b0cb1"
-  }
+  },
+  "merged_source": "b11d84f64b157842fe1eeb6ce12c712b774786d4",
+  "ci_run": 38174568373,
+  "ci_ledger_sha256": "4d5aab48e22db7515a9b959648ed75823aa6c49abfa537cf8537599aa8f08ae6"
 }
