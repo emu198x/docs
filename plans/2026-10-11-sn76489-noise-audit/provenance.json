@@ -1,0 +1,43 @@
+{
+  "baseline_commit": "ffe6b0bec301e956b5fd85dd25ba0cdbf3852900",
+  "tested_corrected_commit": "8286daeb61ec8a5930e905299003cf13f944933b",
+  "rebased_commit": "dcb942931f97de6c9061dd76dd5ba763a053a1ef",
+  "rebased_tree_identical": true,
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_source_sha256": {
+    "src/sn76489.c": "62f16a2306785d9380642bf664ab90b34f37ac0fd8266e73901e083465bb1e84",
+    "src/filter.c": "cb6a8a03af42f201b4c9d786ec984f8526da4e7ea367a68773d60e7bbc9f4817",
+    "src/filter.h": "6007c2a3890a480062a03c2097800916a0924d7302fa1b9557ac0d8f9d65f0be"
+  },
+  "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "mesen2_commit": "fabc9a62174f8734a113df6d244f5539ef6b8fcf",
+  "datasheet_page": 3,
+  "datasheet_sha256": "4e0e11a4b9843c9cb9a2e6de7a2c4e696eba96ba1b425e3f1d402c25ec7ea801",
+  "dynamic_cases": 240,
+  "dynamic_observations": 1920,
+  "baseline_dynamic_mismatches": 1920,
+  "corrected_dynamic_mismatches": 0,
+  "tests_passed": 194,
+  "existing_ignored": 18,
+  "snapshot_checkpoints": 12,
+  "sha256": {
+    "reference.c": "525e1bae715b45e54cb89251cc7dc9215ea7c2b831cad5f0f842f7d8b335ee63",
+    "reference.csv": "f7a24e0371f6de1dae260837c609799455fa9ddacbd9198bdd61f1ff236fc1c5",
+    "dynamic-reference.c": "97ff20e24222bc9dc23c9dbe65f51956806ca3aff00f8d5f438abcd1e1a57fe0",
+    "dynamic-reference.csv": "0834411d61d08b5e676883af9aaac1012d0276a5129a94bac53ca1a4a84a7a97",
+    "probe.rs": "cbd90fbd8894a49724182126df6850a22318c81e9b1e2e01c5124667fe80d3c1",
+    "baseline.csv": "38afc6a9019743d071c17f3bde4919ddc63c07e56fb07b5d266c5e1a6c5864df",
+    "corrected.csv": "4d2e9a1df54872051b147856368fe9a6fc81aebd53edca572e1280900236b669",
+    "compare.py": "4cbe92ab010a123106634b52b37c6286e10b35358d3e6ed70acf499c45cbe6f2",
+    "comparison.json": "2eb4014248a5ff52154932e4c4cfd5d8f8a63037e05c21f5f6439710cb34281b",
+    "summary.json": "dcd9f35c9d8554986e4061c8d8b6b779563e5e4a8bb4061e345cfac04f6d37d8",
+    "red.log": "d4b54377b829cac4b86464f076a5e5beacac1c214fe95561221234e1889abc01",
+    "tests.log": "f5f427e2bb4ce57d2cd154749905d550c27b99e0e7c968bd68bb8b783bc6bc20",
+    "consumers.log": "3c59b2bdac77fffe0c68d4d01e850b543b7ff9f468d1e1d900bc66c53a7ce92b",
+    "clippy.log": "cb988e654060a00545642b0207feb529db14cf29da8e0b6168d0668ff7785c72",
+    "format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.log": "2535d53676bd6c730341016a41dac20014fd73d45dbe5cc1b23544592971f3f3",
+    "counts.json": "bc02709ed3d28b91de6205fd328379499c3871e8e0b2a1eae2bc4ef124868c92",
+    "rebase.json": "d9c4356ec303593e447f139d2946b4b03bd0d7b54684d0bf1adbddeb69d2778c"
+  }
+}

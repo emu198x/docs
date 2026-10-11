@@ -1,0 +1,9 @@
+{
+  "reference_rows": 1152,
+  "baseline_rows": 2304,
+  "corrected_rows": 2304,
+  "ti_slaved_mismatches_before": 768,
+  "ti_slaved_mismatches_after": 0,
+  "rate_only_false_positive_controls": 128,
+  "unchanged_other_rows": 1536
+}
