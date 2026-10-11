@@ -155,3 +155,36 @@ without normalizing the observation boundary.
 Production PR 1712 is now merged as `63ff50c86ac20c6145d1cddc7dc025762a168d7a`.
 Its clean temporary worktree was removed and the branch retained. This fetch
 proposal remains unimplemented and awaiting the existing schema question.
+
+## Dynamic bank observation plan
+
+Add `bank_switch.py` beside the existing capture tools. An original CPU guest
+will fill each bank's disabled-display Phi1 sources with a distinct byte,
+then exercise all sixteen old/new bank pairs through CIA2 PRA and DDRA.
+Observe I/O1, I/O2 and colour RAM after zero through seven NOPs. Retain native
+traces and completion sentinels on all five profiles. `test_bank_switch.py`
+will reject missing/duplicate cases, bad bytes and fabricated success counts.
+
+These reads occur at least four CPU clocks after the selecting store. They
+qualify settled bank routing, not the first intervening fetch. VICE's
+`c64gluelogic.c` models a one-clock custom-glue transient for bank 1/2 swaps
+and some DDRA changes (with an explicit accuracy caveat for the latter).
+That transient needs a separate fetch/visible-output observation; do not
+use the settled CPU test to waive the first-fetch timing gate. No production
+or snapshot change is part of this investigation.
+
+The settled-routing matrix now passes all 30 captures and 3,840 CPU reads.
+Both PRA and DDRA select the expected bank for all sixteen transitions;
+I/O1/I/O2 return the bank byte and colour RAM preserves its stored low nibble.
+Every stored byte agrees with its traced accumulator and every guest reaches
+the completion store. The earliest measurement follows the selecting store
+by four CPU clocks; added NOPs extend this to eighteen clocks in steps of two.
+This does not cover an immediately intervening VIC fetch.
+
+`bank_switch.py` is an original guest generator and capture/verifier.
+`bank-switch-comparison.json.gz` retains raw measurements and input hashes;
+`bank-switch-traces.json.gz` retains native logs. A stale-bank model disagrees
+with 2,880 measurements. Ten new guard tests pass, including rejection of a
+wrong byte even when its trace and success count are falsified consistently.
+The combined suite now passes 28 tests. The existing proposal remains pending;
+no production stage or snapshot was changed.

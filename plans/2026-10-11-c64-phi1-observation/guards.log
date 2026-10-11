@@ -1,3 +1,13 @@
+test_duplicate_row (test_bank_switch.BankSwitchGuards.test_duplicate_row) ... ok
+test_empty_capture (test_bank_switch.BankSwitchGuards.test_empty_capture) ... ok
+test_empty_trace (test_bank_switch.BankSwitchGuards.test_empty_trace) ... ok
+test_invalid_byte (test_bank_switch.BankSwitchGuards.test_invalid_byte) ... ok
+test_missing_row (test_bank_switch.BankSwitchGuards.test_missing_row) ... ok
+test_native_capture (test_bank_switch.BankSwitchGuards.test_native_capture) ... ok
+test_no_completion (test_bank_switch.BankSwitchGuards.test_no_completion) ... ok
+test_short_capture (test_bank_switch.BankSwitchGuards.test_short_capture) ... ok
+test_trace_disagrees (test_bank_switch.BankSwitchGuards.test_trace_disagrees) ... ok
+test_wrong_byte_even_with_matching_trace_and_claimed_success (test_bank_switch.BankSwitchGuards.test_wrong_byte_even_with_matching_trace_and_claimed_success) ... ok
 test_duplicate_model_rejected (test_probe.ProbeGuards.test_duplicate_model_rejected) ... ok
 test_empty_log_rejected (test_probe.ProbeGuards.test_empty_log_rejected) ... ok
 test_fabricated_zero_count_rejected (test_probe.ProbeGuards.test_fabricated_zero_count_rejected) ... ok
@@ -18,6 +28,6 @@ test_wrong_model_length_rejected (test_refresh.RefreshGuards.test_wrong_model_le
 test_zero_trace_rejected (test_refresh.RefreshGuards.test_zero_trace_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.018s
+Ran 28 tests in 0.030s
 
 OK
