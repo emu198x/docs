@@ -1,0 +1,15 @@
+{
+  "cases": 64,
+  "host_failures": 32,
+  "controls_passed": 32,
+  "undrained_chip_cases": 64,
+  "cargo_exit": 101,
+  "source_matches_origin_main": true,
+  "main_commit": "03372dda1f97f011bf37585835c696df07b87433",
+  "source_sha256": {
+    "crates/atari-pokey/src/lib.rs": "89287a23e8c5fc8b71e37029ef053eeef3fbf3561928ff4652443185788ae6f4",
+    "crates/machine-atari-7800/src/lib.rs": "9401f6ffe387c48f37c73af75d8da491d547dc9dd10407d771d74e79f147759d",
+    "crates/machine-atari-7800/src/cartridge.rs": "b4bb5872558b0773612ecc16fc18ae6f90efa7c66196e73bee010dfa513dbd82",
+    "crates/runtime-atari-7800/src/runtime.rs": "03b88dc55331225f2e8dc05fbf496a7379754128301cb74d28142229b348c128"
+  }
+}
