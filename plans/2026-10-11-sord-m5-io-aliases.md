@@ -64,7 +64,7 @@ Machine/runtime suites pass 38 tests with six fixture-gated tests ignored.
 All six were separately run with installed original firmware/cartridges and
 pass: BASIC-I reaches Ready; Dig Dug advances; the PAL gameplay check records
 1,000 channel-3 interrupts in 1,000 frames and 310 distinct sprite tables.
-All-target Clippy and formatting pass. Exact-head CI and merge are pending.
+All-target Clippy and formatting pass. Source exact-head CI and merge are verified.
 
 See [the evidence bundle](2026-10-11-sord-m5-io-evidence/README.md).
 
@@ -73,3 +73,15 @@ Exact tested source head: `45109551ea0c6d8d345fa49e365ac2b447833a12`, based
 on the merged trainer correction `ce91eb0d`. The machine/runtime tests and
 all-target Clippy were rerun after that rebase. Firmware results precede the
 rebase, which changed only the unrelated NES trainer paths.
+
+
+## Verified merge
+
+[Source PR #1734](https://github.com/emu198x/emu198x/pull/1734) merged as
+`dae7a52d708fb8fd47cca69cb7e66037e88d0927`. Its tree exactly matches tested
+head `45109551ea0c6d8d345fa49e365ac2b447833a12` and is an ancestor of
+`origin/main`. [CI run 38168854358](https://github.com/emu198x/emu198x/actions/runs/38168854358)
+passed all required gates. The execution ledger records machine 21 passes
+and six reasoned ignores; runtime 17 passes; zero skipped, failed or
+unexplained ignored tests. The six local firmware executions supplement
+that CI evidence.
