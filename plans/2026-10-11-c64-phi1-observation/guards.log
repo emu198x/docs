@@ -26,8 +26,18 @@ test_wrong_address_rejected (test_refresh.RefreshGuards.test_wrong_address_rejec
 test_wrong_byte_rejected (test_refresh.RefreshGuards.test_wrong_byte_rejected) ... ok
 test_wrong_model_length_rejected (test_refresh.RefreshGuards.test_wrong_model_length_rejected) ... ok
 test_zero_trace_rejected (test_refresh.RefreshGuards.test_zero_trace_rejected) ... ok
+test_cpu_false_success_exit (test_transient.TransientGuards.test_cpu_false_success_exit) ... ok
+test_duplicate_capture (test_transient.TransientGuards.test_duplicate_capture) ... ok
+test_duplicate_cpu_row (test_transient.TransientGuards.test_duplicate_cpu_row) ... ok
+test_fabricated_zero_difference_count (test_transient.TransientGuards.test_fabricated_zero_difference_count) ... ok
+test_missing_capture (test_transient.TransientGuards.test_missing_capture) ... ok
+test_missing_cpu_rows (test_transient.TransientGuards.test_missing_cpu_rows) ... ok
+test_native_bit_predictions_and_controls (test_transient.TransientGuards.test_native_bit_predictions_and_controls) ... ok
+test_retained_red_cpu_probe (test_transient.TransientGuards.test_retained_red_cpu_probe) ... ok
+test_wrong_board_expectation (test_transient.TransientGuards.test_wrong_board_expectation) ... ok
+test_wrong_marker_even_with_consistent_image_hash_and_difference_array (test_transient.TransientGuards.test_wrong_marker_even_with_consistent_image_hash_and_difference_array) ... ok
 
 ----------------------------------------------------------------------
-Ran 28 tests in 0.030s
+Ran 38 tests in 2.336s
 
 OK
