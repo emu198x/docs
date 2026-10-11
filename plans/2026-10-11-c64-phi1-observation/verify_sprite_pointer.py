@@ -44,39 +44,42 @@ def verify_coverage(cases: list[dict]) -> None:
     assert len(actual) == 80 and set(actual) == expected, "case coverage"
 
 
-def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
+def verify_sequence(case: dict, rows: list[list[str]], log: str) -> dict:
     cycles = {m: c for m, _, c in MODELS}[case["model"]]
-    assert case["cycles"] == cycles and case["sprite"] == 0 and case["phase"] == 0
+    target = case["sprite"]
+    assert case["cycles"] == cycles and target in range(8) and case["phase"] in {0, 3}
     bank = case["bank"]
     assert bank in range(4) and type(case["reverse"]) is bool
     ram = case["ram"]
     assert ram == [pattern(bank, s, i) for s in range(8) for i in range(64)], (
         "source RAM"
     )
-    old, new = (0x81, 0x80) if case["reverse"] else (0x80, 0x81)
+    old, new = 0x80 + target, 0x80 + (target + 1) % 8
+    if case["reverse"]:
+        old, new = new, old
     summary = verify_rows(rows, cycles)
     assert log.count("Stop on store d7ff") == 1 and "Unexpected token" not in log, (
         "completion event"
     )
-    address = bank * 0x4000 + 0x7F8
+    address = bank * 0x4000 + 0x7F8 + target
     writes = [
         [int(y), int(c), int(a, 16), int(t)]
         for y, c, a, t in re.findall(f"Trace store {address:04x}" + EVENT, log)
     ]
     assert writes == case["writes"] and len(writes) == 3, "CPU store coverage"
-    assert [r[2] for r in writes] == [0x80, old, new]
+    assert [r[2] for r in writes] == [0x80 + target, old, new]
     height = {63: 312, 65: 263, 64: 262}[cycles]
     for y, c, _, clock in writes:
         assert (y, c) == ((clock // cycles) % height, clock % cycles), "CPU coordinates"
     assert writes[0][3] < writes[1][3] < writes[2][3]
     write_line, write_cycle, _, write_clock = writes[-1]
-    before = case["delay"] == BOUNDARIES[cycles][0]
-    assert case["delay"] in BOUNDARIES[cycles]
-    assert (write_line, write_cycle) == (90, 55 if before else 62), "CPU boundary"
     frame = write_clock - write_line * cycles - write_cycle
-    first_pointer = frame + 80 * cycles + POINTER_CYCLES[cycles][0]
+    pointer_cycle = POINTER_CYCLES[cycles][target]
+    first_line = 80 + (pointer_cycle < (54 if cycles == 63 else 55))
+    first_pointer = frame + first_line * cycles + pointer_cycle
     expected_new_offset = 3 * ((write_clock - first_pointer + cycles - 1) // cycles)
-    assert expected_new_offset == (30 if before else 33), "row boundary"
+    assert 0 < expected_new_offset < 63, "both pointer sources exercised"
+    wrap_rows = 0
     pointer = None
     pointer_clock = None
     latch = None
@@ -88,7 +91,15 @@ def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
         clock, line, cycle, logical, physical, data, dma, _, flags, _, _ = map(
             int, row[1:]
         )
-        assert kind in {"P1", "P2", "L1"} and dma in {0, 1}, "unexpected DMA"
+        assert kind in {"P1", "P2", "L1"} and dma in {0, 1 << target}, "unexpected DMA"
+        if kind in {"P1", "L1"}:
+            assert cycle == clock % cycles, "absolute Phi1 cycle"
+            assert line == (clock // cycles) % height - (cycle == 0), (
+                "absolute Phi1 line"
+            )
+        elif kind == "P2":
+            assert cycle == (clock - 1) % cycles, "absolute Phi2 cycle"
+            assert line == ((clock - 1) // cycles) % height, "absolute Phi2 line"
         if kind == "L1":
             if latch is not None:
                 assert line == latch[1] + (cycle == 1), "line progression"
@@ -102,20 +113,22 @@ def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
                 cycle == POINTER_CYCLES[cycles][sprite] and logical == 0x7F8 + sprite
             ), "pointer phase/address"
             expected = (
-                (new if clock >= write_clock else old) if sprite == 0 else 0x80 + sprite
+                (new if clock >= write_clock else old)
+                if sprite == target
+                else 0x80 + sprite
             )
             assert data == expected, "CPU-clock pointer selection"
-            if sprite == 0:
+            if sprite == target:
                 pointer, pointer_clock = data, clock
                 pointer_values.append(data)
             continue
         if kind == "P1" and fetch == 0x800:
-            if sprite != 0 or dma == 0:
+            if sprite != target or dma == 0:
                 assert logical == 0x3FFF, "idle source"
                 continue
             byte = 1
         elif kind == "P2":
-            assert sprite == 0 and dma == 1 and fetch in {0x600, 0x800}
+            assert sprite == target and dma == (1 << target) and fetch in {0x600, 0x800}
             byte = 0 if fetch == 0x600 else 2
             assert latch is not None and clock == latch[0] + 1 and cycle == latch[2], (
                 "Phi2 clock"
@@ -127,11 +140,13 @@ def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
         assert offset < 63 and offset % 3 == byte, "byte sequence"
         assert logical == (pointer << 6) + offset, "latched pointer/MC source"
         assert data == ram[(pointer - 0x80) * 64 + offset], "source byte"
-        assert cycle == POINTER_CYCLES[cycles][0] + (byte != 0), "fetch phase"
+        assert cycle == (pointer_cycle + (byte != 0)) % cycles, "fetch phase"
         assert pointer_clock == first_pointer + (offset // 3) * cycles, (
             "row pointer clock"
         )
         assert clock == pointer_clock + 1 + (byte == 2), "data clock"
+        if byte == 2 and clock // cycles != pointer_clock // cycles:
+            wrap_rows += 1
         data_pointers.append(pointer)
     assert lines == set(range(72, 113)) and len(pointer_values) >= 39, (
         "capture interval"
@@ -149,8 +164,24 @@ def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
         "sprite_bytes": 63,
         "first_new_offset": expected_new_offset,
         "write_clock": write_clock,
-        "boundary": "before" if before else "after",
+        "write_line": write_line,
+        "write_cycle": write_cycle,
+        "wrap_rows": wrap_rows,
     }
+
+
+def verify_case(case: dict, rows: list[list[str]], log: str) -> dict:
+    result = verify_sequence(case, rows, log)
+    cycles = case["cycles"]
+    assert case["sprite"] == 0 and case["phase"] == 0
+    assert case["delay"] in BOUNDARIES[cycles]
+    before = case["delay"] == BOUNDARIES[cycles][0]
+    assert (result["write_line"], result["write_cycle"]) == (
+        90,
+        55 if before else 62,
+    ), "CPU boundary"
+    assert result["first_new_offset"] == (30 if before else 33), "row boundary"
+    return {**result, "boundary": "before" if before else "after"}
 
 
 def verify_archive(path: Path) -> dict:
