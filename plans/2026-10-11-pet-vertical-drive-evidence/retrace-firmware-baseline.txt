@@ -1,0 +1,18 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-pet-retrace-baseline/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5ffabd016c5ed07e: Operation not permitted (os error 1)
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-pet-retrace-baseline/crates/motorola-6845)
+   Compiling mos-pia-6520 v0.31.0 (/private/tmp/198x-pet-retrace-baseline/crates/mos-pia-6520)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-pet-retrace-baseline/crates/emu198x-mos-6502)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-pet-retrace-baseline/crates/mos-via-6522)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-pet-retrace-baseline/crates/machine-commodore-pet)
+    Finished `release` profile [optimized] target(s) in 3.09s
+     Running tests/keyboard_type.rs (/private/tmp/198x-sunsoft4-target/release/deps/keyboard_type-602cec117166e9e5)
+
+running 5 tests
+test cursor_right_moves_the_cursor_instead_of_typing ... ok
+test types_the_bracket_and_arrow_keys ... ok
+test types_a_basic_line_and_prints_the_result ... ok
+test types_a_subtraction_through_the_keypad_minus ... ok
+test stop_breaks_a_running_basic_program ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+

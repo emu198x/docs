@@ -1,0 +1,122 @@
+diff --git i/crates/machine-commodore-pet/src/lib.rs w/crates/machine-commodore-pet/src/lib.rs
+index 4d9c527b..48eb3186 100644
+--- i/crates/machine-commodore-pet/src/lib.rs
++++ w/crates/machine-commodore-pet/src/lib.rs
+@@ -200,16 +200,16 @@ impl Pet {
+             // characters are consumed in each 1 MHz machine cycle.
+             self.tick_display();
+         }
++        // VERT DRIVE reaches PB5 as a pin, so the VIA retains ownership
++        // of input latching, DDR selection and output-register readback.
++        self.via.pb_in = if self.crtc.vsync { !0x20 } else { 0xFF };
+         self.via.tick();
+         self.tick_audio();
+-        // PIA #1 CA1 is wired to the CRTC vertical retrace: its edge is the
+-        // 60 Hz system IRQ that runs the editor's keyboard scan and jiffy
+-        // clock. Without it the machine boots to READY but never sees a key.
+-        // PIA #1 CB1 is wired to the CRTC vertical retrace: its edge is the
+-        // 60 Hz system IRQ that runs the editor's keyboard scan and jiffy
+-        // clock (the editor enables CB1, not CA1 — CA1 is cassette sense).
+-        // Without it the machine boots to READY but never sees a key.
+-        self.pia.set_cb1(self.crtc.in_vertical_retrace());
++        // Commodore 8032029/8032081 sheets 3, 8 and 10 wire the same
++        // inverted VSYNC (VERT DRIVE) to PIA #1 CB1 and VIA PB5. Its edge
++        // drives the editor's keyboard scan and jiffy IRQ. CA1 is cassette
++        // input; the CRTC's vertical blanking interval is a separate signal.
++        self.pia.set_cb1(!self.crtc.vsync);
+         self.cpu.irq = self.pia.irq_pending() || self.via.irq;
+         self.cpu.tick();
+         if self.cpu.rw {
+@@ -323,21 +323,7 @@ impl Pet {
+                 self.update_keyboard();
+                 self.pia.read((addr & 0x03) as u8)
+             }
+-            // VIA port B ($E840) carries the CRTC vertical-retrace state on
+-            // PB5 (0 = off-screen). The editor spin-waits on it before writing
+-            // the screen to avoid snow, so it must toggle each frame; the other
+-            // input bits (IEEE handshake) idle high with no device attached.
+-            0xE840 => {
+-                // PB5 low signals vertical retrace; every other input bit
+-                // idles high with no IEEE device attached.
+-                let pb = if self.crtc.in_vertical_retrace() {
+-                    !0x20u8
+-                } else {
+-                    0xFF
+-                };
+-                self.via.read_port_b_with_value(pb)
+-            }
+-            0xE841..=0xE84F => self.via.read((addr & 0x0F) as u8),
++            0xE840..=0xE84F => self.via.read((addr & 0x0F) as u8),
+             0xE880 => self.crtc.read_data(),
+             0xE800..=0xEFFF => 0xFF,
+             0xF000..=0xFFFF => {
+@@ -481,6 +467,69 @@ mod tests {
+         )
+     }
+ 
++    #[test]
++    fn vertical_drive_reaches_via_and_pia_with_the_same_polarity() {
++        for columns in [40, 80] {
++            for rising_edge in [false, true] {
++                let mut kernal = vec![0xEA; 0x1000];
++                kernal[..4].copy_from_slice(&[0x78, 0x4C, 0x01, 0xF0]);
++                kernal[0xFFC..0xFFE].copy_from_slice(&0xF000u16.to_le_bytes());
++                let mut pet = Pet::new(
++                    kernal,
++                    vec![0; 0x2000],
++                    vec![0; 0x800],
++                    vec![0; 0x1000],
++                    columns,
++                );
++                pet.run_frame();
++                pet.mem_write(0xE813, 0x04 | if rising_edge { 0x02 } else { 0 });
++                pet.mem_read(0xE812);
++
++                let mut previous = !pet.crtc.vsync;
++                let mut low_samples = 0;
++                let mut high_samples = 0;
++                let mut detected_edges = 0;
++                for _ in 0..50_000 {
++                    pet.tick();
++                    // Commodore 8032029/8032081 sheets 3, 8 and 10:
++                    // the pull-up-selected XOR drives both pins with !VSYNC.
++                    let drive = !pet.crtc.vsync;
++                    assert_eq!(
++                        pet.mem_read(0xE840) & 0x20 != 0,
++                        drive,
++                        "VIA PB5: {columns} columns, clock {}",
++                        pet.master_clock,
++                    );
++                    let edge = if rising_edge {
++                        !previous && drive
++                    } else {
++                        previous && !drive
++                    };
++                    assert_eq!(
++                        pet.mem_read(0xE813) & 0x80 != 0,
++                        edge,
++                        "PIA CB1: {columns} columns, rising={rising_edge}, clock {}",
++                        pet.master_clock,
++                    );
++                    pet.mem_read(0xE812);
++                    low_samples += usize::from(!drive);
++                    high_samples += usize::from(drive);
++                    detected_edges += usize::from(edge);
++                    previous = drive;
++                }
++                assert!(low_samples > 0 && high_samples > 0);
++                assert!(detected_edges >= 2);
++
++                // An output-configured PB5 still reads its output latch.
++                pet.mem_write(0xE842, 0x20);
++                for output in [0, 0x20] {
++                    pet.mem_write(0xE840, output);
++                    assert_eq!(pet.mem_read(0xE840) & 0x20, output);
++                }
++            }
++        }
++    }
++
+     /// VIA register addresses on the PET's $E840 block.
+     const VIA_SR: u16 = 0xE84A;
+     const VIA_ACR: u16 = 0xE84B;

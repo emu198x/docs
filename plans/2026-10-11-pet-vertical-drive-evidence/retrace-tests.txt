@@ -1,0 +1,224 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-pet-crtc-ports/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/d02811bb1b195e2e: Operation not permitted (os error 1)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/machine-commodore-pet)
+   Compiling runtime-commodore-pet v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/runtime-commodore-pet)
+    Finished `release` profile [optimized] target(s) in 8.17s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_commodore_pet-017807f936c175ff)
+
+running 19 tests
+test input::tests::key_matrix_valid ... ok
+test input::tests::keypad_minus_sits_beside_equals ... ok
+test input::tests::only_the_undriven_cells_are_empty ... ok
+test input::tests::no_two_keys_share_a_matrix_cell ... ok
+test tests::framebuffer_correct_size_40_col ... ok
+test tests::ram_round_trips ... ok
+test tests::rom_writes_ignored ... ok
+test tests::framebuffer_correct_size_80_col ... ok
+test tests::video_ram_round_trips ... ok
+test tests::a_frame_yields_close_to_the_declared_sample_rate ... ok
+test tests::a_silent_machine_emits_a_constant_level ... ok
+test tests::frame_advances_frame_count ... ok
+test tests::the_shift_register_tone_reaches_the_piezo ... ok
+test tests::the_audio_buffer_drains ... ok
+test tests::frame_is_16200_cpu_cycles_on_the_80_column_board ... ok
+test tests::a_pcr_driven_cb2_clicks_the_piezo ... ok
+test tests::frame_is_pal_50hz_at_1mhz ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::vertical_drive_reaches_via_and_pia_with_the_same_polarity ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/keyboard_type.rs (/private/tmp/198x-sunsoft4-target/release/deps/keyboard_type-6439e50ee1fa1641)
+
+running 5 tests
+test cursor_right_moves_the_cursor_instead_of_typing ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test stop_breaks_a_running_basic_program ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_basic_line_and_prints_the_result ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_subtraction_through_the_keypad_minus ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_the_bracket_and_arrow_keys ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/rom_boot-c4a655734189c185)
+
+running 1 test
+test rom_set_boots_without_panic ... ignored, FIXTURE: needs Commodore PET ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/synthetic_firmware_boot-2526aefd622d06dd)
+
+running 2 tests
+test the_control_image_lights_nothing ... ok
+test synthetic_firmware_fills_the_screen_with_a_solid_glyph ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/mos_pia_6520-1f1d244bf5ae963c)
+
+running 14 tests
+test tests::ca1_falling_edge_detection ... ok
+test tests::ca1_rising_edge_detection ... ok
+test tests::cb1_edge_detection ... ok
+test tests::ddr_access_switching ... ok
+test tests::control_register_returns_flags ... ok
+test tests::default_state ... ok
+test tests::irq_pending_requires_flag_and_enable ... ok
+test tests::irq_pending_ca2_cb2 ... ok
+test tests::control_register_write_masks_top_bits ... ok
+test tests::port_read_ddr_masking ... ok
+test tests::port_write_stores_output_register ... ok
+test tests::portb_output_for_banking ... ok
+test tests::reading_ddr_does_not_clear_flags ... ok
+test tests::reading_port_clears_interrupt_flags ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/mos_via_6522-190c162cd90b4fbc)
+
+running 27 tests
+test tests::handshake_outputs_go_low_on_access_and_high_on_the_active_edge ... ok
+test tests::ca1_edge_sets_interrupt_and_port_access_clears_it ... ok
+test tests::cb2_input_no_irq_clear_mode_persists_until_ifr_write ... ok
+test tests::ier_set_and_clear_drive_irq_bit ... ok
+test tests::port_a_input_latch_holds_value_until_next_edge ... ok
+test tests::port_b_reads_do_not_start_or_cancel_a_write_pulse ... ok
+test tests::port_reads_mix_outputs_and_inputs ... ok
+test tests::port_a_reads_and_writes_pulse_but_alternate_accesses_do_not ... ok
+test tests::reading_ifr_does_not_clear_pending_flags ... ok
+test tests::set_ca1_level_raises_interrupt_without_tick ... ok
+test tests::set_ca2_level_is_inert_when_ca2_is_an_output ... ok
+test tests::set_ca2_level_raises_interrupt_on_the_active_edge ... ok
+test tests::shift_out_phi2_rate_emits_msb_first_over_16_ticks ... ok
+test tests::sr_disabled_mode_clears_ifr_and_does_not_shift ... ok
+test tests::sr_external_clock_shift_in_on_cb1_falling_edge ... ok
+test tests::timer1_one_shot_flag_sets_n_plus_two_cycles_after_the_write ... ok
+test tests::timer1_one_shot_keeps_visible_counter_advancing_after_irq ... ok
+test tests::timer1_raises_irq_and_reloads_in_free_run ... ok
+test tests::timer2_can_count_pb6_falling_edges ... ok
+test tests::timer2_counts_phi2_cycles ... ok
+test tests::timer1_read_one_cycle_after_a_t1ch_write_returns_the_value_written ... ok
+test tests::timer2_pulse_load_counts_the_first_pb6_edge_without_a_delay ... ok
+test tests::timer2_restart_retains_the_new_load_cycle ... ok
+test tests::timer2_start_reads_match_timer1_in_interval_mode ... ok
+test tests::timer2_flag_sets_after_the_load_and_countdown ... ok
+test tests::timer2_keeps_counting_after_its_one_shot_interrupt ... ok
+test tests::timer2_keeps_counting_pb6_edges_after_its_interrupt ... ok
+
+test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/motorola_6845-50a4362165a575dc)
+
+running 21 tests
+test tests::a_horizontal_total_of_255_does_not_overflow_the_counter ... ok
+test tests::a_line_is_r0_plus_one_characters ... ok
+test tests::display_enable_during_visible ... ok
+test tests::cursor_is_present_only_between_r10_and_r11_inclusive ... ok
+test tests::display_enable_off_during_hblank ... ok
+test tests::horizontal_counter_wraps_at_r0 ... ok
+test tests::lowering_r4_or_r9_mid_frame_does_not_strand_a_counter ... ok
+test tests::mc6845_wraps_a_split_cursor_but_hd6845s_does_not ... ok
+test tests::old_explicit_state_loads_with_a_reset_blink_phase ... ok
+test tests::r10_selects_steady_hidden_and_16_or_32_field_blink ... ok
+test tests::frame_completes ... ok
+test tests::register_write_and_read ... ok
+test tests::start_address_from_r12_r13 ... ok
+test tests::memory_address_increments_during_display ... ok
+test tests::write_only_registers_return_zero ... ok
+test tests::zero_horizontal_sync_width_suppresses_hsync ... ok
+test variant_tests::only_the_hd6845s_reads_the_start_address_back ... ok
+test variant_tests::the_default_is_the_old_behaviour ... ok
+test variant_tests::horizontal_counter_names_the_column_the_next_tick_outputs ... ok
+test variant_tests::interlace_sync_alone_leaves_the_raster_address_alone ... ok
+test variant_tests::interlace_sync_and_video_scans_alternate_lines_in_alternate_fields ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/register_writes.rs (/private/tmp/198x-sunsoft4-target/release/deps/register_writes-59e562a0a2d60819)
+
+running 4 tests
+test new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot ... ok
+test software_cannot_overwrite_the_light_pen_address ... ok
+test register_writes_keep_only_the_bits_present_on_each_part ... ok
+test unused_vertical_display_bit_cannot_change_the_display_enable_signal ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sync_outputs.rs (/private/tmp/198x-sunsoft4-target/release/deps/sync_outputs-debce2f14ffd2e90)
+
+running 3 tests
+test horizontal_pulses_keep_their_full_width_across_line_wrap ... ok
+test vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart ... ok
+test restoring_an_active_sync_pulse_preserves_its_remaining_intervals ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/runtime_commodore_pet-a8d932938aa89f24)
+
+running 3 tests
+test profiles::tests::profile_declares_four_roms ... ok
+test snapshot::tests::decode_rejects_old_schema_before_reading_payload ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/audio.rs (/private/tmp/198x-sunsoft4-target/release/deps/audio-c045f92af2453acf)
+
+running 2 tests
+test a_shift_register_tone_produces_a_non_empty_waveform ... ok
+test an_idle_machine_still_reports_the_declared_format ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/catalogue.rs (/private/tmp/198x-sunsoft4-target/release/deps/catalogue-82971ed718fed160)
+
+running 1 test
+test catalogue_installs_all_firmware_and_snapshot_reset_retains_it ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/program.rs (/private/tmp/198x-sunsoft4-target/release/deps/program-4bedbd4577fc4907)
+
+running 3 tests
+test a_basic_program_loads_and_runs_itself ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test a_short_image_is_rejected_at_the_slot_boundary ... ok
+test autoload_sets_the_basic_pointers_and_queues_run ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-sunsoft4-target/release/deps/snapshot_roundtrip-85dc27e393593838)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_commodore_pet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mos_pia_6520
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mos_via_6522
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests motorola_6845
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_commodore_pet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

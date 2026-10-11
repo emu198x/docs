@@ -1,0 +1,43 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-pet-crtc-ports/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/d02811bb1b195e2e: Operation not permitted (os error 1)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/machine-commodore-pet)
+    Finished `release` profile [optimized] target(s) in 3.52s
+     Running tests/keyboard_type.rs (/private/tmp/198x-sunsoft4-target/release/deps/keyboard_type-602cec117166e9e5)
+
+running 5 tests
+test cursor_right_moves_the_cursor_instead_of_typing ... FAILED
+test types_the_bracket_and_arrow_keys ... FAILED
+test types_a_subtraction_through_the_keypad_minus ... ok
+test types_a_basic_line_and_prints_the_result ... ok
+test stop_breaks_a_running_basic_program ... FAILED
+
+failures:
+
+---- cursor_right_moves_the_cursor_instead_of_typing stdout ----
+
+thread 'cursor_right_moves_the_cursor_instead_of_typing' (94655036) panicked at crates/machine-commodore-pet/tests/keyboard_type.rs:218:5:
+assertion `left == right` failed: expected cursor-right to skip a cell, not deposit one; line was [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+  left: [32, 32, 32, 32]
+ right: [1, 2, 32, 3]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- types_the_bracket_and_arrow_keys stdout ----
+
+thread 'types_the_bracket_and_arrow_keys' (94655040) panicked at crates/machine-commodore-pet/tests/keyboard_type.rs:197:5:
+assertion `left == right` failed: expected the five keycaps to deposit their own glyphs; line was [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+  left: [32, 32, 32, 32, 32]
+ right: [27, 29, 28, 30, 31]
+
+---- stop_breaks_a_running_basic_program stdout ----
+
+thread 'stop_breaks_a_running_basic_program' (94655037) panicked at crates/machine-commodore-pet/tests/keyboard_type.rs:265:5:
+expected STOP to break the loop and return to READY; got "### COMMODORE BASIC ### 31743 BYTES FREE READY. 10 GOTO 10 RUN BREAK IN"
+
+
+failures:
+    cursor_right_moves_the_cursor_instead_of_typing
+    stop_breaks_a_running_basic_program
+    types_the_bracket_and_arrow_keys
+
+test result: FAILED. 2 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+error: test failed, to rerun pass `-p machine-commodore-pet --test keyboard_type`
