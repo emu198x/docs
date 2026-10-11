@@ -1,0 +1,10 @@
+{
+  "rows": 60,
+  "refresh_samples": 300,
+  "counter_mutation_mismatches": {
+    "predecrement": 300,
+    "increment": 280,
+    "reset_each_line": 280,
+    "omit_frame_reset": 60
+  }
+}

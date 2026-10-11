@@ -114,3 +114,44 @@ rule applies. No production implementation of this proposal has started.
   ordinary chip/machine/runtime suites and Clippy. Explain any changed images.
 - Run the full compatibility catalogue when its external media volume is
   available; record this as an unmet gate while that volume is absent.
+
+## Refresh-address qualification
+
+While schema approval is pending, qualify the planned refresh counter using
+native CPU observations. Derive position-coded guests from the pinned corpus:
+replace the refresh-page fill with its index, vary the bank and IRQ start line,
+and trace every I/O1 measurement through counter rollover and frame wrap.
+Preserve all source inputs and instruction sizes. Record the exact mutations,
+source identities and monitor observation phase before treating the bytes as
+address evidence. This work changes no production stage or snapshot.
+
+
+The native matrix passes all 60 cases and 300 refresh observations. Five
+models × four banks × ordinary/rollover/frame-wrap cases qualify the address
+model at the captured monitor phase. Wrap samples cover the final two lines
+and lines 0/1/2; rollover samples cover lines 50–54. The monitor reports
+cycles 11–15 for the five refresh reads, and every traced LDA accumulator
+agrees with the guest's stored byte.
+
+`refresh.py` records the precise guest mutations and input identities.
+`refresh-comparison.json.gz` retains each sample and the selected refresh page;
+`verify_refresh.py` validates all sixty distinct cases and rejects four wrong
+counter models. Their mismatch counts are 300 (predecrement), 280 (increment),
+280 (reset every line) and 60 (no frame reset). The combined probe/parser test
+suite passes 18 guards. It rejects incomplete capture data rather than treating
+missing samples as agreement.
+
+Bank 3's refresh page includes live CPU vectors. The expected byte comes from
+the captured page, so the observed `$08` at `$FFFF` is preserved rather than
+replaced with an assumed index byte. The selected vector byte does not change
+between measurement and capture. This probe does not qualify dynamic writes
+to arbitrary refresh locations.
+
+The exact input/output phase and limitations are recorded in the private
+primary observation note. The native traces are post-instruction monitor
+reports, so do not apply their cycle labels to an emulator's internal counter
+without normalizing the observation boundary.
+
+Production PR 1712 is now merged as `63ff50c86ac20c6145d1cddc7dc025762a168d7a`.
+Its clean temporary worktree was removed and the branch retained. This fetch
+proposal remains unimplemented and awaiting the existing schema question.
