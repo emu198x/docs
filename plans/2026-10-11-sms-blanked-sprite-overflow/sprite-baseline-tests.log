@@ -1,0 +1,35 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sms-sprite-overflow/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/cf69c6979cbb4db0: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling serde-big-array v0.5.1
+   Compiling sega-vdp v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/sega-vdp)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.51s
+     Running tests/blanked_sprite_overflow.rs (/private/tmp/198x-sprite-target/debug/deps/blanked_sprite_overflow-36c432c21976c8b8)
+
+running 3 tests
+test ninth_sprite_overflows_while_blanked_without_pixels_or_collision ... FAILED
+test enabled_sprites_still_collide_and_overflow ... ok
+test blanking_does_not_invent_overflow_without_nine_selected_sprites ... ok
+
+failures:
+
+---- ninth_sprite_overflows_while_blanked_without_pixels_or_collision stdout ----
+
+thread 'ninth_sprite_overflows_while_blanked_without_pixels_or_collision' (93549521) panicked at crates/sega-vdp/tests/blanked_sprite_overflow.rs:73:13:
+assertion `left == right` failed: Sms1, opaque=false
+  left: 0
+ right: 64
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    ninth_sprite_overflows_while_blanked_without_pixels_or_collision
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+error: test failed, to rerun pass `-p sega-vdp --test blanked_sprite_overflow`

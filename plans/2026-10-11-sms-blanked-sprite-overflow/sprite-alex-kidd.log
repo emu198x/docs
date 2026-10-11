@@ -1,0 +1,10 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sms-sprite-overflow/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/cf69c6979cbb4db0: Operation not permitted (os error 1)
+   Compiling machine-sega-master-system v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/machine-sega-master-system)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.42s
+     Running tests/cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/cart_boot-40ce921c9d215212)
+
+running 1 test
+test cart_boots_to_title_screen ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.50s
+
