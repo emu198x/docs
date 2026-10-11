@@ -1,0 +1,21 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.61s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+running 1 test
+
+thread 'tests::aggregate_renderer_agrees_with_native_first_graphics_row' (87489529) panicked at crates/atari-maria/src/lib.rs:788:9:
+assertion `left == right` failed
+  left: [4287387832, 4278190080, 4278190080]
+ right: [4278190080, 4278190080, 4287387832]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::aggregate_renderer_agrees_with_native_first_graphics_row ... FAILED
+
+failures:
+
+failures:
+    tests::aggregate_renderer_agrees_with_native_first_graphics_row
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 62 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p atari-maria --lib`

@@ -1,0 +1,21 @@
+
+running 1 test
+test tests::native_first_graphics_follow_descriptor_prefetch_and_buffer_transfer ... FAILED
+
+failures:
+
+failures:
+    tests::native_first_graphics_follow_descriptor_prefetch_and_buffer_transfer
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 61 filtered out; finished in 0.00s
+
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.93s
+     Running unittests src/lib.rs (target/debug/deps/atari_maria-c6ee3cc2efe66334)
+
+thread 'tests::native_first_graphics_follow_descriptor_prefetch_and_buffer_transfer' (87493755) panicked at crates/atari-maria/src/lib.rs:578:9:
+assertion `left == right` failed
+  left: [4278190080, 4278190080, 4278190080]
+ right: [4278190080, 4278190080, 4287387832]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p atari-maria --lib`
