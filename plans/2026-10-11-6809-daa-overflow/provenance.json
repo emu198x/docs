@@ -1,0 +1,29 @@
+{
+  "reference_repository": "https://www.6809.org.uk/git/xroar.git",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "baseline_commit": "6c1979b06842f9fa02a10cd948be2e83fc444774",
+  "hardware_observation": "https://github.com/hoglet67/6809Decoder/wiki/Undocumented-6809-Behaviours#undefined-values-of-the-overflow-flag",
+  "result_pairs": 65536,
+  "core_executions": 196608,
+  "baseline_mismatches": 98304,
+  "corrected_mismatches": 0,
+  "toolchains": {
+    "rust": "1.99.0",
+    "c": "Apple clang 21.0.0"
+  },
+  "sha256": {
+    "reference.c": "91b720cdf76c91f8dfdfda9fa1fca53ae84efaacb106f45d5d384306f2536a21",
+    "daa-results.bin": "d508e69bb3a6ce521e0bf9e71371b74a8760b4470de288f24a95955cb7aa9cfc",
+    "red.log": "6e28c51bf4e18ecb009f8a7c63b22232898e16d16a4fb938c6ebcbadc1a66254",
+    "tests.log": "74f0fb37aae41fe67bbf52fd2090ee023af7bb2e4acefaba1ebe255a73781e3f",
+    "clippy.log": "59ca056ff385a35f08ab00717c6df219cf88dea50fb14b653fe1a54b8d1aba76",
+    "register-after.txt": "24084b11ea528337937e96212c7e7ad1b9f66bf6fb2fd955f897ae4277cd0fee",
+    "register-after-summary.json": "8a107ac0f1e26c71845413ce0a480f29c0dc5a0e72882721cd4a055c94616edf"
+  }
+}

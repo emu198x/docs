@@ -1,0 +1,4 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+    Checking motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Checking machine-dragon-32 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-dragon-32)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.80s
