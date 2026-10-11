@@ -1,0 +1,26 @@
+[
+  {
+    "source": "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR00.2SC.1",
+    "injected_line": 2515,
+    "injected_candidates": 1,
+    "suppression_failure": "missing enabled-NMI observations: GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR00.2SC.1"
+  },
+  {
+    "source": "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR01.2SC.1",
+    "injected_line": 2513,
+    "injected_candidates": 1,
+    "suppression_failure": "missing enabled-NMI observations: GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR01.2SC.1"
+  },
+  {
+    "source": "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR02.2SC.1",
+    "injected_line": 1076,
+    "injected_candidates": 1,
+    "suppression_failure": "missing enabled-NMI observations: GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR02.2SC.1"
+  },
+  {
+    "source": "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR03.2SC.1",
+    "injected_line": 1944,
+    "injected_candidates": 1,
+    "suppression_failure": "missing enabled-NMI observations: GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR03.2SC.1"
+  }
+]

@@ -39,3 +39,81 @@ and distinguishes these files from binary test data and layout material.
 Do not redistribute the third-party archive or manuals in the public docs
 repo. Retain our decoder, synthetic checks, compact derived observations,
 source identifiers, hashes and exact reproduction instructions.
+
+## First bounded decoder gate
+
+Before implementing the tester's clock engine, scan the full stored main
+prefix and every called subroutine body for a checked NMI-low pattern with
+MEN enabled. This is a conservative superset of execution: the source's
+main prefix includes padding after the host-selected end address. Normal
+repeat counts are recorded, and MATCH loops have unknown iteration counts;
+no elapsed-time inference is allowed. Reject mutation of direction/mask
+registers inside a MATCH loop until its runtime semantics are modelled.
+
+Files: `2026-10-11-maria-factory-patterns/decode_patterns.py` and
+`test_decode_patterns.py`. Parse every statement in the four pinned full-width
+source files; fail on unknown syntax, missing calls, malformed widths, missing
+registers or unterminated routines. Preserve compile-time D/M/timing-set
+selection separately from runtime LSET values. Synthetic checks must cover
+mask/input exclusion, call-site register state, normal repeats, MATCH
+uncertainty, return to the caller, and an injected checked NMI assertion.
+
+This gate can disqualify these source patterns as an enabled-NMI timing oracle
+without guessing strobe timing. It cannot establish a pulse schedule or prove
+identity with the compiled patterns for other revisions.
+
+## First-gate result
+
+The four source files contain no candidate checked NMI-low pattern with MEN
+driven high under the decoded mask and call semantics. There are 9,932 visits
+to enabled, checked NMI-high patterns. The checked lows occur with MEN low;
+the raw lows with MEN high have comparison disabled. The injection controls
+find a changed NMI bit in every file, so the empty candidate result is not
+an always-empty detector.
+
+| Source | Enabled NMI checks, all high | Checked lows with MEN low | Enabled low candidates |
+| --- | ---: | ---: | ---: |
+| ZMAR00.2SC.1 | 2,622 | 91 | 0 |
+| ZMAR01.2SC.1 | 2,622 | 91 | 0 |
+| ZMAR02.2SC.1 | 2,420 | 174 | 0 |
+| ZMAR03.2SC.1 | 2,268 | 174 | 0 |
+
+These counts are **coverage visits**, not physical clock ticks or a completed
+factory test execution. The decoder visits the entire stored main prefix,
+which includes padding beyond a host-selected end address. NORMAL loops
+repeat their bodies; MATCH loops have unknown execution counts and are
+covered once per call. A MATCH loop may stop within its body, so this is an
+over-approximation for candidate discovery. The decoder fails if such a loop
+changes direction or mask state. The host's initial direction masks come
+from `MARIAB/ZMARIA.2SC.3`; their exact values and source hash are retained.
+
+All source statements are parsed, including uncalled routines and padding.
+Eleven synthetic tests pass for mask, direction, MEN, repeat, call-site state,
+return, MATCH uncertainty, precise source locations and rejected input.
+Injecting one assertion into a previously checked high finds exactly one
+candidate in each real source, at lines 2515, 2513, 1076 and 1944 respectively.
+Suppressing the NMI mask in each source fails with `missing enabled-NMI
+observations`. Ruff lint, formatting and diff checks pass.
+
+This does not establish a physical pulse width or assertion delay. Compiled
+pattern identity, host execution limits, inversion and tester strobe/pipeline
+semantics remain unqualified. These four source files cannot presently serve
+as the positive NMI timing oracle required by #197. Do not turn their masked
+zeros into an asserted pulse or select a production timing schedule from them.
+
+## Reproduction
+
+From the docs repo, with the hash-pinned archive held locally:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
+  -s plans/2026-10-11-maria-factory-patterns -v
+python3 plans/2026-10-11-maria-factory-patterns/decode_patterns.py \
+  /path/to/layout-artifacts.zip /path/to/coverage.json
+PYTHONDONTWRITEBYTECODE=1 python3 \
+  plans/2026-10-11-maria-factory-patterns/qualify_patterns.py \
+  /path/to/layout-artifacts.zip /path/to/coverage.json /path/to/controls.json
+```
+
+The archive and manuals stay outside the public repo. The adjacent directory
+retains our decoder, controls, tests and compact derived observations.
