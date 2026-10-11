@@ -1,0 +1,37 @@
+
+running 1 test
+STROBE,Mtx500,0,20,true,85,5,0,15,false
+STROBE,Mtx500,1,102,true,a7,5,7,15,false
+STROBE,Mtx500,2,177,false,03,5,7,15,false
+STROBE,Mtx500,3,252,false,03,5,7,15,false
+STROBE,Mtx500,4,334,true,12,5,295,15,false
+STROBE,Mtx500,5,409,false,03,5,295,15,false
+STROBE,Mtx500,6,491,true,93,5,295,3,false
+STROBE,Mtx500,7,566,false,03,5,295,3,false
+STROBE,Mtx512,0,20,true,85,5,0,15,false
+STROBE,Mtx512,1,102,true,a7,5,7,15,false
+STROBE,Mtx512,2,177,false,03,5,7,15,false
+STROBE,Mtx512,3,252,false,03,5,7,15,false
+STROBE,Mtx512,4,334,true,12,5,295,15,false
+STROBE,Mtx512,5,409,false,03,5,295,15,false
+STROBE,Mtx512,6,491,true,93,5,295,3,false
+STROBE,Mtx512,7,566,false,03,5,295,3,false
+test psg_strobe_probe::out6_latches_and_in3_delivers_the_sound_byte ... FAILED
+
+failures:
+
+failures:
+    psg_strobe_probe::out6_latches_and_in3_delivers_the_sound_byte
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 18 filtered out; finished in 0.00s
+
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.77s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_memotech_mtx-f31526637fe76461)
+
+thread 'psg_strobe_probe::out6_latches_and_in3_delivers_the_sound_byte' (93095693) panicked at crates/machine-memotech-mtx/src/lib.rs:796:9:
+assertion `left == right` failed: PSG changed before the sound strobe or retained an overwritten byte
+  left: 16
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p machine-memotech-mtx --lib`
