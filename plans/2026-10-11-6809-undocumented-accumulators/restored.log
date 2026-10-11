@@ -1,0 +1,9 @@
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.52s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+test tests::undocumented_accumulator_ops_match_full_reference_results ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 93 filtered out; finished in 0.12s
+

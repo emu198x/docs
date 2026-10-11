@@ -1,0 +1,40 @@
+{
+  "reference_repository": "https://www.6809.org.uk/git/xroar.git",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "baseline_commit": "0d50a1c3b894212607c54a891f066dc944ea3bb1",
+  "result_pairs": 393216,
+  "core_executions": 1179648,
+  "baseline_mismatches": 1179648,
+  "corrected_mismatches": 0,
+  "wrong_xdec_carry_mismatches": 393216,
+  "opcode_order": [
+    "42",
+    "52",
+    "4b",
+    "5b",
+    "4e",
+    "5e"
+  ],
+  "reference_exception": "XDEC C checked independently against published hardware rule, corroborated by MAME and 6809Decoder; all other bits compare with unchanged XRoar outputs.",
+  "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "decoder_commit": "4f7e1846375024888ad7987bd390f434897953cf",
+  "toolchains": {
+    "rust": "1.99.0",
+    "c": "Apple clang 21.0.0"
+  },
+  "sha256": {
+    "reference.c": "b11a940a027c39ec31c4fd66a3b9348cf50cbad28142be972695bf1bfcff9b1f",
+    "results.bin": "8c2d84a4574685b8cac4b73b4b14b551d2bb4a261ce8e1e262448cd3e1222732",
+    "red.log": "ce792349e13a94bdbd6a4f08be3e59dbe8c10749cf2bea3d414690d1832a73ad",
+    "tests.log": "bc5a0d3df78fff1bc3fab09e7c1987bef6094d0faeb8029d785f0c735f652864",
+    "clippy.log": "59ca056ff385a35f08ab00717c6df219cf88dea50fb14b653fe1a54b8d1aba76",
+    "wrong-carry.log": "7cff000ff07dfba5e5988cdf0f3ccd6ffa47841ae749fb46913a74913cb1f253",
+    "restored.log": "2217a9808d03875f60b85fe40d1d63772fcfde67405f1d3633fa9c11ff7e8073"
+  }
+}

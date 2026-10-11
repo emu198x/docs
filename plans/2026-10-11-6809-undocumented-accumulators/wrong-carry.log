@@ -1,0 +1,24 @@
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.93s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+test tests::undocumented_accumulator_ops_match_full_reference_results ... FAILED
+
+failures:
+
+---- tests::undocumented_accumulator_ops_match_full_reference_results stdout ----
+
+thread 'tests::undocumented_accumulator_ops_match_full_reference_results' (92726331) panicked at crates/motorola-6809/src/lib.rs:7026:9:
+assertion `left == right` failed: first mismatch: Some((75, 16384, 0, 0, false, 2))
+  left: 393216
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::undocumented_accumulator_ops_match_full_reference_results
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 93 filtered out; finished in 0.12s
+
+error: test failed, to rerun pass `-p motorola-6809 --lib`

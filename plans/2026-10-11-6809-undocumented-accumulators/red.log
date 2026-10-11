@@ -1,0 +1,25 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.71s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+test tests::undocumented_accumulator_ops_match_full_reference_results ... FAILED
+
+failures:
+
+---- tests::undocumented_accumulator_ops_match_full_reference_results stdout ----
+
+thread 'tests::undocumented_accumulator_ops_match_full_reference_results' (92714885) panicked at crates/motorola-6809/src/lib.rs:6984:9:
+assertion `left == right` failed: first mismatch: Some((66, 16384, 0, 0, true, 1))
+  left: 1179648
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::undocumented_accumulator_ops_match_full_reference_results
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 93 filtered out; finished in 0.07s
+
+error: test failed, to rerun pass `-p motorola-6809 --lib`
