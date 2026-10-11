@@ -1,0 +1,13 @@
+error[E0514]: found crate `ti_sn76489` compiled by an incompatible version of rustc
+ --> probe.rs:1:5
+  |
+1 | use ti_sn76489::{NoiseLfsr,Sn76489};
+  |     ^^^^^^^^^^
+  |
+  = note: the following crate versions were found:
+          crate `ti_sn76489` compiled by rustc 1.99.0 (b940084d7 2026-09-28): /private/tmp/198x-6809-target/debug/libti_sn76489.rlib
+  = help: please recompile that crate using this compiler (rustc 1.98.0 (88d9e12ae 2026-08-18)) (consider running `cargo clean` first)
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0514`.

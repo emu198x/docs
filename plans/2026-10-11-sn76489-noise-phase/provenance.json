@@ -29,8 +29,15 @@
     "probe.rs": "1051689380275400c7c36a4b64bee25a623a0834121a3e79cc1247e032985175",
     "baseline.csv": "b13440044190104a9214d1ef01e0efcf37dca4c928a98eac261174058c0f9c13",
     "check.py": "93e991aa0376fb87ec288cdf0ba3d08c2106fa3aad08778d3a19e65f81eb7387",
-    "build.sh": "77ffdce1805767d381b167e7979e5c42275285525e6c31f4a7545e3ea4c6aaab",
+    "build.sh": "f76a0c8aa94f8b22cdff396054a5f4fd9fa73c475c593bd24a29b49b6a8c6f51",
     "summary.json": "450987d77dea532507a273756984ac0c284744c27486507d476508c56181c85e",
-    "include/ares/ares.hpp": "e2db1bda8ed046d9cdb2aaed7acb5ef4f8f45900567121e5a10e2de93f72207a"
-  }
+    "include/ares/ares.hpp": "e2db1bda8ed046d9cdb2aaed7acb5ef4f8f45900567121e5a10e2de93f72207a",
+    "compiler-mismatch.log": "28d4e4127d04d855c1b00f810a66f85d47e9bdd5521b1667fe5ff123273f9d14",
+    "reproduction.log": "957f4f65574e31523a888a9a46b2e6cbb49515f1f97b411007d4f9642a86faa2",
+    "noise-rebase.json": "ded647254c4eea0f665cddef149a0ac89e76e553e55344d0913749897c45c48f"
+  },
+  "rust_compiler": "rustc 1.99.0 (b940084d7 2026-09-28)",
+  "full_reproduction_exit": 0,
+  "rebased_baseline_commit": "e550ece23ed946fb10960f287eb60e6059c02e83",
+  "rebased_baseline_tree_identical": true
 }
