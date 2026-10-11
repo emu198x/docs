@@ -1,0 +1,47 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6845-registers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/f60370dc94fabfab: Operation not permitted (os error 1)
+    Finished `release` profile [optimized] target(s) in 0.30s
+     Running tests/bios_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/bios_boot-a6ea3adda90a36ff)
+
+running 8 tests
+test mode7_draws_double_height_and_flashing_text_from_basic ... ok
+test boots_to_basic_prompt ... ok
+test mode7_renders_the_banner ... ok
+test keyboard_types_a_basic_expression_and_prints_the_result ... ok
+test os_boots_to_basic_banner ... ok
+test a_flashing_colour_flashes_at_the_mos_rate ... ok
+test the_prompt_cursor_blinks_in_mode_7_and_in_a_bitmap_mode ... ok
+test mos_clock_counts_centiseconds ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 37.99s
+
+     Running tests/firmware_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/firmware_boot-6dd0147d9da11aa9)
+
+running 2 tests
+test the_firmware_reaches_its_boot_screen ... ok
+test the_boot_banner_decodes_back_to_text ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests/interrupt_timing.rs (/private/tmp/198x-sunsoft4-target/release/deps/interrupt_timing-4d946b0cd9cee8d0)
+
+running 2 tests
+test the_interrupt_call_is_recorded_against_the_compendium ... ok
+test rst38_from_code_is_recorded_against_the_compendium ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.29s
+
+     Running tests/microsecond_grid.rs (/private/tmp/198x-sunsoft4-target/release/deps/microsecond_grid-5284ec4d666823d8)
+
+running 3 tests
+test the_interrupt_response_leaves_the_grid ... ok
+test instruction_cost_depends_on_alignment_and_should_not ... ok
+test every_instruction_costs_whole_microseconds ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.62s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/rom_boot-c4a655734189c185)
+
+running 1 test
+test rom_set_boots_without_panic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s

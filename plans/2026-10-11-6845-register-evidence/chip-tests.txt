@@ -1,0 +1,54 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6845-registers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/f60370dc94fabfab: Operation not permitted (os error 1)
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6845-registers/crates/motorola-6845)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.89s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/motorola_6845-76237ac7cfc689c7)
+
+running 21 tests
+test tests::a_horizontal_total_of_255_does_not_overflow_the_counter ... ok
+test tests::a_line_is_r0_plus_one_characters ... ok
+test tests::cursor_is_present_only_between_r10_and_r11_inclusive ... ok
+test tests::display_enable_during_visible ... ok
+test tests::display_enable_off_during_hblank ... ok
+test tests::horizontal_counter_wraps_at_r0 ... ok
+test tests::mc6845_wraps_a_split_cursor_but_hd6845s_does_not ... ok
+test tests::r10_selects_steady_hidden_and_16_or_32_field_blink ... ok
+test tests::old_explicit_state_loads_with_a_reset_blink_phase ... ok
+test tests::register_write_and_read ... ok
+test tests::start_address_from_r12_r13 ... ok
+test tests::write_only_registers_return_zero ... ok
+test tests::zero_horizontal_sync_width_suppresses_hsync ... ok
+test tests::memory_address_increments_during_display ... ok
+test tests::frame_completes ... ok
+test variant_tests::only_the_hd6845s_reads_the_start_address_back ... ok
+test variant_tests::the_default_is_the_old_behaviour ... ok
+test variant_tests::horizontal_counter_names_the_column_the_next_tick_outputs ... ok
+test variant_tests::interlace_sync_and_video_scans_alternate_lines_in_alternate_fields ... ok
+test variant_tests::interlace_sync_alone_leaves_the_raster_address_alone ... ok
+test tests::lowering_r4_or_r9_mid_frame_does_not_strand_a_counter ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/register_writes.rs (/private/tmp/198x-sunsoft4-target/debug/deps/register_writes-71690e6bfd144e17)
+
+running 4 tests
+test new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot ... ok
+test software_cannot_overwrite_the_light_pen_address ... ok
+test register_writes_keep_only_the_bits_present_on_each_part ... ok
+test unused_vertical_display_bit_cannot_change_the_display_enable_signal ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/sync_outputs.rs (/private/tmp/198x-sunsoft4-target/debug/deps/sync_outputs-14f4e55f7a54a2b7)
+
+running 3 tests
+test horizontal_pulses_keep_their_full_width_across_line_wrap ... ok
+test vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart ... ok
+test restoring_an_active_sync_pulse_preserves_its_remaining_intervals ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+   Doc-tests motorola_6845
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,51 @@
+
+running 4 tests
+test register_writes_keep_only_the_bits_present_on_each_part ... FAILED
+test software_cannot_overwrite_the_light_pen_address ... FAILED
+test new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot ... FAILED
+test unused_vertical_display_bit_cannot_change_the_display_enable_signal ... FAILED
+
+failures:
+
+---- register_writes_keep_only_the_bits_present_on_each_part stdout ----
+
+thread 'register_writes_keep_only_the_bits_present_on_each_part' (94517917) panicked at crates/motorola-6845/tests/register_writes.rs:36:17:
+assertion `left == right` failed: Mc6845 R3 write 0x10
+  left: 16
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- software_cannot_overwrite_the_light_pen_address stdout ----
+
+thread 'software_cannot_overwrite_the_light_pen_address' (94517918) panicked at crates/motorola-6845/tests/register_writes.rs:63:17:
+assertion `left == right` failed: Mc6845 R16 is read-only
+  left: 0
+ right: 42
+
+---- new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot stdout ----
+
+thread 'new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot' (94517916) panicked at crates/motorola-6845/tests/register_writes.rs:122:5:
+assertion `left == right` failed
+  left: 128
+ right: 0
+
+---- unused_vertical_display_bit_cannot_change_the_display_enable_signal stdout ----
+
+thread 'unused_vertical_display_bit_cannot_change_the_display_enable_signal' (94517919) panicked at crates/motorola-6845/tests/register_writes.rs:97:17:
+assertion `left == right` failed: Mc6845 R6=0x00, clock 0
+  left: false
+ right: true
+
+
+failures:
+    new_writes_mask_old_snapshot_values_without_rejecting_the_snapshot
+    register_writes_keep_only_the_bits_present_on_each_part
+    software_cannot_overwrite_the_light_pen_address
+    unused_vertical_display_bit_cannot_change_the_display_enable_signal
+
+test result: FAILED. 0 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6845-registers/crates/motorola-6845)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.17s
+     Running tests/register_writes.rs (/private/tmp/198x-sunsoft4-target/debug/deps/register_writes-71690e6bfd144e17)
+error: test failed, to rerun pass `-p motorola-6845 --test register_writes`

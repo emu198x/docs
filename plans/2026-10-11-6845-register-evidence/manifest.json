@@ -1,0 +1,22 @@
+{
+  "baseline_source": "411092c1de02f286ac55086db505268651818739",
+  "tested_source": "8f3dcafa90cb68aafa74ab3ed563d9ec3d79bfa7",
+  "mame_source_sha256": "62523f73d0cf24bad50610d9f0aaa41ab46f0458a5c0601f824fc7e121977bb8",
+  "files": {
+    "README.md": "94b803eeda81f9ad7d4ffce48eb22ab38d2ecb83f82c5b8b45c09e96ed496c51",
+    "after.csv.gz": "2cfdbda9ea871c800490a97e85385300fa17ceb7bb234c4a9318ea4580d00a3b",
+    "after.stderr": "b509dbf7c49a48c389c1915c68912f3c2d221d2812cb40243d4d75c3f5b7d646",
+    "before.csv.gz": "f837faebb9c7a29427a15baa83e6603bf12eadf8de25eee8e2b0c82b3d6e5baa",
+    "before.stderr": "7a6bad2c4a0c2c2120cc1c431c8aefd71bcb369b05b93e93b3f540162cf30d56",
+    "chip-tests.txt": "9b1b30ab5fdbda9c655b7a3345575e44c1b0892053af882b20a4ea77acf48797",
+    "clippy.txt": "29c322577a2fa0f94c9376c8474527a2dd00e00e2bcb2b4ba28968700a47ec68",
+    "firmware-tests.txt": "8a4a9db045f9a16b9b2bcb8517eb6fd3c4fc184180b6d90442e26ad9976a6000",
+    "machines-tests.txt": "a63664fb9c8e57efb74ed19431543cbcecc2a86109c160521646b9f1db9a2df9",
+    "probe.rs": "cf2dfecf9e7561ba501650c03eb32b920c3b3a0db1f95314e1864567677fb4a2",
+    "reference.csv.gz": "9e801e632b0f48fa42b55d4355bbe30a3941b0069073b7734517c0e4f00b51ac",
+    "reference.py": "299745ac7e82e83a07906c994f2b5ccd2ee4a2453dd18ca1cce4a98002babd4e",
+    "reference.stderr": "479f26a3d5d0235ceb1ff414f050b59caf65e7a70a31ae883a183e845938df97",
+    "tests-before.txt": "483bab90696af80bfa48fd607351ac5b2c043fa7bf7c67c88054ed215cd58ff0",
+    "verify.py": "98ef6652e53d05abd50861e0260395ceeed0b8d1c650227eb03234ecf2681596"
+  }
+}
