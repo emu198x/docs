@@ -1,0 +1,78 @@
+{
+  "transitions": 1024,
+  "sampled_inputs": 5,
+  "output_gates": 5,
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "live_edge_negative": "closed input bank failed to hold",
+  "open_output_negative": "output changed during input capture",
+  "samples": [
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "comparisons": 208,
+      "events": [
+        [
+          123,
+          0
+        ],
+        [
+          131,
+          1
+        ]
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "comparisons": 208,
+      "events": [
+        [
+          133,
+          0
+        ],
+        [
+          145,
+          1
+        ]
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "comparisons": 208,
+      "events": [
+        [
+          127,
+          0
+        ],
+        [
+          135,
+          1
+        ]
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "comparisons": 208,
+      "events": [
+        [
+          137,
+          0
+        ],
+        [
+          149,
+          1
+        ]
+      ]
+    }
+  ],
+  "full_replay": {
+    "cases": 32832,
+    "comparisons": 6829056,
+    "pulses": 16416,
+    "uncached_trace_checks": 40,
+    "baseline_matrix_sha256": "7e38e04c51a9418b3b19ef92af77fc03fdbd19bf2198a565af73dcb259b769b3"
+  }
+}
