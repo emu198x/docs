@@ -1,0 +1,27 @@
+{
+  "chip_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "reference_scheduler_sha256": "b0e31fa465bc1b5382c8792ee17106a607d35636aa791981ad404256dda67948",
+  "write_case_sha256": "1455d1776bb793ac9843ccee493deb7796a038bfb4c6992caa647644011d5414",
+  "reset_cases_sha256": "5582048cd82589dd4b762c6ea644cb253096e0e1851e6c7f885039e029765055",
+  "scheduler_sha256": "8df1d3072826cd4be443aa5cb86b7ff7511b5220432a99fb7c7f9437bcf5a171",
+  "driver_sha256": "62e2f20af9b9ccd0fa4b7e4d773c5d5ec0c31c2b7373f475704bd0d2d1d7c734",
+  "baseline": {
+    "cases": 1440,
+    "timer_events": 7560,
+    "irq_calls": 5172,
+    "reset_calls": 1080,
+    "capture_sha256": "d9fd1e7b52360bd39c7f040ddc37d6f6a89ee3c8c9bdaed92bd0b2debf7bf71c"
+  },
+  "reverse-fifo": {
+    "rejected": "scheduler FIFO order mismatch"
+  },
+  "no-cancel": {
+    "rejected": "reset borrow mismatch: (0, 0, 0, -6, 3): [(1899, 0), (1927, 0), (1955, 0), (1983, 0), (2011, 0)]"
+  },
+  "late-reload": {
+    "rejected": "reset delivery mismatch: (0, 0, 0, -6, 1): [1898]"
+  },
+  "early-reset": {
+    "rejected": "reset delivery mismatch: (0, 0, 0, -6, 1): [1896]"
+  }
+}

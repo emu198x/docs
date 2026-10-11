@@ -1,0 +1,118 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.22s
+     Running tests/stimer_delivery_probe.rs (../emu198x/target/debug/deps/stimer_delivery_probe-3460237088aaa12e)
+
+running 1 test
+STIMER clock=1789772 audf=0 lead=1 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1789772 audf=0 lead=1 action=1 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1789772 audf=0 lead=1 action=2 expected=[12, 20, 24, 28, 32, 36, 40] observed=[16, 20, 24, 28, 32, 36, 40] matches=false
+STIMER clock=1789772 audf=0 lead=1 action=3 expected=[12, 16, 21, 25, 29, 33, 37] observed=[17, 21, 25, 29, 33, 37] matches=false
+STIMER clock=1789772 audf=0 lead=2 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1789772 audf=0 lead=2 action=1 expected=[12, 18, 22, 26, 30, 34, 38] observed=[14, 18, 22, 26, 30, 34, 38] matches=false
+STIMER clock=1789772 audf=0 lead=2 action=2 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1789772 audf=0 lead=2 action=3 expected=[12, 20, 24, 28, 32, 36, 40] observed=[16, 20, 24, 28, 32, 36, 40] matches=false
+STIMER clock=1789772 audf=0 lead=3 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1789772 audf=0 lead=3 action=1 expected=[12, 17, 21, 25, 29, 33, 37] observed=[13, 17, 21, 25, 29, 33, 37] matches=false
+STIMER clock=1789772 audf=0 lead=3 action=2 expected=[12, 18, 22, 26, 30, 34, 38] observed=[14, 18, 22, 26, 30, 34, 38] matches=false
+STIMER clock=1789772 audf=0 lead=3 action=3 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1789772 audf=1 lead=1 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1789772 audf=1 lead=1 action=1 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1789772 audf=1 lead=1 action=2 expected=[15, 24, 29, 34, 39, 44] observed=[20, 25, 30, 35, 40, 45] matches=false
+STIMER clock=1789772 audf=1 lead=1 action=3 expected=[15, 25, 30, 35, 40, 45] observed=[21, 26, 31, 36, 41, 46] matches=false
+STIMER clock=1789772 audf=1 lead=2 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1789772 audf=1 lead=2 action=1 expected=[15, 22, 27, 32, 37, 42, 47] observed=[18, 23, 28, 33, 38, 43] matches=false
+STIMER clock=1789772 audf=1 lead=2 action=2 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1789772 audf=1 lead=2 action=3 expected=[15, 24, 29, 34, 39, 44] observed=[20, 25, 30, 35, 40, 45] matches=false
+STIMER clock=1789772 audf=1 lead=3 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1789772 audf=1 lead=3 action=1 expected=[15, 21, 26, 31, 36, 41, 46] observed=[17, 22, 27, 32, 37, 42, 47] matches=false
+STIMER clock=1789772 audf=1 lead=3 action=2 expected=[15, 22, 27, 32, 37, 42, 47] observed=[18, 23, 28, 33, 38, 43] matches=false
+STIMER clock=1789772 audf=1 lead=3 action=3 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1789772 audf=15 lead=1 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1789772 audf=15 lead=1 action=1 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1789772 audf=15 lead=1 action=2 expected=[57, 80, 99, 118, 137] observed=[76, 95, 114, 133] matches=false
+STIMER clock=1789772 audf=15 lead=1 action=3 expected=[57, 81, 100, 119, 138] observed=[77, 96, 115, 134] matches=false
+STIMER clock=1789772 audf=15 lead=2 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1789772 audf=15 lead=2 action=1 expected=[57, 78, 97, 116, 135] observed=[74, 93, 112, 131] matches=false
+STIMER clock=1789772 audf=15 lead=2 action=2 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1789772 audf=15 lead=2 action=3 expected=[57, 80, 99, 118, 137] observed=[76, 95, 114, 133] matches=false
+STIMER clock=1789772 audf=15 lead=3 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1789772 audf=15 lead=3 action=1 expected=[57, 77, 96, 115, 134] observed=[73, 92, 111, 130] matches=false
+STIMER clock=1789772 audf=15 lead=3 action=2 expected=[57, 78, 97, 116, 135] observed=[74, 93, 112, 131] matches=false
+STIMER clock=1789772 audf=15 lead=3 action=3 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1789772 audf=255 lead=1 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1789772 audf=255 lead=1 action=1 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER clock=1789772 audf=255 lead=1 action=2 expected=[777, 1040, 1299, 1558, 1817] observed=[1036, 1295, 1554, 1813] matches=false
+STIMER clock=1789772 audf=255 lead=1 action=3 expected=[777, 1041, 1300, 1559, 1818] observed=[1037, 1296, 1555, 1814] matches=false
+STIMER clock=1789772 audf=255 lead=2 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1789772 audf=255 lead=2 action=1 expected=[777, 1038, 1297, 1556, 1815] observed=[1034, 1293, 1552, 1811] matches=false
+STIMER clock=1789772 audf=255 lead=2 action=2 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER clock=1789772 audf=255 lead=2 action=3 expected=[777, 1040, 1299, 1558, 1817] observed=[1036, 1295, 1554, 1813] matches=false
+STIMER clock=1789772 audf=255 lead=3 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1789772 audf=255 lead=3 action=1 expected=[777, 1037, 1296, 1555, 1814] observed=[1033, 1292, 1551, 1810] matches=false
+STIMER clock=1789772 audf=255 lead=3 action=2 expected=[777, 1038, 1297, 1556, 1815] observed=[1034, 1293, 1552, 1811] matches=false
+STIMER clock=1789772 audf=255 lead=3 action=3 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER clock=1773447 audf=0 lead=1 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1773447 audf=0 lead=1 action=1 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1773447 audf=0 lead=1 action=2 expected=[12, 20, 24, 28, 32, 36, 40] observed=[16, 20, 24, 28, 32, 36, 40] matches=false
+STIMER clock=1773447 audf=0 lead=1 action=3 expected=[12, 16, 21, 25, 29, 33, 37] observed=[17, 21, 25, 29, 33, 37] matches=false
+STIMER clock=1773447 audf=0 lead=2 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1773447 audf=0 lead=2 action=1 expected=[12, 18, 22, 26, 30, 34, 38] observed=[14, 18, 22, 26, 30, 34, 38] matches=false
+STIMER clock=1773447 audf=0 lead=2 action=2 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1773447 audf=0 lead=2 action=3 expected=[12, 20, 24, 28, 32, 36, 40] observed=[16, 20, 24, 28, 32, 36, 40] matches=false
+STIMER clock=1773447 audf=0 lead=3 action=0 expected=[12, 16, 20, 24, 28, 32, 36, 40] observed=[12, 16, 20, 24, 28, 32, 36, 40] matches=true
+STIMER clock=1773447 audf=0 lead=3 action=1 expected=[12, 17, 21, 25, 29, 33, 37] observed=[13, 17, 21, 25, 29, 33, 37] matches=false
+STIMER clock=1773447 audf=0 lead=3 action=2 expected=[12, 18, 22, 26, 30, 34, 38] observed=[14, 18, 22, 26, 30, 34, 38] matches=false
+STIMER clock=1773447 audf=0 lead=3 action=3 expected=[12, 19, 23, 27, 31, 35, 39] observed=[15, 19, 23, 27, 31, 35, 39] matches=false
+STIMER clock=1773447 audf=1 lead=1 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1773447 audf=1 lead=1 action=1 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1773447 audf=1 lead=1 action=2 expected=[15, 24, 29, 34, 39, 44] observed=[20, 25, 30, 35, 40, 45] matches=false
+STIMER clock=1773447 audf=1 lead=1 action=3 expected=[15, 25, 30, 35, 40, 45] observed=[21, 26, 31, 36, 41, 46] matches=false
+STIMER clock=1773447 audf=1 lead=2 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1773447 audf=1 lead=2 action=1 expected=[15, 22, 27, 32, 37, 42, 47] observed=[18, 23, 28, 33, 38, 43] matches=false
+STIMER clock=1773447 audf=1 lead=2 action=2 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1773447 audf=1 lead=2 action=3 expected=[15, 24, 29, 34, 39, 44] observed=[20, 25, 30, 35, 40, 45] matches=false
+STIMER clock=1773447 audf=1 lead=3 action=0 expected=[15, 20, 25, 30, 35, 40, 45] observed=[15, 20, 25, 30, 35, 40, 45] matches=true
+STIMER clock=1773447 audf=1 lead=3 action=1 expected=[15, 21, 26, 31, 36, 41, 46] observed=[17, 22, 27, 32, 37, 42, 47] matches=false
+STIMER clock=1773447 audf=1 lead=3 action=2 expected=[15, 22, 27, 32, 37, 42, 47] observed=[18, 23, 28, 33, 38, 43] matches=false
+STIMER clock=1773447 audf=1 lead=3 action=3 expected=[15, 23, 28, 33, 38, 43] observed=[19, 24, 29, 34, 39, 44] matches=false
+STIMER clock=1773447 audf=15 lead=1 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1773447 audf=15 lead=1 action=1 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1773447 audf=15 lead=1 action=2 expected=[57, 80, 99, 118, 137] observed=[76, 95, 114, 133] matches=false
+STIMER clock=1773447 audf=15 lead=1 action=3 expected=[57, 81, 100, 119, 138] observed=[77, 96, 115, 134] matches=false
+STIMER clock=1773447 audf=15 lead=2 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1773447 audf=15 lead=2 action=1 expected=[57, 78, 97, 116, 135] observed=[74, 93, 112, 131] matches=false
+STIMER clock=1773447 audf=15 lead=2 action=2 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1773447 audf=15 lead=2 action=3 expected=[57, 80, 99, 118, 137] observed=[76, 95, 114, 133] matches=false
+STIMER clock=1773447 audf=15 lead=3 action=0 expected=[57, 76, 95, 114, 133] observed=[57, 76, 95, 114, 133] matches=true
+STIMER clock=1773447 audf=15 lead=3 action=1 expected=[57, 77, 96, 115, 134] observed=[73, 92, 111, 130] matches=false
+STIMER clock=1773447 audf=15 lead=3 action=2 expected=[57, 78, 97, 116, 135] observed=[74, 93, 112, 131] matches=false
+STIMER clock=1773447 audf=15 lead=3 action=3 expected=[57, 79, 98, 117, 136] observed=[75, 94, 113, 132] matches=false
+STIMER clock=1773447 audf=255 lead=1 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1773447 audf=255 lead=1 action=1 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER clock=1773447 audf=255 lead=1 action=2 expected=[777, 1040, 1299, 1558, 1817] observed=[1036, 1295, 1554, 1813] matches=false
+STIMER clock=1773447 audf=255 lead=1 action=3 expected=[777, 1041, 1300, 1559, 1818] observed=[1037, 1296, 1555, 1814] matches=false
+STIMER clock=1773447 audf=255 lead=2 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1773447 audf=255 lead=2 action=1 expected=[777, 1038, 1297, 1556, 1815] observed=[1034, 1293, 1552, 1811] matches=false
+STIMER clock=1773447 audf=255 lead=2 action=2 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER clock=1773447 audf=255 lead=2 action=3 expected=[777, 1040, 1299, 1558, 1817] observed=[1036, 1295, 1554, 1813] matches=false
+STIMER clock=1773447 audf=255 lead=3 action=0 expected=[777, 1036, 1295, 1554, 1813] observed=[777, 1036, 1295, 1554, 1813] matches=true
+STIMER clock=1773447 audf=255 lead=3 action=1 expected=[777, 1037, 1296, 1555, 1814] observed=[1033, 1292, 1551, 1810] matches=false
+STIMER clock=1773447 audf=255 lead=3 action=2 expected=[777, 1038, 1297, 1556, 1815] observed=[1034, 1293, 1552, 1811] matches=false
+STIMER clock=1773447 audf=255 lead=3 action=3 expected=[777, 1039, 1298, 1557, 1816] observed=[1035, 1294, 1553, 1812] matches=false
+STIMER_SUMMARY cases=96 controls=24 failures=72
+
+thread 'stimer_preserves_pending_irqs_until_the_reset_stages_arrive' (89381112) panicked at crates/atari-pokey/tests/stimer_delivery_probe.rs:79:5:
+assertion `left == right` failed: STIMER must preserve pending IRQs until its reset stages arrive
+  left: 72
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test stimer_preserves_pending_irqs_until_the_reset_stages_arrive ... FAILED
+
+failures:
+
+failures:
+    stimer_preserves_pending_irqs_until_the_reset_stages_arrive
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+error: test failed, to rerun pass `-p atari-pokey --test stimer_delivery_probe`
