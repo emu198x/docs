@@ -1,0 +1,84 @@
+{
+  "counts": {
+    "halted": 0,
+    "cycle_count": 0,
+    "registers": 0,
+    "bus_trace": 96776,
+    "write_effects": 0,
+    "write_timing": 88000,
+    "cases": 96800,
+    "exact": 24
+  },
+  "by_opcode": {
+    "0060": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0063": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0064": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0066": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0067": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0068": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "0069": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "006a": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "006c": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    },
+    "006d": {
+      "bus_trace": 8776,
+      "cases": 8800,
+      "exact": 24
+    },
+    "006f": {
+      "bus_trace": 8800,
+      "write_timing": 8800,
+      "cases": 8800
+    }
+  },
+  "write_cycle_delta_actual_minus_reference": {
+    "-2": 88000
+  },
+  "first_examples": {
+    "bus_trace": {
+      "input": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000",
+      "reference": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000 | 7 00 00 09 50 5010 6030 7040 8050 4002 | r4000:60,r4001:00,r4002:00,rffff:ed,r5010:65,rffff:ed,w5010:9b | 0",
+      "actual": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000 | 7 00 00 09 50 5010 6030 7040 8050 4002 | r4000:60,r4001:00,rffff:ed,r5010:65,w5010:9b,rffff:ed,rffff:ed | 0"
+    },
+    "write_timing": {
+      "input": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000",
+      "reference": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000 | 7 00 00 09 50 5010 6030 7040 8050 4002 | r4000:60,r4001:00,r4002:00,rffff:ed,r5010:65,rffff:ed,w5010:9b | 0",
+      "actual": "0060 0000 0000 0000 0000 0000 0000 0050 5010 6030 7040 8050 4000 | 7 00 00 09 50 5010 6030 7040 8050 4002 | r4000:60,r4001:00,rffff:ed,r5010:65,w5010:9b,rffff:ed,rffff:ed | 0"
+    }
+  }
+}

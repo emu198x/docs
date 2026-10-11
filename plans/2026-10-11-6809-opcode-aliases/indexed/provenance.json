@@ -1,0 +1,43 @@
+{
+  "reference_repository": "https://www.6809.org.uk/git/xroar.git",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "emu198x_commit": "77dc18eb0c5a126a1579dc1c43e4ae5f678f50cc",
+  "toolchains": {
+    "rust": "rustc 1.99.0 (b940084d7 2026-09-28)",
+    "c": "Apple clang 21.0.0 (clang-2100.3.34.2)",
+    "python": "3.14.3"
+  },
+  "cases": 96800,
+  "operations": 11,
+  "postbytes": 220,
+  "offset_patterns": 5,
+  "register_seeds": 4,
+  "initial_pcs": 2,
+  "trace_sha256": {
+    "cases.txt": "8946c5b397ff178b70d1b333ec2944eecfda3775bbe30cc71562571e93cf0d4a",
+    "reference.txt": "2495c035f9ae63c61977a2354122f6e013ca3099b64decc367f0fec2b311a99b",
+    "before.txt": "06bd97d69528d600c2c97c7c7891b98574dc8766eaf686202ad2a2daeaed7d59"
+  },
+  "artifact_sha256": {
+    "compare.py": "23dd00f9d8fcdee6c0efb289f8d02d53ab4de30fe436db940df3522d4d077fd6",
+    "generate_cases.py": "9b407716ea5e4082c42f02a7f414e832831760cace0ed2c851b54b439d8772ca",
+    "probe.rs": "117796ee051025d3ce9ff3f9e770695484e28bae1ef4d26e6b6ef393e9fa367a",
+    "reference.c": "9234918fdfc19ab2fe31a41857a5af0fcd8dd4df7ab4e6ae40f9056fb00ff38a",
+    "self-tests.log": "c3202b5bf0a0136fee619c1cb91a81fc6d8e563e8202f098332849cfbaef0614",
+    "summary.json": "db09755d1029a9ac525f7cbd07377f28c1130347472f9113dcf58c3d7e0aa25b",
+    "test_compare.py": "54a0c4c52fc2afaf802bf2393d63b60b887062f6e6471536d7a41039d4adb350",
+    "traces.zip": "3a49dabaef9fe3666c9292362037aabe740ba570b209123cad3e220e5cc22fa1"
+  },
+  "limits": [
+    "Flat 64 KiB memory; inactive interrupts; one instruction per case.",
+    "Addresses, read/write direction and bytes are compared; sideband signals and next-instruction fetch pins are not captured.",
+    "Only currently accepted indexed postbytes are covered; no claim of complete hardware opcode coverage.",
+    "Reference implementation agreement is not a new physical hardware measurement."
+  ]
+}

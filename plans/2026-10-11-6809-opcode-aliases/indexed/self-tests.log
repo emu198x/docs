@@ -1,0 +1,14 @@
+test_current_fault_detected (test_compare.ComparatorTests.test_current_fault_detected) ... ok
+test_cycle_mutation_detected (test_compare.ComparatorTests.test_cycle_mutation_detected) ... ok
+test_duplicate_rejected (test_compare.ComparatorTests.test_duplicate_rejected) ... ok
+test_empty_rejected (test_compare.ComparatorTests.test_empty_rejected) ... ok
+test_invalid_event_rejected (test_compare.ComparatorTests.test_invalid_event_rejected) ... ok
+test_missing_row_rejected (test_compare.ComparatorTests.test_missing_row_rejected) ... ok
+test_reference_control (test_compare.ComparatorTests.test_reference_control) ... ok
+test_register_mutation_detected (test_compare.ComparatorTests.test_register_mutation_detected) ... ok
+test_write_mutation_detected (test_compare.ComparatorTests.test_write_mutation_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 13.819s
+
+OK
