@@ -152,6 +152,10 @@ def run_case(
         slow = initial_slow if step < mode_change else final_slow
         if slow_order == "data-first":
             settle("clock", clock, {"ph2": old_ph2, "epck0f": rc[3], "slow": slow})
+            if old_ph2:
+                # The controller input bank is still open before this phase
+                # closes. A changed slow latch reaches its sampled input now.
+                rc_sample = (rc[0], clock.values[clock.node("slowf")])
         if not ph2:
             rc = parts["clocks"][rc_sample]
             irq = parts["irq"][irq_sample]

@@ -1,0 +1,11 @@
+{
+  "baseline_matrix_sha256": "7e38e04c51a9418b3b19ef92af77fc03fdbd19bf2198a565af73dcb259b769b3",
+  "corrected_matrix_sha256": "6df695c0b9b82e1efb0f1b2fed6f086e8f56b1ff26c8da37c712f2f47ed37c9a",
+  "total_cases": 32832,
+  "changed_cases": 960,
+  "changed_nmi_cases": 696,
+  "dynamic_replay_cases": 1728,
+  "dynamic_replay_observations": 359424,
+  "dynamic_replay_pulses": 864,
+  "unrelated_cases_unchanged": 31104
+}
