@@ -1,0 +1,65 @@
+[
+  {
+    "name": "basic-4-b000.901465-23.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/basic-4-b000.901465-23.bin",
+    "bytes": 4096,
+    "sha1": "975ee25e28ff302879424587e5fb4ba19f403adc",
+    "sha256": "efa9918319000c614bbc56f9a825d260bafbc109938560ecdfd5640b841e87e4"
+  },
+  {
+    "name": "basic-4-c000.901465-20.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/basic-4-c000.901465-20.bin",
+    "bytes": 4096,
+    "sha1": "242f98298931d21eaacb55fe635e44b7fc192b0a",
+    "sha256": "7574ff95812cd8c3131061e1e2ea86ec47fdbe848fe274c5b4697b0309247585"
+  },
+  {
+    "name": "basic-4-d000.901465-21.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/basic-4-d000.901465-21.bin",
+    "bytes": 4096,
+    "sha1": "1bb236c72c726e8fb029c68f9bfa5ee803faf0a8",
+    "sha256": "e54e6ebc17e1a1120ca5b3cc9d80a42e8419c50895e88c41179afbfba0c35f9e"
+  },
+  {
+    "name": "kernal-4.901465-22.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/kernal-4.901465-22.bin",
+    "bytes": 4096,
+    "sha1": "96a0fa56e0c937da92971d9c99d504e44e898806",
+    "sha256": "7cf8678b748bda1ffedee69ea54888feb3f5ec66dca8143375cbdf8c3de4d573"
+  },
+  {
+    "name": "edit-4-40-n-50Hz.901498-01.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/edit-4-40-n-50Hz.901498-01.bin",
+    "bytes": 2048,
+    "sha1": "05af284c914d53a52987b5f602466de75765f650",
+    "sha256": "e851f8c61b9ae8d81236e093ba9efbb21576d7eeab4f82435ba3be5e081d8d48"
+  },
+  {
+    "name": "edit-4-80-b-50Hz.901474-04-0283.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/edit-4-80-b-50Hz.901474-04-0283.bin",
+    "bytes": 2048,
+    "sha1": "81975eab31a8f4f51ae2a20d099a567c7b3f2dd1",
+    "sha256": "c4863ecf4a61e9c1d1e600b6dcefe4672b386072ef1033f12c0ead814de4ad9c"
+  },
+  {
+    "name": "characters-2.901447-10.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/characters-2.901447-10.bin",
+    "bytes": 2048,
+    "sha1": "0157a2d55b7ac4eaeb38475889ebeea52e2593db",
+    "sha256": "da3374c21d6ea440cef5f338ce3f524e0a1e40dcb1ef64446c695f92c636f1fa"
+  },
+  {
+    "name": "edit-4-80-b-50Hz.901474-04-3681.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/edit-4-80-b-50Hz.901474-04-3681.bin",
+    "bytes": 2048,
+    "sha1": "7040b283ba39e9630e3d147f7d076b7abc39bc70",
+    "sha256": "331a18d3f01aba4cb2ceb844bc6b5b81282565328412c762e2549ab7d0905442"
+  },
+  {
+    "name": "edit-4-80-b-50Hz.901474-04_alt.bin",
+    "url": "https://www.zimmers.net/anonftp/pub/cbm/firmware/computers/pet/edit-4-80-b-50Hz.901474-04_alt.bin",
+    "bytes": 2048,
+    "sha1": "66887061b6c4ebef7d6efb90af9afd5e2c3b08ba",
+    "sha256": "0c7b772881f437cf8526f9c8e3d03acb16ab1ae07aa7b69f940c2ce5a44a6099"
+  }
+]

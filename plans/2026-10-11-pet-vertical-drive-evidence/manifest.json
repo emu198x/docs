@@ -1,0 +1,83 @@
+{
+  "baseline": "f7c6b0342e76ab604d7d1a2feb5cc2ee64f067d6",
+  "prototype": "baseline plus prototype.patch; unmerged",
+  "firmware_baseline": {
+    "passed": 5,
+    "failed": 0
+  },
+  "firmware_prototype": {
+    "passed": 2,
+    "failed": 3
+  },
+  "polling_samples_per_capture": 13912,
+  "files": {
+    "README.md": {
+      "bytes": 3367,
+      "sha256": "824af57fe7e978897815938bdbcd8c50dacd68f858bf854f0ff4545fbe4c25dd"
+    },
+    "before.csv.gz": {
+      "bytes": 41991,
+      "sha256": "757adfd5f28d4b6dab25aa72c992275ee3ecb2099cb46bf767f227d987a8eb0a"
+    },
+    "firmware-after-trace.txt": {
+      "bytes": 2434,
+      "sha256": "40dab2dcc4174faacacd89e34df649a9702d7239fb2d6757f60a197ef97f382b"
+    },
+    "firmware-downloads.json": {
+      "bytes": 2854,
+      "sha256": "357bca07ead7e4ddc976fc251ad6ecae241472bda211c8055009f6d6ba39ac7f"
+    },
+    "firmware_probe.rs": {
+      "bytes": 1258,
+      "sha256": "87e09140487f1b9c0c24321df4d3c6d373c58afb6bdb22f1b54fb5613fe55b5f"
+    },
+    "installed-fixtures.json": {
+      "bytes": 956,
+      "sha256": "90467a9b2d87e1c30a2204d90fa47df7a0ff5870962292d9e1ee45e8a9eb6ffc"
+    },
+    "prototype.csv.gz": {
+      "bytes": 41930,
+      "sha256": "470334fc88a941afc0367be7cc6200ba698e526ef4a97efefc8189f5dbe34cd3"
+    },
+    "prototype.patch": {
+      "bytes": 5654,
+      "sha256": "4204340e9dc37e66f07cc5fbdd30c1562557f23ea77243f06cee27f30b33f94c"
+    },
+    "reference-result.txt": {
+      "bytes": 61,
+      "sha256": "bf435f0ff72f6632ce960844162bbfe51291287bb2a337c17ca197ac224717a8"
+    },
+    "retrace-clippy.txt": {
+      "bytes": 2503,
+      "sha256": "03ce76b606fe3db105666f688e398b60b0979664c3bef940480ff19dc815b124"
+    },
+    "retrace-firmware-baseline.txt": {
+      "bytes": 1266,
+      "sha256": "f63ea5323d3cf898fcea7c06d5471441d0f2b785d11e2df5fec4a30a39102236"
+    },
+    "retrace-firmware.txt": {
+      "bytes": 2511,
+      "sha256": "d37f5ab77b1ef3a0cdc369794b690df69ab14383472e2e8b9a7485b550fa8187"
+    },
+    "retrace-test-before.txt": {
+      "bytes": 1703,
+      "sha256": "afb472a524296703de64b7c547d4fb2f8bb29f462ca16ad1a1074b4580596a0a"
+    },
+    "retrace-tests.txt": {
+      "bytes": 11274,
+      "sha256": "f0b76cd71a2290615b03e1b4f9ac2ae564b928914977426bf6f6cf2b49c4fe75"
+    },
+    "retrace_probe.rs": {
+      "bytes": 1029,
+      "sha256": "2ffab355f87251cec2063be2b4cdf58393b91501581ad9a016ebeb681cdcc819"
+    },
+    "retrace_reference.py": {
+      "bytes": 2861,
+      "sha256": "d63e039b7a3eb8f11f3b5b2ad6091a5ac5f525272de92afb14c5d9545e9f363e"
+    },
+    "verify.py": {
+      "bytes": 2419,
+      "sha256": "49b84b9e40bc5181e739827f812e09ade2bd5b1d392a8033ebedf6038d0ec24d"
+    }
+  }
+}

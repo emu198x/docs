@@ -1,0 +1,32 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-pet-crtc-ports/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/d02811bb1b195e2e: Operation not permitted (os error 1)
+   Compiling thiserror v2.0.20
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/motorola-6845)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/mos-via-6522)
+   Compiling mos-pia-6520 v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/mos-pia-6520)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-pet-crtc-ports/crates/emu198x-mos-6502)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-pet-crtc-ports/crates/machine-commodore-pet)
+   Compiling cobs v0.3.0
+   Compiling postcard v1.1.3
+    Finished `release` profile [optimized] target(s) in 6.01s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_commodore_pet-c2fd7bf19ffad050)
+
+running 1 test
+test tests::vertical_drive_reaches_via_and_pia_with_the_same_polarity ... FAILED
+
+failures:
+
+---- tests::vertical_drive_reaches_via_and_pia_with_the_same_polarity stdout ----
+
+thread 'tests::vertical_drive_reaches_via_and_pia_with_the_same_polarity' (94643630) panicked at crates/machine-commodore-pet/src/lib.rs:511:21:
+assertion `left == right` failed: VIA PB5: 40 columns, clock 32832
+  left: false
+ right: true
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::vertical_drive_reaches_via_and_pia_with_the_same_polarity
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 18 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-commodore-pet --lib`

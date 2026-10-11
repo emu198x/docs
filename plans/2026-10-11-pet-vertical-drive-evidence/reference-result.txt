@@ -1,0 +1,1 @@
+131072 VIA direction/latch cases; two PIA levels; 0 failures

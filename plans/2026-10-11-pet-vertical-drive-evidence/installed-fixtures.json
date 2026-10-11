@@ -1,0 +1,32 @@
+[
+  {
+    "name": "kernal.rom",
+    "bytes": 4096,
+    "sha1": "38742bdf449f629bcba6276ef24d3daeb7da6e84",
+    "sha256": "056d5e84a6e4f2b5b40a4109f49515c2496a4bf99139a9f59abe486ded5cd03d"
+  },
+  {
+    "name": "basic.rom",
+    "bytes": 8192,
+    "sha1": "9322a9f0354b9049847d98d3a045fbec860a6264",
+    "sha256": "5b426b5c50350e5d50c4308a81288bb34f310d7384bcc43c66a0e18716a4cdbe"
+  },
+  {
+    "name": "editor.rom",
+    "bytes": 2048,
+    "sha1": "5e5502ce32f5a7e387d65efe058916282041e54b",
+    "sha256": "5338b1dffebd695f6110c9995e16f7536bb63a909c2a0062b4789de46904ade9"
+  },
+  {
+    "name": "char.rom",
+    "bytes": 4096,
+    "sha1": "9ed8985f2d0f1ea1f196e269cc96efee3dff6b55",
+    "sha256": "d066cbc5026c0736fc7d8fbf4023337c15a23cd0365e04f4f94aeb47df46e409"
+  },
+  {
+    "name": "chargen.rom",
+    "bytes": 4096,
+    "sha1": "9ed8985f2d0f1ea1f196e269cc96efee3dff6b55",
+    "sha256": "d066cbc5026c0736fc7d8fbf4023337c15a23cd0365e04f4f94aeb47df46e409"
+  }
+]

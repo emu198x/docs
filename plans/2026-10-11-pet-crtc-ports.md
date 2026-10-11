@@ -2,7 +2,10 @@
 
 Lane: engineering-frontier accuracy. Investigation follows the merged 6845
 register-mask correction, source PR #1737. No PET production correction has
-been made yet.
+been merged yet. A vertical-drive prototype has exposed a firmware/model
+mismatch; its [evidence](2026-10-11-pet-vertical-drive-evidence/) and
+[proposed correction](2026-10-11-pet-board-firmware-design.md) are retained
+separately. The data/status-port fault below remains unfixed.
 
 ## Confirmed fault
 
