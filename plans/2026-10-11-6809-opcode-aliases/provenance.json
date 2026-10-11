@@ -1,0 +1,15 @@
+{
+  "repository": "https://www.6809.org.uk/git/xroar.git",
+  "commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "cases": 1056,
+  "completed_controls_with_bus_mismatch": 528,
+  "halted_aliases": 528,
+  "reference_sha256": "3c93e25a9d3097d3aee212a4c57f726ff1c006d3ae359cb6a987083b655eef4f",
+  "inherent_fixture_sha256": "f6d35f0f5ee899476e2f2e97fef8d9263d673c3296598e6ee69506938122dced"
+}

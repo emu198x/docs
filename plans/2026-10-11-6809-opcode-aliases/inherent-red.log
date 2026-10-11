@@ -1,0 +1,19 @@
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.43s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+
+thread 'tests::inherent_aliases_match_full_reference_bus_traces' (92536121) panicked at crates/motorola-6809/src/lib.rs:6812:9:
+480 / 480 bus vectors differ; first: Some("12 00 00 4000 2 00 00 00 4001 00 r4000:12,r4001:12: got 2 00 00 00 4001 00 r4000:12,rffff:00, halt=false")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::inherent_aliases_match_full_reference_bus_traces ... FAILED
+
+failures:
+
+failures:
+    tests::inherent_aliases_match_full_reference_bus_traces
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 90 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p motorola-6809 --lib`
