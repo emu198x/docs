@@ -21,9 +21,13 @@ from layout_network import Union, extract, rectangle, require
 from trace_circuit import g, groups, load_cells, top_routing
 
 TARGETS = ["RCPLA_RCPLA", "RSYNC_RSYNCPLA", g.TARGET, "VCELL_VCELL_GINGER$LOE_LRIC_LY_"]
+CLOCK = "VCELL_VCELL_GINGER$LOE_CLKGEN_L"
+HANDOFF_WIRING = ["VCELL_VCELL_GINGER$LOE_LM_LY_", "VCELL_VCELL_GINGER$LOE_GBFM2_LY"]
 
 
-def local_network(cells: dict, root: str) -> tuple[list[dict], dict, dict[int, int]]:
+def local_network(
+    cells: dict, root: str, *, retain_single_terminal: bool = False
+) -> tuple[list[dict], dict, dict[int, int]]:
     elements, _ = flatten(cells, root)
     # Layer 8 appears only as a pad opening in these added cells. Its role is
     # unqualified: exclude it from the candidate electrical deck only after
@@ -56,7 +60,7 @@ def local_network(cells: dict, root: str) -> tuple[list[dict], dict, dict[int, i
                     "text": f"@@route:{index}",
                 }
             )
-    network = extract(elements + anchors)
+    network = extract(elements + anchors, retain_single_terminal=retain_single_terminal)
     routes = {}
     for node, names in network["labels"].items():
         for name in names:
@@ -97,9 +101,22 @@ def join_rectangles(
     return union
 
 
-def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
+def connect(
+    cells: dict,
+    targets: list[str] = TARGETS,
+    *,
+    single_terminal_cells: frozenset[str] = frozenset(),
+) -> dict:
     rects, parent_labels, excluded = top_routing(cells)
-    cache = {root: local_network(cells, root) for root in targets}
+    require(
+        single_terminal_cells <= set(targets), "diagnostic cell missing from targets"
+    )
+    cache = {
+        root: local_network(
+            cells, root, retain_single_terminal=root in single_terminal_cells
+        )
+        for root in targets
+    }
     raw_placements = []
     for index, records in enumerate(groups(cells["GINGER_GINGER"])):
         mapping = {r.kind: r.data for r in records}
@@ -126,6 +143,11 @@ def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
         keys.update(
             (root, n) for d in network["devices"] for n in [d["gate"], *d["terminals"]]
         )
+        keys.update(
+            (root, n)
+            for d in network.get("unmodelled_structures", [])
+            for n in [d["gate"], *d["terminals"]]
+        )
         for index, node in routes.items():
             e = elements[index]
             placed = {**e, "xy": [transform(p, placements[root]) for p in e["xy"]]}
@@ -137,6 +159,7 @@ def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
     )
     labels = defaultdict(set)
     device_list = []
+    unmodelled = []
     for root, (_, network, _) in local.items():
         for node, names in network["labels"].items():
             labels[union.find(node_ids[root, int(node)])].update(
@@ -157,6 +180,18 @@ def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
                 "parent routing shorts transistor channel",
             )
             device_list.append(converted)
+        for d in network.get("unmodelled_structures", []):
+            unmodelled.append(
+                {
+                    **d,
+                    "gate": union.find(node_ids[root, d["gate"]]),
+                    "terminals": sorted(
+                        union.find(node_ids[root, n]) for n in d["terminals"]
+                    ),
+                    "cell": root,
+                    "xy": transform(tuple(d["xy"]), placements[root]),
+                }
+            )
     a = np.array(rects)
     unconnected = []
     for name, layer, x, y in parent_labels:
@@ -173,7 +208,7 @@ def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
             labels[next(iter(roots))].add("TOP/" + name)
         else:
             unconnected.append(name)
-    return {
+    result = {
         "labels": {str(n): sorted(names) for n, names in labels.items() if names},
         "devices": device_list,
         "unconnected_parent_labels": sorted(unconnected),
@@ -185,6 +220,10 @@ def connect(cells: dict, targets: list[str] = TARGETS) -> dict:
             - sum(excluded.get(root, 0) for root in targets),
         },
     }
+    if unmodelled:
+        result["unmodelled_structures"] = unmodelled
+        result["summary"]["unmodelled_structures"] = len(unmodelled)
+    return result
 
 
 def named_binding(network: dict, alias: str) -> int:
@@ -235,12 +274,36 @@ def report(network: dict) -> dict:
             ),
         }
     )
+    if CLOCK in network["summary"]["local_networks"]:
+        clock = CLOCK + "::" + CLOCK
+        core = "RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G"
+        routes["clock_n12_to_controller_output_phase"] = shared_route(
+            network, clock + "/n12", core + "/clk"
+        )
+        routes["clock_n13_to_controller_input_phase"] = shared_route(
+            network, clock + "/n13", core + "/clkin"
+        )
+    if all(root in network["summary"]["local_networks"] for root in HANDOFF_WIRING):
+        routes["internal_halt_to_halt_pad"] = shared_route(
+            network, rsync + "/halt", halt + "/in"
+        )
     return {
         "archive_sha256": g.ARCHIVE_SHA,
         "member_sha256": g.MEMBER_SHA,
         "inventory": network["summary"],
         "alias_groups": groups,
         "verified_routes": routes,
+        "unmodelled_structure_ports": [
+            {
+                "cell": d["cell"],
+                "kind": d["kind"],
+                "gate_labels": network["labels"].get(str(d["gate"]), []),
+                "terminal_labels": [
+                    network["labels"].get(str(n), []) for n in d["terminals"]
+                ],
+            }
+            for d in network.get("unmodelled_structures", [])
+        ],
         "name_only_binding_rejection": failure,
         "phase_schedule_qualified": False,
         "scope": "partial placed network; remaining driver paths and analogue phase relationships are not qualified",
@@ -252,18 +315,35 @@ def main() -> None:
     parser.add_argument("archive", type=Path)
     parser.add_argument("output", type=Path)
     parser.add_argument(
-        "--scope", choices=["controllers", "pads", "routing"], default="routing"
+        "--scope",
+        choices=["controllers", "pads", "routing", "clock"],
+        default="routing",
     )
     parser.add_argument("--summary", type=Path)
     args = parser.parse_args()
     cells = load_cells(args.archive)
     targets = list(TARGETS)
-    if args.scope in ["pads", "routing"]:
+    if args.scope in ["pads", "routing", "clock"]:
         targets += ["PADLAY_HPAD06I__", "PADLAY_HPAD06M__", "PADLAY_HPAD06__"]
-    if args.scope == "routing":
+    if args.scope in ["routing", "clock"]:
         targets += ["VCELL_VCELL_GINGER$LOE_HVSYNC_L"]
         targets += [name for name in cells if name.startswith("LARRY2_LRC_")]
-    result = connect(cells, targets)
+    if args.scope == "clock":
+        targets += ["VCELL_VCELL_GINGER$LOE_RLOG_LY_", CLOCK, *HANDOFF_WIRING]
+    result = connect(
+        cells,
+        targets,
+        single_terminal_cells=frozenset([CLOCK])
+        if args.scope == "clock"
+        else frozenset(),
+    )
+    if args.scope == "clock":
+        inventory = result["summary"]["local_networks"][CLOCK]
+        require(inventory["devices"] == 114, "clock transistor inventory changed")
+        require(
+            inventory.get("unmodelled_structures") == 2,
+            "clock diagnostic inventory changed",
+        )
     args.output.write_text(json.dumps(result, indent=2) + "\n")
     if args.summary:
         args.summary.write_text(json.dumps(report(result), indent=2) + "\n")

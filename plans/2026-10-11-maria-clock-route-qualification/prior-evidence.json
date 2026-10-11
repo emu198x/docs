@@ -1,0 +1,17 @@
+[
+  {
+    "probe": "interrupt-circuit-summary.json",
+    "unchanged": true,
+    "canonical_json_sha256": "5bde89e11b936a5fdab08be7394829548f0fa302e30a065a2e1cf48a126f8eb7"
+  },
+  {
+    "probe": "controller-clock-summary.json",
+    "unchanged": true,
+    "canonical_json_sha256": "7cfaf3f02eed8763f958335b6e779de5f63854e799b2f432f3283ca8d8670dd7"
+  },
+  {
+    "probe": "phase-handoff-summary.json",
+    "unchanged": true,
+    "canonical_json_sha256": "759f26ed7c98140a53e2f52868c9a71dabe8ae3c9139fac4ea9e3cb308910ab5"
+  }
+]

@@ -50,7 +50,7 @@ class Union:
             self.parent[self.find(node)] = root
 
 
-def extract(elements: list[dict]) -> dict:
+def extract(elements: list[dict], *, retain_single_terminal: bool = False) -> dict:
     """Separate channels before joining conductors; never snap coordinates."""
     rects = [rectangle(e) for e in elements if e["kind"] == "polygon"]
     require(bool(rects), "empty geometry")
@@ -109,12 +109,16 @@ def extract(elements: list[dict]) -> dict:
         labels[int(next(iter(nodes)))].add(element["text"])
     regions, count = ndimage.label(gates)
     devices = []
+    unmodelled = []
     for index in range(1, count + 1):
         selected = regions == index
         gate_nodes = set(components[5][selected]) - {0}
         terminals = set(components[1][ndimage.binary_dilation(selected)]) - {0}
         require(
-            len(gate_nodes) == 1 and len(terminals) == 2,
+            len(gate_nodes) == 1
+            and (
+                len(terminals) == 2 or (retain_single_terminal and len(terminals) == 1)
+            ),
             "gate needs two distinct terminals",
         )
         implants = [layer for layer in [2, 3] if (selected & masks[layer]).any()]
@@ -122,24 +126,30 @@ def extract(elements: list[dict]) -> dict:
         if implants:
             require((masks[implants[0]][selected]).all(), "partially implanted gate")
         yy, xx = np.where(selected)
-        devices.append(
-            {
-                "gate": int(next(iter(gate_nodes))),
-                "terminals": sorted(map(int, terminals)),
-                "implant": implants[0] if implants else 0,
-                "xy": [xs[xx.min()], ys[yy.min()]],
-            }
-        )
-    return {
+        item = {
+            "gate": int(next(iter(gate_nodes))),
+            "terminals": sorted(map(int, terminals)),
+            "implant": implants[0] if implants else 0,
+            "xy": [xs[xx.min()], ys[yy.min()]],
+        }
+        if len(terminals) == 1:
+            unmodelled.append({**item, "kind": "single_terminal_gate_region"})
+        else:
+            devices.append(item)
+    result = {
         "labels": {str(n): sorted(v) for n, v in labels.items()},
         "devices": devices,
         "summary": {
-            "devices": count,
+            "devices": len(devices),
             "implants": dict(Counter(d["implant"] for d in devices)),
             "contact_regions": contact_counts,
             "nets": len({union.find(i) for i in range(1, size)}),
         },
     }
+    if unmodelled:
+        result["unmodelled_structures"] = unmodelled
+        result["summary"]["unmodelled_structures"] = len(unmodelled)
+    return result
 
 
 def routing_groups(
@@ -188,6 +198,10 @@ def routing_groups(
 
 def pla_truth(network: dict, bits: list[int]) -> list[int]:
     """Combinational evaluation with both pass banks open, not phase simulation."""
+    require(
+        not network.get("unmodelled_structures"),
+        "unmodelled structures in logic network",
+    )
     labels = {
         label: int(node) for node, names in network["labels"].items() for label in names
     }
