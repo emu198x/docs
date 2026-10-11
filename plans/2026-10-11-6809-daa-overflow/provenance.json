@@ -25,5 +25,6 @@
     "clippy.log": "59ca056ff385a35f08ab00717c6df219cf88dea50fb14b653fe1a54b8d1aba76",
     "register-after.txt": "24084b11ea528337937e96212c7e7ad1b9f66bf6fb2fd955f897ae4277cd0fee",
     "register-after-summary.json": "8a107ac0f1e26c71845413ce0a480f29c0dc5a0e72882721cd4a055c94616edf"
-  }
+  },
+  "corrected_commit": "0d50a1c3b894212607c54a891f066dc944ea3bb1"
 }
