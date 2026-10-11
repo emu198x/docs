@@ -1,0 +1,398 @@
+{
+  "counts": {
+    "cases": 16,
+    "panics": 4,
+    "wrong_data": 4,
+    "controls": 8
+  },
+  "reference_repeats_identical": true,
+  "negative_control_rejected": true,
+  "negative_observed": [
+    51,
+    68,
+    51,
+    68
+  ],
+  "rows": [
+    {
+      "file": "m0-nes20-four0-mirror0.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes20-four0-mirror1.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes20-four1-mirror0.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes20-four1-mirror1.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes21-four0-mirror0.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes21-four0-mirror1.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes21-four1-mirror0.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m0-nes21-four1-mirror1.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes20-four0-mirror0.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes20-four0-mirror1.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        34,
+        34,
+        68,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes20-four1-mirror0.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes20-four1-mirror1.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes21-four0-mirror0.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes21-four0-mirror1.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        34,
+        34,
+        68,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes21-four1-mirror0.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    },
+    {
+      "file": "m4-nes21-four1-mirror1.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ]
+    }
+  ]
+}
