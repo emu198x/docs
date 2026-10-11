@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "1092929ee97a3ef6a1a4e1fa8923f5e348cb62ad",
+  "corrected_commit": "fa5ad2b291cc6d8df4c7479d0ec16a284a4e4231",
+  "rust": "1.99.0",
+  "encoded_length": 30,
+  "baseline_panicking_and_mutating_lengths": [
+    27,
+    28,
+    29
+  ],
+  "truncated_prefixes_verified": 30,
+  "tests_passed": 18,
+  "sha256": {
+    "probe.rs": "930d8bcf240c2df385917cffcc2eb20ee013f9bb6fc753f024d02ef89fb381a4",
+    "red.log": "37f1bcb292520eb9bd9b7a69b854ed3995c8a4eee81354625bed4706706d6146",
+    "tests.log": "b8412043512d20e9f3cf275b95956b8182424cfd49c1a464cb4681787271b851",
+    "clippy.log": "e01619862f9d567fe098da22e0a8fada0cb0dc6c9ad83b9794fb845906a3b2df",
+    "format.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe-red.log": "7d74331be9375efb55e9715b0308f6325ada3a333c5233e022b341fb68b09830",
+    "probe-green.log": "af56e3946b385754f54507d84525d454c0d837e7e8a724ff4db232ba98aadec0"
+  }
+}

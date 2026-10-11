@@ -1,0 +1,23 @@
+
+running 2 tests
+test tests::register_state_consumes_the_encoder_output_and_leaves_trailing_bytes ... ok
+test tests::register_state_rejects_every_truncated_prefix_before_mutation ... FAILED
+
+failures:
+
+---- tests::register_state_rejects_every_truncated_prefix_before_mutation stdout ----
+
+thread 'tests::register_state_rejects_every_truncated_prefix_before_mutation' (92781529) panicked at crates/ti-sn76489/src/lib.rs:451:28:
+index out of bounds: the len is 27 but the index is 27
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::register_state_rejects_every_truncated_prefix_before_mutation
+
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 16 filtered out; finished in 0.00s
+
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.97s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-90d012b191c4f931)
+error: test failed, to rerun pass `-p ti-sn76489 --lib`

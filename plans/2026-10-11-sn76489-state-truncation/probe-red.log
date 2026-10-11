@@ -1,0 +1,20 @@
+encoder bytes=30
+length=27, panic=true, changed=true
+length=28, panic=true, changed=true
+length=29, panic=true, changed=true
+truncated cases=30, bad=3
+
+thread 'main' (92782189) panicked at crates/ti-sn76489/src/lib.rs:451:28:
+index out of bounds: the len is 27 but the index is 27
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (92782189) panicked at crates/ti-sn76489/src/lib.rs:453:33:
+index out of bounds: the len is 28 but the index is 28
+
+thread 'main' (92782189) panicked at crates/ti-sn76489/src/lib.rs:455:31:
+index out of bounds: the len is 29 but the index is 29
+
+thread 'main' (92782189) panicked at /private/tmp/198x-sn76489-state-evidence/probe.rs:20:5:
+assertion `left == right` failed
+  left: 3
+ right: 0
