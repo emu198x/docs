@@ -1,0 +1,155 @@
+{
+  "scope": "stored main prefix and called bodies; MATCH multiplicity, host end address and elapsed time unmodelled",
+  "assumptions": "IMASK enabled, raw positive-logic pattern values; no inversion or clock-strobe interpretation",
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "host_source": "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMARIA.2SC.3",
+  "host_sha256": "0516535c723858947b7d2d138f804fd7ee6c8813726862f69a6984dcab890297",
+  "initial_directions": {
+    "D1": "111111111111111111111111000000000000000110010100000000000001",
+    "D2": "000000001111111111111111000000000000000110010100000000000001"
+  },
+  "results": {
+    "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR00.2SC.1": {
+      "inventory": {
+        "checked_nmi_high": 2622,
+        "checked_nmi_low": 91,
+        "checked_nmi_patterns": 2713,
+        "enabled_checked_nmi_patterns": 2622,
+        "match_body_visits_unknown_multiplicity": 1108,
+        "men_high_patterns": 12483,
+        "men_high_raw_nmi_low_patterns": 8637,
+        "pattern_visits": 13668,
+        "register_writes": 23
+      },
+      "called_routines": [
+        "SP001",
+        "SP002",
+        "SP003",
+        "SP004",
+        "SP005",
+        "SP006",
+        "SP007",
+        "SP008",
+        "SP009"
+      ],
+      "match_routines": [
+        "SP001"
+      ],
+      "stored_commands": 4688,
+      "first_enabled_nmi_high_line": 2515,
+      "stored_main_instructions": 4000,
+      "stored_routines": 13,
+      "unexecuted_inter_routine_instructions": 28,
+      "enabled_nmi_low_source_lines": [],
+      "enabled_nmi_low_candidates": [],
+      "sha256": "4700cf8cbe9555045859ff583dc3dbabfcf389daae857549488c6a9f4176a298"
+    },
+    "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR01.2SC.1": {
+      "inventory": {
+        "checked_nmi_high": 2622,
+        "checked_nmi_low": 91,
+        "checked_nmi_patterns": 2713,
+        "enabled_checked_nmi_patterns": 2622,
+        "match_body_visits_unknown_multiplicity": 1108,
+        "men_high_patterns": 12483,
+        "men_high_raw_nmi_low_patterns": 8637,
+        "pattern_visits": 13668,
+        "register_writes": 23
+      },
+      "called_routines": [
+        "SP001",
+        "SP002",
+        "SP003",
+        "SP004",
+        "SP005",
+        "SP006",
+        "SP007",
+        "SP008",
+        "SP009"
+      ],
+      "match_routines": [
+        "SP001"
+      ],
+      "stored_commands": 4686,
+      "first_enabled_nmi_high_line": 2513,
+      "stored_main_instructions": 4000,
+      "stored_routines": 13,
+      "unexecuted_inter_routine_instructions": 28,
+      "enabled_nmi_low_source_lines": [],
+      "enabled_nmi_low_candidates": [],
+      "sha256": "b3e1d3652467af9cc610b680fcdbfed929468009a4a83f7381811d9f3988821a"
+    },
+    "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR02.2SC.1": {
+      "inventory": {
+        "checked_nmi_high": 2420,
+        "checked_nmi_low": 174,
+        "checked_nmi_patterns": 2594,
+        "enabled_checked_nmi_patterns": 2420,
+        "match_body_visits_unknown_multiplicity": 1108,
+        "men_high_patterns": 130477,
+        "men_high_raw_nmi_low_patterns": 114497,
+        "pattern_visits": 131984,
+        "register_writes": 33
+      },
+      "called_routines": [
+        "SP001",
+        "SP002",
+        "SP003",
+        "SP004",
+        "SP005",
+        "SP006",
+        "SP007",
+        "SP008",
+        "SP009",
+        "SP011"
+      ],
+      "match_routines": [
+        "SP001"
+      ],
+      "stored_commands": 4587,
+      "first_enabled_nmi_high_line": 1076,
+      "stored_main_instructions": 4000,
+      "stored_routines": 13,
+      "unexecuted_inter_routine_instructions": 26,
+      "enabled_nmi_low_source_lines": [],
+      "enabled_nmi_low_candidates": [],
+      "sha256": "a56bc4f977adaee3c352adb7a6c8a7b2555afe1590c2c2abe16aeb712489f195"
+    },
+    "GCC_MARIA_Chip_Layout_and_Netlist_Artifacts/MARIAS/MARIAB/ZMAR03.2SC.1": {
+      "inventory": {
+        "checked_nmi_high": 2268,
+        "checked_nmi_low": 174,
+        "checked_nmi_patterns": 2442,
+        "enabled_checked_nmi_patterns": 2268,
+        "match_body_visits_unknown_multiplicity": 1108,
+        "men_high_patterns": 130793,
+        "men_high_raw_nmi_low_patterns": 114489,
+        "pattern_visits": 132300,
+        "register_writes": 50
+      },
+      "called_routines": [
+        "SP001",
+        "SP002",
+        "SP003",
+        "SP004",
+        "SP005",
+        "SP006",
+        "SP007",
+        "SP008",
+        "SP009",
+        "SP011"
+      ],
+      "match_routines": [
+        "SP001"
+      ],
+      "stored_commands": 4598,
+      "first_enabled_nmi_high_line": 1944,
+      "stored_main_instructions": 4000,
+      "stored_routines": 13,
+      "unexecuted_inter_routine_instructions": 27,
+      "enabled_nmi_low_source_lines": [],
+      "enabled_nmi_low_candidates": [],
+      "sha256": "29730553cd2905db9805db56c235263492ec9888805043ea07846ace387254ae"
+    }
+  }
+}
