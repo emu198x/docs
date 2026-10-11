@@ -96,10 +96,10 @@ own matrix correction. The 7800 has no keyboard attached.
 Add the retained /114 divider phase needed by the stage. Advance it inside
 `Pokey::tick`, in the existing CPU-clock domain; do not tie it to video lines,
 POTGO, or AUDCTL's selected audio divider. Exit from initialization starts the
-reference's next 15 kHz edge 81 CPU clocks after the write. That offset and
-same-clock CPU-write ordering must be verified against the original reference
-clock setup before implementation is accepted. The current executable sweep
-proves scan transitions at supplied edges, not that initial phase.
+reference's next 15 kHz edge 81 CPU clocks after the write. The extended reference probe now executes the original SKCTL write and
+scheduler methods and verifies that offset, retained phase on $01->$02, and
+disabled-scan latch semantics. Same-clock CPU-write ordering in Emu198x must
+still agree before implementation is accepted.
 
 Expose the scan address and return-line setter for machine wiring. At each
 5200 POKEY tick, derive KR1 from the selected held keypad and KR2 from that
@@ -204,3 +204,13 @@ three sampled KR2 positions agree. A plain-copy negative control fails.
 This establishes why a direct held-bit lookup would still be insufficient
 when several keys are pressed. It adds combinational board wiring within the
 proposed scan path, with no extra saved fields or snapshot version changes.
+
+## Scheduled transition gate
+
+[Reference transitions](2026-10-11-atari5200-controller-evidence/transitions/README.md)
+now pass **1,748 cases**. These execute original SKCTL writes and the original
+phase/scheduling functions with a small scheduler shim, instead of supplying
+arbitrary scan edges. Coverage includes 32-bit timestamp wrap, every phase
+within the /114 period, disabled-scan retention and selection away/back.
+Three negative controls fail 1,608, 1,469 and 292 cases respectively. Production
+CPU-bus delivery and save/restore remain unproven until the correction runs.

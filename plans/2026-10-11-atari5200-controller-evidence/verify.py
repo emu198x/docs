@@ -98,6 +98,41 @@ def check_matrix(rows: list[dict[str, str]]) -> None:
     assert ghost_cases == 62522
 
 
+
+def check_transitions(rows: list[dict[str, str]]) -> None:
+    origins = (0, 1, 57, 113, 255, 4294967095)
+    expected = {('startup', t, 0, mode) for t in origins for mode in range(4)}
+    expected |= {('enable', t, delay, 2) for t in origins for delay in range(228)}
+    expected |= {('disable', 0, phase, mode) for phase in range(114) for mode in (0, 1)}
+    expected |= {('select', 0, phase, mode) for phase in range(64) for mode in (2, 3)}
+    keys = [(r['case'], int(r['origin']), int(r['phase']), int(r['mode'])) for r in rows]
+    assert len(keys) == len(set(keys)) == len(expected) == 1748
+    assert set(keys) == expected
+    for row in rows:
+        assert row['passed'] == '1'
+        kind, origin, phase, mode = row['case'], int(row['origin']), int(row['phase']), int(row['mode'])
+        edges = int(row['edges'])
+        if kind == 'startup' and not mode & 2:
+            assert edges == 0
+            assert all(int(row[k]) == 0 for k in ('first_edge', 'first_key', 'first_shift', 'first_break'))
+            continue
+        assert edges > 0
+        if kind in ('startup', 'enable'):
+            first = origin + 81
+            if kind == 'enable':
+                while first <= origin + phase:
+                    first += 114
+            assert int(row['first_edge']) == first and edges == 128
+            assert int(row['first_shift']) == first + 16 * 114
+            assert int(row['first_break']) == first + 48 * 114
+            assert int(row['first_key']) == (first + 31 * 114 if mode == 2 else 0)
+        elif kind == 'disable':
+            assert int(row['skstat']) & 12 == 12
+            assert int(row['irqst']) & 192 == 0
+        else:
+            assert int(row['irqst']) & 128 == 0
+
+
 def must_reject(check: Callable[[list[dict[str, str]]], None], rows: list[dict[str, str]]) -> None:
     try:
         check(rows)
@@ -133,7 +168,20 @@ def main() -> None:
     broken_matrix[0]['reference_matrix'] = '001:000:000:000:000:000:000:000'
     must_reject(check_matrix, broken_matrix)
     assert '1322552 mismatches across 65536' in (HERE / 'matrix-no-ghosts.stderr').read_text()
-    print('420 guest cases: 222 known failures; 2048 scan and 65536 matrix reference cases pass; five checker mutations rejected')
+    transition_data = gzip.decompress((HERE / 'transitions/capture.csv.gz').read_bytes())
+    transition_info = json.loads((HERE / 'transitions/provenance.json').read_text())
+    assert hashlib.sha256(transition_data).hexdigest() == transition_info['capture_sha256']
+    transitions = list(csv.DictReader(io.StringIO(transition_data.decode())))
+    check_transitions(transitions)
+    must_reject(check_transitions, transitions[:-1])
+    broken_transitions = [dict(r) for r in transitions]
+    broken_transitions[2]['edges'] = '0'
+    must_reject(check_transitions, broken_transitions)
+    controls = json.loads((HERE / 'transitions/negative-controls.json').read_text())
+    for name, failures in (('late-start', 1608), ('reset-enable-phase', 1469), ('clear-retained-shift', 292)):
+        assert controls[name]['exit'] == 1
+        assert controls[name]['result'] == f'{failures} mismatches across 1748 scheduled transition cases'
+    print('420 guest cases: 222 known failures; 2048 scan, 65536 matrix and 1748 scheduled reference cases pass; seven checker mutations rejected')
 
 
 if __name__ == '__main__':
