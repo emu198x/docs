@@ -1,0 +1,101 @@
+--- a/src/viciisc/vicii-fetch.c
++++ b/src/viciisc/vicii-fetch.c
+@@ -50 +50,61 @@
+-inline static uint8_t fetch_phi1(int addr)
++
++/* Isolated Emu198x observer. Never used by the production emulator. */
++#include <stdio.h>
++#include <stdlib.h>
++#include <inttypes.h>
++
++static FILE *emu198x_trace_file;
++static unsigned long emu198x_trace_rows;
++static int emu198x_trace_checked;
++
++static void emu198x_trace_close(void)
++{
++    if (emu198x_trace_file) {
++        if (fprintf(emu198x_trace_file, "END,%lu\n", emu198x_trace_rows) < 0
++            || fclose(emu198x_trace_file) != 0) {
++            _Exit(2);
++        }
++        emu198x_trace_file = NULL;
++    }
++}
++
++static void emu198x_trace(const char *kind, int logical, int physical, uint8_t data)
++{
++    if (!emu198x_trace_checked) {
++        const char *path = getenv("EMU198X_VIC_TRACE");
++        emu198x_trace_checked = 1;
++        if (path && *path) {
++            emu198x_trace_file = fopen(path, "wx");
++            if (!emu198x_trace_file || atexit(emu198x_trace_close) != 0) {
++                fprintf(stderr, "Cannot create exclusive VIC trace\n");
++                exit(2);
++            }
++            if (fprintf(emu198x_trace_file, "EMU198X_VIC_FETCH,1\n"
++                "kind,clock,line,cycle,logical,physical,data,dma,prefetch,flags,phi1,phi2\n") < 0) {
++                exit(2);
++            }
++        }
++    }
++    if (!emu198x_trace_file || mem_ram[0x02ff] != 0xa5) {
++        return;
++    }
++    if (emu198x_trace_rows >= 1000000) {
++        fprintf(stderr, "VIC trace exceeded its bounded capture limit\n");
++        exit(2);
++    }
++    if (fprintf(emu198x_trace_file, "%s,%"PRIu64",%u,%u,%d,%d,%u,%u,%u,%u,%u,%u\n",
++        kind, maincpu_clk, vicii.raster_line, vicii.raster_cycle,
++        logical, physical, (unsigned)data, (unsigned)vicii.sprite_dma,
++        (unsigned)vicii.prefetch_cycles, vicii.cycle_flags,
++        (unsigned)vicii.last_read_phi1, (unsigned)vicii.last_bus_phi2) < 0) {
++        exit(2);
++    }
++    emu198x_trace_rows++;
++}
++
++void emu198x_trace_phi1_latch(void)
++{
++    emu198x_trace("L1", -1, -1, vicii.last_read_phi1);
++}
++
++inline static uint8_t fetch_phi1_raw(int addr)
+@@ -76 +136,9 @@
+-inline static uint8_t fetch_phi2(int addr)
++inline static uint8_t fetch_phi1(int addr)
++{
++    int physical = ((addr + vicii.vbank_phi1) & vicii.vaddr_mask_phi1) | vicii.vaddr_offset_phi1;
++    uint8_t data = fetch_phi1_raw(addr);
++    emu198x_trace("P1", addr, physical, data);
++    return data;
++}
++
++inline static uint8_t fetch_phi2_raw(int addr)
+@@ -104,0 +173,8 @@
++inline static uint8_t fetch_phi2(int addr)
++{
++    int physical = ((addr + vicii.vbank_phi2) & vicii.vaddr_mask_phi2) | vicii.vaddr_offset_phi2;
++    uint8_t data = fetch_phi2_raw(addr);
++    emu198x_trace("P2", addr, physical, data);
++    return data;
++}
++
+@@ -116,0 +193,2 @@
++        } else {
++            emu198x_trace("S0I", (vicii.sprite[i].pointer << 6) + vicii.sprite[i].mc, -1, sprdata);
+@@ -139,0 +218,2 @@
++        } else {
++            emu198x_trace("S2I", (vicii.sprite[i].pointer << 6) + vicii.sprite[i].mc, -1, sprdata);
+@@ -195,0 +276 @@
++        emu198x_trace("MI", v_fetch_addr(vicii.vc), -1, 0xff);
+--- a/src/viciisc/vicii-fetch.h
++++ b/src/viciisc/vicii-fetch.h
+@@ -32,0 +33 @@
++void emu198x_trace_phi1_latch(void);
+--- a/src/viciisc/vicii-cycle.c
++++ b/src/viciisc/vicii-cycle.c
+@@ -402,0 +403 @@
++    emu198x_trace_phi1_latch();

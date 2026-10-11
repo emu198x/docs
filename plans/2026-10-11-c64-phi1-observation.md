@@ -427,7 +427,48 @@ native startup crashes inside the sandbox. No dependency was installed.
 Headless capture omits the GTK-only `-nativemonitor` option and keeps logging
 on because `-silent` hides the monitor's completion output.
 
-No instrumentation has been applied yet. Add the direct observer only in this
-isolated copy, then rerun the baseline with logging disabled and enabled before
-qualifying sprite DMA or invalid Phi2 ownership. Production remains unchanged
-from the merged PRA correction.
+### Observer and ordinary sprite DMA qualified
+
+The isolated observer now passes the same baseline with logging disabled and
+enabled: 493,440 pixels and 640 CPU samples remain identical in each mode.
+The enabled run produces 1,614,206 records with complete Phi1 fetch/latch pairs
+and no later Phi2 overwrite of the retained byte. `observer-build.json` pins
+the patch, source, schedule-table and executable identities;
+`observer-disabled.json` and `observer-enabled.json` retain the measured values.
+The vendored reference remains unchanged.
+
+`sprite-native.zip` retains 200 native captures from original CPU guests:
+five models × four banks × ten enable masks (off, each sprite, all eight).
+It contains full observer CSVs, original PRGs, source RAM dumps, completion
+sentinels and the capture manifest. `verify_sprite_fetch.py` verifies all
+1,038,800 records and 20,160 sprite bytes against the recorded RAM and expected
+0–62 offset sequence: 6,720 middle-byte Phi1 reads and 13,440 first/last-byte
+Phi2 reads. Pointer reads continue with DMA off. All captures span lines 72–112.
+
+The verifier uses the pinned VICE cycle tables and the observer's exact native
+boundaries. Sprite Phi2 runs before `next_vicii_cycle`, so its logged clock is
+one later than the associated Phi1 while its cycle field stays unchanged.
+The native line counter advances after Phi1 cycle 0. These coordinates must
+not be substituted directly for completed-instruction monitor coordinates.
+
+All 64 evidence tests pass, including 19 new ordinary-sprite/observer tests.
+Mutations reject missing/duplicate clocks and cases, missing DMA bytes, wrong
+banks, bytes and pointer addresses, shifted Phi2 phases, corrupted line numbers,
+missing latches and Phi2 overwriting Phi1. Removing a DMA byte still passes the
+structural trace checker but fails the expected byte-coverage verifier. Ruff
+format/check and `git diff --check` pass.
+
+Reproduce from the evidence directory:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_fetch.py sprite-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+Coverage remains bounded: these are reference-emulator observations of ordinary,
+unexpanded sprites with static pointers and banks. Live pointer/bank changes
+during DMA, invalid Phi2 ownership, active graphics and production save/replay
+remain open. Disabled middle-slot addresses are checked; this guest does not
+independently seed/dump their idle bytes. The previous CPU probes qualify idle
+sources separately. The pending Phi1 stage/snapshot proposal remains unapproved;
+production remains unchanged from the merged PRA correction.
