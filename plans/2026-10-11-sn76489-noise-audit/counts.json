@@ -1,0 +1,10 @@
+{
+  "tests.log": {
+    "passed": 42,
+    "ignored": 2
+  },
+  "consumers.log": {
+    "passed": 152,
+    "ignored": 16
+  }
+}

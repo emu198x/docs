@@ -1,0 +1,24 @@
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.59s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-90d012b191c4f931)
+
+running 1 test
+test tests::ti_noise_follows_tone_edges_across_period_writes ... FAILED
+
+failures:
+
+---- tests::ti_noise_follows_tone_edges_across_period_writes stdout ----
+
+thread 'tests::ti_noise_follows_tone_edges_across_period_writes' (92942354) panicked at crates/ti-sn76489/src/lib.rs:696:9:
+assertion `left == right` failed: first mismatch: Some((0, 5, 0, 0, 0, [96, 4096, 0]))
+  left: 1920
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::ti_noise_follows_tone_edges_across_period_writes
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 20 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p ti-sn76489 --lib`

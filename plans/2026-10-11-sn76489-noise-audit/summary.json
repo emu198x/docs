@@ -1,0 +1,227 @@
+[
+  {
+    "variant": "ti",
+    "mode": 0,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      272
+    ],
+    "expected_interval": 512,
+    "rate_mismatches": 128,
+    "not_rising": 120,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 1,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      528
+    ],
+    "expected_interval": 1024,
+    "rate_mismatches": 128,
+    "not_rising": 118,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 2,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      1040
+    ],
+    "expected_interval": 2048,
+    "rate_mismatches": 128,
+    "not_rising": 120,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 0,
+    "events": 128,
+    "intervals": [
+      32
+    ],
+    "expected_interval": 32768,
+    "rate_mismatches": 128,
+    "not_rising": 128,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 1,
+    "events": 128,
+    "intervals": [
+      32
+    ],
+    "expected_interval": 32,
+    "rate_mismatches": 0,
+    "not_rising": 128,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 2,
+    "events": 128,
+    "intervals": [
+      48
+    ],
+    "expected_interval": 64,
+    "rate_mismatches": 128,
+    "not_rising": 96,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      128
+    ],
+    "expected_interval": 224,
+    "rate_mismatches": 128,
+    "not_rising": 128,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 31,
+    "events": 128,
+    "intervals": [
+      512
+    ],
+    "expected_interval": 992,
+    "rate_mismatches": 128,
+    "not_rising": 128,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "ti",
+    "mode": 3,
+    "period": 1023,
+    "events": 128,
+    "intervals": [
+      16384
+    ],
+    "expected_interval": 32736,
+    "rate_mismatches": 128,
+    "not_rising": 128,
+    "lfsr_mismatches": 0
+  },
+  {
+    "variant": "sega",
+    "mode": 0,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      272
+    ],
+    "expected_interval": 512,
+    "rate_mismatches": 128,
+    "not_rising": 120
+  },
+  {
+    "variant": "sega",
+    "mode": 1,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      528
+    ],
+    "expected_interval": 1024,
+    "rate_mismatches": 128,
+    "not_rising": 118
+  },
+  {
+    "variant": "sega",
+    "mode": 2,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      1040
+    ],
+    "expected_interval": 2048,
+    "rate_mismatches": 128,
+    "not_rising": 120
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 0,
+    "events": 128,
+    "intervals": [
+      32
+    ],
+    "expected_interval": 32,
+    "rate_mismatches": 0,
+    "not_rising": 128
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 1,
+    "events": 128,
+    "intervals": [
+      32
+    ],
+    "expected_interval": 32,
+    "rate_mismatches": 0,
+    "not_rising": 128
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 2,
+    "events": 128,
+    "intervals": [
+      48
+    ],
+    "expected_interval": 64,
+    "rate_mismatches": 128,
+    "not_rising": 96
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 7,
+    "events": 128,
+    "intervals": [
+      128
+    ],
+    "expected_interval": 224,
+    "rate_mismatches": 128,
+    "not_rising": 128
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 31,
+    "events": 128,
+    "intervals": [
+      512
+    ],
+    "expected_interval": 992,
+    "rate_mismatches": 128,
+    "not_rising": 128
+  },
+  {
+    "variant": "sega",
+    "mode": 3,
+    "period": 1023,
+    "events": 128,
+    "intervals": [
+      16384
+    ],
+    "expected_interval": 32736,
+    "rate_mismatches": 128,
+    "not_rising": 128
+  }
+]
