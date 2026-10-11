@@ -1,0 +1,23 @@
+{
+  "source_commit": "10892b445182cc5d8106cff7cd142f9a64d4cf10",
+  "guest_cases": 420,
+  "guest_mismatches": 222,
+  "guest_exit_codes": [
+    101,
+    101
+  ],
+  "reference_cases": 2048,
+  "reference_mismatches": 0,
+  "reference_exit_code": 0,
+  "negative_control": "replace four !(mSKCTL & 1) comparisons with true in extracted scratch code",
+  "negative_control_mismatches": 120,
+  "negative_control_exit_code": 1,
+  "observation": "Original guest reads chip registers and stores results in RAM; $0230=$A5 plus advancing 16-bit loop count required.",
+  "limitations": [
+    "No full Altirra guest boot",
+    "Scan-event harness assumes scheduled edge times; CPU-write phase not validated",
+    "No original hardware capture",
+    "POT control comparisons do not validate the physical RC model",
+    "Release, live selection and restore remain implementation acceptance gates"
+  ]
+}
