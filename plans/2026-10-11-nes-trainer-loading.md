@@ -59,10 +59,10 @@ Snapshot/schema work for four-screen RAM and MMC5 CHR remains separately pending
 
 ## Status
 
-The correction is implemented locally. Both new parser and guest regressions
+The correction is merged in source PR #1733. Both new parser and guest regressions
 failed before it. All 56 corrected guest captures now match every byte. Parser,
 machine and runtime suites report 197 passes, zero failures and 135 ignored
-tests. Affected all-target Clippy and workspace formatting pass. Exact-head CI and merge verification are pending. The unrelated
+tests. Affected all-target Clippy and workspace formatting pass. Exact-head CI and merge verification passed. The unrelated
 inspection-mirroring correction merged in source PR #1732; this change is rebased on that verified main.
 
 The format-author fact is recorded in the primary library at
@@ -71,6 +71,15 @@ The format-author fact is recorded in the primary library at
 
 
 Source [PR #1733](https://github.com/emu198x/emu198x/pull/1733), exact tested head
-`0c08720430217f6402ed5bcab5a2a00fb2fec188`, is pushed with CI running.
+`0c08720430217f6402ed5bcab5a2a00fb2fec188`, passed all required checks and merged as
+`ce91eb0d72b41da2bf092e6d8dc12adfe1937d98`. The merged tree matches the tested
+head and is an ancestor of `origin/main`.
 The local 197-pass count includes the five inspection regressions merged in
 #1732. Both affected package checks and all-target Clippy were rerun after rebasing.
+
+CI run [38167562252](https://github.com/emu198x/emu198x/actions/runs/38167562252)
+passed. Its evidence ledger records parser 104 passes; machine 29 passes,
+two fixture skips and 133 reasoned ignores; runtime 62 passes and two reasoned
+ignores. There are zero failures or unexplained ignores. The local 197-pass
+report includes the two fixture-skipping test functions; CI proves 195 executed
+passes across these three packages.
