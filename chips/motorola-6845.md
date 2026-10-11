@@ -55,7 +55,7 @@ one shared interlace formula cannot establish complete variant accuracy.
 ## Implementation boundary
 
 At source commit
-[`b11d84f`](https://github.com/emu198x/emu198x/blob/b11d84f64b157842fe1eeb6ce12c712b774786d4/crates/motorola-6845/src/lib.rs),
+[`34d793f`](https://github.com/emu198x/emu198x/blob/34d793f52d33275b0edfda428adf0a4582e1cb52/crates/motorola-6845/src/lib.rs),
 the core ticks once per character clock. BBC and CPC select `Hd6845s`; PET uses
 the default `Mc6845` personality. All three consume live CRTC addresses. BBC
 applies separate bitmap/teletext decoding and bitmap wrapping in its machine
@@ -64,10 +64,17 @@ or coverage of every CPC CRTC type.
 
 The core implements variant readback, R0 = 255 wrapping, RA field parity and
 cursor blinking. It still lacks half-line sync displacement, chip-level skew,
-light-pen capture and hardware write protection for R16–R17. R7 = 0 does not
-trigger vertical sync. Register write masks and interlaced vertical programming
-also need further work. [Issue #166](https://github.com/emu198x/emu198x/issues/166)
+light-pen capture. R7 = 0 does not trigger vertical sync, and interlaced vertical
+programming still needs variant-specific work. [Issue #166](https://github.com/emu198x/emu198x/issues/166)
 tracks the interlace/skew boundary.
+
+Guest writes apply the manufacturer's per-part register masks, and cannot
+replace the read-only R16/R17 light-pen values. Address readback no longer
+exposes unused high bits, and R6 bit 7 cannot change display enable. The
+[register validation](../plans/2026-10-11-6845-register-evidence/README.md) includes
+2,560 public-port cases, all writable byte values, a nonzero light-pen value
+supplied by a snapshot and old-snapshot loading. No new fields or snapshot layout
+are introduced. Write protection does not implement light-pen strobe capture.
 
 Sync pulses retain their full programmed widths across horizontal wrap,
 vertical adjustment and frame restart. Existing pulse counters advance before

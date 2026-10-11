@@ -1,5 +1,8 @@
 # 6845 register-write evidence
 
+Source correction: [PR #1737](https://github.com/emu198x/emu198x/pull/1737),
+`34d793f52d33275b0edfda428adf0a4582e1cb52`.
+
 The original public-port probe fails **1,852 of 2,560 cases** before the
 correction and passes every case afterward. Its source is `probe.rs`; compressed
 CSV captures retain every passing control and failure. `verify.py` recalculates
