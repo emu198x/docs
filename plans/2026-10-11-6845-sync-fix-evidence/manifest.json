@@ -1,0 +1,29 @@
+{
+  "baseline_source": "10892b445182cc5d8106cff7cd142f9a64d4cf10",
+  "fixed_source": "411092c1de02f286ac55086db505268651818739",
+  "mame_source_sha256": "62523f73d0cf24bad50610d9f0aaa41ab46f0458a5c0601f824fc7e121977bb8",
+  "width_cases": {
+    "horizontal": 128,
+    "vertical": 512,
+    "baseline_horizontal_failures": 120,
+    "baseline_vertical_failures": 404
+  },
+  "original_probe": {
+    "cases": 64,
+    "failures_before": 62,
+    "failures_after": 0
+  },
+  "files": {
+    "README.md": "ed5d2158623e4d749bebd84acd0ad71f493e983da4557e6b2b79666e2f7860a5",
+    "clippy.txt": "12815435dc95df407fdde313a9854273689eaec9a42e25040cf790f617a30719",
+    "firmware-tests.txt": "d6da41e0a566fd9d0bef115e5bc95e7c262feee41a7309bb3b0fa08074afc803",
+    "machines-tests.txt": "45dc4c6823e9591430bf2bf216d064ccacfc03c4252280574a7a5dc3787a95c4",
+    "reference.csv": "64e7088e447974bf9e31040db1a6c818764a97f27877adcdc33266d3f97f034c",
+    "reference.py": "0b11eeca1b967ff02972cf819ef589262c20cf5bf2841c82fdaf27c82a0faaef",
+    "reference.stderr": "dec51a045d649ce8c45ff68f6168faf272282886eaccfb6e4c5c71e82ce19957",
+    "sync-after.csv": "d8c31c9fe5dc5ab391ff7af0fa66cb9d3dfb3cb88123bbe57beeae72e0b126a3",
+    "sync-after.stderr": "07a1b599e7afc81b51b900b0b692c70a3e38dd83b9403d92b3fbfef4d61195d6",
+    "tests-before.txt": "9651e9834006e7284caa55e36ce0e2256cd7918da94e4758c19b7c4e9cb26883",
+    "verify.py": "0c7a966cce425ca9c99a780358897ec805fe5e69a0de591b1c6fa662ee0b0cb1"
+  }
+}

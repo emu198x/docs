@@ -1,0 +1,90 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6845-sync/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/10f67303c85969c6: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling thiserror v2.0.20
+   Compiling format-sinclair-zx-spectrum-snapshot v0.31.0 (/private/tmp/198x-6845-sync/crates/format-sinclair-zx-spectrum-snapshot)
+   Compiling format198x-tzx v0.1.0
+   Compiling crc32fast v1.5.0
+   Compiling simd-adler32 v0.3.9
+   Compiling adler2 v2.0.1
+   Compiling common-z80-machine v0.31.0 (/private/tmp/198x-6845-sync/crates/common-z80-machine)
+   Compiling cfg-if v1.0.4
+   Compiling emu198x-test-skip v0.31.0 (/private/tmp/198x-6845-sync/crates/emu198x-test-skip)
+   Compiling miniz_oxide v0.9.1
+   Compiling flate2 v1.1.10
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling cobs v0.3.0
+   Compiling serde-big-array v0.5.1
+   Compiling common-tape v0.31.0 (/private/tmp/198x-6845-sync/crates/common-tape)
+   Compiling emu198x-gi-ay-3-8910 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-gi-ay-3-8910)
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6845-sync/crates/motorola-6845)
+   Compiling emu198x-zilog-z80 v0.8.0 (/private/tmp/198x-6845-sync/crates/emu198x-zilog-z80)
+   Compiling intel-8255 v0.31.0 (/private/tmp/198x-6845-sync/crates/intel-8255)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-mos-6502)
+   Compiling amstrad-gate-array v0.31.0 (/private/tmp/198x-6845-sync/crates/amstrad-gate-array)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-via-6522)
+   Compiling common-acorn-cassette v0.31.0 (/private/tmp/198x-6845-sync/crates/common-acorn-cassette)
+   Compiling mos-pia-6520 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-pia-6520)
+   Compiling postcard v1.1.3
+   Compiling format-tzx v0.31.0 (/private/tmp/198x-6845-sync/crates/format-tzx)
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6845-sync/crates/ti-sn76489)
+   Compiling format-acorn-uef v0.31.0 (/private/tmp/198x-6845-sync/crates/format-acorn-uef)
+   Compiling format-amstrad-cpc-cdt v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-cpc-cdt)
+   Compiling gi-ay-3-8912 v0.31.0 (/private/tmp/198x-6845-sync/crates/gi-ay-3-8912)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-commodore-pet)
+   Compiling machine-acorn-bbc-micro v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-acorn-bbc-micro)
+   Compiling common-sinclair-zx-spectrum v0.31.0 (/private/tmp/198x-6845-sync/crates/common-sinclair-zx-spectrum)
+   Compiling machine-amstrad-cpc v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-amstrad-cpc)
+   Compiling nec-upd765a v0.31.0 (/private/tmp/198x-6845-sync/crates/nec-upd765a)
+   Compiling format-amstrad-dsk v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-dsk)
+    Finished `release` profile [optimized] target(s) in 8.01s
+     Running tests/bios_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/bios_boot-a6ea3adda90a36ff)
+
+running 8 tests
+test boots_to_basic_prompt ... ok
+test os_boots_to_basic_banner ... ok
+test keyboard_types_a_basic_expression_and_prints_the_result ... ok
+test mode7_renders_the_banner ... ok
+test mode7_draws_double_height_and_flashing_text_from_basic ... ok
+test mos_clock_counts_centiseconds ... ok
+test a_flashing_colour_flashes_at_the_mos_rate ... ok
+test the_prompt_cursor_blinks_in_mode_7_and_in_a_bitmap_mode ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 33.97s
+
+     Running tests/firmware_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/firmware_boot-6dd0147d9da11aa9)
+
+running 2 tests
+test the_firmware_reaches_its_boot_screen ... ok
+test the_boot_banner_decodes_back_to_text ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests/interrupt_timing.rs (/private/tmp/198x-sunsoft4-target/release/deps/interrupt_timing-4d946b0cd9cee8d0)
+
+running 2 tests
+test rst38_from_code_is_recorded_against_the_compendium ... ok
+test the_interrupt_call_is_recorded_against_the_compendium ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.30s
+
+     Running tests/microsecond_grid.rs (/private/tmp/198x-sunsoft4-target/release/deps/microsecond_grid-5284ec4d666823d8)
+
+running 3 tests
+test instruction_cost_depends_on_alignment_and_should_not ... ok
+test the_interrupt_response_leaves_the_grid ... ok
+test every_instruction_costs_whole_microseconds ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.65s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/rom_boot-c4a655734189c185)
+
+running 1 test
+test rom_set_boots_without_panic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
