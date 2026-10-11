@@ -1,0 +1,47 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sord-io/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e969643e8d3be174: Operation not permitted (os error 1)
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-sord-io/crates/machine-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running tests/io_aliases.rs (/private/tmp/198x-sunsoft4-target/debug/deps/io_aliases-cae6bb8dfc27d724)
+
+running 5 tests
+test keyboard_joystick_and_unmapped_reads_keep_their_own_decode ... ok
+test ctc_counter_writes_and_reads_reach_all_sixteen_ports ... FAILED
+test vdp_data_and_control_aliases_share_vram_and_read_buffer ... FAILED
+test vdp_status_aliases_observe_and_clear_vblank ... FAILED
+test sound_aliases_produce_the_same_non_silent_waveform ... FAILED
+
+failures:
+
+---- ctc_counter_writes_and_reads_reach_all_sixteen_ports stdout ----
+
+thread 'ctc_counter_writes_and_reads_reach_all_sixteen_ports' (94221458) panicked at crates/machine-sord-m5/tests/io_aliases.rs:60:5:
+CTC alias failures: [(Ntsc, 0, 2, 255, 65), (Ntsc, 0, 3, 255, 65), (Ntsc, 1, 2, 255, 66), (Ntsc, 1, 3, 255, 66), (Ntsc, 2, 2, 255, 67), (Ntsc, 2, 3, 255, 67), (Ntsc, 3, 2, 255, 68), (Ntsc, 3, 3, 255, 68), (Ntsc, 4, 2, 255, 65), (Ntsc, 4, 3, 255, 65), (Ntsc, 5, 2, 255, 66), (Ntsc, 5, 3, 255, 66), (Ntsc, 6, 2, 255, 67), (Ntsc, 6, 3, 255, 67), (Ntsc, 7, 2, 255, 68), (Ntsc, 7, 3, 255, 68), (Ntsc, 8, 0, 0, 65), (Ntsc, 8, 1, 0, 65), (Ntsc, 8, 2, 255, 65), (Ntsc, 8, 3, 255, 65), (Ntsc, 9, 0, 0, 66), (Ntsc, 9, 1, 0, 66), (Ntsc, 9, 2, 255, 66), (Ntsc, 9, 3, 255, 66), (Ntsc, 10, 0, 0, 67), (Ntsc, 10, 1, 0, 67), (Ntsc, 10, 2, 255, 67), (Ntsc, 10, 3, 255, 67), (Ntsc, 11, 0, 0, 68), (Ntsc, 11, 1, 0, 68), (Ntsc, 11, 2, 255, 68), (Ntsc, 11, 3, 255, 68), (Ntsc, 12, 0, 0, 65), (Ntsc, 12, 1, 0, 65), (Ntsc, 12, 2, 255, 65), (Ntsc, 12, 3, 255, 65), (Ntsc, 13, 0, 0, 66), (Ntsc, 13, 1, 0, 66), (Ntsc, 13, 2, 255, 66), (Ntsc, 13, 3, 255, 66), (Ntsc, 14, 0, 0, 67), (Ntsc, 14, 1, 0, 67), (Ntsc, 14, 2, 255, 67), (Ntsc, 14, 3, 255, 67), (Ntsc, 15, 0, 0, 68), (Ntsc, 15, 1, 0, 68), (Ntsc, 15, 2, 255, 68), (Ntsc, 15, 3, 255, 68), (Pal, 0, 2, 255, 65), (Pal, 0, 3, 255, 65), (Pal, 1, 2, 255, 66), (Pal, 1, 3, 255, 66), (Pal, 2, 2, 255, 67), (Pal, 2, 3, 255, 67), (Pal, 3, 2, 255, 68), (Pal, 3, 3, 255, 68), (Pal, 4, 2, 255, 65), (Pal, 4, 3, 255, 65), (Pal, 5, 2, 255, 66), (Pal, 5, 3, 255, 66), (Pal, 6, 2, 255, 67), (Pal, 6, 3, 255, 67), (Pal, 7, 2, 255, 68), (Pal, 7, 3, 255, 68), (Pal, 8, 0, 0, 65), (Pal, 8, 1, 0, 65), (Pal, 8, 2, 255, 65), (Pal, 8, 3, 255, 65), (Pal, 9, 0, 0, 66), (Pal, 9, 1, 0, 66), (Pal, 9, 2, 255, 66), (Pal, 9, 3, 255, 66), (Pal, 10, 0, 0, 67), (Pal, 10, 1, 0, 67), (Pal, 10, 2, 255, 67), (Pal, 10, 3, 255, 67), (Pal, 11, 0, 0, 68), (Pal, 11, 1, 0, 68), (Pal, 11, 2, 255, 68), (Pal, 11, 3, 255, 68), (Pal, 12, 0, 0, 65), (Pal, 12, 1, 0, 65), (Pal, 12, 2, 255, 65), (Pal, 12, 3, 255, 65), (Pal, 13, 0, 0, 66), (Pal, 13, 1, 0, 66), (Pal, 13, 2, 255, 66), (Pal, 13, 3, 255, 66), (Pal, 14, 0, 0, 67), (Pal, 14, 1, 0, 67), (Pal, 14, 2, 255, 67), (Pal, 14, 3, 255, 67), (Pal, 15, 0, 0, 68), (Pal, 15, 1, 0, 68), (Pal, 15, 2, 255, 68), (Pal, 15, 3, 255, 68)]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- vdp_data_and_control_aliases_share_vram_and_read_buffer stdout ----
+
+thread 'vdp_data_and_control_aliases_share_vram_and_read_buffer' (94221461) panicked at crates/machine-sord-m5/tests/io_aliases.rs:89:5:
+VDP alias failures: [(Ntsc, 16, 25, [0, 0]), (Ntsc, 16, 27, [0, 0]), (Ntsc, 16, 29, [0, 0]), (Ntsc, 16, 31, [0, 0]), (Ntsc, 18, 25, [0, 0]), (Ntsc, 18, 27, [0, 0]), (Ntsc, 18, 29, [0, 0]), (Ntsc, 18, 31, [0, 0]), (Ntsc, 20, 25, [0, 0]), (Ntsc, 20, 27, [0, 0]), (Ntsc, 20, 29, [0, 0]), (Ntsc, 20, 31, [0, 0]), (Ntsc, 22, 25, [0, 0]), (Ntsc, 22, 27, [0, 0]), (Ntsc, 22, 29, [0, 0]), (Ntsc, 22, 31, [0, 0]), (Ntsc, 24, 17, [255, 0]), (Ntsc, 24, 19, [255, 0]), (Ntsc, 24, 21, [255, 0]), (Ntsc, 24, 23, [255, 0]), (Ntsc, 24, 25, [255, 0]), (Ntsc, 24, 27, [255, 0]), (Ntsc, 24, 29, [255, 0]), (Ntsc, 24, 31, [255, 0]), (Ntsc, 26, 17, [255, 0]), (Ntsc, 26, 19, [255, 0]), (Ntsc, 26, 21, [255, 0]), (Ntsc, 26, 23, [255, 0]), (Ntsc, 26, 25, [255, 0]), (Ntsc, 26, 27, [255, 0]), (Ntsc, 26, 29, [255, 0]), (Ntsc, 26, 31, [255, 0]), (Ntsc, 28, 17, [255, 0]), (Ntsc, 28, 19, [255, 0]), (Ntsc, 28, 21, [255, 0]), (Ntsc, 28, 23, [255, 0]), (Ntsc, 28, 25, [255, 0]), (Ntsc, 28, 27, [255, 0]), (Ntsc, 28, 29, [255, 0]), (Ntsc, 28, 31, [255, 0]), (Ntsc, 30, 17, [255, 0]), (Ntsc, 30, 19, [255, 0]), (Ntsc, 30, 21, [255, 0]), (Ntsc, 30, 23, [255, 0]), (Ntsc, 30, 25, [255, 0]), (Ntsc, 30, 27, [255, 0]), (Ntsc, 30, 29, [255, 0]), (Ntsc, 30, 31, [255, 0]), (Pal, 16, 25, [0, 0]), (Pal, 16, 27, [0, 0]), (Pal, 16, 29, [0, 0]), (Pal, 16, 31, [0, 0]), (Pal, 18, 25, [0, 0]), (Pal, 18, 27, [0, 0]), (Pal, 18, 29, [0, 0]), (Pal, 18, 31, [0, 0]), (Pal, 20, 25, [0, 0]), (Pal, 20, 27, [0, 0]), (Pal, 20, 29, [0, 0]), (Pal, 20, 31, [0, 0]), (Pal, 22, 25, [0, 0]), (Pal, 22, 27, [0, 0]), (Pal, 22, 29, [0, 0]), (Pal, 22, 31, [0, 0]), (Pal, 24, 17, [255, 0]), (Pal, 24, 19, [255, 0]), (Pal, 24, 21, [255, 0]), (Pal, 24, 23, [255, 0]), (Pal, 24, 25, [255, 0]), (Pal, 24, 27, [255, 0]), (Pal, 24, 29, [255, 0]), (Pal, 24, 31, [255, 0]), (Pal, 26, 17, [255, 0]), (Pal, 26, 19, [255, 0]), (Pal, 26, 21, [255, 0]), (Pal, 26, 23, [255, 0]), (Pal, 26, 25, [255, 0]), (Pal, 26, 27, [255, 0]), (Pal, 26, 29, [255, 0]), (Pal, 26, 31, [255, 0]), (Pal, 28, 17, [255, 0]), (Pal, 28, 19, [255, 0]), (Pal, 28, 21, [255, 0]), (Pal, 28, 23, [255, 0]), (Pal, 28, 25, [255, 0]), (Pal, 28, 27, [255, 0]), (Pal, 28, 29, [255, 0]), (Pal, 28, 31, [255, 0]), (Pal, 30, 17, [255, 0]), (Pal, 30, 19, [255, 0]), (Pal, 30, 21, [255, 0]), (Pal, 30, 23, [255, 0]), (Pal, 30, 25, [255, 0]), (Pal, 30, 27, [255, 0]), (Pal, 30, 29, [255, 0]), (Pal, 30, 31, [255, 0])]
+
+---- vdp_status_aliases_observe_and_clear_vblank stdout ----
+
+thread 'vdp_status_aliases_observe_and_clear_vblank' (94221462) panicked at crates/machine-sord-m5/tests/io_aliases.rs:107:13:
+assertion `left == right` failed: Ntsc 19: an unmapped $FF must not pass as VBlank
+  left: 69
+ right: 44062
+
+---- sound_aliases_produce_the_same_non_silent_waveform stdout ----
+
+thread 'sound_aliases_produce_the_same_non_silent_waveform' (94221460) panicked at crates/machine-sord-m5/tests/io_aliases.rs:138:5:
+PSG alias failures: [(Ntsc, 40), (Ntsc, 41), (Ntsc, 42), (Ntsc, 43), (Ntsc, 44), (Ntsc, 45), (Ntsc, 46), (Ntsc, 47), (Pal, 40), (Pal, 41), (Pal, 42), (Pal, 43), (Pal, 44), (Pal, 45), (Pal, 46), (Pal, 47)]
+
+
+failures:
+    ctc_counter_writes_and_reads_reach_all_sixteen_ports
+    sound_aliases_produce_the_same_non_silent_waveform
+    vdp_data_and_control_aliases_share_vram_and_read_buffer
+    vdp_status_aliases_observe_and_clear_vblank
+
+test result: FAILED. 1 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.43s
+
+error: test failed, to rerun pass `-p machine-sord-m5 --test io_aliases`

@@ -1,0 +1,4 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sord-io/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e969643e8d3be174: Operation not permitted (os error 1)
+    Checking machine-sord-m5 v0.31.0 (/private/tmp/198x-sord-io/crates/machine-sord-m5)
+    Checking runtime-sord-m5 v0.31.0 (/private/tmp/198x-sord-io/crates/runtime-sord-m5)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.70s
