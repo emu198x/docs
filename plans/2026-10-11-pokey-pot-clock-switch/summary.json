@@ -1,0 +1,12 @@
+{
+  "cases": 144,
+  "clocks": 3888432,
+  "pot_reads": 31107456,
+  "capture_sha256": "17f061510d84f1536baf9abb380536f050b2ab2a1a99be13f279668ffc2c5292",
+  "base-clock-observer": "byte-identical complete trace",
+  "no-delay": "clock-switch mismatch (0, 4, 0, 16) t=17: (0, 255, 1, 1) != (0, 255, 0, 1)",
+  "wrong-resume": "clock-switch mismatch (0, 3, 0, 16) t=96: (1, 255, 1, 1) != (0, 255, 0, 1)",
+  "lost-slow-phase": "clock-switch mismatch (4, 3, 0, 16) t=97: (16, 255, 16, 1) != (17, 255, 17, 1)",
+  "skctl_case_sha256": "7bb411a2fc0f4db23119ffafe0c856d00e7646fc6391c8b4667cd8ebb54bb45e",
+  "assembled_sha256": "9ceea42b8d4229a25e2be512cd86b1f5afee07f6632ccf1c73bb6f06ee61a23b"
+}
