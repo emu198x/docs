@@ -1,0 +1,8 @@
+{
+  "cases": 4096,
+  "changes": 1152,
+  "held_without_clock": 2560,
+  "source_sha256": "d79effe1aa9967e50bb189ebec6fd1cb850e29e63d78ae878695409da9b29aa6",
+  "function_sha256": "126d8e53eebf68ea21397abc94eff0e9197f3f301570a732fdfa02f61a2098f1",
+  "vectors_sha256": "e8c246cc1517f0004d139d824333d8ce438c8d126fff2be4673cab4c0013faec"
+}
