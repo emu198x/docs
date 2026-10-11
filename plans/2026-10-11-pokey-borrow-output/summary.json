@@ -1,0 +1,27 @@
+{
+  "chip_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "renderer_sha256": "d79effe1aa9967e50bb189ebec6fd1cb850e29e63d78ae878695409da9b29aa6",
+  "timer_methods_sha256": "c2c8c8636e3b0384f4dbaa6bb65ab8bde7d85297baa7a8684b3c59e1fab86835",
+  "borrow_cases_sha256": "3c439ad9158f5c0683a3569d6b47467632a882b5ebf4b68b14a7490a10cb142c",
+  "scaffold_sha256": "75f37764037c24bfc347c26a7a10a2a90b327f764318d30fdc6346348ce6170b",
+  "baseline": {
+    "cases": 576,
+    "timer_events": 210884,
+    "irq_calls": 118601,
+    "output_transitions": 26318,
+    "capture_sha256": "f5dd0c69d7193895c65ef7c59bac73213efc7b3a3efb054ca11ba78c1be2459b"
+  },
+  "reverse-ties": {
+    "cases": 576,
+    "timer_events": 210884,
+    "irq_calls": 118601,
+    "output_transitions": 26318,
+    "capture_sha256": "828d6000823d98f46bd069574ce137964858a4d0baab29f232ced5be397fc9a7"
+  },
+  "no-borrow-delay": {
+    "rejected": "first borrow deadline mismatch"
+  },
+  "no-delivery": {
+    "rejected": "borrow delivery/order mismatch: (0, 0, 0, 0, 0, 0)"
+  }
+}

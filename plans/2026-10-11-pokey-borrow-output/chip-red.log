@@ -1,0 +1,37 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.51s
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/atari_pokey-be903a074409788a)
+
+running 1 test
+channel=0 low=0 high=0 period=7 gap=0
+channel=0 low=0 high=1 period=263 gap=0
+channel=0 low=1 high=0 period=8 gap=0
+channel=0 low=1 high=1 period=264 gap=0
+channel=0 low=15 high=0 period=22 gap=0
+channel=0 low=15 high=1 period=278 gap=0
+channel=0 low=255 high=0 period=262 gap=0
+channel=0 low=255 high=1 period=518 gap=0
+channel=2 low=0 high=0 period=7 gap=0
+channel=2 low=0 high=1 period=263 gap=0
+channel=2 low=1 high=0 period=8 gap=0
+channel=2 low=1 high=1 period=264 gap=0
+channel=2 low=15 high=0 period=22 gap=0
+channel=2 low=15 high=1 period=278 gap=0
+channel=2 low=255 high=0 period=262 gap=0
+channel=2 low=255 high=1 period=518 gap=0
+
+thread 'borrow_probe::linked_high_event_follows_low_event_by_three_clocks' (89302040) panicked at crates/atari-pokey/src/lib.rs:2134:9:
+assertion `left == right` failed: linked high event must follow the final low event by three clocks
+  left: 16
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test borrow_probe::linked_high_event_follows_low_event_by_three_clocks ... FAILED
+
+failures:
+
+failures:
+    borrow_probe::linked_high_event_follows_low_event_by_three_clocks
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 37 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-pokey --lib`
