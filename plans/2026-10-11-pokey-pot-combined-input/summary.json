@@ -1,0 +1,11 @@
+{
+  "cases": 768,
+  "observations": 5376,
+  "capture_sha256": "e743c943130ca6caf096d854b938c73925760abbb588b2f49a7693ec6710a003",
+  "lost-delivery": "combined mismatch ((0, 3, 0, 64, 0, 0, 0, 0), 64, 1): (0, 0, 255, 0, 1, 9124416) != (0, 0, 255, 0, 1, 27961990)",
+  "lost-charge": "combined mismatch ((0, 0, 0, 64, 0, 0, 0, 0), 64, 1): (0, 0, 255, 0, 1, 0) != (0, 0, 255, 0, 1, 9124416)",
+  "lost-order": "combined mismatch ((0, 3, 0, 64, 0, 0, 0, 0), 64, 1): (0, 0, 255, 0, 1, 9418752) != (0, 0, 255, 0, 1, 27961990)",
+  "setter_sha256": "79ecbe2ac668fc004929e25fa9c25b0687f1cf6624a1ca6ea97e9c73ce178300",
+  "skctl_case_sha256": "7bb411a2fc0f4db23119ffafe0c856d00e7646fc6391c8b4667cd8ebb54bb45e",
+  "assembled_sha256": "05629bd22125dc3e0b20c6cd358fc0e78a21dd2df7fb07b7e51ea4f1560ac8d2"
+}
