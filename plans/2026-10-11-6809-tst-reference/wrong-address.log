@@ -1,0 +1,6 @@
+
+thread 'main' (92693059) panicked at /private/tmp/198x-6809-tst-evidence/probe.rs:41:29:
+assertion `left == right` failed: discarded read address
+  left: 65535
+ right: 16385
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

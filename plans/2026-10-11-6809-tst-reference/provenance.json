@@ -1,0 +1,34 @@
+{
+  "emu198x_commit": "0d50a1c3b894212607c54a891f066dc944ea3bb1",
+  "xroar_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "xroar_source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "mame_source_sha256": {
+    "src/devices/cpu/m6809/base6x09.lst": "601f44e2b2b87177d276f90072f8b433c10007ae508ae83deab10f76605fda89",
+    "src/devices/cpu/m6809/m6809.lst": "f1395c6e7741903b86c0c4e003a649999e66f86b03fdd38eb565f635c77162ba",
+    "src/devices/cpu/m6809/m6809.h": "a8581492454d4123fc2548725ad9e7fec0430c0b93e072e4e92a3761a4b72d59",
+    "src/devices/cpu/m6809/m6809inl.h": "416affb0e6593dd6544576f8f298e897f69d5de0fc736583346da945c472bf60"
+  },
+  "decoder_commit": "4f7e1846375024888ad7987bd390f434897953cf",
+  "decoder_source_blob": "29a1930726a49781e560344f4846a60412d0311e",
+  "decoder_source_sha256": "7753b04d9976b596d7df7346bbe50e8f9942a3fb8614096cf132a953d2a1bf05",
+  "toolchains": {
+    "rust": "1.99.0",
+    "c": "Apple clang 21.0.0"
+  },
+  "artifacts_sha256": {
+    "wrong-address.log": "59ab58e4c8ad479d114aca7ead89f34a13cfd014f5406773c44ff50f06a47cc5",
+    "summary.json": "e75ccf61479643de335ae0f7701e48216c601db551340bc6ef6de35f2d6296f2",
+    "reference-flags.bin": "be72b301dc532d9a4675b6acc09841dec422e2cfaffdbdf43cc08a979d765821",
+    "wrong-cycles.log": "7ce44e0c71de1da53de41eabbd2b9c1ed63415021388a6704936386d19400947",
+    "actual-flags.bin": "c9d21cefb9af92809970fde3d04a65bff400bb8a12e57849c21c2739f80b4e80",
+    "reference.c": "539de04cd01f0bf9da07339e21e52abcbd3e75e65d2adc52aff683a1356b1499",
+    "probe.rs": "ad5795c7f2293d31ea131f0912d1975bf774284ce7ee5df20bd9378f21f45de2",
+    "verify.py": "1d2b3fa850c44ecf2e3532b11d270ad28fdfae2241f29ce0093c8df6ec94f0b7"
+  }
+}
