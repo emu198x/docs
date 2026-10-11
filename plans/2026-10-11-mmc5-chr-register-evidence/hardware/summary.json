@@ -1,0 +1,27 @@
+{
+  "source_head": "ad4790beda679afab6c826fcb9ed8e8f07b01877",
+  "mesen_source_head": "fabc9a62174f8734a113df6d244f5539ef6b8fcf",
+  "mesen_core_sha256": "281ed37fcd1421eef1c5e60e06f1ede360ee89ee214a9c2a0c7c128376395c68",
+  "mesen_core_provenance": "Prebuilt local core; not rebuilt for this probe.",
+  "rom_sha256": "93a272c200ea6a332506203423ca410c56fb02533a8e86b6764d6e8870d5a4b4",
+  "rows": 32,
+  "static_mismatches_by_mode": [
+    7,
+    6,
+    4,
+    0
+  ],
+  "mesen_repeated_run_identical": true,
+  "cartridge_rebuild_identical": true,
+  "negative_controls": {
+    "emu198x": {
+      "exit_code": 1,
+      "stderr": "Error: \"guest read controls failed\"\n"
+    },
+    "mesen": {
+      "exit_code": 1,
+      "stderr": "reference completion, static-page or read control failed\n"
+    }
+  },
+  "scope": "Host and full-emulator observations; unresolved low bits need real hardware."
+}
