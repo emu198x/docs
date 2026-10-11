@@ -1,0 +1,38 @@
+{
+  "source": "323b2e93ff8a6b2e5cd7e997129c92c37658597d",
+  "reference": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "machine": "SMS2, no BIOS",
+  "frames": 60,
+  "regions": [
+    "ntsc-u",
+    "pal"
+  ],
+  "configuration_count": 24,
+  "guest_hashes": {
+    "off.sms": "226cc313102153dd081d3aafc774ba700adf3eb1bd682dfd79387779370b0f4f",
+    "on.sms": "4b4a5a98b9daee08ab7e65179ac1d004a928edbb3593ee7d297f3598981d3688",
+    "toggle0.sms": "ea467295fdf9cd45d84796c538a3abafdacd616e5ff367288753b975b9de2e53",
+    "toggle16.sms": "75751b3601fc2d734d169da1322cb6b6dbb510e184625dbafbf6ad9c62fdf811",
+    "toggle24.sms": "6061ac698dd7c2c2b06d83312d4a73231165b6f3fad212a099564fb872618cdb",
+    "toggle8.sms": "a146d596f4b8b05acfadfd75d6a424cd8960cbd396da69d5424ad5ed0237aea9"
+  },
+  "emulator_binary_sha256": "ca3aebe5c9228450e0bc5d8dede9f7bce4326158aa0e437299f1dc514903b965",
+  "reference_binary_sha256": "8f8549be144415aba827f4ac17aac06c607df48afbce9a9a64c4913424e2e5c1",
+  "controls": "All active pixels of on/off agree in both regions",
+  "geometry": {
+    "emu_ntsc_active_origin": [
+      12,
+      25
+    ],
+    "emu_pal_active_origin": [
+      10,
+      51
+    ],
+    "reference_active_origin": [
+      0,
+      0
+    ]
+  },
+  "reference_trace": "Traced and untraced frame 60 RAM and PPM identical in both regions",
+  "decision": "No production timing change; reference disagreement unresolved."
+}
