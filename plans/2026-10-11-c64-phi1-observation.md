@@ -275,3 +275,68 @@ currently recomputes the bank immediately; any correction must preserve the
 actual saved output and prove replay at the transient. This is an implementation
 candidate to validate, not an approved new schema or a reason to skip the
 pending Phi1 question. DDRA's separate reference approximation remains unqualified.
+
+## Existing-state PRA correction audit
+
+The bounded candidate uses the existing CIA-selected bank and saved VIC bank
+output, without adding a pipeline type, state field or snapshot version. On a
+C64C PRA write that changes physical bank 1 to 2 or 2 to 1, present bank 3 to
+the next VIC tick. The existing post-fetch board refresh then selects the CIA
+bank. Keep other transitions and breadbins direct. DDRA behaviour is outside
+this PRA correction and remains a separate explicit requirement.
+
+1. In an isolated source checkout, change only
+   `machine-commodore-c64/src/machine.rs`: capture the previous CIA-selected
+   bank for PRA writes and retain the reference-backed intermediate bank in
+   the existing VIC output. Preserve that output on snapshot restore instead
+   of recomputing it. Document why the post-fetch refresh ends the window.
+2. Re-run the existing CPU guest reproduction. Require both C64C marker cases
+   to change and both breadbin controls to remain identical. This is a coarse
+   root-cause gate; a positive changed-pixel count does not prove timing.
+3. Trace CPU stores and compare the resulting bank-3 glyph mask against each
+   machine's fetch/output coordinates. Check one-clock timing and reject
+   shifted windows; do not waive this because the coarse guest passes.
+4. Exercise all bank transitions, PRA mirrors and both normal/IEC tick paths.
+   Verify saved transient output survives byte serialization and replay,
+   including one tick before/during/after the switch. The schema stays at v19
+   only if the existing serialized fields preserve the full required state.
+5. Run affected machine/runtime tests, strict VIC fixtures, formatting and
+   Clippy. Commit one bounded correction only after gates pass; retain wider
+   Phi1 and DDRA requirements in issue 1713. If the existing state cannot model
+   the observed phase, discard this candidate and return to a concrete design.
+
+### Existing-state correction verified
+
+The PRA correction passes without extending saved state. The existing VIC
+bank output retains bank 3 for the next fetch; the board's post-fetch refresh
+then returns it to CIA2's selection. Restore now retains that saved output.
+The serialized snapshot envelope remains version 19.
+
+The permanent machine test executes the original guest on all four shipping
+boards through both normal and IEC ticks, with both bank-3 markers (16 runs).
+Every run completes 8,193 PRA stores. Its whole-framebuffer difference mask
+matches the independently qualified store-to-fetch relation exactly, including
+partially rendered lines. A second test covers all 16 bank pairs at all 16 PRA
+mirrors, on both clock paths. Byte-snapshot tests cover four boards, both swap
+directions and the before/during/after boundaries (24 cases), with eight ticks
+of identical serialized replay.
+
+Removing the correction makes both machine tests fail: the CPU pixel test
+reports 6,568 mask mismatches on PAL C64C. Reintroducing only the old loader's
+bank recalculation fails the restore regression at `C64cPal, phase 1`
+(`left: 2`, `right: 3`). This separately establishes that the restore test can
+catch its intended fault; reverting the whole fix would never arm the transient.
+
+The real-firmware guest also completes all eight board/marker runs. Bank-3
+markers change 6,552 PAL C64C pixels and 6,464 NTSC C64C pixels; breadbin buffers
+remain identical. These counts are capture-phase dependent, so the permanent
+regression checks the full phase-derived mask rather than pinning those totals.
+
+Validation: 402 ordinary tests pass (74 fixture tests remain ignored in that
+command); the explicitly selected strict native-reference suite passes all
+10 tests in 307.49 seconds. Its light-pen measurements agree on all 5,120 bytes.
+Clippy with `--all-targets -- -D warnings`, formatting and diff checks pass.
+The native suite includes historical gfxfetch floors as well as exact fixtures;
+this is not a claim of whole-image equivalence for every fixture or a full
+external-media catalogue run. DDRA, sprite/invalid-Phi2 ownership and the missing
+CPU Phi1 path remain open requirements of the broader issue.
