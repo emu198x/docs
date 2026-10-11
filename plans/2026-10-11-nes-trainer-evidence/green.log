@@ -1,0 +1,21 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-nes-trainer/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/179de1aa27546340: Operation not permitted (os error 1)
+   Compiling format-nintendo-nes-ines v0.31.0 (/private/tmp/198x-nes-trainer/crates/format-nintendo-nes-ines)
+   Compiling ricoh-ppu-2c02 v0.31.0 (/private/tmp/198x-nes-trainer/crates/ricoh-ppu-2c02)
+   Compiling machine-nintendo-nes v0.31.0 (/private/tmp/198x-nes-trainer/crates/machine-nintendo-nes)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.62s
+     Running tests/trainers.rs (/private/tmp/198x-sunsoft4-target/debug/deps/trainers-6dd738f588daaa97)
+
+running 3 tests
+test trainer_and_rom_truncation_is_rejected_before_loading_ram ... ok
+test existing_ramless_mappers_do_not_gain_synthetic_ram ... ok
+test trainers_initialize_only_their_ram_window ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/trainer_loading.rs (/private/tmp/198x-sunsoft4-target/debug/deps/trainer_loading-adad07b0d68859da)
+
+running 1 test
+test guests_read_modify_and_restore_loaded_trainers ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.06s
+

@@ -1,0 +1,27 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-nes-trainer/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/179de1aa27546340: Operation not permitted (os error 1)
+   Compiling format-nintendo-nes-ines v0.31.0 (/private/tmp/198x-nes-trainer/crates/format-nintendo-nes-ines)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.97s
+     Running tests/trainers.rs (/private/tmp/198x-sunsoft4-target/debug/deps/trainers-6dd738f588daaa97)
+
+running 3 tests
+test trainer_and_rom_truncation_is_rejected_before_loading_ram ... ok
+test existing_ramless_mappers_do_not_gain_synthetic_ram ... ok
+test trainers_initialize_only_their_ram_window ... FAILED
+
+failures:
+
+---- trainers_initialize_only_their_ram_window stdout ----
+
+thread 'trainers_initialize_only_their_ram_window' (94150998) panicked at crates/format-nintendo-nes-ines/tests/trainers.rs:43:25:
+assertion `left == right` failed: mapper 0, NES2 false, battery false, trainer true, RAM 1000
+  left: 0
+ right: 11
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    trainers_initialize_only_their_ram_window
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p format-nintendo-nes-ines --test trainers`
