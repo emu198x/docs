@@ -1,0 +1,53 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-0fe5410edfa147bf)
+
+running 1 test
+region=Ntsc height=1 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Ntsc height=1 flags=1 requests=243 handlers=1 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=1 flags=2 requests=122 handlers=122 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=1 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=22366
+region=Ntsc height=2 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Ntsc height=2 flags=1 requests=122 handlers=122 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=2 flags=2 requests=61 handlers=61 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=2 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=21454
+region=Ntsc height=3 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Ntsc height=3 flags=1 requests=81 handlers=81 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=3 flags=2 requests=41 handlers=41 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=3 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=20550
+region=Ntsc height=16 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Ntsc height=16 flags=1 requests=16 handlers=16 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=96 min_age=570
+region=Ntsc height=16 flags=2 requests=8 handlers=8 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Ntsc height=16 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=8742
+region=Pal height=1 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Pal height=1 flags=1 requests=293 handlers=1 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=1 flags=2 requests=147 handlers=147 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=1 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=22366
+region=Pal height=2 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Pal height=2 flags=1 requests=147 handlers=147 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=2 flags=2 requests=74 handlers=74 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=2 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=21454
+region=Pal height=3 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Pal height=3 flags=1 requests=98 handlers=98 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=3 flags=2 requests=49 handlers=49 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=3 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=20550
+region=Pal height=16 flags=0 requests=0 handlers=0 writes=1 pixels=192 wrong_pixels=0 wrong_bus_pixels=0 wrong_previous=0 min_age=0
+region=Pal height=16 flags=1 requests=19 handlers=19 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=96 min_age=570
+region=Pal height=16 flags=2 requests=10 handlers=10 writes=1 pixels=192 wrong_pixels=96 wrong_bus_pixels=0 wrong_previous=95 min_age=570
+region=Pal height=16 flags=3 requests=1 handlers=1 writes=1 pixels=192 wrong_pixels=192 wrong_bus_pixels=0 wrong_previous=191 min_age=8742
+cases=32 failures=24
+
+thread 'dli_raster_probe::requested_interrupts_reach_pixels' (90694956) panicked at crates/machine-atari-7800/src/lib.rs:1645:9:
+assertion `left == right` failed: requested DLIs must produce the guest's visible colour changes
+  left: 24
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test dli_raster_probe::requested_interrupts_reach_pixels ... FAILED
+
+failures:
+
+failures:
+    dli_raster_probe::requested_interrupts_reach_pixels
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 41 filtered out; finished in 0.65s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`
