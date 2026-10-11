@@ -1,0 +1,38 @@
+{
+  "positive": {
+    "comparisons": 208,
+    "events": [
+      [
+        123,
+        0
+      ],
+      [
+        131,
+        1
+      ]
+    ]
+  },
+  "negatives": {
+    "empty": "incomplete dynamic replay",
+    "changed": "dynamic NMI differs from staged model at step 110"
+  },
+  "structure_dates": {
+    "records": 563,
+    "distinct_payloads": 1,
+    "fields": [
+      -1900,
+      13,
+      7,
+      0,
+      0,
+      0,
+      -1900,
+      13,
+      7,
+      0,
+      0,
+      0
+    ],
+    "calendar_month_valid": false
+  }
+}
