@@ -1,0 +1,16 @@
+{
+  "source_commit": "84c7d7c0398779f4622a4126b41076749379ba34",
+  "rust": "1.99.0",
+  "mask_cases": 1024,
+  "mismatches": 768,
+  "left_mismatches": 512,
+  "right_mismatches": 512,
+  "controls": "Each isolated channel produces nonzero, finite, nonempty audio with mask FF; both outputs agree.",
+  "oracle_scope": "Published bit routing and unchanged Mesen2/MAME source; amplitude/waveform control comes from the same chip with all outputs enabled. This is not a physical waveform comparison.",
+  "mesen2_commit": "fabc9a62174f8734a113df6d244f5539ef6b8fcf",
+  "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "sha256": {
+    "probe.rs": "69ec88dbda86a3cd91ab8fba906eaf79d81edd8860cd475279184f99af7d4eaa",
+    "red.log": "f06386010fded2fac36de367c8d3668e2c8fb2627537f40f71fec3a2b4fe09d5"
+  }
+}

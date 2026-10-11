@@ -1,0 +1,8 @@
+mask cases=1024, mismatches=768, left=512, right=512
+pre-write samples retain left-only routing: false
+
+thread 'main' (92757729) panicked at /private/tmp/198x-sn76489-stereo-evidence/probe.rs:55:5:
+assertion `left == right` failed: panning does not select the enabled outputs
+  left: 768
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
