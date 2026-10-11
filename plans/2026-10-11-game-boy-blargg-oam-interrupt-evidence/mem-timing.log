@@ -1,0 +1,9 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-blargg/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5a746ee5ecc200e8: Operation not permitted (os error 1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.20s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+
+running 1 test
+test blargg_mem_timing_v1_and_v2_pass ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 10 filtered out; finished in 1.16s
+

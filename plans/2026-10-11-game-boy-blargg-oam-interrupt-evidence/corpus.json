@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/retrio/gb-test-roms",
+  "revision": "c240dd7d700e5c0b00a7bbba52b53e4ee67b5f15",
+  "files": [
+    {
+      "path": "oam_bug/oam_bug.gb",
+      "bytes": 65536,
+      "sha256": "21f0e7af73e525d14ca242ba28f97d4d381a40a61b3466dd6b4cae3e502e1ea1"
+    },
+    {
+      "path": "oam_bug/rom_singles/1-lcd_sync.gb",
+      "bytes": 32768,
+      "sha256": "abc303a2c644528cbcf36e83f8020cad17fdb6abdf42940533c4f6c8830c530a"
+    },
+    {
+      "path": "oam_bug/rom_singles/2-causes.gb",
+      "bytes": 32768,
+      "sha256": "3f9c0db75222aae7c47382fe814b3806735b9ef76c791c6c26985b55c82235b9"
+    },
+    {
+      "path": "oam_bug/rom_singles/3-non_causes.gb",
+      "bytes": 32768,
+      "sha256": "33e474075def3c025ff7990af82f1effb31e83617fb88aa1ee401976c35b8978"
+    },
+    {
+      "path": "oam_bug/rom_singles/4-scanline_timing.gb",
+      "bytes": 32768,
+      "sha256": "5527c97665c3ad5474e5bda53a7e8e629bb1d0cb8ec54e6a1b42946dc9835ec7"
+    },
+    {
+      "path": "oam_bug/rom_singles/5-timing_bug.gb",
+      "bytes": 32768,
+      "sha256": "ca3500d92e77883a09e5bc560046ed3471ab362eca550689cd38a944dc558e4f"
+    },
+    {
+      "path": "oam_bug/rom_singles/6-timing_no_bug.gb",
+      "bytes": 32768,
+      "sha256": "e5ea594ddc7ad9a0e3063c3d6b050a2a10239cd43a23012551d4985c3712ea70"
+    },
+    {
+      "path": "oam_bug/rom_singles/7-timing_effect.gb",
+      "bytes": 32768,
+      "sha256": "b4bb86462a5701155d92ea7dafe826cbffae6faec2c48c10feef0a5f78154d6c"
+    },
+    {
+      "path": "oam_bug/rom_singles/8-instr_effect.gb",
+      "bytes": 32768,
+      "sha256": "11b372a91f65dd3bd2570aafc6f26e201fc0f05955ba3bb57f4c17cd642f7b2d"
+    },
+    {
+      "path": "interrupt_time/interrupt_time.gb",
+      "bytes": 32768,
+      "sha256": "1a8f8f3bc609a92a5838214c00906c81e7cc77b3b9a63be5a1ec6d513f234929"
+    }
+  ]
+}

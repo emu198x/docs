@@ -1,0 +1,56 @@
+
+running 1 test
+test blargg_interrupt_time_full_rom_passes ... FAILED
+
+failures:
+
+failures:
+    blargg_interrupt_time_full_rom_passes
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.14s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.11s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+interrupt_time: frame=29 full_verdict=Some(false)
+
+
+
+
+
+
+
+
+
+interrupt time
+
+00 00 00
+00 08 0D
+00 00 00
+00 08 0D
+7F8F4AAF
+Failed
+
+
+
+thread 'blargg_interrupt_time_full_rom_passes' (93654508) panicked at crates/runtime-nintendo-game-boy/tests/phase2_verification.rs:772:5:
+full interrupt_time verdict fails on DMG; CGB speed switching is tracked in #324: 
+
+
+
+
+
+
+
+
+interrupt time
+
+00 00 00
+00 08 0D
+00 00 00
+00 08 0D
+7F8F4AAF
+Failed
+
+
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p runtime-nintendo-game-boy --test phase2_verification`

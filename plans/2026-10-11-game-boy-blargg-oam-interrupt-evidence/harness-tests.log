@@ -1,0 +1,20 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-blargg/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5a746ee5ecc200e8: Operation not permitted (os error 1)
+   Compiling runtime-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/runtime-nintendo-game-boy)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.08s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+
+running 11 tests
+test blargg_cpu_instrs_passes_all_11_subtests ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_instr_timing_passes ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_interrupt_time_full_rom_passes ... ignored, FIXTURE: needs local Blargg interrupt_time ROM; full verdict requires CGB (#324)
+test blargg_interrupt_time_normal_speed_passes ... ignored, FIXTURE: needs local Blargg interrupt_time ROM; checks normal speed only
+test blargg_mem_timing_v1_and_v2_pass ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_oam_bug_passes_aggregate_and_all_singles ... ignored, FIXTURE: needs local Blargg OAM ROMs; currently exposes OAM accuracy failures
+test dmg_acid2_renders_non_trivial_frame ... ignored, FIXTURE: needs local dmg-acid2 ROM
+test mooneye_acceptance_gate_set_passes ... ignored, FIXTURE: needs local mooneye-gb acceptance ROMs
+test mooneye_broad_acceptance_sweep_reports_baseline ... ignored, DIAGNOSTIC: reports broad local mooneye coverage without gating CI
+test blargg_ram_report_keeps_final_text_and_status ... ok
+test interrupt_measurement_check_rejects_incomplete_and_wrong_counts ... ok
+
+test result: ok. 2 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

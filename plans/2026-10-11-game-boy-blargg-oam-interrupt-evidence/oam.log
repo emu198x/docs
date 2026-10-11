@@ -1,0 +1,102 @@
+
+running 1 test
+test blargg_oam_bug_passes_aggregate_and_all_singles ... FAILED
+
+failures:
+
+failures:
+    blargg_oam_bug_passes_aggregate_and_all_singles
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 10 filtered out; finished in 5.31s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+FAIL oam_bug/oam_bug.gb: frame=561 status=Some(2)
+oam_bug
+
+01:ok  02:02  03:ok  04:03  05:02  06:ok  07:01  08:02  
+
+Run failed tests
+individually for
+more details.
+
+Failed #2
+
+PASS oam_bug/rom_singles/1-lcd_sync.gb: frame=26 status=Some(0)
+1-lcd_sync
+
+
+Passed
+
+FAIL oam_bug/rom_singles/2-causes.gb: frame=31 status=Some(2)
+2-causes
+
+
+LD DE,$FE00 : INC DE
+
+Failed #2
+
+PASS oam_bug/rom_singles/3-non_causes.gb: frame=77 status=Some(0)
+3-non_causes
+
+
+Passed
+
+FAIL oam_bug/rom_singles/4-scanline_timing.gb: frame=37 status=Some(3)
+4-scanline_timing
+
+
+INC DE at first corruption
+
+Failed #3
+
+FAIL oam_bug/rom_singles/5-timing_bug.gb: frame=32 status=Some(2)
+5-timing_bug
+
+
+Should corrupt at beginning of first scanline
+
+Failed #2
+
+PASS oam_bug/rom_singles/6-timing_no_bug.gb: frame=64 status=Some(0)
+6-timing_no_bug
+
+00 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+80 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+90 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+Passed
+
+FAIL oam_bug/rom_singles/7-timing_effect.gb: frame=255 status=Some(1)
+7-timing_effect
+
+00000000 
+Failed
+
+FAIL oam_bug/rom_singles/8-instr_effect.gb: frame=44 status=Some(2)
+8-instr_effect
+
+00000000 
+INC/DEC rp pattern is wrong
+
+Failed #2
+
+
+thread 'blargg_oam_bug_passes_aggregate_and_all_singles' (93654310) panicked at crates/runtime-nintendo-game-boy/tests/phase2_verification.rs:754:5:
+OAM failures (aggregate plus eight singles): [
+    "oam_bug/oam_bug.gb",
+    "oam_bug/rom_singles/2-causes.gb",
+    "oam_bug/rom_singles/4-scanline_timing.gb",
+    "oam_bug/rom_singles/5-timing_bug.gb",
+    "oam_bug/rom_singles/7-timing_effect.gb",
+    "oam_bug/rom_singles/8-instr_effect.gb",
+]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p runtime-nintendo-game-boy --test phase2_verification`
