@@ -1,0 +1,9 @@
+test_complete_cell_excludes_initial_fragment_and_trailer (test_inspect_layout.LayoutTests.test_complete_cell_excludes_initial_fragment_and_trailer) ... ok
+test_duplicate_and_misplaced_names_fail (test_inspect_layout.LayoutTests.test_duplicate_and_misplaced_names_fail) ... ok
+test_invalid_lengths_types_and_missing_end_fail (test_inspect_layout.LayoutTests.test_invalid_lengths_types_and_missing_end_fail) ... ok
+test_polygon_coordinates_and_text_are_retained (test_inspect_layout.LayoutTests.test_polygon_coordinates_and_text_are_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
