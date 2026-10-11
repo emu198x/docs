@@ -1,0 +1,151 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.53s
+     Running tests/pot_restart_probe.rs (../emu198x/target/debug/deps/pot_restart_probe-e238b5af9641c178)
+
+running 1 test
+frequency=1789772 pot=0 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=0 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=0 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=0 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=0 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=0 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=0 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=0 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=1 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=1 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=1 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=1 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=1 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=1 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=1 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=1 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=2 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=2 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=2 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=2 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=2 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=2 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=2 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=2 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=3 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=3 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=3 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=3 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=3 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=3 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=3 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=3 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=4 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=4 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=4 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=4 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=4 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=4 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=4 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=4 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=5 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=5 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=5 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=5 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=5 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=5 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=5 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=5 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=6 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=6 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=6 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=6 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=6 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=6 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=6 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=6 target=200 restart=32 actual=200 expected_near=168
+frequency=1789772 pot=7 target=64 restart=16 actual=64 expected_near=48
+frequency=1789772 pot=7 target=64 restart=32 actual=64 expected_near=32
+frequency=1789772 pot=7 target=100 restart=16 actual=100 expected_near=84
+frequency=1789772 pot=7 target=100 restart=32 actual=100 expected_near=68
+frequency=1789772 pot=7 target=128 restart=16 actual=128 expected_near=112
+frequency=1789772 pot=7 target=128 restart=32 actual=128 expected_near=96
+frequency=1789772 pot=7 target=200 restart=16 actual=200 expected_near=184
+frequency=1789772 pot=7 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=0 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=0 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=0 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=0 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=0 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=0 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=0 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=0 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=1 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=1 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=1 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=1 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=1 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=1 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=1 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=1 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=2 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=2 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=2 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=2 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=2 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=2 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=2 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=2 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=3 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=3 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=3 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=3 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=3 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=3 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=3 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=3 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=4 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=4 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=4 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=4 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=4 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=4 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=4 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=4 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=5 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=5 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=5 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=5 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=5 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=5 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=5 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=5 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=6 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=6 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=6 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=6 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=6 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=6 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=6 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=6 target=200 restart=32 actual=200 expected_near=168
+frequency=1773447 pot=7 target=64 restart=16 actual=64 expected_near=48
+frequency=1773447 pot=7 target=64 restart=32 actual=64 expected_near=32
+frequency=1773447 pot=7 target=100 restart=16 actual=100 expected_near=84
+frequency=1773447 pot=7 target=100 restart=32 actual=100 expected_near=68
+frequency=1773447 pot=7 target=128 restart=16 actual=128 expected_near=112
+frequency=1773447 pot=7 target=128 restart=32 actual=128 expected_near=96
+frequency=1773447 pot=7 target=200 restart=16 actual=200 expected_near=184
+frequency=1773447 pot=7 target=200 restart=32 actual=200 expected_near=168
+cases=[64, 64, 64] failures=[0, 64, 64]
+
+thread 'restarted_scan_retains_input_charge' (89929350) panicked at crates/atari-pokey/tests/pot_restart_probe.rs:45:5:
+assertion `left == right` failed: POTGO must retain the input's accumulated charge
+  left: [0, 64, 64]
+ right: [0, 0, 0]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test restarted_scan_retains_input_charge ... FAILED
+
+failures:
+
+failures:
+    restarted_scan_retains_input_charge
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.26s
+
+error: test failed, to rerun pass `-p atari-pokey --test pot_restart_probe`

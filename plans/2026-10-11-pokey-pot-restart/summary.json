@@ -1,0 +1,10 @@
+{
+  "cases": 288,
+  "observations": 16512,
+  "pot_reads": 132096,
+  "capture_sha256": "988446a7bc16ca3554a46e4b2fef465fd7af5eea9f7cc9ebfa667438792de38b",
+  "discard-charge": "restart mismatch ((0, 0, 8, 0, 64), 64, 1): (0, 255, 0, 1, 0) != (0, 0, 0, 1, 2523293286)",
+  "discard-latch": "restart mismatch ((0, 0, 8, 1, 64), 0, 0): (0, 0, 0, 1, 1073741924) != (42, 0, 0, 1, 1073741924)",
+  "premature-stop": "restart mismatch ((0, 0, 8, 0, 64), 15, 0): (0, 0, 0, 0, 773775819) != (0, 0, 0, 1, 1744830464)",
+  "assembled_sha256": "792b5afdcb3958e48de114b11fa9ac3799fe376ef07b92801806a03568554c41"
+}
