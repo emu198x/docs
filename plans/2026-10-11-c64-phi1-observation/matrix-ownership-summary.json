@@ -1,0 +1,20 @@
+{
+  "cases": 415,
+  "controls": 100,
+  "boundary_cases": 160,
+  "invalid_counts": {
+    "0": 184,
+    "1": 20,
+    "2": 20,
+    "3": 191
+  },
+  "records": 1642548,
+  "invalid_matrix": 633,
+  "invalid_distinct_ram": 633,
+  "valid_late_matrix": 3041,
+  "consumed_graphics": 33200,
+  "tests_passed": 172,
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "archive_sha256": "7dbc937e45afaf23943340358a111fa860695de957f66718e747683302429d1f",
+  "scope": "CPU-created badline during already active text display; five profiles, four banks, full-window and cutoff ownership, unchanged controls and next-line matrix consumption. No colour-nibble, final-pixel, VSP/far-edge carry or production save/replay claim."
+}
