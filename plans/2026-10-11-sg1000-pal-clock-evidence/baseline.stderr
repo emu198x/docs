@@ -1,0 +1,7 @@
+sample_rate_mismatches=3/6
+
+thread 'main' (94315336) panicked at /private/tmp/198x-sg1000-pal-evidence/probe.rs:28:5:
+assertion `left == right` failed: audio duration must match runtime time
+  left: 3
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

@@ -1,0 +1,10 @@
+{
+  "source_revision": "6aeae61fce121dff9a7fa1f22eb699436c67f85b",
+  "source_changed_for_probe": false,
+  "toolchain": "Rust 1.99, workspace-pinned",
+  "probe_scope": "Original cartridge, unmodified machine, clock read from actual runtime profile; three consecutive seconds per region",
+  "baseline_exit": 101,
+  "cases": 6,
+  "mismatches": 3,
+  "sc3000_manual_sha256": "a557f391ac3a376de73e1f9e1986c3a2322b373a5098e4e63c57b9c8df8b44c8"
+}
