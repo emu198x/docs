@@ -71,3 +71,26 @@ Await approval for the changed serialized meaning and NES snapshot v2.
 AGENTS.md requires agreement for “Breaking changes to APIs or data schemas”.
 The proposed ten-bit representation is concrete; approval does not waive the
 remaining low-bit validation requirement above.
+
+## Hardware observation cartridge
+
+The traced AF4/AF5 inputs remain uncertain. Build a standalone observation
+cartridge in `2026-10-11-mmc5-chr-register-evidence/hardware/` before assigning
+those bits. This is test preparation; the snapshot approval remains pending.
+
+1. `observe.s` writes $5127 with values 0–7 in each of the four modes,
+   reads the current window through $2007, changes to 1 KiB without another
+   bank write, and reads the retained physical page twice plus its complement.
+   Keep all 32 observations in internal RAM and display the two page matrices.
+2. `build.py` and `observe.cfg` use the installed ca65/ld65 tools to produce
+   an iNES mapper-5 cartridge with 32 KiB PRG and 256 KiB synthetic CHR.
+   Each physical 1 KiB page starts with its index and one's complement.
+   The display font is original, and no third-party ROM bytes are included.
+3. `run.rs` executes the cartridge on the existing full NES machine, verifies
+   completion, every row, repeat/complement controls, and the screen's tile
+   contents. Save raw observations and a framebuffer. Perturb one control to
+   prove verification rejects bad output; an emulator run is not hardware
+   evidence for the unresolved bits.
+4. Document the on-screen layout and cartridge requirements. A genuine MMC5
+   or MMC5A result, with chip/board identity and an unambiguous photograph,
+   remains necessary before treating the low-bit values as measured facts.

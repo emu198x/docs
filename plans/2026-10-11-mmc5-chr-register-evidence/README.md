@@ -8,6 +8,7 @@ The synthetic CHR payload identifies 1 KiB pages by page number modulo 251.
 - `mode_probe.rs` / `mode-baseline.csv`: writes four aligned banks in 1 KiB mode, then changes the mode without another write. Twelve widening cases disagree with retained physical bases; four unchanged-mode controls pass.
 - `compare_reference.py` / `reference_host.cpp.in`: compile Mesen2's unchanged `UpdateChrBanks` locally and compare all 64 expected first-page bytes.
 - `reference.csv` / `comparison.json`: compiled reference output and checked counts.
+- `hardware/`: original observation cartridge, full-machine hosts, 32-row measurements and negative controls for the unresolved write bits. See its README for building and hardware capture.
 - `finding.json`: original bounded observation and the remaining validation requirement.
 
 The reference host fixes 8x8 sprites and records selected pages. It does not
