@@ -1,0 +1,16 @@
+region,chip,probe,actual,expected
+Ntsc,Sms1,vc_at_active_31,30,31
+Ntsc,Sms1,irq_dot,10944,10565
+Ntsc,Sms2,vc_at_active_31,30,31
+Ntsc,Sms2,irq_dot,10944,10565
+Pal,Sms1,vc_at_active_31,30,31
+Pal,Sms1,irq_dot,10944,10565
+Pal,Sms2,vc_at_active_31,30,31
+Pal,Sms2,irq_dot,10944,10565
+1368 horizontal controls passed; 8 phase failures
+
+thread 'main' (93336215) panicked at /private/tmp/198x-sms-raster-evidence/chip_phase_probe.rs:47:5:
+assertion `left == right` failed: VDP phase disagrees with reference
+  left: 8
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
