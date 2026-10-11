@@ -1,0 +1,58 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-nes-inspection/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c10f4961d0d4a3da: Operation not permitted (os error 1)
+   Compiling emu198x-test-skip v0.31.0 (/private/tmp/198x-nes-inspection/crates/emu198x-test-skip)
+   Compiling emu198x-ricoh-apu-2a03 v0.6.0 (/private/tmp/198x-nes-inspection/crates/emu198x-ricoh-apu-2a03)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-nes-inspection/crates/emu198x-mos-6502)
+   Compiling format-nintendo-nes-ines v0.31.0 (/private/tmp/198x-nes-inspection/crates/format-nintendo-nes-ines)
+   Compiling ricoh-ppu-2c02 v0.31.0 (/private/tmp/198x-nes-inspection/crates/ricoh-ppu-2c02)
+   Compiling machine-nintendo-nes v0.31.0 (/private/tmp/198x-nes-inspection/crates/machine-nintendo-nes)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.88s
+     Running tests/nametable_inspection.rs (/private/tmp/198x-sunsoft4-target/debug/deps/nametable_inspection-11b0f38190d4cd2b)
+
+running 5 tests
+test single_screen_upper_inspection_matches_guest ... FAILED
+test vertical_inspection_matches_guest ... ok
+test horizontal_inspection_matches_guest ... FAILED
+test single_screen_lower_inspection_matches_guest ... FAILED
+test inspection_tracks_live_mirroring_changes ... FAILED
+
+failures:
+
+---- single_screen_upper_inspection_matches_guest stdout ----
+
+thread 'single_screen_upper_inspection_matches_guest' (94106076) panicked at crates/machine-nintendo-nes/tests/nametable_inspection.rs:101:13:
+assertion `left == right` failed: inspection: mode 1, byte 0
+  left: 0
+ right: 68
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- horizontal_inspection_matches_guest stdout ----
+
+thread 'horizontal_inspection_matches_guest' (94106073) panicked at crates/machine-nintendo-nes/tests/nametable_inspection.rs:101:13:
+assertion `left == right` failed: inspection: mode 3, byte 1024
+  left: 68
+ right: 0
+
+---- single_screen_lower_inspection_matches_guest stdout ----
+
+thread 'single_screen_lower_inspection_matches_guest' (94106075) panicked at crates/machine-nintendo-nes/tests/nametable_inspection.rs:101:13:
+assertion `left == right` failed: inspection: mode 0, byte 1024
+  left: 68
+ right: 0
+
+---- inspection_tracks_live_mirroring_changes stdout ----
+
+thread 'inspection_tracks_live_mirroring_changes' (94106074) panicked at crates/machine-nintendo-nes/tests/nametable_inspection.rs:101:13:
+assertion `left == right` failed: inspection: mode 3, byte 1024
+  left: 68
+ right: 0
+
+
+failures:
+    horizontal_inspection_matches_guest
+    inspection_tracks_live_mirroring_changes
+    single_screen_lower_inspection_matches_guest
+    single_screen_upper_inspection_matches_guest
+
+test result: FAILED. 1 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+error: test failed, to rerun pass `-p machine-nintendo-nes --test nametable_inspection`

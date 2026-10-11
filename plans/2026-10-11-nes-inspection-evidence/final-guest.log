@@ -1,0 +1,14 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-nes-inspection/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c10f4961d0d4a3da: Operation not permitted (os error 1)
+   Compiling machine-nintendo-nes v0.31.0 (/private/tmp/198x-nes-inspection/crates/machine-nintendo-nes)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.43s
+     Running tests/nametable_inspection.rs (/private/tmp/198x-sunsoft4-target/debug/deps/nametable_inspection-11b0f38190d4cd2b)
+
+running 5 tests
+test single_screen_upper_inspection_matches_guest ... ok
+test single_screen_lower_inspection_matches_guest ... ok
+test horizontal_inspection_matches_guest ... ok
+test vertical_inspection_matches_guest ... ok
+test inspection_tracks_live_mirroring_changes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
