@@ -237,7 +237,41 @@ guards bring the combined suite to 38 passing tests, including rejection of
 an incorrect marker image even with matching forged hash/difference metadata.
 
 This is a separate machine glue-logic omission, beyond the pending VIC fetch
-stage design above. The exact first-fetch clock boundary and DDRA cases still
-need qualification before agreeing a retained machine stage and save-state
-layout. Do not treat the existing Phi1 proposal as approval for that extension,
+stage design above. The PRA observation boundary is qualified below; DDRA cases still need
+qualification. Inspect whether the already-saved VIC bank output and CIA
+port state can preserve this window before proposing additional saved state. Do not treat the existing Phi1 proposal as approval for that extension,
 or copy VICE's explicitly approximate DDRA behaviour as established hardware.
+
+## Write-to-fetch phase qualification
+
+Add `bank_phase.py` to repeat the existing original bank-1/2 guest with native
+CIA2 store tracing. Require unchanged screenshots against the retained capture
+before trusting instrumentation. Relate the bank-3-dependent glyph cells to
+completed CPU store times and the reference's graphics fetch table, accounting
+for raster/frame wrap and screenshot crop. Reject shifted or widened windows.
+Record the monitor boundary explicitly; this qualifies reference timing, not
+an electrical delay measurement. Production and schema stay unchanged.
+
+### Qualified PRA phase
+
+Five instrumented runs preserve the retained screenshots byte for byte and
+record 40,965 CPU stores. Readback confirms custom glue. In the monitor's
+completed-instruction coordinates, glyph column `n` is bank-3-dependent exactly
+when the same line contains a 1/2 swap at reported cycle `15 + n`. Accounting
+for native crop and the unfinished screenshot line predicts all 40,000 glyph
+cells, with zero differences. This does not equate the monitor counter with
+hardware half-cycle labels or Emu198x's internal tick counter.
+
+The -2/-1/+1/+2 clock controls fail 8,218/8,241/8,248/8,273 cells; a two-clock
+window fails 4,121. The suite now passes 45 guards, including rejection of
+coherently shifted timestamps using independent pixels. `bank_phase.py`,
+`phase-logs.json.gz` and `phase-summary.json` retain the capture and comparison.
+
+The next implementation audit should examine the existing state first:
+`Vic::vic_bank` is already saved separately from CIA2's selected port output,
+and each board tick refreshes that bank after the VIC fetch. That may already
+represent a one-fetch transient without adding fields. Snapshot restore
+currently recomputes the bank immediately; any correction must preserve the
+actual saved output and prove replay at the transient. This is an implementation
+candidate to validate, not an approved new schema or a reason to skip the
+pending Phi1 question. DDRA's separate reference approximation remains unqualified.

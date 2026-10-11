@@ -8,6 +8,13 @@ test_no_completion (test_bank_switch.BankSwitchGuards.test_no_completion) ... ok
 test_short_capture (test_bank_switch.BankSwitchGuards.test_short_capture) ... ok
 test_trace_disagrees (test_bank_switch.BankSwitchGuards.test_trace_disagrees) ... ok
 test_wrong_byte_even_with_matching_trace_and_claimed_success (test_bank_switch.BankSwitchGuards.test_wrong_byte_even_with_matching_trace_and_claimed_success) ... ok
+test_all_profiles_and_window_mutations (test_phase.PhaseGuards.test_all_profiles_and_window_mutations) ... ok
+test_coherently_shifted_cpu_stores (test_phase.PhaseGuards.test_coherently_shifted_cpu_stores) ... ok
+test_empty_trace (test_phase.PhaseGuards.test_empty_trace) ... ok
+test_missing_completion (test_phase.PhaseGuards.test_missing_completion) ... ok
+test_missing_store (test_phase.PhaseGuards.test_missing_store) ... ok
+test_wrong_bank_sequence (test_phase.PhaseGuards.test_wrong_bank_sequence) ... ok
+test_wrong_control (test_phase.PhaseGuards.test_wrong_control) ... ok
 test_duplicate_model_rejected (test_probe.ProbeGuards.test_duplicate_model_rejected) ... ok
 test_empty_log_rejected (test_probe.ProbeGuards.test_empty_log_rejected) ... ok
 test_fabricated_zero_count_rejected (test_probe.ProbeGuards.test_fabricated_zero_count_rejected) ... ok
@@ -38,6 +45,6 @@ test_wrong_board_expectation (test_transient.TransientGuards.test_wrong_board_ex
 test_wrong_marker_even_with_consistent_image_hash_and_difference_array (test_transient.TransientGuards.test_wrong_marker_even_with_consistent_image_hash_and_difference_array) ... ok
 
 ----------------------------------------------------------------------
-Ran 38 tests in 2.336s
+Ran 45 tests in 2.612s
 
 OK
