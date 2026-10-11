@@ -1,0 +1,24 @@
+
+running 1 test
+test tests::nonzero_tone_intervals_match_the_full_reference ... FAILED
+
+failures:
+
+---- tests::nonzero_tone_intervals_match_the_full_reference stdout ----
+
+thread 'tests::nonzero_tone_intervals_match_the_full_reference' (92857007) panicked at crates/ti-sn76489/src/lib.rs:516:9:
+assertion `left == right` failed: first mismatch: Some((Tms15, 0, 1, [32, 32]))
+  left: 6138
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::nonzero_tone_intervals_match_the_full_reference
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 16 filtered out; finished in 1.66s
+
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.36s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-90d012b191c4f931)
+error: test failed, to rerun pass `-p ti-sn76489 --lib`
