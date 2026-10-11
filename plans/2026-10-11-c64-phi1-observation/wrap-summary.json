@@ -1,0 +1,16 @@
+{
+  "cases": 80,
+  "boundaries": {
+    "before": 40,
+    "after": 40
+  },
+  "stalled_pairs": 40,
+  "records": 412672,
+  "sprite_bytes": 5040,
+  "wrap_rows": 1680,
+  "calibration_runs": 256,
+  "tests_passed": 108,
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "archive_sha256": "34c498dc9a4211b2ddb613b1b158a187eb17d96709ef56c788084d17b1d60223",
+  "scope": "Sprite 2 on PAL/old NTSC, sprite 3 on current NTSC; four banks, both pointer directions and CPU writes before/after the wrap-row pointer fetch. No frame-wrap or production save/replay claim."
+}

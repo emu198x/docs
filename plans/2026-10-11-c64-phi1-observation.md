@@ -579,3 +579,53 @@ newly established production bug. The existing source already latches
 behaviour in the pending fetch correction. Other sprites' line-wrap timing,
 writes between individual fetch phases, dynamic bank changes and save/replay
 remain separate gates. Production and snapshot formats are unchanged.
+
+### Pointer/data continuity at line wrap
+
+Use the existing `sprite_pointer.py` guest and isolated observer for the fetch
+sequence that closes each line: sprite 2 on PAL/old NTSC and sprite 3 on current
+NTSC. The sprite-3 sweep on all models also observes the following-slot/native
+line-counter boundary on PAL/old NTSC. Calibrate CPU writes before selecting
+both directions and all banks. Generalise the existing pointer-sequence checker
+in `verify_sprite_pointer.py` while preserving its sprite-0 boundary guards;
+add `verify_sprite_wrap.py` and `test_sprite_wrap.py` for explicit wrap coverage.
+Require the absolute clock, model cycle modulus, continuous MC and held pointer
+to agree even when the native line label changes. Test mutations that reset at
+wrap, shift one phase, move a source change early/late or omit the wrapped byte.
+Keep these reference observations separate from production execution and from
+CPU writes between individual bus-owned fetch phases. No production or snapshot
+change is made by this probe.
+
+
+The model-specific closing sequence is now qualified: sprite 2 on PAL/old NTSC,
+sprite 3 on current NTSC. Eighty native boundary captures cover five profiles,
+four banks and both pointer directions. All 5,040 bytes and 1,680 wrapped rows
+preserve the latched source and MC progression. The complete traces contain
+412,672 records. A 256-run calibration also covers the following sprite-3 slot
+on PAL/old NTSC, distinguishing a native line-label transition from an actual
+absolute-clock wrap.
+
+The generalised sequence checker verifies absolute Phi1/Phi2 clocks and model
+cycle modulus. It retains the earlier sprite-0 boundary wrapper and guards.
+Native Phi1's line label advances after cycle 0; native sprite Phi2 still reports
+the preceding cycle. The checker rejects rewriting those labels from the current
+absolute clock, resetting at wrap, mixing row sources or omitting the final byte.
+All 108 tests pass, including 14 new wrap guards; Ruff and diff checks pass.
+
+`wrap-native.zip` retains all original programs, raw traces, CPU logs, RAM dumps
+and completion sentinels. `wrap-calibration.json.gz` retains the broader sweep,
+and `wrap-summary.json` pins the native binary, archive hash, counts and scope.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_wrap.py wrap-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+The two CPU-store sides are 90/59 and 91/3 on PAL, 90/61 and 91/3 on current
+NTSC, and 90/59 and 91/2 on old NTSC. All forty pairs preserve the seven-clock
+actual gap for one additional NOP. The first new source byte is offset 30 or 33,
+with no counter reset or split row at wrap. This is native reference evidence;
+no additional production fault, frame-wrap guarantee or save/replay result is
+claimed. Active graphics, dynamic banks during DMA, other invalid ownership
+cases and production save/replay remain open. The schema proposal is unchanged
+and still pending; no production or snapshot implementation follows here.
