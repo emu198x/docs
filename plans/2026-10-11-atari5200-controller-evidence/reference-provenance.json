@@ -1,0 +1,7 @@
+{
+  "source": "emulators/atari/altirra/src/ATAudio/source/pokey.cpp",
+  "source_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "scan_block_sha256": "0368c020e94309fa682e6932f90c80091547c0b8e228a49cf592122f87f72fd4",
+  "break_block_sha256": "766ae1c38ce23920176056458828a977e663e9e2721a1f0b7e6aada336801eff",
+  "scope": "Unchanged keyboard event and AssertBreakIRQ; matrix/scheduler/IRQ-ack shim; no CPU-write phase or electrical validation."
+}

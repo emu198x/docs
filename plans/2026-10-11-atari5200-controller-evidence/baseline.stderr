@@ -1,0 +1,7 @@
+176 mismatches across 336 guest captures
+
+thread 'main' (94364125) panicked at /private/tmp/198x-atari5200-input-evidence/probe.rs:89:5:
+assertion `left == right` failed: controller observations differ from connector routing and scan-enable invariants
+  left: 176
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
