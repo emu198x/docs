@@ -1,0 +1,41 @@
+{
+  "kind": "source inspection, not a native execution comparison",
+  "sources": {
+    "hardware_readme": {
+      "file": "readme.txt",
+      "sha256": "237015be23065e7cb216544358de37cc801f016ff07f472446bc81a0333e25a0"
+    },
+    "hardware_guest": {
+      "file": "fetchsplit.asm",
+      "sha256": "d046c51e52fc84f0fc4345e42039d0af6fd14904cb02aafe7f4eca20e84b77cd"
+    },
+    "vice": {
+      "file": "c64gluelogic.c",
+      "sha256": "24bd32b66102e0d9419281e43fa9f1688f58475a87805c6bd684a6fc0e750264"
+    },
+    "hoxs64": {
+      "file": "cia2.cpp",
+      "sha256": "9bc09f880c34464b92771c5c8e8cc1285fb055d7005f16c87cef3836882a5d91"
+    },
+    "virtualc64": {
+      "file": "VICIIMemory.cpp",
+      "sha256": "825de069a35014a794dd40b2a6f7bcf45a2f8c7e839a6345b45425f21f8b7c46"
+    }
+  },
+  "disagreements": [
+    {
+      "old_bank": 2,
+      "new_bank": 0,
+      "vice_custom": 2,
+      "virtualc64_custom": 2,
+      "hoxs64_stablewarm": 0
+    },
+    {
+      "old_bank": 3,
+      "new_bank": 1,
+      "vice_custom": 3,
+      "virtualc64_custom": 3,
+      "hoxs64_stablewarm": 1
+    }
+  ]
+}

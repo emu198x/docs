@@ -340,3 +340,22 @@ The native suite includes historical gfxfetch floors as well as exact fixtures;
 this is not a claim of whole-image equivalence for every fixture or a full
 external-media catalogue run. DDRA, sprite/invalid-Phi2 ownership and the missing
 CPU Phi1 path remain open requirements of the broader issue.
+
+### DDRA source audit
+
+The next DDRA gate cannot use a single unconditional screenshot oracle. The
+upstream `VICII/split-tests/fetchsplit/readme.txt` explicitly reports both
+cross-board and warm-up variation, and distinguishes its constructed reference
+images from the actual hardware captures. Its assembly separates PRA rows
+(`line0a/b/c_do`) and DDRA rows (`line1a/b/c_do`). Inspect those row/cell boundaries
+before attributing a whole-image mismatch to a missing delay.
+
+There is also implementation disagreement: on DDRA 2→0 and 3→1, VICE and
+VirtualC64's custom glue retain the old bank for the intervening fetch;
+Hoxs64's active `stablewarm` path selects the requested bank immediately.
+`ddra-source-audit.json` records source hashes and these two cases. This is a
+source inspection, not a native comparison or proof that any one emulator
+matches every physical board. The primary observation note records the same
+uncertainty. Qualify stable cells and board conditions, retain disputed cells
+as explicit open observations, and keep enabled-sprite/Phi2 qualification
+moving independently. No DDRA production change is justified by this audit.
