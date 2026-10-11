@@ -1,0 +1,16 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/426966148660c1: Operation not permitted (os error 1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.34s
+     Running tests/vicii_testbench.rs (target/debug/deps/vicii_testbench-1ea9df02f6df2d74)
+
+running 7 tests
+test light_pen_reference_normalization_matches_upstream ... ok
+test ntsc_gfxfetch_matches_vice_reference ... ok
+test gfxfetch_matches_vice_reference ... ok
+test sequencer_bug_matches_vice_reference_exactly ... ok
+test colour_register_pipeline_matches_vice_references ... ok
+test light_pen_measurement_matches_native_reference has been running for over 60 seconds
+test ntsc_greydot_matches_both_native_launch_phases has been running for over 60 seconds
+test ntsc_greydot_matches_both_native_launch_phases ... ok
+test light_pen_measurement_matches_native_reference ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 11 filtered out; finished in 299.11s

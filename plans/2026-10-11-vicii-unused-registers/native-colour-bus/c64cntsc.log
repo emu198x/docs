@@ -1,0 +1,12 @@
+Error - failed to retrieve executable path, falling back to getcwd() + argv[0]
+DriveROM: Error - 2000 ROM image not found. Hardware-level 2000 emulation is not available.
+DriveROM: Error - 4000 ROM image not found. Hardware-level 4000 emulation is not available.
+DriveROM: Error - CMDHD ROM image not found. Hardware-level CMDHD emulation is not available.
+Deleting all checkpoints
+Loading '/private/tmp/vicii-colour-bus-native/unused-registers.prg' from 0800 to 150A (0D0B bytes)
+WATCH: 1  C:$d7ff  (Stop on store)
+#1 (Stop on store d7ff)  139/$08b,  12/$0c
+.C:1505  8D FF D7    STA $D7FF      - A:A5 X:00 Y:0A SP:f3 N.-..I..    2145922
+  ADDR A  X  Y  SP 00 01 NV-BDIZC LIN CYC  STOPWATCH
+.;1508 a5 00 0a f3 2f 37 10100100 139 012    2145922
+Saving file '/private/tmp/vicii-colour-bus-native/c64cntsc.bin' from $6000 to $6220

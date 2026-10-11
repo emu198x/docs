@@ -1,0 +1,736 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/426966148660c1: Operation not permitted (os error 1)
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling objc2 v0.6.4
+   Compiling objc2-encode v4.1.0
+   Compiling libc v0.2.186
+   Compiling bitflags v2.11.1
+   Compiling simd-adler32 v0.3.9
+   Compiling zmij v1.0.21
+   Compiling serde_json v1.0.151
+   Compiling memchr v2.8.0
+   Compiling crc32fast v1.5.0
+   Compiling cfg-if v1.0.4
+   Compiling adler2 v2.0.1
+   Compiling itoa v1.0.18
+   Compiling log v0.4.29
+   Compiling miniz_oxide v0.9.1
+   Compiling zlib-rs v0.6.3
+   Compiling typenum v1.20.1
+   Compiling uuid v1.23.1
+   Compiling gilrs v0.11.2
+   Compiling cpal v0.18.2
+   Compiling bumpalo v3.20.2
+   Compiling equivalent v1.0.2
+   Compiling vec_map v0.8.2
+   Compiling hashbrown v0.17.1
+   Compiling zopfli v0.8.3
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling cobs v0.3.0
+   Compiling isa198x v0.1.0
+   Compiling fnv v1.0.7
+   Compiling dasp_sample v0.11.0
+   Compiling mach2 v0.6.0
+   Compiling typed-path v0.12.3
+   Compiling format-commodore-c64-d81 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-d81)
+   Compiling format-commodore-c64-d71 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-d71)
+   Compiling const-oid v0.10.2
+   Compiling hybrid-array v0.4.14
+   Compiling indexmap v2.14.0
+   Compiling cpufeatures v0.3.0
+   Compiling format-commodore-c64-t64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-t64)
+   Compiling format-commodore-c64-p00 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-p00)
+   Compiling format-commodore-c64-bas v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-bas)
+   Compiling emu198x-test-skip v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-test-skip)
+   Compiling dispatch2 v0.3.1
+   Compiling block2 v0.6.2
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-core-audio-types v0.3.2
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.1
+   Compiling objc2-core-foundation v0.3.2
+   Compiling isa198x-disasm v0.1.0
+   Compiling digest v0.11.3
+   Compiling sha2 v0.11.0
+   Compiling emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-6502)
+   Compiling common-commodore-iec v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec)
+   Compiling serde-big-array v0.5.1
+   Compiling mos-cia-6526 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-cia-6526)
+   Compiling common-commodore-drive-gcr v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-drive-gcr)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-via-6522)
+   Compiling emu198x-mos-sid-6581 v0.9.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-mos-sid-6581)
+   Compiling mos-vic-ii v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/mos-vic-ii)
+   Compiling format-commodore-c64-tap v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/format-commodore-c64-tap)
+   Compiling western-digital-wd1770 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/western-digital-wd1770)
+   Compiling common-commodore-iec-drive v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/common-commodore-iec-drive)
+   Compiling emu198x-esp-at-modem v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-esp-at-modem)
+   Compiling debug198x v0.1.0
+   Compiling postcard v1.1.3
+   Compiling machine-commodore-1541 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-1541)
+   Compiling machine-commodore-1581 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-1581)
+   Compiling machine-commodore-1571 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-1571)
+   Compiling machine-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/machine-commodore-c64)
+   Compiling objc2-core-audio v0.3.2
+   Compiling objc2-io-kit v0.3.2
+   Compiling objc2-audio-toolbox v0.3.2
+   Compiling gilrs-core v0.6.8
+   Compiling coreaudio-rs v0.14.2
+   Compiling flate2 v1.1.10
+   Compiling zip v8.6.0
+   Compiling png v0.18.1
+   Compiling emu198x-shell v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/emu198x-shell)
+   Compiling runtime-commodore-c64 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-vicii-idle-fetch/crates/runtime-commodore-c64)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 10.29s
+     Running unittests src/lib.rs (target/debug/deps/machine_commodore_c64-a30cc8c9406543de)
+
+running 146 tests
+test config::tests::c64c_shares_breadbin_timing_by_region ... ok
+test config::tests::breadbins_fit_the_6526_and_c64c_fits_the_6526a ... ok
+test config::tests::breadbins_fit_the_6581_and_c64c_fits_the_8580 ... ok
+test action_replay::tests::register_selects_mode_bank_and_releases_nmi ... ok
+test action_replay::tests::mode_bits_map_to_lines ... ok
+test action_replay::tests::powers_up_in_8k_game_bank0 ... ok
+test action_replay::tests::bit2_disables_cartridge ... ok
+test action_replay::tests::freeze_asserts_nmi_and_forces_ultimax_ram ... ok
+test datasette::tests::stays_idle_without_loaded_tape ... ok
+test datasette::tests::repeated_motor_level_does_not_restart_transition_delay ... ok
+test final_cartridge3::tests::bit7_hides_register ... ok
+test datasette::tests::records_write_line_pulses_into_a_writable_tape ... ok
+test final_cartridge3::tests::freeze_asserts_nmi_and_forces_ultimax ... ok
+test final_cartridge3::tests::powers_up_in_16k_bank0 ... ok
+test final_cartridge3::tests::register_drives_lines_bank_and_nmi ... ok
+test easyflash::tests::flash_program_through_roml_window ... ok
+test easyflash::tests::bank_register_selects_flash_banks ... ok
+test datasette::tests::only_advances_when_playing_and_motor_on ... ok
+test easyflash::tests::io2_ram_powers_up_nonzero_and_stores ... ok
+test final_cartridge3::tests::register_only_decodes_at_dfff ... ok
+test easyflash::tests::mode_register_drives_game_exrom_lines ... ok
+test keyboard::tests::empty_matrix_reads_all_high ... ok
+test datasette::tests::motor_stop_is_delayed_after_line_drops ... ok
+test easyflash::tests::boots_in_ultimax_with_menu_vectors ... ok
+test keyboard::tests::other_rows_remain_high_for_same_column ... ok
+test keyboard::tests::release_all_clears_rows ... ok
+test keyboard::tests::selected_row_reads_pressed_column_low ... ok
+test flash040::tests::program_clears_bits_only ... ok
+test flash040::tests::autoselect_reports_amd_29f040_ids ... ok
+test flash040::tests::sector_erase_completes_after_delay_and_reports_status ... ok
+test machine::tests::boots_kernal_to_ready_prompt ... ignored, FIXTURE: requires real C64 BASIC/KERNAL/CHARGEN ROMs at ~/.emu198x/roms/commodore-c64
+test flash040::tests::chip_erase_blanks_everything ... ok
+test machine::tests::audio_controls_proxy_to_sid ... ok
+test machine::tests::a_listener_transmitting_pulls_pb0_low_at_the_pin ... ok
+test machine::tests::c64_and_1541_share_iec_data_and_atn_lines ... ok
+test machine::tests::active_vic_bank_feeds_vic_reads ... ok
+test machine::tests::a_byte_bit_banged_on_pa2_reaches_a_serial_listener ... ok
+test machine::tests::an_unfitted_ultimate_reads_as_open_bus ... ok
+test machine::tests::a_fitted_ultimate_answers_the_detect_read ... ok
+test machine::tests::cia2_timer_irq_reaches_cpu_nmi_line ... ok
+test machine::tests::a_start_bit_on_the_receive_line_raises_the_flag_interrupt ... ok
+test machine::tests::action_replay_freeze_asserts_nmi_and_banks_in ... ok
+test machine::tests::cia2_port_a_selects_vic_bank ... ok
+test machine::tests::cia1_timer_irq_reaches_cpu_irq_line ... ok
+test machine::tests::cia2_iec_input_pins_release_the_bus ... ok
+test machine::tests::cia2_iec_outputs_use_port_drive_state ... ok
+test machine::tests::constructs_with_expected_initial_state ... ok
+test machine::tests::cpu_can_execute_load_and_store_through_board_bus ... ok
+test machine::tests::cpu_reset_bootstrap_reaches_first_opcode_fetch ... ok
+test machine::tests::georam_detach_restores_open_bus ... ok
+test machine::tests::final_cartridge3_boots_16k_and_freezes_to_ultimax ... ok
+test machine::tests::banked_cart_bank_survives_snapshot_roundtrip ... ok
+test machine::tests::georam_block_register_masks_to_size ... ok
+test machine::tests::georam_window_reads_and_writes_paged_ram ... ok
+test machine::tests::hidden_io_reads_and_writes_fall_back_to_ram ... ok
+test machine::tests::insert_16k_crt_splits_single_chip_across_roml_and_romh ... ok
+test machine::tests::iec_bus_updates_cia2_input_bits ... ok
+test machine::tests::insert_8k_crt_maps_roml_at_8000 ... ok
+test machine::tests::insert_ultimax_crt_maps_romh_at_e000_and_hides_kernal ... ok
+test machine::tests::insert_crt_rejects_non_generic_hardware_type ... ok
+test machine::tests::joystick_port_1_fire_pulls_dc01_low ... ok
+test machine::tests::badline_ba_stalls_cpu_reads ... ok
+test machine::tests::joystick_port_2_fire_pulls_dc00_low ... ok
+test machine::tests::insert_crt_accepts_easyflash_and_boots_ultimax ... ok
+test machine::tests::keyboard_scan_does_not_transpose_row_and_column ... ok
+test machine::tests::georam_survives_snapshot_roundtrip ... ok
+test machine::tests::keyboard_network_follows_a_chain_across_all_eight_rows ... ok
+test machine::tests::keyboard_scan_carries_joystick_pulldowns_in_both_directions ... ok
+test machine::tests::keyboard_scan_reads_every_contact_in_both_directions ... ok
+test machine::tests::keyboard_scan_flows_through_dc01 ... ok
+test machine::tests::magic_desk_cart_disables_via_de00_bit7 ... ok
+test machine::tests::load_prg_imports_basic_program_and_updates_vartab ... ok
+test machine::tests::keyboard_network_release_breaks_ghost_path_and_snapshot_restores_it ... ok
+test machine::tests::mouse_1351_overrides_only_its_own_ports_paddle ... ok
+test machine::tests::mouse_1351_rejects_unknown_ports_and_empty_slots ... ok
+test machine::tests::ocean_cart_switches_banks_via_de00 ... ok
+test machine::tests::one_tick_advances_cycle_position ... ok
+test machine::tests::mouse_1351_buttons_land_on_the_joystick_lines ... ok
+test machine::tests::mouse_1351_pots_report_low_seven_bits_offset_by_0x40 ... ok
+test machine::tests::pal_line_wraps_after_sixty_three_cycles ... ok
+test machine::tests::dd00_bank_switch_reaches_vic_fetch_on_the_next_badline ... ok
+test machine::tests::colour_ram_read_exposes_vic_open_bus_in_upper_nibble ... ok
+test machine::tests::paddles_read_through_the_sid_pots_with_cia_port_select ... ok
+test machine::tests::reu_autoload_restores_base_registers ... ok
+test machine::tests::reu_fixed_c64_address_reads_one_cell ... ok
+test machine::tests::phi2_bus_samples_live_cpu_read_and_write_pins ... ok
+test machine::tests::remove_cartridge_restores_plain_map ... ok
+test machine::tests::restore_key_pulses_the_cpu_nmi_line ... ok
+test machine::tests::reu_raises_irq_when_enabled_and_clears_on_status_read ... ok
+test machine::tests::reu_stash_and_fetch_round_trips_c64_ram ... ok
+test machine::tests::reu_transfer_waits_for_ff00_trigger ... ok
+test machine::tests::reu_verify_flags_a_mismatch ... ok
+test machine::tests::reverse_keyboard_scan_releases_without_feedback_from_input_pins ... ok
+test machine::tests::reverse_keyboard_scan_uses_timer_driven_pb6_and_pb7 ... ok
+test machine::tests::reverse_keyboard_scan_detects_return_on_pal_and_ntsc ... ok
+test machine::tests::sid_write_only_registers_read_back_the_data_bus ... ok
+test machine::tests::reu_survives_snapshot_roundtrip ... ok
+test machine::tests::sta_d011_completion_exposes_the_next_opcode_to_the_vic ... ok
+test machine::tests::reverse_keyboard_scan_survives_snapshot_restore ... ok
+test machine::tests::snapshot_round_trip_restores_machine_mid_instruction ... ok
+test machine::tests::ntsc_frame_geometry_is_honoured ... ok
+test machine::tests::tape_start_latches_sense_before_motor_runs ... ok
+test machine::tests::tape_start_pulls_sense_low_on_cpu_port ... ok
+test machine::tests::sid_generates_audio_samples_after_voice_programming ... ok
+test machine::tests::user_port_pa2_follows_the_cia_output_latch ... ok
+test machine::tests::user_port_pb0_takes_the_external_level_while_it_is_an_input ... ok
+test machine::tests::vic_raster_irq_reaches_cpu_irq_line ... ok
+test machine::tests::visible_io_writes_hit_vic_but_not_underlying_ram ... ok
+test machine::tests::visible_sid_io_writes_reach_live_sid_but_not_underlying_ram ... ok
+test machine::user_port::tests::a_byte_sent_on_sp1_arrives_in_cia2s_sdr ... ok
+test machine::user_port::tests::a_device_clocking_cnt2_drives_cia2s_timer_a ... ok
+test machine::user_port::tests::a_falling_flag2_raises_cia2s_flag_interrupt ... ok
+test machine::user_port::tests::back_to_back_bytes_arrive_in_order ... ok
+test machine::tests::run_frame_matches_pal_geometry ... ok
+test machine::user_port::tests::idle_serial_lines_float_high ... ok
+test machine::user_port::tests::pa2_reads_the_external_level_as_an_input ... ok
+test machine::user_port::tests::pb_drives_every_input_line_and_outputs_win ... ok
+test machine::user_port::tests::pc2_strobes_low_for_one_cycle_after_a_port_b_access ... ok
+test memory::tests::all_ram_banking_hides_roms_and_io ... ok
+test memory::tests::cart_16k_keeps_romh_when_loram_low ... ok
+test memory::tests::cart_16k_maps_roml_and_romh ... ok
+test memory::tests::cart_8k_maps_roml_at_8000 ... ok
+test memory::tests::cart_removed_restores_plain_map ... ok
+test memory::tests::cart_ultimax_maps_romh_at_e000_and_hides_roms ... ok
+test memory::tests::character_rom_appears_when_charen_is_clear ... ok
+test memory::tests::colour_ram_stores_low_nibble_only ... ok
+test memory::tests::default_banking_shows_basic_and_kernal ... ok
+test memory::tests::port_inputs_float_high_when_ddr_is_clear ... ok
+test memory::tests::power_on_ram_holds_the_vice_pattern ... ok
+test memory::tests::vic_reads_character_rom_in_banks_zero_and_two ... ok
+test memory::tests::writes_land_in_ram_under_roms ... ok
+test memory::tests::wrong_rom_sizes_are_rejected ... ok
+test machine::user_port::tests::every_byte_value_survives_the_loopback ... ok
+test serde_skip_audit::tests::matcher_only_accepts_standalone_skip_attributes ... ok
+test serde_skip_audit::tests::reviewed_exception_is_exactly_the_derived_vic_colour_cache ... ok
+test machine::tests::tape_motor_line_has_real_spin_up_delay ... ok
+test machine::tests::tape_end_keeps_sense_low_until_stop ... ok
+test serde_skip_audit::tests::c64_runtime_stack_has_no_unreviewed_serde_skips ... ok
+test machine::tests::tape_pulses_raise_cia1_flag_when_motor_runs ... ok
+test machine::tests::shift_lock_network_matches_vice_contacts_drivers_and_joysticks ... ok
+test machine::tests::keyboard_network_matches_vice_for_all_two_by_two_contacts_and_drives ... ok
+test machine::tests::motor_stop_is_delayed_after_cpu_drops_line ... ok
+test machine::tests::c64c_model_constructs_with_the_8580_sid ... ok
+test machine::tests::c64c_model_selects_the_6526a_cia_on_both_chips ... ok
+test machine::tests::c64c_model_selects_the_hmos_vic_ii ... ok
+test machine::tests::unused_vic_registers_match_native_reads_through_every_mirror ... ok
+
+test result: ok. 145 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.43s
+
+     Running unittests src/lib.rs (target/debug/deps/mos_vic_ii-7913b990e6eb65c7)
+
+running 118 tests
+test oracle::tests::badline_fetch_ba_only_when_badline ... ok
+test oracle::tests::engine_cycle_zero_maps_to_canonical_63 ... ok
+test oracle::tests::ntsc_old_sits_between_pal_and_r8 ... ok
+test oracle::tests::ntsc_sprite_dma_and_display_shift_one_cycle_later ... ok
+test oracle::tests::sprite0_ba_lead_in_covers_cycles_55_to_59 ... ok
+test sprite_fetch_chain::tests::crunch_makes_sprite_overrun ... ok
+test sprite_fetch_chain::tests::plain_sprite_displays_21_lines ... ok
+test sprite_sequencer::tests::hires_sprite_shifts_24_pixels_from_x ... ok
+test sprite_fetch_chain::tests::expanded_sprite_displays_42_lines ... ok
+test sprite_sequencer::tests::lower_sprite_number_takes_priority ... ok
+test sprite_sequencer::tests::multicolour_sprite_latches_bit_pairs ... ok
+test oracle::tests::pal_table_well_formed ... ok
+test oracle::tests::ntsc_old_table_well_formed ... ok
+test oracle::tests::ntsc_table_well_formed ... ok
+test tests::a_new_far_edge_badline_restarts_the_cdata_carry_origin ... ok
+test tests::bitmap_base_selection ... ok
+test tests::bank_selection_masks_to_two_bits ... ok
+test tests::cycle_54_d011_write_leaves_one_late_badline_access ... ok
+test tests::collision_peek_does_not_clear ... ok
+test tests::collision_registers_clear_on_read ... ok
+test tests::cycle_55_d011_write_has_no_late_badline_access ... ok
+test tests::continuous_ba_across_badline_and_sprite_dma_keeps_aec_low ... ok
+test tests::default_constructs_pal_vic ... ok
+test tests::cpu_sees_the_line_edge_on_cycle_one ... ok
+test tests::earlier_forced_badline_does_not_use_far_edge_output_delay ... ok
+test tests::far_edge_cdata_carry_uses_the_hoxs_12_bit_merge_network ... ok
+test tests::far_edge_output_delay_suppresses_the_last_g_access ... ok
+test tests::final_composite_resolves_all_colour_register_sources ... ok
+test tests::forced_badline_hidden_cells_fall_behind_the_right_border ... ok
+test tests::ba_is_low_reflects_pin_state ... ok
+test tests::badline_ba_low_leads_cpu_stalled_by_three_cycles ... ok
+test tests::each_sprite_steals_canonical_cycles ... ok
+test tests::framebuffer_size ... ok
+test tests::held_light_pen_retriggers_when_the_frame_counter_advances ... ok
+test tests::grey_dot_needs_the_written_register_not_a_new_value ... ok
+test tests::badline_ba_low_cycles_12_to_54 ... ok
+test tests::hmos_light_pen_x_is_one_unit_before_nmos_across_the_line ... ok
+test tests::hmos_models_share_their_nmos_timing ... ok
+test tests::idle_multicolour_bitmap_keeps_d021_for_zero_pairs ... ok
+test tests::initial_state ... ok
+test tests::falling_bmm_reaches_the_g_access_a_cycle_late ... ok
+test tests::hires_bitmap_renders_fg_and_bg_from_screen_byte ... ok
+test tests::ecm_text_selects_background ... ok
+test tests::late_badline_uses_invalid_matrix_data_until_aec_is_low ... ok
+test tests::light_pen_latches_beam_position ... ok
+test tests::colour_write_first_dot_follows_the_chip_revision ... ok
+test tests::last_line_light_pen_suppression_still_consumes_the_trigger ... ok
+test tests::invalid_mode_renders_black ... ok
+test tests::is_badline_accessor_reports_badline_state ... ok
+test tests::falling_bmm_into_the_character_rom_mixes_the_two_addresses ... ok
+test tests::mcm_bitmap_renders_four_pixel_pairs ... ok
+test tests::ntsc_construction_uses_ntsc_visible_lines ... ok
+test tests::mcm_text_with_low_colour_bit_falls_back_to_standard_text ... ok
+test tests::ntsc_r56a_timings_and_schedule ... ok
+test tests::light_pen_latches_once_per_frame ... ok
+test tests::ntsc_sprite_access_cycles_resolve_per_model ... ok
+test tests::hmos_mode_change_takes_effect_at_the_next_cycle_whatever_the_xscroll ... ok
+test tests::ntsc_sprite_schedule_matches_6567r8 ... ok
+test tests::main_ff_clears_at_left_edge_when_vert_ff_off ... ok
+test tests::open_vertical_border_exposes_idle_bitmap_fetch ... ok
+test tests::open_vertical_border_exposes_live_display_cell ... ok
+test tests::open_vertical_border_replaces_stale_pixels_with_idle_background ... ok
+test tests::ordinary_badline_fetches_slot_zero_then_advances_before_slot_one ... ok
+test tests::peek_d019_returns_irq_status_and_composite ... ok
+test tests::non_badline_does_not_assert_ba ... ok
+test tests::mcm_text_with_high_colour_bit_renders_multicolour ... ok
+test tests::peek_d01a_returns_raw_enable ... ok
+test tests::raster_advances ... ok
+test tests::disabled_sprite_releases_its_cycles ... ok
+test tests::ntsc_sprite_dma_steals_at_ntsc_cycles ... ok
+test tests::raster_irq_asserts_on_exact_phi2_of_compare_match ... ok
+test tests::peek_returns_register_for_other_addrs_and_ff_above_2e ... ok
+test tests::nmos_mode_change_takes_effect_at_dot_4_whatever_the_xscroll ... ok
+test tests::raster_irq_fires_and_acknowledges ... ok
+test tests::frame_complete_after_full_frame ... ok
+test tests::read_d019_composite_irq_bit_and_unused_high_bits ... ok
+test tests::read_d012_returns_low_byte_of_raster_line ... ok
+test tests::read_d01a_returns_irq_enable_with_high_nibble_set ... ok
+test tests::opened_side_border_shows_the_last_characters_ecm_background ... ok
+test tests::register_read_write ... ok
+test tests::smaller_xscroll_cuts_the_previous_cell_short ... ok
+test tests::sprite_ba_asserts_with_three_cycle_leadin ... ok
+test tests::sprite_ba_low_leads_cpu_stalled_by_three_cycles ... ok
+test tests::peek_d011_d012_match_raster ... ok
+test tests::frame_complete_clears_lp_and_den_latches ... ok
+test tests::open_border_trick_rsel_bit_flip_suppresses_vertical_ff ... ok
+test tests::sprite_bg_collision_set_on_foreground_overlap ... ok
+test tests::rising_bmm_reaches_the_g_access_at_once_on_the_6569_only ... ok
+test tests::sprite_position_registers_read_back_written_value ... ok
+test tests::sprite_dma_y_expand_extends_height ... ok
+test tests::raster_irq_compare_works_for_high_bit_lines ... ok
+test tests::sprite_multicolor_renders_three_colours ... ok
+test tests::sprite_priority_below_foreground_is_hidden ... ok
+test tests::raster_irq_does_not_fire_when_compare_never_matches ... ok
+test tests::read_d011_returns_high_bit_of_raster_line ... ok
+test tests::naive_close_sets_vert_ff_at_line_247_rsel_zero ... ok
+test tests::vertical_border_keeps_the_last_matrix_entries ... ok
+test tests::sprite_sequencer_sets_sprite_sprite_collision ... ok
+test tests::sprite_sequencer_renders_three_sprite_scene ... ok
+test tests::vic_model_default_is_pal ... ok
+test tests::vic_model_ntsc_timings ... ok
+test tests::sprite_renders_at_correct_position ... ok
+test tests::write_d019_acknowledges_only_set_bits ... ok
+test tests::sprite_sprite_collision_registers_in_the_border ... ok
+test tests::raster_irq_for_line_zero_asserts_on_cycle_two ... ok
+test tests::sprite_y_expand_fetch_uses_halved_data_line ... ok
+test tests::vertical_ff_clears_on_first_display_line_with_den ... ok
+test tests::unused_registers_read_ff_independently_of_dma_bus_and_writes ... ok
+test tests::xscroll_four_shifts_cell_right ... ok
+test tests::public_accessor_methods_round_trip ... ok
+test tests::sprite_off_screen_below_visible_lines_is_skipped ... ok
+test tests::xscroll_write_in_a_g_access_cycle_moves_that_cell ... ok
+test tests::xscroll_zero_renders_cell_unchanged ... ok
+test tests::xscroll_write_in_the_last_g_access_cycle_misses_column_39 ... ok
+test tests::xscroll_zero_no_carry_load ... ok
+test tests::sprite_x_high_bit_places_sprite_past_256 ... ok
+test tests::render_accuracy_floor_locks_a_golden_frame ... ok
+test tests::vertical_ff_sets_at_last_display_line ... ok
+
+test result: ok. 118 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/vic_oracle.rs (target/debug/deps/vic_oracle-e9bf5810d5f1424e)
+
+running 12 tests
+test forced_badline_waits_for_aec_before_reading_matrix_memory ... ok
+test shadow_vc_tracks_geometry_matrix_addresses_on_a_badline ... ok
+test sprite0_ba_lead_in_matches_canonical ... ok
+test badline_ba_low_matches_canonical ... ok
+test colour_access_streams_one_per_cycle ... ok
+test badline_fetches_the_full_matrix_row ... ok
+test sprite0_data_access_spans_two_cycles ... ok
+test non_badline_does_no_matrix_fetch ... ok
+test c_access_streams_one_per_cycle ... ok
+test non_badline_never_pulls_ba_low ... ok
+test shadow_rc_counts_the_character_sub_row ... ok
+test shadow_vcbase_advances_one_row_per_character_block ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running unittests src/lib.rs (target/debug/deps/runtime_commodore_c64-950250ebcffd9b0f)
+
+running 59 tests
+test drives::tests::load_disk_routes_g64_to_gcr_drives_and_rejects_the_1581 ... ok
+test file_loader::tests::d64_loader_reports_invalid_image ... ok
+test basic_loader::tests::rejects_header_only_program ... ok
+test autoload::tests::autoload_rejects_missing_tape ... ok
+test autoload::tests::disk_autoload_rejects_missing_drive ... ok
+test file_loader::tests::bas_loader_reports_non_utf8_source ... ok
+test basic_loader::tests::rejects_oversized_program ... ok
+test basic_loader::tests::tokenise_failure_surfaces_as_error ... ok
+test file_loader::tests::imports_bas_file_via_tokeniser ... ok
+test file_loader::tests::imports_numbered_p00_extension ... ok
+test file_loader::tests::imports_first_t64_entry ... ok
+test file_loader::tests::imports_first_d64_entry ... ok
+test input::key_position_tests::digits_space_and_newline_map ... ok
+test input::key_position_tests::input_mapping_covers_native_shell_keys ... ok
+test input::key_position_tests::letters_map_to_unshifted_keycaps_in_either_case ... ok
+test input::key_position_tests::every_printable_ascii_character_on_the_keyboard_maps ... ok
+test input::key_position_tests::shifted_punctuation_returns_a_chord ... ok
+test input::key_position_tests::key_name_validity_matches_matrix ... ok
+test input::key_position_tests::unmapped_character_is_skipped ... ok
+test input::key_position_tests::the_comparison_operators_map ... ok
+test input::tests::axis_scales_to_the_8bit_pot_range ... ok
+test autoload::tests::disk_autoload_command_types_expected_key_chords ... ok
+test input::tests::directions_pass_through ... ok
+test input::tests::gamepad_aliases_route_to_fire ... ok
+test input::tests::input_port_one_maps_to_keyboard_shared_gameport_one ... ok
+test input::tests::input_port_two_maps_to_main_gameport ... ok
+test input::tests::input_port_zero_aliases_the_main_gameport ... ok
+test input::tests::input_port_zero_maps_to_main_gameport_two ... ok
+test input::tests::paddle_axis_names_map_to_pot_indices ... ok
+test file_loader::tests::rejects_unrecognised_extension ... ok
+test file_loader::tests::t64_loader_reports_invalid_archive ... ok
+test input::tests::axis_events_drive_the_sid_pots_on_the_selected_port ... ok
+test input::tests::port_two_fire_lands_on_cia1_pa_like_port_zero ... ok
+test input::tests::port_one_fire_lands_on_cia1_pb ... ok
+test input::tests::unknown_control_returns_none ... ok
+test file_loader::tests::imports_prg_file ... ok
+test input::tests::unmapped_input_ports_are_dropped ... ok
+test profiles::tests::both_profiles_require_declared_roms ... ok
+test profiles::tests::every_firmware_source_is_a_profile_requirement_with_the_same_optionality ... ok
+test file_loader::tests::imports_p00_container ... ok
+test profiles::tests::media_slots_match_bootstrap_scope ... ok
+test profiles::tests::ntsc_profile_uses_phi2_clock ... ok
+test profiles::tests::pal_profile_uses_phi2_clock ... ok
+test profiles::tests::variant_ids_round_trip_for_every_model ... ok
+test input::tests::port_zero_fire_lands_on_cia1_pa ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test input::tests::shift_lock_input_sets_contact_state_without_toggling ... ok
+test queries::tests::parse_hex_u16_accepts_optional_prefix ... ok
+test queries::tests::advertised_query_paths_are_unique ... ok
+test input::tests::unknown_axis_name_is_dropped ... ok
+test queries::tests::decode_screen_code_covers_every_arm ... ok
+test input::tests::pointer_events_drive_an_attached_1351_mouse ... ok
+test input::tests::pointer_events_are_dropped_without_a_mouse ... ok
+test input::tests::shift_lock_and_left_shift_release_independently ... ok
+test queries::tests::attaching_the_modem_registers_its_own_query_leaves ... ok
+test queries::tests::the_modem_answers_its_own_leaves_and_reports_absence_when_unplugged ... ok
+test input::tests::shift_lock_overrides_a_driven_high_that_defeats_left_shift ... ok
+test queries::tests::decode_screen_text_lines_reports_the_full_25_rows ... ok
+test queries::tests::c64_boot_status_detects_ready_anywhere_in_screen_ram ... ok
+
+test result: ok. 59 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/boot_invariants.rs (target/debug/deps/boot_invariants-5b38d88740fcf9d4)
+
+running 7 tests
+test real_kernal_reaches_ready_prompt ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64/{kernal,basic,chargen}.rom
+test dummy_roms_construct_runtime ... ok
+test six510_io_port_banking_changes_active_rom ... ok
+test cia2_pa_drives_vic_bank_select ... ok
+test snapshot_envelope_version_is_locked_at_v19 ... ok
+test snapshot_round_trip_is_fixed_point_after_warmup ... ok
+test run_until_advances_past_first_frame ... ok
+
+test result: ok. 6 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+     Running tests/cartridge_autostart.rs (target/debug/deps/cartridge_autostart-8f7071edba8fd14d)
+
+running 1 test
+test autostart_cartridge_prints_to_screen ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64/{kernal,basic,chargen}.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cia_testprogs.rs (target/debug/deps/cia_testprogs-597ff3413e00d89e)
+
+running 6 tests
+test cia_icr_test_matches_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+test cia_sdr_load_timing_matches_a_real_c64 ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+test cia_sp_test_matches_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+test ciavarious_cnt_input_mode_matches_a_real_c64 ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+test ciavarious_matches_a_real_c64 ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+test lorenz_cnt_cases_pass ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia
+
+test result: ok. 0 passed; 0 failed; 6 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/debug198x_importer.rs (target/debug/deps/debug198x_importer-d70110ad3fd20f82)
+
+running 8 tests
+test steps_needing_symbols_refuse_to_run_without_a_sidecar ... ok
+test loading_the_sidecar_reports_what_it_describes ... ok
+test the_sidecar_and_the_image_describe_the_same_bytes ... ok
+test disassembly_is_symbolised_once_the_sidecar_is_loaded ... ok
+test a_line_with_no_code_reports_that_rather_than_running_to_the_budget ... ok
+test the_first_step_takes_the_reset_vector_into_the_loaded_program ... ok
+test a_symbol_resolves_to_the_address_a_breakpoint_can_use ... ok
+test a_source_line_breakpoint_is_reached_and_reports_the_line ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/debug_target.rs (target/debug/deps/debug_target-7da0b9e614160ac4)
+
+running 1 test
+test debug_surface_works_on_6502 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/diag_1581_load.rs (target/debug/deps/diag_1581_load-ecdd587efadcacd1)
+
+running 1 test
+test trace_solo_1581_load_handshake ... ignored, FIXTURE: requires local C64 ROMs + 1581 DOS ROM + Batman D81 — run with --ignored --nocapture
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/diag_aztec_vic_state.rs (target/debug/deps/diag_aztec_vic_state-0725580abdfc6f38)
+
+running 1 test
+test dump_vic_state_at_aztec_player_select ... ignored, FIXTURE: requires local C64 ROMs + 1541 ROM + Aztec D64 — run with --ignored --nocapture
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_1571_load.rs (target/debug/deps/disk_1571_load-8ee0b24f9fd919c7)
+
+running 1 test
+test save_then_load_and_run_on_a_1571_device_8 ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_1581.rs (target/debug/deps/disk_1581-72afb094a0700297)
+
+running 1 test
+test real_1581_coexists_with_1541_and_boots_to_idle ... ignored, FIXTURE: requires local C64 ROMs, 1581 DOS ROM, and a D81 game archive
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_autoload.rs (target/debug/deps/disk_autoload-9c57c9d62d592074)
+
+running 10 tests
+test real_d64_autoload_and_run_bruce_lee_reaches_title ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_autoload_aztec_challenge_reaches_instruction_screen ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Aztec Challenge D64 archive
+test real_d64_autoload_bomb_jack_responds_to_port1_fire ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bomb Jack D64 archive
+test real_d64_autoload_bruce_lee_advances_after_fire ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_autoload_bruce_lee_reaches_loading ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_autoload_bruce_lee_responds_to_joystick_right_after_fire ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_autoload_bruce_lee_starts_after_run ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_autoload_bruce_lee_starts_drive_motion ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+test real_d64_fastloader_bomb_jack_streams_from_drive ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bomb Jack D64 archive
+test real_d64_mount_bruce_lee_reports_disk_metadata ... ignored, FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive
+
+test result: ok. 0 passed; 0 failed; 10 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_g64_load.rs (target/debug/deps/disk_g64_load-29ec71d0e3bd7d8b)
+
+running 1 test
+test real_g64_reaches_the_load_search_over_the_bus ... ignored, FIXTURE: requires local C64 + 1541 ROMs and a real G64 from the Time Capsule TOSEC
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_save_roundtrip.rs (target/debug/deps/disk_save_roundtrip-5e88bb6cc51a34c9)
+
+running 2 tests
+test save_writes_a_readable_file_to_a_writable_disk ... ignored, FIXTURE: requires local C64 + 1541 ROMs at ~/.emu198x/roms/commodore-c64/
+test saved_program_loads_back_and_runs ... ignored, FIXTURE: requires local C64 + 1541 ROMs at ~/.emu198x/roms/commodore-c64/
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/lifecycle.rs (target/debug/deps/lifecycle-fc249315b74a9c9c)
+
+running 23 tests
+test from_firmware_reports_each_missing_rom ... ok
+test runtime_can_build_from_declared_firmware ... ok
+test run_until_reports_reached_target_with_zero_target ... ok
+test machine_core_capabilities_match_profile ... ok
+test machine_core_command_rejects_unknown_tape_slot ... ok
+test audio_controls_mutate_machine_sid_mixer ... ok
+test machine_core_load_media_rejects_wrong_kind_for_tape_slot ... ok
+test machine_core_load_media_rejects_unknown_slot ... ok
+test file_loader_rejects_unrecognised_extension ... ok
+test machine_core_load_media_rejects_wrong_kind_for_drive_slot ... ok
+test runtime_rejects_wrong_size_drive_rom ... ok
+test runtime_rejects_wrong_size_kernal_rom ... ok
+test runtime_can_attach_optional_drive_rom ... ok
+test run_until_routes_button_input_to_joystick ... ok
+test runtime_rejects_drive_media_without_attached_1541 ... ok
+test runtime_run_until_advances_attached_drive_cycles ... ok
+test runtime_can_build_ntsc_profile ... ok
+test trace_setters_do_not_break_run_until ... ok
+test machine_core_reset_rebuilds_runtime_state ... ok
+test set_reu_persists_across_reset ... ok
+test set_georam_persists_across_reset ... ok
+test runtime_load_media_mounts_d64_into_attached_drive ... ok
+test runtime_run_until_emits_rgba_frame ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests/lorenz_machine.rs (target/debug/deps/lorenz_machine-17bfb95c1c25fcde)
+
+running 2 tests
+test lorenz_machine_hardware_dependent_ledger ... ignored, FIXTURE: requires local C64 ROMs + the Wolfgang Lorenz suite
+test expected_pass_is_a_subset_of_the_hardware_dependent_set ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/openroms_boot.rs (target/debug/deps/openroms_boot-bd16fc0bb95411dd)
+
+running 1 test
+test open_roms_cold_starts_to_a_basic_prompt ... ignored, FIXTURE: needs Open ROMs at <EMU198X_ROMS_ROOT>/commodore-c64/{kernal_generic,basic_generic,chargen_openroms}.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/per_port_drive.rs (target/debug/deps/per_port_drive-b64dca859b985a87)
+
+running 6 tests
+test a_1581_chosen_on_a_non_default_port_boots_on_the_bus ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+test default_layout_is_1541_on_8_and_1581_on_9 ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+test selecting_a_model_without_its_rom_errors ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+test set_port_drive_swaps_and_clears_ports ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+test snapshot_preserves_a_custom_port_layout ... ignored, FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs
+test blank_drive_firmware_has_1541_on_8_and_no_other_ports ... ok
+
+test result: ok. 1 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/queries.rs (target/debug/deps/queries-f8f463cc6f1f686e)
+
+running 11 tests
+test query_provider_detects_ready_on_real_pal_boot ... ignored, FIXTURE: requires local C64 ROMs at ~/.emu198x/roms/commodore-c64
+test query_provider_reports_real_attached_drive_progress ... ignored, FIXTURE: requires local C64 and 1541 ROMs at ~/.emu198x/roms/commodore-c64
+test drive8_mem_prefix_query_returns_null_when_drive_absent ... ok
+test query_paths_filters_by_prefix ... ok
+test memory_ram_prefix_query_returns_byte_at_address ... ok
+test drive8_mem_prefix_query_returns_some_when_drive_attached ... ok
+test query_provider_reports_blank_runtime_as_not_booted ... ok
+test vic_forced_badline_queries_expose_live_state ... ok
+test runtime_load_media_and_transport_update_tape_queries ... ok
+test every_advertised_query_path_resolves_without_drive_attached ... ok
+test every_advertised_query_path_resolves_with_drive_attached ... ok
+
+test result: ok. 9 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/shared_debug_tools.rs (target/debug/deps/shared_debug_tools-b69760eefbe3f6e1)
+
+running 1 test
+test shared_debug_tools_are_unified_and_complete ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/sid_testprogs.rs (target/debug/deps/sid_testprogs-9415f7d1582fb849)
+
+running 14 tests
+test bitfade_delays_match_the_model_hold_times ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test busvalue_write_only_reads_return_the_bus_value ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test detect_tells_the_models_apart ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test noiselfsrinit_matches_real_8580s ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test noisewriteback_tests_match_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test osc3_wave0_floating_dac_holds_then_fades ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test osc3_wave0_pulse_width_extremes ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test osc_topbit_combined_waveforms_pull_the_6581_msb_low ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test oscinit_reads_the_power_on_oscillator_and_noise_register ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test ringmod_inverts_the_triangle_on_a_clear_source_msb ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test waveforms_combined_agree_with_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test wb_testsuite_noise_write_back_matches_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test wf12nsr_noise_combinations_match_real_chips ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+test writedelay_register_writes_are_not_delayed ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid
+
+test result: ok. 0 passed; 0 failed; 14 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (target/debug/deps/snapshot_roundtrip-42eb535d88f63e17)
+
+running 15 tests
+test restore_rejects_old_schema_before_decoding_its_payload ... ok
+test restore_rejects_corrupt_postcard_bytes ... ok
+test restore_rejects_snapshot_from_different_profile ... ok
+test snapshot_round_trip_preserves_queued_sid_samples ... ok
+test snapshot_round_trip_preserves_attached_drive_state ... ok
+test runtime_drains_sid_voice_buffers_at_frame_boundary ... ok
+test snapshot_round_trip_preserves_mid_cycle_runtime_state ... ok
+test snapshot_round_trip_preserves_ba_to_aec_handover ... ok
+test snapshot_round_trip_preserves_ram_expansion_and_mouse_bookkeeping ... ok
+test snapshot_round_trip_preserves_live_sprite_pipeline ... ok
+test snapshot_round_trip_preserves_exhausted_late_badline_window ... ok
+test snapshot_round_trip_preserves_the_colour_stage ... ok
+test electrical_codes_are_restored_before_the_next_vic_pixel ... ok
+test shift_lock_snapshot_preserves_both_parallel_contacts ... ok
+test light_pen_frame_retrigger_survives_snapshot_at_each_boundary ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.53s
+
+     Running tests/tape_autoload.rs (target/debug/deps/tape_autoload-fa99855d349f12c7)
+
+running 5 tests
+test real_tap_autoload_ghostbusters_reaches_later_loader_state ... ignored, FIXTURE: requires local C64 ROMs and Ghostbusters TAP archive
+test real_tap_autoload_reaches_post_load_ready ... ignored, FIXTURE: requires local C64 ROMs and Thinker TAP archive
+test real_tap_autoload_reaches_thomas_loading_ready_banner ... ignored, FIXTURE: requires local C64 ROMs and Thomas the Tank Engine TAP archive
+test real_tap_autoload_thing_on_a_spring_reaches_menu ... ignored, FIXTURE: requires local C64 ROMs and Thing on a Spring TAP archive
+test real_tap_autoload_thing_on_a_spring_starts_after_space ... ignored, FIXTURE: requires local C64 ROMs and Thing on a Spring TAP archive
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/tape_save.rs (target/debug/deps/tape_save-4f99f6b1ff8daccb)
+
+running 2 tests
+test kernal_loads_back_a_tape_it_saved ... ignored, FIXTURE: requires local C64 ROMs at ~/.emu198x/roms/commodore-c64/
+test save_records_a_readable_tap_on_a_writable_tape ... ignored, FIXTURE: requires local C64 ROMs at ~/.emu198x/roms/commodore-c64/
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/vicii_testbench.rs (target/debug/deps/vicii_testbench-1ea9df02f6df2d74)
+
+running 18 tests
+test calibrate_gfxfetch_alignment ... ignored, DIAGNOSTIC: calibration aid: derives crop offset + palette match vs VICE reference
+test calibrate_ntsc_gfxfetch_alignment ... ignored, DIAGNOSTIC: calibration aid: NTSC crop offset + match vs VICE 6567R8 reference
+test colorfetchbug_cases_match_vice_references_exactly ... ignored, FIXTURE: strict colour-fetch parity requires C64 ROMs + VIC-II testbench
+test colour_register_pipeline_matches_vice_references ... ignored, FIXTURE: colour-register pipeline parity requires C64 ROMs + VIC-II testbench
+test cpu_store_cycle_boundary ... ignored, DIAGNOSTIC: diagnostic: reports CPU store phases for one register
+test cpu_store_phases_match_vice ... ignored, FIXTURE: CPU store phases require C64 ROMs + VIC-II testbench
+test diff_by_row ... ignored, DIAGNOSTIC: oracle: per-scanline match % vs VICE for VICII_DIFF_CAT (sprite-chain rebuild)
+test dump_prg_framebuffer ... ignored, DIAGNOSTIC: diagnostic: dumps framebuffer for the VICII_DUMP_PRG program
+test gfxfetch_matches_vice_reference ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-vicii
+test light_pen_measurement_matches_native_reference ... ignored, FIXTURE: light-pen native parity requires C64 ROMs and VIC-II testbench
+test light_pen_reference_normalization_matches_upstream ... ignored, FIXTURE: light-pen normalization requires VIC-II physical dumps
+test ntsc_gfxfetch_matches_vice_reference ... ignored, FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-vicii
+test ntsc_greydot_matches_both_native_launch_phases ... ignored, FIXTURE: NTSC greydot phases require C64 ROMs + VIC-II testbench
+test sequencer_bug_cpu_phases_match_vice ... ignored, FIXTURE: sequencer-bug CPU phases require C64 ROMs + VIC-II testbench
+test sequencer_bug_matches_vice_reference_exactly ... ignored, FIXTURE: strict sequencer-bug parity requires C64 ROMs + VIC-II testbench
+test sprite_sequencer_spritedma_parity ... ignored, FIXTURE: sequencer: spritedma floor vs VICE (requires ROMs + testbench)
+test survey_sprite_multicolour_models ... ignored, DIAGNOSTIC: measure sprite split references across chip models
+test survey_testbench_categories ... ignored, DIAGNOSTIC: survey aid: measures match % across VICII testbench categories
+
+test result: ok. 0 passed; 0 failed; 18 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_commodore_c64
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mos_vic_ii
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_commodore_c64
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

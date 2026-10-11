@@ -1,0 +1,47 @@
+{
+  "source_sha256": "e09edf30d0e5af56140c1de3183b8e4176984a6b651ad8ec19ad6c767605f653",
+  "guest_sha256": "c2ee90b519a5a83a0a6eb18ae2dcf44730a97402835fcc264531e0932ce3b4f2",
+  "command": [
+    "cargo",
+    "test",
+    "-p",
+    "machine-commodore-c64",
+    "colour_ram_bus_matches_native_idle_fetches",
+    "--lib",
+    "--",
+    "--nocapture"
+  ],
+  "rows": [
+    {
+      "model": "PalBreadbin",
+      "wrong": 544,
+      "values": {
+        "10": 544
+      }
+    },
+    {
+      "model": "NtscBreadbin",
+      "wrong": 544,
+      "values": {
+        "10": 544
+      }
+    },
+    {
+      "model": "PalC64c",
+      "wrong": 544,
+      "values": {
+        "10": 544
+      }
+    },
+    {
+      "model": "NtscC64c",
+      "wrong": 544,
+      "values": {
+        "10": 544
+      }
+    }
+  ],
+  "mismatches": 2176,
+  "cargo_exit": 101,
+  "source_restored": true
+}
