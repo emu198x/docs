@@ -1,0 +1,263 @@
+diff --git i/crates/atari-pokey/src/lib.rs w/crates/atari-pokey/src/lib.rs
+index 127b6fc6..1354f65c 100644
+--- i/crates/atari-pokey/src/lib.rs
++++ w/crates/atari-pokey/src/lib.rs
+@@ -261,3 +261,3 @@ pub struct Pokey {
+-    /// CPU clock frequency (Hz), e.g. `1_789_772` for NTSC. Used to
+-    /// downsample the audio; the serial port takes its rate from the timers
+-    /// rather than from here.
++    /// Audio sampling timebase (Hz). This equals the CPU clock for callers
++    /// using `tick`; independently clocked callers sample at their oscillator
++    /// rate. Timers and serial advance only through chip-clock ticks.
+@@ -390 +390 @@ impl Pokey {
+-    /// Create a new POKEY clocked at the given CPU frequency.
++    /// Create a new POKEY with the given audio sampling timebase.
+@@ -392 +392,4 @@ impl Pokey {
+-    /// For NTSC Atari systems, pass `1_789_772`. For PAL, pass `1_773_447`.
++    /// With [`Self::tick`], pass the fixed CPU frequency: `1_789_772` for
++    /// NTSC Atari systems or `1_773_447` for PAL. For a variable chip clock,
++    /// call [`Self::tick_chip`] on chip edges and [`Self::sample_tick`] at
++    /// this fixed timebase (for example, each master oscillator period).
+@@ -451,0 +455,8 @@ impl Pokey {
++        self.tick_chip();
++        self.sample_tick();
++    }
++
++    /// Advance timers, polynomial counters and I/O by one input clock cycle.
++    /// This does not advance host audio time; pair it with [`Self::sample_tick`]
++    /// when the chip clock is variable or independent of the sampling clock.
++    pub fn tick_chip(&mut self) {
+@@ -485,0 +497 @@ impl Pokey {
++    }
+@@ -486,0 +499,4 @@ impl Pokey {
++    /// Accumulate one fixed period of output at the timebase passed to
++    /// [`Self::new`], emitting 48 kHz mixed and channel audio. Chip timers do
++    /// not advance here, so held output receives its actual elapsed-time weight.
++    pub fn sample_tick(&mut self) {
+@@ -1914,0 +1931,68 @@ mod tests {
++    #[test]
++    fn split_clock_preserves_the_uniform_tick_stream() {
++        for frequency in [1_789_772, 1_773_447] {
++            let mut combined = Pokey::new(frequency);
++            let mut split = Pokey::new(frequency);
++            for chip in [&mut combined, &mut split] {
++                chip.write(0x0f, 3);
++                chip.write(0x08, 0x40);
++                chip.write(0, 17);
++                chip.write(1, 0xaf);
++                chip.write(3, 0x18);
++                chip.write(0x09, 0);
++            }
++            let mut samples = 0;
++            for tick in 0..4096 {
++                if tick == 1700 {
++                    combined.write(0, 5);
++                    split.write(0, 5);
++                }
++                combined.tick();
++                split.tick_chip();
++                split.sample_tick();
++                let audio = combined.take_buffer();
++                samples += audio.len();
++                assert_eq!(audio, split.take_buffer(), "tick {tick}");
++                assert_eq!(
++                    combined.take_channel_buffers(),
++                    split.take_channel_buffers()
++                );
++                assert_eq!(combined.read(0x0a), split.read(0x0a));
++                assert_eq!(combined.save_state(), split.save_state());
++            }
++            assert!(samples > 100);
++        }
++    }
++
++    #[test]
++    fn sampling_weights_held_output_without_advancing_chip_time() {
++        // Ten fixed sampling periods per host sample. Chip clock spacing
++        // varies, but the first channel is high for exactly two periods.
++        let mut chip = Pokey::new(480_000);
++        chip.write(1, 0x1f);
++        chip.write(0x0f, 3);
++        for tick in 0..10 {
++            if [0, 3, 8].contains(&tick) {
++                let pending_audio = chip.buffer_len();
++                chip.tick_chip();
++                assert_eq!(chip.buffer_len(), pending_audio);
++            }
++            if tick == 2 {
++                chip.write(1, 0x10);
++            }
++            let state = chip.save_state();
++            let polynomial = chip.poly_counter;
++            chip.sample_tick();
++            assert_eq!(chip.save_state(), state, "sample tick advanced chip state");
++            assert_eq!(chip.poly_counter, polynomial);
++        }
++        let channels = chip.take_channel_buffers();
++        assert_eq!(channels[0], [0.2]);
++        for channel in &channels[1..] {
++            assert_eq!(channel, &[0.0]);
++        }
++        let mixed = chip.take_buffer();
++        assert_eq!(mixed.len(), 1);
++        assert!((mixed[0] - 0.05 * 0.9952).abs() < f32::EPSILON);
++    }
++
+diff --git i/crates/machine-atari-7800/src/lib.rs w/crates/machine-atari-7800/src/lib.rs
+index 0195fff6..20345198 100644
+--- i/crates/machine-atari-7800/src/lib.rs
++++ w/crates/machine-atari-7800/src/lib.rs
+@@ -107,4 +106,0 @@ impl Atari7800Region {
+-
+-    fn cpu_hz(self) -> u32 {
+-        (self.master_hz() / 8) as u32
+-    }
+@@ -155 +151 @@ impl Atari7800 {
+-        let pokey = pokey_location.map(|_| Pokey::new(region.cpu_hz()));
++        let pokey = pokey_location.map(|_| Pokey::new(region.master_hz() as u32));
+@@ -222,0 +219,5 @@ impl Atari7800 {
++            if let Some(pokey) = &mut self.pokey {
++                // The cartridge receives phase 2 even while Sally releases
++                // the bus. Clock before applying CPU writes on this edge.
++                pokey.tick_chip();
++            }
+@@ -239,7 +240,2 @@ impl Atari7800 {
+-        // POKEY still couples chip advancement to fixed-rate host sampling.
+-        // Variable PCLK wiring requires separating those clocks first; the
+-        // staged MARIA branch must not ship before that integration gate.
+-        if self.master_clock.is_multiple_of(8)
+-            && let Some(pokey) = &mut self.pokey
+-        {
+-            pokey.tick();
++        if let Some(pokey) = &mut self.pokey {
++            pokey.sample_tick();
+@@ -1057,0 +1054,129 @@ mod tests {
++    #[test]
++    fn pokey_random_follows_phase_two_while_cpu_execution_is_held() {
++        let mut mismatches = Vec::new();
++        let mut observations = 0;
++        for region in [Atari7800Region::Ntsc, Atari7800Region::Pal] {
++            for address in [0x8000, 0x0280, 0x0000] {
++                let mut sys = Atari7800::new(a78_with_pokey_0440(), region).expect("POKEY cart");
++                let mut reference = Pokey::new((region.master_hz() / 8) as u32);
++                sys.pokey.as_mut().expect("POKEY").write(0x0f, 3);
++                reference.write(0x0f, 3);
++                sys.cpu.addr = address;
++                sys.maria.write(0x04, 0);
++                let mut first_difference = None;
++                for tick in 1..=120 {
++                    sys.tick_master_clock();
++                    if sys.maria.phi2 {
++                        reference.tick();
++                    }
++                    let actual = sys.pokey.as_ref().expect("POKEY").read(0x0a);
++                    let expected = reference.read(0x0a);
++                    if actual != expected && first_difference.is_none() {
++                        first_difference = Some((region, address, tick, actual, expected));
++                    }
++                    observations += 1;
++                }
++                assert_eq!(sys.cpu.total_cycles, 0, "WSYNC must hold execution");
++                mismatches.extend(first_difference);
++            }
++        }
++        assert_eq!(observations, 720);
++        assert!(
++            mismatches.is_empty(),
++            "RANDOM clock mismatches: {mismatches:?}"
++        );
++    }
++
++    #[test]
++    fn pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses() {
++        for region in [Atari7800Region::Ntsc, Atari7800Region::Pal] {
++            for slow in [false, true] {
++                let mut sys = native_dma_guest(region, slow);
++                sys.pokey = Some(Pokey::new(region.master_hz() as u32));
++                sys.pokey_location = Some(PokeyLocation::Addr0440);
++                let mut reference = Pokey::new((region.master_hz() / 8) as u32);
++                for chip in [sys.pokey.as_mut().expect("POKEY"), &mut reference] {
++                    chip.write(0x0f, 3);
++                    chip.write(1, 0x1f);
++                }
++                let mut halted_clocks = 0;
++                let mut stretched_intervals = 0;
++                let mut last_phase_two = 0;
++                let mut samples = 0;
++                for _ in 0..region.frame_ticks() {
++                    sys.tick_master_clock();
++                    if sys.maria.phi2 {
++                        reference.tick_chip();
++                        halted_clocks += usize::from(sys.cpu_bus_released);
++                        if sys.master_clock - last_phase_two > 8 {
++                            stretched_intervals += 1;
++                        }
++                        last_phase_two = sys.master_clock;
++                    }
++                    assert_eq!(
++                        sys.pokey.as_ref().expect("POKEY").read(0x0a),
++                        reference.read(0x0a),
++                        "{region:?}, slow {slow}, tick {}",
++                        sys.master_clock
++                    );
++                    let audio = sys.take_pokey_audio_samples();
++                    assert!(audio.iter().all(|sample| sample.is_finite()));
++                    samples += audio.len() as u64;
++                    assert_eq!(
++                        samples,
++                        sys.master_clock * 48_000 / region.master_hz(),
++                        "48 kHz output deadline: {region:?}, slow {slow}, tick {}",
++                        sys.master_clock
++                    );
++                }
++                assert!(halted_clocks > 100, "POKEY must run during real MARIA DMA");
++                assert_eq!(stretched_intervals > 0, slow);
++                assert!(sys.cpu.total_cycles > 1000, "the guest must execute");
++                assert!(samples > 700);
++            }
++        }
++    }
++
++    #[test]
++    fn pokey_restore_preserves_future_audio_across_partial_sample_phases() {
++        let mut mismatches = Vec::new();
++        let mut cases = 0;
++        for frequency in [1_789_772, 1_773_447] {
++            for phase in 0..40 {
++                let mut chip = Pokey::new(frequency);
++                chip.write(1, 0x1f);
++                chip.write(3, 0x18);
++                for _ in 0..128 + phase {
++                    chip.tick();
++                }
++                assert!(chip.take_buffer().iter().any(|&value| value != 0.0));
++                chip.take_channel_buffers();
++                let saved = postcard::to_allocvec(&chip).expect("POKEY snapshot");
++                let mut restored: Pokey = postcard::from_bytes(&saved).expect("POKEY restore");
++                assert!(restored.take_buffer().is_empty());
++                assert!(restored.take_channel_buffers().iter().all(Vec::is_empty));
++                let mut first_difference = None;
++                for tick in 0..96 {
++                    chip.tick();
++                    restored.tick();
++                    let mixed = chip.take_buffer();
++                    let channels = chip.take_channel_buffers();
++                    let resumed_mixed = restored.take_buffer();
++                    let resumed_channels = restored.take_channel_buffers();
++                    if (mixed != resumed_mixed || channels != resumed_channels)
++                        && first_difference.is_none()
++                    {
++                        first_difference = Some((frequency, phase, tick));
++                    }
++                }
++                mismatches.extend(first_difference);
++                cases += 1;
++            }
++        }
++        assert_eq!(cases, 80);
++        assert!(
++            mismatches.is_empty(),
++            "audio restore mismatches: {mismatches:?}"
++        );
++    }
++
