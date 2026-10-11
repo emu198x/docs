@@ -20,6 +20,10 @@ NMI = "PADLAY_HPAD06M__"
 
 class Pad:
     def __init__(self, network: dict) -> None:
+        require(
+            not network.get("unmodelled_structures"),
+            "unmodelled structures in pad network",
+        )
         self.network = network
         self.nodes = {
             n for d in network["devices"] for n in [d["gate"], *d["terminals"]]

@@ -1,0 +1,70 @@
+$ ruff check plans/2026-10-11-maria-interrupt-circuit plans/2026-10-11-maria-controller-clock plans/2026-10-11-maria-phase-handoff
+All checks passed!
+
+exit=0
+$ ruff format --check plans/2026-10-11-maria-interrupt-circuit plans/2026-10-11-maria-controller-clock plans/2026-10-11-maria-phase-handoff
+14 files already formatted
+
+exit=0
+$ python3 -m unittest discover -s plans/2026-10-11-maria-interrupt-circuit -v
+test_buried_contact_connects_poly_without_creating_gate (test_layout_network.NetworkTests.test_buried_contact_connects_poly_without_creating_gate) ... ok
+test_corner_only_touch_is_not_a_route (test_layout_network.NetworkTests.test_corner_only_touch_is_not_a_route) ... ok
+test_five_independent_inverters_match_boolean_complements (test_layout_network.NetworkTests.test_five_independent_inverters_match_boolean_complements) ... ok
+test_gate_separates_diffusion_and_does_not_short_to_poly (test_layout_network.NetworkTests.test_gate_separates_diffusion_and_does_not_short_to_poly) ... ok
+test_metal_crossing_connects_only_with_cut (test_layout_network.NetworkTests.test_metal_crossing_connects_only_with_cut) ... ok
+test_missing_contact_and_ambiguous_anchor_fail (test_layout_network.NetworkTests.test_missing_contact_and_ambiguous_anchor_fail) ... ok
+test_nonrectangular_or_diagonal_polygon_fails (test_layout_network.NetworkTests.test_nonrectangular_or_diagonal_polygon_fails) ... ok
+test_nonuniform_integer_coordinates_do_not_snap (test_layout_network.NetworkTests.test_nonuniform_integer_coordinates_do_not_snap) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK
+
+exit=0
+$ python3 -m unittest discover -s plans/2026-10-11-maria-controller-clock -v
+test_collinear_spur_changes_no_filled_area (test_flatten_layout.FlattenTests.test_collinear_spur_changes_no_filled_area) ... ok
+test_concave_boundary_preserves_shape (test_flatten_layout.FlattenTests.test_concave_boundary_preserves_shape) ... ok
+test_exact_real_and_reflection_before_rotation (test_flatten_layout.FlattenTests.test_exact_real_and_reflection_before_rotation) ... ok
+test_nested_composition_matches_sequential_coordinates (test_flatten_layout.FlattenTests.test_nested_composition_matches_sequential_coordinates) ... ok
+test_nested_reference_geometry_and_missing_cells (test_flatten_layout.FlattenTests.test_nested_reference_geometry_and_missing_cells) ... ok
+test_proper_crossing_and_diagonal_boundary_fail (test_flatten_layout.FlattenTests.test_proper_crossing_and_diagonal_boundary_fail) ... ok
+test_square_extended_path_retains_bend_and_end_caps (test_flatten_layout.FlattenTests.test_square_extended_path_retains_bend_and_end_caps) ... ok
+test_unsupported_transform_fails (test_flatten_layout.FlattenTests.test_unsupported_transform_fails) ... ok
+test_missing_sample_gate_and_invalid_load_fail (test_transfer.TransferTests.test_missing_sample_gate_and_invalid_load_fail) ... ok
+test_sampled_inputs_drive_inverters_without_feedback_race (test_transfer.TransferTests.test_sampled_inputs_drive_inverters_without_feedback_race) ... ok
+test_settled_supply_conflict_fails (test_transfer.TransferTests.test_settled_supply_conflict_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK
+
+exit=0
+$ python3 -m unittest discover -s plans/2026-10-11-maria-phase-handoff -v
+test_missing_physical_route_fails_even_when_both_ports_exist (test_connect_layout.BindingTests.test_missing_physical_route_fails_even_when_both_ports_exist) ... ok
+test_same_name_on_distinct_nodes_cannot_supply_a_phase_binding (test_connect_layout.BindingTests.test_same_name_on_distinct_nodes_cannot_supply_a_phase_binding) ... ok
+test_crossing_layers_need_contact (test_connect_layout.ConnectTests.test_crossing_layers_need_contact) ... ok
+test_missing_contact_does_not_join_nearby_shape (test_connect_layout.ConnectTests.test_missing_contact_does_not_join_nearby_shape) ... ok
+test_proven_local_net_joins_separate_parent_footprints (test_connect_layout.ConnectTests.test_proven_local_net_joins_separate_parent_footprints) ... ok
+test_same_layer_edge_connects_but_corner_does_not (test_connect_layout.ConnectTests.test_same_layer_edge_connects_but_corner_does_not) ... ok
+test_always_open_sample_gate_loses_hold (test_pad_model.PadModelTests.test_always_open_sample_gate_loses_hold) ... ok
+test_closed_sample_gate_preserves_both_logic_levels (test_pad_model.PadModelTests.test_closed_sample_gate_preserves_both_logic_levels) ... ok
+test_conflicting_driver_and_unqualified_load_bias_fail (test_pad_model.PadModelTests.test_conflicting_driver_and_unqualified_load_bias_fail) ... ok
+test_default_still_rejects_single_terminal_region (test_unmodelled_structures.UnmodelledTests.test_default_still_rejects_single_terminal_region) ... ok
+test_diagnostic_retains_structure_without_shorting_gate (test_unmodelled_structures.UnmodelledTests.test_diagnostic_retains_structure_without_shorting_gate) ... ok
+test_local_anchors_keep_both_conductors_separate (test_unmodelled_structures.UnmodelledTests.test_local_anchors_keep_both_conductors_separate) ... ok
+test_no_digital_solver_accepts_unmodelled_structures (test_unmodelled_structures.UnmodelledTests.test_no_digital_solver_accepts_unmodelled_structures) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK
+
+exit=0
+$ python3 plans/2026-10-11-maria-interrupt-circuit/trace_circuit.py /private/tmp/maria-nmi-selector/layout-artifacts.zip /private/tmp/maria-nmi-selector/clock-route-qualification/interrupt-circuit-summary.json
+exit=0
+$ python3 plans/2026-10-11-maria-controller-clock/probe_controller_clock.py /private/tmp/maria-nmi-selector/layout-artifacts.zip /private/tmp/maria-nmi-selector/clock-route-qualification/controller-clock-summary.json
+exit=0
+$ python3 plans/2026-10-11-maria-phase-handoff/probe_pads.py /private/tmp/maria-nmi-selector/layout-artifacts.zip /private/tmp/maria-nmi-selector/clock-route-qualification/phase-handoff-summary.json
+exit=0

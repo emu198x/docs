@@ -32,6 +32,10 @@ def core_labels(network: dict) -> dict[str, int]:
 
 class Transfer:
     def __init__(self, network: dict) -> None:
+        require(
+            not network.get("unmodelled_structures"),
+            "unmodelled structures in transfer network",
+        )
         self.labels = core_labels(network)
         self.vdd, self.vss = self.labels["vdd"], self.labels["vss"]
         devices = network["devices"]
