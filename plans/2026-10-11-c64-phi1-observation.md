@@ -472,3 +472,61 @@ remain open. Disabled middle-slot addresses are checked; this guest does not
 independently seed/dump their idle bytes. The previous CPU probes qualify idle
 sources separately. The pending Phi1 stage/snapshot proposal remains unapproved;
 production remains unchanged from the merged PRA correction.
+
+### Late DMA ownership qualification
+
+Use the existing isolated observer and original patterned-memory sprite guest.
+Add `sprite_ownership.py` alongside the current tools, retaining its generated
+programs, completion sentinels and complete traces. Sweep CPU-written sprite
+enables across the two DMA-start checks; start with PAL calibration, then cover
+all five models and boundary controls. Require positive invalid-ownership
+records before claiming that case is exercised. Inspect returned data against
+both source RAM and the captured internal Phi2 bus, preserving the distinction
+between invalid accesses and physical reads. Extend to a live pointer-write
+probe after the ownership boundary is understood. Add explicit coverage and
+mutation guards in `verify_sprite_ownership.py` and `test_sprite_ownership.py`
+when the measured cases establish the verifier's expectations. No production,
+clock, pipeline or snapshot change is authorised by this diagnostic step.
+
+
+The original CPU-enable sweep now qualifies one first-byte ownership boundary.
+A 160-run two-clock calibration finds PAL/current-NTSC cases; the old NTSC
+boundary needs the other phase, selected by a three-clock BIT instruction.
+The retained qualification covers five consecutive enable clocks on every
+model and bank: 100 captures, 515,160 observer records, 40 normal-DMA cases,
+20 first-byte substitutions and 40 missed-DMA cases. All 3,780 sprite-byte
+events agree: 3,760 physical RAM reads and 20 internal-bus substitutions.
+
+The invalid first-byte event returns `$FF`, has no physical read and reports
+prefetch count 1; the four banks contain `$00/$29/$52/$7B` at that address.
+Phi1 retains the preceding pointer byte `$80`. CPU store traces establish the
+reported enable clocks independently of DMA records: line 80, cycles 53–57
+on PAL and 54–58 on both NTSC schedules. Only the middle clock takes the invalid
+path; the immediately adjacent clocks fetch normally or miss DMA respectively.
+This guest's internal Phi2 bus is `$FF`; do not generalise that value to every
+invalid access. MC still advances past the substituted first byte.
+
+`ownership-native.zip` retains full CSVs, generated original PRGs, CPU trace
+logs, source RAM dumps, sentinels and the capture manifest. The summary pins its
+hash. `ownership-calibration.json.gz` retains calibration measurements and the
+CPU-trace invariance comparison: all 2,004 selected sprite records match across
+three PAL controls with monitor tracing off/on. Whole-trace hashes differ in
+unseeded refresh RAM; no whole-trace invariance claim is made for these guests.
+
+All 79 tests pass, including 15 new ownership controls. An unconditional-RAM
+mutation passes the structural checker but fails the expected invalid-access
+check. Other mutations reject wrong data/ownership/phase, missing DMA bytes,
+Phi1 overwrite, missing CPU stores/completion and missing/duplicate cases.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_ownership.py ownership-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+The production source audit recorded in `ownership-summary.json` finds that
+`chain_paccess` and `chain_saccess` read sprite RAM without checking ownership.
+This identifies a source-level discrepancy, not a new production execution.
+Preserve the invalid-byte source and MC advancement in the pending fetch-stage
+correction. No production or snapshot change is made here. Last-byte invalid
+accesses, live pointer writes, active graphics and late matrix ownership remain
+separate coverage requirements. The larger schema proposal remains pending.

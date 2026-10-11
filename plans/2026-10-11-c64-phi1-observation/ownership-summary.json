@@ -1,0 +1,24 @@
+{
+  "cases": 100,
+  "states": {
+    "early": 40,
+    "invalid": 20,
+    "late": 40
+  },
+  "records": 515160,
+  "sprite_bytes": 3780,
+  "invalid_bytes": 20,
+  "ram_bytes": 3760,
+  "monitor_sprite_rows_compared": 2004,
+  "archive_sha256": "f69b2537178c89b448b7fa5c7aeb48d2fcc68c6272485bac9b0c9ea98626d6c3",
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "production_source_audit": {
+    "file": "crates/mos-vic-ii/src/lib.rs",
+    "sha256": "944087c5ed06fce7d74e326f878b1643570d013f4f707703fe713f1101bf5765",
+    "functions": [
+      "chain_paccess",
+      "chain_saccess"
+    ],
+    "finding": "Both sprite Phi2 positions read RAM without testing ownership; source inspection only, not a new production execution."
+  }
+}
