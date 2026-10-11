@@ -1,0 +1,102 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sg1000-input/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ff4c8b36ef241795: Operation not permitted (os error 1)
+   Compiling machine-sega-sg-1000 v0.31.0 (/private/tmp/198x-sg1000-input/crates/machine-sega-sg-1000)
+   Compiling runtime-sega-sg-1000 v0.31.0 (/private/tmp/198x-sg1000-input/crates/runtime-sega-sg-1000)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.29s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/machine_sega_sg_1000-7b4b430bbb3333b1)
+
+running 8 tests
+test tests::psg_write_port_range ... ok
+test tests::pause_line_drives_z80_nmi ... ok
+test tests::controller_routing_by_port_parity ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/cart_boot-2fa3aa52752d13b5)
+
+running 1 test
+test cart_boots_to_title_screen ... ignored, FIXTURE: needs an SG-1000 / Othello Multivision .sg cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/controller_wiring.rs (/private/tmp/198x-sunsoft4-target/debug/deps/controller_wiring-63f7b42afa9fd1f5)
+
+running 2 tests
+test both_controllers_survive_snapshot_and_release_without_stuck_bits ... ok
+test all_controller_states_reach_the_wired_bits_in_every_alias ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.23s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-sunsoft4-target/debug/deps/cpu_rate-680acb7ea34026b5)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/synthetic_cart_boot-2886c1bc1a5b1979)
+
+running 2 tests
+test an_empty_cartridge_does_not_look_like_a_boot ... ok
+test the_sg_1000_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/vram_access_windows.rs (/private/tmp/198x-sunsoft4-target/debug/deps/vram_access_windows-024bb8e7281f3f00)
+
+running 3 tests
+test the_same_loop_loses_nothing_with_the_display_blanked ... ok
+test an_18_t_state_copy_loop_loses_bytes_during_active_display ... ok
+test a_loop_paced_to_the_worst_case_window_loses_nothing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/runtime_sega_sg_1000-d3519b03e18d88d8)
+
+running 4 tests
+test profiles::tests::ntsc_profile_uses_ntsc_region ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-sunsoft4-target/debug/deps/queries-7442ba5c8086bfc8)
+
+running 2 tests
+test vdp_resolves_grouped_object_and_leaves ... ok
+test query_paths_lists_the_folded_vdp_paths ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-sunsoft4-target/debug/deps/snapshot_roundtrip-a3087c6063fb3c11)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-sunsoft4-target/debug/deps/variants-444dd48b1051b8d2)
+
+running 2 tests
+test catalogue_round_trips_and_declares_switching ... ok
+test regional_switches_keep_cartridge_but_reset_machine_and_session ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+   Doc-tests machine_sega_sg_1000
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_sega_sg_1000
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
