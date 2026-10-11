@@ -1,0 +1,45 @@
+
+running 1 test
+BANK_TRANSIENT|pal|129792|0|0
+BANK_TRANSIENT|c64c|129792|0|1
+BANK_TRANSIENT|ntsc|109408|0|0
+BANK_TRANSIENT|c64cntsc|109408|0|1
+test machine::tests::custom_glue_bank_swap_fetches_transient_bank_character ... FAILED
+
+failures:
+
+failures:
+    machine::tests::custom_glue_bank_swap_fetches_transient_bank_character
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 146 filtered out; finished in 41.50s
+
+   Compiling thiserror v2.0.20
+   Compiling peripheral-ultimate-uci-net v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/peripheral-ultimate-uci-net)
+   Compiling emu198x-esp-at-modem v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/emu198x-esp-at-modem)
+   Compiling common-commodore-c64 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/common-commodore-c64)
+   Compiling format-commodore-c64-prg v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/format-commodore-c64-prg)
+   Compiling serde v1.0.229
+   Compiling common-commodore-iec v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/common-commodore-iec)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-c64-bank-transient/crates/emu198x-mos-6502)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/mos-via-6522)
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-mos-sid-6581 v0.9.0 (/private/tmp/198x-c64-bank-transient/crates/emu198x-mos-sid-6581)
+   Compiling mos-cia-6526 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/mos-cia-6526)
+   Compiling mos-vic-ii v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/mos-vic-ii)
+   Compiling format-commodore-c64-d64 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/format-commodore-c64-d64)
+   Compiling format-commodore-c64-g64 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/format-commodore-c64-g64)
+   Compiling format-commodore-c64-tap v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/format-commodore-c64-tap)
+   Compiling format-commodore-c64-crt v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/format-commodore-c64-crt)
+   Compiling common-commodore-drive-gcr v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/common-commodore-drive-gcr)
+   Compiling common-commodore-iec-drive v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/common-commodore-iec-drive)
+   Compiling machine-commodore-1541 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/machine-commodore-1541)
+   Compiling machine-commodore-c64 v0.31.0 (/private/tmp/198x-c64-bank-transient/crates/machine-commodore-c64)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.96s
+     Running unittests src/lib.rs (/Users/stevehill/Projects/198x/Emu198x/emu198x/target/debug/deps/machine_commodore_c64-93b5c42e80cdcea8)
+
+thread 'machine::tests::custom_glue_bank_swap_fetches_transient_bank_character' (91025887) panicked at crates/machine-commodore-c64/src/machine.rs:3402:9:
+assertion `left == right` failed: custom-glue bank swap must expose transient bank-3 character data
+  left: 2
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p machine-commodore-c64 --lib`

@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "model": "pal",
+      "pixels": 129792,
+      "changed": 0,
+      "expected_change": false,
+      "failed": false
+    },
+    {
+      "model": "c64c",
+      "pixels": 129792,
+      "changed": 0,
+      "expected_change": true,
+      "failed": true
+    },
+    {
+      "model": "ntsc",
+      "pixels": 109408,
+      "changed": 0,
+      "expected_change": false,
+      "failed": false
+    },
+    {
+      "model": "c64cntsc",
+      "pixels": 109408,
+      "changed": 0,
+      "expected_change": true,
+      "failed": true
+    }
+  ],
+  "failed": 2,
+  "cargo_exit": 101,
+  "source_sha256": "e09edf30d0e5af56140c1de3183b8e4176984a6b651ad8ec19ad6c767605f653",
+  "source_restored": true,
+  "command": [
+    "cargo",
+    "test",
+    "-p",
+    "machine-commodore-c64",
+    "custom_glue_bank_swap_fetches_transient_bank_character",
+    "--lib",
+    "--",
+    "--nocapture"
+  ]
+}

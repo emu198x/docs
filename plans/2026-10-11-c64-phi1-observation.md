@@ -188,3 +188,56 @@ with 2,880 measurements. Ten new guard tests pass, including rejection of a
 wrong byte even when its trace and success count are falsified consistently.
 The combined suite now passes 28 tests. The existing proposal remains pending;
 no production stage or snapshot was changed.
+
+## First-fetch visibility experiment
+
+Add an original active-display guest in `bank_transient.py`. Fill all four
+screen matrices identically and give their character data distinct bit
+patterns. Repeated CPU bank writes will cross active graphics fetches. Capture
+identical runs with VICE discrete and custom glue logic on the same chip
+profile, with checked completion and final-frame screenshots. Compare exact
+pixels; include transitions that do not invoke the reference's bank-1/2
+transient as controls. A visible difference establishes a fetch consequence,
+not physical validation of VICE's transient duration. Keep production unchanged.
+
+The first paired PAL-C64C capture differs only for bank 1/2 switching; the
+other three bank pairs are exact controls. Extend the native matrix with
+bank-3 character bytes `$00/$55/$AA/$FF`. Require unchanged discrete-glue
+images and exact per-bit prediction of custom-glue pixels from the two solid
+patterns. Then run the same original guest through Emu198x's actual CPU:
+compare marker `$00/$FF` framebuffers on all four shipping models. Breadbin
+controls must remain identical; C64C must expose bank-3-dependent pixels.
+Use a temporary appended test in `machine-commodore-c64/src/machine.rs`,
+retain a failing transcript, and restore that file byte for byte. This is a
+reproduction, not approval for a new glue-logic stage or snapshot field.
+
+### Visible transient result
+
+The 70 native captures identify a bank-3 fetch consequence during bank 1/2
+switches. All fifteen other bank-pair controls match exactly. Changing only
+the bank-3 glyph between `$00` and `$FF` leaves discrete-glue images identical
+but changes 6,544 pixels on PAL/old NTSC and 6,664 on current NTSC. These solid
+patterns predict every pixel of the `$55` and `$AA` custom-glue captures with
+zero errors. All chip profiles are tested with both glue settings deliberately;
+only the two C64C models use custom glue as their normal board configuration.
+
+The CPU probe at source `63ff50c8` reproduces the missing consequence: both
+C64C cases fail, both breadbin controls pass. All eight guests execute after
+real firmware boot, reach the sentinel and produce nonblank framebuffers after
+more than two full frames. The temporary test fails with `custom-glue bank swap
+must expose transient bank-3 character data` (`left: 2`, `right: 0`). Its source
+is restored exactly; no production code is changed.
+
+`bank_transient.py` generates the original guest and native matrix;
+`verify_transient.py` checks source-bit predictions against all retained PNGs.
+`transient-native/` holds 70 screenshots, the compressed manifest and logs.
+`run_transient_probe.py` and `transient_probe.rs` reproduce the CPU mismatch;
+`transient-run.log` and `transient-summary.json` retain the result. Ten new
+guards bring the combined suite to 38 passing tests, including rejection of
+an incorrect marker image even with matching forged hash/difference metadata.
+
+This is a separate machine glue-logic omission, beyond the pending VIC fetch
+stage design above. The exact first-fetch clock boundary and DDRA cases still
+need qualification before agreeing a retained machine stage and save-state
+layout. Do not treat the existing Phi1 proposal as approval for that extension,
+or copy VICE's explicitly approximate DDRA behaviour as established hardware.
