@@ -1,0 +1,124 @@
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling serde-big-array v0.5.1
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.58s
+     Running tests/filter_timing_probe.rs (../emu198x/target/debug/deps/filter_timing_probe-41eb001a4bfca67c)
+
+running 1 test
+clock=1789772 base=0 channel=0 period=0 mode=0 samples=1758 min=0.24324325 max=0.7567568
+clock=1789772 base=0 channel=0 period=0 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=0 period=0 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=0 period=3 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=0 period=3 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=0 period=3 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=0 period=15 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=0 period=15 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=0 period=15 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=0 period=63 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=0 period=63 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=0 period=63 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=1 period=0 mode=0 samples=1758 min=0.24324325 max=0.7567568
+clock=1789772 base=0 channel=1 period=0 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=1 period=0 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=1 period=3 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=1 period=3 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=1 period=3 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=1 period=15 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=1 period=15 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=1 period=15 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=0 channel=1 period=63 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=0 channel=1 period=63 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=0 channel=1 period=63 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=0 period=0 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=0 period=0 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=0 period=0 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=0 period=3 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=0 period=3 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=0 period=3 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=0 period=15 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=0 period=15 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=0 period=15 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=0 period=63 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=0 period=63 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=0 period=63 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=1 period=0 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=1 period=0 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=1 period=0 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=1 period=3 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=1 period=3 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=1 period=3 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=1 period=15 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=1 period=15 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=1 period=15 mode=2 samples=1758 min=1 max=1
+clock=1789772 base=1 channel=1 period=63 mode=0 samples=1758 min=0 max=1
+clock=1789772 base=1 channel=1 period=63 mode=1 samples=1758 min=0 max=0
+clock=1789772 base=1 channel=1 period=63 mode=2 samples=1758 min=1 max=1
+clock=1773447 base=0 channel=0 period=0 mode=0 samples=1774 min=0.22222222 max=0.7777778
+clock=1773447 base=0 channel=0 period=0 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=0 period=0 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=0 period=3 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=0 period=3 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=0 period=3 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=0 period=15 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=0 period=15 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=0 period=15 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=0 period=63 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=0 period=63 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=0 period=63 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=1 period=0 mode=0 samples=1774 min=0.22222222 max=0.7777778
+clock=1773447 base=0 channel=1 period=0 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=1 period=0 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=1 period=3 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=1 period=3 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=1 period=3 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=1 period=15 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=1 period=15 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=1 period=15 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=0 channel=1 period=63 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=0 channel=1 period=63 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=0 channel=1 period=63 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=0 period=0 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=0 period=0 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=0 period=0 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=0 period=3 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=0 period=3 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=0 period=3 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=0 period=15 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=0 period=15 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=0 period=15 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=0 period=63 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=0 period=63 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=0 period=63 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=1 period=0 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=1 period=0 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=1 period=0 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=1 period=3 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=1 period=3 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=1 period=3 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=1 period=15 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=1 period=15 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=1 period=15 mode=2 samples=1774 min=1 max=1
+clock=1773447 base=1 channel=1 period=63 mode=0 samples=1774 min=0 max=1
+clock=1773447 base=1 channel=1 period=63 mode=1 samples=1774 min=0 max=0
+clock=1773447 base=1 channel=1 period=63 mode=2 samples=1774 min=1 max=1
+
+thread 'synchronized_filter_timers_cannot_cancel_the_entire_output' (89198529) panicked at crates/atari-pokey/tests/filter_timing_probe.rs:57:5:
+assertion `left == right` failed: half-cycle filter offset cannot erase the entire waveform
+  left: 32
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test synchronized_filter_timers_cannot_cancel_the_entire_output ... FAILED
+
+failures:
+
+failures:
+    synchronized_filter_timers_cannot_cancel_the_entire_output
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.71s
+
+error: test failed, to rerun pass `-p atari-pokey --test filter_timing_probe`
