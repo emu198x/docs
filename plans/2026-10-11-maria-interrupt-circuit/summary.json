@@ -1,0 +1,472 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "electrical_roles": "hypothesis; no foundry deck or revision qualification",
+  "networks": {
+    "VCELL_VCELL_GINGER$LOE_RSYNC_LY": {
+      "devices": 97,
+      "implants": {
+        "3": 68,
+        "2": 25,
+        "0": 4
+      },
+      "contact_regions": {
+        "4": 49,
+        "6": 141
+      },
+      "nets": 64
+    },
+    "VCELL_VCELL_GINGER$LOE_RSYNCPLA": {
+      "devices": 89,
+      "implants": {
+        "2": 29,
+        "3": 60
+      },
+      "contact_regions": {
+        "4": 58,
+        "6": 105
+      },
+      "nets": 48
+    }
+  },
+  "primitives": {
+    "VIPLIB_CHD2HM": [
+      1,
+      6,
+      7
+    ],
+    "VIPLIB_CHM2HP1A": [
+      5,
+      6,
+      7
+    ],
+    "VIPLIB_HMOSXIST_2_6_1_": [
+      1,
+      3,
+      5
+    ],
+    "VIPLIB_HMOSXIST_6_4_2_": [
+      1,
+      2,
+      5
+    ],
+    "VIPLIB_HMOSXIST_3_18_4_": [
+      1,
+      5
+    ]
+  },
+  "latch": {
+    "sample_phase": "ph2",
+    "set_pulldown": "intqf",
+    "reset_pulldown": "intq",
+    "disable_pulldown": "intq",
+    "output_polarity": "intf low when intq high",
+    "self_gated_loads": 25
+  },
+  "top_rectangles": 5233,
+  "excluded_other_cell_instances": 85,
+  "unconnected": [
+    "RSYNC.dliqf",
+    "abenblf",
+    "alatcon",
+    "asel",
+    "dsel",
+    "elrwa",
+    "ind",
+    "intenbl",
+    "longhdr",
+    "off0",
+    "rld0",
+    "rld1",
+    "rld2",
+    "rld3",
+    "w0",
+    "xen0",
+    "xen1",
+    "xen2"
+  ],
+  "ports": [
+    [
+      "PLA.pla_clk/1",
+      "ph1"
+    ],
+    [
+      "PLA.pla_clkin/1",
+      "ph2"
+    ],
+    [
+      "PLA.pla_in1/1",
+      "RSYNC.pckedge",
+      "pckedge"
+    ],
+    [
+      "PLA.pla_in2/1",
+      "RSYNC.halt",
+      "halt"
+    ],
+    [
+      "PLA.pla_in3/1",
+      "RSYNC.dlireq",
+      "dlireq"
+    ],
+    [
+      "PLA.pla_in4/1",
+      "PLA.pla_out2/1"
+    ],
+    [
+      "PLA.pla_in5/1",
+      "PLA.pla_out1/1"
+    ],
+    [
+      "PLA.pla_out3/1",
+      "RSYNC.enable",
+      "rsyncenable"
+    ],
+    [
+      "PLA.pla_out4/1",
+      "RSYNC.intset",
+      "intset"
+    ],
+    [
+      "PLA.pla_out5/1",
+      "RSYNC.intrst",
+      "intrst"
+    ],
+    [
+      "PLA.pla_vdd/1",
+      "RSYNC.vdd",
+      "vdd"
+    ],
+    [
+      "PLA.pla_vss/1",
+      "RSYNC.vss",
+      "vss"
+    ]
+  ],
+  "truth_rows": [
+    {
+      "state": 0,
+      "dli": 0,
+      "halt": 0,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 0,
+      "dli": 0,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 1
+    },
+    {
+      "state": 0,
+      "dli": 0,
+      "halt": 1,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 0,
+      "dli": 0,
+      "halt": 1,
+      "edge": 1,
+      "next": 2,
+      "enable": 1,
+      "set": 0,
+      "reset": 1
+    },
+    {
+      "state": 0,
+      "dli": 1,
+      "halt": 0,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 0,
+      "dli": 1,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 1
+    },
+    {
+      "state": 0,
+      "dli": 1,
+      "halt": 1,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 0,
+      "dli": 1,
+      "halt": 1,
+      "edge": 1,
+      "next": 2,
+      "enable": 1,
+      "set": 0,
+      "reset": 1
+    },
+    {
+      "state": 1,
+      "dli": 0,
+      "halt": 0,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 0,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 0,
+      "halt": 1,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 0,
+      "halt": 1,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 1,
+      "halt": 0,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 1,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 1,
+      "halt": 1,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 1,
+      "dli": 1,
+      "halt": 1,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 0,
+      "halt": 0,
+      "edge": 0,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 0,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 0,
+      "halt": 1,
+      "edge": 0,
+      "next": 2,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 0,
+      "halt": 1,
+      "edge": 1,
+      "next": 2,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 1,
+      "halt": 0,
+      "edge": 0,
+      "next": 2,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 1,
+      "halt": 0,
+      "edge": 1,
+      "next": 3,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 1,
+      "halt": 1,
+      "edge": 0,
+      "next": 2,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 2,
+      "dli": 1,
+      "halt": 1,
+      "edge": 1,
+      "next": 2,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 0,
+      "halt": 0,
+      "edge": 0,
+      "next": 3,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 0,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 1,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 0,
+      "halt": 1,
+      "edge": 0,
+      "next": 3,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 0,
+      "halt": 1,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 1,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 1,
+      "halt": 0,
+      "edge": 0,
+      "next": 3,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 1,
+      "halt": 0,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 1,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 1,
+      "halt": 1,
+      "edge": 0,
+      "next": 3,
+      "enable": 0,
+      "set": 0,
+      "reset": 0
+    },
+    {
+      "state": 3,
+      "dli": 1,
+      "halt": 1,
+      "edge": 1,
+      "next": 0,
+      "enable": 0,
+      "set": 1,
+      "reset": 0
+    }
+  ],
+  "negatives": {
+    "missing_route": "missing routing pla_out4/1 -> intset",
+    "missing_device": "PLA equation mismatch: {'state': 0, 'dli': 0, 'halt': 0, 'edge': 0, 'next': 0, 'enable': 0, 'set': 1, 'reset': 0}"
+  }
+}

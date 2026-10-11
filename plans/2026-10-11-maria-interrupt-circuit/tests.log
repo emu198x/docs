@@ -1,0 +1,13 @@
+test_buried_contact_connects_poly_without_creating_gate (test_layout_network.NetworkTests.test_buried_contact_connects_poly_without_creating_gate) ... ok
+test_corner_only_touch_is_not_a_route (test_layout_network.NetworkTests.test_corner_only_touch_is_not_a_route) ... ok
+test_five_independent_inverters_match_boolean_complements (test_layout_network.NetworkTests.test_five_independent_inverters_match_boolean_complements) ... ok
+test_gate_separates_diffusion_and_does_not_short_to_poly (test_layout_network.NetworkTests.test_gate_separates_diffusion_and_does_not_short_to_poly) ... ok
+test_metal_crossing_connects_only_with_cut (test_layout_network.NetworkTests.test_metal_crossing_connects_only_with_cut) ... ok
+test_missing_contact_and_ambiguous_anchor_fail (test_layout_network.NetworkTests.test_missing_contact_and_ambiguous_anchor_fail) ... ok
+test_nonrectangular_or_diagonal_polygon_fails (test_layout_network.NetworkTests.test_nonrectangular_or_diagonal_polygon_fails) ... ok
+test_nonuniform_integer_coordinates_do_not_snap (test_layout_network.NetworkTests.test_nonuniform_integer_coordinates_do_not_snap) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK
