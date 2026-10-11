@@ -1,0 +1,354 @@
+   Compiling machine-acorn-bbc-micro v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-acorn-bbc-micro)
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+   Compiling machine-sega-master-system v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sega-master-system)
+   Compiling machine-sega-sg-1000 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sega-sg-1000)
+   Compiling machine-coleco-colecovision v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-coleco-colecovision)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.19s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_acorn_bbc_micro-230754a54b2459ff)
+
+running 53 tests
+test saa5050::tests::separated_mosaics_blank_the_left_column_and_last_row_of_each_block ... ok
+test saa5050::tests::rounding_leaves_straight_strokes_alone ... ok
+test saa5050::tests::rounding_lights_half_a_dot_on_a_diagonal ... ok
+test saa5050::tests::flashing_text_is_hidden_for_16_fields_in_64 ... ok
+test tests::adc_converts_a_channel_and_reports_completion ... ok
+test tests::acia_idle_does_not_signal_an_interrupt ... ok
+test tests::conceal_hides_text_until_a_colour_code ... ok
+test tests::a_scrolled_screen_wraps_past_the_top_of_ram ... ok
+test tests::double_height_draws_top_and_bottom_halves_on_two_rows ... ok
+test tests::ic32_falling_edge_on_bit_0_writes_psg ... ok
+test tests::joystick_fire_buttons_pull_system_via_pb4_pb5_low ... ok
+test tests::control_bit_0_selects_which_flashing_colour_shows ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::hold_graphics_repeats_the_mosaic_in_its_own_colour ... ok
+test tests::mode7_coverage_levels_are_linear_light_in_srgb ... ok
+test tests::every_one_mhz_cycle_ends_on_the_one_mhz_clock ... ok
+test tests::mode7_resampling_keeps_each_half_dot_where_it_falls ... ok
+test tests::mode7_follows_the_start_address ... ok
+test tests::mode7_rounds_diagonals_across_the_two_fields ... ok
+test tests::mode7_weaves_its_two_fields ... ok
+test tests::mode7_wraps_within_its_kilobyte ... ok
+test tests::one_mhz_bus_accesses_cost_two_or_three_ticks_rest_one ... ok
+test tests::mode7_cells_are_a_microsecond_wide_and_fill_the_window ... ok
+test tests::one_mhz_access_waits_for_the_next_whole_one_mhz_cycle ... ok
+test tests::rom_bank_register_at_fe30 ... ok
+test tests::rows_past_r6_are_not_displayed ... ok
+test tests::sheila_devices_answer_across_their_whole_blocks ... ok
+test tests::r8_skews_the_cursor_or_turns_it_off ... ok
+test tests::slow_clock_modes_still_sync_at_fifty_hertz ... ok
+test tests::adc_completion_raises_the_system_via_cb1_interrupt ... ok
+test tests::system_via_writes_round_trip ... ok
+test tests::teletext_control_codes_ignore_bit_7 ... ok
+test tests::the_cursor_inverts_a_mixed_mode7_pixel_to_the_inverted_mix ... ok
+test tests::the_cursor_is_as_wide_as_control_bits_5_to_7_make_it ... ok
+test tests::the_latch_selects_each_modes_screen_size ... ok
+test tests::the_mode7_cursor_underlines_the_matched_cell ... ok
+test tests::flashing_teletext_hides_for_16_fields_in_64 ... ok
+test tests::frame_is_a_fixed_master_tick_budget ... ok
+test tests::frame_runs_expected_cycles ... ok
+test tests::video_ula_matches_the_guides_mode_8_example ... ok
+test tests::video_ula_palette_write_decodes_logical_and_physical ... ok
+test tests::via_timers_count_at_one_megahertz ... ok
+test tests::video_ula_pixels_per_byte_matches_the_documented_modes ... ok
+test tests::the_row_under_double_height_shows_only_double_height_characters ... ok
+test tests::the_mos_cursor_blinks_every_sixteen_fields ... ok
+test tests::cassette_carrier_raises_dcd_and_clears_on_data_read ... ok
+test tests::stepping_a_frames_worth_of_instructions_is_a_frame ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::cassette_byte_fills_the_acia_and_clears_on_read ... ok
+test tests::cassette_does_not_play_while_the_motor_is_off ... ok
+test tests::many_frames_complete_without_panic ... ok
+test tests::a_stopped_deck_does_not_advance_even_with_the_motor_on ... ok
+test tests::psg_runs_off_a_four_megahertz_clock ... ok
+
+test result: ok. 53 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 45.38s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-afc6f9a49dc49186)
+
+running 8 tests
+test a_flashing_colour_flashes_at_the_mos_rate ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test boots_to_basic_prompt ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test keyboard_types_a_basic_expression_and_prints_the_result ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test mode7_draws_double_height_and_flashing_text_from_basic ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mode7_renders_the_banner ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mos_clock_counts_centiseconds ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test os_boots_to_basic_banner ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test the_prompt_cursor_blinks_in_mode_7_and_in_a_bitmap_mode ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 8 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-0dc6917e9012027d)
+
+running 2 tests
+test synthetic_firmware_builds_a_raster_and_floods_it ... ok
+test the_control_image_renders_no_raster ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.52s
+
+     Running tests/tape_load.rs (/private/tmp/198x-6809-target/debug/deps/tape_load-8286899de9d4fde8)
+
+running 1 test
+test os_loads_a_real_tape ... ignored, FIXTURE: needs the BBC MOS+BASIC ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_coleco_colecovision-5923d8ec6383f1f3)
+
+running 9 tests
+test tests::joystick_mode_toggle_via_io ... ok
+test tests::keypad_read_routes_to_correct_controller ... ok
+test tests::vdp_runs_at_three_dots_per_two_tstates ... ok
+test tests::ntsc_frame_returns_expected_cpu_cycles ... ok
+test tests::vdp_drives_cpu_irq_at_vblank ... ok
+test tests::one_frame_of_tstates_is_exactly_one_vdp_frame ... ok
+test tests::pal_frame_returns_expected_cpu_cycles ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.46s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-055b7c1e7804ca8f)
+
+running 1 test
+test bios_boots_to_title_screen ... ignored, FIXTURE: needs ColecoVision BIOS — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-ddaafdc361117425)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-da8068fad5466892)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_colecovision_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sega_master_system-19cd334db3890074)
+
+running 46 tests
+test tests::game_gear_start_button_at_port_00 ... ok
+test tests::first_1k_always_reads_cart_bank_0 ... ok
+test tests::controller_routing_by_port_parity ... ok
+test tests::cartridge_ram_is_dirty_only_after_a_changed_sram_write ... ok
+test tests::input_configured_th_pins_report_the_external_level_in_every_region ... ok
+test tests::mapper_fffd_swaps_slot_0_high ... ok
+test tests::mapper_fffe_swaps_slot_1 ... ok
+test tests::memory_control_cart_disable_disconnects_every_cartridge_window ... ok
+test tests::memory_control_gates_controllers_and_work_ram ... ok
+test tests::memory_control_switches_between_bios_cartridge_and_open_bus ... ok
+test cartridge::tests::decodes_territory_size_and_checksum ... ok
+test tests::pal_and_ntsc_export_profiles_have_the_same_region_readback ... ok
+test cartridge::tests::an_export_code_does_not_invent_a_tv_standard ... ok
+test tests::pause_line_drives_z80_nmi ... ok
+test tests::only_switching_th_to_input_latches ... ok
+test cartridge::tests::strips_smd_header_before_parsing ... ok
+test tests::ram_round_trip_through_mirror ... ok
+test tests::sega_mapper_cartridge_ram_round_trips_and_restores_rom ... ok
+test tests::sega_mapper_selects_both_cartridge_ram_banks ... ok
+test tests::releasing_a_pin_that_was_already_high_does_not_latch ... ok
+test tests::releasing_th_latches_the_h_counter ... ok
+test tests::th_output_readback_distinguishes_export_and_japanese_io_chips ... ok
+test tests::a_trigger_without_a_gun_does_not_pull_the_pin ... ok
+test tests::snapshot_carries_a_vram_write_still_waiting_for_its_window ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::each_port_has_its_own_gun ... ok
+test tests::an_empty_port_latches_nothing ... ok
+test tests::the_diode_stays_on_until_the_beam_leaves_its_view ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::a_gun_at_the_edge_of_the_picture_sees_into_the_border ... ok
+test tests::the_latched_value_tracks_where_the_beam_is ... ok
+test tests::the_memory_control_port_does_not_latch ... ok
+test tests::the_field_of_view_reaches_a_few_lines_past_the_aim ... ok
+test tests::a_bright_border_trips_the_gun ... ok
+test tests::the_gun_sees_nothing_during_blanking ... ok
+test tests::the_trigger_reads_back_on_the_ports_tl_bit ... ok
+test tests::the_gun_answers_a_lit_screen_and_ignores_a_dark_one ... ok
+test tests::the_field_of_view_is_round_and_narrows_off_centre ... ok
+test tests::the_latched_column_tracks_the_column_aimed_at ... ok
+test tests::unplugging_the_gun_stops_it_answering ... ok
+test tests::the_gun_answers_only_where_the_picture_is_lit ... ok
+test tests::the_latch_takes_the_trailing_edge_plus_the_delay ... ok
+test tests::the_field_of_view_reaches_a_few_pixels_to_each_side ... ok
+test tests::the_diode_weights_the_channels_by_luminance ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 46 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.76s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/cart_boot-f27ae03947dda974)
+
+running 1 test
+test cart_boots_to_title_screen ... ignored, FIXTURE: needs an SMS cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-daa48bd294b994f6)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/raster_split.rs (/private/tmp/198x-6809-target/debug/deps/raster_split-52b53df730909a19)
+
+running 4 tests
+test the_cartridge_paints_a_split_screen ... ok
+test the_split_lands_where_the_z80s_own_timing_puts_it ... ok
+test the_split_lands_one_line_after_the_counter_underflows ... ok
+test the_split_stays_within_one_instruction_of_itself ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-18027659dde3c052)
+
+running 3 tests
+test an_empty_cartridge_does_not_look_like_a_boot ... ok
+test the_game_gear_boots_a_cartridge_and_paints_its_backdrop ... ok
+test the_master_system_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/vram_access_timing.rs (/private/tmp/198x-6809-target/debug/deps/vram_access_timing-81d75337c82db4d8)
+
+running 3 tests
+test the_same_loop_loses_nothing_with_the_display_blanked ... ok
+test an_18_t_state_copy_loop_loses_bytes_during_active_display ... ok
+test a_loop_paced_to_26_t_states_loses_nothing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sega_sg_1000-7b4b430bbb3333b1)
+
+running 8 tests
+test tests::psg_write_port_range ... ok
+test tests::controller_routing_by_port_parity ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::pause_line_drives_z80_nmi ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.46s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/cart_boot-2fa3aa52752d13b5)
+
+running 1 test
+test cart_boots_to_title_screen ... ignored, FIXTURE: needs an SG-1000 / Othello Multivision .sg cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-680acb7ea34026b5)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-2886c1bc1a5b1979)
+
+running 2 tests
+test an_empty_cartridge_does_not_look_like_a_boot ... ok
+test the_sg_1000_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/vram_access_windows.rs (/private/tmp/198x-6809-target/debug/deps/vram_access_windows-024bb8e7281f3f00)
+
+running 3 tests
+test the_same_loop_loses_nothing_with_the_display_blanked ... ok
+test a_loop_paced_to_the_worst_case_window_loses_nothing ... ok
+test an_18_t_state_copy_loop_loses_bytes_during_active_display ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sord_m5-9ecf8f8b1f5dee7b)
+
+running 11 tests
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::keyboard_rows_read_directly_at_0x30_block ... ok
+test tests::key_press_and_release_round_trip ... ok
+test tests::ctc_routes_at_0x00_block ... ok
+test tests::joystick_reads_active_high_at_0x37 ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::vdp_io_routes_at_0x10_block ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.70s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-477833f0cd77a7ba)
+
+running 1 test
+test boots_through_ctc_to_a_rendered_screen ... ignored, FIXTURE: needs Sord M5 BIOS + cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-1e3f9568d4beea31)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/digdug_freeze_probe.rs (/private/tmp/198x-6809-target/debug/deps/digdug_freeze_probe-f31cfe3ec73f069b)
+
+running 2 tests
+test cart_round_spawns_and_runs ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+test vdp_int_drives_ctc_channel3 ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/keyboard_io_trace.rs (/private/tmp/198x-6809-target/debug/deps/keyboard_io_trace-f7cf40757f0ecc09)
+
+running 1 test
+test trace_keyboard_scan_ports ... ignored, FIXTURE: needs Sord M5 BIOS — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-6de6610a5b717149)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_m5_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+   Doc-tests machine_acorn_bbc_micro
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_coleco_colecovision
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_sega_master_system
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_sega_sg_1000
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_sord_m5
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
