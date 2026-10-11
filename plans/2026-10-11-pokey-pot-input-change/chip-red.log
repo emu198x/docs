@@ -1,0 +1,119 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.53s
+     Running tests/pot_input_change_probe.rs (../emu198x/target/debug/deps/pot_input_change_probe-6b3e1eb543806bbd)
+
+running 1 test
+frequency=1789772 pot=0 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=0 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=0 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=0 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=0 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=0 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=1 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=1 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=1 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=1 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=1 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=1 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=2 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=2 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=2 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=2 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=2 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=2 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=3 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=3 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=3 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=3 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=3 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=3 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=4 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=4 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=4 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=4 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=4 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=4 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=5 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=5 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=5 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=5 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=5 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=5 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=6 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=6 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=6 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=6 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=6 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=6 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1789772 pot=7 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1789772 pot=7 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1789772 pot=7 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1789772 pot=7 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1789772 pot=7 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1789772 pot=7 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=0 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=0 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=0 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=0 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=0 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=0 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=1 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=1 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=1 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=1 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=1 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=1 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=2 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=2 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=2 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=2 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=2 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=2 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=3 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=3 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=3 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=3 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=3 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=3 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=4 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=4 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=4 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=4 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=4 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=4 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=5 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=5 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=5 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=5 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=5 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=5 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=6 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=6 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=6 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=6 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=6 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=6 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+frequency=1773447 pot=7 old=64 new=200 fraction=1/4 actual=200 expected_near=166
+frequency=1773447 pot=7 old=64 new=200 fraction=2/4 actual=200 expected_near=132
+frequency=1773447 pot=7 old=64 new=200 fraction=3/4 actual=200 expected_near=98
+frequency=1773447 pot=7 old=200 new=64 fraction=1/4 actual=64 expected_near=98
+frequency=1773447 pot=7 old=200 new=64 fraction=2/4 actual=228 expected_near=132
+frequency=1773447 pot=7 old=200 new=64 fraction=3/4 actual=228 expected_near=166
+cases=[32, 32, 32, 32] failures=[0, 32, 32, 32]
+
+thread 'changing_paddle_rate_preserves_partial_charge' (90567686) panicked at crates/atari-pokey/tests/pot_input_change_probe.rs:47:5:
+assertion `left == right` failed: input changes must preserve partial pot charge
+  left: [0, 32, 32, 32]
+ right: [0, 0, 0, 0]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test changing_paddle_rate_preserves_partial_charge ... FAILED
+
+failures:
+
+failures:
+    changing_paddle_rate_preserves_partial_charge
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.87s
+
+error: test failed, to rerun pass `-p atari-pokey --test pot_input_change_probe`
