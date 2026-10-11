@@ -35,7 +35,9 @@ def execute(
     commands: str,
     *,
     arm_in_monitor: bool = True,
+    glue: int = 1,
 ) -> str:
+    assert glue in (0, 1)
     env = os.environ.copy()
     env.pop("EMU198X_VIC_TRACE", None)
     if args.trace:
@@ -57,7 +59,7 @@ def execute(
         "-model",
         model,
         "-gluelogictype",
-        "1",
+        str(glue),
         "-VICIIfilter",
         "0",
         "-directory",

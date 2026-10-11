@@ -1,0 +1,21 @@
+{
+  "cases": 320,
+  "records": 1653056,
+  "sprite_bytes": 20160,
+  "stalled_pairs": 160,
+  "transient_fetches": 20,
+  "transient_pointers": 4,
+  "mixed_rows": 0,
+  "calibration_cases": 132,
+  "calibration_records": 678840,
+  "calibration_sprite_bytes": 8316,
+  "calibration_transient_fetches": 66,
+  "calibration_transient_pointers": 13,
+  "tests_passed": 151,
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "archives_sha256": {
+    "sprite-bank-native.zip": "514c760f9bc663a847d8ee65ed8648ef8d40751a88a473157820f724cb7ccc68",
+    "sprite-bank-calibration.zip": "505b74e779f2247e325a08f58276db11b26895df43b2bdccb7cec7904ebe427f"
+  },
+  "scope": "Sprite 0 ordinary PRA stores around line-90 DMA, five chip profiles with explicit discrete/custom glue, all sixteen bank transitions. No mixed active row, late invalid ownership, DDRA, or production save/replay claim."
+}
