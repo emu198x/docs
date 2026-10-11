@@ -1,0 +1,424 @@
+{
+  "counts": {
+    "cases": 16,
+    "panics": 4,
+    "wrong_data": 4,
+    "controls": 8
+  },
+  "source_head": "e0739e5afa9e9d08a048a5f90e09edc7adbcfeb0",
+  "mesen_core_sha256": "281ed37fcd1421eef1c5e60e06f1ede360ee89ee214a9c2a0c7c128376395c68",
+  "rows": [
+    {
+      "file": "m0-nes20-four0-mirror0.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "58172ac08b0359252b6600b3a860aa316bbc20a673543b54ad8bfef488aa9a6f"
+    },
+    {
+      "file": "m0-nes20-four0-mirror1.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "fed97896bedbc536457355b38c16918d5228a5f635ffe57145f198d0e6312019"
+    },
+    {
+      "file": "m0-nes20-four1-mirror0.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "850065399587cfd6df559d2eba7bb5231e3964f34a042ee20f6037fff95f4acf"
+    },
+    {
+      "file": "m0-nes20-four1-mirror1.nes",
+      "mapper": 0,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "820f58186de954164eb3f110d02619bd456a93e9201a0b81a462e1d1469a589b"
+    },
+    {
+      "file": "m0-nes21-four0-mirror0.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "c3ef2cd005bf88f9b3a74442ea0a7e9b95382c15f8895ef2e2dbbbe77f459360"
+    },
+    {
+      "file": "m0-nes21-four0-mirror1.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "5f1dc3afaab05182a5cb79d6dfd317423f3feddb4c3f006ef85504c468e8bad6"
+    },
+    {
+      "file": "m0-nes21-four1-mirror0.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "3552d32171609c67dc4aa074194232407a79f439de467fc8f22617b15566a806"
+    },
+    {
+      "file": "m0-nes21-four1-mirror1.nes",
+      "mapper": 0,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": null,
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "e801ef9e7dc6e265d35bb8d01865e26b245a651a45ba910ac2ef1c0708ff4ccc"
+    },
+    {
+      "file": "m4-nes20-four0-mirror0.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "2db89cb91071454db82e66f20769ad39399ef79a0c37cd5e964671af4ae3a6cf"
+    },
+    {
+      "file": "m4-nes20-four0-mirror1.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "15b028d7c11824b1fbc4b88012e8fa36fb924cb3a05ea9626924279124b1a4b8"
+    },
+    {
+      "file": "m4-nes20-four1-mirror0.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "f38b3c4b0dc36a29ecdd46e94f088b8351b45b9109bc52a882e6e00c88a6b0c7"
+    },
+    {
+      "file": "m4-nes20-four1-mirror1.nes",
+      "mapper": 4,
+      "nes2": false,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "fe4bca8bc0417ae73e4ec81ef6f1129631f53297a1415dae1e1ba9b1cb9ca110"
+    },
+    {
+      "file": "m4-nes21-four0-mirror0.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 0,
+      "expected": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "d73b96fae80486cb36864d0e2f2b53cddbcfdd942e8f688a6a36e58df887bdc7"
+    },
+    {
+      "file": "m4-nes21-four0-mirror1.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": false,
+      "mirror_write": 1,
+      "expected": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "7f8ca2709c0661ae031e83bc2f4ec2c6017acc580c0460cc9620631f1ee60426"
+    },
+    {
+      "file": "m4-nes21-four1-mirror0.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 0,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        51,
+        68,
+        51,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "54e7f1285d7c5f5499d07d948ba67cdd6c8d996082b65cd38946342f0b88f5c7"
+    },
+    {
+      "file": "m4-nes21-four1-mirror1.nes",
+      "mapper": 4,
+      "nes2": true,
+      "four_screen": true,
+      "mirror_write": 1,
+      "expected": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "emu198x": [
+        34,
+        34,
+        68,
+        68
+      ],
+      "mesen": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "reference_repeat_identical": true,
+      "rom_sha256": "d5807e290981282b3b5ec11bea6fbb2a3c173420aa04d2db640f63e668fa9431"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+
+thread 'main' (94043861) panicked at crates/ricoh-ppu-2c02/src/lib.rs:1355:17:
+index out of bounds: the len is 2048 but the index is 2048
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (94043861) panicked at crates/ricoh-ppu-2c02/src/lib.rs:1355:17:
+index out of bounds: the len is 2048 but the index is 2048
+
+thread 'main' (94043861) panicked at crates/ricoh-ppu-2c02/src/lib.rs:1355:17:
+index out of bounds: the len is 2048 but the index is 2048
+
+thread 'main' (94043861) panicked at crates/ricoh-ppu-2c02/src/lib.rs:1355:17:
+index out of bounds: the len is 2048 but the index is 2048
