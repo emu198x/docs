@@ -71,3 +71,13 @@ semantics are outside these assertions. Passing the diagnostic grid tests does
 not establish complete CPC CPU/Gate Array timing accuracy.
 
 Terminal logs omit trailing blank lines; their recorded test output is otherwise unchanged.
+
+## Merged CI evidence
+
+[CI run 38174568373](https://github.com/emu198x/emu198x/actions/runs/38174568373)
+completed successfully on the reviewed source head. Its retained ledger records
+24 chip passes and 120 affected machine/Gate Array passes, with 30 reasoned
+fixture ignores. Workspace totals are 7,804 passes, zero failures, 687 ignored
+and 96 skipped for missing fixtures. These omitted tests are not validated by
+the green run. Source PR #1736 is merged; the merged tree matches the locally
+tested tree exactly and is an ancestor of main.

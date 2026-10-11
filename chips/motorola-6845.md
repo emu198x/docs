@@ -55,7 +55,7 @@ one shared interlace formula cannot establish complete variant accuracy.
 ## Implementation boundary
 
 At source commit
-[`411092c`](https://github.com/emu198x/emu198x/blob/411092c1de02f286ac55086db505268651818739/crates/motorola-6845/src/lib.rs),
+[`b11d84f`](https://github.com/emu198x/emu198x/blob/b11d84f64b157842fe1eeb6ce12c712b774786d4/crates/motorola-6845/src/lib.rs),
 the core ticks once per character clock. BBC and CPC select `Hd6845s`; PET uses
 the default `Mc6845` personality. All three consume live CRTC addresses. BBC
 applies separate bitmap/teletext decoding and bitmap wrapping in its machine
