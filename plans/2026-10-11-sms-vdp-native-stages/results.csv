@@ -1,0 +1,65 @@
+core,region,test,name,actual,expected,pass
+emu,ntsc-u,21,VCounter values:,2,2,True
+emu,ntsc-u,22,HCounter keeps value:,0,0,True
+emu,ntsc-u,23,HC change on TH 0->1:,0,0,True
+emu,ntsc-u,24,HCounter correct:,0,0,True
+emu,ntsc-u,25,VCounter chg time:,255,0,False
+emu,ntsc-u,26,VDP Register mirrors:,0,0,True
+emu,ntsc-u,27,VDP data mirrors:,0,0,True
+emu,ntsc-u,28,VDP ctrl mirrors:,0,0,True
+emu,ntsc-u,29,VCounter mirrors:,0,0,True
+emu,ntsc-u,30,HCounter mirrors:,0,0,True
+emu,ntsc-u,31,Frame IRQ VCount:,255,0,False
+emu,ntsc-u,32,Frame IRQ HCount:,255,0,False
+emu,ntsc-u,33,Line IRQ VCount:,255,0,False
+emu,ntsc-u,34,Line IRQ HCount:,255,0,False
+emu,ntsc-u,35,VINT flag HCount:,255,0,False
+emu,ntsc-u,36,VINT flag keept:,0,0,True
+reference,ntsc-u,21,VCounter values:,2,2,True
+reference,ntsc-u,22,HCounter keeps value:,0,0,True
+reference,ntsc-u,23,HC change on TH 0->1:,0,0,True
+reference,ntsc-u,24,HCounter correct:,0,0,True
+reference,ntsc-u,25,VCounter chg time:,0,0,True
+reference,ntsc-u,26,VDP Register mirrors:,0,0,True
+reference,ntsc-u,27,VDP data mirrors:,0,0,True
+reference,ntsc-u,28,VDP ctrl mirrors:,0,0,True
+reference,ntsc-u,29,VCounter mirrors:,0,0,True
+reference,ntsc-u,30,HCounter mirrors:,0,0,True
+reference,ntsc-u,31,Frame IRQ VCount:,0,0,True
+reference,ntsc-u,32,Frame IRQ HCount:,0,0,True
+reference,ntsc-u,33,Line IRQ VCount:,0,0,True
+reference,ntsc-u,34,Line IRQ HCount:,0,0,True
+reference,ntsc-u,35,VINT flag HCount:,0,0,True
+reference,ntsc-u,36,VINT flag keept:,0,0,True
+emu,pal,21,VCounter values:,1,1,True
+emu,pal,22,HCounter keeps value:,0,0,True
+emu,pal,23,HC change on TH 0->1:,0,0,True
+emu,pal,24,HCounter correct:,0,0,True
+emu,pal,25,VCounter chg time:,255,0,False
+emu,pal,26,VDP Register mirrors:,0,0,True
+emu,pal,27,VDP data mirrors:,0,0,True
+emu,pal,28,VDP ctrl mirrors:,0,0,True
+emu,pal,29,VCounter mirrors:,0,0,True
+emu,pal,30,HCounter mirrors:,0,0,True
+emu,pal,31,Frame IRQ VCount:,255,0,False
+emu,pal,32,Frame IRQ HCount:,255,0,False
+emu,pal,33,Line IRQ VCount:,255,0,False
+emu,pal,34,Line IRQ HCount:,255,0,False
+emu,pal,35,VINT flag HCount:,255,0,False
+emu,pal,36,VINT flag keept:,0,0,True
+reference,pal,21,VCounter values:,1,1,True
+reference,pal,22,HCounter keeps value:,0,0,True
+reference,pal,23,HC change on TH 0->1:,0,0,True
+reference,pal,24,HCounter correct:,0,0,True
+reference,pal,25,VCounter chg time:,0,0,True
+reference,pal,26,VDP Register mirrors:,0,0,True
+reference,pal,27,VDP data mirrors:,0,0,True
+reference,pal,28,VDP ctrl mirrors:,0,0,True
+reference,pal,29,VCounter mirrors:,0,0,True
+reference,pal,30,HCounter mirrors:,0,0,True
+reference,pal,31,Frame IRQ VCount:,0,0,True
+reference,pal,32,Frame IRQ HCount:,0,0,True
+reference,pal,33,Line IRQ VCount:,0,0,True
+reference,pal,34,Line IRQ HCount:,0,0,True
+reference,pal,35,VINT flag HCount:,0,0,True
+reference,pal,36,VINT flag keept:,0,0,True
