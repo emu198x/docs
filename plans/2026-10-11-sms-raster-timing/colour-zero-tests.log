@@ -1,0 +1,311 @@
+   Compiling sega-vdp v0.31.0 (/private/tmp/198x-6809-transfers/crates/sega-vdp)
+   Compiling machine-sega-master-system v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sega-master-system)
+   Compiling runtime-sega-master-system-class v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-sega-master-system-class)
+   Compiling runtime-sega-master-system v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-sega-master-system)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.05s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sega_master_system-19cd334db3890074)
+
+running 46 tests
+test tests::game_gear_start_button_at_port_00 ... ok
+test tests::first_1k_always_reads_cart_bank_0 ... ok
+test tests::controller_routing_by_port_parity ... ok
+test tests::cartridge_ram_is_dirty_only_after_a_changed_sram_write ... ok
+test cartridge::tests::an_export_code_does_not_invent_a_tv_standard ... ok
+test tests::input_configured_th_pins_report_the_external_level_in_every_region ... ok
+test tests::mapper_fffd_swaps_slot_0_high ... ok
+test tests::mapper_fffe_swaps_slot_1 ... ok
+test tests::memory_control_cart_disable_disconnects_every_cartridge_window ... ok
+test tests::memory_control_gates_controllers_and_work_ram ... ok
+test tests::memory_control_switches_between_bios_cartridge_and_open_bus ... ok
+test cartridge::tests::decodes_territory_size_and_checksum ... ok
+test cartridge::tests::strips_smd_header_before_parsing ... ok
+test tests::pal_and_ntsc_export_profiles_have_the_same_region_readback ... ok
+test tests::only_switching_th_to_input_latches ... ok
+test tests::pause_line_drives_z80_nmi ... ok
+test tests::ram_round_trip_through_mirror ... ok
+test tests::releasing_a_pin_that_was_already_high_does_not_latch ... ok
+test tests::sega_mapper_cartridge_ram_round_trips_and_restores_rom ... ok
+test tests::sega_mapper_selects_both_cartridge_ram_banks ... ok
+test tests::releasing_th_latches_the_h_counter ... ok
+test tests::th_output_readback_distinguishes_export_and_japanese_io_chips ... ok
+test tests::a_trigger_without_a_gun_does_not_pull_the_pin ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::snapshot_carries_a_vram_write_still_waiting_for_its_window ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::an_empty_port_latches_nothing ... ok
+test tests::each_port_has_its_own_gun ... ok
+test tests::the_diode_stays_on_until_the_beam_leaves_its_view ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::the_gun_sees_nothing_during_blanking ... ok
+test tests::the_latched_value_tracks_where_the_beam_is ... ok
+test tests::the_memory_control_port_does_not_latch ... ok
+test tests::the_trigger_reads_back_on_the_ports_tl_bit ... ok
+test tests::a_bright_border_trips_the_gun ... ok
+test tests::a_gun_at_the_edge_of_the_picture_sees_into_the_border ... ok
+test tests::the_gun_answers_a_lit_screen_and_ignores_a_dark_one ... ok
+test tests::the_field_of_view_reaches_a_few_lines_past_the_aim ... ok
+test tests::the_latched_column_tracks_the_column_aimed_at ... ok
+test tests::the_field_of_view_is_round_and_narrows_off_centre ... ok
+test tests::the_latch_takes_the_trailing_edge_plus_the_delay ... ok
+test tests::the_gun_answers_only_where_the_picture_is_lit ... ok
+test tests::unplugging_the_gun_stops_it_answering ... ok
+test tests::the_field_of_view_reaches_a_few_pixels_to_each_side ... ok
+test tests::the_diode_weights_the_channels_by_luminance ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 46 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.80s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/cart_boot-f27ae03947dda974)
+
+running 1 test
+test cart_boots_to_title_screen ... ignored, FIXTURE: needs an SMS cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-daa48bd294b994f6)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/raster_split.rs (/private/tmp/198x-6809-target/debug/deps/raster_split-52b53df730909a19)
+
+running 4 tests
+test the_cartridge_paints_a_split_screen ... ok
+test the_split_stays_within_one_instruction_of_itself ... ok
+test the_split_lands_one_line_after_the_counter_underflows ... ok
+test the_split_lands_where_the_z80s_own_timing_puts_it ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-18027659dde3c052)
+
+running 3 tests
+test an_empty_cartridge_does_not_look_like_a_boot ... ok
+test the_game_gear_boots_a_cartridge_and_paints_its_backdrop ... ok
+test the_master_system_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/vram_access_timing.rs (/private/tmp/198x-6809-target/debug/deps/vram_access_timing-81d75337c82db4d8)
+
+running 3 tests
+test the_same_loop_loses_nothing_with_the_display_blanked ... ok
+test an_18_t_state_copy_loop_loses_bytes_during_active_display ... ok
+test a_loop_paced_to_26_t_states_loses_nothing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/runtime_sega_master_system-1391bd0a2db291cc)
+
+running 8 tests
+test profiles::tests::each_region_takes_its_rate_from_its_own_master_clock ... ok
+test profiles::tests::pal_profile_uses_pal_region ... ok
+test profiles::tests::every_profile_declares_the_same_single_machine ... ok
+test profiles::tests::revision_and_region_vary_independently ... ok
+test profiles::tests::cartridge_slot_uses_sidecar_writeback ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test profiles::tests::the_two_regions_do_not_share_a_clock ... ok
+test profiles::tests::each_model_builds_the_vdp_revision_it_names ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-6809-target/debug/deps/queries-68739c427889e3a6)
+
+running 2 tests
+test query_paths_lists_the_folded_paths ... ok
+test vdp_and_mapper_resolve_grouped_and_leaves ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-6809-target/debug/deps/snapshot_roundtrip-a651448dadef64b2)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-6809-target/debug/deps/variants-df15a050679fa523)
+
+running 2 tests
+test dirty_sram_survives_replacement_reset_and_snapshot ... ok
+test every_model_round_trips_and_switches_to_its_actual_hardware ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/sega_vdp-31ed8b738b561a01)
+
+running 20 tests
+test tests::control_port_register_write ... ok
+test tests::cram_write_game_gear ... ok
+test tests::a_television_holds_exactly_the_field_its_region_shows ... ok
+test tests::gg_palette_conversion ... ok
+test tests::mode4_colour_zero_uses_tile_palette_and_stays_behind_sprites ... ok
+test tests::new_vdp_has_blank_framebuffer ... ok
+test tests::mode4_detection ... ok
+test tests::a_pending_access_survives_the_legacy_state_bytes ... ok
+test tests::mode4_priority_tile_occludes_sprite ... ok
+test tests::cram_write_sms ... ok
+test tests::sms_palette_conversion ... ok
+test tests::line_interrupt_counter ... ok
+test tests::status_clears_on_read ... ok
+test tests::the_game_gear_keeps_its_lcd_whatever_the_region ... ok
+test tests::the_game_gear_window_is_the_centre_of_the_active_area ... ok
+test tests::the_master_system_keeps_its_border ... ok
+test tests::the_two_machines_display_different_sized_screens ... ok
+test tests::vram_write_and_read ... ok
+test tests::pal_frame_is_313_lines ... ok
+test tests::ntsc_frame_is_262_lines ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/datasheet_beam_position.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_beam_position-6172f571db192e97)
+
+running 8 tests
+test a_game_gear_has_no_border_to_scan ... ok
+test a_position_past_the_edge_does_not_alias_onto_the_next_row ... ok
+test the_beam_is_nowhere_during_blanking ... ok
+test the_dots_after_the_picture_are_the_right_border ... ok
+test the_first_active_dot_lands_under_the_border ... ok
+test the_dots_at_the_end_of_a_line_are_the_next_lines_left_border ... ok
+test the_lines_at_the_end_of_a_frame_are_the_top_border ... ok
+test the_beam_covers_every_framebuffer_pixel_once_a_frame ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/datasheet_extended_heights.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_extended_heights-6029b08931e56757)
+
+running 13 tests
+test the_border_shrinks_by_what_the_picture_grows ... ok
+test the_315_5124_has_no_extended_heights ... ok
+test the_tall_modes_decode_register_2_differently ... ok
+test the_tall_modes_do_not_change_the_width ... ok
+test a_game_gear_stays_at_192_lines ... ok
+test a_height_change_takes_effect_on_the_next_frame ... ok
+test the_sprite_list_terminator_is_disabled_in_the_tall_modes ... ok
+test register_2_bit_1_is_ignored_by_the_tall_modes ... ok
+test the_first_active_line_lands_under_the_border ... ok
+test the_mode_bits_select_the_height_by_exact_match ... ok
+test the_vertical_scroll_wraps_at_the_name_tables_height ... ok
+test every_height_fills_its_window_exactly ... ok
+test the_v_counter_names_every_line_of_the_picture ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/datasheet_h_counter.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_h_counter-7f4ad0a01701df87)
+
+running 7 tests
+test the_active_display_spans_128_counts_starting_at_0x08 ... ok
+test every_line_gives_the_same_sequence ... ok
+test the_port_returns_the_latched_value_and_not_the_live_one ... ok
+test the_counter_advances_once_every_two_pixels ... ok
+test the_counter_climbs_with_the_beam_and_skips_once ... ok
+test the_distance_between_two_latches_is_the_distance_the_beam_moved ... ok
+test the_counter_runs_0x00_to_0x93_then_0xe9_to_0xff ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/datasheet_line_interrupts.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_line_interrupts-d21ac23e771d9268)
+
+running 6 tests
+test an_r10_written_during_vblank_takes_effect_from_the_next_frame ... ok
+test a_new_r10_takes_effect_at_the_next_reload ... ok
+test the_counter_is_checked_on_the_first_line_of_vblank ... ok
+test the_counter_does_not_run_through_the_rest_of_the_frame ... ok
+test the_counter_runs_whether_or_not_the_interrupt_is_enabled ... ok
+test an_r10_of_n_fires_every_n_plus_one_lines ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/datasheet_registers.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_registers-3311be9da89c0be1)
+
+running 22 tests
+test mode_4_reads_the_unused_status_bits_back_as_ones ... ok
+test reading_status_resets_the_control_port_latch ... ok
+test registers_0x0b_and_above_have_no_effect ... ok
+test a_y_of_0xd0_ends_the_sprite_list ... ok
+test reading_status_clears_every_flag_at_once ... ok
+test hiding_the_left_column_hides_the_sprites_inside_it ... ok
+test the_315_5124_does_not_reach_full_scale ... ok
+test a_legacy_mode_screen_still_takes_its_colour_from_register_7 ... ok
+test the_sprite_y_attribute_is_one_less_than_the_first_line_drawn ... ok
+test the_horizontal_scroll_lock_holds_the_top_two_rows_at_zero ... ok
+test the_ninth_sprite_on_a_line_is_dropped_and_flags_overflow ... ok
+test the_sprite_pattern_base_is_register_6_bit_2 ... ok
+test the_v_counter_maps_every_scanline_of_the_frame ... ok
+test the_vertical_scroll_lock_holds_the_rightmost_eight_columns_at_zero ... ok
+test the_backdrop_is_a_sprite_palette_entry_named_by_the_low_nibble_of_register_7 ... ok
+test the_sprite_attribute_table_base_is_register_5_bits_6_to_1 ... ok
+test the_vertical_scroll_register_is_latched_once_per_frame ... ok
+test the_unused_and_mask_bits_of_register_2_do_not_move_the_name_table ... ok
+test the_name_table_base_is_register_2_bits_3_to_1_times_0x800 ... ok
+test the_legacy_tms9918_modes_render_as_flat_backdrop ... ok
+test only_the_315_5124_has_a_non_linear_blue ... ok
+test each_cram_channel_drives_the_chips_own_output_levels ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/datasheet_sms1_masks.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_sms1_masks-48634cad7ca2c8a2)
+
+running 6 tests
+test with_every_mask_bit_set_the_two_chips_agree ... ok
+test clearing_register_6_low_bits_shrinks_the_sprite_tile_set ... ok
+test register_3_masks_the_tile_index_for_the_low_bitplanes ... ok
+test register_4_masks_the_tile_index_for_the_high_bitplanes ... ok
+test clearing_register_2_bit_0_mirrors_the_bottom_half_of_the_tilemap ... ok
+test clearing_register_5_bit_0_folds_sprite_x_and_pattern_into_the_y_half ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/datasheet_sprite_sizes.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_sprite_sizes-32c24a4d2ee26435)
+
+running 11 tests
+test a_wrapped_sprite_draws_its_lower_rows ... ok
+test magnified_sprites_hold_their_slot_for_every_line_they_cover ... ok
+test a_y_at_the_end_of_the_range_hangs_the_sprite_off_the_top ... ok
+test magnification_doubles_the_pattern_rather_than_fetching_another ... ok
+test magnification_repeats_each_pixel_exactly_once ... ok
+test the_315_5124_still_doubles_every_sprite_vertically ... ok
+test a_tall_mode_shows_sprites_low_down_rather_than_wrapping_them ... ok
+test the_wrap_shows_a_sprite_that_would_otherwise_be_below_the_picture ... ok
+test the_four_corners_of_the_sprite_size_matrix ... ok
+test the_315_5246_widens_every_sprite_on_the_line ... ok
+test the_315_5124_widens_only_the_first_n_minus_4_sprites_on_a_line ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/measured_access_windows.rs (/private/tmp/198x-6809-target/debug/deps/measured_access_windows-c202fabf3e8f6399)
+
+running 10 tests
+test mode_4_loses_writes_from_an_unpaced_copy_loop_during_active_display ... ok
+test every_data_port_access_advances_the_address_however_fast ... ok
+test game_gear_cram_takes_writes_as_fast_as_a_z80_can_send_them ... ok
+test master_system_cram_writes_are_lost_the_same_way ... ok
+test the_same_burst_lands_intact_with_the_display_blanked ... ok
+test a_read_straight_after_address_setup_returns_the_old_buffer ... ok
+test the_315_5124_has_the_same_limit ... ok
+test the_same_burst_lands_intact_in_the_vertical_border ... ok
+test a_blanked_display_takes_writes_as_fast_as_a_z80_can_send_them ... ok
+test every_mode_4_height_takes_writes_26_cycles_apart_and_loses_them_at_25 ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+   Doc-tests machine_sega_master_system
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_sega_master_system
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sega_vdp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

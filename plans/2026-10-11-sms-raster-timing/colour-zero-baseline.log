@@ -1,0 +1,19 @@
+   Compiling sega-vdp v0.31.0 (/private/tmp/198x-6809-transfers/crates/sega-vdp)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.55s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/sega_vdp-926d6f0d2eb98683)
+
+running 1 test
+
+thread 'tests::mode4_colour_zero_uses_tile_palette_and_stays_behind_sprites' (93256181) panicked at crates/sega-vdp/src/lib.rs:1797:9:
+palette-selection mismatches: [(0, 0, false, 0, 4278190318, 4293787648), (0, 16, false, 0, 4278190318, 4278251008), (1, 0, false, 0, 4278190335, 4294901760), (1, 16, false, 0, 4278190335, 4278255360), (2, 0, false, 0, 4278190335, 4294901760), (2, 16, false, 0, 4278190335, 4278255360)]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::mode4_colour_zero_uses_tile_palette_and_stays_behind_sprites ... FAILED
+
+failures:
+
+failures:
+    tests::mode4_colour_zero_uses_tile_palette_and_stays_behind_sprites
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 19 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p sega-vdp --lib`

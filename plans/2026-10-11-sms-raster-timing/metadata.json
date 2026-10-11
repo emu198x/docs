@@ -1,0 +1,31 @@
+{
+  "genesis_plus_gx_revision": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "mame_revision": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "emu_baseline": "1f04c66a79aaa429c2eda976b2d2036e7e728b9b",
+  "emu_corrected": "8ff772b205f88b1b13f1e51d360877ea3e8a1cbe",
+  "alex_kidd_sha256": "f38a900c1d2aaf21fedf6956ab9791753d65d6d56afd6fb661df3aa169afec37",
+  "fixture_reference_results": {
+    "master-system.sms": {
+      "size": [
+        256,
+        192
+      ],
+      "green_pixels": 49152
+    },
+    "game-gear.gg": {
+      "size": [
+        160,
+        144
+      ],
+      "green_pixels": 23040
+    },
+    "master-system-raster.sms": {
+      "size": [
+        256,
+        192
+      ],
+      "green_pixels": 16384,
+      "red_pixels": 32768
+    }
+  }
+}
