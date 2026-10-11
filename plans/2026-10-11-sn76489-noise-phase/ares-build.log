@@ -1,0 +1,1022 @@
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:18:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/serializer.hpp:16:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/array.hpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/range.hpp:3:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:28:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   28 |     if(_valid = source._valid) new(&_value.t) T(source.get());
+      |        ~~~~~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:28:15: note: place parentheses around the assignment to silence this warning
+   28 |     if(_valid = source._valid) new(&_value.t) T(source.get());
+      |               ^              
+      |        (                     )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:28:15: note: use '==' to turn this assignment into an equality comparison
+   28 |     if(_valid = source._valid) new(&_value.t) T(source.get());
+      |               ^
+      |               ==
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:35:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   35 |     if(_valid = source._valid) new(&_value.t) T(std::move(source.get()));
+      |        ~~~~~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:35:15: note: place parentheses around the assignment to silence this warning
+   35 |     if(_valid = source._valid) new(&_value.t) T(std::move(source.get()));
+      |               ^              
+      |        (                     )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/maybe.hpp:35:15: note: use '==' to turn this assignment into an equality comparison
+   35 |     if(_valid = source._valid) new(&_value.t) T(std::move(source.get()));
+      |               ^
+      |               ==
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:18:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives.hpp:15:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/bit-range.hpp:19:36: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   19 |   enum : type { mask = ~0ull >> 64 - (hi - lo + 1) << lo };
+      |                              ~~ ~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/bit-range.hpp:19:36: note: place parentheses around the '-' expression to silence this warning
+   19 |   enum : type { mask = ~0ull >> 64 - (hi - lo + 1) << lo };
+      |                                    ^
+      |                                 (                 )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/bit-range.hpp:159:24: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  159 |     mask = ~0ull >> 64 - (hi - lo + 1) << lo;
+      |                  ~~ ~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/bit-range.hpp:159:24: note: place parentheses around the '-' expression to silence this warning
+  159 |     mask = ~0ull >> 64 - (hi - lo + 1) << lo;
+      |                        ^
+      |                     (                 )
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:18:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives.hpp:17:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:43:24: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   43 |     return ~0ull >> 64 - Precision;
+      |                  ~~ ~~~^~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:43:24: note: place parentheses around the '-' expression to silence this warning
+   43 |     return ~0ull >> 64 - Precision;
+      |                        ^          
+      |                     (             )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:62:62: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   62 |   static constexpr auto mask() -> utype { return ~0ull >> 64 - Precision; }
+      |                                                        ~~ ~~~^~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:62:62: note: place parentheses around the '-' expression to silence this warning
+   62 |   static constexpr auto mask() -> utype { return ~0ull >> 64 - Precision; }
+      |                                                              ^          
+      |                                                           (             )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:103:32: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  103 |     return data & (~0ull >> 64 - (hi - lo + 1) << lo);
+      |                          ~~ ~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:103:32: note: place parentheses around the '-' expression to silence this warning
+  103 |     return data & (~0ull >> 64 - (hi - lo + 1) << lo);
+      |                                ^
+      |                             (                 )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:110:38: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  110 |     constexpr u64 b = 1ull << bits() - 1;
+      |                            ~~ ~~~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:110:38: note: place parentheses around the '-' expression to silence this warning
+  110 |     constexpr u64 b = 1ull << bits() - 1;
+      |                                      ^  
+      |                               (         )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:116:32: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  116 |     const u64 b = 1ull << bits - 1;
+      |                        ~~ ~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/natural.hpp:116:32: note: place parentheses around the '-' expression to silence this warning
+  116 |     const u64 b = 1ull << bits - 1;
+      |                                ^  
+      |                           (       )
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:18:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives.hpp:18:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:42:24: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   42 |     return ~0ull >> 64 - Precision;
+      |                  ~~ ~~~^~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:42:24: note: place parentheses around the '-' expression to silence this warning
+   42 |     return ~0ull >> 64 - Precision;
+      |                        ^          
+      |                     (             )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:46:30: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   46 |     return 1ull << Precision - 1;
+      |                 ~~ ~~~~~~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:46:30: note: place parentheses around the '-' expression to silence this warning
+   46 |     return 1ull << Precision - 1;
+      |                              ^  
+      |                    (            )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:66:62: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   66 |   static constexpr auto mask() -> utype { return ~0ull >> 64 - Precision; }
+      |                                                        ~~ ~~~^~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:66:62: note: place parentheses around the '-' expression to silence this warning
+   66 |   static constexpr auto mask() -> utype { return ~0ull >> 64 - Precision; }
+      |                                                              ^          
+      |                                                           (             )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:67:68: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   67 |   static constexpr auto sign() -> utype { return 1ull << Precision - 1; }
+      |                                                       ~~ ~~~~~~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:67:68: note: place parentheses around the '-' expression to silence this warning
+   67 |   static constexpr auto sign() -> utype { return 1ull << Precision - 1; }
+      |                                                                    ^  
+      |                                                          (            )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:108:32: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  108 |     return data & (~0ull >> 64 - (hi - lo + 1) << lo);
+      |                          ~~ ~~~^~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:108:32: note: place parentheses around the '-' expression to silence this warning
+  108 |     return data & (~0ull >> 64 - (hi - lo + 1) << lo);
+      |                                ^
+      |                             (                 )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:115:38: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  115 |     constexpr s64 b = 1ull << bits() - 1;
+      |                            ~~ ~~~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:115:38: note: place parentheses around the '-' expression to silence this warning
+  115 |     constexpr s64 b = 1ull << bits() - 1;
+      |                                      ^  
+      |                               (         )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:121:32: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  121 |     const u64 b = 1ull << bits - 1;
+      |                        ~~ ~~~~~^~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/integer.hpp:121:32: note: place parentheses around the '-' expression to silence this warning
+  121 |     const u64 b = 1ull << bits - 1;
+      |                                ^  
+      |                           (       )
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:18:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives.hpp:21:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:5:24: warning: identifier '_b' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    5 | inline auto operator"" _b(unsigned long long value) { return boolean{value}; }
+      |             ~~~~~~~~~~~^~
+      |             operator""_b
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:6:24: warning: identifier '_n' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    6 | inline auto operator"" _n(unsigned long long value) { return natural{value}; }
+      |             ~~~~~~~~~~~^~
+      |             operator""_n
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:7:24: warning: identifier '_i' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    7 | inline auto operator"" _i(unsigned long long value) { return integer{value}; }
+      |             ~~~~~~~~~~~^~
+      |             operator""_i
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:8:24: warning: identifier '_r' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    8 | inline auto operator"" _r(long double value) { return real{value}; }
+      |             ~~~~~~~~~~~^~
+      |             operator""_r
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:10:25: warning: identifier '_n1' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   10 | inline auto operator""  _n1(unsigned long long value) { return  natural1{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n1
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:11:25: warning: identifier '_n2' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   11 | inline auto operator""  _n2(unsigned long long value) { return  natural2{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n2
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:12:25: warning: identifier '_n3' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   12 | inline auto operator""  _n3(unsigned long long value) { return  natural3{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n3
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:13:25: warning: identifier '_n4' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   13 | inline auto operator""  _n4(unsigned long long value) { return  natural4{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n4
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:14:25: warning: identifier '_n5' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   14 | inline auto operator""  _n5(unsigned long long value) { return  natural5{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n5
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:15:25: warning: identifier '_n6' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   15 | inline auto operator""  _n6(unsigned long long value) { return  natural6{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n6
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:16:25: warning: identifier '_n7' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   16 | inline auto operator""  _n7(unsigned long long value) { return  natural7{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n7
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:17:25: warning: identifier '_n8' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   17 | inline auto operator""  _n8(unsigned long long value) { return  natural8{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n8
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:18:25: warning: identifier '_n9' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   18 | inline auto operator""  _n9(unsigned long long value) { return  natural9{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_n9
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:19:24: warning: identifier '_n10' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   19 | inline auto operator"" _n10(unsigned long long value) { return natural10{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n10
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:20:24: warning: identifier '_n11' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   20 | inline auto operator"" _n11(unsigned long long value) { return natural11{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n11
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:21:24: warning: identifier '_n12' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   21 | inline auto operator"" _n12(unsigned long long value) { return natural12{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n12
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:22:24: warning: identifier '_n13' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   22 | inline auto operator"" _n13(unsigned long long value) { return natural13{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n13
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:23:24: warning: identifier '_n14' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   23 | inline auto operator"" _n14(unsigned long long value) { return natural14{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n14
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:24:24: warning: identifier '_n15' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   24 | inline auto operator"" _n15(unsigned long long value) { return natural15{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n15
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:25:24: warning: identifier '_n16' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   25 | inline auto operator"" _n16(unsigned long long value) { return natural16{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n16
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:26:24: warning: identifier '_n17' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   26 | inline auto operator"" _n17(unsigned long long value) { return natural17{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n17
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:27:24: warning: identifier '_n18' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   27 | inline auto operator"" _n18(unsigned long long value) { return natural18{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n18
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:28:24: warning: identifier '_n19' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   28 | inline auto operator"" _n19(unsigned long long value) { return natural19{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n19
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:29:24: warning: identifier '_n20' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   29 | inline auto operator"" _n20(unsigned long long value) { return natural20{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n20
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:30:24: warning: identifier '_n21' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   30 | inline auto operator"" _n21(unsigned long long value) { return natural21{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n21
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:31:24: warning: identifier '_n22' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   31 | inline auto operator"" _n22(unsigned long long value) { return natural22{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n22
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:32:24: warning: identifier '_n23' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   32 | inline auto operator"" _n23(unsigned long long value) { return natural23{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n23
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:33:24: warning: identifier '_n24' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   33 | inline auto operator"" _n24(unsigned long long value) { return natural24{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n24
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:34:24: warning: identifier '_n25' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   34 | inline auto operator"" _n25(unsigned long long value) { return natural25{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n25
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:35:24: warning: identifier '_n26' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   35 | inline auto operator"" _n26(unsigned long long value) { return natural26{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n26
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:36:24: warning: identifier '_n27' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   36 | inline auto operator"" _n27(unsigned long long value) { return natural27{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n27
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:37:24: warning: identifier '_n28' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   37 | inline auto operator"" _n28(unsigned long long value) { return natural28{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n28
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:38:24: warning: identifier '_n29' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   38 | inline auto operator"" _n29(unsigned long long value) { return natural29{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n29
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:39:24: warning: identifier '_n30' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   39 | inline auto operator"" _n30(unsigned long long value) { return natural30{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n30
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:40:24: warning: identifier '_n31' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   40 | inline auto operator"" _n31(unsigned long long value) { return natural31{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n31
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:41:24: warning: identifier '_n32' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   41 | inline auto operator"" _n32(unsigned long long value) { return natural32{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n32
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:42:24: warning: identifier '_n33' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   42 | inline auto operator"" _n33(unsigned long long value) { return natural33{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n33
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:43:24: warning: identifier '_n34' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   43 | inline auto operator"" _n34(unsigned long long value) { return natural34{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n34
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:44:24: warning: identifier '_n35' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   44 | inline auto operator"" _n35(unsigned long long value) { return natural35{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n35
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:45:24: warning: identifier '_n36' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   45 | inline auto operator"" _n36(unsigned long long value) { return natural36{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n36
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:46:24: warning: identifier '_n37' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   46 | inline auto operator"" _n37(unsigned long long value) { return natural37{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n37
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:47:24: warning: identifier '_n38' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   47 | inline auto operator"" _n38(unsigned long long value) { return natural38{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n38
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:48:24: warning: identifier '_n39' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   48 | inline auto operator"" _n39(unsigned long long value) { return natural39{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n39
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:49:24: warning: identifier '_n40' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   49 | inline auto operator"" _n40(unsigned long long value) { return natural40{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n40
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:50:24: warning: identifier '_n41' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   50 | inline auto operator"" _n41(unsigned long long value) { return natural41{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n41
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:51:24: warning: identifier '_n42' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   51 | inline auto operator"" _n42(unsigned long long value) { return natural42{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n42
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:52:24: warning: identifier '_n43' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   52 | inline auto operator"" _n43(unsigned long long value) { return natural43{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n43
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:53:24: warning: identifier '_n44' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   53 | inline auto operator"" _n44(unsigned long long value) { return natural44{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n44
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:54:24: warning: identifier '_n45' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   54 | inline auto operator"" _n45(unsigned long long value) { return natural45{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n45
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:55:24: warning: identifier '_n46' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   55 | inline auto operator"" _n46(unsigned long long value) { return natural46{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n46
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:56:24: warning: identifier '_n47' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   56 | inline auto operator"" _n47(unsigned long long value) { return natural47{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n47
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:57:24: warning: identifier '_n48' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   57 | inline auto operator"" _n48(unsigned long long value) { return natural48{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n48
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:58:24: warning: identifier '_n49' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   58 | inline auto operator"" _n49(unsigned long long value) { return natural49{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n49
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:59:24: warning: identifier '_n50' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   59 | inline auto operator"" _n50(unsigned long long value) { return natural50{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n50
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:60:24: warning: identifier '_n51' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   60 | inline auto operator"" _n51(unsigned long long value) { return natural51{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n51
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:61:24: warning: identifier '_n52' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   61 | inline auto operator"" _n52(unsigned long long value) { return natural52{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n52
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:62:24: warning: identifier '_n53' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   62 | inline auto operator"" _n53(unsigned long long value) { return natural53{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n53
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:63:24: warning: identifier '_n54' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   63 | inline auto operator"" _n54(unsigned long long value) { return natural54{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n54
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:64:24: warning: identifier '_n55' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   64 | inline auto operator"" _n55(unsigned long long value) { return natural55{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n55
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:65:24: warning: identifier '_n56' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   65 | inline auto operator"" _n56(unsigned long long value) { return natural56{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n56
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:66:24: warning: identifier '_n57' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   66 | inline auto operator"" _n57(unsigned long long value) { return natural57{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n57
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:67:24: warning: identifier '_n58' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   67 | inline auto operator"" _n58(unsigned long long value) { return natural58{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n58
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:68:24: warning: identifier '_n59' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   68 | inline auto operator"" _n59(unsigned long long value) { return natural59{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n59
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:69:24: warning: identifier '_n60' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   69 | inline auto operator"" _n60(unsigned long long value) { return natural60{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n60
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:70:24: warning: identifier '_n61' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   70 | inline auto operator"" _n61(unsigned long long value) { return natural61{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n61
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:71:24: warning: identifier '_n62' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   71 | inline auto operator"" _n62(unsigned long long value) { return natural62{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n62
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:72:24: warning: identifier '_n63' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   72 | inline auto operator"" _n63(unsigned long long value) { return natural63{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n63
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:73:24: warning: identifier '_n64' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   73 | inline auto operator"" _n64(unsigned long long value) { return natural64{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_n64
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:75:25: warning: identifier '_i1' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   75 | inline auto operator""  _i1(unsigned long long value) { return  integer1{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i1
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:76:25: warning: identifier '_i2' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   76 | inline auto operator""  _i2(unsigned long long value) { return  integer2{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i2
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:77:25: warning: identifier '_i3' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   77 | inline auto operator""  _i3(unsigned long long value) { return  integer3{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i3
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:78:25: warning: identifier '_i4' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   78 | inline auto operator""  _i4(unsigned long long value) { return  integer4{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i4
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:79:25: warning: identifier '_i5' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   79 | inline auto operator""  _i5(unsigned long long value) { return  integer5{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i5
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:80:25: warning: identifier '_i6' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   80 | inline auto operator""  _i6(unsigned long long value) { return  integer6{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i6
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:81:25: warning: identifier '_i7' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   81 | inline auto operator""  _i7(unsigned long long value) { return  integer7{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i7
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:82:25: warning: identifier '_i8' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   82 | inline auto operator""  _i8(unsigned long long value) { return  integer8{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i8
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:83:25: warning: identifier '_i9' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   83 | inline auto operator""  _i9(unsigned long long value) { return  integer9{value}; }
+      |             ~~~~~~~~~~~~^~~
+      |             operator""_i9
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:84:24: warning: identifier '_i10' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   84 | inline auto operator"" _i10(unsigned long long value) { return integer10{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i10
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:85:24: warning: identifier '_i11' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   85 | inline auto operator"" _i11(unsigned long long value) { return integer11{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i11
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:86:24: warning: identifier '_i12' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   86 | inline auto operator"" _i12(unsigned long long value) { return integer12{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i12
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:87:24: warning: identifier '_i13' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   87 | inline auto operator"" _i13(unsigned long long value) { return integer13{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i13
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:88:24: warning: identifier '_i14' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   88 | inline auto operator"" _i14(unsigned long long value) { return integer14{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i14
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:89:24: warning: identifier '_i15' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   89 | inline auto operator"" _i15(unsigned long long value) { return integer15{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i15
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:90:24: warning: identifier '_i16' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   90 | inline auto operator"" _i16(unsigned long long value) { return integer16{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i16
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:91:24: warning: identifier '_i17' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   91 | inline auto operator"" _i17(unsigned long long value) { return integer17{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i17
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:92:24: warning: identifier '_i18' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   92 | inline auto operator"" _i18(unsigned long long value) { return integer18{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i18
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:93:24: warning: identifier '_i19' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   93 | inline auto operator"" _i19(unsigned long long value) { return integer19{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i19
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:94:24: warning: identifier '_i20' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   94 | inline auto operator"" _i20(unsigned long long value) { return integer20{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i20
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:95:24: warning: identifier '_i21' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   95 | inline auto operator"" _i21(unsigned long long value) { return integer21{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i21
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:96:24: warning: identifier '_i22' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   96 | inline auto operator"" _i22(unsigned long long value) { return integer22{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i22
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:97:24: warning: identifier '_i23' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   97 | inline auto operator"" _i23(unsigned long long value) { return integer23{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i23
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:98:24: warning: identifier '_i24' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   98 | inline auto operator"" _i24(unsigned long long value) { return integer24{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i24
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:99:24: warning: identifier '_i25' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   99 | inline auto operator"" _i25(unsigned long long value) { return integer25{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i25
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:100:24: warning: identifier '_i26' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  100 | inline auto operator"" _i26(unsigned long long value) { return integer26{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i26
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:101:24: warning: identifier '_i27' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  101 | inline auto operator"" _i27(unsigned long long value) { return integer27{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i27
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:102:24: warning: identifier '_i28' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  102 | inline auto operator"" _i28(unsigned long long value) { return integer28{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i28
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:103:24: warning: identifier '_i29' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  103 | inline auto operator"" _i29(unsigned long long value) { return integer29{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i29
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:104:24: warning: identifier '_i30' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  104 | inline auto operator"" _i30(unsigned long long value) { return integer30{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i30
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:105:24: warning: identifier '_i31' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | inline auto operator"" _i31(unsigned long long value) { return integer31{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i31
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:106:24: warning: identifier '_i32' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  106 | inline auto operator"" _i32(unsigned long long value) { return integer32{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i32
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:107:24: warning: identifier '_i33' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  107 | inline auto operator"" _i33(unsigned long long value) { return integer33{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i33
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:108:24: warning: identifier '_i34' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  108 | inline auto operator"" _i34(unsigned long long value) { return integer34{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i34
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:109:24: warning: identifier '_i35' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  109 | inline auto operator"" _i35(unsigned long long value) { return integer35{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i35
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:110:24: warning: identifier '_i36' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  110 | inline auto operator"" _i36(unsigned long long value) { return integer36{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i36
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:111:24: warning: identifier '_i37' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  111 | inline auto operator"" _i37(unsigned long long value) { return integer37{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i37
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:112:24: warning: identifier '_i38' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  112 | inline auto operator"" _i38(unsigned long long value) { return integer38{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i38
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:113:24: warning: identifier '_i39' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  113 | inline auto operator"" _i39(unsigned long long value) { return integer39{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i39
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:114:24: warning: identifier '_i40' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  114 | inline auto operator"" _i40(unsigned long long value) { return integer40{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i40
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:115:24: warning: identifier '_i41' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  115 | inline auto operator"" _i41(unsigned long long value) { return integer41{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i41
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:116:24: warning: identifier '_i42' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  116 | inline auto operator"" _i42(unsigned long long value) { return integer42{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i42
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:117:24: warning: identifier '_i43' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  117 | inline auto operator"" _i43(unsigned long long value) { return integer43{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i43
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:118:24: warning: identifier '_i44' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  118 | inline auto operator"" _i44(unsigned long long value) { return integer44{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i44
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:119:24: warning: identifier '_i45' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  119 | inline auto operator"" _i45(unsigned long long value) { return integer45{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i45
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:120:24: warning: identifier '_i46' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  120 | inline auto operator"" _i46(unsigned long long value) { return integer46{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i46
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:121:24: warning: identifier '_i47' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  121 | inline auto operator"" _i47(unsigned long long value) { return integer47{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i47
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:122:24: warning: identifier '_i48' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  122 | inline auto operator"" _i48(unsigned long long value) { return integer48{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i48
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:123:24: warning: identifier '_i49' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  123 | inline auto operator"" _i49(unsigned long long value) { return integer49{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i49
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:124:24: warning: identifier '_i50' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  124 | inline auto operator"" _i50(unsigned long long value) { return integer50{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i50
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:125:24: warning: identifier '_i51' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  125 | inline auto operator"" _i51(unsigned long long value) { return integer51{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i51
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:126:24: warning: identifier '_i52' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  126 | inline auto operator"" _i52(unsigned long long value) { return integer52{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i52
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:127:24: warning: identifier '_i53' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  127 | inline auto operator"" _i53(unsigned long long value) { return integer53{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i53
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:128:24: warning: identifier '_i54' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  128 | inline auto operator"" _i54(unsigned long long value) { return integer54{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i54
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:129:24: warning: identifier '_i55' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  129 | inline auto operator"" _i55(unsigned long long value) { return integer55{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i55
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:130:24: warning: identifier '_i56' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  130 | inline auto operator"" _i56(unsigned long long value) { return integer56{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i56
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:131:24: warning: identifier '_i57' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  131 | inline auto operator"" _i57(unsigned long long value) { return integer57{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i57
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:132:24: warning: identifier '_i58' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  132 | inline auto operator"" _i58(unsigned long long value) { return integer58{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i58
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:133:24: warning: identifier '_i59' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  133 | inline auto operator"" _i59(unsigned long long value) { return integer59{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i59
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:134:24: warning: identifier '_i60' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  134 | inline auto operator"" _i60(unsigned long long value) { return integer60{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i60
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:135:24: warning: identifier '_i61' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  135 | inline auto operator"" _i61(unsigned long long value) { return integer61{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i61
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:136:24: warning: identifier '_i62' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  136 | inline auto operator"" _i62(unsigned long long value) { return integer62{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i62
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:137:24: warning: identifier '_i63' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  137 | inline auto operator"" _i63(unsigned long long value) { return integer63{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i63
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:138:24: warning: identifier '_i64' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  138 | inline auto operator"" _i64(unsigned long long value) { return integer64{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_i64
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:140:24: warning: identifier '_r32' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  140 | inline auto operator"" _r32(long double value) { return real32{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_r32
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/primitives/literals.hpp:141:24: warning: identifier '_r64' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  141 | inline auto operator"" _r64(long double value) { return real32{value}; }
+      |             ~~~~~~~~~~~^~~~
+      |             operator""_r64
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:299:24: warning: identifier '_s' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  299 | inline auto operator"" _s(const char* value, std::size_t) -> string { return {value}; }
+      |             ~~~~~~~~~~~^~
+      |             operator""_s
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:323:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:7:10: warning: 35 enumeration values not handled in switch: 'LogicalNot', 'Positive', 'Negative'... [-Wswitch]
+    7 |   switch(node->type) {
+      |          ^~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:7:10: note: add missing switch cases
+    7 |   switch(node->type) {
+      |          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:43:10: warning: 16 enumeration values not handled in switch: 'Null', 'Literal', 'Function'... [-Wswitch]
+   43 |   switch(node->type) {
+      |          ^~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:43:10: note: add missing switch cases
+   43 |   switch(node->type) {
+      |          ^
+   44 |   case Node::Type::SuffixIncrement: return p(0);
+   45 |   case Node::Type::SuffixDecrement: return p(0);
+   46 |   case Node::Type::LogicalNot: return !p(0);
+   47 |   case Node::Type::BitwiseNot: return ~p(0);
+   48 |   case Node::Type::Positive: return +p(0);
+   49 |   case Node::Type::Negative: return -p(0);
+   50 |   case Node::Type::PrefixIncrement: return p(0) + 1;
+   51 |   case Node::Type::PrefixDecrement: return p(0) - 1;
+   52 |   case Node::Type::Multiply: return p(0) * p(1);
+   53 |   case Node::Type::Divide: return p(0) / p(1);
+   54 |   case Node::Type::Modulo: return p(0) % p(1);
+   55 |   case Node::Type::Add: return p(0) + p(1);
+   56 |   case Node::Type::Subtract: return p(0) - p(1);
+   57 |   case Node::Type::ShiftLeft: return p(0) << p(1);
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:105:10: warning: 33 enumeration values not handled in switch: 'Null', 'Literal', 'Function'... [-Wswitch]
+  105 |   switch(node->type) {
+      |          ^~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/eval/evaluator.hpp:105:10: note: add missing switch cases
+  105 |   switch(node->type) {
+      |          ^
+  106 |   case Node::Type::LogicalNot: return !p(0);
+  107 |   case Node::Type::Positive: return +p(0);
+  108 |   case Node::Type::Negative: return -p(0);
+  109 |   case Node::Type::Multiply: return p(0) * p(1);
+  110 |   case Node::Type::Divide: return p(0) / p(1);
+  111 |   case Node::Type::Add: return p(0) + p(1);
+  112 |   case Node::Type::Subtract: return p(0) - p(1);
+  113 |   case Node::Type::Equal: return p(0) == p(1);
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:9:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string.hpp:326:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/markup/find.hpp:31:12: warning: enumeration values 'ID' and 'NF' not handled in switch [-Wswitch]
+   31 |     switch(comparator) {
+      |            ^~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/markup/find.hpp:31:12: note: add missing switch cases
+   31 |     switch(comparator) {
+      |            ^
+   32 |     case Comparator::EQ: side = nall::split(rule, "=", 1L); break;
+   33 |     case Comparator::NE: side = nall::split(rule, "!=", 1L); break;
+   34 |     case Comparator::LT: side = nall::split(rule, "<", 1L); break;
+   35 |     case Comparator::LE: side = nall::split(rule, "<=", 1L); break;
+   36 |     case Comparator::GT: side = nall::split(rule, ">", 1L); break;
+   37 |     case Comparator::GE: side = nall::split(rule, ">=", 1L); break;
+   38 |     }
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/markup/find.hpp:47:12: warning: enumeration values 'ID' and 'NF' not handled in switch [-Wswitch]
+   47 |     switch(comparator) {
+      |            ^~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/string/markup/find.hpp:47:12: note: add missing switch cases
+   47 |     switch(comparator) {
+      |            ^
+   48 |     case Comparator::EQ: if(side.size() > 1 && data.match(side[1]) ==  true)      continue; break;
+   49 |     case Comparator::NE: if(side.size() > 1 && data.match(side[1]) == false)      continue; break;
+   50 |     case Comparator::LT: if(side.size() > 1 && data.natural()  < side[1].natural()) continue; break;
+   51 |     case Comparator::LE: if(side.size() > 1 && data.natural() <= side[1].natural()) continue; break;
+   52 |     case Comparator::GT: if(side.size() > 1 && data.natural()  > side[1].natural()) continue; break;
+   53 |     case Comparator::GE: if(side.size() > 1 && data.natural() >= side[1].natural()) continue; break;
+   54 |     }
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:13:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/unsigned.hpp:28:44: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   28 |   return lhs << rhs | lhs >> sizeof(T) * 8 - rhs;
+      |                           ~~ ~~~~~~~~~~~~~~^~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/unsigned.hpp:28:44: note: place parentheses around the '-' expression to silence this warning
+   28 |   return lhs << rhs | lhs >> sizeof(T) * 8 - rhs;
+      |                                            ^    
+      |                              (                  )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/unsigned.hpp:37:24: warning: identifier '_u128' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   37 | inline auto operator"" _u128(const char* s) -> u128 {
+      |             ~~~~~~~~~~~^~~~~
+      |             operator""_u128
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:39:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u256' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u256
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:313:1: note: expanded from here
+  313 | _u256
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:47:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u512' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u512
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:89:1: note: expanded from here
+   89 | _u512
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:55:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u1024' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u1024
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:493:1: note: expanded from here
+  493 | _u1024
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:63:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u2048' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u2048
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:265:1: note: expanded from here
+  265 | _u2048
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:71:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u4096' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u4096
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:90:1: note: expanded from here
+   90 | _u4096
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:11:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic.hpp:79:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:105:30: warning: identifier '_u8192' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  105 | alwaysinline auto operator"" DeclareUDL(PairBits)(const char* s) -> Pair {
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                   operator""_u8192
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:103:26: note: expanded from macro 'DeclareUDL'
+  103 | #define DeclareUDL(Size) ConcatenateUDL(Size)
+      |                          ^
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/arithmetic/natural.hpp:102:30: note: expanded from macro 'ConcatenateUDL'
+  102 | #define ConcatenateUDL(Size) _u##Size
+      |                              ^
+<scratch space>:494:1: note: expanded from here
+  494 | _u8192
+      | ^
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:16:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:256:16: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  256 |       while(ep = readdir(dp)) {
+      |             ~~~^~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:256:16: note: place parentheses around the assignment to silence this warning
+  256 |       while(ep = readdir(dp)) {
+      |                ^            
+      |             (               )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:256:16: note: use '==' to turn this assignment into an equality comparison
+  256 |       while(ep = readdir(dp)) {
+      |                ^
+      |                ==
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:276:16: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  276 |       while(ep = readdir(dp)) {
+      |             ~~~^~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:276:16: note: place parentheses around the assignment to silence this warning
+  276 |       while(ep = readdir(dp)) {
+      |                ^            
+      |             (               )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/directory.hpp:276:16: note: use '==' to turn this assignment into an equality comparison
+  276 |       while(ep = readdir(dp)) {
+      |                ^
+      |                ==
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:31:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:5:34: warning: identifier '_Kibit' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    5 | inline constexpr auto operator"" _Kibit(unsigned long long value) { return value * 1024 / 8; }
+      |                       ~~~~~~~~~~~^~~~~~
+      |                       operator""_Kibit
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:6:34: warning: identifier '_Mibit' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    6 | inline constexpr auto operator"" _Mibit(unsigned long long value) { return value * 1024 * 1024 / 8; }
+      |                       ~~~~~~~~~~~^~~~~~
+      |                       operator""_Mibit
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:7:34: warning: identifier '_Gibit' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    7 | inline constexpr auto operator"" _Gibit(unsigned long long value) { return value * 1024 * 1024 * 1024 / 8; }
+      |                       ~~~~~~~~~~~^~~~~~
+      |                       operator""_Gibit
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:8:34: warning: identifier '_Tibit' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+    8 | inline constexpr auto operator"" _Tibit(unsigned long long value) { return value * 1024 * 1024 * 1024 * 1024 / 8; }
+      |                       ~~~~~~~~~~~^~~~~~
+      |                       operator""_Tibit
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:10:34: warning: identifier '_KiB' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   10 | inline constexpr auto operator"" _KiB(unsigned long long value) { return value * 1024; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_KiB
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:11:34: warning: identifier '_MiB' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   11 | inline constexpr auto operator"" _MiB(unsigned long long value) { return value * 1024 * 1024; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_MiB
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:12:34: warning: identifier '_GiB' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   12 | inline constexpr auto operator"" _GiB(unsigned long long value) { return value * 1024 * 1024 * 1024; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_GiB
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:13:34: warning: identifier '_TiB' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   13 | inline constexpr auto operator"" _TiB(unsigned long long value) { return value * 1024 * 1024 * 1024 * 1024; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_TiB
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:15:34: warning: identifier '_KHz' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   15 | inline constexpr auto operator"" _KHz(unsigned long long value) { return value * 1000; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_KHz
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:16:34: warning: identifier '_MHz' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   16 | inline constexpr auto operator"" _MHz(unsigned long long value) { return value * 1000 * 1000; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_MHz
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:17:34: warning: identifier '_GHz' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   17 | inline constexpr auto operator"" _GHz(unsigned long long value) { return value * 1000 * 1000 * 1000; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_GHz
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/literals.hpp:18:34: warning: identifier '_THz' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+   18 | inline constexpr auto operator"" _THz(unsigned long long value) { return value * 1000 * 1000 * 1000 * 1000; }
+      |                       ~~~~~~~~~~~^~~~
+      |                       operator""_THz
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:44:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/random.hpp:9:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/cipher/chacha20.hpp:52:40: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   52 |     return value << bits | value >> 32 - bits;
+      |                                  ~~ ~~~^~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/cipher/chacha20.hpp:52:40: note: place parentheses around the '-' expression to silence this warning
+   52 |     return value << bits | value >> 32 - bits;
+      |                                        ^     
+      |                                     (        )
+In file included from /private/tmp/198x-sn76489-phase-evidence/ares.cpp:3:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/ares/component/audio/sn76489/sn76489.cpp:1:
+In file included from /private/tmp/198x-sn76489-phase-evidence/include/ares/ares.hpp:4:
+In file included from /Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/nall.hpp:57:
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:117:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  117 |     if(assigned = source.assigned) variant_copy<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:117:17: note: place parentheses around the assignment to silence this warning
+  117 |     if(assigned = source.assigned) variant_copy<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |                 ^                
+      |        (                         )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:117:17: note: use '==' to turn this assignment into an equality comparison
+  117 |     if(assigned = source.assigned) variant_copy<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |                 ^
+      |                 ==
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:124:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  124 |     if(assigned = source.assigned) variant_move<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:124:17: note: place parentheses around the assignment to silence this warning
+  124 |     if(assigned = source.assigned) variant_move<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |                 ^                
+      |        (                         )
+/Users/stevehill/Projects/198x/emulators/multi-system/ares/nall/nall/variant.hpp:124:17: note: use '==' to turn this assignment into an equality comparison
+  124 |     if(assigned = source.assigned) variant_move<P...>(1, source.assigned, (void*)data, (void*)source.data);
+      |                 ^
+      |                 ==
+181 warnings generated.
