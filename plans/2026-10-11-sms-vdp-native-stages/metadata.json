@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-11",
+  "source_revision": "205bfd85db9cf91bd7489e1d4dec7d7a32b8ef40",
+  "source_pr_state": "1726 closed, unmerged; no timing modifications",
+  "reference_revision": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "test_url": "https://www.smspower.org/Homebrew/SMSVDPTest-SMS",
+  "download_url": "https://www.smspower.org/uploads/Homebrew/SMSVDPTest-SMS-1.31.zip",
+  "rom_sha256": "2b64b55ded7406aecf60a85547639dd4a0ab9f9c212a04676b79e15e8711f3a0",
+  "archive_sha256": "6b8f113e54c084d542ae2f87951451724b4dfa85eae95f3b9a5121e6b1bd1179",
+  "rom_bytes": 32768,
+  "redistribution": "No explicit license found; ROM and external source not bundled",
+  "frames": 1000,
+  "button_1_intervals": [
+    [
+      200,
+      205
+    ],
+    [
+      400,
+      405
+    ]
+  ],
+  "completed_pages_visually_checked": [
+    "emu NTSC",
+    "emu PAL",
+    "Genesis Plus GX NTSC",
+    "Genesis Plus GX PAL"
+  ],
+  "failure_ids_each_emu_region": [
+    25,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "reference_passes": 32,
+  "emu_passes": 20,
+  "emu_failures": 12,
+  "cpu_prerequisite": "ZEXDOC started; still running when evidence captured; not claimed passed"
+}
