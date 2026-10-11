@@ -1,8 +1,10 @@
 # C64 Phi1 fetch observation — issue 1713
 
-Lane: engineering-frontier accuracy. Investigation only; no production timing
-or schema change is approved here. The uniform colour-RAM guest proves the
-bus source is missing, but cannot identify individual fetch slots.
+Lane: engineering-frontier accuracy. The Phi1 fetch-stage and snapshot proposal
+remains pending approval. The separate PRA correction uses existing saved
+state and is validated in [source PR 1714](https://github.com/emu198x/emu198x/pull/1714);
+its evidence and limits are recorded below. The uniform colour-RAM guest proves
+the bus source is missing, but cannot identify individual fetch slots.
 
 1. Inspect the staged VICE `phi1timing` v2 source and hardware-provenance readme.
    It reads cartridge I/O1 `$DEAD`, so distinguish that decoder from colour RAM.
@@ -334,7 +336,10 @@ regression checks the full phase-derived mask rather than pinning those totals.
 
 Validation: 402 ordinary tests pass (74 fixture tests remain ignored in that
 command); the explicitly selected strict native-reference suite passes all
-10 tests in 307.49 seconds. Its light-pen measurements agree on all 5,120 bytes.
+10 tests in 307.49 seconds. The remaining sprite-DMA fixture passes separately
+in 9.53 seconds with 100% image parity, so all 11 fixture tests in
+`vicii_testbench` pass; seven diagnostic-only tests are excluded. Its light-pen
+measurements agree on all 5,120 bytes.
 Clippy with `--all-targets -- -D warnings`, formatting and diff checks pass.
 The native suite includes historical gfxfetch floors as well as exact fixtures;
 this is not a claim of whole-image equivalence for every fixture or a full
