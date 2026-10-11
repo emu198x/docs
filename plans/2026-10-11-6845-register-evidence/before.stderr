@@ -1,0 +1,7 @@
+1852 mismatches across 2560 register cases
+
+thread 'main' (94511487) panicked at /private/tmp/198x-6845-register-evidence/probe.rs:30:2:
+assertion `left == right` failed: 6845 ports must respect implemented bits and read-only registers
+  left: 1852
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
