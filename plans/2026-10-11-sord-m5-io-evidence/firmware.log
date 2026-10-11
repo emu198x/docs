@@ -1,0 +1,95 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sord-io/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e969643e8d3be174: Operation not permitted (os error 1)
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-sord-io/crates/machine-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.13s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/machine_sord_m5-082612619d1131a7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 11 filtered out; finished in 0.00s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/bios_boot-f9714c0b8d55d90b)
+
+running 1 test
+test boots_through_ctc_to_a_rendered_screen ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.89s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-sunsoft4-target/debug/deps/cpu_rate-08dd44f2f04d3ac4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.00s
+
+     Running tests/digdug_freeze_probe.rs (/private/tmp/198x-sunsoft4-target/debug/deps/digdug_freeze_probe-aaf8ce0d146719a9)
+
+running 2 tests
+total acks by channel since boot: [0, 9894, 0, 600]
+ch0: running=true int_en=true counter_mode=true rising_edge=false counter=1
+ch1: running=true int_en=true counter_mode=false rising_edge=false counter=6
+ch2: running=true int_en=false counter_mode=true rising_edge=true counter=23
+ch3: running=true int_en=true counter_mode=true rising_edge=false counter=1
+ch0 interrupts/frame = 0.00
+ch1 interrupts/frame = 16.67
+ch2 interrupts/frame = 0.00
+ch3 interrupts/frame = 1.00
+VDP interrupt line now = false
+$754A = 0x07
+test vdp_int_drives_ctc_channel3 ... ok
+IM2 acks: ~17/frame at boot, ~17/frame in the stuck round
+VDP reg1=0xE2 (bit6 display, bit1 16x16), SAT base reg5*0x80=0x3B00 == vdp 0x3B00
+first sprites (Y,X,pat): [(48, 80, 0), (96, 16, 0), (128, 192, 0), (48, 208, 0)]
+over 2000 round frames: ram changed=true, any sprite ever placed=true
+round I/O over 4 frames: reads={10: {00, 10}, 11: {84}, 30: {00}, 31: {00}, 32: {00}, 33: {00}, 34: {00}, 35: {00}, 36: {00}, 37: {00}, 50: {FF}} writes={10: 335, 11: 34C}
+test cart_round_spawns_and_runs ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 36.78s
+
+     Running tests/io_aliases.rs (/private/tmp/198x-sunsoft4-target/debug/deps/io_aliases-cae6bb8dfc27d724)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.00s
+
+     Running tests/keyboard_io_trace.rs (/private/tmp/198x-sunsoft4-target/debug/deps/keyboard_io_trace-66539cd40b332436)
+
+running 1 test
+--- Sord M5 keyboard-range I/O over 4 frames ---
+total I/O events: 4315
+READS  (port: count, last_value):
+  $11: 4x  last=0x84
+  $30: 12x  last=0x00
+  $31: 4275x  last=0x00
+  $32: 4x  last=0x00
+  $33: 4x  last=0x00
+  $34: 4x  last=0x00
+  $35: 4x  last=0x00
+  $36: 4x  last=0x00
+  $50: 4x  last=0xFF
+WRITES (port: count, last_value):
+test trace_keyboard_scan_ports ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.22s
+
+     Running tests/pal_validation.rs (/private/tmp/198x-sunsoft4-target/debug/deps/pal_validation-2099172d8a358d31)
+
+running 2 tests
+PAL cart=basic-i frames=700 measured_ticks=7136400 ch3_acks=100 prompt_verified=true
+test european_basic_i_reaches_ready_with_pal_frame_interrupts ... ok
+PAL cart=dig-dug frames=700 measured_ticks=7136400 ch3_acks=100 prompt_verified=true
+PAL Dig Dug gameplay: 1000 frames, 1000 channel-3 interrupts, 310 distinct sprite tables
+test european_dig_dug_reaches_player_selection_with_pal_frame_interrupts ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 30.19s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/synthetic_firmware_boot-8bc0e8ce5dd68214)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+
+   Doc-tests machine_sord_m5
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

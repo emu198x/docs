@@ -1,0 +1,17 @@
+[
+  {
+    "name": "sord-m5.rom",
+    "bytes": 8192,
+    "sha256": "1289e87a1c14a4b5a93db50dd482efe453ad15e445cbd82bb859a5e0520100e5"
+  },
+  {
+    "name": "basic-i.bin",
+    "bytes": 8192,
+    "sha256": "c1b026588308cf7af3f4ce1e14bcb88b297351a7110ef7e91cf250fd675b9466"
+  },
+  {
+    "name": "dig-dug.bin",
+    "bytes": 8192,
+    "sha256": "f7c097dcc9368a1869af3ed246dfb94f8bd7a6d4c230a7e92ee4ecfffdf44749"
+  }
+]

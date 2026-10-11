@@ -1,0 +1,21 @@
+{
+  "title": "Sord BASIC-G Appendix H and M5C-01 schematic",
+  "source_type": "manufacturer-scan",
+  "retrieved": "2026-10-11",
+  "provenance_url": "https://groups.google.com/g/rc2014-z80/c/rhZaulz_lzo",
+  "verification": "Complete pages visually inspected; edition/date unverified. Copyright scans are linked, not included in this public bundle.",
+  "sources": [
+    {
+      "source_url": "https://groups.google.com/group/rc2014-z80/attach/589d85f13ac90/Basic-G_appendix_H.pdf?part=0.2",
+      "sha256": "aadec4a57277b104d5f14e4136503b7e2b6a3943b8754cbe02bb79a188ce49c9",
+      "pages": 1,
+      "cold_store": null
+    },
+    {
+      "source_url": "https://groups.google.com/group/rc2014-z80/attach/589d85f13ac90/Sord_M5_TMS9918A_schematic.pdf?part=0.1",
+      "sha256": "ce3600fdb68daba5f32d466f376c0d8e3803a7e237755e261484fb1e83381577",
+      "pages": 1,
+      "cold_store": null
+    }
+  ]
+}
