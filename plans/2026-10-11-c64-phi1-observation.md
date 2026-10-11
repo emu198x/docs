@@ -374,3 +374,60 @@ status at the reviewed head `bee39c1a`. CI's uploaded workspace evidence reports
 affected packages account for 402 executed tests, zero failures and zero skips;
 the 11 native VIC-II fixtures were verified separately on the staged local corpus.
 The broader issue 1713 and the separate Phi1 schema proposal remain open.
+
+## Direct fetch-trace qualification
+
+CPU-only observation cannot qualify sprite middle-byte fetches while the CPU
+has lost the bus. Extend the investigation with a directly instrumented native
+reference in an isolated temporary source copy; keep the vendored snapshot
+immutable and make no production or snapshot change.
+
+1. Build the pinned VICE 3.10 source with its existing headless UI and locally
+   available dependencies in `/private/tmp`. Record configure/build inputs and
+   source hashes. Add no dependencies. First establish an uninstrumented
+   baseline using the existing original bank guest and Phi1 guest observations.
+2. In that isolated copy, instrument the existing Phi1/Phi2 fetch boundaries,
+   retaining requested/effective address, returned data, native clock/raster
+   coordinates, DMA mask and prefetch ownership. Gate capture to a guest-owned
+   marker and bounded interval. Preserve actual return values and side effects.
+   Retain the original patch and build runner in this plan's evidence directory.
+3. Require unchanged CPU samples and output images with tracing disabled and
+   enabled before using the trace as evidence. Reject truncated captures,
+   missing frame/line coverage, or an empty sprite-DMA interval.
+4. Run original patterned-memory guests across five VIC models, all sprites,
+   enabled/disabled DMA and bank/pointer changes. Derive expected fetch bytes
+   from the recorded source RAM; distinguish physical accesses from invalid
+   Phi2 ownership and never label CPU-inaccessible samples as CPU observations.
+5. Write a verifier and mutation controls for missing/duplicate rows, wrong
+   source selection, shifted phases and Phi2 overwriting the retained Phi1
+   byte. Record remaining coverage gaps before implementing the pending fetch
+   extension. Initial exact files: `build_fetch_trace.py`, `fetch_trace.patch`,
+   `sprite_fetch.py`, `verify_sprite_fetch.py`, `test_sprite_fetch.py` beside
+   the current observation tools; primary conclusions go to the existing
+   VIC-II observation note first.
+
+### Isolated baseline established
+
+The uninstrumented headless VICE 3.10 build passes `fetch_trace_baseline.py`:
+five original bank-guest images match the retained native PNGs (493,440 pixels),
+and ten I/O1/colour captures reproduce 640 native CPU-read samples. All fifteen
+cases have a completion witness and reject changed payloads. The runner also
+rejects missing/short payloads and incomplete model/case coverage.
+`fetch-trace-baseline.json` records the binary/source identities, build flags,
+measured rows and counts; `fetch-trace-baseline.log` retains the run summary.
+Ruff format/check and diff checks pass.
+
+The isolated copy is `/private/tmp/198x-vice-fetch-trace/source`, with the
+baseline binary preserved separately at `x64sc-baseline`. Configure uses
+`--enable-headlessui --disable-html-docs`, followed by `make -j8 -C src`.
+The initial attempt to omit reSID was rejected because no sound engine remained;
+the successful build keeps the default engine. Build/run need the previously
+established macOS sandbox exception: the archive wrapper uses `/dev/fd` and
+native startup crashes inside the sandbox. No dependency was installed.
+Headless capture omits the GTK-only `-nativemonitor` option and keeps logging
+on because `-silent` hides the monitor's completion output.
+
+No instrumentation has been applied yet. Add the direct observer only in this
+isolated copy, then rerun the baseline with logging disabled and enabled before
+qualifying sprite DMA or invalid Phi2 ownership. Production remains unchanged
+from the merged PRA correction.
