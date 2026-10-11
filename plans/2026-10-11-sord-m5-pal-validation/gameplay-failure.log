@@ -1,0 +1,24 @@
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.09s
+     Running tests/pal_validation.rs (/private/tmp/198x-6809-target/debug/deps/pal_validation-2099172d8a358d31)
+
+running 4 tests
+test each_runtime_second_produces_48000_audio_samples ... ok
+test pal_audio_continues_identically_after_save_restore ... ok
+PAL cart=basic-i frames=700 measured_ticks=7136400 ch3_acks=100 prompt_verified=true
+test european_basic_i_reaches_ready_with_pal_frame_interrupts ... ok
+PAL cart=dig-dug frames=700 measured_ticks=7136400 ch3_acks=100 prompt_verified=true
+
+thread 'european_dig_dug_reaches_player_selection_with_pal_frame_interrupts' (93188525) panicked at crates/machine-sord-m5/tests/pal_validation.rs:92:5:
+PAL game sprites must advance after starting
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test european_dig_dug_reaches_player_selection_with_pal_frame_interrupts ... FAILED
+
+failures:
+
+failures:
+    european_dig_dug_reaches_player_selection_with_pal_frame_interrupts
+
+test result: FAILED. 3 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.29s
+
+error: test failed, to rerun pass `-p machine-sord-m5 --test pal_validation`

@@ -1,0 +1,21 @@
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.24s
+     Running tests/pal_validation.rs (/private/tmp/198x-6809-target/debug/deps/pal_validation-2099172d8a358d31)
+
+running 1 test
+
+thread 'each_runtime_second_produces_48000_audio_samples' (93200638) panicked at crates/machine-sord-m5/tests/pal_validation.rs:114:9:
+assertion `left == right` failed: Pal
+  left: 48441
+ right: 48000
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test each_runtime_second_produces_48000_audio_samples ... FAILED
+
+failures:
+
+failures:
+    each_runtime_second_produces_48000_audio_samples
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 3 filtered out; finished in 1.38s
+
+error: test failed, to rerun pass `-p machine-sord-m5 --test pal_validation`
