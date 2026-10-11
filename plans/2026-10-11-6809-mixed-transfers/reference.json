@@ -1,0 +1,7 @@
+{
+  "source_sha256": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+  "wrapper_sha256": "9d54dc35cbdf0169c2931018cc739beced37fc72143b3e25770e2f1cae0e461a",
+  "vectors_sha256": "7e7b608f5941919b025d76b8d23cbc2ecbf996f332dfa410e94c5087f655d88b",
+  "cases": 800,
+  "scope": "Unchanged compiled XRoar EXG/TFR switch bodies; named register values only; bus cycles and NMI state not compared."
+}
