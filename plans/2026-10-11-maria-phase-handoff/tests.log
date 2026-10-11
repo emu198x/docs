@@ -1,0 +1,45 @@
+$ ruff check plans/2026-10-11-maria-phase-handoff
+All checks passed!
+
+exit=0
+$ ruff format --check plans/2026-10-11-maria-phase-handoff
+4 files already formatted
+
+exit=0
+$ python3 -m unittest discover -s plans/2026-10-11-maria-phase-handoff -v
+test_missing_physical_route_fails_even_when_both_ports_exist (test_connect_layout.BindingTests.test_missing_physical_route_fails_even_when_both_ports_exist) ... ok
+test_same_name_on_distinct_nodes_cannot_supply_a_phase_binding (test_connect_layout.BindingTests.test_same_name_on_distinct_nodes_cannot_supply_a_phase_binding) ... ok
+test_crossing_layers_need_contact (test_connect_layout.ConnectTests.test_crossing_layers_need_contact) ... ok
+test_missing_contact_does_not_join_nearby_shape (test_connect_layout.ConnectTests.test_missing_contact_does_not_join_nearby_shape) ... ok
+test_proven_local_net_joins_separate_parent_footprints (test_connect_layout.ConnectTests.test_proven_local_net_joins_separate_parent_footprints) ... ok
+test_same_layer_edge_connects_but_corner_does_not (test_connect_layout.ConnectTests.test_same_layer_edge_connects_but_corner_does_not) ... ok
+test_always_open_sample_gate_loses_hold (test_pad_model.PadModelTests.test_always_open_sample_gate_loses_hold) ... ok
+test_closed_sample_gate_preserves_both_logic_levels (test_pad_model.PadModelTests.test_closed_sample_gate_preserves_both_logic_levels) ... ok
+test_conflicting_driver_and_unqualified_load_bias_fail (test_pad_model.PadModelTests.test_conflicting_driver_and_unqualified_load_bias_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
+
+exit=0
+$ python3 plans/2026-10-11-maria-phase-handoff/probe_pads.py /private/tmp/maria-nmi-selector/layout-artifacts.zip /private/tmp/maria-nmi-selector/pad-phase-summary.json
+{"archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48", "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7", "inventory": {"PADLAY_HPAD06I__": {"devices": 29, "implants": {"3": 20, "0": 5, "2": 4}, "contact_regions": {"4": 7, "6": 160}, "nets": 14}, "PADLAY_HPAD06M__": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 3, "6": 115}, "nets": 10}}, "results": {"halt": [{"initial": 0, "step": 0, "pck2f": 1, "input": 0, "pad": 1}, {"initial": 0, "step": 1, "pck2f": 0, "input": 1, "pad": 1}, {"initial": 0, "step": 2, "pck2f": 0, "input": 0, "pad": 1}, {"initial": 0, "step": 3, "pck2f": 0, "input": 1, "pad": 1}, {"initial": 0, "step": 4, "pck2f": 1, "input": 1, "pad": 0}, {"initial": 0, "step": 5, "pck2f": 0, "input": 0, "pad": 0}, {"initial": 1, "step": 0, "pck2f": 1, "input": 1, "pad": 0}, {"initial": 1, "step": 1, "pck2f": 0, "input": 0, "pad": 0}, {"initial": 1, "step": 2, "pck2f": 0, "input": 1, "pad": 0}, {"initial": 1, "step": 3, "pck2f": 0, "input": 0, "pad": 0}, {"initial": 1, "step": 4, "pck2f": 1, "input": 0, "pad": 1}, {"initial": 1, "step": 5, "pck2f": 0, "input": 1, "pad": 1}], "nmi": [{"initial": 0, "input": 0, "pad": 0}, {"initial": 0, "input": 1, "pad": 1}, {"initial": 0, "input": 0, "pad": 0}, {"initial": 0, "input": 1, "pad": 1}, {"initial": 1, "input": 1, "pad": 1}, {"initial": 1, "input": 0, "pad": 0}, {"initial": 1, "input": 1, "pad": 1}, {"initial": 1, "input": 0, "pad": 0}]}, "negative": "HALT sampling/holding mismatch", "scope": "unit-cell Boolean/retention model; analogue delays and global phase mapping unqualified"}
+
+exit=0
+$ python3 plans/2026-10-11-maria-phase-handoff/connect_layout.py /private/tmp/maria-nmi-selector/layout-artifacts.zip /private/tmp/maria-nmi-selector/connected-routing-network.json --summary /private/tmp/maria-nmi-selector/phase-routing-summary.json
+{"rectangles": 15624, "candidate_devices": 1609, "local_networks": {"PADLAY_HPAD06__@5": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 5, "6": 162}, "nets": 12}, "PADLAY_HPAD06__@6": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 5, "6": 162}, "nets": 12}, "PADLAY_HPAD06__@8": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 5, "6": 162}, "nets": 12}, "PADLAY_HPAD06I__": {"devices": 29, "implants": {"3": 20, "0": 5, "2": 4}, "contact_regions": {"4": 7, "6": 160}, "nets": 14}, "PADLAY_HPAD06M__@35": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 3, "6": 115}, "nets": 10}, "PADLAY_HPAD06M__@40": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 3, "6": 115}, "nets": 10}, "PADLAY_HPAD06__@46": {"devices": 28, "implants": {"3": 19, "0": 5, "2": 4}, "contact_regions": {"4": 5, "6": 162}, "nets": 12}, "VCELL_VCELL_GINGER$LOE_LRIC_LY_": {"devices": 0, "implants": {}, "contact_regions": {"4": 11, "6": 74}, "nets": 31}, "RCPLA_RCPLA": {"devices": 341, "implants": {"2": 71, "0": 33, "3": 237}, "contact_regions": {"4": 167, "6": 452}, "nets": 136}, "RSYNC_RSYNCPLA": {"devices": 89, "implants": {"2": 29, "3": 60}, "contact_regions": {"4": 58, "6": 105}, "nets": 48}, "VCELL_VCELL_GINGER$LOE_RSYNC_LY": {"devices": 97, "implants": {"3": 68, "2": 25, "0": 4}, "contact_regions": {"4": 49, "6": 141}, "nets": 64}, "VCELL_VCELL_GINGER$LOE_HVSYNC_L": {"devices": 885, "implants": {"0": 45, "3": 629, "2": 211}, "contact_regions": {"4": 403, "6": 1368}, "nets": 404}, "LARRY2_LRC_89_140_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 70}, "nets": 1}, "LARRY2_LRC_95_140_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 70}, "nets": 1}, "LARRY2_LRC_34_100_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 50}, "nets": 1}, "LARRY2_LRC_42_36_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 18}, "nets": 1}, "LARRY2_LRC_34_10_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 4}, "nets": 1}, "LARRY2_LRC_34_6_": {"devices": 0, "implants": {}, "contact_regions": {"4": 1, "6": 2}, "nets": 1}}, "parent_instances_not_expanded": 69}
+3349 ['PADLAY_HPAD06I__::PADLAY_HPAD06I__/0:VCELL_VCELL_GINGER$LOE_HPAD06I_/in', 'TOP/halt']
+1841 ['PADLAY_HPAD06M__@35::PADLAY_HPAD06M__/0:VCELL_VCELL_GINGER$LOE_HPAD06M_/in', 'TOP/RSYNC.intf', 'TOP/intf', 'VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/intf']
+1985 ['RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/out10', 'RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/pckedge', 'RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_in1/1', 'TOP/PLA.pla_in1/1', 'TOP/RSYNC.pckedge', 'TOP/pckedge', 'VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/pckedge', 'VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/pckedge']
+1925 ['RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clk', 'RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph1', 'RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clk/1', 'TOP/PLA.pla_clk/1', 'TOP/ph1', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph1', 'VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/p_ph1', 'VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph1']
+4840 ['RCPLA_RCPLA::RCPLA_RCPLA/0:$1_331_HPLA32_HPLA32_PLA_FILE_G/clkin', 'RCPLA_RCPLA::RCPLA_RCPLA/1:VCELL_VCELL_GINGER$LOE_RCOUT_LY/ph2', 'RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_clkin/1', 'TOP/PLA.pla_clkin/1', 'TOP/ph2', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph2', 'VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/ph2']
+1964 ['RSYNC_RSYNCPLA::RSYNC_RSYNCPLA/0:VCELL_VCELL_GINGER$LOE_RSYNCPLA/pla_in2/1', 'TOP/PLA.pla_in2/1', 'TOP/RSYNC.halt', 'TOP/halt', 'VCELL_VCELL_GINGER$LOE_LRIC_LY_::VCELL_VCELL_GINGER$LOE_LRIC_LY_/halt', 'VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/halt']
+1697 ['TOP/RSYNC.ph1', 'TOP/ph1', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph1', 'VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph1']
+1940 ['TOP/RSYNC.ph2', 'TOP/ph1', 'TOP/ph2', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/hcnt_aph2/2', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/ph2', 'VCELL_VCELL_GINGER$LOE_HVSYNC_L::VCELL_VCELL_GINGER$LOE_HVSYNC_L/vcnt_aph2/2', 'VCELL_VCELL_GINGER$LOE_RSYNC_LY::VCELL_VCELL_GINGER$LOE_RSYNC_LY/ph2']
+3761 ['TOP/ph1']
+4009 ['TOP/ph2']
+4012 ['TOP/ph1']
+4483 ['TOP/ph2']
+
+exit=0

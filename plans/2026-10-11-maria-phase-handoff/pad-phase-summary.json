@@ -1,0 +1,164 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "inventory": {
+    "PADLAY_HPAD06I__": {
+      "devices": 29,
+      "implants": {
+        "3": 20,
+        "0": 5,
+        "2": 4
+      },
+      "contact_regions": {
+        "4": 7,
+        "6": 160
+      },
+      "nets": 14
+    },
+    "PADLAY_HPAD06M__": {
+      "devices": 28,
+      "implants": {
+        "3": 19,
+        "0": 5,
+        "2": 4
+      },
+      "contact_regions": {
+        "4": 3,
+        "6": 115
+      },
+      "nets": 10
+    }
+  },
+  "results": {
+    "halt": [
+      {
+        "initial": 0,
+        "step": 0,
+        "pck2f": 1,
+        "input": 0,
+        "pad": 1
+      },
+      {
+        "initial": 0,
+        "step": 1,
+        "pck2f": 0,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 0,
+        "step": 2,
+        "pck2f": 0,
+        "input": 0,
+        "pad": 1
+      },
+      {
+        "initial": 0,
+        "step": 3,
+        "pck2f": 0,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 0,
+        "step": 4,
+        "pck2f": 1,
+        "input": 1,
+        "pad": 0
+      },
+      {
+        "initial": 0,
+        "step": 5,
+        "pck2f": 0,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "step": 0,
+        "pck2f": 1,
+        "input": 1,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "step": 1,
+        "pck2f": 0,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "step": 2,
+        "pck2f": 0,
+        "input": 1,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "step": 3,
+        "pck2f": 0,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "step": 4,
+        "pck2f": 1,
+        "input": 0,
+        "pad": 1
+      },
+      {
+        "initial": 1,
+        "step": 5,
+        "pck2f": 0,
+        "input": 1,
+        "pad": 1
+      }
+    ],
+    "nmi": [
+      {
+        "initial": 0,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 0,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 0,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 0,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 1,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 1,
+        "input": 0,
+        "pad": 0
+      },
+      {
+        "initial": 1,
+        "input": 1,
+        "pad": 1
+      },
+      {
+        "initial": 1,
+        "input": 0,
+        "pad": 0
+      }
+    ]
+  },
+  "negative": "HALT sampling/holding mismatch",
+  "scope": "unit-cell Boolean/retention model; analogue delays and global phase mapping unqualified"
+}
