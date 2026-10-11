@@ -15,6 +15,14 @@ partial audio/filter persistence correction awaiting approval in docs PR 55.
 - All 16 focused linked-timer cases emit the last low and high event together.
   The connected reference counter/borrow/output trace separates them by three
   clocks. Correct total period alone does not establish either event's phase.
+- The public AUDF-write probe fails 24 of 96 cases: a changed divider written
+  one clock before a pending IRQ affects the next reload too early. All 480
+  reference write/counter/borrow/output cases pass, including earlier writes
+  and unchanged-value controls.
+- The public STIMER probe fails all 72 reset cases; all 24 no-reset controls
+  pass. Immediate counter reset drops an IRQ that should survive and restarts
+  four clocks early. All 1,440 reference cases pass, including one-clock-away
+  borrow cancellation and repeated STIMER writes that postpone both stages.
 - The current whole-cycle output observation cannot preserve a half-cycle
   pulse. A rounded-clock mutation of the reference loses the same pulse area.
 - The existing save path omits partial audio sums and filter history. The
@@ -28,6 +36,15 @@ Reproductions: `2026-10-11-pokey-filter-timing.md`,
 `2026-10-11-pokey-borrow-output.md`, and the clock/sampling proposal in docs
 PR 55. The unlinked fast-period correction is merged independently in source
 PR 1709; preserve its complete divider inventory.
+
+Further input evidence:
+[AUDF delivery](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-audf-delivery.md)
+and [STIMER delivery](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-stimer-delivery.md).
+These qualify bounded unlinked paths. Linked resets, combined STIMER/AUDF
+writes, reset waveform delivery, other control writes and physical CPU-write
+phase still require validation. The reference's counter-assignment timestamp
+is not itself a physical reload phase; preserve the distinction recorded in
+the STIMER evidence when designing native stages.
 
 ## Recommended representation
 
