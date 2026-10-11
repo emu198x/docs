@@ -1,0 +1,17 @@
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:77: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_ix[8:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:79: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:80: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:95: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:126: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:127: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_ix[8:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:129: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:129: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:132: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:132: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:163: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:164: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_ix[8:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:166: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/line_ram.sv:169: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'playback_cell[4:0]').
+/private/tmp/maria-clock-handoff/qualified/control.sv:56: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'AB[15:0]').
+/private/tmp/maria-clock-handoff/qualified/control.sv:83: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'AB[15:0]').

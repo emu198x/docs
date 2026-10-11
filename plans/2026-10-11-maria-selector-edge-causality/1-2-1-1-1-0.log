@@ -1,0 +1,320 @@
+SETUP t=256 ctrl=40 zp=1800 row=0 col=112 mclk=10 phi=00 pclk=0 men=0 old=1 div=0 toggle=0
+HALT tick=14568 sub=0 row=16 col=4 level=0 ab=0280
+HALT tick=14601 sub=0 row=16 col=21 level=1 ab=1802
+EDGE_NMI observer=0 tick=14604 row=16 col=22 level=0 halt=1 delay=3 width=14605 cpu_cycles=1223 same_phase=0
+SELECTOR tick=14604 row=16 col=22 level=0 halt=1 delay=3 width=14605 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=14610 row=16 col=25 level=1 halt=1 delay=9 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=14610 row=16 col=25 level=0 halt=1 delay=9 width=14611 cpu_cycles=1224 same_phase=0
+SELECTOR tick=14610 row=16 col=25 level=1 halt=1 delay=9 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=14616 row=16 col=28 level=0 halt=1 delay=15 width=14617 cpu_cycles=1225 same_phase=0
+NMI tick=14618 sub=0 row=16 col=29 level=0 release_delay=17
+EDGE_NMI observer=1 tick=14622 row=16 col=31 level=1 halt=1 delay=21 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=14628 row=16 col=34 level=1 halt=1 delay=27 width=12 cpu_cycles=1 same_phase=1
+NMI tick=14642 sub=0 row=16 col=41 level=1 release_delay=41
+WIDTH 24
+HALT tick=15444 sub=0 row=16 col=442 level=0 ab=0280
+HALT tick=15523 sub=0 row=17 col=28 level=1 ab=1805
+EDGE_NMI observer=0 tick=15528 row=17 col=30 level=0 halt=1 delay=5 width=924 cpu_cycles=80 same_phase=1
+SELECTOR tick=15528 row=17 col=30 level=0 halt=1 delay=5 width=924 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=15534 row=17 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=15534 row=17 col=33 level=0 halt=1 delay=11 width=924 cpu_cycles=80 same_phase=1
+SELECTOR tick=15534 row=17 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=15540 row=17 col=36 level=0 halt=1 delay=17 width=924 cpu_cycles=80 same_phase=1
+NMI tick=15542 sub=0 row=17 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=15546 row=17 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=15552 row=17 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=15566 sub=0 row=17 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=16349 sub=0 row=17 col=441 level=0 ab=0280
+HALT tick=16423 sub=0 row=18 col=24 level=1 ab=1808
+EDGE_NMI observer=0 tick=16428 row=18 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=16428 row=18 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=16434 row=18 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=16434 row=18 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=16434 row=18 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=16440 row=18 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=16442 sub=0 row=18 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=16446 row=18 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=16452 row=18 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=16466 sub=0 row=18 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=17257 sub=0 row=18 col=441 level=0 ab=0280
+HALT tick=17335 sub=0 row=19 col=26 level=1 ab=180b
+EDGE_NMI observer=0 tick=17340 row=19 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=17340 row=19 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=17346 row=19 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=17346 row=19 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=17346 row=19 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=17352 row=19 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=17354 sub=0 row=19 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=17358 row=19 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=17364 row=19 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=17378 sub=0 row=19 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=18168 sub=0 row=19 col=442 level=0 ab=0280
+HALT tick=18247 sub=0 row=20 col=28 level=1 ab=180e
+EDGE_NMI observer=0 tick=18252 row=20 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=18252 row=20 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=18258 row=20 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=18258 row=20 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=18258 row=20 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=18264 row=20 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=18266 sub=0 row=20 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=18270 row=20 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=18276 row=20 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=18290 sub=0 row=20 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=19073 sub=0 row=20 col=441 level=0 ab=0280
+HALT tick=19147 sub=0 row=21 col=24 level=1 ab=1811
+EDGE_NMI observer=0 tick=19152 row=21 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=19152 row=21 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=19158 row=21 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=19158 row=21 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=19158 row=21 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=19164 row=21 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=19166 sub=0 row=21 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=19170 row=21 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=19176 row=21 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=19190 sub=0 row=21 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=19981 sub=0 row=21 col=441 level=0 ab=0280
+HALT tick=20059 sub=0 row=22 col=26 level=1 ab=1814
+EDGE_NMI observer=0 tick=20064 row=22 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=20064 row=22 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=20070 row=22 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=20070 row=22 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=20070 row=22 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=20076 row=22 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=20078 sub=0 row=22 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=20082 row=22 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=20088 row=22 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=20102 sub=0 row=22 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=20892 sub=0 row=22 col=442 level=0 ab=0280
+HALT tick=20971 sub=0 row=23 col=28 level=1 ab=1817
+EDGE_NMI observer=0 tick=20976 row=23 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=20976 row=23 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=20982 row=23 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=20982 row=23 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=20982 row=23 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=20988 row=23 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=20990 sub=0 row=23 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=20994 row=23 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=21000 row=23 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=21014 sub=0 row=23 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=21797 sub=0 row=23 col=441 level=0 ab=0280
+HALT tick=21871 sub=0 row=24 col=24 level=1 ab=181a
+EDGE_NMI observer=0 tick=21876 row=24 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=21876 row=24 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=21882 row=24 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=21882 row=24 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=21882 row=24 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=21888 row=24 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=21890 sub=0 row=24 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=21894 row=24 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=21900 row=24 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=21914 sub=0 row=24 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=22705 sub=0 row=24 col=441 level=0 ab=0280
+HALT tick=22783 sub=0 row=25 col=26 level=1 ab=181d
+EDGE_NMI observer=0 tick=22788 row=25 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=22788 row=25 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=22794 row=25 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=22794 row=25 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=22794 row=25 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=22800 row=25 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=22802 sub=0 row=25 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=22806 row=25 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=22812 row=25 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=22826 sub=0 row=25 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=23616 sub=0 row=25 col=442 level=0 ab=0280
+HALT tick=23695 sub=0 row=26 col=28 level=1 ab=1820
+EDGE_NMI observer=0 tick=23700 row=26 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=23700 row=26 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=23706 row=26 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=23706 row=26 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=23706 row=26 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=23712 row=26 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=23714 sub=0 row=26 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=23718 row=26 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=23724 row=26 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=23738 sub=0 row=26 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=24521 sub=0 row=26 col=441 level=0 ab=0280
+HALT tick=24595 sub=0 row=27 col=24 level=1 ab=1823
+EDGE_NMI observer=0 tick=24600 row=27 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=24600 row=27 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=24606 row=27 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=24606 row=27 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=24606 row=27 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=24612 row=27 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=24614 sub=0 row=27 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=24618 row=27 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=24624 row=27 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=24638 sub=0 row=27 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=25429 sub=0 row=27 col=441 level=0 ab=0280
+HALT tick=25507 sub=0 row=28 col=26 level=1 ab=1826
+EDGE_NMI observer=0 tick=25512 row=28 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=25512 row=28 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=25518 row=28 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=25518 row=28 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=25518 row=28 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=25524 row=28 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=25526 sub=0 row=28 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=25530 row=28 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=25536 row=28 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=25550 sub=0 row=28 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=26340 sub=0 row=28 col=442 level=0 ab=0280
+HALT tick=26419 sub=0 row=29 col=28 level=1 ab=1829
+EDGE_NMI observer=0 tick=26424 row=29 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=26424 row=29 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=26430 row=29 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=26430 row=29 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=26430 row=29 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=26436 row=29 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=26438 sub=0 row=29 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=26442 row=29 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=26448 row=29 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=26462 sub=0 row=29 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=27245 sub=0 row=29 col=441 level=0 ab=0280
+HALT tick=27319 sub=0 row=30 col=24 level=1 ab=182c
+EDGE_NMI observer=0 tick=27324 row=30 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=27324 row=30 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=27330 row=30 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=27330 row=30 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=27330 row=30 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=27336 row=30 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=27338 sub=0 row=30 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=27342 row=30 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=27348 row=30 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=27362 sub=0 row=30 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=28153 sub=0 row=30 col=441 level=0 ab=0280
+HALT tick=28231 sub=0 row=31 col=26 level=1 ab=182f
+EDGE_NMI observer=0 tick=28236 row=31 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=28236 row=31 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=28242 row=31 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=28242 row=31 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=28242 row=31 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=28248 row=31 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=28250 sub=0 row=31 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=28254 row=31 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=28260 row=31 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=28274 sub=0 row=31 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=29064 sub=0 row=31 col=442 level=0 ab=0280
+HALT tick=29143 sub=0 row=32 col=28 level=1 ab=1832
+EDGE_NMI observer=0 tick=29148 row=32 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=29148 row=32 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=29154 row=32 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=29154 row=32 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=29154 row=32 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=29160 row=32 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=29162 sub=0 row=32 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=29166 row=32 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=29172 row=32 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=29186 sub=0 row=32 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=29969 sub=0 row=32 col=441 level=0 ab=0280
+HALT tick=30043 sub=0 row=33 col=24 level=1 ab=1835
+EDGE_NMI observer=0 tick=30048 row=33 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=30048 row=33 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=30054 row=33 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=30054 row=33 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=30054 row=33 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=30060 row=33 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=30062 sub=0 row=33 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=30066 row=33 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=30072 row=33 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=30086 sub=0 row=33 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=30877 sub=0 row=33 col=441 level=0 ab=0280
+HALT tick=30955 sub=0 row=34 col=26 level=1 ab=1838
+EDGE_NMI observer=0 tick=30960 row=34 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=30960 row=34 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=30966 row=34 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=30966 row=34 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=30966 row=34 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=30972 row=34 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=30974 sub=0 row=34 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=30978 row=34 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=30984 row=34 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=30998 sub=0 row=34 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=31788 sub=0 row=34 col=442 level=0 ab=0280
+HALT tick=31867 sub=0 row=35 col=28 level=1 ab=183b
+EDGE_NMI observer=0 tick=31872 row=35 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=31872 row=35 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=31878 row=35 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=31878 row=35 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=31878 row=35 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=31884 row=35 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=31886 sub=0 row=35 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=31890 row=35 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=31896 row=35 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=31910 sub=0 row=35 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=32693 sub=0 row=35 col=441 level=0 ab=0280
+HALT tick=32767 sub=0 row=36 col=24 level=1 ab=183e
+EDGE_NMI observer=0 tick=32772 row=36 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=32772 row=36 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=32778 row=36 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=32778 row=36 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=32778 row=36 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=32784 row=36 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=32786 sub=0 row=36 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=32790 row=36 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=32796 row=36 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=32810 sub=0 row=36 col=45 level=1 release_delay=43
+WIDTH 24
+HALT tick=33601 sub=0 row=36 col=441 level=0 ab=0280
+HALT tick=33679 sub=0 row=37 col=26 level=1 ab=1841
+EDGE_NMI observer=0 tick=33684 row=37 col=28 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=33684 row=37 col=28 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=33690 row=37 col=31 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=33690 row=37 col=31 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=33690 row=37 col=31 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=33696 row=37 col=34 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=33698 sub=0 row=37 col=35 level=0 release_delay=19
+EDGE_NMI observer=1 tick=33702 row=37 col=37 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=33708 row=37 col=40 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=33722 sub=0 row=37 col=47 level=1 release_delay=43
+WIDTH 24
+HALT tick=34512 sub=0 row=37 col=442 level=0 ab=0280
+HALT tick=34591 sub=0 row=38 col=28 level=1 ab=1844
+EDGE_NMI observer=0 tick=34596 row=38 col=30 level=0 halt=1 delay=5 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=34596 row=38 col=30 level=0 halt=1 delay=5 width=912 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=34602 row=38 col=33 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=34602 row=38 col=33 level=0 halt=1 delay=11 width=912 cpu_cycles=79 same_phase=1
+SELECTOR tick=34602 row=38 col=33 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=34608 row=38 col=36 level=0 halt=1 delay=17 width=912 cpu_cycles=79 same_phase=1
+NMI tick=34610 sub=0 row=38 col=37 level=0 release_delay=19
+EDGE_NMI observer=1 tick=34614 row=38 col=39 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=34620 row=38 col=42 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=34634 sub=0 row=38 col=49 level=1 release_delay=43
+WIDTH 24
+HALT tick=35417 sub=0 row=38 col=441 level=0 ab=0280
+HALT tick=35491 sub=0 row=39 col=24 level=1 ab=1847
+EDGE_NMI observer=0 tick=35496 row=39 col=26 level=0 halt=1 delay=5 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=35496 row=39 col=26 level=0 halt=1 delay=5 width=900 sel=1000000 cond=01000
+EDGE_NMI observer=0 tick=35502 row=39 col=29 level=1 halt=1 delay=11 width=6 cpu_cycles=1 same_phase=0
+EDGE_NMI observer=1 tick=35502 row=39 col=29 level=0 halt=1 delay=11 width=900 cpu_cycles=78 same_phase=1
+SELECTOR tick=35502 row=39 col=29 level=1 halt=1 delay=11 width=6 sel=0000001 cond=01011
+EDGE_NMI observer=2 tick=35508 row=39 col=32 level=0 halt=1 delay=17 width=900 cpu_cycles=78 same_phase=1
+NMI tick=35510 sub=0 row=39 col=33 level=0 release_delay=19
+EDGE_NMI observer=1 tick=35514 row=39 col=35 level=1 halt=1 delay=23 width=12 cpu_cycles=1 same_phase=1
+EDGE_NMI observer=2 tick=35520 row=39 col=38 level=1 halt=1 delay=29 width=12 cpu_cycles=1 same_phase=1
+NMI tick=35534 sub=0 row=39 col=45 level=1 release_delay=43
+WIDTH 24
+RESULT height=1 flag=1 slow=1 pal=0 starts=24 releases=24 edges=24
+FETCH_RESULT object=1 width=2 graphics=46
+EDGE_RESULT observer=0 assertions=24 releases=24 final=1 samples=18031 events=3076 high=9016
+EDGE_RESULT observer=1 assertions=24 releases=24 final=1 samples=18031 events=3076 high=3076
+EDGE_RESULT observer=2 assertions=24 releases=24 final=1 samples=18031 events=3075 high=3075
+SELECTOR_RESULT assertions=24 releases=24 final=1
+/private/tmp/maria-nmi-selector/edge-causality-phases/edge_tb.sv:267: $finish called at 363200 (1s)

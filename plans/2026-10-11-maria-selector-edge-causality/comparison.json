@@ -1,0 +1,1696 @@
+{
+  "unchanged_reference_cases": 816,
+  "original_trace_sha256": "ccb421e704ed32ba6327e66584588b24e6cd9acaa2c1d0807f871cd85821def0",
+  "matrix_sha256": "64956827bda437bd9ba1306bf68a700c1345de37a36accec1498107e1d24f62c",
+  "groups": [
+    {
+      "slow": 0,
+      "pal": 0,
+      "observer": 0,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        2,
+        6
+      ],
+      "delays": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "cycle_qualification_applied": false,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 850
+    },
+    {
+      "slow": 0,
+      "pal": 0,
+      "observer": 1,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        8
+      ],
+      "delays": [
+        9,
+        11,
+        12
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 0,
+      "pal": 0,
+      "observer": 2,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        8
+      ],
+      "delays": [
+        8,
+        13,
+        15
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 0,
+      "pal": 1,
+      "observer": 0,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        2,
+        6
+      ],
+      "delays": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "cycle_qualification_applied": false,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 850
+    },
+    {
+      "slow": 0,
+      "pal": 1,
+      "observer": 1,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        8
+      ],
+      "delays": [
+        9,
+        11,
+        12
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 0,
+      "pal": 1,
+      "observer": 2,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        8
+      ],
+      "delays": [
+        8,
+        13,
+        15
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 1,
+      "pal": 0,
+      "observer": 0,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        2,
+        6
+      ],
+      "delays": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "cycle_qualification_applied": false,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 850
+    },
+    {
+      "slow": 1,
+      "pal": 0,
+      "observer": 1,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        12
+      ],
+      "delays": [
+        9,
+        11,
+        12
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 1,
+      "pal": 0,
+      "observer": 2,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        10,
+        12
+      ],
+      "delays": [
+        8,
+        15,
+        17
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 56,
+      "phase_mismatches": 322
+    },
+    {
+      "slow": 1,
+      "pal": 1,
+      "observer": 0,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        2,
+        6
+      ],
+      "delays": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "cycle_qualification_applied": false,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 850
+    },
+    {
+      "slow": 1,
+      "pal": 1,
+      "observer": 1,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        12
+      ],
+      "delays": [
+        9,
+        11,
+        12
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 0,
+      "phase_mismatches": 0
+    },
+    {
+      "slow": 1,
+      "pal": 1,
+      "observer": 2,
+      "cases": 204,
+      "pulses": 850,
+      "widths": [
+        10,
+        12
+      ],
+      "delays": [
+        8,
+        15,
+        17
+      ],
+      "cycle_qualification_applied": true,
+      "cycle_qualification_failed_cases": 56,
+      "phase_mismatches": 322
+    }
+  ],
+  "negative_controls": {
+    "wide_edge": "candidate edge wider than one MARIA step",
+    "suppress_edge_observer": "wrong observer pulse inventory"
+  },
+  "cycle_qualification_failures": [
+    {
+      "case": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        0,
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        0,
+        0,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        1,
+        8,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        1,
+        8,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        1,
+        8,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        1,
+        8,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        1,
+        8,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        8,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        1,
+        31,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        1,
+        31,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        1,
+        31,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        1,
+        31,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        1,
+        31,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        1,
+        31,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        1,
+        31,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        2,
+        1,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        1,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        2,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        2,
+        2,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        2,
+        2,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        3,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        3,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        3,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        3,
+        1,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        3,
+        1,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        3,
+        1,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 23
+    },
+    {
+      "case": [
+        4,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        4,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 11
+    },
+    {
+      "case": [
+        4,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        3,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        4,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 7
+    },
+    {
+      "case": [
+        4,
+        2,
+        3,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        16,
+        1,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        16,
+        1,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        16,
+        2,
+        1,
+        0
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    },
+    {
+      "case": [
+        4,
+        2,
+        16,
+        2,
+        1,
+        1
+      ],
+      "observer": 2,
+      "failure": "NMI release has different CPU phase",
+      "mismatches": 1
+    }
+  ],
+  "scope": "Observer-only causal comparison; physical phase alignment remains unqualified"
+}
