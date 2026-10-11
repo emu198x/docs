@@ -1,0 +1,18 @@
+#include <cstdint>
+#include <cstdio>
+struct Handler { uint8_t GetReg(int) { return 0; } };
+struct Probe {
+ Handler handler; Handler* _mmc5MemoryHandler = &handler;
+ unsigned _lastChrReg=0,_splitTileNumber=0,_chrMode=0;
+ bool _ppuInFrame=false,_prevChrA=false;
+ uint16_t _chrBanks[12]={},pages[8]={};
+ void SelectChrPage(unsigned slot,unsigned bank){pages[slot]=bank;}
+ void SelectChrPage2x(unsigned slot,unsigned bank){for(unsigned i=0;i<2;i++)SelectChrPage(slot*2+i,bank+i);}
+ void SelectChrPage4x(unsigned slot,unsigned bank){for(unsigned i=0;i<4;i++)SelectChrPage(slot*4+i,bank+i);}
+ void SelectChrPage8x(unsigned slot,unsigned bank){for(unsigned i=0;i<8;i++)SelectChrPage(slot*8+i,bank+i);}
+@UPDATE_CHR_BANKS@
+};
+int main(){puts("mode,bank,first_expected");for(unsigned mode=0;mode<4;mode++)for(unsigned bank=0;bank<16;bank++){
+ Probe p;p._chrMode=mode;for(auto &b:p._chrBanks)b=bank;p.UpdateChrBanks(true);
+ printf("%u,%u,%u\n",mode,bank,p.pages[0]%251);
+}}

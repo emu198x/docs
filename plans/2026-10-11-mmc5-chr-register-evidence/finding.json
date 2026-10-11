@@ -1,0 +1,17 @@
+{
+  "source_head": "f3604fa2e752dabe1e6a4274d6fd41e3b4bbdf95",
+  "reference_revision": "fabc9a62174f8734a113df6d244f5539ef6b8fcf",
+  "reference_method": "MMC5::UpdateChrBanks",
+  "tested_rows": 64,
+  "mismatching_rows": 34,
+  "mode_mismatches": [
+    14,
+    12,
+    8,
+    0
+  ],
+  "source": "https://www.nesdev.org/wiki/MMC5#CHR_select_$5120-$512B",
+  "mechanism": "chr_reg_for_addr masks valid low bank bits in 8/4/2 KiB modes",
+  "further_validation": "Current NESdev text additionally specifies mode-dependent writes into 10-bit retained registers. Investigate mode changes before choosing a correction; Mesen2 raw registers do not implement that representation.",
+  "scope": "Static bank-selection probe through existing public Mapper API; no production changes; default sprite register set; not full MMC5 validation."
+}
