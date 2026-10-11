@@ -1,0 +1,230 @@
+   Compiling machine-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/machine-commodore-vic-20)
+   Compiling emu198x-esp-at-modem v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/emu198x-esp-at-modem)
+   Compiling mos-vic-i v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-vic-i)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-via-6522)
+   Compiling runtime-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/runtime-commodore-vic-20)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.34s
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/machine_commodore_vic_20-85bebd45cd1cd3b0)
+
+running 26 tests
+test keyboard::tests::single_key ... ok
+test keyboard::tests::no_keys_reads_ff ... ok
+test tests::basic_start_follows_the_fitted_cartridges ... ok
+test tests::expansion_spec_round_trips_and_rejects_a_double_claim ... ok
+test tests::a_dip_switched_cartridge_populates_only_its_own_block ... ok
+test tests::colour_ram_masks_to_nibble ... ok
+test tests::an_8k_cartridge_alone_leaves_the_3k_area_as_open_bus ... ok
+test tests::blk5_ram_answers_when_no_rom_cartridge_claims_it ... ok
+test tests::joystick_reads_through_the_vias ... ok
+test tests::a_3k_expander_alone_leaves_the_blocks_as_open_bus ... ok
+test tests::cartridge_blocks_overlay_ram_and_blk5_and_can_be_removed ... ok
+test tests::expansion_ram_low ... ok
+test tests::keyboard_scan_reads_through_via2 ... ok
+test tests::raw_blk5_autostart_signature_is_visible_to_the_kernal ... ok
+test tests::ram_round_trips ... ok
+test tests::main_ram_round_trips ... ok
+test tests::rom_writes_ignored ... ok
+test tests::user_port_cb2_exposes_via1_pin_transitions ... ok
+test tests::user_port_pb0_external_level_reaches_via1_through_ddr ... ok
+test tests::vic_address_bus_reaches_rom_colour_and_each_visible_ram_bank ... ok
+test tests::ntsc_runs ... ok
+test tests::frame_user_port_exchange_runs_at_cycle_granularity ... ok
+test tests::frame_advances_count ... ok
+test tests::io_decode_mirrors_and_overlaps_reach_every_selected_chip ... ok
+test tests::io_decode_cpu_reads_acknowledge_all_selected_vias_but_peeks_do_not ... ok
+test tests::snapshot_round_trips_live_state ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/joystick_probe.rs (../emu198x/target/debug/deps/joystick_probe-b32cd0e6eacea206)
+
+running 1 test
+test joystick_lines_match_the_standard_layout ... ignored, FIXTURE: needs VIC-20 ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/keyboard_type.rs (../emu198x/target/debug/deps/keyboard_type-704f246260000b5d)
+
+running 1 test
+test types_a_basic_line_and_prints_the_result ... ignored, FIXTURE: needs VIC-20 KERNAL/BASIC/char ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rom_boot.rs (../emu198x/target/debug/deps/rom_boot-9c1d4d5ef77afecd)
+
+running 1 test
+test rom_set_boots_without_panic ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (../emu198x/target/debug/deps/synthetic_firmware_boot-c3f5138adbfd4bde)
+
+running 2 tests
+test synthetic_firmware_runs_and_floods_the_display ... ok
+test the_control_image_renders_no_red_at_all ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/via_timer_probe.rs (../emu198x/target/debug/deps/via_timer_probe-14fc176a4c86739c)
+
+running 3 tests
+test both_timer_start_reads_and_flags_match_native_vice ... ok
+test via2_timer1_read_105_cycles_after_t1ch_write_matches_vice ... ok
+test timer2_post_underflow_reads_match_native_vice ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.95s
+
+     Running tests/vici_vice_survey.rs (../emu198x/target/debug/deps/vici_vice_survey-ab841544bc3c0f38)
+
+running 6 tests
+test dump_a_survey_case ... ignored, DIAGNOSTIC: set VIC20_SURVEY_CASE=<id> and VIC20_SURVEY_OUT=<dir>
+test survey_timing_measurements ... ignored, DIAGNOSTIC: needs VIC-20 survey/ROM fixtures and VIC20_TIMING_OUT=<new directory>
+test the_comparator_rejects_a_deliberately_wrong_frame ... ignored, FIXTURE: needs the VIC-20 VICE survey (EMU198X_VIC20_VICE_SURVEY_DIR) and VIC-20 ROMs (EMU198X_VIC20_ROM_DIR)
+test vic_i_matches_the_vice_survey ... ignored, FIXTURE: needs the VIC-20 VICE survey (EMU198X_VIC20_VICE_SURVEY_DIR) and VIC-20 ROMs (EMU198X_VIC20_ROM_DIR)
+test the_comparator_counts_matches_by_colour_number ... ok
+test the_comparator_refuses_what_it_cannot_classify ... ok
+
+test result: ok. 2 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/mos_via_6522-ce0e16332da2799f)
+
+running 27 tests
+test tests::ca1_edge_sets_interrupt_and_port_access_clears_it ... ok
+test tests::handshake_outputs_go_low_on_access_and_high_on_the_active_edge ... ok
+test tests::cb2_input_no_irq_clear_mode_persists_until_ifr_write ... ok
+test tests::port_b_reads_do_not_start_or_cancel_a_write_pulse ... ok
+test tests::port_reads_mix_outputs_and_inputs ... ok
+test tests::port_a_reads_and_writes_pulse_but_alternate_accesses_do_not ... ok
+test tests::port_a_input_latch_holds_value_until_next_edge ... ok
+test tests::ier_set_and_clear_drive_irq_bit ... ok
+test tests::reading_ifr_does_not_clear_pending_flags ... ok
+test tests::set_ca1_level_raises_interrupt_without_tick ... ok
+test tests::set_ca2_level_is_inert_when_ca2_is_an_output ... ok
+test tests::set_ca2_level_raises_interrupt_on_the_active_edge ... ok
+test tests::shift_out_phi2_rate_emits_msb_first_over_16_ticks ... ok
+test tests::sr_disabled_mode_clears_ifr_and_does_not_shift ... ok
+test tests::sr_external_clock_shift_in_on_cb1_falling_edge ... ok
+test tests::timer1_one_shot_flag_sets_n_plus_two_cycles_after_the_write ... ok
+test tests::timer1_one_shot_keeps_visible_counter_advancing_after_irq ... ok
+test tests::timer1_raises_irq_and_reloads_in_free_run ... ok
+test tests::timer1_read_one_cycle_after_a_t1ch_write_returns_the_value_written ... ok
+test tests::timer2_can_count_pb6_falling_edges ... ok
+test tests::timer2_counts_phi2_cycles ... ok
+test tests::timer2_pulse_load_counts_the_first_pb6_edge_without_a_delay ... ok
+test tests::timer2_restart_retains_the_new_load_cycle ... ok
+test tests::timer2_start_reads_match_timer1_in_interval_mode ... ok
+test tests::timer2_flag_sets_after_the_load_and_countdown ... ok
+test tests::timer2_keeps_counting_after_its_one_shot_interrupt ... ok
+test tests::timer2_keeps_counting_pb6_edges_after_its_interrupt ... ok
+
+test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/mos_vic_i-c51caf2a62c0bb9c)
+
+running 24 tests
+test tests::raster_registers_follow_the_live_scanline ... ok
+test tests::register_3_bit_0_doubles_the_character_height ... ok
+test tests::colour_ram_bit_3_never_reaches_the_palette ... ok
+test tests::a_multicolour_cell_draws_from_four_colours ... ok
+test tests::registers_2_and_3_set_how_many_columns_and_rows_there_are ... ok
+test tests::registers_2_and_5_select_the_screen_and_colour_offsets_together ... ok
+test tests::reverse_video_swaps_only_the_ink_and_paper_of_a_multicolour_cell ... ok
+test tests::a_mid_frame_border_write_splits_the_border ... ok
+test tests::a_multicolour_pixel_is_two_dots_wide ... ok
+test tests::the_6560_reports_a_line_37_cycles_before_drawing_it ... ok
+test sound_tests::volume_zero_mutes_an_enabled_tone ... ok
+test tests::reverse_video_does_not_change_the_border_colour ... ok
+test tests::the_6560_holds_line_0_back_for_33_cycles ... ok
+test tests::the_column_count_is_read_at_the_start_of_the_line ... ok
+test sound_tests::noise_voice_is_audible ... ok
+test tests::the_pal_kernals_origin_clips_an_ntsc_display ... ok
+test tests::the_window_holds_the_field_and_opens_where_blanking_ends ... ok
+test tests::each_kernals_origin_frames_the_whole_display_in_border ... ok
+test sound_tests::silent_at_power_on ... ok
+test tests::the_origin_registers_move_the_display ... ok
+test sound_tests::enabled_tone_is_audible_and_oscillates ... ok
+test tests::the_stock_registers_land_the_display_on_the_stock_border ... ok
+test tests::the_row_count_is_read_at_the_top_of_the_frame ... ok
+test sound_tests::higher_frequency_register_raises_pitch ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/runtime_commodore_vic_20-c8c2200233af139e)
+
+running 13 tests
+test profiles::tests::each_model_looks_for_its_own_regional_kernal_first ... ok
+test profiles::tests::profile_declares_three_roms ... ok
+test runtime::tests::short_program_media_is_rejected_at_the_slot_boundary ... ok
+test runtime::tests::program_media_selects_the_expansion_from_its_load_address ... ok
+test snapshot::tests::decode_rejects_old_schema_before_reading_payload ... ok
+test profiles::tests::profile_declares_the_standard_program_slot ... ok
+test runtime::tests::a_3k_program_evicts_the_blocks_that_would_move_the_basic_start ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test runtime::tests::expanded_basic_prg_keeps_cartridges_beyond_the_one_it_needs ... ok
+test runtime::tests::expanded_basic_prg_fits_blk1_when_it_is_missing ... ok
+test input::tests::button_events_drive_the_control_port ... ok
+test input::tests::arrow_keys_stay_on_the_keyboard_not_the_joystick ... ok
+test snapshot::tests::restore_preserves_timer2_load_underflow_and_countdown_in_both_vias ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
+
+     Running tests/cartridge.rs (../emu198x/target/debug/deps/cartridge-116b1484f5bb4c2f)
+
+running 1 test
+test kernal_cold_starts_a_blk5_cartridge_loaded_as_standard_media ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (../emu198x/target/debug/deps/catalogue-37b78263dbdcb3f7)
+
+running 1 test
+test restored_roms_ram_and_cartridge_survive_reset_and_regional_replacement ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/debug_target.rs (../emu198x/target/debug/deps/debug_target-a7468ff7c0a0568f)
+
+running 1 test
+test debug_surface_works_on_6502 ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/program.rs (../emu198x/target/debug/deps/program-357e32ac8723fb67)
+
+running 3 tests
+test expanded_basic_prg_executes_its_sys_entry_point ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+test expanded_basic_prg_loads_through_the_top_of_the_block_1_expansion ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+test expanded_basic_prg_selects_8k_loads_and_queues_run ... ignored, FIXTURE: needs VIC-20 ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (../emu198x/target/debug/deps/snapshot_roundtrip-7a33b8f9a15035c3)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_commodore_vic_20
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mos_via_6522
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mos_vic_i
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_commodore_vic_20
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

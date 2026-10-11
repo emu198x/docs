@@ -1,0 +1,8 @@
+    Checking mos-vic-i v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-vic-i)
+    Checking mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-via-6522)
+    Checking format-commodore-vic-20-crt v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/format-commodore-vic-20-crt)
+    Checking emu198x-esp-at-modem v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/emu198x-esp-at-modem)
+    Checking emu198x-shell v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/emu198x-shell)
+    Checking machine-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/machine-commodore-vic-20)
+    Checking runtime-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/runtime-commodore-vic-20)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.10s

@@ -1,0 +1,32 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling mos-vic-i v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-vic-i)
+   Compiling mos-via-6522 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/mos-via-6522)
+   Compiling format-commodore-vic-20-crt v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/format-commodore-vic-20-crt)
+   Compiling machine-commodore-vic-20 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/machine-commodore-vic-20)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.00s
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/machine_commodore_vic_20-5ec3fdfa80a365c3)
+
+running 2 tests
+
+thread 'tests::io_decode_mirrors_and_overlaps_reach_every_selected_chip' (90720395) panicked at crates/machine-commodore-vic-20/src/lib.rs:837:21:
+assertion `left == right` failed: Pal $901c
+  left: 243
+ right: 195
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tests::io_decode_cpu_reads_acknowledge_all_selected_vias_but_peeks_do_not' (90720394) panicked at crates/machine-commodore-vic-20/src/lib.rs:884:21:
+assertion `left == right` failed: CPU data Pal $9010
+  left: 243
+ right: 195
+test tests::io_decode_mirrors_and_overlaps_reach_every_selected_chip ... FAILED
+test tests::io_decode_cpu_reads_acknowledge_all_selected_vias_but_peeks_do_not ... FAILED
+
+failures:
+
+failures:
+    tests::io_decode_cpu_reads_acknowledge_all_selected_vias_but_peeks_do_not
+    tests::io_decode_mirrors_and_overlaps_reach_every_selected_chip
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 24 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-commodore-vic-20 --lib`
