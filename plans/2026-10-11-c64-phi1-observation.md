@@ -3,7 +3,7 @@
 Lane: engineering-frontier accuracy. The Phi1 fetch-stage and snapshot proposal
 remains pending approval. The separate PRA correction uses existing saved
 state and is validated in [source PR 1714](https://github.com/emu198x/emu198x/pull/1714);
-its evidence and limits are recorded below. The uniform colour-RAM guest proves
+merged as `bc78410f` after all checks completed; its evidence and limits are recorded below. The uniform colour-RAM guest proves
 the bus source is missing, but cannot identify individual fetch slots.
 
 1. Inspect the staged VICE `phi1timing` v2 source and hardware-provenance readme.
@@ -364,3 +364,13 @@ matches every physical board. The primary observation note records the same
 uncertainty. Qualify stable cells and board conditions, retain disputed cells
 as explicit open observations, and keep enabled-sprite/Phi2 qualification
 moving independently. No DDRA production change is justified by this audit.
+
+### PRA integration
+
+Source PR 1714 merged by rebase as `bc78410f277ad7f51ab27530e723e620bbd80607`.
+All 28 reported checks completed with success or their expected skipped/neutral
+status at the reviewed head `bee39c1a`. CI's uploaded workspace evidence reports
+7,757 passed, zero failed, 682 ignored and 96 fixture-dependent skips. The three
+affected packages account for 402 executed tests, zero failures and zero skips;
+the 11 native VIC-II fixtures were verified separately on the staged local corpus.
+The broader issue 1713 and the separate Phi1 schema proposal remain open.
