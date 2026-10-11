@@ -1,0 +1,9 @@
+{
+  "reference-7-guarded.stdout.log": "f02ee91886fcb2e7500c17fb2bfc3fe0b0ee56aa24e394b6e4a08d49f6ef2422",
+  "reference-7-guarded.trace.log": "c3c833e767aef9d400ad706b18cf3f0a73639ba5802b13c08e4cd1bb008814e2",
+  "reference-7-intact.stdout.log": "ccc65690271ee7055e3213dc0444061b54d58030d5d53663ffd713ea1e484a90",
+  "reference-7-intact.trace.log": "85d7d66f6db3a2ef0b057d3a84c0465aeb1b92afde4dd3ef77dc667ea0b2a4c5",
+  "reference_oam_trace.c": "5cbad178b38ddee4eee3610e887b710b42d46285178821117b4b8c6faf1f3a18",
+  "sm83-idu-pins.csv": "417557a4e549555fd5688cbfdbc736814cdf1c3eaaa64a128c8c7223d5b4bad4",
+  "sm83_idu_pins.rs": "06653cab33dcaa573bc20ebde701f6e45892abf0c8bc611d8c8cf13daeb8266e"
+}

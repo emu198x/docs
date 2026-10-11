@@ -1,0 +1,13 @@
+cycle,pc,opcode,m_cycle,de,addr,mreq,rd,wr
+0,0100,00,0,00d8,0100,true,true,false
+1,0102,11,2,00d8,0101,true,true,false
+2,0103,11,3,00d8,0102,true,true,false
+3,0103,11,0,fe00,0103,true,true,false
+4,0104,13,2,fe01,0103,false,false,false
+5,0104,13,0,fe01,0104,true,true,false
+6,0105,1b,2,fe00,0104,false,false,false
+7,0105,1b,0,fe00,0105,true,true,false
+8,0106,00,0,fe00,0106,true,true,false
+9,0108,c3,2,fe00,0107,true,true,false
+10,0109,c3,3,fe00,0108,true,true,false
+11,0105,c3,4,fe00,0108,false,false,false
