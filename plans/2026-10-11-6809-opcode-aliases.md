@@ -124,3 +124,39 @@ verified second-cycle read instead of forbidding it.
 This closes the inherent portion of the matrix, not the memory timing fault
 or issue #130 as a whole. The native reference's 1,056 rows remain preserved
 so the unresolved cases stay visible.
+
+## Indexed validation preparation
+
+Before implementing stage B, extend the independent full-core wrapper to all
+220 currently accepted indexed postbytes, all eleven documented memory RMW
+operations, five offset-byte patterns, four complete register seeds and normal
+or wrapping PCs (96,800 cases). Generate common input rows, then run those rows
+through the unchanged reference and the public-pin core independently. Compare
+final registers, cycle counts and every ordered read/write event. Report exact
+counts and representative failures by operation/postbyte, with source/input
+hashes and assertions against empty, duplicate or incomplete output.
+
+This is diagnostic preparation only; it does not implement the proposed
+snapshot extension. Keep source and generated temporary outputs outside the
+reference checkout. Retain the input generator, wrappers and compressed traces
+with the plan so an approved correction can be checked against the same cases.
+
+## Indexed diagnostic result
+
+The [archived diagnostic](2026-10-11-6809-opcode-aliases/indexed/README.md)
+executes all 96,800 planned cases. All final registers, write addresses/data
+and total cycle counts match the reference. Bus events differ in 96,776 rows:
+every one of the 88,000 writes occurs exactly two cycles early. TST differs in
+8,776 of its 8,800 traces; its 24 exact rows are coincident addresses/data,
+not evidence that those addressing modes are generally correct.
+
+Nine comparator tests verify full-reference equality, reject incomplete or
+malformed inputs and detect injected register, cycle and write errors. Both
+compiled probes reproduce the archived traces byte-for-byte; all three ZIP
+members have verified row counts and SHA-256 hashes. This is flat-memory
+reference evidence, not a physical capture or sideband/next-fetch validation.
+The proposed stage B acceptance checks still need those additional checks.
+
+Stage A merged as PR #1716, commit
+`8aabf2ec56e41870429c17a9d8fc9faca70344be`, after all applicable CI checks
+passed. Stage B remains pending approval; #130 remains open.
