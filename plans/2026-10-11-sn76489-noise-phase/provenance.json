@@ -1,0 +1,36 @@
+{
+  "baseline_commit": "dcb942931f97de6c9061dd76dd5ba763a053a1ef",
+  "ares_commit": "0ac4d8220c507f2554b048a67cb52a745b32e7ba",
+  "ares_source_sha256": {
+    "ares/component/audio/sn76489/sn76489.cpp": "0f7bf3e3ab2dde36585da4f13c737e61156c98126b572b18e13bf414f091b4fd",
+    "ares/component/audio/sn76489/sn76489.hpp": "57131b4b39f04c6c8672a2c3ac327fd705a1de10e0454593f17d3f8516fbbefd",
+    "ares/component/audio/sn76489/serialization.cpp": "91042781ddf23ebb4b92f003b50b5d130f501c784a9d533ceefbddeee1e92521",
+    "ares/ares/types.hpp": "eb7664b5ec15718ae49308ce343c91c5719f1e37a2f85fccb388466e0eb6923b",
+    "nall/nall/nall.hpp": "3a602c196fcdeebcf745317c0e2c6381ea4a32555f814e10e7c8fe4ecf6ef924",
+    "nall/nall/array.hpp": "e438141dfc5b062c2b13dac98331b880e146694b87f2ab3eac2a10833fdd3f68",
+    "nall/nall/serializer.hpp": "7d3e00497a1ce8e61585b0e41efcd2a130974cde98f853019ad5bd25fbbea1af",
+    "nall/nall/primitives/natural.hpp": "5b402225d09932edff89ef41b4c8ebf693babc0ca409b9b22eef09158f2c8219",
+    "nall/nall/primitives/bit-range.hpp": "01a6d5e73738f27d149025ccc358b1771eb218fc7519f1ff42dd32d4a23d011c"
+  },
+  "xroar_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "ares_observations": 1152,
+  "baseline_observations": 2304,
+  "rate_mismatches": 896,
+  "output_bit_disagreements": 234,
+  "reference_build_warnings": 181,
+  "phase_collision_histories": 2,
+  "first_audible_output_divergence_tick": 7424,
+  "sha256": {
+    "collision.c": "055b25cb1efc98d9a1a8d706ce9913ae3fe41c92e73eb611e51db628d540fc8e",
+    "collision.csv": "889941fb9e27f3c56acdfbaa7e3475cc9bd3222239819788edc647144bf9932f",
+    "ares.cpp": "36213c22487fca1a3e17a0c36aaa8e3a9a964d6e88ff68ff2785708f0ec7e56b",
+    "ares.csv": "7dd73cc8b03117bd79332ccc56358c7653d6b2776b9b43ce14d2dc5c02679f25",
+    "ares-build.log": "7332097332e06b0cf11c6b41c2a44e74852a40aed959926214f0ffce2a491ee5",
+    "probe.rs": "1051689380275400c7c36a4b64bee25a623a0834121a3e79cc1247e032985175",
+    "baseline.csv": "b13440044190104a9214d1ef01e0efcf37dca4c928a98eac261174058c0f9c13",
+    "check.py": "93e991aa0376fb87ec288cdf0ba3d08c2106fa3aad08778d3a19e65f81eb7387",
+    "build.sh": "77ffdce1805767d381b167e7979e5c42275285525e6c31f4a7545e3ea4c6aaab",
+    "summary.json": "450987d77dea532507a273756984ac0c284744c27486507d476508c56181c85e",
+    "include/ares/ares.hpp": "e2db1bda8ed046d9cdb2aaed7acb5ef4f8f45900567121e5a10e2de93f72207a"
+  }
+}

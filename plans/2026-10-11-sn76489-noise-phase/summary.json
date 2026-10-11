@@ -1,0 +1,7 @@
+{
+  "rows": 1152,
+  "rate_mismatches": 896,
+  "lfsr_sequence_mismatches": 0,
+  "output_bit_mismatches": 234,
+  "ares_mode3_nonrising_events": 768
+}
