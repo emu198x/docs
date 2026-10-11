@@ -1,0 +1,12 @@
+[
+  {
+    "host": "reference_gateboy",
+    "case": "missing ROM",
+    "exit_code": 3
+  },
+  {
+    "host": "reference_mealybug",
+    "case": "missing ROM",
+    "exit_code": 3
+  }
+]

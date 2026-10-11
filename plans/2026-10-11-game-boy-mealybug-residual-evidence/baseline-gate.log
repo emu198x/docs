@@ -1,0 +1,29 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-mealybug/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/60734ed0b40fce21: Operation not permitted (os error 1)
+   Compiling bitflags v2.11.1
+   Compiling flate2 v1.1.10
+   Compiling nintendo-game-boy-mbc v0.31.0 (/private/tmp/198x-gb-mealybug/crates/nintendo-game-boy-mbc)
+   Compiling common-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-mealybug/crates/common-nintendo-game-boy)
+   Compiling serde-big-array v0.5.1
+   Compiling sharp-lr35902 v0.31.0 (/private/tmp/198x-gb-mealybug/crates/sharp-lr35902)
+   Compiling nintendo-game-boy-timer v0.31.0 (/private/tmp/198x-gb-mealybug/crates/nintendo-game-boy-timer)
+   Compiling nintendo-game-boy-apu v0.31.0 (/private/tmp/198x-gb-mealybug/crates/nintendo-game-boy-apu)
+   Compiling nintendo-game-boy-ppu v0.31.0 (/private/tmp/198x-gb-mealybug/crates/nintendo-game-boy-ppu)
+   Compiling png v0.18.1
+   Compiling format-nintendo-game-boy-cartridge v0.31.0 (/private/tmp/198x-gb-mealybug/crates/format-nintendo-game-boy-cartridge)
+   Compiling machine-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-mealybug/crates/machine-nintendo-game-boy)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.96s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_nintendo_game_boy-c449fd55bd0485b8)
+
+running 1 test
+m3_lcdc_bg_en_change: 4 px vs DMG-CPU B (gated), 232 px vs DMG-blob
+m3_lcdc_win_en_change_multiple_wx: 0 px vs DMG-CPU B (gated), 3 px vs DMG-blob
+test tests::mealybug_dmg_ppu_gate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 37 filtered out; finished in 5.46s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-3d50a5fc30fa1d1a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+

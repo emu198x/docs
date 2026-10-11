@@ -1,0 +1,174 @@
+[
+  {
+    "rom": "m2_win_en_toggle",
+    "marker": "marker phase=1832453 pc=0653",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_bgp_change",
+    "marker": "marker phase=1535165 pc=0626",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 496,
+    "lcd_dmg_blob": 496
+  },
+  {
+    "rom": "m3_bgp_change_sprites",
+    "marker": "marker phase=1602701 pc=064b",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 388,
+    "lcd_dmg_blob": 388
+  },
+  {
+    "rom": "m3_lcdc_bg_en_change",
+    "marker": "marker phase=1780933 pc=064f",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 376,
+    "lcd_dmg_blob": 376,
+    "dmg_cpu_b": 148,
+    "lcd_dmg_cpu_b": 148
+  },
+  {
+    "rom": "m3_lcdc_bg_map_change",
+    "marker": "marker phase=1658013 pc=0655",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_obj_en_change",
+    "marker": "marker phase=1541381 pc=0636",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 56,
+    "lcd_dmg_blob": 56
+  },
+  {
+    "rom": "m3_lcdc_obj_en_change_variant",
+    "marker": "marker phase=1541061 pc=0635",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 216,
+    "lcd_dmg_blob": 216
+  },
+  {
+    "rom": "m3_lcdc_obj_size_change",
+    "marker": "marker phase=1724293 pc=063c",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_obj_size_change_scx",
+    "marker": "marker phase=1721413 pc=063c",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_tile_sel_change",
+    "marker": "marker phase=1658037 pc=0658",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_tile_sel_win_change",
+    "marker": "marker phase=1658117 pc=0660",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_win_en_change_multiple",
+    "marker": "marker phase=1832573 pc=0654",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_win_en_change_multiple_wx",
+    "marker": "marker phase=1651805 pc=065b",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 3,
+    "lcd_dmg_blob": 3,
+    "dmg_cpu_b": 0,
+    "lcd_dmg_cpu_b": 0
+  },
+  {
+    "rom": "m3_lcdc_win_map_change",
+    "marker": "marker phase=1658093 pc=065d",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_obp0_change",
+    "marker": "marker phase=1541381 pc=0636",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_scx_high_5_bits",
+    "marker": "marker phase=1780813 pc=064c",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_scx_low_3_bits",
+    "marker": "marker phase=1593877 pc=0647",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_scy_change",
+    "marker": "marker phase=1780829 pc=064e",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_window_timing",
+    "marker": "marker phase=1651605 pc=065a",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_window_timing_wx_0",
+    "marker": "marker phase=1651605 pc=0653",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_4_change",
+    "marker": "marker phase=1832373 pc=0651",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_4_change_sprites",
+    "marker": "marker phase=2115477 pc=0650",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_5_change",
+    "marker": "marker phase=847285 pc=0646",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_6_change",
+    "marker": "marker phase=847285 pc=0646",
+    "capture_vs_framebuffer": 0,
+    "dmg_blob": 0,
+    "lcd_dmg_blob": 0
+  }
+]
