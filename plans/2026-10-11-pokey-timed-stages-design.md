@@ -23,6 +23,10 @@ partial audio/filter persistence correction awaiting approval in docs PR 55.
   pass. Immediate counter reset drops an IRQ that should survive and restarts
   four clocks early. All 1,440 reference cases pass, including one-clock-away
   borrow cancellation and repeated STIMER writes that postpone both stages.
+- STIMER also omits the waveform preset entirely: 16 of 64 public channel-output
+  cases fail, including hidden state under volume-only mode. The original reset
+  queue passes 960 supplied-event cases; the connected 1,440-case STIMER path
+  now reaches 7,808 verified output transitions with unchanged timer/IRQ traces.
 - The current whole-cycle output observation cannot preserve a half-cycle
   pulse. A rounded-clock mutation of the reference loses the same pulse area.
 - The existing save path omits partial audio sums and filter history. The
@@ -39,9 +43,10 @@ PR 1709; preserve its complete divider inventory.
 
 Further input evidence:
 [AUDF delivery](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-audf-delivery.md)
-and [STIMER delivery](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-stimer-delivery.md).
+and [STIMER delivery](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-stimer-delivery.md),
+followed by [connected reset output](https://github.com/emu198x/docs/blob/main/plans/2026-10-11-pokey-reset-output.md).
 These qualify bounded unlinked paths. Linked resets, combined STIMER/AUDF
-writes, reset waveform delivery, other control writes and physical CPU-write
+writes, other control writes and physical CPU-write
 phase still require validation. The reference's counter-assignment timestamp
 is not itself a physical reload phase; preserve the distinction recorded in
 the STIMER evidence when designing native stages.
