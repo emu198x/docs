@@ -1,0 +1,23 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.09s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+test tests::register_reads_match_full_reference_bus_traces ... FAILED
+
+failures:
+
+---- tests::register_reads_match_full_reference_bus_traces stdout ----
+
+thread 'tests::register_reads_match_full_reference_bus_traces' (92624010) panicked at crates/motorola-6809/src/lib.rs:6898:9:
+1472 / 3072 bus vectors differ; first: Some("19 00 00 4000 2 00 a5 04 4001 00 50a5 r4000:19,r4001:12: got 2 00 a5 04 4001 00 50a5 r4000:19,rffff:00")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::register_reads_match_full_reference_bus_traces
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 91 filtered out; finished in 0.02s
+
+error: test failed, to rerun pass `-p motorola-6809 --lib`

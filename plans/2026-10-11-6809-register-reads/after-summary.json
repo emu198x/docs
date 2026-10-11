@@ -1,0 +1,133 @@
+{
+  "counts": {
+    "cases": 3264,
+    "qualified_cases": 3072,
+    "qualified_mismatches": 0,
+    "registers": 48,
+    "cycles": 192,
+    "bus": 192
+  },
+  "by_opcode": {
+    "12": {
+      "cases": 96
+    },
+    "1b": {
+      "cases": 96
+    },
+    "19": {
+      "cases": 96,
+      "registers": 48
+    },
+    "1a": {
+      "cases": 96
+    },
+    "1c": {
+      "cases": 96
+    },
+    "1d": {
+      "cases": 96
+    },
+    "3a": {
+      "cases": 96
+    },
+    "3d": {
+      "cases": 96
+    },
+    "40": {
+      "cases": 96
+    },
+    "41": {
+      "cases": 96
+    },
+    "43": {
+      "cases": 96
+    },
+    "44": {
+      "cases": 96
+    },
+    "45": {
+      "cases": 96
+    },
+    "46": {
+      "cases": 96
+    },
+    "47": {
+      "cases": 96
+    },
+    "48": {
+      "cases": 96
+    },
+    "49": {
+      "cases": 96
+    },
+    "4a": {
+      "cases": 96
+    },
+    "4c": {
+      "cases": 96
+    },
+    "4d": {
+      "cases": 96,
+      "cycles": 96,
+      "bus": 96
+    },
+    "4f": {
+      "cases": 96
+    },
+    "50": {
+      "cases": 96
+    },
+    "51": {
+      "cases": 96
+    },
+    "53": {
+      "cases": 96
+    },
+    "54": {
+      "cases": 96
+    },
+    "55": {
+      "cases": 96
+    },
+    "56": {
+      "cases": 96
+    },
+    "57": {
+      "cases": 96
+    },
+    "58": {
+      "cases": 96
+    },
+    "59": {
+      "cases": 96
+    },
+    "5a": {
+      "cases": 96
+    },
+    "5c": {
+      "cases": 96
+    },
+    "5d": {
+      "cases": 96,
+      "cycles": 96,
+      "bus": 96
+    },
+    "5f": {
+      "cases": 96
+    }
+  },
+  "examples": {
+    "19": {
+      "expected": "19 00 01 4000 2 60 a5 03 4001 00 50a5 r4000:19,r4001:12",
+      "actual": "19 00 01 4000 2 60 a5 01 4001 00 50a5 r4000:19,r4001:12 false"
+    },
+    "4d": {
+      "expected": "4d 00 00 4000 3 00 a5 04 4001 00 50a5 r4000:4d,rffff:00,rffff:00",
+      "actual": "4d 00 00 4000 2 00 a5 04 4001 00 50a5 r4000:4d,rffff:00 false"
+    },
+    "5d": {
+      "expected": "5d 00 00 4000 3 00 a5 08 4001 00 50a5 r4000:5d,rffff:00,rffff:00",
+      "actual": "5d 00 00 4000 2 00 a5 08 4001 00 50a5 r4000:5d,rffff:00 false"
+    }
+  }
+}

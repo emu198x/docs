@@ -1,0 +1,203 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+   Compiling machine-dragon-32 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-dragon-32)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.46s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_dragon_32-f9bad876801e8e8b)
+
+running 75 tests
+test tests::audio_tape_mux_levels_match_xroar_voltage_model ... ok
+test tests::audio_mux_is_disabled_until_pia1_cb2_enables_it ... ok
+test tests::audio_single_bit_levels_match_xroar_voltage_model ... ok
+test tests::audio_mux_source_is_selected_by_pia0_ca2_and_cb2 ... ok
+test tests::audio_dac_levels_match_xroar_voltage_model ... ok
+test tests::beam_renderer_uses_left_border_css_pipeline_for_first_byte ... ok
+test tests::beam_renderer_delays_css_boundary_writes_until_prefetched_bytes_drain ... ok
+test tests::audio_samples_follow_pia1_dac_when_mux_selects_dac ... ok
+test tests::cartridge_rom_overlays_c000_without_replacing_vectors ... ok
+test tests::binary_program_loads_payload_and_exec_vector ... ok
+test tests::binary_program_rejects_payload_outside_ram ... ok
+test tests::active_area_end_raises_pia0_cb1_frame_sync_falling_edge ... ok
+test tests::binary_program_autorun_sets_program_counter ... ok
+test tests::cartridge_snd_pin_is_normalized_before_mixing ... ok
+test tests::cassette_playback_advances_only_when_motor_relay_is_on ... ok
+test tests::cassette_input_drives_pia1_port_a_bit_zero ... ok
+test tests::cpu_phase_master_ticks_preserve_sam_cycle_lengths ... ok
+test tests::cassette_playback_uses_lsb_first_zero_and_one_periods ... ok
+test tests::beam_renderer_observes_vram_writes_before_latch_point ... ok
+test tests::binary_program_autorun_preserves_initialized_stack_pointer ... ok
+test tests::beam_renderer_latches_vram_before_pixels_are_displayed ... ok
+test tests::dragon64_acia_answers_where_a2_is_set_and_pia0_where_it_is_clear ... ok
+test tests::dragon64_acia_retains_command_and_control_writes ... ok
+test tests::dragon64_decodes_acia_before_pia0_mirror ... ok
+test tests::dragon64_mode_selects_internal_rom_and_leaves_cartridge_window_external ... ok
+test tests::dragon64_pia1_pb2_selects_installed_mode_rom ... ok
+test tests::dragon_dos_cartridge_signature_suppresses_periodic_autorun_firq ... ok
+test tests::cartridge_snd_pin_reaches_audio_output_when_mux_selects_cartridge ... ok
+test tests::dragon32_has_no_acia ... ok
+test tests::dragon_dos_controller_reads_sector_through_p2_registers ... ok
+test tests::beam_renderer_applies_a_mid_line_ag_change_per_byte ... ok
+test tests::dragon_dos_controller_writes_sector_through_p2_registers ... ok
+test tests::dragon_dos_final_byte_allows_pia_drq_ack_before_intrq ... ok
+test tests::dragon_key_labels_map_to_confirmed_matrix_positions ... ok
+test tests::joystick_axis_comparator_drives_pia0_port_a_bit_seven ... ok
+test tests::dragon_key_parser_accepts_control_key_aliases ... ok
+test tests::dragon_dos_controller_reports_record_not_found ... ok
+test tests::games_master_cartridge_switches_sixteen_kib_banks ... ok
+test tests::dragon_dos_write_sector_respects_write_protect ... ok
+test tests::dragon_dos_write_track_respects_write_protect ... ok
+test tests::joystick_axis_comparator_honours_pia0_axis_and_port_selects ... ok
+test tests::joystick_buttons_pull_pia0_port_a_low_bits_low ... ok
+test tests::joystick_comparator_switches_high_at_dac_threshold ... ok
+test tests::joystick_comparator_threshold_uses_pia1_pa2_to_pa7 ... ok
+test tests::keyboard_ands_multiple_selected_columns ... ok
+test tests::keyboard_enter_pulls_row_six_low_when_column_zero_is_selected ... ok
+test tests::keyboard_pulls_row_low_when_selected_column_has_pressed_key ... ok
+test tests::keyboard_rejects_out_of_range_matrix_keys ... ok
+test tests::keyboard_returns_high_when_no_columns_are_selected ... ok
+test tests::machine_records_device_writes_without_stopping ... ok
+test tests::machine_reports_halt_for_illegal_opcode ... ok
+test tests::machine_records_writes_matching_any_watch_range ... ok
+test tests::machine_records_device_reads_without_stopping ... ok
+test tests::machine_records_readonly_rom_writes_without_stopping ... ok
+test tests::memory_feeds_keyboard_matrix_through_pia0_port_a ... ok
+test tests::memory_maps_basic_rom_vectors_and_empty_cartridge_slot ... ok
+test tests::sam_address_dependent_rate_keeps_ram_and_io0_slow ... ok
+test tests::sam_cycle_timing_defaults_to_slow_mpu_cycles ... ok
+test tests::sam_fast_rate_uses_entry_fast_and_aligned_fast_cycles ... ok
+test tests::pcdragon_snapshot_restores_display_peripheral_state ... ok
+test tests::sam_page_select_switches_lower_thirty_two_kib_ram_page ... ok
+test tests::sam_type_one_maps_high_reads_and_writes_to_ram_below_io_page ... ok
+test tests::sam_display_base_writes_after_frame_sync_fall_wait_for_next_fall ... ok
+test tests::vdg_horizontal_timing_uses_mc6847_clock_periods ... ok
+test tests::sam_display_base_writes_update_vdg_on_frame_sync_fall ... ok
+test tests::dragon_dos_type_i_status_reports_periodic_index_pulse ... ok
+test tests::vblank_start_raises_pia0_cb1_frame_sync_rising_edge ... ok
+test tests::step_cycle_drives_cpu_through_complete_eq_phase_sequence ... ok
+test tests::visible_line_hsync_rise_raises_pia0_ca1_rising_edge ... ok
+test tests::visible_line_start_raises_pia0_ca1_hsync_falling_edge ... ok
+test tests::machine_can_dump_sam_selected_text_screen ... ok
+test tests::machine_renders_pia_selected_graphics_mode ... ok
+test tests::dragon_dos_write_track_formats_current_vdk_track ... ok
+test tests::dragon64_acia_receive_interrupt_drives_the_cpu_irq_line ... ok
+test tests::dragon64_serial_byte_takes_one_frame_of_emulated_time ... ok
+
+test result: ok. 75 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-7908171f1b116b4b)
+
+running 2 tests
+test synthetic_firmware_runs_and_fills_the_display ... ok
+test the_control_image_lights_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.99s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-cfe5d29aec05b18a)
+
+running 92 tests
+test registers::tests::condition_code_helpers_mutate_bits ... ok
+test registers::tests::d_combines_a_and_b_big_endian ... ok
+test tests::bsr_pushes_return_pc_and_branches_relative ... ok
+test tests::base_page_sixteen_bit_memory_ops_cover_x_and_u ... ok
+test tests::addd_indexed_and_subd_indexed_share_sixteen_bit_memory_path ... ok
+test tests::add_subtract_and_carry_update_arithmetic_flags ... ok
+test tests::alu_direct_indexed_and_extended_share_memory_read_path ... ok
+test tests::addd_and_subd_update_sixteen_bit_arithmetic_flags ... ok
+test tests::accumulator_rmw_ops_update_values_and_flags ... ok
+test tests::bra_and_jmp_change_pc ... ok
+test tests::condition_code_immediates_mask_and_set_cc ... ok
+test tests::compare_immediate_updates_subtraction_flags_without_mutating_registers ... ok
+test tests::clear_a_and_b_set_expected_flags ... ok
+test tests::compare_direct_indexed_and_extended_share_memory_read_path ... ok
+test tests::cwai_samples_interrupt_on_falling_q_without_restacking ... ok
+test tests::cwai_stacks_then_vectors_when_interrupt_arrives ... ok
+test tests::daa_adjusts_accumulator_after_bcd_add ... ok
+test tests::direct_indexed_and_extended_rmw_ops_use_bus_cycles ... ok
+test tests::direct_jmp_and_long_branches_change_pc ... ok
+test tests::direct_loads_use_direct_page_register ... ok
+test tests::extended_load_store_and_direct_store_use_bus_cycles ... ok
+test tests::external_halt_enters_acknowledge_at_instruction_boundary ... ok
+test tests::external_halt_release_inserts_bus_reacquire_dead_cycle ... ok
+test tests::external_irq_and_firq_enter_via_vectors_with_expected_stack_frames ... ok
+test tests::idle_tick_presents_pc_for_fetch ... ok
+test tests::increment_decrement_and_rotate_accumulators_cover_edge_flags ... ok
+test tests::indexed_load_store_and_auto_increment_use_effective_address ... ok
+test tests::indexed_pc_relative_jmp_uses_pc_after_offset_operand ... ok
+test tests::indirect_indexed_load_reads_pointer_then_effective_address ... ok
+test tests::indirect_pc_relative_store_writes_resolved_effective_address ... ok
+test tests::jmp_indexed_uses_documented_base_and_indexed_extra_cycles ... ok
+test tests::jsr_direct_pushes_return_pc_and_branches_via_direct_page ... ok
+test tests::jsr_extended_and_rts_round_trip_via_s_stack ... ok
+test tests::jsr_indexed_indirect_uses_documented_extra_cycles ... ok
+test tests::lbsr_pushes_return_pc_and_branches_relative ... ok
+test tests::jsr_indexed_uses_documented_base_and_indexed_extra_cycles ... ok
+test tests::lda_and_ldb_immediate_update_nzv_flags ... ok
+test tests::ldd_and_std_cover_immediate_direct_indexed_and_extended ... ok
+test tests::lea_indexed_updates_target_registers_and_x_y_zero_flags ... ok
+test tests::logical_operations_update_nzv_and_preserve_destination_for_bit ... ok
+test tests::memory_shift_and_rotate_ops_cover_flags ... ok
+test tests::memory_tst_reads_without_writing_back ... ok
+test tests::mixed_exchanges_match_coco_cc_dp_direction_and_d_alias_observations ... ok
+test tests::mixed_width_transfers_preserve_the_source_low_byte ... ok
+test tests::nop_fetches_and_returns_to_instruction_boundary ... ok
+test tests::official_accumulator_rmw_timing_fixture_matches_current_core ... ok
+test tests::official_alu8_timing_fixture_matches_current_core ... ok
+test tests::official_indexed_lda_timing_fixture_matches_current_core ... ok
+test tests::official_base_timing_fixture_matches_current_core ... ok
+test tests::official_branch_timing_fixture_matches_current_core ... ok
+test tests::official_indexed_lea_register_timing_fixture_matches_current_core ... ok
+test tests::official_indexed_lea_timing_fixture_matches_current_core ... ok
+test tests::official_stack_timing_fixture_matches_current_core ... ok
+test tests::official_opcode_metadata_variable_cycle_rows_match_current_core ... ok
+test tests::official_opcode_metadata_covers_documented_pages_once ... ok
+test tests::official_rmw_timing_fixture_matches_current_core ... ok
+test tests::phase_step_latches_read_data_on_falling_e ... ok
+test tests::page_two_sixteen_bit_ops_cover_y_s_and_d_compare ... ok
+test tests::page_three_compares_u_and_s_across_addressing_modes ... ok
+test tests::pins_decode_reset_sync_halt_and_vector_acknowledge_states ... ok
+test tests::pins_report_busy_for_documented_multi_cycle_bus_windows ... ok
+test tests::pins_report_fetch_and_internal_cycles ... ok
+test tests::phase_step_samples_irq_on_falling_q_not_falling_e ... ok
+test tests::pins_report_dummy_access_for_internal_cycles ... ok
+test tests::pins_report_hardware_interrupt_vector_fetches ... ok
+test tests::official_opcode_metadata_fixed_cycle_rows_match_current_core ... ok
+test tests::official_opcode_internal_dummy_cycles_use_documented_pin_shape ... ok
+test tests::official_opcode_map_does_not_trip_illegal_opcode_diagnostic ... ok
+test tests::pins_report_interrupt_acknowledge_during_vector_fetch ... ok
+test tests::pins_report_reset_vector_fetches_and_first_opcode_fetch ... ok
+test tests::prefixed_software_interrupts_use_separate_vectors_without_masking ... ok
+test tests::pshs_and_puls_round_trip_full_register_set ... ok
+test tests::pshu_and_pulu_transfer_s_on_u_stack ... ok
+test tests::official_opcode_bus_traces_consume_documented_instruction_bytes ... ok
+test tests::reset_fetches_vector_big_endian ... ok
+test tests::reset_sets_interrupt_masks_without_clearing_other_cc_bits ... ok
+test tests::rti_short_and_full_frame_paths_use_documented_cycles ... ok
+test tests::sex_abx_and_mul_apply_documented_flags ... ok
+test tests::short_conditional_branches_follow_condition_codes ... ok
+test tests::sixteen_bit_immediate_loads_x_u_and_s ... ok
+test tests::swi_stacks_full_frame_and_rti_restores_it ... ok
+test tests::opcode_pages_distinguish_documented_alias_and_unimplemented_slots ... ok
+test tests::sync_continues_after_masked_irq_without_stacking ... ok
+test tests::sync_samples_interrupt_on_falling_q_and_services_next_cycle ... ok
+test tests::sync_waits_for_interrupt_without_consuming_next_opcode ... ok
+test tests::transfer_and_exchange_register_postbytes_follow_6809_encoding ... ok
+test tests::tsc_three_states_cpu_bus_without_asserting_ba ... ok
+test tests::unknown_opcode_halts_for_bringup_visibility ... ok
+test tests::inherent_aliases_match_full_reference_bus_traces ... ok
+test tests::official_opcode_metadata_indexed_addition_rows_match_current_core ... ok
+test tests::transfers_match_compiled_xroar_named_register_vectors ... ok
+test tests::register_reads_match_full_reference_bus_traces ... ok
+
+test result: ok. 92 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests machine_dragon_32
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests motorola_6809
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
