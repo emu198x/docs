@@ -1,0 +1,13 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-blargg/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5a746ee5ecc200e8: Operation not permitted (os error 1)
+    Checking emu198x-test-skip v0.31.0 (/private/tmp/198x-gb-blargg/crates/emu198x-test-skip)
+    Checking nintendo-game-boy-mbc v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-mbc)
+    Checking common-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/common-nintendo-game-boy)
+    Checking sharp-lr35902 v0.31.0 (/private/tmp/198x-gb-blargg/crates/sharp-lr35902)
+    Checking nintendo-game-boy-timer v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-timer)
+    Checking nintendo-game-boy-apu v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-apu)
+    Checking emu198x-shell v0.31.0 (/private/tmp/198x-gb-blargg/crates/emu198x-shell)
+    Checking nintendo-game-boy-ppu v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-ppu)
+    Checking format-nintendo-game-boy-cartridge v0.31.0 (/private/tmp/198x-gb-blargg/crates/format-nintendo-game-boy-cartridge)
+    Checking machine-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/machine-nintendo-game-boy)
+    Checking runtime-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/runtime-nintendo-game-boy)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.65s

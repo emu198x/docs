@@ -1,0 +1,15 @@
+
+running 1 test
+test blargg_interrupt_time_normal_speed_passes ... FAILED
+
+failures:
+
+failures:
+    blargg_interrupt_time_normal_speed_passes
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.00s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.11s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+Error: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+error: test failed, to rerun pass `-p runtime-nintendo-game-boy --test phase2_verification`

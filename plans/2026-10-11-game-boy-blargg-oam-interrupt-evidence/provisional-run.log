@@ -1,0 +1,30 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-blargg/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5a746ee5ecc200e8: Operation not permitted (os error 1)
+   Compiling emu198x-test-skip v0.31.0 (/private/tmp/198x-gb-blargg/crates/emu198x-test-skip)
+   Compiling nintendo-game-boy-mbc v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-mbc)
+   Compiling common-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/common-nintendo-game-boy)
+   Compiling sharp-lr35902 v0.31.0 (/private/tmp/198x-gb-blargg/crates/sharp-lr35902)
+   Compiling nintendo-game-boy-timer v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-timer)
+   Compiling nintendo-game-boy-apu v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-apu)
+   Compiling emu198x-shell v0.31.0 (/private/tmp/198x-gb-blargg/crates/emu198x-shell)
+   Compiling nintendo-game-boy-ppu v0.31.0 (/private/tmp/198x-gb-blargg/crates/nintendo-game-boy-ppu)
+   Compiling format-nintendo-game-boy-cartridge v0.31.0 (/private/tmp/198x-gb-blargg/crates/format-nintendo-game-boy-cartridge)
+   Compiling machine-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/machine-nintendo-game-boy)
+   Compiling runtime-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/runtime-nintendo-game-boy)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.58s
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+
+running 1 test
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/oam_bug.gb: Ok(BlarggRunResult { output: "oam_bug\n", frames: 561, status_code: Some(2) }); final RAM Some((2, "oam_bug\n\n01:ok  02:02  03:ok  04:03  05:02  06:ok  07:01  08:02  \n\nRun failed tests\nindividually for\nmore details.\n\nFailed #2\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/1-lcd_sync.gb: Ok(BlarggRunResult { output: "1-lcd_sync\n", frames: 26, status_code: Some(0) }); final RAM Some((0, "1-lcd_sync\n\n\nPassed\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/2-causes.gb: Ok(BlarggRunResult { output: "2-causes\n", frames: 31, status_code: Some(2) }); final RAM Some((2, "2-causes\n\n\nLD DE,$FE00 : INC DE\n\nFailed #2\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/3-non_causes.gb: Ok(BlarggRunResult { output: "3-non_causes\n", frames: 77, status_code: Some(0) }); final RAM Some((0, "3-non_causes\n\n\nPassed\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/4-scanline_timing.gb: Ok(BlarggRunResult { output: "4-scanline_timing\n", frames: 37, status_code: Some(3) }); final RAM Some((3, "4-scanline_timing\n\n\nINC DE at first corruption\n\nFailed #3\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/5-timing_bug.gb: Ok(BlarggRunResult { output: "5-timing_bug\n", frames: 32, status_code: Some(2) }); final RAM Some((2, "5-timing_bug\n\n\nShould corrupt at beginning of first scanline\n\nFailed #2\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/6-timing_no_bug.gb: Ok(BlarggRunResult { output: "6-timing_no_bug\n", frames: 64, status_code: Some(0) }); final RAM Some((0, "6-timing_no_bug\n\n00 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n10 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n30 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n50 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n70 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n80 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n90 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- \n\nPassed\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/7-timing_effect.gb: Ok(BlarggRunResult { output: "7-timing_effect\n", frames: 255, status_code: Some(1) }); final RAM Some((1, "7-timing_effect\n\n00000000 \nFailed\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/oam_bug/rom_singles/8-instr_effect.gb: Ok(BlarggRunResult { output: "8-instr_effect\n", frames: 44, status_code: Some(2) }); final RAM Some((2, "8-instr_effect\n\n00000000 \nINC/DEC rp pattern is wrong\n\nFailed #2\n"))
+PROBE /Users/stevehill/Projects/198x/assets/test-suites/gameboy/blargg/interrupt_time/interrupt_time.gb: Err("no serial verdict after 1200 frames; partial output: \"\""); final RAM None
+test probe_missing_blargg_corpora ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 6 filtered out; finished in 10.28s
+

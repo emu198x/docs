@@ -1,0 +1,113 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-blargg/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/5a746ee5ecc200e8: Operation not permitted (os error 1)
+   Compiling runtime-nintendo-game-boy v0.31.0 (/private/tmp/198x-gb-blargg/crates/runtime-nintendo-game-boy)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.83s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/runtime_nintendo_game_boy-5c3acf949addaf3f)
+
+running 11 tests
+test profiles::tests::every_model_has_consistent_metadata ... ok
+test input::tests::every_joypad_button_has_a_name ... ok
+test queries::tests::advertised_query_paths_are_unique ... ok
+test queries::tests::cpu_pc_without_cartridge_reports_unavailable ... ok
+test profiles::tests::dmg_profile_is_honest_about_current_boot_scope ... ok
+test queries::tests::unknown_query_path_returns_none ... ok
+test queries::tests::query_paths_without_prefix_returns_full_catalogue ... ok
+test runtime::tests::reset_clears_state_when_cartridge_bytes_no_longer_parse ... ok
+test profiles::tests::profiles_returns_full_catalogue ... ok
+test queries::tests::query_paths_with_no_match_returns_empty ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (/private/tmp/198x-6809-target/debug/deps/catalogue-b94bdaa768067bb5)
+
+running 1 test
+test every_profile_keeps_ram_rtc_and_audio_controls_but_restarts_the_machine ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/debug_surface.rs (/private/tmp/198x-6809-target/debug/deps/debug_surface-4f700b5ac0562ae5)
+
+running 6 tests
+test io_trace_unsupported_for_memory_mapped_io ... ok
+test cpu_state_reports_the_sm83_register_set ... ok
+test poke_writes_through_to_wram ... ok
+test debug_target_present_once_a_cartridge_is_loaded ... ok
+test step_advances_by_whole_m_cycles ... ok
+test peek_and_disassemble_read_the_cartridge ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/lifecycle.rs (/private/tmp/198x-6809-target/debug/deps/lifecycle-a8aa1bf5100d7673)
+
+running 20 tests
+test capabilities_reports_family_capability_set ... ok
+test machine_core_profile_and_time_match_inherent_accessors ... ok
+test blank_runtime_has_dmg_profile_and_no_machine ... ok
+test command_returns_unsupported_for_media_transport ... ok
+test load_media_rejects_unknown_slot ... ok
+test load_media_rejects_wrong_kind ... ok
+test load_media_rejects_unparseable_cartridge_bytes ... ok
+test reset_blank_runtime_is_a_noop ... ok
+test audio_controls_mutate_loaded_machine_mixer ... ok
+test battery_backed_ram_can_be_restored_and_exported ... ok
+test loading_a_valid_cartridge_constructs_the_machine ... ok
+test machine_mut_tracks_cartridge_lifecycle ... ok
+test restore_cartridge_ram_rejects_when_no_cartridge ... ok
+test restore_cartridge_ram_rejects_size_mismatch ... ok
+test restore_cartridge_ram_rejects_when_cartridge_has_no_ram ... ok
+test reset_preserves_external_ram ... ok
+test run_until_without_cartridge_reports_waiting_for_input ... ok
+test set_audio_controls_replaces_loaded_mixer ... ok
+test run_until_advances_machine_time_and_emits_one_frame ... ok
+test key_input_event_presses_joypad_button ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/phase2_verification.rs (/private/tmp/198x-6809-target/debug/deps/phase2_verification-29676a35f9eda6bd)
+
+running 11 tests
+test blargg_cpu_instrs_passes_all_11_subtests ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_instr_timing_passes ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_interrupt_time_full_rom_passes ... ignored, FIXTURE: needs local Blargg interrupt_time ROM; full verdict requires CGB (#324)
+test blargg_interrupt_time_normal_speed_passes ... ignored, FIXTURE: needs local Blargg interrupt_time ROM; checks normal speed only
+test blargg_mem_timing_v1_and_v2_pass ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_oam_bug_passes_aggregate_and_all_singles ... ignored, FIXTURE: needs local Blargg OAM ROMs; currently exposes OAM accuracy failures
+test dmg_acid2_renders_non_trivial_frame ... ignored, FIXTURE: needs local dmg-acid2 ROM
+test mooneye_acceptance_gate_set_passes ... ignored, FIXTURE: needs local mooneye-gb acceptance ROMs
+test mooneye_broad_acceptance_sweep_reports_baseline ... ignored, DIAGNOSTIC: reports broad local mooneye coverage without gating CI
+test blargg_ram_report_keeps_final_text_and_status ... ok
+test interrupt_measurement_check_rejects_incomplete_and_wrong_counts ... ok
+
+test result: ok. 2 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-6809-target/debug/deps/queries-f63feb722351705f)
+
+running 3 tests
+test query_provider_lists_gameboy_paths ... ok
+test headless_session_exposes_gameboy_queries ... ok
+test query_provider_reports_loaded_state_and_cpu_pc ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-6809-target/debug/deps/snapshot_roundtrip-b053395c8b0c8892)
+
+running 3 tests
+test restore_rejects_corrupt_postcard_bytes ... ok
+test restore_rejects_snapshot_from_different_profile ... ok
+test snapshot_round_trip_preserves_state ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/synthetic_cartridge_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cartridge_boot-25597e5851a8c547)
+
+running 1 test
+test the_synthetic_cartridge_boots_and_draws_the_plate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.90s
+
+   Doc-tests runtime_nintendo_game_boy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,43 @@
+Program is running, use 'interrupt' to stop execution.
+Wrote ff to fdff (RAM Mirror)
+Wrote 00 to fdfe (RAM Mirror)
+RAM status=0 frame=1344
+oam_bug
+
+01:ok  02:ok  03:ok  04:ok  05:ok  06:ok  07:ok  08:ok  
+
+Passed
+
+CONSOLE
+oam_bug             
+                    
+01:ok  02:ok  03:ok 
+04:ok  05:ok  06:ok 
+07:ok  08:ok        
+                    
+Passed              
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
