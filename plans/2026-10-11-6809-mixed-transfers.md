@@ -96,7 +96,8 @@ or validate the video chip. The runner rejects malformed image framing, a CPU
 halt, or failure to reach the known terminal loop within 100,000 cycles.
 The downloaded test binary remains external.
 
-After building `motorola-6809`, compile the runner against its generated rlib:
+After building `motorola-6809`, compile the runner against its generated rlib
+using the same pinned Rust toolchain (1.99.0 for this run):
 
 ```sh
 rustc --edition=2024 run_hardware_guest.rs \
