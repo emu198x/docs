@@ -530,3 +530,52 @@ Preserve the invalid-byte source and MC advancement in the pending fetch-stage
 correction. No production or snapshot change is made here. Last-byte invalid
 accesses, live pointer writes, active graphics and late matrix ownership remain
 separate coverage requirements. The larger schema proposal remains pending.
+
+### Live pointer-write qualification
+
+Add original `sprite_pointer.py` guests to the existing evidence directory.
+Reuse the seeded sprite blocks and change a pointer through a real CPU store
+while DMA is active; record that store and the native pointer/data fetches.
+Calibrate across a scanline before selecting boundary cases. Compare the old
+and new source RAM and preserve MC progression across the pointer change.
+Exercise both pointer directions and banks/models, with explicit coverage for
+writes delayed by DMA. `verify_sprite_pointer.py` and `test_sprite_pointer.py`
+will reject stale/eager pointer selection, mixed row sources, wrong phase and
+missing cases. Keep sprite line-wrap cases distinct from the first sprite's
+schedule. These are observation tools only; no production or snapshot design
+changes are made by this step.
+
+
+The sprite-0 boundary is now qualified through 160 calibration runs and 80
+retained boundary captures: five VIC models, four banks, both `$80→$81` and
+`$81→$80` pointer changes, and writes before/after the line-90 fetch. All 5,040
+sprite bytes use the CPU-clock-selected pointer and preserve the 0–62 MC
+sequence. The source changes at offset 30 or 33; each three-byte row keeps one
+pointer. These captures contain 412,864 native observer records.
+
+All forty before/after pairs add one NOP but move the actual store from cycle
+55 to 62. Ten DMA-disabled controls (51,192 records) differ from their enabled
+programs by only the enable byte and restore the requested two-clock gap on all
+five profiles. Earlier DMA changes polling alignment, so the comparison uses
+the within-pair gap; it does not assume identical absolute clocks with DMA on
+and off. CPU tracing identifies the real stores independently of pointer reads.
+
+`pointer-native.zip` and `pointer-controls.zip` retain the complete native
+records, original PRGs, CPU logs, source RAM dumps and sentinels.
+`pointer-calibration.json.gz` retains the sweep measurements, and
+`pointer-summary.json` pins the native binary and archive identities. All 94
+tests pass, including 15 new pointer/control tests. Coherent stale/eager Phi1
+changes still fail the CPU-clock check, and mixed row sources or MC resets fail
+even when the structural trace remains valid.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_sprite_pointer.py pointer-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+This is native reference evidence for sprite 0, not production execution or a
+newly established production bug. The existing source already latches
+`chain_fetch_base` for later bytes and advances its counter. Preserve that
+behaviour in the pending fetch correction. Other sprites' line-wrap timing,
+writes between individual fetch phases, dynamic bank changes and save/replay
+remain separate gates. Production and snapshot formats are unchanged.
