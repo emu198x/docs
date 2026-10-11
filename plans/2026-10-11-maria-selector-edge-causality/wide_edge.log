@@ -1,0 +1,3 @@
+SETUP t=256 ctrl=40 zp=1800 row=0 col=112 mclk=10 phi=00 pclk=0 men=0 old=1 div=0 toggle=0
+FATAL: /private/tmp/maria-nmi-selector/edge-causality-phases/edge_tb.sv:105: candidate edge wider than one MARIA step
+       Time: 2605  Scope: fetch_tb
