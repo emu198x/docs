@@ -1,0 +1,12 @@
+{
+  "publication": "https://tlindner.macmess.org/?p=945",
+  "test_package_url": "https://tlindner.macmess.org/wp-content/uploads/2022/11/Test-Exg-TFR.zip",
+  "hardware_image_url": "https://tlindner.macmess.org/wp-content/uploads/2022/11/REAL-coco2b.png",
+  "files_sha256": {
+    "Test-Exg-TFR.zip": "a751a8f8ac522e36e5a515c4424c7b5e49c141790af807dc2da06fbfdf95e429",
+    "REAL-coco2b.png": "ba8470bbb164f028acf455164c0b84358d85c351aa08a7d2da816b0457e5704c",
+    "mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639"
+  },
+  "reference_repository": "https://www.6809.org.uk/git/xroar.git",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d"
+}

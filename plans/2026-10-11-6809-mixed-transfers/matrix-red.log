@@ -1,0 +1,19 @@
+   Compiling motorola-6809 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6809)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.30s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/motorola_6809-2d815458f3a79a46)
+
+running 1 test
+
+thread 'tests::transfers_match_compiled_xroar_named_register_vectors' (92405752) panicked at crates/motorola-6809/src/lib.rs:7765:9:
+339 / 800 register vectors differ; first: Some("1e 08: Registers { a: 0, b: 255, dp: 3, cc: 4, x: 4386, y: 13124, u: 21862, s: 30600, pc: 16386 } != Registers { a: 255, b: 1, dp: 3, cc: 4, x: 4386, y: 13124, u: 21862, s: 30600, pc: 16386 }")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::transfers_match_compiled_xroar_named_register_vectors ... FAILED
+
+failures:
+
+failures:
+    tests::transfers_match_compiled_xroar_named_register_vectors
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 89 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p motorola-6809 --lib`
