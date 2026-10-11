@@ -1,0 +1,9 @@
+    Checking emu198x-test-skip v0.31.0 (<source>/crates/emu198x-test-skip)
+    Checking emu198x-mos-6502 v0.6.0 (<source>/crates/emu198x-mos-6502)
+    Checking emu198x-ricoh-apu-2a03 v0.6.0 (<source>/crates/emu198x-ricoh-apu-2a03)
+    Checking format-nintendo-nes-ines v0.31.0 (<source>/crates/format-nintendo-nes-ines)
+    Checking emu198x-shell v0.31.0 (<source>/crates/emu198x-shell)
+    Checking ricoh-ppu-2c02 v0.31.0 (<source>/crates/ricoh-ppu-2c02)
+    Checking machine-nintendo-nes v0.31.0 (<source>/crates/machine-nintendo-nes)
+    Checking runtime-nintendo-nes v0.31.0 (<source>/crates/runtime-nintendo-nes)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.35s

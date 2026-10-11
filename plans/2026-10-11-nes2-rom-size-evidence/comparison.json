@@ -1,0 +1,8 @@
+{
+  "headers": 4096,
+  "size_results": 8192,
+  "matching_32bit_reference": 7926,
+  "outside_32bit_reference": 266,
+  "rejected_unrepresentable": 10,
+  "reference_sha256": "b72fd1330b8a2a3f960b8d9a030489c7558a551b1824021eec4b524dc7b37343"
+}

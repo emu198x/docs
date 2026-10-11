@@ -1,0 +1,30 @@
+   Compiling format-nintendo-nes-ines v0.31.0 (<source>/crates/format-nintendo-nes-ines)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.86s
+     Running tests/nes2_rom_sizes.rs (<target>/debug/deps/nes2_rom_sizes-3f113d8db15431d6)
+
+running 3 tests
+test nes2_extreme_sizes_return_errors_without_overflow_or_allocating_payloads ... ok
+test nes2_odd_multipliers_place_chr_after_the_exact_prg_extent ... FAILED
+test nes2_linear_and_exponent_images_deliver_identical_rom_bytes ... FAILED
+
+failures:
+
+---- nes2_odd_multipliers_place_chr_after_the_exact_prg_extent stdout ----
+
+thread 'nes2_odd_multipliers_place_chr_after_the_exact_prg_extent' (93846248) panicked at crates/format-nintendo-nes-ines/tests/nes2_rom_sizes.rs:55:44:
+odd-sized image: "iNES file too short: expected 95617552 bytes, got 12816"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- nes2_linear_and_exponent_images_deliver_identical_rom_bytes stdout ----
+
+thread 'nes2_linear_and_exponent_images_deliver_identical_rom_bytes' (93846247) panicked at crates/format-nintendo-nes-ines/tests/nes2_rom_sizes.rs:33:51:
+exponent image: "iNES file too short: expected 63905808 bytes, got 40976"
+
+
+failures:
+    nes2_linear_and_exponent_images_deliver_identical_rom_bytes
+    nes2_odd_multipliers_place_chr_after_the_exact_prg_extent
+
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p format-nintendo-nes-ines --test nes2_rom_sizes`
