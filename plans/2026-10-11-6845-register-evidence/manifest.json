@@ -1,9 +1,9 @@
 {
   "baseline_source": "411092c1de02f286ac55086db505268651818739",
-  "tested_source": "8f3dcafa90cb68aafa74ab3ed563d9ec3d79bfa7",
+  "tested_source": "34d793f52d33275b0edfda428adf0a4582e1cb52",
   "mame_source_sha256": "62523f73d0cf24bad50610d9f0aaa41ab46f0458a5c0601f824fc7e121977bb8",
   "files": {
-    "README.md": "94b803eeda81f9ad7d4ffce48eb22ab38d2ecb83f82c5b8b45c09e96ed496c51",
+    "README.md": "0d8ebc12b841a301fc1724b87d489a77d0b082b7829b1532197d3e61fcab9675",
     "after.csv.gz": "2cfdbda9ea871c800490a97e85385300fa17ceb7bb234c4a9318ea4580d00a3b",
     "after.stderr": "b509dbf7c49a48c389c1915c68912f3c2d221d2812cb40243d4d75c3f5b7d646",
     "before.csv.gz": "f837faebb9c7a29427a15baa83e6603bf12eadf8de25eee8e2b0c82b3d6e5baa",
@@ -18,5 +18,7 @@
     "reference.stderr": "479f26a3d5d0235ceb1ff414f050b59caf65e7a70a31ae883a183e845938df97",
     "tests-before.txt": "483bab90696af80bfa48fd607351ac5b2c043fa7bf7c67c88054ed215cd58ff0",
     "verify.py": "98ef6652e53d05abd50861e0260395ceeed0b8d1c650227eb03234ecf2681596"
-  }
+  },
+  "tested_source_before_rebase": "8f3dcafa90cb68aafa74ab3ed563d9ec3d79bfa7",
+  "rebase_validation": "Complete source tree identical before and after rebase onto merged sync correction b11d84f64b157842fe1eeb6ce12c712b774786d4."
 }
