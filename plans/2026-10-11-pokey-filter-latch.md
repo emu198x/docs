@@ -65,12 +65,15 @@ Restoring the correction passes. This checks the retained latch and subsequent
 held output; it does not claim that the separate audio-accumulator save defect
 in issue #1705 is fixed.
 
-The affected chip, machine and runtime test command completes 37 executables:
-229 tests pass, none fail and 16 existing fixture-gated tests remain ignored.
-That includes all 136 Atari machine/runtime library tests and the earlier
-noise/polarity regressions. No optional ROM coverage is inferred from those
-ignored tests. Clippy with warnings denied, formatting, diff checks and the
-12-case ignore-policy self-test pass.
+With the sampled-noise correction, the affected chip, machine and runtime test
+command completes 37 executables: 229 tests pass, none fail and 16 existing
+fixture-gated tests remain ignored. That includes all 136 Atari machine/runtime
+library tests and the earlier noise/polarity regressions. The latch fix is also
+tested independently on main `71b70bff`: 36 executables, 225 passes, no failures
+and the same 16 ignored tests. It can land independently of the noise change.
+No optional ROM coverage is inferred from the ignored tests. Clippy with
+warnings denied, formatting, diff checks and the 12-case ignore-policy
+self-test pass.
 
 Primary retention evidence is umbrella commit `53fd3e57`; the original manual
 is available through [Avery Lee's Altirra page](https://www.virtualdub.org/altirra.html).
