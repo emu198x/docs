@@ -1,0 +1,157 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s
+     Running tests/vdp_ctc_interrupt.rs (/private/tmp/198x-6809-target/debug/deps/vdp_ctc_interrupt-f1aa8880968af39e)
+
+running 2 tests
+test rising_edge_counter_does_not_interrupt_on_vdp_assertion ... ok
+model=Mtx500 vector=00 assertions=2 services=2
+model=Mtx500 vector=20 assertions=2 services=2
+model=Mtx500 vector=78 assertions=2 services=2
+model=Mtx500 vector=f8 assertions=2 services=2
+model=Mtx512 vector=00 assertions=2 services=2
+model=Mtx512 vector=20 assertions=2 services=2
+model=Mtx512 vector=78 assertions=2 services=2
+model=Mtx512 vector=f8 assertions=2 services=2
+test falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+   Compiling runtime-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.79s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_memotech_mtx-842d8037490de110)
+
+running 18 tests
+test keyboard::tests::release_restores_high ... ok
+test keyboard::tests::joystick_overlay_pulls_sense_low_independently_of_keys ... ok
+test keyboard::tests::no_keys_pressed ... ok
+test keyboard::tests::single_key_pulls_sense_low ... ok
+test input::tests::cursor_keys_sit_on_sense_bit_7_of_their_columns ... ok
+test keyboard::tests::extra_rows_read_through_port6 ... ok
+test input::tests::home_row_and_space_match_the_hardware_matrix ... ok
+test tests::normal_mode_keeps_os_rom_under_paging ... ok
+test tests::keyboard_via_io ... ok
+test tests::joystick_reads_through_the_keyboard_matrix ... ok
+test tests::ram_page_selects_distinct_blocks_at_4000 ... ok
+test tests::common_page_is_block_zero ... ok
+test tests::relcpmh_maps_ram_over_low_memory ... ok
+test tests::rom_size_validated ... ok
+test tests::sound_writes_go_to_port_6 ... ok
+test tests::each_pal_frame_runs_one_complete_vdp_raster ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::snapshot_preserves_ti_zero_countdown_and_audio_continuation ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests/boot_trace.rs (/private/tmp/198x-6809-target/debug/deps/boot_trace-db1859fa6c4226f2)
+
+running 1 test
+test boots_to_basic_ready ... ignored, FIXTURE: needs MTX OS+BASIC+ASSEM ROM — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-0e558fac3d4dc8ec)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-6809-target/debug/deps/rom_boot-5189d6bdeac8e2ee)
+
+running 1 test
+test rom_boots_without_panic ... ignored, FIXTURE: needs a Memotech MTX ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-7ea26c27fb22291f)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_mtx_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests/vdp_ctc_interrupt.rs (/private/tmp/198x-6809-target/debug/deps/vdp_ctc_interrupt-070a45ae833a2ee4)
+
+running 2 tests
+test rising_edge_counter_does_not_interrupt_on_vdp_assertion ... ok
+test falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/runtime_memotech_mtx-ae2126202ad7e75d)
+
+running 10 tests
+test runtime::tests::keys_shift_does_not_change_are_not_legends ... ok
+test runtime::tests::every_legend_names_a_key_this_machine_has ... ok
+test profiles::tests::profile_declares_rom_firmware ... ok
+test runtime::tests::legends_are_one_to_one ... ok
+test input::tests::releasing_a_key_restores_its_sense_line ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test runtime::tests::the_operators_that_were_unreachable_are_reachable ... ok
+test input::tests::button_events_drive_the_joystick_matrix_lines ... ok
+test input::tests::key_names_close_their_real_hardware_matrix_cells ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-6809-target/debug/deps/snapshot_roundtrip-304867a9214ea409)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-6809-target/debug/deps/variants-7c9be61367093609)
+
+running 1 test
+test every_preset_switches_with_its_real_memory_map_and_frame_budget ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/zilog_z80_ctc-fddc3db507ce5c79)
+
+running 15 tests
+test tests::channel_three_has_no_zc_to_output ... ok
+test tests::counter_mode_decrements_on_trg_edges ... ok
+test tests::counter_tc1_interrupts_every_edge ... ok
+test tests::daisy_chain_priority_blocks_lower_channels ... ok
+test tests::disabled_interrupt_still_pulses_zc_to ... ok
+test tests::external_trigger_timer_waits_for_edge ... ok
+test tests::new_ctc_is_idle ... ok
+test tests::read_returns_live_counter ... ok
+test tests::load_state_rejects_truncated ... ok
+test tests::save_load_round_trip ... ok
+test tests::software_reset_stops_channel ... ok
+test tests::timer_div16_period_matches_time_constant ... ok
+test tests::timer_div256_period ... ok
+test tests::vector_encodes_channel_number ... ok
+test tests::time_constant_zero_means_256 ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_memotech_mtx
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_memotech_mtx
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests zilog_z80_ctc
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+    Checking machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Checking runtime-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-memotech-mtx)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.63s
