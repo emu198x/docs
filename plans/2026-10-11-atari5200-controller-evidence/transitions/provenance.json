@@ -1,0 +1,17 @@
+{
+  "source": "emulators/atari/altirra/src/ATAudio/source/pokey.cpp",
+  "source_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "blocks": {
+    "scan": "0368c020e94309fa682e6932f90c80091547c0b8e228a49cf592122f87f72fd4",
+    "write": "9af7ec3c326018fb42d5601c58590256c42f64520081b5844deb5114f20f5a6e",
+    "clock": "9f951b35ebcdb3dff13f3c88872a02e9d88ee46a92acf7a637491f07b899b79e",
+    "schedule": "ff07bf46d5cd9b343ca0b011b7e4e6eced3ffc7e2c8f745015d0adf2af114978",
+    "break": "766ae1c38ce23920176056458828a977e663e9e2721a1f0b7e6aada336801eff",
+    "matrix": "db1144f8cf02ce6d97fb0bd3167b2d6938a6af3c02782655ea003d68d477dc26",
+    "set_matrix": "bc030d77506d8dfebae907180c96b73fce91078f487a89512b66b608ca4d8d1f"
+  },
+  "scope": "Unchanged SKCTL case, keyboard event, divider scheduler and matrix methods; scheduler/board input shim; serial/audio/pot paths stubbed; no full machine.",
+  "rows": 1748,
+  "capture_sha256": "e55651f904d0abe7299d73bbd8ff5462fa89484cba10d3411654db85c51e7aad",
+  "pass": true
+}

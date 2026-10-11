@@ -64,3 +64,11 @@ method with a plain copy of the held keys makes the probe exit 1; its failure
 count is recorded in `matrix-no-ghosts.stderr`. The calculation validates the
 combinational connectivity model, not electrical propagation delays. This
 check adds no production code or saved state.
+
+## Scheduled transitions
+
+The [transition probe](transitions/README.md) adds 1,748 passing cases using
+the original SKCTL write and scheduler logic: divider startup, enabling at
+every phase, disabling, retained status and controller selection/release.
+Three deliberate timing/latch faults fail. Full-machine CPU-bus ordering and
+save/restore are still implementation gates.

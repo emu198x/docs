@@ -1,0 +1,23 @@
+{
+  "late-start": {
+    "exit": 1,
+    "result": "1608 mismatches across 1748 scheduled transition cases",
+    "replace": "+ 81 - 114",
+    "with": "+ 82 - 114",
+    "count": 1
+  },
+  "reset-enable-phase": {
+    "exit": 1,
+    "result": "1469 mismatches across 1748 scheduled transition cases",
+    "replace": "114 - (t - UpdateLast15KHzTime())",
+    "with": "81",
+    "count": 1
+  },
+  "clear-retained-shift": {
+    "exit": 1,
+    "result": "292 mismatches across 1748 scheduled transition cases",
+    "replace": "mSKSTAT |= 0x04;",
+    "with": "mSKSTAT |= 0x0C;",
+    "count": 3
+  }
+}
