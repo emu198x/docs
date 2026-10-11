@@ -1,0 +1,71 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.96s
+     Running tests/pot_scan_probe.rs (../emu198x/target/debug/deps/pot_scan_probe-a0402090c8e57819)
+
+running 1 test
+clock=1789772 pot=0 case=0 actual=(228, 255)
+clock=1789772 pot=0 case=1 actual=(228, 255)
+clock=1789772 pot=0 case=2 actual=(228, 255)
+clock=1789772 pot=1 case=0 actual=(228, 255)
+clock=1789772 pot=1 case=1 actual=(228, 255)
+clock=1789772 pot=1 case=2 actual=(228, 255)
+clock=1789772 pot=2 case=0 actual=(228, 255)
+clock=1789772 pot=2 case=1 actual=(228, 255)
+clock=1789772 pot=2 case=2 actual=(228, 255)
+clock=1789772 pot=3 case=0 actual=(228, 255)
+clock=1789772 pot=3 case=1 actual=(228, 255)
+clock=1789772 pot=3 case=2 actual=(228, 255)
+clock=1789772 pot=4 case=0 actual=(228, 255)
+clock=1789772 pot=4 case=1 actual=(228, 255)
+clock=1789772 pot=4 case=2 actual=(228, 255)
+clock=1789772 pot=5 case=0 actual=(228, 255)
+clock=1789772 pot=5 case=1 actual=(228, 255)
+clock=1789772 pot=5 case=2 actual=(228, 255)
+clock=1789772 pot=6 case=0 actual=(228, 255)
+clock=1789772 pot=6 case=1 actual=(228, 255)
+clock=1789772 pot=6 case=2 actual=(228, 255)
+clock=1789772 pot=7 case=0 actual=(228, 255)
+clock=1789772 pot=7 case=1 actual=(228, 255)
+clock=1789772 pot=7 case=2 actual=(228, 255)
+clock=1773447 pot=0 case=0 actual=(228, 255)
+clock=1773447 pot=0 case=1 actual=(228, 255)
+clock=1773447 pot=0 case=2 actual=(228, 255)
+clock=1773447 pot=1 case=0 actual=(228, 255)
+clock=1773447 pot=1 case=1 actual=(228, 255)
+clock=1773447 pot=1 case=2 actual=(228, 255)
+clock=1773447 pot=2 case=0 actual=(228, 255)
+clock=1773447 pot=2 case=1 actual=(228, 255)
+clock=1773447 pot=2 case=2 actual=(228, 255)
+clock=1773447 pot=3 case=0 actual=(228, 255)
+clock=1773447 pot=3 case=1 actual=(228, 255)
+clock=1773447 pot=3 case=2 actual=(228, 255)
+clock=1773447 pot=4 case=0 actual=(228, 255)
+clock=1773447 pot=4 case=1 actual=(228, 255)
+clock=1773447 pot=4 case=2 actual=(228, 255)
+clock=1773447 pot=5 case=0 actual=(228, 255)
+clock=1773447 pot=5 case=1 actual=(228, 255)
+clock=1773447 pot=5 case=2 actual=(228, 255)
+clock=1773447 pot=6 case=0 actual=(228, 255)
+clock=1773447 pot=6 case=1 actual=(228, 255)
+clock=1773447 pot=6 case=2 actual=(228, 255)
+clock=1773447 pot=7 case=0 actual=(228, 255)
+clock=1773447 pot=7 case=1 actual=(228, 255)
+clock=1773447 pot=7 case=2 actual=(228, 255)
+counts=[16, 16, 16, 16] failures=[16, 16, 16, 0]
+
+thread 'pot_scan_public_registers' (89766310) panicked at crates/atari-pokey/tests/pot_scan_probe.rs:44:5:
+assertion `left == right` failed: pot scans must expose live counts and honour their clock source
+  left: [16, 16, 16, 0]
+ right: [0, 0, 0, 0]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test pot_scan_public_registers ... FAILED
+
+failures:
+
+failures:
+    pot_scan_public_registers
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+error: test failed, to rerun pass `-p atari-pokey --test pot_scan_probe`

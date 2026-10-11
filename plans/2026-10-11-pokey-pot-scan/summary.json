@@ -1,0 +1,11 @@
+{
+  "cases": 16,
+  "cycles": 416048,
+  "pot_reads": 3328384,
+  "capture_sha256": "60141355c7a144b0614faea32832f4bd5f7c9cec15e693d21aa577aecb08675a",
+  "slow-only": "pot trace mismatch (4, 0) t=4: (0, 255) != (2, 255)",
+  "stable-reads": "pot trace mismatch (3, 0) t=227: (1, 255) != (0, 255)",
+  "wrong-limit": "pot trace mismatch (4, 0) t=231: (228, 0) != (229, 0)",
+  "source_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "assembled_sha256": "3e8914aad5e8690b88c1acefd2a644fdd6ba3268723a2b3ec0de24c0b9628342"
+}
