@@ -746,3 +746,62 @@ save/replay are also outside this evidence. Production already holds a relative
 pointer base and applies its live bank, and the earlier PRA fix is merged.
 This establishes no additional production failure and changes no production or
 snapshot state. The larger Phi1 correction remains pending approval.
+
+### Next probe: forced matrix ownership
+
+Add `matrix_ownership.py`, deriving original guests from `graphics_fetch.py`.
+Keep a seeded text display active, then change y-scroll from 3 to 4 with a real
+CPU `$D011` store on line 60. Sweep requested delay and both instruction
+alignments; record the actual CPU clock. Compare unchanged-y-scroll controls.
+Capture full matrix/Phi1 records and source RAM, including attempted accesses
+that return disconnected `$FF` without a physical read and the first valid RAM
+fetch after BA lead-in. Start with native calibration before fixing boundaries.
+
+Add `verify_matrix_ownership.py` and `test_matrix_ownership.py` to check ownership
+countdown, attempted address sequence, valid source bytes, preserved Phi1 and
+positive missing/shifted-event guards. Cover all five profiles and distinguish
+ordinary acquisition, truncated end-of-window acquisition and no-request
+controls. Colour-nibble provenance, far-edge carry effects and idle-to-active
+VSP behaviour are separate from this active-display probe. Audit production
+against the qualified boundary; make no new stage or snapshot change here.
+
+
+### Active-display matrix ownership gate qualified
+
+All 415 native captures pass: 240 delay/alignment cases across five profiles,
+75 all-bank boundary extensions and 100 unchanged-y-scroll controls. The guest
+forces line 60 bad by changing y-scroll 3→4 while text display is already active.
+The 1,642,548 records verify 633 disconnected matrix attempts and 3,041 valid
+late RAM reads. Every invalid attempt returns `$FF`, has no physical read and
+addresses RAM containing a different byte. The 3→2→1 countdown precedes the first
+valid read; invalid attempts still advance the source address and preserve Phi1.
+
+Stores at native cycles 51/52/53/54 leave three/two/one/no matrix attempts before
+the window closes. All five models and four banks cover all four forced cutoff
+cases and four controls. The verifier also follows the matrix into 33,200
+graphics reads on the forced and subsequent line, checking inserted `$FF`
+characters, retained entries, row-counter addresses and captured RAM bytes.
+This does not validate the disconnected colour nibble or final pixels.
+
+`matrix-ownership-native.zip` retains every original guest, complete trace,
+CPU log, monitor command, RAM dump and completion sentinel. Identities/counts
+are in `matrix-ownership-summary.json`; the suite log is retained separately.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 verify_matrix_ownership.py matrix-ownership-native.zip
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -p 'test_*.py'
+```
+
+Production `c_access` already models the disconnected matrix byte separately
+from physical RAM. This source audit establishes no new production failure;
+colour-nibble provenance, idle-to-active VSP behaviour, the far-edge carry and
+production save/replay remain separate. No production or snapshot change is
+made, and the larger Phi1 proposal remains pending approval.
+
+All 172 evidence tests pass, including 21 new matrix guards. Mutations reject
+unconditional RAM reads during disconnected ownership, shortened/extended
+countdowns, missing attempts, repeated addresses, wrong bytes/banks, early
+cycle labels, overwritten Phi1, discarded `$FF` entries on the current or next
+line, false control DMA, missing completion and incomplete case coverage.
+Coherently shifted CPU timestamps still fail the independently observed matrix
+slots. Ruff and diff checks pass.
