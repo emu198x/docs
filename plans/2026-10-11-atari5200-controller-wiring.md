@@ -103,7 +103,10 @@ proves scan transitions at supplied edges, not that initial phase.
 
 Expose the scan address and return-line setter for machine wiring. At each
 5200 POKEY tick, derive KR1 from the selected held keypad and KR2 from that
-controller's upper fire. Keep the six-bit address mirroring in the board
+controller's upper fire. Resolve the keypad switch network combinationally
+so simultaneously held keys produce the same phantom positions as the
+physical row/column connections; keep KR2 independent of that network.
+Keep the six-bit address mirroring in the board
 wiring; POKEY itself must not know 5200 key names or controller selection.
 
 Implement scan-enable reset, debounce, KBCODE modifier latching, Shift status,
@@ -191,3 +194,13 @@ or data schemas”** rule. No new dependency is proposed.
 The baseline probe's constant pots and synthetic BIOS are sufficient to expose
 routing. They do not establish resistor calibration, trackball support,
 commercial compatibility or original-hardware timing.
+
+## Additional matrix gate
+
+The unchanged reference's effective-matrix method now agrees with an
+independent 4x4 switch-network reachability calculation for **65,536 cases**:
+all subsets of 15 keypad keys, upper fire off/on. All 64 KR1 positions and the
+three sampled KR2 positions agree. A plain-copy negative control fails.
+This establishes why a direct held-bit lookup would still be insufficient
+when several keys are pressed. It adds combinational board wiring within the
+proposed scan path, with no extra saved fields or snapshot version changes.

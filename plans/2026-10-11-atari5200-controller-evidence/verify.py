@@ -3,6 +3,9 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import gzip
+import io
+import json
 import itertools
 from collections.abc import Callable
 from pathlib import Path
@@ -58,6 +61,43 @@ def check_reference(rows: list[dict[str, str]]) -> None:
         assert int(r['key_irqs']) == (6 if keypad else 0)
 
 
+
+def check_matrix(rows: list[dict[str, str]]) -> None:
+    expected_cases = set(itertools.product(range(32768), range(2)))
+    actual_cases = [(int(r['held_mask']), int(r['top'])) for r in rows]
+    assert len(actual_cases) == len(set(actual_cases)) == len(expected_cases)
+    assert set(actual_cases) == expected_cases
+    ghost_cases = 0
+    for r in rows:
+        held, top = int(r['held_mask']), int(r['top'])
+        edges: list[set[int]] = [set() for _ in range(8)]
+        for key in range(1, 16):
+            if held & (1 << (key - 1)):
+                row, column = key >> 2, 4 + (key & 3)
+                edges[row].add(column)
+                edges[column].add(row)
+        effective = 0
+        for row in range(4):
+            seen, pending = {row}, [row]
+            while pending:
+                for neighbour in edges[pending.pop()] - seen:
+                    seen.add(neighbour)
+                    pending.append(neighbour)
+            for column in range(4):
+                if column + 4 in seen:
+                    effective |= 1 << (row * 4 + column)
+        actual = tuple(int(x, 16) for x in r['reference_matrix'].split(':'))
+        assert len(actual) == 8
+        for code in range(64):
+            assert bool(actual[code >> 3] & (1 << (code & 7))) == bool(effective & (1 << ((code >> 1) & 15)))
+        for row in (0, 2, 6):
+            assert bool(actual[row] & 256) == bool(top)
+        ghosts = effective & ~(held << 1)
+        assert int(r['ghost_positions']) == ghosts
+        ghost_cases += bool(ghosts)
+    assert ghost_cases == 62522
+
+
 def must_reject(check: Callable[[list[dict[str, str]]], None], rows: list[dict[str, str]]) -> None:
     try:
         check(rows)
@@ -84,7 +124,16 @@ def main() -> None:
     broken_guest[0]['guest_loops'] = '0'
     must_reject(lambda r: check_guest(r, False), broken_guest)
     assert '120 mismatches across 2048' in (HERE / 'reference-no-debounce.stderr').read_text()
-    print('420 guest cases: 222 known failures; 2048 reference cases pass; four checker mutations rejected')
+    matrix_data = gzip.decompress((HERE / 'matrix-reference.csv.gz').read_bytes())
+    matrix_provenance = json.loads((HERE / 'matrix-provenance.json').read_text())
+    assert hashlib.sha256(matrix_data).hexdigest() == matrix_provenance['csv_sha256']
+    matrix = list(csv.DictReader(io.StringIO(matrix_data.decode())))
+    check_matrix(matrix)
+    broken_matrix = [dict(r) for r in matrix]
+    broken_matrix[0]['reference_matrix'] = '001:000:000:000:000:000:000:000'
+    must_reject(check_matrix, broken_matrix)
+    assert '1322552 mismatches across 65536' in (HERE / 'matrix-no-ghosts.stderr').read_text()
+    print('420 guest cases: 222 known failures; 2048 scan and 65536 matrix reference cases pass; five checker mutations rejected')
 
 
 if __name__ == '__main__':

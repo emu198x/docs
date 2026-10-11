@@ -47,3 +47,20 @@ extracted scratch C++ with `true`, recompiles, and fails 120 cases. Its
 stderr is retained. `verify.py` checks complete case coverage, execution
 counts in the capture, reference invariants and mismatch
 accounting. This archive check passing does not mean the emulator passes.
+
+## Simultaneous-key circuit check
+
+`matrix-reference.py` executes unchanged Altirra `UpdateEffectiveKeyMatrix`
+against a separate reachability calculation on the 4-row/4-column switch
+network. It covers all 32,768 subsets of the 15 real keypad switches, with
+upper fire both released and held: **65,536 cases, zero sampled-line
+mismatches**. It compares all 64 KR1 scan positions and the three KR2 sampling
+positions; unused modifier bits in the reference's internal matrix are not
+external signals. `matrix-reference.csv.gz` is the complete capture, with
+its decompressed hash in `matrix-provenance.json`.
+
+62,522 cases include phantom keypad positions. Replacing the effective-matrix
+method with a plain copy of the held keys makes the probe exit 1; its failure
+count is recorded in `matrix-no-ghosts.stderr`. The calculation validates the
+combinational connectivity model, not electrical propagation delays. This
+check adds no production code or saved state.
