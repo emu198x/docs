@@ -49,6 +49,12 @@ controller, 13-device NMI latch, 29-device HALT pad and the raster controller's
 
 ## Conditional sweep
 
+The [dynamic raster check](2026-10-11-maria-dynamic-raster-clock.md) corrects
+late data-first slow-input capture in this probe. Its handoff summary
+supersedes the transition coordinates and input-order count below. The
+constant-rate results are unchanged; the adjacent original `summary.json`
+records the earlier model for comparison.
+
 All **32,832 cases** pass the stated handoff checks, producing **16,416 NMI
 pulses**. The matrix covers two constant clock modes and both rate transitions;
 twelve reset positions; 56 mode-change positions for each transition; DLI

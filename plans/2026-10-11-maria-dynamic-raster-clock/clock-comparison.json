@@ -1,0 +1,701 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "baseline_commit": "f3d40bf6a46b1bc2022fbb4c8a35c582d24d9223",
+  "baseline_probe_sha256": "79f39c4277114557021d685913aec042b355130c31f545a410f645e868e733f0",
+  "cases": 228,
+  "observations_per_case": 240,
+  "signals_per_observation": 3,
+  "baseline_matching_cases": 216,
+  "baseline_mismatching_cases": 12,
+  "corrected_matching_cases": 228,
+  "corrected_mismatching_cases": 0,
+  "failures": [
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 96,
+      "order": "data-first",
+      "mismatches": 84,
+      "first_mismatches": [
+        {
+          "step": 96,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 97,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 98,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 104,
+      "order": "data-first",
+      "mismatches": 81,
+      "first_mismatches": [
+        {
+          "step": 104,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 105,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 106,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 112,
+      "order": "data-first",
+      "mismatches": 76,
+      "first_mismatches": [
+        {
+          "step": 112,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 113,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 114,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 120,
+      "order": "data-first",
+      "mismatches": 70,
+      "first_mismatches": [
+        {
+          "step": 120,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 121,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 122,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 128,
+      "order": "data-first",
+      "mismatches": 67,
+      "first_mismatches": [
+        {
+          "step": 128,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 129,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 130,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 136,
+      "order": "data-first",
+      "mismatches": 62,
+      "first_mismatches": [
+        {
+          "step": 136,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 137,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 138,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "change": 144,
+      "order": "data-first",
+      "mismatches": 56,
+      "first_mismatches": [
+        {
+          "step": 144,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1
+          }
+        },
+        {
+          "step": 145,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          }
+        },
+        {
+          "step": 146,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "pck0": 1
+          },
+          "staged": {
+            "edge": 0,
+            "pck0": 0
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "change": 96,
+      "order": "data-first",
+      "mismatches": 126,
+      "first_mismatches": [
+        {
+          "step": 96,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0
+          }
+        },
+        {
+          "step": 97,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          }
+        },
+        {
+          "step": 98,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 1,
+            "pck0": 1
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "change": 108,
+      "order": "data-first",
+      "mismatches": 116,
+      "first_mismatches": [
+        {
+          "step": 108,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0
+          }
+        },
+        {
+          "step": 109,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          }
+        },
+        {
+          "step": 110,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 1,
+            "pck0": 1
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "change": 120,
+      "order": "data-first",
+      "mismatches": 105,
+      "first_mismatches": [
+        {
+          "step": 120,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0
+          }
+        },
+        {
+          "step": 121,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          }
+        },
+        {
+          "step": 122,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 1,
+            "pck0": 1
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "change": 132,
+      "order": "data-first",
+      "mismatches": 95,
+      "first_mismatches": [
+        {
+          "step": 132,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0
+          }
+        },
+        {
+          "step": 133,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          }
+        },
+        {
+          "step": 134,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 1,
+            "pck0": 1
+          }
+        }
+      ]
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "change": 144,
+      "order": "data-first",
+      "mismatches": 84,
+      "first_mismatches": [
+        {
+          "step": 144,
+          "fields": [
+            "edge",
+            "epck0f"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0
+          }
+        },
+        {
+          "step": 145,
+          "fields": [
+            "edge",
+            "epck0f",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 1,
+            "epck0f": 1,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 0,
+            "epck0f": 0,
+            "pck0": 1
+          }
+        },
+        {
+          "step": 146,
+          "fields": [
+            "edge",
+            "pck0"
+          ],
+          "actual": {
+            "edge": 0,
+            "pck0": 0
+          },
+          "staged": {
+            "edge": 1,
+            "pck0": 1
+          }
+        }
+      ]
+    }
+  ],
+  "baseline_sha256": "28de84138a489a9aa51b022ef3239dc42754e0f081778c62dfa91b70be0fafbd",
+  "corrected_sha256": "7886f311ef6bf50b835c9a5c764f28c7a35bdf17e2af2737537e81656120ef6c"
+}

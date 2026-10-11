@@ -1,0 +1,527 @@
+{
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "member_sha256": "9e9d9c2cff62357dadf9ef434a045efdfcc3014ae0f38bea6fb392b3e0df8db7",
+  "cases": 32832,
+  "pulses": 16416,
+  "matrix_sha256": "6df695c0b9b82e1efb0f1b2fed6f086e8f56b1ff26c8da37c712f2f47ed37c9a",
+  "order_pairs_with_changed_edges": 1272,
+  "groups": [
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 0,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "17": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 0,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "17": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 1,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "17": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 1,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "17": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 2,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "16": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 0,
+      "return_delay": 2,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "8": 24
+      },
+      "delay_from_internal": {
+        "17": 24
+      },
+      "delay_from_pad": {
+        "16": 24
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 0,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 576,
+        "10": 192,
+        "12": 576
+      },
+      "delay_from_internal": {
+        "17": 768,
+        "19": 192,
+        "23": 192,
+        "25": 192
+      },
+      "delay_from_pad": {
+        "17": 768,
+        "19": 192,
+        "23": 192,
+        "25": 192
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 0,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 552,
+        "10": 192,
+        "12": 600
+      },
+      "delay_from_internal": {
+        "17": 744,
+        "19": 192,
+        "23": 192,
+        "25": 216
+      },
+      "delay_from_pad": {
+        "17": 744,
+        "19": 192,
+        "23": 192,
+        "25": 216
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 1,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 576,
+        "10": 192,
+        "12": 576
+      },
+      "delay_from_internal": {
+        "17": 768,
+        "19": 192,
+        "23": 192,
+        "25": 192
+      },
+      "delay_from_pad": {
+        "17": 768,
+        "19": 192,
+        "23": 192,
+        "25": 192
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 1,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 552,
+        "10": 192,
+        "12": 600
+      },
+      "delay_from_internal": {
+        "17": 744,
+        "19": 192,
+        "23": 192,
+        "25": 216
+      },
+      "delay_from_pad": {
+        "17": 744,
+        "19": 192,
+        "23": 192,
+        "25": 216
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 2,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 576,
+        "10": 192,
+        "12": 576
+      },
+      "delay_from_internal": {
+        "17": 768,
+        "19": 192,
+        "23": 192,
+        "25": 192
+      },
+      "delay_from_pad": {
+        "16": 768,
+        "18": 192,
+        "22": 192,
+        "24": 192
+      }
+    },
+    {
+      "initial_slow": 0,
+      "final_slow": 1,
+      "return_delay": 2,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 552,
+        "10": 192,
+        "12": 600
+      },
+      "delay_from_internal": {
+        "17": 744,
+        "19": 192,
+        "23": 192,
+        "25": 216
+      },
+      "delay_from_pad": {
+        "16": 744,
+        "18": 192,
+        "22": 192,
+        "24": 216
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 0,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 816,
+        "10": 240,
+        "12": 288
+      },
+      "delay_from_internal": {
+        "17": 240,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 576
+      },
+      "delay_from_pad": {
+        "17": 240,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 576
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 0,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 840,
+        "10": 240,
+        "12": 264
+      },
+      "delay_from_internal": {
+        "17": 264,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 552
+      },
+      "delay_from_pad": {
+        "17": 264,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 552
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 1,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 816,
+        "10": 240,
+        "12": 288
+      },
+      "delay_from_internal": {
+        "17": 240,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 576
+      },
+      "delay_from_pad": {
+        "17": 240,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 576
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 1,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 840,
+        "10": 240,
+        "12": 264
+      },
+      "delay_from_internal": {
+        "17": 264,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 552
+      },
+      "delay_from_pad": {
+        "17": 264,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 552
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 2,
+      "slow_order": "control-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 816,
+        "10": 240,
+        "12": 288
+      },
+      "delay_from_internal": {
+        "17": 240,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 576
+      },
+      "delay_from_pad": {
+        "16": 240,
+        "18": 240,
+        "20": 48,
+        "22": 240,
+        "24": 576
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 0,
+      "return_delay": 2,
+      "slow_order": "data-first",
+      "cases": 2688,
+      "pulses": 1344,
+      "width": {
+        "8": 840,
+        "10": 240,
+        "12": 264
+      },
+      "delay_from_internal": {
+        "17": 264,
+        "19": 240,
+        "21": 48,
+        "23": 240,
+        "25": 552
+      },
+      "delay_from_pad": {
+        "16": 264,
+        "18": 240,
+        "20": 48,
+        "22": 240,
+        "24": 552
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 0,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "25": 24
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 0,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "25": 24
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 1,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "25": 24
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 1,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "25": 24
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 2,
+      "slow_order": "control-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "24": 24
+      }
+    },
+    {
+      "initial_slow": 1,
+      "final_slow": 1,
+      "return_delay": 2,
+      "slow_order": "data-first",
+      "cases": 48,
+      "pulses": 24,
+      "width": {
+        "12": 24
+      },
+      "delay_from_internal": {
+        "25": 24
+      },
+      "delay_from_pad": {
+        "24": 24
+      }
+    }
+  ],
+  "scope": "conditional half-phase coordinates; no measured CPU return delay, native alignment or production revision"
+}

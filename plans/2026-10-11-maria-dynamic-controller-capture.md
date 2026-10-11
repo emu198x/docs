@@ -47,6 +47,12 @@ does not substitute the static truth table for the controller's devices.
 
 ## Full handoff replay
 
+This replay records the handoff matrix before the later
+[raster capture correction](2026-10-11-maria-dynamic-raster-clock.md). That
+investigation changes the clock inputs in 1,728 cases and repeats the direct
+interrupt replay for all of them. The controller's capture/hold qualification
+below remains valid; the new matrix supersedes the old transition coordinates.
+
 All **32,832 handoff cases** reproduce the staged model's NMI output, with
 **6,829,056 matching phase observations** and **16,416 complete pulses**.
 Every regenerated baseline case must first match the retained matrix exactly.
