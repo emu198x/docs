@@ -61,5 +61,9 @@ four modes; two captures per mode are identical. Rebuilt ROM hashes also match.
 See [reproducible evidence](2026-10-11-nes-inspection-evidence/README.md).
 
 Source [PR #1732](https://github.com/emu198x/emu198x/pull/1732), tested commit
-`360451bd76b0412a2bcf390e59af333f721cb789`. Required exact-head CI is running;
-merge and execution-ledger verification remain outstanding.
+`360451bd76b0412a2bcf390e59af333f721cb789`. merged as `0ec2b192848da4765d4da71822e1db440fb7f7a3` after required checks passed.
+The merged tree equals the tested head and is an ancestor of fetched main.
+[CI run 38166511618](https://github.com/emu198x/emu198x/actions/runs/38166511618)
+records 28 machine passes, two explicit fixture skips and 133 ignored tests;
+all 110 PPU tests executed and passed. Neither package has failures or
+unexplained ignores. Builds, browser parity and firmware gates also passed.
