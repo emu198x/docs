@@ -1,0 +1,20 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.54s
+     Running unittests src/lib.rs (../emu198x/target/debug/deps/atari_pokey-2f2b6fe11081a40d)
+
+running 1 test
+
+thread 'timer_tests::settled_unlinked_periods_match_all_reference_dividers' (89230857) panicked at crates/atari-pokey/src/timer_tests.rs:52:5:
+512 period mismatches; first: Some(([0, 2, 0, 4], [1, 2, 3]))
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test timer_tests::settled_unlinked_periods_match_all_reference_dividers ... FAILED
+
+failures:
+
+failures:
+    timer_tests::settled_unlinked_periods_match_all_reference_dividers
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 36 filtered out; finished in 4.84s
+
+error: test failed, to rerun pass `-p atari-pokey --lib`

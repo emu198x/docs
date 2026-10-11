@@ -1,0 +1,20 @@
+mise WARN  tracking config: failed to ln -sf /Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/c3090d462dcf0d5e: Operation not permitted (os error 1)
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.55s
+     Running tests/timer_period.rs (../emu198x/target/debug/deps/timer_period-434f0a31229fbeea)
+
+running 1 test
+
+thread 'fast_timer_irq_spacing_includes_the_propagation_clocks' (89232182) panicked at crates/atari-pokey/tests/timer_period.rs:38:5:
+512 IRQ period mismatches; first: Some((1789772, 0, [1, 2, 3, 4, 5]))
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test fast_timer_irq_spacing_includes_the_propagation_clocks ... FAILED
+
+failures:
+
+failures:
+    fast_timer_irq_spacing_includes_the_propagation_clocks
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+error: test failed, to rerun pass `-p atari-pokey --test timer_period`
