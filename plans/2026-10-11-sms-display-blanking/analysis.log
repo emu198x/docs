@@ -1,0 +1,25 @@
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 0, 'line': 65, 'first_blue': 104, 'green_after_blue': 32}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 0, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 8, 'line': 65, 'first_blue': 141, 'green_after_blue': 24}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 8, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 16, 'line': 65, 'first_blue': 183, 'green_after_blue': 16}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 16, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 24, 'line': 65, 'first_blue': 232, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'ntsc-u', 'delay': 24, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'ntsc-u', 'delay': 0, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'ntsc-u', 'delay': 8, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'ntsc-u', 'delay': 16, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'ntsc-u', 'delay': 24, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'pal', 'delay': 0, 'line': 65, 'first_blue': 105, 'green_after_blue': 32}
+{'engine': 'emu', 'region': 'pal', 'delay': 0, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'pal', 'delay': 8, 'line': 65, 'first_blue': 159, 'green_after_blue': 24}
+{'engine': 'emu', 'region': 'pal', 'delay': 8, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'pal', 'delay': 16, 'line': 65, 'first_blue': 213, 'green_after_blue': 8}
+{'engine': 'emu', 'region': 'pal', 'delay': 16, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'pal', 'delay': 24, 'line': 65, 'first_blue': 232, 'green_after_blue': 0}
+{'engine': 'emu', 'region': 'pal', 'delay': 24, 'line': 81, 'first_blue': 0, 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'pal', 'delay': 0, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'pal', 'delay': 8, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'pal', 'delay': 16, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+{'engine': 'reference', 'region': 'pal', 'delay': 24, 'line': 'none', 'first_blue': 'none', 'green_after_blue': 0}
+24 completed runs; both 49,152-pixel controls match in both regions

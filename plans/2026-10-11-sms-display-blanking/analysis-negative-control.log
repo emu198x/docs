@@ -1,0 +1,6 @@
+Changed the guest completion signature in an isolated copy.
+Traceback (most recent call last):
+  File "/private/tmp/198x-blanking-negative-txwvwt67/analyse_blanking.py", line 17, in <module>
+    assert len(ram) == 8192 and ram[0] == 0xA5 and ram[1] >= 40
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
