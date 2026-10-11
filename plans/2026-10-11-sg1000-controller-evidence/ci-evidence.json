@@ -1,0 +1,26 @@
+{
+  "run_url": "https://github.com/emu198x/emu198x/actions/runs/38169812639",
+  "conclusion": "success",
+  "tested_head": "6aeae61fce121dff9a7fa1f22eb699436c67f85b",
+  "merge_commit": "10892b445182cc5d8106cff7cd142f9a64d4cf10",
+  "tested_and_merged_tree": "5a75c1b2c9a5d98c4eac7da70ddb1aebee6c92da",
+  "merged_commit_is_origin_main_ancestor": true,
+  "artifact": "status-evidence/status-evidence.json",
+  "artifact_sha256": "3e3353254b276a73a05f1d84441ddc40740b0d3a69016a307163dcd4e30d47f2",
+  "packages": {
+    "machine-sega-sg-1000": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-sg-1000": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    }
+  }
+}

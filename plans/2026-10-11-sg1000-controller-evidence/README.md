@@ -45,3 +45,6 @@ MAME's driver does not map every $C0-$FF alias. The hardware investigation
 and Ares source support that extent; the MAME capture proves only its
 canonical ports. Physical waveform timing, SC-3000 peripherals and cartridge
 mappers are outside this correction.
+
+`ci-evidence.json` records the successful exact-head CI, executed affected
+package counts, source merge, matching trees and full-ledger hash.
