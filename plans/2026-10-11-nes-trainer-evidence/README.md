@@ -6,7 +6,7 @@ cross seven existing RAM-backed mappers, two headers, battery on/off and trainer
 present/absent. `verify.py` requires that exact nonempty matrix, checks every
 byte, and rebuilds each ROM hash from `build_roms.py`.
 
-Run `python3 verify.py`. It proves that the recorded captures have the stated
+Run `python3 -B verify.py`. It proves that the recorded captures have the stated
 results; it does not launch either emulator. `guest.rs` and `reference_guest.cpp`
 are the executable hosts for recapture. Both require the guest's completion
 marker; incomplete execution fails. `build_roms.py` creates original synthetic
