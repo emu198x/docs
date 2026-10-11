@@ -1,0 +1,1 @@
+NTSC, 30 frames, 256x192 active pixels: baseline 49152 mismatches; corrected 0.

@@ -1,0 +1,5 @@
+    Checking sega-vdp v0.31.0 (/private/tmp/198x-6809-transfers/crates/sega-vdp)
+    Checking machine-sega-master-system v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sega-master-system)
+    Checking runtime-sega-master-system-class v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-sega-master-system-class)
+    Checking runtime-sega-master-system v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-sega-master-system)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.06s
