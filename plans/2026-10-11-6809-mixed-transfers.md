@@ -78,3 +78,33 @@ The output directory must not exist. The generator compiles the reference
 switch bodies and records source, wrapper and vector hashes in `reference.json`.
 Compare those hashes with the [recorded result](2026-10-11-6809-mixed-transfers/reference.json).
 The GPL reference source stays external; the committed fixture is register data.
+
+## Original guest execution
+
+The original `te.bin` from the hashed Lindner ZIP also runs through the corrected
+CPU's public pins, reaching its terminal `BRA Done` loop after 5,141 CPU cycles.
+[The ten screen rows](2026-10-11-6809-mixed-transfers/hardware-guest-screen.txt)
+agree with the visible characters and blocks in the published CoCo 2B image.
+This is a manual screen comparison, not a physical byte dump or timing trace.
+It includes the guest's surrounding loads/stores and condition-code changes.
+
+[The standalone runner](2026-10-11-6809-mixed-transfers/run_hardware_guest.rs)
+loads the unmodified binary from an argument path and executes it against flat
+64K memory. Interrupt inputs stay inactive, matching the guest's disabled
+interrupt sources. This checks CPU execution; it does not model CoCo peripherals
+or validate the video chip. The runner rejects malformed image framing, a CPU
+halt, or failure to reach the known terminal loop within 100,000 cycles.
+The downloaded test binary remains external.
+
+After building `motorola-6809`, compile the runner against its generated rlib:
+
+```sh
+rustc --edition=2024 run_hardware_guest.rs \
+  --extern motorola_6809=/path/to/target/debug/deps/libmotorola_6809-HASH.rlib \
+  -L dependency=/path/to/target/debug/deps -o run_hardware_guest
+./run_hardware_guest /path/to/te.bin
+```
+
+The printed screen bytes must match the committed result. This is additional
+execution evidence for source commit `d1c2541656c75d5eaf425454416498f61b1f55a4`,
+not a new assertion that every undefined opcode has been corrected.
