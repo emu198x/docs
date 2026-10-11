@@ -1,7 +1,7 @@
 # 6845 register-write evidence
 
 Source correction: [PR #1737](https://github.com/emu198x/emu198x/pull/1737),
-`34d793f52d33275b0edfda428adf0a4582e1cb52`.
+merged as `f7c6b0342e76ab604d7d1a2feb5cc2ee64f067d6` (tested head `34d793f52d33275b0edfda428adf0a4582e1cb52`).
 
 The original public-port probe fails **1,852 of 2,560 cases** before the
 correction and passes every case afterward. Its source is `probe.rs`; compressed
@@ -65,3 +65,9 @@ passes and 16 separately executed firmware-backed passes. The machine run's
 30 fixture ignores remain explicit; 16 are exercised in the firmware run.
 Affected-package Clippy, formatting and whitespace checks pass. Terminal logs
 omit trailing blank lines; their test output is otherwise unchanged.
+
+CI run [38175737653](https://github.com/emu198x/emu198x/actions/runs/38175737653)
+records 7,808 passed, zero failed, 687 ignored and 96 skipped workspace tests.
+The retained ledger records all 28 chip tests and all 120 affected machine/Gate
+Array tests passing. The 16 local firmware passes above supplement that ledger;
+ignored tests are not counted as passing.
