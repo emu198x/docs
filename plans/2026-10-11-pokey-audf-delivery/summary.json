@@ -1,0 +1,19 @@
+{
+  "chip_sha256": "04cda7768564545e1d8a53271357805d32020a3b3ceef81ca1219b1b69ea82e9",
+  "write_cases_sha256": "887ddba2adb7bd4e6025f26c51bf9936e8cfc0251dbd0199cba3fc163b7452bc",
+  "setter_sha256": "c2481051e546ca05d485fa6dedd3f880f7f9fb5b74980265150f529e505c2667",
+  "driver_sha256": "a35ff3d26e830cf84b490bb9afd7858a9e1696a0ee3a64650609228906e3c74a",
+  "baseline": {
+    "cases": 480,
+    "timer_events": 1920,
+    "irq_calls": 1344,
+    "output_transitions": 1920,
+    "capture_sha256": "1f422bbacf143557d810cb83b297a21348fa766b7dcb6965802adfa651b3bbe7"
+  },
+  "immediate": {
+    "rejected": "AUDF borrow/reload mismatch: (0, 0, 0, 1, -1): [(1031, 0), (1087, 0), (1143, 0), (1199, 0)]"
+  },
+  "late": {
+    "rejected": "AUDF borrow/reload mismatch: (0, 0, 0, 1, -2): [(1031, 0), (1059, 0), (1115, 0), (1171, 0)]"
+  }
+}

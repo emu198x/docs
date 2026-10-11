@@ -1,0 +1,118 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.63s
+     Running tests/audf_delivery_probe.rs (../emu198x/target/debug/deps/audf_delivery_probe-efb623f6a2e124e3)
+
+running 1 test
+AUDF clock=1789772 old=0 new=0 lead=1 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1789772 old=0 new=0 lead=2 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1789772 old=0 new=0 lead=3 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1789772 old=0 new=1 lead=1 expected=[12, 16, 21] observed=[12, 17, 22] matches=false
+AUDF clock=1789772 old=0 new=1 lead=2 expected=[12, 17, 22] observed=[12, 17, 22] matches=true
+AUDF clock=1789772 old=0 new=1 lead=3 expected=[12, 17, 22] observed=[12, 17, 22] matches=true
+AUDF clock=1789772 old=0 new=15 lead=1 expected=[12, 16, 35] observed=[12, 31, 50] matches=false
+AUDF clock=1789772 old=0 new=15 lead=2 expected=[12, 31, 50] observed=[12, 31, 50] matches=true
+AUDF clock=1789772 old=0 new=15 lead=3 expected=[12, 31, 50] observed=[12, 31, 50] matches=true
+AUDF clock=1789772 old=0 new=255 lead=1 expected=[12, 16, 275] observed=[12, 271, 530] matches=false
+AUDF clock=1789772 old=0 new=255 lead=2 expected=[12, 271, 530] observed=[12, 271, 530] matches=true
+AUDF clock=1789772 old=0 new=255 lead=3 expected=[12, 271, 530] observed=[12, 271, 530] matches=true
+AUDF clock=1789772 old=1 new=0 lead=1 expected=[15, 20, 24] observed=[15, 19, 23] matches=false
+AUDF clock=1789772 old=1 new=0 lead=2 expected=[15, 19, 23] observed=[15, 19, 23] matches=true
+AUDF clock=1789772 old=1 new=0 lead=3 expected=[15, 19, 23] observed=[15, 19, 23] matches=true
+AUDF clock=1789772 old=1 new=1 lead=1 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1789772 old=1 new=1 lead=2 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1789772 old=1 new=1 lead=3 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1789772 old=1 new=15 lead=1 expected=[15, 20, 39] observed=[15, 34, 53] matches=false
+AUDF clock=1789772 old=1 new=15 lead=2 expected=[15, 34, 53] observed=[15, 34, 53] matches=true
+AUDF clock=1789772 old=1 new=15 lead=3 expected=[15, 34, 53] observed=[15, 34, 53] matches=true
+AUDF clock=1789772 old=1 new=255 lead=1 expected=[15, 20, 279] observed=[15, 274, 533] matches=false
+AUDF clock=1789772 old=1 new=255 lead=2 expected=[15, 274, 533] observed=[15, 274, 533] matches=true
+AUDF clock=1789772 old=1 new=255 lead=3 expected=[15, 274, 533] observed=[15, 274, 533] matches=true
+AUDF clock=1789772 old=15 new=0 lead=1 expected=[57, 76, 80] observed=[57, 61, 65] matches=false
+AUDF clock=1789772 old=15 new=0 lead=2 expected=[57, 61, 65] observed=[57, 61, 65] matches=true
+AUDF clock=1789772 old=15 new=0 lead=3 expected=[57, 61, 65] observed=[57, 61, 65] matches=true
+AUDF clock=1789772 old=15 new=1 lead=1 expected=[57, 76, 81] observed=[57, 62, 67] matches=false
+AUDF clock=1789772 old=15 new=1 lead=2 expected=[57, 62, 67] observed=[57, 62, 67] matches=true
+AUDF clock=1789772 old=15 new=1 lead=3 expected=[57, 62, 67] observed=[57, 62, 67] matches=true
+AUDF clock=1789772 old=15 new=15 lead=1 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1789772 old=15 new=15 lead=2 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1789772 old=15 new=15 lead=3 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1789772 old=15 new=255 lead=1 expected=[57, 76, 335] observed=[57, 316, 575] matches=false
+AUDF clock=1789772 old=15 new=255 lead=2 expected=[57, 316, 575] observed=[57, 316, 575] matches=true
+AUDF clock=1789772 old=15 new=255 lead=3 expected=[57, 316, 575] observed=[57, 316, 575] matches=true
+AUDF clock=1789772 old=255 new=0 lead=1 expected=[777, 1036, 1040] observed=[777, 781, 785] matches=false
+AUDF clock=1789772 old=255 new=0 lead=2 expected=[777, 781, 785] observed=[777, 781, 785] matches=true
+AUDF clock=1789772 old=255 new=0 lead=3 expected=[777, 781, 785] observed=[777, 781, 785] matches=true
+AUDF clock=1789772 old=255 new=1 lead=1 expected=[777, 1036, 1041] observed=[777, 782, 787] matches=false
+AUDF clock=1789772 old=255 new=1 lead=2 expected=[777, 782, 787] observed=[777, 782, 787] matches=true
+AUDF clock=1789772 old=255 new=1 lead=3 expected=[777, 782, 787] observed=[777, 782, 787] matches=true
+AUDF clock=1789772 old=255 new=15 lead=1 expected=[777, 1036, 1055] observed=[777, 796, 815] matches=false
+AUDF clock=1789772 old=255 new=15 lead=2 expected=[777, 796, 815] observed=[777, 796, 815] matches=true
+AUDF clock=1789772 old=255 new=15 lead=3 expected=[777, 796, 815] observed=[777, 796, 815] matches=true
+AUDF clock=1789772 old=255 new=255 lead=1 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF clock=1789772 old=255 new=255 lead=2 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF clock=1789772 old=255 new=255 lead=3 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF clock=1773447 old=0 new=0 lead=1 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1773447 old=0 new=0 lead=2 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1773447 old=0 new=0 lead=3 expected=[12, 16, 20] observed=[12, 16, 20] matches=true
+AUDF clock=1773447 old=0 new=1 lead=1 expected=[12, 16, 21] observed=[12, 17, 22] matches=false
+AUDF clock=1773447 old=0 new=1 lead=2 expected=[12, 17, 22] observed=[12, 17, 22] matches=true
+AUDF clock=1773447 old=0 new=1 lead=3 expected=[12, 17, 22] observed=[12, 17, 22] matches=true
+AUDF clock=1773447 old=0 new=15 lead=1 expected=[12, 16, 35] observed=[12, 31, 50] matches=false
+AUDF clock=1773447 old=0 new=15 lead=2 expected=[12, 31, 50] observed=[12, 31, 50] matches=true
+AUDF clock=1773447 old=0 new=15 lead=3 expected=[12, 31, 50] observed=[12, 31, 50] matches=true
+AUDF clock=1773447 old=0 new=255 lead=1 expected=[12, 16, 275] observed=[12, 271, 530] matches=false
+AUDF clock=1773447 old=0 new=255 lead=2 expected=[12, 271, 530] observed=[12, 271, 530] matches=true
+AUDF clock=1773447 old=0 new=255 lead=3 expected=[12, 271, 530] observed=[12, 271, 530] matches=true
+AUDF clock=1773447 old=1 new=0 lead=1 expected=[15, 20, 24] observed=[15, 19, 23] matches=false
+AUDF clock=1773447 old=1 new=0 lead=2 expected=[15, 19, 23] observed=[15, 19, 23] matches=true
+AUDF clock=1773447 old=1 new=0 lead=3 expected=[15, 19, 23] observed=[15, 19, 23] matches=true
+AUDF clock=1773447 old=1 new=1 lead=1 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1773447 old=1 new=1 lead=2 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1773447 old=1 new=1 lead=3 expected=[15, 20, 25] observed=[15, 20, 25] matches=true
+AUDF clock=1773447 old=1 new=15 lead=1 expected=[15, 20, 39] observed=[15, 34, 53] matches=false
+AUDF clock=1773447 old=1 new=15 lead=2 expected=[15, 34, 53] observed=[15, 34, 53] matches=true
+AUDF clock=1773447 old=1 new=15 lead=3 expected=[15, 34, 53] observed=[15, 34, 53] matches=true
+AUDF clock=1773447 old=1 new=255 lead=1 expected=[15, 20, 279] observed=[15, 274, 533] matches=false
+AUDF clock=1773447 old=1 new=255 lead=2 expected=[15, 274, 533] observed=[15, 274, 533] matches=true
+AUDF clock=1773447 old=1 new=255 lead=3 expected=[15, 274, 533] observed=[15, 274, 533] matches=true
+AUDF clock=1773447 old=15 new=0 lead=1 expected=[57, 76, 80] observed=[57, 61, 65] matches=false
+AUDF clock=1773447 old=15 new=0 lead=2 expected=[57, 61, 65] observed=[57, 61, 65] matches=true
+AUDF clock=1773447 old=15 new=0 lead=3 expected=[57, 61, 65] observed=[57, 61, 65] matches=true
+AUDF clock=1773447 old=15 new=1 lead=1 expected=[57, 76, 81] observed=[57, 62, 67] matches=false
+AUDF clock=1773447 old=15 new=1 lead=2 expected=[57, 62, 67] observed=[57, 62, 67] matches=true
+AUDF clock=1773447 old=15 new=1 lead=3 expected=[57, 62, 67] observed=[57, 62, 67] matches=true
+AUDF clock=1773447 old=15 new=15 lead=1 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1773447 old=15 new=15 lead=2 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1773447 old=15 new=15 lead=3 expected=[57, 76, 95] observed=[57, 76, 95] matches=true
+AUDF clock=1773447 old=15 new=255 lead=1 expected=[57, 76, 335] observed=[57, 316, 575] matches=false
+AUDF clock=1773447 old=15 new=255 lead=2 expected=[57, 316, 575] observed=[57, 316, 575] matches=true
+AUDF clock=1773447 old=15 new=255 lead=3 expected=[57, 316, 575] observed=[57, 316, 575] matches=true
+AUDF clock=1773447 old=255 new=0 lead=1 expected=[777, 1036, 1040] observed=[777, 781, 785] matches=false
+AUDF clock=1773447 old=255 new=0 lead=2 expected=[777, 781, 785] observed=[777, 781, 785] matches=true
+AUDF clock=1773447 old=255 new=0 lead=3 expected=[777, 781, 785] observed=[777, 781, 785] matches=true
+AUDF clock=1773447 old=255 new=1 lead=1 expected=[777, 1036, 1041] observed=[777, 782, 787] matches=false
+AUDF clock=1773447 old=255 new=1 lead=2 expected=[777, 782, 787] observed=[777, 782, 787] matches=true
+AUDF clock=1773447 old=255 new=1 lead=3 expected=[777, 782, 787] observed=[777, 782, 787] matches=true
+AUDF clock=1773447 old=255 new=15 lead=1 expected=[777, 1036, 1055] observed=[777, 796, 815] matches=false
+AUDF clock=1773447 old=255 new=15 lead=2 expected=[777, 796, 815] observed=[777, 796, 815] matches=true
+AUDF clock=1773447 old=255 new=15 lead=3 expected=[777, 796, 815] observed=[777, 796, 815] matches=true
+AUDF clock=1773447 old=255 new=255 lead=1 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF clock=1773447 old=255 new=255 lead=2 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF clock=1773447 old=255 new=255 lead=3 expected=[777, 1036, 1295] observed=[777, 1036, 1295] matches=true
+AUDF_SUMMARY cases=96 failures=24
+
+thread 'audf_write_retains_the_reload_already_in_flight' (89358286) panicked at crates/atari-pokey/tests/audf_delivery_probe.rs:68:5:
+assertion `left == right` failed: AUDF writes must retain the in-flight reload
+  left: 24
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test audf_write_retains_the_reload_already_in_flight ... FAILED
+
+failures:
+
+failures:
+    audf_write_retains_the_reload_already_in_flight
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+error: test failed, to rerun pass `-p atari-pokey --test audf_delivery_probe`
