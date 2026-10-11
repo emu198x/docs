@@ -1,0 +1,8 @@
+Game Gear packet channels: [1, 1, 1]
+all-enabled samples: 2402, nonzero: 2402
+muted output identical to enabled: true
+left-only output identical to enabled: true
+
+thread 'main' (92768837) panicked at /private/tmp/198x-sn76489-stereo-evidence/host-probe.rs:46:5:
+Game Gear reaches host as mono
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

@@ -11,6 +11,20 @@
   "mame_commit": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
   "sha256": {
     "probe.rs": "69ec88dbda86a3cd91ab8fba906eaf79d81edd8860cd475279184f99af7d4eaa",
-    "red.log": "f06386010fded2fac36de367c8d3668e2c8fb2627537f40f71fec3a2b4fe09d5"
+    "red.log": "f06386010fded2fac36de367c8d3668e2c8fb2627537f40f71fec3a2b4fe09d5",
+    "host-probe.rs": "ef1c2ef4ac882ee68e67bc5774c1f0ffe0e20f63b33cb889c04885e979d884ea",
+    "host-red.log": "6f724bf0804b9488a03466864a55b29a564a898829476ad815712ec6c4641d5e"
+  },
+  "host_probe": {
+    "packet_channels": [
+      1,
+      1,
+      1
+    ],
+    "samples": 2402,
+    "nonzero_samples": 2402,
+    "muted_equals_enabled": true,
+    "left_only_equals_enabled": true,
+    "guest_completed": "HALT asserted at PC 17 after all panning/PSG writes"
   }
 }
