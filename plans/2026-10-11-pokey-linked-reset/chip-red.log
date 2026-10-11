@@ -1,0 +1,406 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x-pokey-polarity/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.34s
+     Running tests/linked_reset_probe.rs (../emu198x/target/debug/deps/linked_reset_probe-537f8ac63bd025cb)
+
+running 1 test
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=1 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=1 action=1 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=1 action=2 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=1 action=3 expected=[21, 33, 40, 47, 54, 61] observed=[29, 36, 43, 50, 57] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=2 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=2 action=1 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=2 action=2 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=2 action=3 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=3 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=3 action=1 expected=[21, 29, 36, 43, 50, 57] observed=[25, 32, 39, 46, 53, 60] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=3 action=2 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=0 lead=3 action=3 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=1 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=1 action=1 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=1 action=2 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=1 action=3 expected=[789, 1057, 1320, 1583, 1846] observed=[1053, 1316, 1579, 1842] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=2 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=2 action=1 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=2 action=2 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=2 action=3 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=3 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=3 action=1 expected=[789, 1053, 1316, 1579, 1842] observed=[1049, 1312, 1575, 1838] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=3 action=2 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1789772 pair=0 low=0 high=1 lead=3 action=3 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=1 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=1 action=1 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=1 action=2 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=1 action=3 expected=[24, 37, 45, 53, 61] observed=[33, 41, 49, 57, 65] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=2 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=2 action=1 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=2 action=2 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=2 action=3 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=3 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=3 action=1 expected=[24, 33, 41, 49, 57, 65] observed=[29, 37, 45, 53, 61] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=3 action=2 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=0 lead=3 action=3 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=1 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=1 action=1 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=1 action=2 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=1 action=3 expected=[792, 1061, 1325, 1589, 1853] observed=[1057, 1321, 1585, 1849] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=2 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=2 action=1 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=2 action=2 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=2 action=3 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=3 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=3 action=1 expected=[792, 1057, 1321, 1585, 1849] observed=[1053, 1317, 1581, 1845] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=3 action=2 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1789772 pair=0 low=1 high=1 lead=3 action=3 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=1 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=1 action=1 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=1 action=2 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=1 action=3 expected=[66, 93, 115, 137, 159] observed=[89, 111, 133, 155] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=2 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=2 action=1 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=2 action=2 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=2 action=3 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=3 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=3 action=1 expected=[66, 89, 111, 133, 155] observed=[85, 107, 129, 151] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=3 action=2 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=0 lead=3 action=3 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=1 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=1 action=1 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=1 action=2 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=1 action=3 expected=[834, 1117, 1395, 1673, 1951] observed=[1113, 1391, 1669, 1947] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=2 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=2 action=1 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=2 action=2 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=2 action=3 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=3 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=3 action=1 expected=[834, 1113, 1391, 1669, 1947] observed=[1109, 1387, 1665, 1943] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=3 action=2 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1789772 pair=0 low=15 high=1 lead=3 action=3 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=1 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=1 action=1 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=1 action=2 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=1 action=3 expected=[786, 1053, 1315, 1577, 1839] observed=[1049, 1311, 1573, 1835] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=2 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=2 action=1 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=2 action=2 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=2 action=3 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=3 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=3 action=1 expected=[786, 1049, 1311, 1573, 1835] observed=[1045, 1307, 1569, 1831] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=3 action=2 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=0 lead=3 action=3 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=1 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=1 action=1 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=1 action=2 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=1 action=3 expected=[1554, 2077, 2595, 3113, 3631] observed=[2073, 2591, 3109, 3627] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=2 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=2 action=1 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=2 action=2 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=2 action=3 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=3 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=3 action=1 expected=[1554, 2073, 2591, 3109, 3627] observed=[2069, 2587, 3105, 3623] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=3 action=2 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1789772 pair=0 low=255 high=1 lead=3 action=3 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=1 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=1 action=1 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=1 action=2 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=1 action=3 expected=[21, 33, 40, 47, 54, 61] observed=[29, 36, 43, 50, 57] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=2 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=2 action=1 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=2 action=2 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=2 action=3 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=3 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=3 action=1 expected=[21, 29, 36, 43, 50, 57] observed=[25, 32, 39, 46, 53, 60] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=3 action=2 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=0 lead=3 action=3 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=1 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=1 action=1 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=1 action=2 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=1 action=3 expected=[789, 1057, 1320, 1583, 1846] observed=[1053, 1316, 1579, 1842] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=2 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=2 action=1 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=2 action=2 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=2 action=3 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=3 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=3 action=1 expected=[789, 1053, 1316, 1579, 1842] observed=[1049, 1312, 1575, 1838] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=3 action=2 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1789772 pair=1 low=0 high=1 lead=3 action=3 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=1 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=1 action=1 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=1 action=2 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=1 action=3 expected=[24, 37, 45, 53, 61] observed=[33, 41, 49, 57, 65] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=2 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=2 action=1 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=2 action=2 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=2 action=3 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=3 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=3 action=1 expected=[24, 33, 41, 49, 57, 65] observed=[29, 37, 45, 53, 61] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=3 action=2 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=0 lead=3 action=3 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=1 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=1 action=1 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=1 action=2 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=1 action=3 expected=[792, 1061, 1325, 1589, 1853] observed=[1057, 1321, 1585, 1849] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=2 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=2 action=1 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=2 action=2 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=2 action=3 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=3 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=3 action=1 expected=[792, 1057, 1321, 1585, 1849] observed=[1053, 1317, 1581, 1845] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=3 action=2 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1789772 pair=1 low=1 high=1 lead=3 action=3 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=1 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=1 action=1 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=1 action=2 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=1 action=3 expected=[66, 93, 115, 137, 159] observed=[89, 111, 133, 155] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=2 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=2 action=1 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=2 action=2 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=2 action=3 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=3 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=3 action=1 expected=[66, 89, 111, 133, 155] observed=[85, 107, 129, 151] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=3 action=2 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=0 lead=3 action=3 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=1 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=1 action=1 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=1 action=2 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=1 action=3 expected=[834, 1117, 1395, 1673, 1951] observed=[1113, 1391, 1669, 1947] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=2 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=2 action=1 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=2 action=2 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=2 action=3 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=3 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=3 action=1 expected=[834, 1113, 1391, 1669, 1947] observed=[1109, 1387, 1665, 1943] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=3 action=2 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1789772 pair=1 low=15 high=1 lead=3 action=3 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=1 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=1 action=1 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=1 action=2 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=1 action=3 expected=[786, 1053, 1315, 1577, 1839] observed=[1049, 1311, 1573, 1835] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=2 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=2 action=1 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=2 action=2 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=2 action=3 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=3 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=3 action=1 expected=[786, 1049, 1311, 1573, 1835] observed=[1045, 1307, 1569, 1831] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=3 action=2 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=0 lead=3 action=3 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=1 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=1 action=1 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=1 action=2 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=1 action=3 expected=[1554, 2077, 2595, 3113, 3631] observed=[2073, 2591, 3109, 3627] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=2 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=2 action=1 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=2 action=2 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=2 action=3 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=3 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=3 action=1 expected=[1554, 2073, 2591, 3109, 3627] observed=[2069, 2587, 3105, 3623] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=3 action=2 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1789772 pair=1 low=255 high=1 lead=3 action=3 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=1 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=1 action=1 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=1 action=2 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=1 action=3 expected=[21, 33, 40, 47, 54, 61] observed=[29, 36, 43, 50, 57] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=2 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=2 action=1 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=2 action=2 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=2 action=3 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=3 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=3 action=1 expected=[21, 29, 36, 43, 50, 57] observed=[25, 32, 39, 46, 53, 60] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=3 action=2 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=0 lead=3 action=3 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=1 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=1 action=1 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=1 action=2 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=1 action=3 expected=[789, 1057, 1320, 1583, 1846] observed=[1053, 1316, 1579, 1842] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=2 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=2 action=1 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=2 action=2 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=2 action=3 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=3 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=3 action=1 expected=[789, 1053, 1316, 1579, 1842] observed=[1049, 1312, 1575, 1838] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=3 action=2 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1773447 pair=0 low=0 high=1 lead=3 action=3 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=1 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=1 action=1 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=1 action=2 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=1 action=3 expected=[24, 37, 45, 53, 61] observed=[33, 41, 49, 57, 65] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=2 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=2 action=1 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=2 action=2 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=2 action=3 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=3 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=3 action=1 expected=[24, 33, 41, 49, 57, 65] observed=[29, 37, 45, 53, 61] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=3 action=2 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=0 lead=3 action=3 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=1 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=1 action=1 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=1 action=2 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=1 action=3 expected=[792, 1061, 1325, 1589, 1853] observed=[1057, 1321, 1585, 1849] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=2 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=2 action=1 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=2 action=2 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=2 action=3 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=3 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=3 action=1 expected=[792, 1057, 1321, 1585, 1849] observed=[1053, 1317, 1581, 1845] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=3 action=2 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1773447 pair=0 low=1 high=1 lead=3 action=3 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=1 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=1 action=1 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=1 action=2 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=1 action=3 expected=[66, 93, 115, 137, 159] observed=[89, 111, 133, 155] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=2 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=2 action=1 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=2 action=2 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=2 action=3 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=3 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=3 action=1 expected=[66, 89, 111, 133, 155] observed=[85, 107, 129, 151] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=3 action=2 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=0 lead=3 action=3 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=1 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=1 action=1 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=1 action=2 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=1 action=3 expected=[834, 1117, 1395, 1673, 1951] observed=[1113, 1391, 1669, 1947] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=2 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=2 action=1 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=2 action=2 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=2 action=3 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=3 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=3 action=1 expected=[834, 1113, 1391, 1669, 1947] observed=[1109, 1387, 1665, 1943] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=3 action=2 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1773447 pair=0 low=15 high=1 lead=3 action=3 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=1 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=1 action=1 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=1 action=2 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=1 action=3 expected=[786, 1053, 1315, 1577, 1839] observed=[1049, 1311, 1573, 1835] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=2 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=2 action=1 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=2 action=2 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=2 action=3 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=3 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=3 action=1 expected=[786, 1049, 1311, 1573, 1835] observed=[1045, 1307, 1569, 1831] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=3 action=2 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=0 lead=3 action=3 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=1 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=1 action=1 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=1 action=2 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=1 action=3 expected=[1554, 2077, 2595, 3113, 3631] observed=[2073, 2591, 3109, 3627] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=2 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=2 action=1 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=2 action=2 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=2 action=3 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=3 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=3 action=1 expected=[1554, 2073, 2591, 3109, 3627] observed=[2069, 2587, 3105, 3623] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=3 action=2 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1773447 pair=0 low=255 high=1 lead=3 action=3 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=1 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=1 action=1 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=1 action=2 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=1 action=3 expected=[21, 33, 40, 47, 54, 61] observed=[29, 36, 43, 50, 57] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=2 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=2 action=1 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=2 action=2 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=2 action=3 expected=[21, 32, 39, 46, 53, 60] observed=[28, 35, 42, 49, 56] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=3 action=0 expected=[21, 28, 35, 42, 49, 56] observed=[21, 28, 35, 42, 49, 56] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=3 action=1 expected=[21, 29, 36, 43, 50, 57] observed=[25, 32, 39, 46, 53, 60] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=3 action=2 expected=[21, 30, 37, 44, 51, 58] observed=[26, 33, 40, 47, 54, 61] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=0 lead=3 action=3 expected=[21, 31, 38, 45, 52, 59] observed=[27, 34, 41, 48, 55] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=1 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=1 action=1 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=1 action=2 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=1 action=3 expected=[789, 1057, 1320, 1583, 1846] observed=[1053, 1316, 1579, 1842] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=2 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=2 action=1 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=2 action=2 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=2 action=3 expected=[789, 1056, 1319, 1582, 1845] observed=[1052, 1315, 1578, 1841] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=3 action=0 expected=[789, 1052, 1315, 1578, 1841] observed=[789, 1052, 1315, 1578, 1841] matches=true
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=3 action=1 expected=[789, 1053, 1316, 1579, 1842] observed=[1049, 1312, 1575, 1838] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=3 action=2 expected=[789, 1054, 1317, 1580, 1843] observed=[1050, 1313, 1576, 1839] matches=false
+LINKED_RESET clock=1773447 pair=1 low=0 high=1 lead=3 action=3 expected=[789, 1055, 1318, 1581, 1844] observed=[1051, 1314, 1577, 1840] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=1 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=1 action=1 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=1 action=2 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=1 action=3 expected=[24, 37, 45, 53, 61] observed=[33, 41, 49, 57, 65] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=2 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=2 action=1 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=2 action=2 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=2 action=3 expected=[24, 36, 44, 52, 60, 68] observed=[32, 40, 48, 56, 64] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=3 action=0 expected=[24, 32, 40, 48, 56, 64] observed=[24, 32, 40, 48, 56, 64] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=3 action=1 expected=[24, 33, 41, 49, 57, 65] observed=[29, 37, 45, 53, 61] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=3 action=2 expected=[24, 34, 42, 50, 58, 66] observed=[30, 38, 46, 54, 62] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=0 lead=3 action=3 expected=[24, 35, 43, 51, 59, 67] observed=[31, 39, 47, 55, 63] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=1 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=1 action=1 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=1 action=2 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=1 action=3 expected=[792, 1061, 1325, 1589, 1853] observed=[1057, 1321, 1585, 1849] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=2 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=2 action=1 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=2 action=2 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=2 action=3 expected=[792, 1060, 1324, 1588, 1852] observed=[1056, 1320, 1584, 1848] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=3 action=0 expected=[792, 1056, 1320, 1584, 1848] observed=[792, 1056, 1320, 1584, 1848] matches=true
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=3 action=1 expected=[792, 1057, 1321, 1585, 1849] observed=[1053, 1317, 1581, 1845] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=3 action=2 expected=[792, 1058, 1322, 1586, 1850] observed=[1054, 1318, 1582, 1846] matches=false
+LINKED_RESET clock=1773447 pair=1 low=1 high=1 lead=3 action=3 expected=[792, 1059, 1323, 1587, 1851] observed=[1055, 1319, 1583, 1847] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=1 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=1 action=1 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=1 action=2 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=1 action=3 expected=[66, 93, 115, 137, 159] observed=[89, 111, 133, 155] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=2 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=2 action=1 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=2 action=2 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=2 action=3 expected=[66, 92, 114, 136, 158] observed=[88, 110, 132, 154] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=3 action=0 expected=[66, 88, 110, 132, 154] observed=[66, 88, 110, 132, 154] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=3 action=1 expected=[66, 89, 111, 133, 155] observed=[85, 107, 129, 151] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=3 action=2 expected=[66, 90, 112, 134, 156] observed=[86, 108, 130, 152] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=0 lead=3 action=3 expected=[66, 91, 113, 135, 157] observed=[87, 109, 131, 153] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=1 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=1 action=1 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=1 action=2 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=1 action=3 expected=[834, 1117, 1395, 1673, 1951] observed=[1113, 1391, 1669, 1947] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=2 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=2 action=1 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=2 action=2 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=2 action=3 expected=[834, 1116, 1394, 1672, 1950] observed=[1112, 1390, 1668, 1946] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=3 action=0 expected=[834, 1112, 1390, 1668, 1946] observed=[834, 1112, 1390, 1668, 1946] matches=true
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=3 action=1 expected=[834, 1113, 1391, 1669, 1947] observed=[1109, 1387, 1665, 1943] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=3 action=2 expected=[834, 1114, 1392, 1670, 1948] observed=[1110, 1388, 1666, 1944] matches=false
+LINKED_RESET clock=1773447 pair=1 low=15 high=1 lead=3 action=3 expected=[834, 1115, 1393, 1671, 1949] observed=[1111, 1389, 1667, 1945] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=1 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=1 action=1 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=1 action=2 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=1 action=3 expected=[786, 1053, 1315, 1577, 1839] observed=[1049, 1311, 1573, 1835] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=2 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=2 action=1 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=2 action=2 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=2 action=3 expected=[786, 1052, 1314, 1576, 1838] observed=[1048, 1310, 1572, 1834] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=3 action=0 expected=[786, 1048, 1310, 1572, 1834] observed=[786, 1048, 1310, 1572, 1834] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=3 action=1 expected=[786, 1049, 1311, 1573, 1835] observed=[1045, 1307, 1569, 1831] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=3 action=2 expected=[786, 1050, 1312, 1574, 1836] observed=[1046, 1308, 1570, 1832] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=0 lead=3 action=3 expected=[786, 1051, 1313, 1575, 1837] observed=[1047, 1309, 1571, 1833] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=1 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=1 action=1 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=1 action=2 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=1 action=3 expected=[1554, 2077, 2595, 3113, 3631] observed=[2073, 2591, 3109, 3627] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=2 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=2 action=1 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=2 action=2 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=2 action=3 expected=[1554, 2076, 2594, 3112, 3630] observed=[2072, 2590, 3108, 3626] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=3 action=0 expected=[1554, 2072, 2590, 3108, 3626] observed=[1554, 2072, 2590, 3108, 3626] matches=true
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=3 action=1 expected=[1554, 2073, 2591, 3109, 3627] observed=[2069, 2587, 3105, 3623] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=3 action=2 expected=[1554, 2074, 2592, 3110, 3628] observed=[2070, 2588, 3106, 3624] matches=false
+LINKED_RESET clock=1773447 pair=1 low=255 high=1 lead=3 action=3 expected=[1554, 2075, 2593, 3111, 3629] observed=[2071, 2589, 3107, 3625] matches=false
+LINKED_RESET_SUMMARY cases=384 controls=96 failures=288
+
+thread 'stimer_preserves_pending_linked_high_irqs' (89566036) panicked at crates/atari-pokey/tests/linked_reset_probe.rs:86:5:
+assertion `left == right` failed: STIMER must preserve pending linked high IRQs
+  left: 288
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test stimer_preserves_pending_linked_high_irqs ... FAILED
+
+failures:
+
+failures:
+    stimer_preserves_pending_linked_high_irqs
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+error: test failed, to rerun pass `-p atari-pokey --test linked_reset_probe`
