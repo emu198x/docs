@@ -1,0 +1,23 @@
+{
+  "observer_sha256": "00d3c275241fec484499e28681a69434a1c55d5f9337e52a792843200f9b1094",
+  "calibration_runs": 160,
+  "active_sprite_bytes": 5040,
+  "active_boundary_pairs": 40,
+  "active_pair_clock_gap": 7,
+  "dma_disabled_pairs": 5,
+  "dma_disabled_pair_clock_gap": 2,
+  "tests_passed": 94,
+  "captures": {
+    "pointer-native.zip": {
+      "sha256": "8105de035326936e8bcda71855d0fae1abcb608f3477e7deed8794420b34213b",
+      "cases": 80,
+      "records": 412864
+    },
+    "pointer-controls.zip": {
+      "sha256": "384f9bb9b980e70ae7099d3999a831e2c7a4a12d042effd55f49eba2342e7cf9",
+      "cases": 10,
+      "records": 51192
+    }
+  },
+  "scope": "Sprite 0, five VIC profiles, four banks and both pointer directions. Line-wrap sprites and writes between individual DMA fetch phases remain separate."
+}
