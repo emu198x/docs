@@ -1,0 +1,16 @@
+{
+  "renderer_sha256": "d79effe1aa9967e50bb189ebec6fd1cb850e29e63d78ae878695409da9b29aa6",
+  "wraptime_sha256": "895788d911d5573fd9383d5bc5c0f2c109b7f515b3797e0d52e978c30ca90851",
+  "methods_sha256": "134f0f6473852f1ab53014987d27ca5838d789885cb81e6b49e5ebae8ed50c6d",
+  "harness_sha256": "d225ad449ee9130f0c6649f6cd8749a9e4cf8af7ee48e5404a62b8efe89cff8b",
+  "baseline": {
+    "cases": 648,
+    "input_events": 7776,
+    "half_cycle_transitions": 1188,
+    "settled_half_cycle_pulses": 120,
+    "rows_sha256": "4674cd0ef2dacb33a7d48a84bd6d8bbae658552532f7b5f0cfe5a44929ef6408"
+  },
+  "integer-filter": {
+    "rejected": "missing settled half-cycle pulses"
+  }
+}
