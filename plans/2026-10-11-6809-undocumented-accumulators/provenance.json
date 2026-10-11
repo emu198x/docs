@@ -36,5 +36,8 @@
     "clippy.log": "59ca056ff385a35f08ab00717c6df219cf88dea50fb14b653fe1a54b8d1aba76",
     "wrong-carry.log": "7cff000ff07dfba5e5988cdf0f3ccd6ffa47841ae749fb46913a74913cb1f253",
     "restored.log": "2217a9808d03875f60b85fe40d1d63772fcfde67405f1d3633fa9c11ff7e8073"
-  }
+  },
+  "corrected_commit": "84c7d7c0398779f4622a4126b41076749379ba34",
+  "tested_commit_before_rebase": "0ab0c01be1fbce351bce7fa6e19336d6739b7d81",
+  "rebase_preserved_tested_tree": true
 }
