@@ -76,3 +76,10 @@ this independent hardware byte inside a PSG register is not a valid substitute.
 
 The test/probe sources and failing evidence are retained in the adjacent folder.
 Production source remains unchanged while approval is pending.
+
+## Integration boundary
+
+The separate VDP polarity fix #1724 passed every completed check at exact source
+head `2f6d5d91f19eecc767283e01fb0a51213d1aa862` and merged as
+`1f04c66a79aaa429c2eda976b2d2036e7e728b9b`. This sound-latch design is still
+pending approval; that merge does not implement or authorize the schema change.
