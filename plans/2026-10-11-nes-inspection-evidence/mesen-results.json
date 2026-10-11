@@ -1,0 +1,33 @@
+{
+  "mesen_core_sha256": "281ed37fcd1421eef1c5e60e06f1ede360ee89ee214a9c2a0c7c128376395c68",
+  "cases": [
+    {
+      "mode": 0,
+      "rom_sha256": "d1cb94e55d678d07dcfe6fc43946deb36af057d8566c8f327ddcfd3e99c10f95",
+      "bytes_checked": 2048,
+      "repeats": 2,
+      "match": true
+    },
+    {
+      "mode": 1,
+      "rom_sha256": "ab81803359b2a6e50bc0f603bacd3b232d01e3beadb72ab59b8ec794810502d0",
+      "bytes_checked": 2048,
+      "repeats": 2,
+      "match": true
+    },
+    {
+      "mode": 2,
+      "rom_sha256": "d293600cea3c9cd4a5775503431f269ad4b1cfdfe65c599d779610a3250c3d98",
+      "bytes_checked": 2048,
+      "repeats": 2,
+      "match": true
+    },
+    {
+      "mode": 3,
+      "rom_sha256": "ca7a56b7ad3054260556b3045e838bfee835eb122e8c2e95a4b68312f9b69ee5",
+      "bytes_checked": 2048,
+      "repeats": 2,
+      "match": true
+    }
+  ]
+}
