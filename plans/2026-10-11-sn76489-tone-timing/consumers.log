@@ -1,0 +1,262 @@
+
+running 53 tests
+test saa5050::tests::rounding_lights_half_a_dot_on_a_diagonal ... ok
+test saa5050::tests::rounding_leaves_straight_strokes_alone ... ok
+test saa5050::tests::separated_mosaics_blank_the_left_column_and_last_row_of_each_block ... ok
+test saa5050::tests::flashing_text_is_hidden_for_16_fields_in_64 ... ok
+test tests::acia_idle_does_not_signal_an_interrupt ... ok
+test tests::adc_converts_a_channel_and_reports_completion ... ok
+test tests::a_scrolled_screen_wraps_past_the_top_of_ram ... ok
+test tests::double_height_draws_top_and_bottom_halves_on_two_rows ... ok
+test tests::conceal_hides_text_until_a_colour_code ... ok
+test tests::ic32_falling_edge_on_bit_0_writes_psg ... ok
+test tests::joystick_fire_buttons_pull_system_via_pb4_pb5_low ... ok
+test tests::control_bit_0_selects_which_flashing_colour_shows ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::hold_graphics_repeats_the_mosaic_in_its_own_colour ... ok
+test tests::mode7_coverage_levels_are_linear_light_in_srgb ... ok
+test tests::every_one_mhz_cycle_ends_on_the_one_mhz_clock ... ok
+test tests::mode7_resampling_keeps_each_half_dot_where_it_falls ... ok
+test tests::mode7_follows_the_start_address ... ok
+test tests::mode7_rounds_diagonals_across_the_two_fields ... ok
+test tests::mode7_weaves_its_two_fields ... ok
+test tests::mode7_wraps_within_its_kilobyte ... ok
+test tests::one_mhz_bus_accesses_cost_two_or_three_ticks_rest_one ... ok
+test tests::mode7_cells_are_a_microsecond_wide_and_fill_the_window ... ok
+test tests::one_mhz_access_waits_for_the_next_whole_one_mhz_cycle ... ok
+test tests::rom_bank_register_at_fe30 ... ok
+test tests::rows_past_r6_are_not_displayed ... ok
+test tests::sheila_devices_answer_across_their_whole_blocks ... ok
+test tests::r8_skews_the_cursor_or_turns_it_off ... ok
+test tests::slow_clock_modes_still_sync_at_fifty_hertz ... ok
+test tests::adc_completion_raises_the_system_via_cb1_interrupt ... ok
+test tests::system_via_writes_round_trip ... ok
+test tests::teletext_control_codes_ignore_bit_7 ... ok
+test tests::the_cursor_inverts_a_mixed_mode7_pixel_to_the_inverted_mix ... ok
+test tests::the_cursor_is_as_wide_as_control_bits_5_to_7_make_it ... ok
+test tests::the_latch_selects_each_modes_screen_size ... ok
+test tests::the_mode7_cursor_underlines_the_matched_cell ... ok
+test tests::flashing_teletext_hides_for_16_fields_in_64 ... ok
+test tests::frame_is_a_fixed_master_tick_budget ... ok
+test tests::frame_runs_expected_cycles ... ok
+test tests::via_timers_count_at_one_megahertz ... ok
+test tests::video_ula_matches_the_guides_mode_8_example ... ok
+test tests::video_ula_palette_write_decodes_logical_and_physical ... ok
+test tests::video_ula_pixels_per_byte_matches_the_documented_modes ... ok
+test tests::the_row_under_double_height_shows_only_double_height_characters ... ok
+test tests::the_mos_cursor_blinks_every_sixteen_fields ... ok
+test tests::cassette_carrier_raises_dcd_and_clears_on_data_read ... ok
+test tests::stepping_a_frames_worth_of_instructions_is_a_frame ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::cassette_byte_fills_the_acia_and_clears_on_read ... ok
+test tests::many_frames_complete_without_panic ... ok
+test tests::cassette_does_not_play_while_the_motor_is_off ... ok
+test tests::a_stopped_deck_does_not_advance_even_with_the_motor_on ... ok
+test tests::psg_runs_off_a_four_megahertz_clock ... ok
+
+test result: ok. 53 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 45.63s
+
+
+running 8 tests
+test a_flashing_colour_flashes_at_the_mos_rate ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test boots_to_basic_prompt ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test keyboard_types_a_basic_expression_and_prints_the_result ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test mode7_draws_double_height_and_flashing_text_from_basic ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mode7_renders_the_banner ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mos_clock_counts_centiseconds ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test os_boots_to_basic_banner ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test the_prompt_cursor_blinks_in_mode_7_and_in_a_bitmap_mode ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 8 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test synthetic_firmware_builds_a_raster_and_floods_it ... ok
+test the_control_image_renders_no_raster ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.35s
+
+
+running 1 test
+test os_loads_a_real_tape ... ignored, FIXTURE: needs the BBC MOS+BASIC ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 9 tests
+test tests::keypad_read_routes_to_correct_controller ... ok
+test tests::joystick_mode_toggle_via_io ... ok
+test tests::vdp_runs_at_three_dots_per_two_tstates ... ok
+test tests::ntsc_frame_returns_expected_cpu_cycles ... ok
+test tests::one_frame_of_tstates_is_exactly_one_vdp_frame ... ok
+test tests::vdp_drives_cpu_irq_at_vblank ... ok
+test tests::pal_frame_returns_expected_cpu_cycles ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+
+running 1 test
+test bios_boots_to_title_screen ... ignored, FIXTURE: needs ColecoVision BIOS — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_colecovision_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 8 tests
+test tests::controller_routing_by_port_parity ... ok
+test tests::psg_write_port_range ... ok
+test tests::pause_line_drives_z80_nmi ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+
+running 1 test
+test cart_boots_to_title_screen ... ignored, FIXTURE: needs an SG-1000 / Othello Multivision .sg cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test an_empty_cartridge_does_not_look_like_a_boot ... ok
+test the_sg_1000_boots_a_cartridge_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 3 tests
+test the_same_loop_loses_nothing_with_the_display_blanked ... ok
+test an_18_t_state_copy_loop_loses_bytes_during_active_display ... ok
+test a_loop_paced_to_the_worst_case_window_loses_nothing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+
+running 11 tests
+test tests::vdp_io_routes_at_0x10_block ... ok
+test tests::ctc_routes_at_0x00_block ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::key_press_and_release_round_trip ... ok
+test tests::joystick_reads_active_high_at_0x37 ... ok
+test tests::keyboard_rows_read_directly_at_0x30_block ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.71s
+
+
+running 1 test
+test boots_through_ctc_to_a_rendered_screen ... ignored, FIXTURE: needs Sord M5 BIOS + cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test cart_round_spawns_and_runs ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+test vdp_int_drives_ctc_channel3 ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test trace_keyboard_scan_ports ... ignored, FIXTURE: needs Sord M5 BIOS — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_m5_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling crc32fast v1.5.0
+   Compiling simd-adler32 v0.3.9
+   Compiling common-acorn-cassette v0.31.0 (/private/tmp/198x-6809-transfers/crates/common-acorn-cassette)
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6809-transfers/crates/motorola-6845)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-6809-transfers/crates/mos-via-6522)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-6809-transfers/crates/emu198x-mos-6502)
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+   Compiling machine-sega-sg-1000 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sega-sg-1000)
+   Compiling machine-coleco-colecovision v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-coleco-colecovision)
+   Compiling miniz_oxide v0.9.1
+   Compiling machine-acorn-bbc-micro v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-acorn-bbc-micro)
+   Compiling flate2 v1.1.10
+   Compiling format-acorn-uef v0.31.0 (/private/tmp/198x-6809-transfers/crates/format-acorn-uef)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.09s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_acorn_bbc_micro-230754a54b2459ff)
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-afc6f9a49dc49186)
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-0dc6917e9012027d)
+     Running tests/tape_load.rs (/private/tmp/198x-6809-target/debug/deps/tape_load-8286899de9d4fde8)
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_coleco_colecovision-5923d8ec6383f1f3)
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-055b7c1e7804ca8f)
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-ddaafdc361117425)
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-da8068fad5466892)
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sega_sg_1000-7b4b430bbb3333b1)
+     Running tests/cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/cart_boot-2fa3aa52752d13b5)
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-680acb7ea34026b5)
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-2886c1bc1a5b1979)
+     Running tests/vram_access_windows.rs (/private/tmp/198x-6809-target/debug/deps/vram_access_windows-024bb8e7281f3f00)
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sord_m5-9ecf8f8b1f5dee7b)
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-477833f0cd77a7ba)
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-1e3f9568d4beea31)
+     Running tests/digdug_freeze_probe.rs (/private/tmp/198x-6809-target/debug/deps/digdug_freeze_probe-f31cfe3ec73f069b)
+     Running tests/keyboard_io_trace.rs (/private/tmp/198x-6809-target/debug/deps/keyboard_io_trace-f7cf40757f0ecc09)
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-6de6610a5b717149)
+   Doc-tests machine_acorn_bbc_micro
+   Doc-tests machine_coleco_colecovision
+   Doc-tests machine_sega_sg_1000
+   Doc-tests machine_sord_m5
