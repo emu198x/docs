@@ -1,0 +1,49 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-pokey)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.09s
+     Running unittests src/lib.rs (target/debug/deps/atari_pokey-2f2b6fe11081a40d)
+
+running 36 tests
+test tests::audctl_bits_sit_where_the_register_layout_puts_them ... ok
+test tests::audctl_join_bits_select_the_documented_channel_pairs ... ok
+test tests::audio_buffer_fills_on_tick ... ok
+test tests::a_received_byte_arrives_after_a_whole_frame ... ok
+test tests::a_byte_offered_mid_frame_is_dropped ... ok
+test tests::a_sent_byte_reaches_the_bus_once ... ok
+test tests::a_byte_arriving_on_an_unread_one_is_an_overrun ... ok
+test tests::audctl_base_clock_selection ... ok
+test tests::default_creates_ntsc_pokey ... ok
+test tests::a_second_serout_write_replaces_the_byte_waiting_to_load ... ok
+test tests::initialisation_mode_flushes_the_output_path ... ok
+test tests::frequency_counter_countdown ... ok
+test tests::irqen_irqst_read_write ... ok
+test tests::every_distortion_field_uses_the_documented_polynomial_gates ... ok
+test tests::an_external_serial_clock_never_shifts ... ok
+test tests::output_ready_asserts_on_the_load_not_on_the_write ... ok
+test tests::poly_tables_have_correct_periods ... ok
+test tests::maximum_linked_divider_includes_high_speed_latency_without_overflow ... ok
+test tests::output_complete_reports_an_idle_shift_register ... ok
+test tests::random_initialisation_and_nine_bit_phase ... ok
+test tests::sampling_weights_held_output_without_advancing_chip_time ... ok
+test tests::press_key_latches_code_and_raises_interrupt ... ok
+test tests::pot_value_read ... ok
+test tests::reading_serin_does_not_acknowledge_it ... ok
+test tests::shift_bit_in_the_scan_code_drives_skstat ... ok
+test tests::skres_resets_serial_status ... ok
+test tests::an_external_serial_clock_never_receives ... ok
+test tests::stimer_resets_all_counters ... ok
+test tests::the_sio_audctl_value_selects_the_fast_clock_and_the_link ... ok
+test tests::sixteen_bit_mode_uses_one_little_endian_divider ... ok
+test tests::timer_interrupt_generation ... ok
+test tests::serial_output_runs_at_the_documented_sio_baud_rate ... ok
+test tests::volume_only_mode_output ... ok
+test tests::split_clock_preserves_the_uniform_tick_stream ... ok
+test tests::long_polynomials_have_full_periods ... ok
+test tests::output_clock_produces_exactly_48khz_over_one_second ... ok
+
+test result: ok. 36 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+   Doc-tests atari_pokey
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

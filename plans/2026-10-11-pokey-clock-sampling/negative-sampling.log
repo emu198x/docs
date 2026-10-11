@@ -1,0 +1,21 @@
+
+running 1 test
+test tests::pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses ... FAILED
+
+failures:
+
+failures:
+    tests::pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 40 filtered out; finished in 0.00s
+
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.58s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+thread 'tests::pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses' (87538663) panicked at crates/machine-atari-7800/src/lib.rs:1122:21:
+assertion `left == right` failed: 48 kHz output deadline: Ntsc, slow false, tick 299
+  left: 0
+ right: 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`

@@ -1,0 +1,26 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.71s
+     Running unittests src/lib.rs (target/debug/deps/machine_atari_7800-2cbd5bb98ce49f9b)
+
+running 3 tests
+
+thread 'tests::pokey_random_follows_phase_two_while_cpu_execution_is_held' (87529407) panicked at crates/machine-atari-7800/src/lib.rs:1088:9:
+RANDOM clock mismatches: [(Ntsc, 32768, 12, 255, 127), (Ntsc, 640, 24, 63, 127), (Ntsc, 0, 24, 63, 127), (Pal, 32768, 12, 255, 127), (Pal, 640, 24, 63, 127), (Pal, 0, 24, 63, 127)]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test tests::pokey_random_follows_phase_two_while_cpu_execution_is_held ... FAILED
+test tests::a78_pokey_feature_installs_and_routes_the_chip ... ok
+
+thread 'tests::pokey_restore_preserves_future_audio_across_partial_sample_phases' (87529408) panicked at crates/machine-atari-7800/src/lib.rs:1128:9:
+audio restore mismatches: [(1789772, 0, 21), (1789772, 1, 20), (1789772, 2, 19), (1789772, 3, 18), (1789772, 4, 17), (1789772, 5, 16), (1789772, 6, 15), (1789772, 7, 14), (1789772, 8, 13), (1789772, 9, 12), (1789772, 10, 11), (1789772, 11, 10), (1789772, 12, 9), (1789772, 13, 8), (1789772, 14, 7), (1789772, 15, 6), (1789772, 16, 5), (1789772, 17, 4), (1789772, 18, 3), (1789772, 19, 2), (1789772, 20, 1), (1789772, 21, 0), (1789772, 22, 36), (1789772, 23, 35), (1789772, 24, 34), (1789772, 25, 33), (1789772, 26, 32), (1789772, 27, 31), (1789772, 28, 30), (1789772, 29, 29), (1789772, 30, 28), (1789772, 31, 27), (1789772, 32, 26), (1789772, 33, 25), (1789772, 34, 24), (1789772, 35, 23), (1789772, 36, 22), (1789772, 37, 21), (1789772, 38, 20), (1789772, 39, 19), (1773447, 0, 19), (1773447, 1, 18), (1773447, 2, 17), (1773447, 3, 16), (1773447, 4, 15), (1773447, 5, 14), (1773447, 6, 13), (1773447, 7, 12), (1773447, 8, 11), (1773447, 9, 10), (1773447, 10, 9), (1773447, 11, 8), (1773447, 12, 7), (1773447, 13, 6), (1773447, 14, 5), (1773447, 15, 4), (1773447, 16, 3), (1773447, 17, 2), (1773447, 18, 1), (1773447, 19, 0), (1773447, 20, 36), (1773447, 21, 35), (1773447, 22, 34), (1773447, 23, 33), (1773447, 24, 32), (1773447, 25, 31), (1773447, 26, 30), (1773447, 27, 29), (1773447, 28, 28), (1773447, 29, 27), (1773447, 30, 26), (1773447, 31, 25), (1773447, 32, 24), (1773447, 33, 23), (1773447, 34, 22), (1773447, 35, 21), (1773447, 36, 20), (1773447, 37, 19), (1773447, 38, 18), (1773447, 39, 17)]
+test tests::pokey_restore_preserves_future_audio_across_partial_sample_phases ... FAILED
+
+failures:
+
+failures:
+    tests::pokey_random_follows_phase_two_while_cpu_execution_is_held
+    tests::pokey_restore_preserves_future_audio_across_partial_sample_phases
+
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 37 filtered out; finished in 0.40s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`

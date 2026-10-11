@@ -1,0 +1,76 @@
+--- a/crates/machine-atari-7800/src/lib.rs
++++ b/crates/machine-atari-7800/src/lib.rs
+@@ -1058,0 +1059,73 @@
++    fn pokey_random_follows_phase_two_while_cpu_execution_is_held() {
++        let mut mismatches = Vec::new();
++        let mut observations = 0;
++        for region in [Atari7800Region::Ntsc, Atari7800Region::Pal] {
++            for address in [0x8000, 0x0280, 0x0000] {
++                let mut sys = Atari7800::new(a78_with_pokey_0440(), region).expect("POKEY cart");
++                let mut reference = Pokey::new(region.cpu_hz());
++                sys.pokey.as_mut().expect("POKEY").write(0x0f, 3);
++                reference.write(0x0f, 3);
++                sys.cpu.addr = address;
++                sys.maria.write(0x04, 0);
++                let mut first_difference = None;
++                for tick in 1..=120 {
++                    sys.tick_master_clock();
++                    if sys.maria.phi2 {
++                        reference.tick();
++                    }
++                    let actual = sys.pokey.as_ref().expect("POKEY").read(0x0a);
++                    let expected = reference.read(0x0a);
++                    if actual != expected && first_difference.is_none() {
++                        first_difference = Some((region, address, tick, actual, expected));
++                    }
++                    observations += 1;
++                }
++                assert_eq!(sys.cpu.total_cycles, 0, "WSYNC must hold execution");
++                mismatches.extend(first_difference);
++            }
++        }
++        assert_eq!(observations, 720);
++        assert!(mismatches.is_empty(), "RANDOM clock mismatches: {mismatches:?}");
++    }
++
++    #[test]
++    fn pokey_restore_preserves_future_audio_across_partial_sample_phases() {
++        let mut mismatches = Vec::new();
++        let mut cases = 0;
++        for frequency in [1_789_772, 1_773_447] {
++            for phase in 0..40 {
++                let mut chip = Pokey::new(frequency);
++                chip.write(1, 0x1f);
++                chip.write(3, 0x18);
++                for _ in 0..128 + phase {
++                    chip.tick();
++                }
++                assert!(chip.take_buffer().iter().any(|&value| value != 0.0));
++                chip.take_channel_buffers();
++                let saved = postcard::to_allocvec(&chip).expect("POKEY snapshot");
++                let mut restored: Pokey = postcard::from_bytes(&saved).expect("POKEY restore");
++                assert!(restored.take_buffer().is_empty());
++                assert!(restored.take_channel_buffers().iter().all(Vec::is_empty));
++                let mut first_difference = None;
++                for tick in 0..96 {
++                    chip.tick();
++                    restored.tick();
++                    let mixed = chip.take_buffer();
++                    let channels = chip.take_channel_buffers();
++                    let resumed_mixed = restored.take_buffer();
++                    let resumed_channels = restored.take_channel_buffers();
++                    if (mixed != resumed_mixed || channels != resumed_channels)
++                        && first_difference.is_none()
++                    {
++                        first_difference = Some((frequency, phase, tick));
++                    }
++                }
++                mismatches.extend(first_difference);
++                cases += 1;
++            }
++        }
++        assert_eq!(cases, 80);
++        assert!(mismatches.is_empty(), "audio restore mismatches: {mismatches:?}");
++    }
++
++    #[test]
