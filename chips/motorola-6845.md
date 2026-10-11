@@ -55,7 +55,7 @@ one shared interlace formula cannot establish complete variant accuracy.
 ## Implementation boundary
 
 At source commit
-[`10892b4`](https://github.com/emu198x/emu198x/blob/10892b445182cc5d8106cff7cd142f9a64d4cf10/crates/motorola-6845/src/lib.rs),
+[`411092c`](https://github.com/emu198x/emu198x/blob/411092c1de02f286ac55086db505268651818739/crates/motorola-6845/src/lib.rs),
 the core ticks once per character clock. BBC and CPC select `Hd6845s`; PET uses
 the default `Mc6845` personality. All three consume live CRTC addresses. BBC
 applies separate bitmap/teletext decoding and bitmap wrapping in its machine
@@ -69,14 +69,19 @@ trigger vertical sync. Register write masks and interlaced vertical programming
 also need further work. [Issue #166](https://github.com/emu198x/emu198x/issues/166)
 tracks the interlace/skew boundary.
 
-A [public-output probe](../plans/2026-10-11-6845-sync-evidence/README.md) finds
-62 failures across 64 sync-width cases: nonzero horizontal and all vertical
-pulses are one interval short, and width one disappears. Both zero-horizontal
-controls pass. The existing 23 chip tests pass despite this fault. The source
-starts a pulse and advances its width counter at the same boundary, consuming
-an interval before it has elapsed. The probe uses fixed registers and ordinary
-non-interlaced lines; it does not validate live width changes or pulses crossing
-vertical adjustment.
+Sync pulses retain their full programmed widths across horizontal wrap,
+vertical adjustment and frame restart. Existing pulse counters advance before
+new-pulse assertions and before vertical early returns. The
+[validation record](../plans/2026-10-11-6845-sync-fix-evidence/README.md) covers
+128 horizontal and 512 vertical programming combinations, save/restore during
+active pulses, and the original 64-case public-output sweep. All pass. The
+unchanged extracted MAME pulse stages agree on the 62 legal-width cases;
+horizontal-zero controls use the manufacturer distinction above.
+
+The affected machine and Gate Array suites pass 120 tests, with 16 additional
+firmware-backed checks run explicitly. These include real boot banners and the
+CPC interrupt path. Live width changes and the other implementation limits
+above remain unverified by these pulse-length tests.
 
 The reference documentation closes the evidence gap in
 [issue #168](https://github.com/emu198x/emu198x/issues/168). It does not certify

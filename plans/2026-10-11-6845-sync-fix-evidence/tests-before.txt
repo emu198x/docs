@@ -1,0 +1,30 @@
+
+running 3 tests
+test horizontal_pulses_keep_their_full_width_across_line_wrap ... FAILED
+test vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart ... FAILED
+test restoring_an_active_sync_pulse_preserves_its_remaining_intervals ... ok
+
+failures:
+
+---- horizontal_pulses_keep_their_full_width_across_line_wrap stdout ----
+
+thread 'horizontal_pulses_keep_their_full_width_across_line_wrap' (94482622) panicked at crates/motorola-6845/tests/sync_outputs.rs:54:5:
+120 wrong HSYNC cases; first: Some((Mc6845, 1, 0, []))
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart stdout ----
+
+thread 'vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart' (94482624) panicked at crates/motorola-6845/tests/sync_outputs.rs:82:5:
+404 wrong VSYNC cases; first: Some((Mc6845, 0, 0, 0, 1, [240, 240, 240, 240]))
+
+
+failures:
+    horizontal_pulses_keep_their_full_width_across_line_wrap
+    vertical_pulses_keep_their_full_width_through_adjustment_and_frame_restart
+
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6845-sync/crates/motorola-6845)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running tests/sync_outputs.rs (/private/tmp/198x-sunsoft4-target/debug/deps/sync_outputs-14f4e55f7a54a2b7)
+error: test failed, to rerun pass `-p motorola-6845 --test sync_outputs`

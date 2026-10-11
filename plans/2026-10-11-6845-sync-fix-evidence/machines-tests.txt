@@ -1,0 +1,331 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6845-sync/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/10f67303c85969c6: Operation not permitted (os error 1)
+   Compiling format-sinclair-zx-spectrum-snapshot v0.31.0 (/private/tmp/198x-6845-sync/crates/format-sinclair-zx-spectrum-snapshot)
+   Compiling format198x-tzx v0.1.0
+   Compiling common-z80-machine v0.31.0 (/private/tmp/198x-6845-sync/crates/common-z80-machine)
+   Compiling emu198x-test-skip v0.31.0 (/private/tmp/198x-6845-sync/crates/emu198x-test-skip)
+   Compiling crc32fast v1.5.0
+   Compiling simd-adler32 v0.3.9
+   Compiling motorola-6845 v0.31.0 (/private/tmp/198x-6845-sync/crates/motorola-6845)
+   Compiling common-tape v0.31.0 (/private/tmp/198x-6845-sync/crates/common-tape)
+   Compiling emu198x-gi-ay-3-8910 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-gi-ay-3-8910)
+   Compiling emu198x-zilog-z80 v0.8.0 (/private/tmp/198x-6845-sync/crates/emu198x-zilog-z80)
+   Compiling intel-8255 v0.31.0 (/private/tmp/198x-6845-sync/crates/intel-8255)
+   Compiling amstrad-gate-array v0.31.0 (/private/tmp/198x-6845-sync/crates/amstrad-gate-array)
+   Compiling mos-via-6522 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-via-6522)
+   Compiling emu198x-mos-6502 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-mos-6502)
+   Compiling common-acorn-cassette v0.31.0 (/private/tmp/198x-6845-sync/crates/common-acorn-cassette)
+   Compiling miniz_oxide v0.9.1
+   Compiling mos-pia-6520 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-pia-6520)
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6845-sync/crates/ti-sn76489)
+   Compiling gi-ay-3-8912 v0.31.0 (/private/tmp/198x-6845-sync/crates/gi-ay-3-8912)
+   Compiling format-tzx v0.31.0 (/private/tmp/198x-6845-sync/crates/format-tzx)
+   Compiling format-amstrad-cpc-cdt v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-cpc-cdt)
+   Compiling machine-commodore-pet v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-commodore-pet)
+   Compiling machine-acorn-bbc-micro v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-acorn-bbc-micro)
+   Compiling flate2 v1.1.10
+   Compiling common-sinclair-zx-spectrum v0.31.0 (/private/tmp/198x-6845-sync/crates/common-sinclair-zx-spectrum)
+   Compiling machine-amstrad-cpc v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-amstrad-cpc)
+   Compiling format-acorn-uef v0.31.0 (/private/tmp/198x-6845-sync/crates/format-acorn-uef)
+   Compiling nec-upd765a v0.31.0 (/private/tmp/198x-6845-sync/crates/nec-upd765a)
+   Compiling amstrad-ula-40077 v0.31.0 (/private/tmp/198x-6845-sync/crates/amstrad-ula-40077)
+   Compiling format-amstrad-dsk v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-dsk)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.46s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/amstrad_ula_40077-787497a169dca464)
+
+running 4 tests
+test tests::floating_bus_always_returns_high ... ok
+test tests::write_fe_updates_border ... ok
+test tests::frame_timing_matches_plus2a_constants ... ok
+test tests::defaults_to_white_border ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fuse_differential.rs (/private/tmp/198x-sunsoft4-target/debug/deps/fuse_differential-133363351833eadf)
+
+running 1 test
+test contention_matches_fuse_across_the_whole_frame ... ignored, KNOWN DIVERGENCE (#856): DELAY_TABLE_PLUS2A caps contention at 5 T-states where FUSE's pattern reaches 7. Was 1 before the mask was measured against the arrival-resolved differential; the remaining 2 is the same residue as that oracle's 5,166
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/machine_acorn_bbc_micro-230754a54b2459ff)
+
+running 53 tests
+test saa5050::tests::separated_mosaics_blank_the_left_column_and_last_row_of_each_block ... ok
+test saa5050::tests::rounding_lights_half_a_dot_on_a_diagonal ... ok
+test saa5050::tests::rounding_leaves_straight_strokes_alone ... ok
+test saa5050::tests::flashing_text_is_hidden_for_16_fields_in_64 ... ok
+test tests::acia_idle_does_not_signal_an_interrupt ... ok
+test tests::adc_converts_a_channel_and_reports_completion ... ok
+test tests::a_scrolled_screen_wraps_past_the_top_of_ram ... ok
+test tests::conceal_hides_text_until_a_colour_code ... ok
+test tests::double_height_draws_top_and_bottom_halves_on_two_rows ... ok
+test tests::ic32_falling_edge_on_bit_0_writes_psg ... ok
+test tests::joystick_fire_buttons_pull_system_via_pb4_pb5_low ... ok
+test tests::hold_graphics_repeats_the_mosaic_in_its_own_colour ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::control_bit_0_selects_which_flashing_colour_shows ... ok
+test tests::mode7_coverage_levels_are_linear_light_in_srgb ... ok
+test tests::every_one_mhz_cycle_ends_on_the_one_mhz_clock ... ok
+test tests::mode7_resampling_keeps_each_half_dot_where_it_falls ... ok
+test tests::mode7_follows_the_start_address ... ok
+test tests::mode7_rounds_diagonals_across_the_two_fields ... ok
+test tests::mode7_weaves_its_two_fields ... ok
+test tests::mode7_cells_are_a_microsecond_wide_and_fill_the_window ... ok
+test tests::one_mhz_bus_accesses_cost_two_or_three_ticks_rest_one ... ok
+test tests::mode7_wraps_within_its_kilobyte ... ok
+test tests::one_mhz_access_waits_for_the_next_whole_one_mhz_cycle ... ok
+test tests::rom_bank_register_at_fe30 ... ok
+test tests::r8_skews_the_cursor_or_turns_it_off ... ok
+test tests::sheila_devices_answer_across_their_whole_blocks ... ok
+test tests::rows_past_r6_are_not_displayed ... ok
+test tests::slow_clock_modes_still_sync_at_fifty_hertz ... ok
+test tests::adc_completion_raises_the_system_via_cb1_interrupt ... ok
+test tests::system_via_writes_round_trip ... ok
+test tests::teletext_control_codes_ignore_bit_7 ... ok
+test tests::the_cursor_inverts_a_mixed_mode7_pixel_to_the_inverted_mix ... ok
+test tests::the_cursor_is_as_wide_as_control_bits_5_to_7_make_it ... ok
+test tests::the_latch_selects_each_modes_screen_size ... ok
+test tests::the_mode7_cursor_underlines_the_matched_cell ... ok
+test tests::frame_runs_expected_cycles ... ok
+test tests::frame_is_a_fixed_master_tick_budget ... ok
+test tests::via_timers_count_at_one_megahertz ... ok
+test tests::video_ula_matches_the_guides_mode_8_example ... ok
+test tests::video_ula_palette_write_decodes_logical_and_physical ... ok
+test tests::video_ula_pixels_per_byte_matches_the_documented_modes ... ok
+test tests::the_row_under_double_height_shows_only_double_height_characters ... ok
+test tests::flashing_teletext_hides_for_16_fields_in_64 ... ok
+test tests::the_mos_cursor_blinks_every_sixteen_fields ... ok
+test tests::cassette_carrier_raises_dcd_and_clears_on_data_read ... ok
+test tests::stepping_a_frames_worth_of_instructions_is_a_frame ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::cassette_byte_fills_the_acia_and_clears_on_read ... ok
+test tests::cassette_does_not_play_while_the_motor_is_off ... ok
+test tests::many_frames_complete_without_panic ... ok
+test tests::a_stopped_deck_does_not_advance_even_with_the_motor_on ... ok
+test tests::psg_runs_off_a_four_megahertz_clock ... ok
+
+test result: ok. 53 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 48.58s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/bios_boot-afc6f9a49dc49186)
+
+running 8 tests
+test a_flashing_colour_flashes_at_the_mos_rate ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test boots_to_basic_prompt ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test keyboard_types_a_basic_expression_and_prints_the_result ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test mode7_draws_double_height_and_flashing_text_from_basic ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mode7_renders_the_banner ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+test mos_clock_counts_centiseconds ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test os_boots_to_basic_banner ... ignored, FIXTURE: needs BBC Micro MOS + BASIC ROMs — run with --ignored
+test the_prompt_cursor_blinks_in_mode_7_and_in_a_bitmap_mode ... ignored, FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 8 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/synthetic_firmware_boot-0dc6917e9012027d)
+
+running 2 tests
+test synthetic_firmware_builds_a_raster_and_floods_it ... ok
+test the_control_image_renders_no_raster ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.37s
+
+     Running tests/tape_load.rs (/private/tmp/198x-sunsoft4-target/debug/deps/tape_load-8286899de9d4fde8)
+
+running 1 test
+test os_loads_a_real_tape ... ignored, FIXTURE: needs the BBC MOS+BASIC ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/machine_amstrad_cpc-69d152ab243b9226)
+
+running 29 tests
+test screen_text::tests::geometry_is_eight_pixels_to_the_character_in_every_mode ... ok
+test screen_text::tests::unmatched_cells_report_themselves ... ok
+test tests::a_shifted_legend_shares_its_keys_cell ... ok
+test tests::crtc_registers_round_trip_through_their_ports ... ok
+test tests::both_roms_are_paged_in_at_reset ... ok
+test tests::an_unselected_upper_rom_reads_as_open_bus ... ok
+test tests::every_printable_ascii_but_the_tilde_has_a_key ... ok
+test tests::a_pressed_key_pulls_its_matrix_bit_low ... ok
+test tests::a_character_clock_is_sixteen_dots_wide_in_every_mode ... ok
+test tests::shifted_characters_press_shift_too ... ok
+test tests::firmware_must_be_32k ... ok
+test tests::poke_lands_in_ram_under_a_paged_in_rom ... ok
+test tests::the_crtc_advances_once_every_four_tstates ... ok
+test tests::the_cassette_line_reaches_port_b_bit_7 ... ok
+test tests::the_crtc_has_no_readable_status_on_a_type_0 ... ok
+test tests::the_gate_array_only_answers_when_a15_is_low_and_a14_high ... ok
+test tests::the_gate_array_can_page_either_rom_out ... ok
+test tests::the_motor_gates_tape_playback ... ok
+test tests::the_screen_address_scatters_rows_across_2k_blocks ... ok
+test tests::unmappable_characters_report_themselves ... ok
+test tests::writes_reach_ram_under_a_paged_in_rom ... ok
+test tests::a_silent_machine_still_hands_back_a_whole_frame ... ok
+test tests::an_audible_machine_hands_back_samples ... ok
+test tests::port_b_reports_vsync_and_the_pcb_links ... ok
+test tests::every_frame_is_the_same_length_whether_it_sounds_or_not ... ok
+test tests::a_drained_tape_keeps_its_level_on_the_cassette_line ... ok
+test tests::the_machine_runs_frames_without_panicking ... ok
+test tests::the_border_fills_the_screen_when_nothing_is_displayed ... ok
+test tests::a_displayed_screen_paints_pixels_inside_a_border ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-sunsoft4-target/debug/deps/cpu_rate-3529ee53b876bdec)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/firmware_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/firmware_boot-530ae41d410ef3df)
+
+running 2 tests
+test the_boot_banner_decodes_back_to_text ... ignored, FIXTURE: needs the 32 KB CPC464 firmware — run with --ignored
+test the_firmware_reaches_its_boot_screen ... ignored, FIXTURE: needs the 32 KB CPC464 firmware — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/firmware_keyboard.rs (/private/tmp/198x-sunsoft4-target/debug/deps/firmware_keyboard-86085f6effeed750)
+
+running 1 test
+test typing_a_poke_at_the_basic_prompt_writes_to_memory ... ignored, FIXTURE: needs the 32 KB CPC464 firmware — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/firmware_tape.rs (/private/tmp/198x-sunsoft4-target/debug/deps/firmware_tape-88bce460146c6e80)
+
+running 1 test
+test the_firmware_loads_a_game_from_tape ... ignored, FIXTURE: needs the CPC464 firmware and a .cdt — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/interrupt_timing.rs (/private/tmp/198x-sunsoft4-target/debug/deps/interrupt_timing-52b0120eb6469009)
+
+running 3 tests
+test rst38_from_code_is_recorded_against_the_compendium ... ignored, FIXTURE: needs the CPC464 firmware — run with --ignored
+test the_interrupt_call_is_recorded_against_the_compendium ... ignored, FIXTURE: needs the CPC464 firmware — run with --ignored
+test the_acknowledge_gap_is_recorded_as_well_as_the_totals ... ok
+
+test result: ok. 1 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/io_trace.rs (/private/tmp/198x-sunsoft4-target/debug/deps/io_trace-6fe53f24e3527b2d)
+
+running 3 tests
+test the_gate_array_and_the_crtc_are_told_apart ... ok
+test the_low_byte_alone_would_lose_them ... ok
+test tracing_is_opt_in_and_ends_when_taken ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/microsecond_grid.rs (/private/tmp/198x-sunsoft4-target/debug/deps/microsecond_grid-90ac05e9a597f1ba)
+
+running 3 tests
+test every_instruction_costs_whole_microseconds ... ignored, FIXTURE: needs the CPC464 firmware — run with --ignored
+test instruction_cost_depends_on_alignment_and_should_not ... ignored, FIXTURE: needs the CPC464 firmware — run with --ignored
+test the_interrupt_response_leaves_the_grid ... ignored, FIXTURE: needs the CPC464 firmware — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ram_banking.rs (/private/tmp/198x-sunsoft4-target/debug/deps/ram_banking-0e8e25d1fcd00a7d)
+
+running 5 tests
+test configuration_zero_is_the_identity ... ok
+test a_6128_has_twice_the_ram ... ok
+test every_configuration_maps_its_four_blocks ... ok
+test a_464_ignores_a_configuration_write ... ok
+test the_display_always_reads_the_base_ram ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/shaker.rs (/private/tmp/198x-sunsoft4-target/debug/deps/shaker-a5ec2249304cda8e)
+
+running 5 tests
+test killer_2_saves_the_screen_over_its_own_hex_table_on_a_464 ... ignored, FIXTURE: needs shaker26.dsk and the CPC464 firmware — run with --ignored
+test shaker_killer_2_reports_its_interrupt_measurements ... ignored, FIXTURE: needs shaker26.dsk and the CPC464 firmware — run with --ignored
+test shaker_killer_2_scores_on_a_6128 ... ignored, FIXTURE: needs shaker26.dsk and the CPC6128 firmware — run with --ignored
+test shaker_module_d_takes_over_and_runs ... ignored, FIXTURE: needs shaker26.dsk and the CPC464 firmware — run with --ignored
+test the_interrupt_modules_come_out_of_the_catalogue ... ignored, FIXTURE: needs shaker26.dsk — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/synthetic_firmware_boot-a30ca75f342f7bb1)
+
+running 2 tests
+test the_control_image_renders_no_raster ... ok
+test synthetic_firmware_builds_a_raster_and_floods_it ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/debug/deps/machine_commodore_pet-f258411515c5040a)
+
+running 18 tests
+test input::tests::key_matrix_valid ... ok
+test input::tests::keypad_minus_sits_beside_equals ... ok
+test input::tests::only_the_undriven_cells_are_empty ... ok
+test input::tests::no_two_keys_share_a_matrix_cell ... ok
+test tests::ram_round_trips ... ok
+test tests::framebuffer_correct_size_40_col ... ok
+test tests::framebuffer_correct_size_80_col ... ok
+test tests::rom_writes_ignored ... ok
+test tests::video_ram_round_trips ... ok
+test tests::frame_advances_frame_count ... ok
+test tests::a_silent_machine_emits_a_constant_level ... ok
+test tests::the_audio_buffer_drains ... ok
+test tests::a_frame_yields_close_to_the_declared_sample_rate ... ok
+test tests::a_pcr_driven_cb2_clicks_the_piezo ... ok
+test tests::the_shift_register_tone_reaches_the_piezo ... ok
+test tests::frame_is_pal_50hz_at_1mhz ... ok
+test tests::frame_is_16200_cpu_cycles_on_the_80_column_board ... ok
+test tests::snapshot_round_trips_live_state ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/keyboard_type.rs (/private/tmp/198x-sunsoft4-target/debug/deps/keyboard_type-091b526de40dd236)
+
+running 5 tests
+test cursor_right_moves_the_cursor_instead_of_typing ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test stop_breaks_a_running_basic_program ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_basic_line_and_prints_the_result ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_subtraction_through_the_keypad_minus ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_the_bracket_and_arrow_keys ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/rom_boot-a809dbc4bb02e44a)
+
+running 1 test
+test rom_set_boots_without_panic ... ignored, FIXTURE: needs Commodore PET ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/debug/deps/synthetic_firmware_boot-388facc90274c5c1)
+
+running 2 tests
+test synthetic_firmware_fills_the_screen_with_a_solid_glyph ... ok
+test the_control_image_lights_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+   Doc-tests amstrad_ula_40077
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_acorn_bbc_micro
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_amstrad_cpc
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_commodore_pet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

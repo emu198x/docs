@@ -1,0 +1,32 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6845-sync/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/10f67303c85969c6: Operation not permitted (os error 1)
+    Checking format-sinclair-zx-spectrum-snapshot v0.31.0 (/private/tmp/198x-6845-sync/crates/format-sinclair-zx-spectrum-snapshot)
+    Checking format198x-tzx v0.1.0
+    Checking common-z80-machine v0.31.0 (/private/tmp/198x-6845-sync/crates/common-z80-machine)
+    Checking emu198x-test-skip v0.31.0 (/private/tmp/198x-6845-sync/crates/emu198x-test-skip)
+    Checking simd-adler32 v0.3.9
+    Checking crc32fast v1.5.0
+    Checking motorola-6845 v0.31.0 (/private/tmp/198x-6845-sync/crates/motorola-6845)
+    Checking common-tape v0.31.0 (/private/tmp/198x-6845-sync/crates/common-tape)
+    Checking emu198x-gi-ay-3-8910 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-gi-ay-3-8910)
+    Checking emu198x-zilog-z80 v0.8.0 (/private/tmp/198x-6845-sync/crates/emu198x-zilog-z80)
+    Checking intel-8255 v0.31.0 (/private/tmp/198x-6845-sync/crates/intel-8255)
+    Checking amstrad-gate-array v0.31.0 (/private/tmp/198x-6845-sync/crates/amstrad-gate-array)
+    Checking mos-via-6522 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-via-6522)
+    Checking emu198x-mos-6502 v0.6.0 (/private/tmp/198x-6845-sync/crates/emu198x-mos-6502)
+    Checking miniz_oxide v0.9.1
+    Checking common-acorn-cassette v0.31.0 (/private/tmp/198x-6845-sync/crates/common-acorn-cassette)
+    Checking mos-pia-6520 v0.31.0 (/private/tmp/198x-6845-sync/crates/mos-pia-6520)
+    Checking ti-sn76489 v0.31.0 (/private/tmp/198x-6845-sync/crates/ti-sn76489)
+    Checking format-tzx v0.31.0 (/private/tmp/198x-6845-sync/crates/format-tzx)
+    Checking gi-ay-3-8912 v0.31.0 (/private/tmp/198x-6845-sync/crates/gi-ay-3-8912)
+    Checking format-amstrad-cpc-cdt v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-cpc-cdt)
+    Checking flate2 v1.1.10
+    Checking machine-commodore-pet v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-commodore-pet)
+    Checking machine-acorn-bbc-micro v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-acorn-bbc-micro)
+    Checking common-sinclair-zx-spectrum v0.31.0 (/private/tmp/198x-6845-sync/crates/common-sinclair-zx-spectrum)
+    Checking machine-amstrad-cpc v0.31.0 (/private/tmp/198x-6845-sync/crates/machine-amstrad-cpc)
+    Checking format-acorn-uef v0.31.0 (/private/tmp/198x-6845-sync/crates/format-acorn-uef)
+    Checking nec-upd765a v0.31.0 (/private/tmp/198x-6845-sync/crates/nec-upd765a)
+    Checking amstrad-ula-40077 v0.31.0 (/private/tmp/198x-6845-sync/crates/amstrad-ula-40077)
+    Checking format-amstrad-dsk v0.31.0 (/private/tmp/198x-6845-sync/crates/format-amstrad-dsk)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.85s
