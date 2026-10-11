@@ -1,0 +1,20 @@
+
+running 1 test
+test falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame ... FAILED
+
+failures:
+
+failures:
+    falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.04s
+
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s
+     Running tests/vdp_ctc_interrupt.rs (/private/tmp/198x-6809-target/debug/deps/vdp_ctc_interrupt-f1aa8880968af39e)
+model=Mtx500 vector=00 assertions=2 services=2
+
+thread 'falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame' (93073797) panicked at crates/machine-memotech-mtx/tests/vdp_ctc_interrupt.rs:101:13:
+RETI must release lower-priority channels
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `-p machine-memotech-mtx --test vdp_ctc_interrupt`

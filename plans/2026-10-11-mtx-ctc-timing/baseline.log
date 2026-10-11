@@ -1,0 +1,27 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.37s
+     Running tests/vdp_ctc_interrupt.rs (/private/tmp/198x-6809-target/debug/deps/vdp_ctc_interrupt-f1aa8880968af39e)
+
+running 2 tests
+
+thread 'rising_edge_counter_does_not_interrupt_on_vdp_assertion' (93059884) panicked at crates/machine-memotech-mtx/tests/vdp_ctc_interrupt.rs:66:5:
+VDP must assert and stay asserted while CPU waits
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test rising_edge_counter_does_not_interrupt_on_vdp_assertion ... FAILED
+model=Mtx500 vector=00 assertions=1 services=0
+
+thread 'falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame' (93059883) panicked at crates/machine-memotech-mtx/tests/vdp_ctc_interrupt.rs:53:13:
+the guest must receive successive VDP assertions
+test falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame ... FAILED
+
+failures:
+
+failures:
+    falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame
+    rising_edge_counter_does_not_interrupt_on_vdp_assertion
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+error: test failed, to rerun pass `-p machine-memotech-mtx --test vdp_ctc_interrupt`

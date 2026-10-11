@@ -1,0 +1,19 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-6809-transfers/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/e4ca95e6eae66724: Operation not permitted (os error 1)
+   Compiling machine-memotech-mtx v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.27s
+     Running tests/vdp_ctc_interrupt.rs (/private/tmp/198x-6809-target/debug/deps/vdp_ctc_interrupt-f1aa8880968af39e)
+
+running 2 tests
+test rising_edge_counter_does_not_interrupt_on_vdp_assertion ... ok
+model=Mtx500 vector=00 assertions=2 services=2
+model=Mtx500 vector=20 assertions=2 services=2
+model=Mtx500 vector=78 assertions=2 services=2
+model=Mtx500 vector=f8 assertions=2 services=2
+model=Mtx512 vector=00 assertions=2 services=2
+model=Mtx512 vector=20 assertions=2 services=2
+model=Mtx512 vector=78 assertions=2 services=2
+model=Mtx512 vector=f8 assertions=2 services=2
+test falling_vdp_assertions_reach_im2_and_reti_rearms_the_next_frame ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
