@@ -1,0 +1,35 @@
+{
+  "baseline": "1cb565cf0dd6839b6593c6fc32266680c48f6d31",
+  "fixed": "323b2e93ff8a6b2e5cd7e997129c92c37658597d",
+  "reference": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "rom_url": "https://www.smspower.org/uploads/Homebrew/SMSVDPTest-SMS-1.31.zip",
+  "rom_sha256": "2b64b55ded7406aecf60a85547639dd4a0ab9f9c212a04676b79e15e8711f3a0",
+  "frames": 1800,
+  "button_1_frames": [
+    [
+      200,
+      204
+    ],
+    [
+      400,
+      404
+    ],
+    [
+      1000,
+      1004
+    ]
+  ],
+  "machine": "SMS2, no BIOS",
+  "regions": [
+    "NTSC-U",
+    "PAL"
+  ],
+  "complete_pages_visually_checked": true,
+  "result_address_start": "C928",
+  "result_address_end": "C93B",
+  "pass": 0,
+  "fail": 255,
+  "zexdoc": "Separate long-running process still in progress; not claimed passed.",
+  "focused_tests_passed": 189,
+  "explicit_commercial_smoke": "Alex Kidd, 600 frames; framebuffer diversity smoke, not a gameplay proof."
+}

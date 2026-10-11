@@ -1,0 +1,121 @@
+engine,region,test,name,result
+baseline,ntsc-u,41,No sprite collision:,0
+baseline,ntsc-u,42,"No disp, no spr col:",0
+baseline,ntsc-u,43,9th sprite no col:,0
+baseline,ntsc-u,44,"Transp pixl, no col:",0
+baseline,ntsc-u,45,"Offscreen X, no col:",0
+baseline,ntsc-u,46,"Offscreen Y, col:",255
+baseline,ntsc-u,47,Sprite collision:,0
+baseline,ntsc-u,48,Colflag keept in vbl:,0
+baseline,ntsc-u,49,Spr col behind tile:,0
+baseline,ntsc-u,50,Spr col correct line:,255
+baseline,ntsc-u,51,Spr col many lines:,255
+baseline,ntsc-u,52,Spr col correct HC:,255
+baseline,ntsc-u,53,No sprite overflow:,0
+baseline,ntsc-u,54,"No disp, spr ovr:",255
+baseline,ntsc-u,55,"Offscreen Y, no ovr:",0
+baseline,ntsc-u,56,Sprite overflow:,0
+baseline,ntsc-u,57,Ovrflag keept in vbl:,0
+baseline,ntsc-u,58,Spr ovr correct line:,255
+baseline,ntsc-u,59,Spr ovr many lines:,255
+baseline,ntsc-u,60,Spr ovr correct HC:,255
+baseline,pal,41,No sprite collision:,0
+baseline,pal,42,"No disp, no spr col:",0
+baseline,pal,43,9th sprite no col:,0
+baseline,pal,44,"Transp pixl, no col:",0
+baseline,pal,45,"Offscreen X, no col:",0
+baseline,pal,46,"Offscreen Y, col:",255
+baseline,pal,47,Sprite collision:,0
+baseline,pal,48,Colflag keept in vbl:,0
+baseline,pal,49,Spr col behind tile:,0
+baseline,pal,50,Spr col correct line:,255
+baseline,pal,51,Spr col many lines:,255
+baseline,pal,52,Spr col correct HC:,255
+baseline,pal,53,No sprite overflow:,0
+baseline,pal,54,"No disp, spr ovr:",255
+baseline,pal,55,"Offscreen Y, no ovr:",0
+baseline,pal,56,Sprite overflow:,0
+baseline,pal,57,Ovrflag keept in vbl:,0
+baseline,pal,58,Spr ovr correct line:,255
+baseline,pal,59,Spr ovr many lines:,255
+baseline,pal,60,Spr ovr correct HC:,255
+fixed,ntsc-u,41,No sprite collision:,0
+fixed,ntsc-u,42,"No disp, no spr col:",0
+fixed,ntsc-u,43,9th sprite no col:,0
+fixed,ntsc-u,44,"Transp pixl, no col:",0
+fixed,ntsc-u,45,"Offscreen X, no col:",0
+fixed,ntsc-u,46,"Offscreen Y, col:",255
+fixed,ntsc-u,47,Sprite collision:,0
+fixed,ntsc-u,48,Colflag keept in vbl:,0
+fixed,ntsc-u,49,Spr col behind tile:,0
+fixed,ntsc-u,50,Spr col correct line:,255
+fixed,ntsc-u,51,Spr col many lines:,255
+fixed,ntsc-u,52,Spr col correct HC:,255
+fixed,ntsc-u,53,No sprite overflow:,0
+fixed,ntsc-u,54,"No disp, spr ovr:",0
+fixed,ntsc-u,55,"Offscreen Y, no ovr:",0
+fixed,ntsc-u,56,Sprite overflow:,0
+fixed,ntsc-u,57,Ovrflag keept in vbl:,0
+fixed,ntsc-u,58,Spr ovr correct line:,255
+fixed,ntsc-u,59,Spr ovr many lines:,255
+fixed,ntsc-u,60,Spr ovr correct HC:,255
+fixed,pal,41,No sprite collision:,0
+fixed,pal,42,"No disp, no spr col:",0
+fixed,pal,43,9th sprite no col:,0
+fixed,pal,44,"Transp pixl, no col:",0
+fixed,pal,45,"Offscreen X, no col:",0
+fixed,pal,46,"Offscreen Y, col:",255
+fixed,pal,47,Sprite collision:,0
+fixed,pal,48,Colflag keept in vbl:,0
+fixed,pal,49,Spr col behind tile:,0
+fixed,pal,50,Spr col correct line:,255
+fixed,pal,51,Spr col many lines:,255
+fixed,pal,52,Spr col correct HC:,255
+fixed,pal,53,No sprite overflow:,0
+fixed,pal,54,"No disp, spr ovr:",0
+fixed,pal,55,"Offscreen Y, no ovr:",0
+fixed,pal,56,Sprite overflow:,0
+fixed,pal,57,Ovrflag keept in vbl:,0
+fixed,pal,58,Spr ovr correct line:,255
+fixed,pal,59,Spr ovr many lines:,255
+fixed,pal,60,Spr ovr correct HC:,255
+reference,ntsc-u,41,No sprite collision:,0
+reference,ntsc-u,42,"No disp, no spr col:",0
+reference,ntsc-u,43,9th sprite no col:,0
+reference,ntsc-u,44,"Transp pixl, no col:",0
+reference,ntsc-u,45,"Offscreen X, no col:",0
+reference,ntsc-u,46,"Offscreen Y, col:",255
+reference,ntsc-u,47,Sprite collision:,0
+reference,ntsc-u,48,Colflag keept in vbl:,0
+reference,ntsc-u,49,Spr col behind tile:,0
+reference,ntsc-u,50,Spr col correct line:,0
+reference,ntsc-u,51,Spr col many lines:,0
+reference,ntsc-u,52,Spr col correct HC:,0
+reference,ntsc-u,53,No sprite overflow:,0
+reference,ntsc-u,54,"No disp, spr ovr:",0
+reference,ntsc-u,55,"Offscreen Y, no ovr:",0
+reference,ntsc-u,56,Sprite overflow:,0
+reference,ntsc-u,57,Ovrflag keept in vbl:,0
+reference,ntsc-u,58,Spr ovr correct line:,0
+reference,ntsc-u,59,Spr ovr many lines:,0
+reference,ntsc-u,60,Spr ovr correct HC:,0
+reference,pal,41,No sprite collision:,0
+reference,pal,42,"No disp, no spr col:",0
+reference,pal,43,9th sprite no col:,0
+reference,pal,44,"Transp pixl, no col:",0
+reference,pal,45,"Offscreen X, no col:",0
+reference,pal,46,"Offscreen Y, col:",255
+reference,pal,47,Sprite collision:,0
+reference,pal,48,Colflag keept in vbl:,0
+reference,pal,49,Spr col behind tile:,0
+reference,pal,50,Spr col correct line:,0
+reference,pal,51,Spr col many lines:,0
+reference,pal,52,Spr col correct HC:,0
+reference,pal,53,No sprite overflow:,0
+reference,pal,54,"No disp, spr ovr:",0
+reference,pal,55,"Offscreen Y, no ovr:",0
+reference,pal,56,Sprite overflow:,0
+reference,pal,57,Ovrflag keept in vbl:,0
+reference,pal,58,Spr ovr correct line:,0
+reference,pal,59,Spr ovr many lines:,0
+reference,pal,60,Spr ovr correct HC:,0

@@ -1,0 +1,18 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-sms-sprite-overflow/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/cf69c6979cbb4db0: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling thiserror v2.0.20
+    Checking common-z80-machine v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/common-z80-machine)
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+    Checking cobs v0.3.0
+    Checking serde-big-array v0.5.1
+    Checking ti-sn76489 v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/ti-sn76489)
+    Checking emu198x-zilog-z80 v0.8.0 (/private/tmp/198x-sms-sprite-overflow/crates/emu198x-zilog-z80)
+    Checking postcard v1.1.3
+    Checking sega-vdp v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/sega-vdp)
+    Checking machine-sega-master-system v0.31.0 (/private/tmp/198x-sms-sprite-overflow/crates/machine-sega-master-system)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.21s
