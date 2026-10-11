@@ -1,0 +1,97 @@
+DOT ly=19 dot=90 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjWait wait=1 fetch=HighT2 bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=91 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjExtra wait=1 fetch=Push bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=92 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjOam wait=2 fetch=Push bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=93 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjOam wait=1 fetch=Push bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=94 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjLow wait=2 fetch=Push bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=95 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjLow wait=1 fetch=Push bglen=6 objlen=0 fetching=true pending=1
+DOT ly=19 dot=96 pos=250 lcdx=0 lcdc=93 stage=None resume=ObjHigh wait=1 fetch=Push bglen=6 objlen=0 fetching=false pending=1
+DOT ly=19 dot=97 pos=251 lcdx=0 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=5 objlen=7 fetching=false pending=0
+DOT ly=19 dot=98 pos=252 lcdx=0 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=4 objlen=6 fetching=false pending=0
+DOT ly=19 dot=99 pos=253 lcdx=0 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=3 objlen=5 fetching=false pending=0
+DOT ly=19 dot=100 pos=254 lcdx=0 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 0 }) resume=LoopTop wait=1 fetch=Push bglen=2 objlen=4 fetching=false pending=0
+DOT ly=19 dot=101 pos=255 lcdx=0 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 1 }) resume=LoopTop wait=1 fetch=Push bglen=1 objlen=3 fetching=false pending=0
+DOT ly=19 dot=102 pos=0 lcdx=0 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 2 }) resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=2 fetching=false pending=0
+PIX ly=19 dot=102 x=0 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=103 pos=1 lcdx=1 lcdc=92 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=1 fetching=false pending=0
+PIX ly=19 dot=103 x=1 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=104 pos=2 lcdx=2 lcdc=92 stage=None resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+PIX ly=19 dot=104 x=2 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=105 pos=3 lcdx=3 lcdc=92 stage=None resume=LoopTop wait=1 fetch=LowT2 bglen=5 objlen=0 fetching=false pending=0
+PIX ly=19 dot=105 x=3 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=106 pos=4 lcdx=4 lcdc=92 stage=None resume=LoopTop wait=1 fetch=HighT1 bglen=4 objlen=0 fetching=false pending=0
+PIX ly=19 dot=106 x=4 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=107 pos=5 lcdx=5 lcdc=92 stage=None resume=LoopTop wait=1 fetch=HighT2 bglen=3 objlen=0 fetching=false pending=0
+PIX ly=19 dot=107 x=5 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=108 pos=6 lcdx=6 lcdc=92 stage=None resume=LoopTop wait=1 fetch=Push bglen=2 objlen=0 fetching=false pending=0
+PIX ly=19 dot=108 x=6 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=109 pos=7 lcdx=7 lcdc=92 stage=None resume=LoopTop wait=1 fetch=Push bglen=1 objlen=0 fetching=false pending=0
+PIX ly=19 dot=109 x=7 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=110 pos=8 lcdx=8 lcdc=92 stage=None resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=0 fetching=false pending=0
+PIX ly=19 dot=110 x=8 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=111 pos=9 lcdx=9 lcdc=92 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=0 fetching=false pending=0
+PIX ly=19 dot=111 x=9 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=112 pos=10 lcdx=10 lcdc=92 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 0 }) resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+PIX ly=19 dot=112 x=10 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=113 pos=11 lcdx=11 lcdc=92 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 1 }) resume=LoopTop wait=1 fetch=LowT2 bglen=5 objlen=0 fetching=false pending=0
+PIX ly=19 dot=113 x=11 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=114 pos=12 lcdx=12 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 2 }) resume=LoopTop wait=1 fetch=HighT1 bglen=4 objlen=0 fetching=false pending=0
+PIX ly=19 dot=114 x=12 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=115 pos=13 lcdx=13 lcdc=93 stage=None resume=LoopTop wait=1 fetch=HighT2 bglen=3 objlen=0 fetching=false pending=0
+PIX ly=19 dot=115 x=13 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=116 pos=14 lcdx=14 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=2 objlen=0 fetching=false pending=0
+PIX ly=19 dot=116 x=14 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=117 pos=15 lcdx=15 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=1 objlen=0 fetching=false pending=0
+PIX ly=19 dot=117 x=15 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=118 pos=16 lcdx=16 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=0 fetching=false pending=0
+PIX ly=19 dot=118 x=16 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=119 pos=17 lcdx=17 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=0 fetching=false pending=0
+PIX ly=19 dot=119 x=17 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=120 pos=18 lcdx=18 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 0 }) resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+PIX ly=19 dot=120 x=18 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=121 pos=19 lcdx=19 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 1 }) resume=LoopTop wait=1 fetch=LowT2 bglen=5 objlen=0 fetching=false pending=0
+PIX ly=19 dot=121 x=19 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=122 pos=20 lcdx=20 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 146, old: 147, dots: 2 }) resume=LoopTop wait=1 fetch=HighT1 bglen=4 objlen=0 fetching=false pending=0
+PIX ly=19 dot=122 x=20 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=123 pos=21 lcdx=21 lcdc=92 stage=None resume=LoopTop wait=1 fetch=HighT2 bglen=3 objlen=0 fetching=false pending=0
+PIX ly=19 dot=123 x=21 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=124 pos=22 lcdx=22 lcdc=92 stage=None resume=LoopTop wait=1 fetch=Push bglen=2 objlen=0 fetching=false pending=0
+PIX ly=19 dot=124 x=22 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=125 pos=23 lcdx=23 lcdc=92 stage=None resume=LoopTop wait=1 fetch=Push bglen=1 objlen=0 fetching=false pending=0
+PIX ly=19 dot=125 x=23 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=126 pos=24 lcdx=24 lcdc=92 stage=None resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=0 fetching=false pending=0
+PIX ly=19 dot=126 x=24 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=127 pos=25 lcdx=25 lcdc=92 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=0 fetching=false pending=0
+PIX ly=19 dot=127 x=25 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=128 pos=26 lcdx=26 lcdc=92 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 0 }) resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+PIX ly=19 dot=128 x=26 bg=1 shade=0 lcdc=92
+DOT ly=19 dot=129 pos=27 lcdx=27 lcdc=92 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 1 }) resume=LoopTop wait=1 fetch=LowT2 bglen=5 objlen=0 fetching=false pending=0
+PIX ly=19 dot=129 x=27 bg=3 shade=0 lcdc=92
+DOT ly=19 dot=130 pos=28 lcdx=28 lcdc=93 stage=Some(StagedWrite { addr: 65344, value: 147, old: 146, dots: 2 }) resume=LoopTop wait=1 fetch=HighT1 bglen=4 objlen=0 fetching=false pending=0
+PIX ly=19 dot=130 x=28 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=131 pos=29 lcdx=29 lcdc=93 stage=None resume=LoopTop wait=1 fetch=HighT2 bglen=3 objlen=0 fetching=false pending=0
+PIX ly=19 dot=131 x=29 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=132 pos=30 lcdx=30 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=2 objlen=0 fetching=false pending=0
+PIX ly=19 dot=132 x=30 bg=1 shade=1 lcdc=93
+DOT ly=19 dot=133 pos=31 lcdx=31 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=1 objlen=0 fetching=false pending=0
+PIX ly=19 dot=133 x=31 bg=3 shade=3 lcdc=93
+DOT ly=19 dot=134 pos=32 lcdx=32 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=0 fetching=false pending=0
+DOT ly=19 dot=135 pos=33 lcdx=33 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=0 fetching=false pending=0
+DOT ly=19 dot=136 pos=34 lcdx=34 lcdc=93 stage=None resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+DOT ly=19 dot=137 pos=35 lcdx=35 lcdc=93 stage=None resume=LoopTop wait=1 fetch=LowT2 bglen=5 objlen=0 fetching=false pending=0
+DOT ly=19 dot=138 pos=36 lcdx=36 lcdc=93 stage=None resume=LoopTop wait=1 fetch=HighT1 bglen=4 objlen=0 fetching=false pending=0
+DOT ly=19 dot=139 pos=37 lcdx=37 lcdc=93 stage=None resume=LoopTop wait=1 fetch=HighT2 bglen=3 objlen=0 fetching=false pending=0
+DOT ly=19 dot=140 pos=38 lcdx=38 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=2 objlen=0 fetching=false pending=0
+DOT ly=19 dot=141 pos=39 lcdx=39 lcdc=93 stage=None resume=LoopTop wait=1 fetch=Push bglen=1 objlen=0 fetching=false pending=0
+DOT ly=19 dot=142 pos=40 lcdx=40 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT1 bglen=8 objlen=0 fetching=false pending=0
+DOT ly=19 dot=143 pos=41 lcdx=41 lcdc=93 stage=None resume=LoopTop wait=1 fetch=TileT2 bglen=7 objlen=0 fetching=false pending=0
+DOT ly=19 dot=144 pos=42 lcdx=42 lcdc=93 stage=None resume=LoopTop wait=1 fetch=LowT1 bglen=6 objlen=0 fetching=false pending=0
+test tests::temporary_mealybug_bg_trace ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 38 filtered out; finished in 0.35s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-3d50a5fc30fa1d1a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+

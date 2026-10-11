@@ -1,0 +1,41 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-gb-mealybug/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/60734ed0b40fce21: Operation not permitted (os error 1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.10s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_nintendo_game_boy-c449fd55bd0485b8)
+
+running 1 test
+                        m2_win_en_toggle  diff=    0  
+                           m3_bgp_change  diff=    0  
+                   m3_bgp_change_sprites  diff=    0  
+                    m3_lcdc_bg_en_change  diff=  232  
+                   m3_lcdc_bg_map_change  diff=    0  
+                   m3_lcdc_obj_en_change  diff=    0  
+           m3_lcdc_obj_en_change_variant  diff=    0  
+                 m3_lcdc_obj_size_change  diff=    0  
+             m3_lcdc_obj_size_change_scx  diff=    0  
+                 m3_lcdc_tile_sel_change  diff=    0  
+             m3_lcdc_tile_sel_win_change  diff=    0  
+          m3_lcdc_win_en_change_multiple  diff=    0  
+       m3_lcdc_win_en_change_multiple_wx  diff=    3  
+                  m3_lcdc_win_map_change  diff=    0  
+                          m3_obp0_change  diff=    0  
+                      m3_scx_high_5_bits  diff=    0  
+                       m3_scx_low_3_bits  diff=    0  
+                           m3_scy_change  diff=    0  
+                        m3_window_timing  diff=    0  
+                   m3_window_timing_wx_0  diff=    0  
+                          m3_wx_4_change  diff=    0  
+                  m3_wx_4_change_sprites  diff=    0  
+                          m3_wx_5_change  diff=    0  
+                          m3_wx_6_change  diff=    0  
+
+Mealybug DMG: 22/24 pixel-perfect
+test tests::diagnostic_mealybug_dmg ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 37 filtered out; finished in 5.45s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_cart_boot-3d50a5fc30fa1d1a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+

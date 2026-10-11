@@ -1,0 +1,44 @@
+diff --git i/crates/machine-nintendo-game-boy/src/tests.rs w/crates/machine-nintendo-game-boy/src/tests.rs
+index 32b30e8f..c9a28f62 100644
+--- i/crates/machine-nintendo-game-boy/src/tests.rs
++++ w/crates/machine-nintendo-game-boy/src/tests.rs
+@@ -1614,3 +1614,11 @@ fn oam_dma_bus_conflict_is_bus_aware() {
+     assert!(!gb.oam_dma_active());
+     assert_eq!(MemoryBus::read(&mut gb, 0x8000), 0x22, "no DMA, real VRAM");
+ }
++
++#[test]
++fn temporary_mealybug_bg_trace() {
++    let rom = std::fs::read("/Users/stevehill/Projects/198x/assets/test-suites/gameboy/mealybug-tearoom/ppu/m3_lcdc_bg_en_change.gb").unwrap();
++    let (_, mut gb) = GameBoy::from_rom(rom).unwrap();
++    assert!(run_to_ld_b_b(&mut gb, 4_000_000));
++    std::fs::write("/private/tmp/198x-gb-mealybug-evidence/emu-bg.shades",gb.framebuffer()).unwrap();
++}
+diff --git i/crates/nintendo-game-boy-ppu/src/lib.rs w/crates/nintendo-game-boy-ppu/src/lib.rs
+index 48d8cf03..23eac8cf 100644
+--- i/crates/nintendo-game-boy-ppu/src/lib.rs
++++ w/crates/nintendo-game-boy-ppu/src/lib.rs
+@@ -676,6 +676,9 @@ impl Ppu {
+     /// is `vram[0]`). `oam` must be the 160-byte OAM block (CPU
+     /// `$FE00` = `oam[0]`).
+     pub fn tick(&mut self, vram: &[u8], oam: &[u8]) {
++        if self.ly == 19 && (90..145).contains(&self.dot) {
++            eprintln!("DOT ly={} dot={} pos={} lcdx={} lcdc={:02x} stage={:?} resume={:?} wait={} fetch={:?} bglen={} objlen={} fetching={} pending={}", self.ly, self.dot, self.position_in_line, self.lcd_x, self.lcdc, self.staged_write, self.m3.resume, self.m3.wait, self.m3.fetch, self.m3.bg_fifo.len(), self.m3.obj_fifo.len(), self.m3.during_object_fetch, self.m3.n_objects);
++        }
+         if (self.lcdc & lcdc::ENABLE) == 0 {
+             // LCD off: timing frozen.
+             return;
+diff --git i/crates/nintendo-game-boy-ppu/src/mode3.rs w/crates/nintendo-game-boy-ppu/src/mode3.rs
+index 3f0135e4..b514fdd0 100644
+--- i/crates/nintendo-game-boy-ppu/src/mode3.rs
++++ w/crates/nintendo-game-boy-ppu/src/mode3.rs
+@@ -520,6 +520,9 @@ impl Ppu {
+             };
+             shade = apply_palette(palette, item.pixel);
+         }
++        if self.ly == 19 && self.lcd_x < 32 {
++            eprintln!("PIX ly={} dot={} x={} bg={} shade={} lcdc={:02x}", self.ly, self.dot, self.lcd_x, bg.pixel, shade, self.lcdc);
++        }
+         self.put_pixel(shade);
+         self.position_in_line = self.position_in_line.wrapping_add(1);
+         self.lcd_x = self.lcd_x.wrapping_add(1);

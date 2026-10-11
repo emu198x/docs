@@ -1,0 +1,124 @@
+[
+  {
+    "rom": "m2_win_en_toggle",
+    "completion": "marker=1 pc=0653 steps=656818",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_bgp_change",
+    "completion": "marker=1 pc=0626 steps=629163",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_bgp_change_sprites",
+    "completion": "marker=1 pc=064b steps=631460",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_bg_en_change",
+    "completion": "marker=1 pc=064f steps=649797",
+    "dmg_blob": 232,
+    "dmg_cpu_b": 4
+  },
+  {
+    "rom": "m3_lcdc_bg_map_change",
+    "completion": "marker=1 pc=0655 steps=644497",
+    "dmg_blob": 192
+  },
+  {
+    "rom": "m3_lcdc_obj_en_change",
+    "completion": "marker=1 pc=0636 steps=634516",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_obj_en_change_variant",
+    "completion": "marker=1 pc=0635 steps=627257",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_obj_size_change",
+    "completion": "marker=1 pc=063c steps=651521",
+    "dmg_blob": 15
+  },
+  {
+    "rom": "m3_lcdc_obj_size_change_scx",
+    "completion": "marker=1 pc=063c steps=642653",
+    "dmg_blob": 30
+  },
+  {
+    "rom": "m3_lcdc_tile_sel_change",
+    "completion": "marker=1 pc=0658 steps=644498",
+    "dmg_blob": 192
+  },
+  {
+    "rom": "m3_lcdc_tile_sel_win_change",
+    "completion": "marker=1 pc=0660 steps=644502",
+    "dmg_blob": 178
+  },
+  {
+    "rom": "m3_lcdc_win_en_change_multiple",
+    "completion": "marker=1 pc=0654 steps=646720",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_lcdc_win_en_change_multiple_wx",
+    "completion": "marker=1 pc=065b steps=635427",
+    "dmg_blob": 43,
+    "dmg_cpu_b": 40
+  },
+  {
+    "rom": "m3_lcdc_win_map_change",
+    "completion": "marker=1 pc=065d steps=644501",
+    "dmg_blob": 122
+  },
+  {
+    "rom": "m3_obp0_change",
+    "completion": "marker=1 pc=0636 steps=641117",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_scx_high_5_bits",
+    "completion": "marker=1 pc=064c steps=646887",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_scx_low_3_bits",
+    "completion": "marker=1 pc=0647 steps=650390",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_scy_change",
+    "completion": "marker=1 pc=064e steps=617960",
+    "dmg_blob": 627
+  },
+  {
+    "rom": "m3_window_timing",
+    "completion": "marker=1 pc=065a steps=638298",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_window_timing_wx_0",
+    "completion": "marker=1 pc=0653 steps=638303",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_4_change",
+    "completion": "marker=1 pc=0651 steps=653927",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_4_change_sprites",
+    "completion": "marker=1 pc=0650 steps=667519",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_5_change",
+    "completion": "marker=1 pc=0646 steps=554386",
+    "dmg_blob": 0
+  },
+  {
+    "rom": "m3_wx_6_change",
+    "completion": "marker=1 pc=0646 steps=554386",
+    "dmg_blob": 0
+  }
+]
