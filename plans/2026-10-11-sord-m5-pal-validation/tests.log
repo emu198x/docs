@@ -1,0 +1,271 @@
+   Compiling ti-sn76489 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-sn76489)
+   Compiling ti-tms9918 v0.31.0 (/private/tmp/198x-6809-transfers/crates/ti-tms9918)
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+   Compiling runtime-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/runtime-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.51s
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/machine_sord_m5-9ecf8f8b1f5dee7b)
+
+running 11 tests
+test tests::key_press_and_release_round_trip ... ok
+test tests::ctc_routes_at_0x00_block ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test tests::joystick_reads_active_high_at_0x37 ... ok
+test tests::keyboard_rows_read_directly_at_0x30_block ... ok
+test tests::vdp_io_routes_at_0x10_block ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.71s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-6809-target/debug/deps/bios_boot-477833f0cd77a7ba)
+
+running 1 test
+test boots_through_ctc_to_a_rendered_screen ... ignored, FIXTURE: needs Sord M5 BIOS + cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-6809-target/debug/deps/cpu_rate-1e3f9568d4beea31)
+
+running 1 test
+test a_nop_costs_four_tstates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/digdug_freeze_probe.rs (/private/tmp/198x-6809-target/debug/deps/digdug_freeze_probe-f31cfe3ec73f069b)
+
+running 2 tests
+test cart_round_spawns_and_runs ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+test vdp_int_drives_ctc_channel3 ... ignored, FIXTURE: needs Sord M5 BIOS + Dig Dug cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/keyboard_io_trace.rs (/private/tmp/198x-6809-target/debug/deps/keyboard_io_trace-f7cf40757f0ecc09)
+
+running 1 test
+test trace_keyboard_scan_ports ... ignored, FIXTURE: needs Sord M5 BIOS — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pal_validation.rs (/private/tmp/198x-6809-target/debug/deps/pal_validation-84f6c946c4113faf)
+
+running 4 tests
+test european_basic_i_reaches_ready_with_pal_frame_interrupts ... ignored, FIXTURE: needs European M5 BIOS and BASIC-I cartridge
+test european_dig_dug_reaches_player_selection_with_pal_frame_interrupts ... ignored, FIXTURE: needs European M5 BIOS and Dig Dug cartridge
+test each_runtime_second_produces_48000_audio_samples ... ok
+test pal_audio_continues_identically_after_save_restore ... ok
+
+test result: ok. 2 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 1.39s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-6809-target/debug/deps/synthetic_firmware_boot-6de6610a5b717149)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_m5_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/runtime_sord_m5-77e48de4eefcbdd3)
+
+running 12 tests
+test input::tests::backspace_is_refused_rather_than_typing_a_backslash ... ok
+test input::tests::the_jis_keycaps_are_named_after_what_they_type ... ok
+test runtime::tests::every_legend_names_a_key_this_machine_has ... ok
+test input::tests::the_keys_that_were_already_right_did_not_move ... ok
+test profiles::tests::profile_declares_rom_firmware ... ok
+test runtime::tests::the_arithmetic_operators_are_reachable ... ok
+test input::tests::button_events_drive_both_joystick_ports_active_high ... ok
+test runtime::tests::legends_are_one_to_one ... ok
+test input::tests::fire_button_is_ignored_no_joystick_trigger_line ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test input::tests::no_two_key_names_share_a_cell ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-6809-target/debug/deps/queries-3c54157c57dd0c85)
+
+running 3 tests
+test query_paths_lists_the_folded_paths ... ok
+test vdp_resolves_grouped_with_registers_and_leaves ... ok
+test ctc_resolves_grouped_with_channels_and_scalar_leaves ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-6809-target/debug/deps/snapshot_roundtrip-7367b2a7332011f4)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-6809-target/debug/deps/variants-c0d6e7437a014acf)
+
+running 1 test
+test every_region_installs_its_framebuffer_and_budget_and_ejects_cartridges ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_sn76489-91e699ecd3446492)
+
+running 21 tests
+test tests::latch_write_sets_tone_period_low ... ok
+test tests::data_write_sets_tone_period_high ... ok
+test tests::attenuation_write ... ok
+test tests::attenuation_to_volume_extremes ... ok
+test tests::noise_mode_3_uses_tone_2_period ... ok
+test tests::noise_mode3_tone2_period_zero_clamps_to_one ... ok
+test tests::new_psg_is_silent ... ok
+test tests::periodic_noise_period_matches_register_width ... ok
+test tests::noise_mode_sets_period ... ok
+test tests::register_state_consumes_the_encoder_output_and_leaves_trailing_bytes ... ok
+test tests::sega16_white_noise_matches_legacy_behaviour ... ok
+test tests::sega_zero_tone_period_matches_one_count_interval ... ok
+test tests::register_state_rejects_every_truncated_prefix_before_mutation ... ok
+test tests::white_noise_sequences_differ_by_variant ... ok
+test tests::tick_produces_output ... ok
+test tests::silent_when_muted ... ok
+test tests::ti_zero_period_transitions_match_the_full_reference ... ok
+test tests::downsampler_tracks_48khz_output_rate ... ok
+test tests::output_is_dc_blocked ... ok
+test tests::ti_noise_follows_tone_edges_across_period_writes ... ok
+test tests::nonzero_tone_intervals_match_the_full_reference ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.64s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/ti_tms9918-b26a5014d3c5e902)
+
+running 21 tests
+test tests::a_write_waits_for_its_access_window ... ok
+test tests::each_region_holds_exactly_the_field_a_set_shows ... ok
+test tests::a_write_that_overtakes_the_pending_one_replaces_it ... ok
+test tests::control_port_register_write ... ok
+test tests::a_pending_access_survives_the_state_round_trip ... ok
+test tests::graphics_i_renders_tile ... ok
+test tests::mode_detection ... ok
+test tests::address_auto_increment_wraps ... ok
+test tests::sprite_y_d0_terminates_processing ... ok
+test tests::status_register_clears_flags_and_resets_latch ... ok
+test tests::the_border_accounts_for_every_line_the_chip_does_not_draw ... ok
+test tests::the_last_active_line_lands_above_the_bottom_border ... ok
+test tests::new_vdp_has_blank_framebuffer ... ok
+test tests::the_window_pattern_matches_the_manuals_worst_cases ... ok
+test tests::transparent_sprites_still_set_coincidence_flag ... ok
+test tests::graphics_ii_colour_mask_form_matches_tile_mask_then_multiply ... ok
+test tests::vram_write_and_read ... ok
+test tests::ntsc_frame_is_262_lines ... ok
+test tests::vblank_sets_interrupt_flag ... ok
+test tests::mid_frame_backdrop_change_splits_the_border ... ok
+test tests::pal_frame_is_313_lines ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/datasheet_access_windows.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_access_windows-3ee2d38e28e909e9)
+
+running 7 tests
+test a_read_straight_after_address_setup_returns_the_old_latch ... ok
+test graphics_ii_loses_writes_paced_faster_than_its_windows ... ok
+test the_same_burst_lands_intact_with_the_display_blanked ... ok
+test the_same_burst_lands_intact_in_the_vertical_border ... ok
+test multicolor_needs_24_cycles_between_writes ... ok
+test graphics_i_and_ii_need_26_cycles_between_writes ... ok
+test text_mode_and_a_blanked_display_take_writes_as_fast_as_a_z80_can_send_them ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+     Running tests/datasheet_coincidence.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_coincidence-360ca0ffcf3d03fe)
+
+running 6 tests
+test the_fifth_sprite_on_a_line_does_not_coincide ... ok
+test transparent_sprites_still_coincide ... ok
+test reading_the_status_clears_coincidence ... ok
+test sprites_off_the_screen_still_coincide ... ok
+test sprites_past_the_terminator_do_not_coincide ... ok
+test overlapping_sprites_coincide ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/datasheet_palette.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_palette-3e0fb8a3e342d94d)
+
+running 4 tests
+test the_palette_is_table_2_3 ... ok
+test the_palette_is_the_component_variant ... ok
+test transparent_carries_no_colour ... ok
+test an_uncovered_transparent_pixel_is_black ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/datasheet_sprite_sizes.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_sprite_sizes-4bb5e1ef88968c48)
+
+running 4 tests
+test magnified_and_size_one_reach_sixteen_pixels_differently ... ok
+test the_low_two_name_bits_are_forced_for_a_size_one_sprite ... ok
+test a_size_one_pattern_is_four_quadrants_in_column_major_order ... ok
+test the_size_and_magnification_matrix ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/datasheet_sprites.rs (/private/tmp/198x-6809-target/debug/deps/datasheet_sprites-51e1ef33dd289790)
+
+running 5 tests
+test four_sprites_share_a_line ... ok
+test a_fifth_sprite_is_dropped_and_the_first_four_survive ... ok
+test reading_the_status_clears_the_fifth_sprite_flag ... ok
+test the_fifth_sprite_reports_its_number ... ok
+test the_fifth_sprite_flag_needs_the_frame_flag_clear ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-6809-target/debug/deps/zilog_z80_ctc-fddc3db507ce5c79)
+
+running 15 tests
+test tests::channel_three_has_no_zc_to_output ... ok
+test tests::counter_mode_decrements_on_trg_edges ... ok
+test tests::counter_tc1_interrupts_every_edge ... ok
+test tests::external_trigger_timer_waits_for_edge ... ok
+test tests::daisy_chain_priority_blocks_lower_channels ... ok
+test tests::disabled_interrupt_still_pulses_zc_to ... ok
+test tests::load_state_rejects_truncated ... ok
+test tests::new_ctc_is_idle ... ok
+test tests::read_returns_live_counter ... ok
+test tests::save_load_round_trip ... ok
+test tests::software_reset_stops_channel ... ok
+test tests::timer_div16_period_matches_time_constant ... ok
+test tests::time_constant_zero_means_256 ... ok
+test tests::timer_div256_period ... ok
+test tests::vector_encodes_channel_number ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_sord_m5
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_sord_m5
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ti_sn76489
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ti_tms9918
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests zilog_z80_ctc
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,9 @@
+   Compiling machine-sord-m5 v0.31.0 (/private/tmp/198x-6809-transfers/crates/machine-sord-m5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.48s
+     Running tests/legacy_clock_probe.rs (/private/tmp/198x-6809-target/debug/deps/legacy_clock_probe-28758f2c67edf020)
+
+running 1 test
+test legacy_clock_probe ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
