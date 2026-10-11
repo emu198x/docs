@@ -1,0 +1,43 @@
+{
+  "source_revision": "205bfd85db9cf91bd7489e1d4dec7d7a32b8ef40",
+  "source_pr": 1726,
+  "source_pr_state": "CLOSED, not merged; preserved without reopening",
+  "reference_revision": "c7ecd07f0a08db1cdd6871d788476bfac55be638",
+  "mame_revision": "9391e1eff80eb04abd58d48218a1d3b9643c1ea8",
+  "date": "2026-10-11",
+  "reference_core": "unmodified temporary git archive build; host forwards port calls for final-frame trace",
+  "frames": {
+    "sweep": 60,
+    "trace": 61
+  },
+  "irq_cases": 40,
+  "polling_cases": 8,
+  "chip_phase_failures": 8,
+  "horizontal_controls_passed": 1368,
+  "traced_reference_matches_untraced": {
+    "ntsc-u": true,
+    "pal": true
+  },
+  "reference_trace_controls": {
+    "ntsc-u": {
+      "ram": {
+        "irq": "509d891ee33825c882442a8253aee5439f96643d1d237b27f99d0f7acea1b87b",
+        "control": "509d891ee33825c882442a8253aee5439f96643d1d237b27f99d0f7acea1b87b"
+      },
+      "ppm": {
+        "irq": "1fd9d9655964fcd78aad61404b948ac0efed627174e950dfb385989ce6f07560",
+        "control": "1fd9d9655964fcd78aad61404b948ac0efed627174e950dfb385989ce6f07560"
+      }
+    },
+    "pal": {
+      "ram": {
+        "irq": "c7502a0501f2badc2be4241659b15b1dd300e455a630ab7238cc9c57317610c3",
+        "control": "c7502a0501f2badc2be4241659b15b1dd300e455a630ab7238cc9c57317610c3"
+      },
+      "ppm": {
+        "irq": "1fd9d9655964fcd78aad61404b948ac0efed627174e950dfb385989ce6f07560",
+        "control": "1fd9d9655964fcd78aad61404b948ac0efed627174e950dfb385989ce6f07560"
+      }
+    }
+  }
+}
