@@ -1,0 +1,38 @@
+{
+  "reference_repository": "https://www.6809.org.uk/git/xroar.git",
+  "reference_commit": "b8491ab945d3e83fc1e98d62359813cf8a537d1d",
+  "reference_source_sha256": {
+    "src/mc6809/mc6809.c": "1fd3c2b9379dfc630963c207f8d835c80f43491f5f887be7e0fd84375a31b639",
+    "src/mc6809/mc6809_common.c": "f4cb128771a378917a859c3bee8aef7798254d7f2a6eb917ad2511fea2079020",
+    "src/mc680x/mc680x_ops.c": "5b3692247067ba34c76e11d5875ceed54768e5b2b3de1afb0c7942df17dde9fd",
+    "portalib/delegate.c": "207c6ac0c50fb5e975073af8bfbfee40ebe2ad308771ca945c65ee473d024ed1"
+  },
+  "baseline_commit": "8aabf2ec56e41870429c17a9d8fc9faca70344be",
+  "toolchains": {
+    "rust": "1.99.0",
+    "c": "Apple clang 21.0.0",
+    "python": "3.14.3"
+  },
+  "diagnostic_rows": 3264,
+  "regression_rows": 3072,
+  "regression_exclusions": {
+    "4d,5d": "Reference has 3 cycles; Motorola opcode map specifies 2."
+  },
+  "result_mask": {
+    "19": "Only V excluded: documented undefined; remains separate investigation."
+  },
+  "sha256": {
+    "reference.c": "4149580d346ffe5f6d3a8bf32a46a3e251c6f5eba756ab213a84bcab1031e76b",
+    "reference.txt": "36193062a463fe3bed864b24d61c9dd6f375835f597de9e10f3ef56bf79bc9e0",
+    "probe.rs": "02e310021611913ac691b09f50e1d084825efde71d02a6583861523c0f453870",
+    "before.txt": "71c4f2fa99fcd674ba8a1f15696ff015f40d472407a6aa2c184bc76170398427",
+    "after.txt": "135a0f86e3488c45429e959e5131cc49f4a7d1158078000c51ac3f5467e59e50",
+    "compare.py": "dc7f49bcdb5213d2f6dd087a3a6989cd1bd6a8b47bd92d43547b50c15b37a9b3",
+    "before-summary.json": "6c2a04ae892a47ab982f0d2e88f04d9efe2cadddd8105b00e35a376b573974ad",
+    "after-summary.json": "3b63281e9fc45d0b0a9194b61d03f0b48615f0e2c73d5a4aeb9fb92312707f22",
+    "red.log": "029be1b1b7643336c18e3f8139b1a6c16bac6ad3b4e9113b2cae8392d46803fc",
+    "tests.log": "42c48e2cc3fc76ca419f1c60baf3e8f458c9fdffa75c0f74432e3d296e5ed81d",
+    "clippy.log": "3f9dbbe4a2213ba11ac26d97b0d3c5baa3a264e5cb54ef1ca5c4a45ccd1094fb"
+  },
+  "fixture_sha256": "25a696336e0391ced12a236eb43f5a4695a9146683687b3734e9a5dce81b9dd8"
+}
