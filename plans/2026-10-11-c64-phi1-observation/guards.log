@@ -1,0 +1,14 @@
+test_duplicate_model_rejected (test_probe.ProbeGuards.test_duplicate_model_rejected) ... ok
+test_empty_log_rejected (test_probe.ProbeGuards.test_empty_log_rejected) ... ok
+test_fabricated_zero_count_rejected (test_probe.ProbeGuards.test_fabricated_zero_count_rejected) ... ok
+test_invalid_byte_rejected (test_probe.ProbeGuards.test_invalid_byte_rejected) ... ok
+test_matching_native_rows_pass (test_probe.ProbeGuards.test_matching_native_rows_pass) ... ok
+test_missing_model_rejected (test_probe.ProbeGuards.test_missing_model_rejected) ... ok
+test_retained_red_run (test_probe.ProbeGuards.test_retained_red_run) ... ok
+test_short_measurement_rejected (test_probe.ProbeGuards.test_short_measurement_rejected) ... ok
+test_unexpected_process_exit_rejected (test_probe.ProbeGuards.test_unexpected_process_exit_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.005s
+
+OK

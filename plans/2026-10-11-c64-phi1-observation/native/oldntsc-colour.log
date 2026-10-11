@@ -1,0 +1,13 @@
+Error - failed to retrieve executable path, falling back to getcwd() + argv[0]
+DriveROM: Error - 2000 ROM image not found. Hardware-level 2000 emulation is not available.
+DriveROM: Error - 4000 ROM image not found. Hardware-level 4000 emulation is not available.
+DriveROM: Error - CMDHD ROM image not found. Hardware-level CMDHD emulation is not available.
+Deleting all checkpoints
+Loading '/private/tmp/c64-phi1-native/oldntsc-colour.prg' from 0801 to 0D83 (0583 bytes)
+WATCH: 1  C:$d7ff  (Stop on store)
+#1 (Stop on store d7ff)  140/$08c,  48/$30
+.C:08e0  8E FF D7    STX $D7FF      - A:0A X:FF Y:40 SP:f3 N.-....C    2155312
+  ADDR A  X  Y  SP 00 01 NV-BDIZC LIN CYC  STOPWATCH
+.;08e3 0a ff 40 f3 2f 35 10100001 140 048    2155312
+Saving file '/private/tmp/c64-phi1-native/oldntsc-colour.bin' from $0801 to $0d83
+Saving file '/private/tmp/c64-phi1-native/oldntsc-colour-registers.bin' from $d020 to $d020
