@@ -1,0 +1,135 @@
+    Checking bitflags v2.11.1
+    Checking foldhash v0.2.0
+    Checking block2 v0.6.2
+   Compiling cfg_aliases v0.2.2
+   Compiling syn v2.0.117
+    Checking format198x-atari-8bit-xex v0.1.0
+   Compiling serde_core v1.0.229
+   Compiling autocfg v1.5.0
+   Compiling libm v0.2.16
+   Compiling zerocopy v0.8.48
+    Checking atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-pokey)
+    Checking emu198x-mos-6502 v0.6.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-mos-6502)
+    Checking atari-gtia v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-gtia)
+    Checking objc2-core-audio-types v0.3.2
+    Checking png v0.18.1
+    Checking hashbrown v0.17.1
+    Checking dispatch2 v0.3.1
+    Checking format-atari-8bit-atr v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/format-atari-8bit-atr)
+    Checking mos-pia-6520 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-pia-6520)
+   Compiling num-traits v0.2.19
+    Checking atari-antic v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-antic)
+   Compiling winnow v1.0.3
+    Checking rustc-hash v1.1.0
+    Checking raw-window-handle v0.6.2
+    Checking atari-sio v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-sio)
+   Compiling naga v30.0.0
+    Checking objc2-core-foundation v0.3.2
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling shlex v1.3.0
+   Compiling toml_parser v1.1.2+spec-1.1.0
+    Checking indexmap v2.14.0
+    Checking bit-vec v0.9.1
+   Compiling objc-sys v0.3.5
+    Checking once_cell v1.21.4
+   Compiling semver v1.0.28
+    Checking machine-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-800xl)
+   Compiling find-msvc-tools v0.1.9
+   Compiling parking_lot_core v0.9.12
+    Checking unicode-width v0.1.14
+   Compiling rustc_version v0.4.1
+    Checking bit-set v0.10.0
+   Compiling cc v1.2.62
+   Compiling memchr v2.8.0
+    Checking smallvec v1.15.1
+    Checking unicode-ident v1.0.24
+    Checking codespan-reporting v0.13.1
+    Checking typenum v1.20.1
+    Checking scopeguard v1.2.0
+    Checking arrayvec v0.7.6
+    Checking static_assertions v1.1.0
+    Checking lock_api v0.4.14
+    Checking zip v8.6.0
+    Checking naga-types v30.0.0
+   Compiling wgpu-hal v30.0.0
+    Checking objc2 v0.5.2
+    Checking parking_lot v0.12.5
+    Checking core-foundation-sys v0.8.7
+    Checking emu198x-test-skip v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-test-skip)
+    Checking profiling v1.0.18
+    Checking core-foundation v0.9.4
+   Compiling wgpu-core v30.0.0
+    Checking dispatch v0.2.0
+   Compiling litrs v1.0.0
+    Checking const-oid v0.10.2
+    Checking foreign-types-shared v0.3.1
+    Checking bitflags v1.3.2
+   Compiling crossbeam-utils v0.8.21
+   Compiling winit v0.30.13
+    Checking core-graphics-types v0.1.3
+   Compiling wgpu v30.0.1
+   Compiling document-features v0.2.12
+    Checking cpufeatures v0.3.0
+    Checking pin-project-lite v0.2.17
+    Checking dpi v0.1.2
+    Checking tracing-core v0.1.36
+    Checking hybrid-array v0.4.14
+    Checking atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Checking block2 v0.5.1
+    Checking mos-riot-6532 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-riot-6532)
+    Checking atari-tia v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-tia)
+    Checking objc2-foundation v0.2.2
+   Compiling rfd v0.17.2
+    Checking smol_str v0.2.2
+    Checking tracing v0.1.44
+    Checking unicode-segmentation v1.13.2
+    Checking cursor-icon v1.2.0
+    Checking pollster v1.0.1
+    Checking crossbeam-channel v0.5.15
+    Checking machine-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-5200)
+    Checking keyboard-types v0.7.0
+    Checking crypto-common v0.2.2
+    Checking block-buffer v0.12.1
+    Checking objc2-foundation v0.3.2
+    Checking objc2-io-kit v0.3.2
+    Checking objc2-core-graphics v0.3.2
+    Checking machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+   Compiling serde_spanned v1.1.1
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling toml v1.1.3+spec-1.1.0
+   Compiling zerocopy-derive v0.8.48
+   Compiling bytemuck_derive v1.10.2
+   Compiling foreign-types-macros v0.2.3
+    Checking digest v0.11.3
+    Checking gilrs-core v0.6.8
+    Checking sha2 v0.11.0
+    Checking foreign-types v0.5.0
+    Checking gilrs v0.11.2
+    Checking core-graphics v0.23.2
+    Checking bytemuck v1.25.2
+   Compiling embed-resource v3.0.11
+    Checking wgpu-types v30.0.0
+   Compiling emu198x-app-icon v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-app-icon)
+   Compiling emu198x-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-800xl)
+   Compiling emu198x-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-7800)
+   Compiling emu198x-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-5200)
+    Checking objc2-app-kit v0.2.2
+    Checking objc2-core-audio v0.3.2
+    Checking objc2-metal v0.3.2
+    Checking objc2-app-kit v0.3.2
+    Checking objc2-audio-toolbox v0.3.2
+    Checking coreaudio-rs v0.14.2
+    Checking cpal v0.18.2
+    Checking emu198x-shell v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-shell)
+    Checking half v2.7.1
+    Checking muda v0.19.3
+    Checking objc2-quartz-core v0.3.2
+    Checking raw-window-metal v1.1.0
+    Checking runtime-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-800xl)
+    Checking runtime-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-7800)
+    Checking runtime-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-5200)
+    Checking wgpu-naga-bridge v30.0.0
+    Checking wgpu-core-deps-apple v30.0.0
+    Checking emu198x-native-video v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-native-video)
+    Checking emu198x-ui v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-ui)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 16.20s

@@ -66,3 +66,49 @@ selected from those conflicting timing claims.
 The bounded shared persistence approval was requested. Its implementation and
 5200/800XL snapshot changes remain pending that answer. No prior source work
 was discarded and no snapshot layout was changed in this baseline step.
+
+## Approval
+
+The user approved proceeding with the bounded shared persistence correction
+on 12 October (“Fix it, please”), in response to the explicit v18-to-v19
+request. Implement the six retained fields and both runtime envelopes without
+asking again. The broader timed POKEY redesign remains separate.
+
+## POKEY correction verified
+
+The approved clock and persistence correction is implemented. The six retained
+fields preserve the partial mixed/channel sums, sample count, fractional phase
+and DC-filter history. Output queues remain excluded. The 5200 and 800XL reject
+v18 before decoding or changing live state; their current version is v19.
+The 7800 retains its approved, unreleased v6 envelope.
+
+The affected chip, machine, runtime and frontend release suites pass **346
+tests**, with **19 external-fixture tests ignored**. The separate Asteroids
+smoke executes 200 frames and passes. Clippy with `--all-targets` and
+`-D warnings`, `cargo fmt --all --check`, and `git diff --check` pass.
+
+The original 80 partial-sample restore cases now pass. A further 1,280 saves
+cover both regions, fast/slow accesses, live DMA ownership, partial sampling
+windows and drained/undrained output queues. Each compares the next 640 native
+ticks of mixed and four-channel audio, then CPU progress, framebuffer and the
+complete serialized state. All pass. The clock checks retain the 720 held-CPU
+observations and four executed guest runs through a full regional frame.
+
+Negative controls were executed, then source files restored byte for byte:
+
+- Omitting the saved fractional sample phase fails the native continuation
+  test (`0 passed; 1 failed`).
+- Reverting the 5200 version to 18 fails its old-layout rejection test
+  (`0 passed; 1 failed`).
+- Reverting the 800XL version to 18 fails its old-layout rejection test
+  (`0 passed; 1 failed`).
+
+After restoration, all 61 machine/runtime library tests in those three
+packages pass again. Logs are in
+[`2026-10-12-maria-completion/`](2026-10-12-maria-completion/).
+
+This closes the bounded POKEY implementation gap on the branch. It does not
+resolve the 6/192 DLI and 16/32 raster failures reproduced above, establish a
+physical NMI schedule, or qualify a hardware DMA timing cartridge. PR #1704
+must remain draft until those gates pass. The direct-chip legacy codec and
+broader timed-POKEY redesign remain separate.
