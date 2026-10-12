@@ -1,0 +1,24 @@
+   Compiling machine-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-800xl)
+   Compiling runtime-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-800xl)
+    Finished `release` profile [optimized] target(s) in 4.68s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/runtime_atari_800xl-b6ac1d196c77e6e7)
+
+running 1 test
+test snapshot::tests::version_18_is_rejected_without_mutating_live_state ... FAILED
+
+failures:
+
+---- snapshot::tests::version_18_is_rejected_without_mutating_live_state stdout ----
+
+thread 'snapshot::tests::version_18_is_rejected_without_mutating_live_state' (95787601) panicked at crates/runtime-atari-800xl/src/snapshot.rs:127:9:
+assertion failed: matches!(error, MachineError::InvalidSnapshot { reason } if reason ==
+    "unsupported snapshot version 18; expected 19")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    snapshot::tests::version_18_is_rejected_without_mutating_live_state
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p runtime-atari-800xl --lib`

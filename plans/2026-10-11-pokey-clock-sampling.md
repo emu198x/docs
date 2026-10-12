@@ -15,7 +15,7 @@ fractional sample phase and both DC-filter history values. These affect future
 samples; only delivered output queues should be omitted. All serde consumers
 are `machine-atari-5200`, `machine-atari-7800` and `machine-atari-800xl`.
 
-## Proposed bounded correction
+## Bounded correction (approved and implemented 12 October)
 
 1. Split `Pokey::tick` in `crates/atari-pokey/src/lib.rs` into chip advancement
    and audio sampling methods. Keep `tick` calling both for existing fixed-
@@ -74,7 +74,7 @@ failing log and regression patch against `edc96b5a`. Run with
 `cargo test -p machine-atari-7800 pokey_ -- --nocapture`. The existing POKEY
 cartridge-routing check passes; both new outcome checks fail.
 
-## Clock separation implemented locally
+## Historical clock-only checkpoint (11 October)
 
 The already-approved 7800 clock portion is implemented in the source worktree:
 `tick_chip` advances hardware and `sample_tick` accumulates elapsed output.
@@ -111,3 +111,14 @@ The patches use zero context to keep embedded patch whitespace unambiguous.
 Apply with `git apply --unidiff-zero` to an isolated checkout of `edc96b5a`.
 Both were applied to temporary copies of that revision and their resulting
 files compared with the recorded reproducer/current source respectively.
+
+## Approved correction completed on 12 October
+
+The user approved the bounded shared persistence and v18-to-v19 change.
+All six retained audio fields are now serialized, both shared envelopes are
+versioned, and the original 80 restore cases pass. An additional 1,280 native
+DMA/slow-access continuation cases pass. The clock separation and regressions
+are committed with this correction; the checkpoint above records the earlier
+red state, not the current implementation. Full results and deliberate fault
+checks are in [the completion record](2026-10-12-maria-completion.md).
+Physical NMI timing remains an independent MARIA merge gate.

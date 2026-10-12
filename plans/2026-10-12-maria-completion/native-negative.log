@@ -1,0 +1,25 @@
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-pokey)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `release` profile [optimized] target(s) in 5.15s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_7800-57c741d9783088a6)
+
+running 1 test
+test tests::pokey_native_audio_resumes_through_dma_and_partial_samples ... FAILED
+
+failures:
+
+---- tests::pokey_native_audio_resumes_through_dma_and_partial_samples stdout ----
+
+thread 'tests::pokey_native_audio_resumes_through_dma_and_partial_samples' (95786055) panicked at crates/machine-atari-7800/src/lib.rs:1234:25:
+assertion `left == right` failed: Ntsc slow=false phase=0 tick=115
+  left: []
+ right: [0.19749103]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::pokey_native_audio_resumes_through_dma_and_partial_samples
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 41 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`

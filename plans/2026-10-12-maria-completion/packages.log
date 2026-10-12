@@ -1,0 +1,803 @@
+   Compiling foldhash v0.2.0
+   Compiling bitflags v2.11.1
+   Compiling block2 v0.6.2
+   Compiling cfg_aliases v0.2.2
+   Compiling syn v2.0.117
+   Compiling format198x-atari-8bit-xex v0.1.0
+   Compiling serde_core v1.0.229
+   Compiling autocfg v1.5.0
+   Compiling libm v0.2.16
+   Compiling zerocopy v0.8.48
+   Compiling atari-pokey v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-pokey)
+   Compiling atari-gtia v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-gtia)
+   Compiling format-atari-8bit-atr v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/format-atari-8bit-atr)
+   Compiling dispatch2 v0.3.1
+   Compiling hashbrown v0.17.1
+   Compiling objc2-core-audio-types v0.3.2
+   Compiling png v0.18.1
+   Compiling atari-sio v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-sio)
+   Compiling atari-antic v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-antic)
+   Compiling num-traits v0.2.19
+   Compiling winnow v1.0.3
+   Compiling rustc-hash v1.1.0
+   Compiling raw-window-handle v0.6.2
+   Compiling objc2-core-foundation v0.3.2
+   Compiling naga v30.0.0
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling machine-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-800xl)
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling parking_lot_core v0.9.12
+   Compiling unicode-width v0.1.14
+   Compiling typenum v1.20.1
+   Compiling shlex v1.3.0
+   Compiling bit-vec v0.9.1
+   Compiling indexmap v2.14.0
+   Compiling objc-sys v0.3.5
+   Compiling semver v1.0.28
+   Compiling find-msvc-tools v0.1.9
+   Compiling once_cell v1.21.4
+   Compiling rustc_version v0.4.1
+   Compiling bit-set v0.10.0
+   Compiling cc v1.2.62
+   Compiling codespan-reporting v0.13.1
+   Compiling arrayvec v0.7.6
+   Compiling static_assertions v1.1.0
+   Compiling memchr v2.8.0
+   Compiling smallvec v1.15.1
+   Compiling unicode-ident v1.0.24
+   Compiling hybrid-array v0.4.14
+   Compiling scopeguard v1.2.0
+   Compiling zip v8.6.0
+   Compiling naga-types v30.0.0
+   Compiling lock_api v0.4.14
+   Compiling wgpu-hal v30.0.0
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling objc2 v0.5.2
+   Compiling crypto-common v0.2.2
+   Compiling parking_lot v0.12.5
+   Compiling block-buffer v0.12.1
+   Compiling const-oid v0.10.2
+   Compiling core-foundation-sys v0.8.7
+   Compiling profiling v1.0.18
+   Compiling core-foundation v0.9.4
+   Compiling wgpu-core v30.0.0
+   Compiling mos-riot-6532 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/mos-riot-6532)
+   Compiling atari-tia v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-tia)
+   Compiling cpufeatures v0.3.0
+   Compiling crossbeam-utils v0.8.21
+   Compiling dispatch v0.2.0
+   Compiling litrs v1.0.0
+   Compiling block2 v0.5.1
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-io-kit v0.3.2
+   Compiling serde_spanned v1.1.1
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling objc2-core-graphics v0.3.2
+   Compiling digest v0.11.3
+   Compiling foreign-types-shared v0.3.1
+   Compiling bitflags v1.3.2
+   Compiling objc2-foundation v0.2.2
+   Compiling toml v1.1.3+spec-1.1.0
+   Compiling core-graphics-types v0.1.3
+   Compiling sha2 v0.11.0
+   Compiling document-features v0.2.12
+   Compiling wgpu v30.0.1
+   Compiling winit v0.30.13
+   Compiling tracing-core v0.1.36
+   Compiling zerocopy-derive v0.8.48
+   Compiling gilrs-core v0.6.8
+   Compiling bytemuck_derive v1.10.2
+   Compiling foreign-types-macros v0.2.3
+   Compiling pin-project-lite v0.2.17
+   Compiling gilrs v0.11.2
+   Compiling dpi v0.1.2
+   Compiling tracing v0.1.44
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+   Compiling cursor-icon v1.2.0
+   Compiling foreign-types v0.5.0
+   Compiling unicode-segmentation v1.13.2
+   Compiling rfd v0.17.2
+   Compiling core-graphics v0.23.2
+   Compiling embed-resource v3.0.11
+   Compiling smol_str v0.2.2
+   Compiling emu198x-app-icon v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-app-icon)
+   Compiling keyboard-types v0.7.0
+   Compiling crossbeam-channel v0.5.15
+   Compiling bytemuck v1.25.2
+   Compiling pollster v1.0.1
+   Compiling machine-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-5200)
+   Compiling emu198x-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-800xl)
+   Compiling wgpu-types v30.0.0
+   Compiling emu198x-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-7800)
+   Compiling emu198x-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-atari-5200)
+   Compiling objc2-core-audio v0.3.2
+   Compiling objc2-audio-toolbox v0.3.2
+   Compiling objc2-metal v0.3.2
+   Compiling coreaudio-rs v0.14.2
+   Compiling objc2-app-kit v0.2.2
+   Compiling cpal v0.18.2
+   Compiling half v2.7.1
+   Compiling emu198x-shell v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-shell)
+   Compiling objc2-quartz-core v0.3.2
+   Compiling objc2-app-kit v0.3.2
+   Compiling raw-window-metal v1.1.0
+   Compiling muda v0.19.3
+   Compiling runtime-atari-800xl v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-800xl)
+   Compiling runtime-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-7800)
+   Compiling runtime-atari-5200 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/runtime-atari-5200)
+   Compiling wgpu-naga-bridge v30.0.0
+   Compiling wgpu-core-deps-apple v30.0.0
+   Compiling emu198x-native-video v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-native-video)
+   Compiling emu198x-ui v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/emu198x-ui)
+    Finished `release` profile [optimized] target(s) in 1m 46s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/atari_maria-16cb074d08736211)
+
+running 62 tests
+test dma::tests::cpu_control_write_reaches_dma_after_the_write_cycle_ends ... ok
+test dma::tests::descriptors_sample_live_bytes_including_after_address_drive_release ... ok
+test clock::tests::strobes_match_all_108_measured_clock_vectors ... ok
+test dma::tests::holey_dma_matches_qualified_bus_and_line_ram_traces ... ok
+test dma::tests::native_dma_matches_qualified_bus_and_read_traces ... ok
+test dma::tests::cutoff_matches_qualified_bus_and_read_traces ... ok
+test dma::tests::the_upcoming_descriptor_owns_each_zone_event ... ok
+test dma::tests::holey_snapshots_keep_suppression_through_indirect_address_wrap ... ok
+test dma::tests::wsync_matches_qualified_ready_and_bus_traces ... ok
+test clock::tests::direct_snapshots_resume_every_divider_phase_and_input_latch ... ok
+test fetch::tests::byte_latches_match_all_64_measured_reference_vectors ... ok
+test fetch::tests::byte_latches_match_all_four_reference_fetch_modes ... ok
+test fetch::tests::memory_and_character_base_remain_live_between_fetches ... ok
+test dma::tests::cpu_register_commits_match_all_mirrors_and_clock_phases ... ok
+test fetch::tests::short_headers_retain_the_extended_headers_write_mode ... ok
+test state::tests::invalid_cells_in_either_buffer_leave_the_chip_unchanged ... ok
+test state::tests::invalid_clock_countdowns_leave_the_chip_unchanged ... ok
+test state::tests::invalid_pending_fetches_leave_the_chip_unchanged ... ok
+test state::tests::invalid_dma_countdowns_leave_the_chip_unchanged ... ok
+test tests::background_fills_line ... ok
+test tests::border_control_and_colour_kill_apply_to_both_sides ... ok
+test tests::border_uses_each_scanlines_background_without_repainting_prior_rows ... ok
+test dma::tests::cutoff_snapshots_preserve_late_reads_and_both_line_banks ... ok
+test state::tests::legacy_truncated_and_wrong_region_states_leave_the_chip_unchanged ... ok
+test tests::ctrl_register ... ok
+test tests::direct_state_preserves_pending_pixels_and_completed_frame ... ok
+test tests::each_region_holds_exactly_the_field_a_set_shows ... ok
+test tests::framebuffer_dimensions ... ok
+test tests::initial_descriptor_raises_one_event_before_graphics_playback ... ok
+test tests::kangaroo_mode_makes_zero_pixels_opaque_background ... ok
+test tests::mode_160a_pixel_decode ... ok
+test tests::frame_completion ... ok
+test tests::mode_320a_pixel_decode ... ok
+test tests::mstat_vblank_bit ... ok
+test tests::native_first_graphics_follow_descriptor_prefetch_and_buffer_transfer ... ok
+test tests::native_descriptor_decodes_flags_offset_and_full_address ... ok
+test tests::pal_border_rows_follow_the_existing_window_across_frame_wrap ... ok
+test tests::native_reads_stop_and_restart_with_normal_dma ... ok
+test tests::palette_write_read_back ... ok
+test tests::register_backgrnd_write ... ok
+test tests::terminating_header_still_fetches_the_following_high_byte ... ok
+test tests::the_active_display_fits_the_field_with_the_border_around_it ... ok
+test tests::wsync_flag ... ok
+test video::tests::extended_write_mode_stores_two_cells_per_byte ... ok
+test tests::transparent_pixels_dont_overwrite ... ok
+test video::tests::horizontal_positions_count_two_pixel_cells ... ok
+test video::tests::native_line_transfer_matches_the_measured_edges ... ok
+test video::tests::native_playback_samples_live_registers_without_repainting_pixels ... ok
+test video::tests::palette_changes_remain_live_until_playback ... ok
+test video::tests::read_mode_selects_320a_and_uses_colour_two ... ok
+test video::tests::line_ram_matches_every_reference_byte_mode_palette_and_overlap ... ok
+test video::tests::snapshots_resume_both_buffers_and_pending_output_pixels ... ok
+test video::tests::native_pixels_match_all_160_full_clock_reference_windows ... ok
+test fetch::tests::direct_snapshot_resumes_every_fetch_phase_and_pending_input ... ok
+test dma::tests::wsync_snapshots_resume_pending_writes_and_raster_release ... ok
+test dma::tests::restart_matches_qualified_bus_and_register_traces ... ok
+test dma::tests::holey_dma_matches_all_696_qualified_schedules ... ok
+test dma::tests::direct_snapshots_resume_dma_stages_and_bus_handoffs ... ok
+test dma::tests::restart_matches_all_576_qualified_schedules ... ok
+test dma::tests::wsync_matches_all_960_qualified_schedules ... ok
+test dma::tests::cutoff_matches_all_896_qualified_schedules ... ok
+test dma::tests::native_dma_matches_all_768_qualified_schedules ... ok
+
+test result: ok. 62 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.82s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/atari_pokey-d66314db588e8736)
+
+running 36 tests
+test tests::audctl_bits_sit_where_the_register_layout_puts_them ... ok
+test tests::a_second_serout_write_replaces_the_byte_waiting_to_load ... ok
+test tests::a_sent_byte_reaches_the_bus_once ... ok
+test tests::a_received_byte_arrives_after_a_whole_frame ... ok
+test tests::a_byte_offered_mid_frame_is_dropped ... ok
+test tests::a_byte_arriving_on_an_unread_one_is_an_overrun ... ok
+test tests::audctl_base_clock_selection ... ok
+test tests::audio_buffer_fills_on_tick ... ok
+test tests::an_external_serial_clock_never_receives ... ok
+test tests::audctl_join_bits_select_the_documented_channel_pairs ... ok
+test tests::default_creates_ntsc_pokey ... ok
+test tests::an_external_serial_clock_never_shifts ... ok
+test tests::every_distortion_field_uses_the_documented_polynomial_gates ... ok
+test tests::initialisation_mode_flushes_the_output_path ... ok
+test tests::frequency_counter_countdown ... ok
+test tests::irqen_irqst_read_write ... ok
+test tests::maximum_linked_divider_includes_high_speed_latency_without_overflow ... ok
+test tests::output_ready_asserts_on_the_load_not_on_the_write ... ok
+test tests::poly_tables_have_correct_periods ... ok
+test tests::output_complete_reports_an_idle_shift_register ... ok
+test tests::press_key_latches_code_and_raises_interrupt ... ok
+test tests::random_initialisation_and_nine_bit_phase ... ok
+test tests::reading_serin_does_not_acknowledge_it ... ok
+test tests::pot_value_read ... ok
+test tests::sampling_weights_held_output_without_advancing_chip_time ... ok
+test tests::serial_output_runs_at_the_documented_sio_baud_rate ... ok
+test tests::sixteen_bit_mode_uses_one_little_endian_divider ... ok
+test tests::skres_resets_serial_status ... ok
+test tests::shift_bit_in_the_scan_code_drives_skstat ... ok
+test tests::the_sio_audctl_value_selects_the_fast_clock_and_the_link ... ok
+test tests::stimer_resets_all_counters ... ok
+test tests::timer_interrupt_generation ... ok
+test tests::volume_only_mode_output ... ok
+test tests::split_clock_preserves_the_uniform_tick_stream ... ok
+test tests::long_polynomials_have_full_periods ... ok
+test tests::output_clock_produces_exactly_48khz_over_one_second ... ok
+
+test result: ok. 36 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/main.rs (/private/tmp/198x-sunsoft4-target/release/deps/emu198x_atari_5200-c9a3e0a5947702b6)
+
+running 7 tests
+test app::tests::region_frame_ticks_match ... ok
+test ui::tests::stick_on_map_key_and_keypad_on_map_keys ... ok
+test app::tests::parse_cli_defaults ... ok
+test app::tests::parse_cli_accepts_positional_cart ... ok
+test app::tests::pal_is_refused_with_the_reason ... ok
+test app::tests::parse_cli_accepts_cart_bios_region_scale_video ... ok
+test ui::tests::window_loads_bios_and_cartridge_through_the_shared_launch_path ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/firmware.rs (/private/tmp/198x-sunsoft4-target/release/deps/firmware-35e1d5d4167caa4c)
+
+running 5 tests
+test mcp_loads_bios_and_parsed_cartridge_without_adding_a_switch_tool ... ok
+test scripts_load_bios_and_cartridge_and_retain_both_across_reset ... ok
+test optional_bios_needs_no_home_or_directory ... ok
+test bios_pins_override_environment_and_both_conventional_names_work ... ok
+test explicit_missing_bios_or_cartridge_fails_in_both_modes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running unittests src/main.rs (/private/tmp/198x-sunsoft4-target/release/deps/emu198x_atari_7800-19cad80a35fd8b5b)
+
+running 7 tests
+test app::tests::a_bad_region_is_a_usage_error ... ok
+test app::tests::parse_cli_accepts_cart_region_scale_video ... ok
+test app::tests::parse_cli_accepts_positional_cart ... ok
+test app::tests::parse_cli_defaults ... ok
+test app::tests::region_frame_ticks_match ... ok
+test ui::tests::pad_on_map_key_and_console_switches_on_map_keys ... ok
+test ui::tests::selector_switches_live_region_and_preserves_cartridge ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-sunsoft4-target/release/deps/variants-b4e139fb8be8deb1)
+
+running 4 tests
+test mcp_switch_uses_cartridge_bytes_after_the_source_file_is_removed ... ok
+test mcp_loads_flagged_and_positional_cartridges_and_preserves_failed_switches ... ok
+test launch_and_script_select_both_regions_without_losing_the_cartridge ... ok
+test explicit_missing_cartridges_and_unknown_models_fail_in_both_modes ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running unittests src/main.rs (/private/tmp/198x-sunsoft4-target/release/deps/emu198x_atari_800xl-158559d092b36d61)
+
+running 10 tests
+test app::tests::a_cart_type_without_a_cart_is_a_usage_error ... ok
+test mcp_tools::tests::inspection_tools_report_booted_state ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+test mcp_tools::tests::run_and_input_tools_drive_basic ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+test app::tests::defaults_to_ntsc_with_basic ... ok
+test app::tests::region_frame_ticks_match ... ok
+test app::tests::flags_set_roms_disk_basic_and_region ... ok
+test app::tests::a_bad_cart_type_lists_the_schemes ... ok
+test app::tests::cart_type_names_the_scheme ... ok
+test app::tests::a_bad_region_is_a_usage_error ... ok
+test ui::tests::native_startup_and_pacing_follow_the_runtime_catalogue ... ok
+
+test result: ok. 8 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (/private/tmp/198x-sunsoft4-target/release/deps/catalogue-1451175adc7634c1)
+
+running 5 tests
+test failed_switch_keeps_live_ram_disk_and_region ... ok
+test mcp_honours_boot_configuration_and_disk_before_switching ... ok
+test script_switches_regions_and_keeps_cartridge_without_os_or_home ... ok
+test optional_firmware_allows_blank_mcp_but_explicit_missing_images_fail ... ok
+test legacy_flags_and_catalogue_pins_override_environment ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/keyboard_into_basic.rs (/private/tmp/198x-sunsoft4-target/release/deps/keyboard_into_basic-95427b2235a74b02)
+
+running 1 test
+test typing_print_expression_evaluates ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_5200-32b544c178818d11)
+
+running 42 tests
+test cartridge::tests::bank_registers_select_by_offset_not_by_low_bits ... ok
+test cartridge::tests::bank_registers_read_as_open_bus ... ok
+test cartridge::tests::bounty_bob_fixed_half_mirrors_across_the_top ... ok
+test cartridge::tests::bounty_bob_windows_read_their_selected_page ... ok
+test cartridge::tests::crc32_matches_the_standard_check_value ... ok
+test cartridge::tests::bounty_bob_is_recognised_headerless_and_headered ... ok
+test cartridge::tests::bounty_bob_needs_a_forty_kb_image ... ok
+test cartridge::tests::detect_32k_rom ... ok
+test cartridge::tests::detect_4k_rom ... ok
+test cartridge::tests::detect_8k_rom ... ok
+test cartridge::tests::header_is_stripped_before_sizing ... ok
+test cartridge::tests::detect_16k_rom ... ok
+test cartridge::tests::header_outranks_the_known_cartridge_table ... ok
+test cartridge::tests::known_carts_choose_their_own_layout ... ok
+test cartridge::tests::only_a_real_header_is_stripped ... ok
+test cartridge::tests::reject_invalid_size ... ok
+test cartridge::tests::layouts_differ_only_between_6000_and_9fff ... ok
+test cartridge::tests::reselecting_the_same_page_reports_no_change ... ok
+test cartridge::tests::reset_vector_at_bffc_for_8k ... ok
+test cartridge::tests::sixteen_kb_two_chip_decode ... ok
+test cartridge::tests::two_chip_needs_a_sixteen_kb_image ... ok
+test cartridge::tests::two_chip_table_is_sorted_and_unique ... ok
+test cartridge::tests::unambiguous_sizes_are_always_linear ... ok
+test cartridge::tests::unknown_cart_type_is_rejected ... ok
+test cartridge::tests::unknown_sixteen_kb_image_is_linear ... ok
+test tests::bios_overlays_top_of_address_space ... ok
+test tests::memory_map_routes_ram_cart ... ok
+test tests::joystick_pots_default_to_centre ... ok
+test tests::rejects_invalid_rom_size ... ok
+test tests::no_bios_falls_through_to_cart ... ok
+test tests::missile_dma_and_refresh_halt_the_cpu_on_their_numbered_slots ... ok
+test tests::inc_wsync_completes_both_writes_before_the_read_stall ... ok
+test tests::vcount_tracks_the_beam_instead_of_the_prepared_line ... ok
+test tests::wsync_releases_on_cycle_105_not_the_preceding_slot ... ok
+test tests::antic_nmi_falls_at_the_end_of_every_scan_line ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::phantom_capture_samples_current_pins_and_survives_snapshot ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::wsync_holds_different_read_cycles_after_sta_and_inc ... ok
+test tests::snapshot_between_nmist_and_nmi_preserves_the_sampled_enable ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 42 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/cart_boot-b7232d8e93b1aca7)
+
+running 1 test
+test cart_boots_to_playfield ... ignored, FIXTURE: needs an Atari 5200 cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/synthetic_firmware_boot-54ecbc5dcf3e99d3)
+
+running 2 tests
+test the_control_image_renders_no_backdrop_at_all ... ok
+test synthetic_firmware_runs_and_floods_the_display ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_7800-8d889f617b559f8b)
+
+running 42 tests
+test cartridge::tests::unsupported_mapper_is_not_guessed_from_size ... ok
+test cartridge::tests::declared_size_must_match_payload ... ok
+test cartridge::tests::canonical_a78_magic_is_stripped ... ok
+test cartridge::tests::supergame_bank_switching ... ok
+test cartridge::tests::v4_fields_override_v3_fields ... ok
+test cartridge::tests::v3_supergame_ram_is_selected_and_writable ... ok
+test cartridge::tests::headerless_sizes_select_legacy_layouts ... ok
+test tests::console_switches_drive_riot_port_b ... ok
+test tests::cpu_bus_reads_sample_memory_in_phase_two ... ok
+test tests::cpu_bus_writes_wait_for_phase_two ... ok
+test tests::cpu_bus_wsync_allows_both_read_modify_write_cycles ... ok
+test tests::cpu_bus_wsync_keeps_nmi_edge_detection_running ... ok
+test tests::joystick_drives_riot_port_a ... ok
+test tests::instruction_ticks_are_native_oscillator_periods ... ok
+test tests::maria_register_route ... ok
+test tests::memory_map_routes_ram_and_cart ... ok
+test tests::native_clock_preserves_tia_sample_stream ... ok
+test tests::native_machine_fetches_live_bytes_before_pixel_playback ... ok
+test tests::a78_pokey_feature_installs_and_routes_the_chip ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::native_machine_dma_preserves_cpu_rmw_and_riot_progress ... ok
+test tests::rejects_oversized_rom ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::pokey_random_follows_phase_two_while_cpu_execution_is_held ... ok
+test tests::cpu_wsync_colour_bars_extend_into_live_maria_borders ... ok
+test tests::riot_follows_phase_two_while_cpu_execution_is_held ... ok
+test tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase ... ok
+test tia_audio::tests::audio_and_collision_reads_return_zero ... ok
+test tia_audio::tests::audio_registers_generate_samples ... ok
+test tia_audio::tests::buttons_drive_the_inpt_registers ... ok
+test tia_audio::tests::video_writes_are_ignored ... ok
+test tests::cpu_bus_pending_reads_resume_with_live_memory_and_peripheral_inputs ... ok
+test tests::native_machine_and_chip_share_complete_frame_boundaries ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::cpu_bus_pending_writes_resume_at_the_same_memory_phase ... ok
+test tests::pokey_restore_preserves_future_audio_across_partial_sample_phases ... ok
+test tests::pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses ... ok
+test tests::restored_native_phases_preserve_bus_timer_and_audio ... ok
+test tests::frame_produces_tia_audio_at_native_rate ... ok
+test tests::restored_slow_accesses_preserve_clock_bus_timer_and_audio ... ok
+test tests::native_machine_snapshots_resume_shared_bus_and_live_output ... ok
+test tests::pokey_native_audio_resumes_through_dma_and_partial_samples ... ok
+
+test result: ok. 42 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.13s
+
+     Running tests/cart_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/cart_boot-758c598fe388364f)
+
+running 1 test
+test cart_boots_without_panic ... ignored, FIXTURE: needs an Atari 7800 cart — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/synthetic_cart_boot-a054640ed347c2bd)
+
+running 2 tests
+test a_cartridge_that_writes_no_colour_does_not_look_like_a_boot ... ok
+test the_atari_7800_boots_a_cartridge_and_paints_its_background ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_800xl-557fa35ace7ea5aa)
+
+running 51 tests
+test cartridge::tests::cart_type_44_is_the_oss_8k_board ... ok
+test cartridge::tests::crc32_matches_the_standard_check_value ... ok
+test cartridge::tests::covers_reports_correctly ... ok
+test cartridge::tests::cart_header_names_the_scheme_and_is_stripped ... ok
+test cartridge::tests::kind_names_round_trip_and_unknown_names_list_the_choices ... ok
+test cartridge::tests::detect_16k_rom ... ok
+test cartridge::tests::oss_8k_selects_by_address_bits_0_and_3 ... ok
+test cartridge::tests::oss_one_chip_selects_by_address_bits_0_and_3 ... ok
+test cartridge::tests::megacart_banks_the_whole_window_and_bit_7_switches_it_off ... ok
+test cartridge::tests::an_explicit_kind_overrides_the_size_guess_and_the_header ... ok
+test cartridge::tests::oss_table_is_sorted_and_holds_only_oss_boards ... ok
+test cartridge::tests::oss_two_chip_double_selects_read_the_and_of_both_banks ... ok
+test cartridge::tests::flat_carts_ignore_the_control_line ... ok
+test cartridge::tests::oss_boards_cold_boot_on_altirras_banks ... ok
+test cartridge::tests::detect_8k_rom ... ok
+test cartridge::tests::oss_two_chip_selects_by_the_low_address_nibble ... ok
+test cartridge::tests::read_within_range ... ok
+test cartridge::tests::xegs_banks_the_lower_window_and_fixes_the_last_bank ... ok
+test cartridge::tests::unidentified_images_keep_the_plain_layout ... ok
+test tests::basic_rom_hidden_when_disabled ... ok
+test tests::basic_rom_visible_when_enabled ... ok
+test tests::cartridge_overrides_basic ... ok
+test tests::accepts_up_to_8k_cart_but_rejects_odd_sizes ... ok
+test tests::cpu_starts_at_cart_entry_without_os_rom ... ok
+test tests::joystick_drives_pia_port_a ... ok
+test tests::os_rom_visible_at_reset_vector ... ok
+test tests::inc_wsync_completes_both_writes_before_the_read_stall ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::gtia_register_probe_runs_through_cpu_bus ... ok
+test tests::a_display_list_built_this_frame_is_visible_on_this_frame ... ok
+test tests::prior_playfield_front_scheme_is_wired_through_the_machine_bus ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::pokey_random_snapshot_preserves_shutdown_and_restart ... ok
+test tests::phantom_capture_samples_current_pins_and_survives_snapshot ... ok
+test tests::snapshot_between_scroll_samples_preserves_row_decision ... ok
+test cartridge::tests::headerless_32k_and_up_is_xegs ... ok
+test cartridge::tests::reject_odd_sizes ... ok
+test tests::snapshot_preserves_the_remaining_nmi_pulse_width ... ok
+test tests::vcount_tracks_the_beam_instead_of_the_prepared_line ... ok
+test tests::write_under_os_rom_goes_to_ram_but_read_returns_rom ... ok
+test tests::snapshot_preserves_partial_playfield_fetch_and_line_ram_replay ... ok
+test tests::snapshot_preserves_antic_instruction_with_list_dma_disabled ... ok
+test tests::snapshot_between_nmist_and_nmi_preserves_the_sampled_enable ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::wsync_holds_different_read_cycles_after_sta_and_inc ... ok
+test tests::linked_pokey_channels_are_audible_at_the_reference_pitch ... ok
+test tests::hscrol_moves_the_playfield_right_through_the_machine_bus ... ok
+test tests::playfield_width_changes_how_many_cycles_the_cpu_gets ... ok
+test tests::vscrol_shortens_the_first_line_of_a_region_through_the_machine_bus ... ok
+test tests::mid_line_colbk_write_splits_the_scanline ... ok
+test tests::pokey_distortions_have_distinct_audible_signatures ... ok
+
+test result: ok. 51 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/acid800_antic.rs (/private/tmp/198x-sunsoft4-target/release/deps/acid800_antic-29342389eaba30da)
+
+running 3 tests
+test original_antic_probes_ntsc ... ignored, FIXTURE: hash-pinned Acid800 standalone XEX/symbols and Atari XL OS/BASIC ROMs
+test original_antic_probes_pal ... ignored, FIXTURE: hash-pinned Acid800 standalone XEX/symbols and Atari XL OS/BASIC ROMs
+test acid800::only_a_completed_guest_with_zero_status_passes ... ok
+
+test result: ok. 1 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/acid800_gtia.rs (/private/tmp/198x-sunsoft4-target/release/deps/acid800_gtia-85cd34503e0c42d7)
+
+running 3 tests
+test original_gtia_probes_ntsc ... ignored, FIXTURE: hash-pinned Acid800 standalone XEX/symbols and Atari XL OS/BASIC ROMs
+test original_gtia_probes_pal ... ignored, FIXTURE: hash-pinned Acid800 standalone XEX/symbols and Atari XL OS/BASIC ROMs
+test acid800::only_a_completed_guest_with_zero_status_passes ... ok
+
+test result: ok. 1 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/altirraos_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/altirraos_boot-3e89a35b1a4cd4f8)
+
+running 2 tests
+test altirraos_cold_starts_to_a_basic_prompt ... ignored, FIXTURE: needs AltirraOS at <EMU198X_ROMS_ROOT>/atari-800xl/{altirraos_xl,altirra_basic}.rom
+test altirraos_cold_starts_without_basic_when_asked ... ignored, FIXTURE: needs AltirraOS at <EMU198X_ROMS_ROOT>/atari-800xl/{altirraos_xl,altirra_basic}.rom
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/antic_register_reads.rs (/private/tmp/198x-sunsoft4-target/release/deps/antic_register_reads-d9cb41c8197777a2)
+
+running 1 test
+test read_modify_write_on_nmien_ends_with_every_nmi_enabled ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/banked_cartridges.rs (/private/tmp/198x-sunsoft4-target/release/deps/banked_cartridges-dd4bdd0f5746fc9b)
+
+running 3 tests
+test oss_cart_selects_banks_by_control_address_and_switches_off ... ok
+test megacart_walks_its_banks_under_the_running_program ... ok
+test xegs_cart_walks_its_banks_through_the_lower_window ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/basic_boot_probe.rs (/private/tmp/198x-sunsoft4-target/release/deps/basic_boot_probe-605067dc6ec105f9)
+
+running 3 tests
+test basic_boot_programs_antic_and_gtia ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+test boots_to_basic_ready ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+test keyboard_types_into_basic ... ignored, FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/disk_boot-012c87999836f33e)
+
+running 1 test
+test the_os_boots_a_disk_in_d1 ... ignored, FIXTURE: needs an 800XL OS ROM at <EMU198X_ROMS_ROOT>/atari-800xl/
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/dli_timing.rs (/private/tmp/198x-sunsoft4-target/release/deps/dli_timing-6a6f1811f11fa743)
+
+running 3 tests
+test a_write_without_wsync_shapes_the_interrupt_line_on_a_narrow_playfield ... ok
+test a_write_among_the_glyph_fetches_splits_the_scan_line ... ok
+test a_write_spilling_past_wsync_shapes_the_line_it_lands_on ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/gtia_modes.rs (/private/tmp/198x-sunsoft4-target/release/deps/gtia_modes-1cebca7f3aff89b2)
+
+running 4 tests
+test mode_9_shows_sixteen_luminances_of_the_background_hue ... ok
+test plain_mode_f_is_untouched ... ok
+test mode_11_shows_sixteen_hues_at_the_background_luminance ... ok
+test mode_10_picks_a_colour_register_one_clock_late ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/os_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/os_boot-10f72dc77d22720a)
+
+running 1 test
+test os_reaches_self_check ... ignored, FIXTURE: needs an Atari 800XL OS ROM (atarixl.rom) — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/oss_cartridges.rs (/private/tmp/198x-sunsoft4-target/release/deps/oss_cartridges-51e8b63ea88cbff4)
+
+running 2 tests
+test headerless_oss_cartridges_boot_to_their_prompt ... ignored, FIXTURE: needs EMU198X_ATARI_800XL_OS (official XL OS) and EMU198X_ATARI_800XL_OSS_DIR (TOSEC OSS dumps)
+test writers_tool_runs_its_editor_from_the_oss_8k_board ... ignored, FIXTURE: needs EMU198X_ATARI_800XL_OS (official XL OS) and EMU198X_ATARI_800XL_OSS_DIR (TOSEC OSS dumps)
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pm_dma.rs (/private/tmp/198x-sunsoft4-target/release/deps/pm_dma-d029646931464f8c)
+
+running 7 tests
+test vdelay_holds_a_two_line_player_back_one_line ... ok
+test two_line_objects_reach_the_screen_where_hpos_puts_them ... ok
+test vdelay_does_nothing_at_one_line_resolution ... ok
+test player_dma_fetches_the_missiles_too ... ok
+test one_line_objects_come_from_the_2k_layout ... ok
+test gractl_keeps_dma_out_of_the_graphics_registers ... ok
+test disabled_pm_dma_still_allows_phantom_capture_through_gractl ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/runtime_atari_5200-7c9b6293944780c7)
+
+running 8 tests
+test input::tests::analog_axis_sets_pots_directly ... ok
+test input::tests::axis_centre_and_extremes ... ok
+test snapshot::tests::version_18_is_rejected_without_mutating_live_state ... ok
+test input::tests::digital_directions_snap_to_extremes ... ok
+test input::tests::keypad_codes_match_the_mame_matrix ... ok
+test profiles::tests::profile_declares_optional_bios ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test snapshot::tests::old_layout_is_rejected_before_decoding_its_body ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-sunsoft4-target/release/deps/snapshot_roundtrip-2b07d7a9717d0339)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cartridge_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/synthetic_cartridge_boot-8d2cefe8e15439a9)
+
+running 1 test
+test the_synthetic_cartridge_boots_through_the_handover_bios ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/runtime_atari_7800-405fb14ce0dfa3af)
+
+running 4 tests
+test input::tests::maps_directions_and_switches ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test snapshot::tests::old_version_is_rejected_before_decoding_machine_fields ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (/private/tmp/198x-sunsoft4-target/release/deps/catalogue-46106a8a4876dde5)
+
+running 3 tests
+test invalid_cartridge_does_not_poison_the_next_reset_or_switch ... ok
+test a78_mapper_ram_and_pokey_configuration_survive_restoration_and_switching ... ok
+test restored_cartridge_survives_reset_and_regional_replacement ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/clock_contract.rs (/private/tmp/198x-sunsoft4-target/release/deps/clock_contract-6ba3de6e7232709e)
+
+running 4 tests
+test profile_rate_uses_the_regional_native_oscillator ... ok
+test version_five_is_rejected_without_mutating_live_state ... ok
+test host_budget_matches_live_machine_frames ... ok
+test emitted_audio_rate_matches_native_sample_production ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-sunsoft4-target/release/deps/snapshot_roundtrip-319b98e9d3060ce4)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cartridge_boot.rs (/private/tmp/198x-sunsoft4-target/release/deps/synthetic_cartridge_boot-a775550389e9300a)
+
+running 1 test
+test the_synthetic_cartridge_boots_and_draws_the_plate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/runtime_atari_800xl-3ac71a195453dd65)
+
+running 11 tests
+test input::tests::digits_and_unshifted_symbols ... ok
+test input::tests::letters_use_bare_code_regardless_of_case ... ok
+test input::tests::controller_maps_joystick_fire_and_console ... ok
+test input::tests::named_keys ... ok
+test input::tests::single_char_names_round_trip ... ok
+test input::tests::shifted_symbols_set_kbcode_bit_six_and_leave_bit_seven_clear ... ok
+test profiles::tests::profile_declares_one_disk_slot ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test snapshot::tests::old_layout_is_rejected_before_decoding_its_body ... ok
+test profiles::tests::profile_declares_two_optional_firmware ... ok
+test snapshot::tests::version_18_is_rejected_without_mutating_live_state ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cart_type.rs (/private/tmp/198x-sunsoft4-target/release/deps/cart_type-708703e1cff3ae9a)
+
+running 5 tests
+test the_runtime_lists_every_cartridge_type_by_name ... ok
+test an_unknown_cart_type_names_the_choices ... ok
+test a_cart_type_the_image_cannot_be_is_refused ... ok
+test insert_cartridge_as_overrides_the_size_guess ... ok
+test a_script_or_mcp_cart_type_picks_the_board_and_survives_a_reset ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/catalogue.rs (/private/tmp/198x-sunsoft4-target/release/deps/catalogue-4a84d60fc213733b)
+
+running 3 tests
+test replacement_preserves_cartridge_type_basic_policy_and_modified_disk_but_clears_ram_and_xex ... ok
+test invalid_cartridge_does_not_poison_reset_or_eject_disk ... ok
+test snapshot_restored_firmware_and_mapper_survive_reset_and_region_change ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/disk.rs (/private/tmp/198x-sunsoft4-target/release/deps/disk-cd75da7bcd52b42d)
+
+running 5 tests
+test a_file_that_is_not_an_atr_is_refused_by_name ... ok
+test a_disk_loaded_before_the_machine_exists_is_in_the_drive_once_it_does ... ok
+test a_disk_for_a_slot_the_profile_does_not_have_is_refused ... ok
+test eject_empties_the_drive_but_leaves_it_on_the_bus ... ok
+test a_disk_goes_into_d1_and_stays_there_through_a_reset ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-sunsoft4-target/release/deps/queries-6e26eba6dcc87b77)
+
+running 3 tests
+test unknown_chip_leaf_returns_none_not_null ... ok
+test query_paths_lists_the_folded_chip_paths ... ok
+test chip_registers_resolve_grouped_and_as_leaves ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-sunsoft4-target/release/deps/snapshot_roundtrip-3b4824b2a1a46427)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/xex.rs (/private/tmp/198x-sunsoft4-target/release/deps/xex-15c2c87835edc740)
+
+running 3 tests
+test real_xex_mounts_and_reaches_run ... ignored, FIXTURE: set EMU198X_ATARI_XEX and EMU198X_ATARI_OS
+test malformed_xex_is_rejected_at_mount_time ... ok
+test multi_segment_xex_runs_init_then_run ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.78s
+
+   Doc-tests atari_maria
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests atari_pokey
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_atari_5200
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_atari_7800
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_atari_800xl
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_atari_5200
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_atari_7800
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_atari_800xl
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
