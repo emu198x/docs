@@ -1,8 +1,15 @@
 # WASM Web Shell Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: use `superpowers:subagent-driven-development`
-> or `superpowers:executing-plans` to implement this plan task-by-task.
-> Steps use checkbox (`- [ ]`) syntax for tracking.
+**Historical plan, recorded 2026-09-02.** The browser rollout authorised on
+2026-09-22 supersedes this plan's scope and sequencing. The shared web host and
+system bindings now exist. This document preserves the earlier spike and task
+breakdown; its unchecked tasks, dependency pins and release-plz instructions
+are not current implementation instructions.
+
+Use the [current WASM decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/wasm-sequencing.md)
+and [browser-player documentation](https://github.com/emu198x/emu198x/blob/main/web-player/README.md)
+for the supported implementation and remaining work. The benchmark figures
+below are the original report; no new performance measurement is claimed.
 
 **Goal:** Publish Emu198x to npm as an embeddable browser emulator, generic over
 `FamilyRuntime`, shipping the ZX Spectrum first, so Code198x lessons can run the
