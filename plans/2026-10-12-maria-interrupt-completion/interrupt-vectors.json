@@ -1,0 +1,9 @@
+{
+  "cases": 32832,
+  "unique_vectors": 300,
+  "pulses": 16416,
+  "vector_sha256": "a842c4b04d35f3554246f1350ed96b9ab1a1fa93a9e4d3c441e0e5c310f1e23b",
+  "matrix_sha256": "ae70168b52448ed689d214535f82ecb64c06918c4d56b8709db6bdf79c8c8bfc",
+  "archive_sha256": "849e215c71d13c17ec813f97a23b2078469c4b1e14a36dcd5a9ccf72b5360a48",
+  "scope": "digital circuit replay; not physical pin measurement"
+}

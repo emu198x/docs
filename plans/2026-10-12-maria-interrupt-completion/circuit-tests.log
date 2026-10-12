@@ -1,0 +1,10 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `release` profile [optimized] target(s) in 8.03s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/atari_maria-73f0acad2937aa55)
+
+running 2 tests
+test interrupt::tests::sampled_stages_match_all_32832_circuit_cases ... ok
+test interrupt::tests::direct_snapshots_preserve_every_interrupt_stage ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 62 filtered out; finished in 0.45s
+

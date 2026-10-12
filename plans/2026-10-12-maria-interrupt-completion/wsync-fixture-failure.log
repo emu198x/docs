@@ -1,0 +1,66 @@
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `release` profile [optimized] target(s) in 4.57s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_7800-57c741d9783088a6)
+
+running 45 tests
+test cartridge::tests::declared_size_must_match_payload ... ok
+test cartridge::tests::canonical_a78_magic_is_stripped ... ok
+test cartridge::tests::headerless_sizes_select_legacy_layouts ... ok
+test cartridge::tests::unsupported_mapper_is_not_guessed_from_size ... ok
+test cartridge::tests::supergame_bank_switching ... ok
+test cartridge::tests::v4_fields_override_v3_fields ... ok
+test cartridge::tests::v3_supergame_ram_is_selected_and_writable ... ok
+test tests::console_switches_drive_riot_port_b ... ok
+test tests::cpu_bus_reads_sample_memory_in_phase_two ... ok
+test tests::cpu_bus_wsync_allows_both_read_modify_write_cycles ... ok
+test tests::cpu_bus_writes_wait_for_phase_two ... ok
+test tests::joystick_drives_riot_port_a ... ok
+test tests::instruction_ticks_are_native_oscillator_periods ... ok
+test tests::maria_register_route ... ok
+test tests::memory_map_routes_ram_and_cart ... ok
+test tests::native_clock_preserves_tia_sample_stream ... ok
+test native_dli_tests::wsync_keeps_native_nmi_edge_detection_running ... FAILED
+test tests::a78_pokey_feature_installs_and_routes_the_chip ... ok
+test tests::native_machine_fetches_live_bytes_before_pixel_playback ... ok
+test tests::frame_advances_master_clock_and_count ... ok
+test tests::cpu_bus_pending_reads_resume_with_live_memory_and_peripheral_inputs ... ok
+test tests::native_machine_dma_preserves_cpu_rmw_and_riot_progress ... ok
+test tests::pal_runs_more_clocks_than_ntsc ... ok
+test tests::pokey_random_follows_phase_two_while_cpu_execution_is_held ... ok
+test tests::cpu_wsync_colour_bars_extend_into_live_maria_borders ... ok
+test tests::rejects_oversized_rom ... ok
+test tests::native_machine_and_chip_share_complete_frame_boundaries ... ok
+test tests::riot_follows_phase_two_while_cpu_execution_is_held ... ok
+test tests::slow_peripheral_reads_extend_the_cpu_clock_and_following_phase ... ok
+test tests::cpu_bus_pending_writes_resume_at_the_same_memory_phase ... ok
+test tia_audio::tests::audio_and_collision_reads_return_zero ... ok
+test tia_audio::tests::audio_registers_generate_samples ... ok
+test tia_audio::tests::buttons_drive_the_inpt_registers ... ok
+test tia_audio::tests::video_writes_are_ignored ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::pokey_restore_preserves_future_audio_across_partial_sample_phases ... ok
+test tests::restored_native_phases_preserve_bus_timer_and_audio ... ok
+test tests::pokey_clock_and_host_audio_continue_through_live_dma_and_slow_accesses ... ok
+test tests::frame_produces_tia_audio_at_native_rate ... ok
+test dli_raster_tests::requested_interrupts_reach_pixels ... ok
+test tests::restored_slow_accesses_preserve_clock_bus_timer_and_audio ... ok
+test tests::native_machine_snapshots_resume_shared_bus_and_live_output ... ok
+test native_dli_tests::every_native_request_reaches_an_executed_handler ... ok
+test native_dli_tests::snapshots_resume_pending_and_asserted_interrupts ... ok
+test tests::pokey_native_audio_resumes_through_dma_and_partial_samples ... ok
+
+failures:
+
+---- native_dli_tests::wsync_keeps_native_nmi_edge_detection_running stdout ----
+
+thread 'native_dli_tests::wsync_keeps_native_nmi_edge_detection_running' (95846755) panicked at crates/machine-atari-7800/src/native_dli_tests.rs:258:9:
+native DLI must arrive while WSYNC holds execution
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    native_dli_tests::wsync_keeps_native_nmi_edge_detection_running
+
+test result: FAILED. 44 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.30s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`

@@ -1,0 +1,218 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `release` profile [optimized] target(s) in 4.65s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_7800-57c741d9783088a6)
+
+running 1 test
+test native_dli_tests::every_native_request_reaches_an_executed_handler ... FAILED
+
+failures:
+
+---- native_dli_tests::every_native_request_reaches_an_executed_handler stdout ----
+region=Ntsc height=1 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=0 guest=0 enabled=true descriptors=243 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=0 guest=1 enabled=true descriptors=243 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=0 guest=2 enabled=true descriptors=243 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=1 guest=0 enabled=true descriptors=243 requests=243 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=1 guest=1 enabled=true descriptors=243 requests=243 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=1 guest=2 enabled=true descriptors=243 requests=243 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=2 guest=0 enabled=true descriptors=243 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=2 guest=1 enabled=true descriptors=243 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=2 guest=2 enabled=true descriptors=243 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=1 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=3 guest=0 enabled=true descriptors=243 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Ntsc height=1 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=3 guest=1 enabled=true descriptors=243 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Ntsc height=1 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=1 flags=3 guest=2 enabled=true descriptors=243 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Ntsc height=2 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=0 guest=0 enabled=true descriptors=122 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=0 guest=1 enabled=true descriptors=122 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=0 guest=2 enabled=true descriptors=122 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=1 guest=0 enabled=true descriptors=122 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=1 guest=1 enabled=true descriptors=122 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=1 guest=2 enabled=true descriptors=122 requests=122 edges=122 vector_low=122 vector_high=122 handlers=122 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=2 guest=0 enabled=true descriptors=122 requests=61 edges=61 vector_low=61 vector_high=61 handlers=61 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=2 guest=1 enabled=true descriptors=122 requests=61 edges=61 vector_low=61 vector_high=61 handlers=61 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=2 guest=2 enabled=true descriptors=122 requests=61 edges=61 vector_low=61 vector_high=61 handlers=61 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=2 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=3 guest=0 enabled=true descriptors=122 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16360, 18)) first_edge=Some((17252, 19))
+region=Ntsc height=2 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=3 guest=1 enabled=true descriptors=122 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16356, 18)) first_edge=Some((17252, 19))
+region=Ntsc height=2 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=2 flags=3 guest=2 enabled=true descriptors=122 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16360, 18)) first_edge=Some((17252, 19))
+region=Ntsc height=3 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=0 guest=0 enabled=true descriptors=81 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=0 guest=1 enabled=true descriptors=81 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=0 guest=2 enabled=true descriptors=81 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=1 guest=0 enabled=true descriptors=81 requests=81 edges=81 vector_low=81 vector_high=81 handlers=81 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=1 guest=1 enabled=true descriptors=81 requests=81 edges=81 vector_low=81 vector_high=81 handlers=81 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=1 guest=2 enabled=true descriptors=81 requests=81 edges=81 vector_low=81 vector_high=81 handlers=81 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=2 guest=0 enabled=true descriptors=81 requests=41 edges=41 vector_low=41 vector_high=41 handlers=41 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=2 guest=1 enabled=true descriptors=81 requests=41 edges=41 vector_low=41 vector_high=41 handlers=41 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=2 guest=2 enabled=true descriptors=81 requests=41 edges=41 vector_low=41 vector_high=41 handlers=41 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=3 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=3 guest=0 enabled=true descriptors=81 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17264, 19)) first_edge=Some((18160, 20))
+region=Ntsc height=3 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=3 guest=1 enabled=true descriptors=81 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17272, 19)) first_edge=Some((18160, 20))
+region=Ntsc height=3 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=3 flags=3 guest=2 enabled=true descriptors=81 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17264, 19)) first_edge=Some((18160, 20))
+region=Ntsc height=16 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=0 guest=0 enabled=true descriptors=16 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=0 guest=1 enabled=true descriptors=16 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=0 guest=2 enabled=true descriptors=16 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=1 guest=0 enabled=true descriptors=16 requests=16 edges=16 vector_low=16 vector_high=16 handlers=16 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=1 guest=1 enabled=true descriptors=16 requests=16 edges=16 vector_low=16 vector_high=16 handlers=16 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=1 guest=2 enabled=true descriptors=16 requests=16 edges=16 vector_low=16 vector_high=16 handlers=16 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=2 guest=0 enabled=true descriptors=16 requests=8 edges=8 vector_low=8 vector_high=8 handlers=8 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=2 guest=1 enabled=true descriptors=16 requests=8 edges=8 vector_low=8 vector_high=8 handlers=8 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=2 guest=2 enabled=true descriptors=16 requests=8 edges=8 vector_low=8 vector_high=8 handlers=8 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Ntsc height=16 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=3 guest=0 enabled=true descriptors=16 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29072, 32)) first_edge=Some((29964, 33))
+region=Ntsc height=16 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=3 guest=1 enabled=true descriptors=16 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29068, 32)) first_edge=Some((29964, 33))
+region=Ntsc height=16 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Ntsc height=16 flags=3 guest=2 enabled=true descriptors=16 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29072, 32)) first_edge=Some((29964, 33))
+region=Pal height=1 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=0 guest=0 enabled=true descriptors=293 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=0 guest=1 enabled=true descriptors=293 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=0 guest=2 enabled=true descriptors=293 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=1 guest=0 enabled=true descriptors=293 requests=293 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=1 guest=1 enabled=true descriptors=293 requests=293 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=1 guest=2 enabled=true descriptors=293 requests=293 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=2 guest=0 enabled=true descriptors=293 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=2 guest=1 enabled=true descriptors=293 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=2 guest=2 enabled=true descriptors=293 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=1 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=3 guest=0 enabled=true descriptors=293 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Pal height=1 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=3 guest=1 enabled=true descriptors=293 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Pal height=1 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=1 flags=3 guest=2 enabled=true descriptors=293 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((15448, 17)) first_edge=Some((16344, 18))
+region=Pal height=2 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=0 guest=0 enabled=true descriptors=147 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=0 guest=1 enabled=true descriptors=147 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=0 guest=2 enabled=true descriptors=147 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=1 guest=0 enabled=true descriptors=147 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=1 guest=1 enabled=true descriptors=147 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=1 guest=2 enabled=true descriptors=147 requests=147 edges=147 vector_low=147 vector_high=147 handlers=147 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=2 guest=0 enabled=true descriptors=147 requests=74 edges=74 vector_low=74 vector_high=74 handlers=74 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=2 guest=1 enabled=true descriptors=147 requests=74 edges=74 vector_low=74 vector_high=74 handlers=74 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=2 guest=2 enabled=true descriptors=147 requests=74 edges=74 vector_low=74 vector_high=74 handlers=74 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=2 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=3 guest=0 enabled=true descriptors=147 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16360, 18)) first_edge=Some((17252, 19))
+region=Pal height=2 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=3 guest=1 enabled=true descriptors=147 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16356, 18)) first_edge=Some((17252, 19))
+region=Pal height=2 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=2 flags=3 guest=2 enabled=true descriptors=147 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((16360, 18)) first_edge=Some((17252, 19))
+region=Pal height=3 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=0 guest=0 enabled=true descriptors=98 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=0 guest=1 enabled=true descriptors=98 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=0 guest=2 enabled=true descriptors=98 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=1 guest=0 enabled=true descriptors=98 requests=98 edges=98 vector_low=98 vector_high=98 handlers=98 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=1 guest=1 enabled=true descriptors=98 requests=98 edges=98 vector_low=98 vector_high=98 handlers=98 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=1 guest=2 enabled=true descriptors=98 requests=98 edges=98 vector_low=98 vector_high=98 handlers=98 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=2 guest=0 enabled=true descriptors=98 requests=49 edges=49 vector_low=49 vector_high=49 handlers=49 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=2 guest=1 enabled=true descriptors=98 requests=49 edges=49 vector_low=49 vector_high=49 handlers=49 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=2 guest=2 enabled=true descriptors=98 requests=49 edges=49 vector_low=49 vector_high=49 handlers=49 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=3 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=3 guest=0 enabled=true descriptors=98 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17264, 19)) first_edge=Some((18160, 20))
+region=Pal height=3 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=3 guest=1 enabled=true descriptors=98 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17272, 19)) first_edge=Some((18160, 20))
+region=Pal height=3 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=3 flags=3 guest=2 enabled=true descriptors=98 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((17264, 19)) first_edge=Some((18160, 20))
+region=Pal height=16 flags=0 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=0 guest=0 enabled=true descriptors=19 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=0 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=0 guest=1 enabled=true descriptors=19 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=0 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=0 guest=2 enabled=true descriptors=19 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=1 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=1 guest=0 enabled=true descriptors=19 requests=19 edges=19 vector_low=19 vector_high=19 handlers=19 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=1 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=1 guest=1 enabled=true descriptors=19 requests=19 edges=19 vector_low=19 vector_high=19 handlers=19 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=1 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=1 guest=2 enabled=true descriptors=19 requests=19 edges=19 vector_low=19 vector_high=19 handlers=19 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=2 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=2 guest=0 enabled=true descriptors=19 requests=10 edges=10 vector_low=10 vector_high=10 handlers=10 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=2 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=2 guest=1 enabled=true descriptors=19 requests=10 edges=10 vector_low=10 vector_high=10 handlers=10 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=2 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=2 guest=2 enabled=true descriptors=19 requests=10 edges=10 vector_low=10 vector_high=10 handlers=10 first_request=Some((14558, 16)) first_edge=Some((15436, 17))
+region=Pal height=16 flags=3 guest=0 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=3 guest=0 enabled=true descriptors=19 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29072, 32)) first_edge=Some((29964, 33))
+region=Pal height=16 flags=3 guest=1 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=3 guest=1 enabled=true descriptors=19 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29068, 32)) first_edge=Some((29964, 33))
+region=Pal height=16 flags=3 guest=2 enabled=false descriptors=0 requests=0 edges=0 vector_low=0 vector_high=0 handlers=0 first_request=None first_edge=None
+region=Pal height=16 flags=3 guest=2 enabled=true descriptors=19 requests=1 edges=1 vector_low=1 vector_high=1 handlers=1 first_request=Some((29072, 32)) first_edge=Some((29964, 33))
+cases=192 mismatches=6 handler_only_mismatches=0
+
+thread 'native_dli_tests::every_native_request_reaches_an_executed_handler' (95865677) panicked at crates/machine-atari-7800/src/native_dli_tests.rs:152:5:
+assertion `left == right` failed: every native DLI request must reach its handler
+  left: 6
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    native_dli_tests::every_native_request_reaches_an_executed_handler
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 45 filtered out; finished in 0.97s
+
+error: test failed, to rerun pass `-p machine-atari-7800 --lib`

@@ -1,0 +1,24 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `release` profile [optimized] target(s) in 7.60s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/atari_maria-73f0acad2937aa55)
+
+running 1 test
+test interrupt::tests::sampled_stages_match_all_32832_circuit_cases ... FAILED
+
+failures:
+
+---- interrupt::tests::sampled_stages_match_all_32832_circuit_cases stdout ----
+
+thread 'interrupt::tests::sampled_stages_match_all_32832_circuit_cases' (95864871) panicked at crates/atari-maria/src/interrupt.rs:88:17:
+assertion `left == right` failed: vector 50, step 113
+  left: true
+ right: false
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    interrupt::tests::sampled_stages_match_all_32832_circuit_cases
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 64 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-maria --lib`
