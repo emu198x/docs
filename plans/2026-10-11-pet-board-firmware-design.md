@@ -1,6 +1,7 @@
 # Give PET profiles the hardware their firmware expects
 
-Proposal; awaiting approval. Lane: engineering-frontier accuracy. This extends
+Approved to proceed by the user's “Continue” following the staged-correction
+approval request. Lane: engineering-frontier accuracy. This extends
 the existing PET machine and runtime, without a new dependency or bus abstraction.
 
 The current PET is a hybrid: both profiles have a CRTC, but their shared firmware
