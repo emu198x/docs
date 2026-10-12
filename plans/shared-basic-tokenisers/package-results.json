@@ -1,0 +1,25 @@
+{
+  "wasmSha256": "bb38c67505e2e3c71ef3c63296e2199a472f4b59371c78914c69625b7a3813e3",
+  "buildBinarySha256": "c63abb666552770047110aa565e03ccc949a8133e90afbc7c091cca22a2ce1f7",
+  "romEditorBytes": 706,
+  "basicExecution": true,
+  "assemblyLauncher": true,
+  "samples": [
+    {
+      "sample": "sinclair-zx-spectrum/basic/meet-basic/unit-01/steps/step-02.bas",
+      "bytes": 63,
+      "sourceSha256": "605ce1646ef39b898906f46469004c1ddf3c8c0306152f03b577d8ea89121c31"
+    },
+    {
+      "sample": "sinclair-zx-spectrum/basic/sonar/unit-06/sonar.bas",
+      "bytes": 3062,
+      "sourceSha256": "caac827b388c9ef8c7b2f117469f8fb5ec0595f200023fd9ac5a1ea47a58de79"
+    },
+    {
+      "sample": "sinclair-zx-spectrum/basic/night-patrol/prototype/night-patrol.bas",
+      "bytes": 11390,
+      "sourceSha256": "daeda89632f99493affda954a51edb612b24ea4c0d9b52d37855e756d667b346"
+    }
+  ],
+  "sourceCommit": "dd7af3bbe1f9ff90b05070891ce5305a70369296"
+}
