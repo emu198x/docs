@@ -1,0 +1,10 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+   Compiling machine-atari-7800 v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/machine-atari-7800)
+    Finished `release` profile [optimized] target(s) in 4.76s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/machine_atari_7800-57c741d9783088a6)
+
+running 1 test
+test native_dli_tests::native_pulses_span_one_cpu_clock_through_slow_accesses ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 45 filtered out; finished in 0.03s
+

@@ -1,0 +1,24 @@
+   Compiling atari-maria v0.31.0 (/Users/stevehill/Projects/198x/Emu198x/emu198x/crates/atari-maria)
+    Finished `release` profile [optimized] target(s) in 7.25s
+     Running unittests src/lib.rs (/private/tmp/198x-sunsoft4-target/release/deps/atari_maria-73f0acad2937aa55)
+
+running 1 test
+test interrupt::tests::direct_snapshots_preserve_every_interrupt_stage ... FAILED
+
+failures:
+
+---- interrupt::tests::direct_snapshots_preserve_every_interrupt_stage stdout ----
+
+thread 'interrupt::tests::direct_snapshots_preserve_every_interrupt_stage' (95865226) panicked at crates/atari-maria/src/interrupt.rs:142:21:
+assertion `left == right` failed
+  left: Interrupt { phase: Idle, sampled_phase: Idle, command: Hold, sampled_command: Hold, request: false }
+ right: Interrupt { phase: Idle, sampled_phase: Idle, command: Hold, sampled_command: Clear, request: false }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    interrupt::tests::direct_snapshots_preserve_every_interrupt_stage
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 64 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p atari-maria --lib`

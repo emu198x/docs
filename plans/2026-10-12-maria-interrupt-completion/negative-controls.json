@@ -1,0 +1,20 @@
+[
+  {
+    "fault": "early-assertion",
+    "exit": 101,
+    "test": "interrupt::tests::sampled_stages_match_all_32832_circuit_cases",
+    "source_sha256": "0897e029937967a3945a49fcba077cf21b1a2683f87731c7c28356008104d700"
+  },
+  {
+    "fault": "lost-pending-command",
+    "exit": 101,
+    "test": "interrupt::tests::direct_snapshots_preserve_every_interrupt_stage",
+    "source_sha256": "844ae9482de8ea16279e97d47f93d769debdd7b2a823837bf1cf6dbf66903c51"
+  },
+  {
+    "fault": "line-delivery",
+    "exit": 101,
+    "test": "native_dli_tests::every_native_request_reaches_an_executed_handler",
+    "source_sha256": "5c494f2abfd8a5ad7d82a26b29898da47e7a1206ad0d7dd07156f459e44c3d4e"
+  }
+]
