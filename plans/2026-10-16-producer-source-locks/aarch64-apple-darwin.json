@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "kind": "producer-source-lock-verification",
+  "verified": true,
+  "scope": "producer-source-lock",
+  "source": {
+    "commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+    "cargo_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718"
+  },
+  "target": "aarch64-apple-darwin",
+  "receipts": [
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-atom",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-atom-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "c794a6ce327e27644412b3074c9ec80993d87d71c76eef183116e0e614e4e4c8",
+      "executable_sha256": "4b6f66f4d5ef07463e603e4f24459526e67e9beae749975ea02b6d9113d8a014",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-bbc-micro",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-bbc-micro-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "23828dae2b44377d86531a5b59b923a5a731022a2930bc9f97ea77380de969b3",
+      "executable_sha256": "de1200117a3e6bc5316b90789da7195926c9fce33817a2d15897b315dfbfdacc",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-electron",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-electron-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "df227149f3d48da8f12464159ec3b024019e0354fe88e9007bd69a26e63dcc81",
+      "executable_sha256": "fd978f55c61e79a85e7023fa978cf990a710c04b51c7977f37b43ab15a5b67f6",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amiga",
+      "version": "0.34.1",
+      "archive": "emu198x-amiga-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "5e8db14f29580b24c41e6cd2f93f04f5d853438e7dbcf78480c7be6191564333",
+      "executable_sha256": "db5632a586900ec374c684fca83a9b79c017f15adcab1d7d3f887cd70fae27f9",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amstrad-cpc",
+      "version": "0.34.1",
+      "archive": "emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "e3678f61554b8295ca706fbe1e80d833b35a85edc497bf8d8fcd6e1d2c90c7a1",
+      "executable_sha256": "646838cb3f8f9b8dd0a469697ad41516659a99a4e1b2c7f8b937bb8aa08025dc",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-2600",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-2600-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "cc42d9e6ae3247c037ede2ccc1b1a736a7c330d76869b2db566dcf26fbcb2cf9",
+      "executable_sha256": "7d6a1ad1145c518d4d9501eb375aef37f5500e6aaf697674a3de6ce0d86bea7a",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-5200",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-5200-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "6703df1ed50b0d008aad855078180a0d84f3db13c6d33da210d1f13f1fb7115b",
+      "executable_sha256": "e4b54d1361396801dae2836bf7512e851d5f7c0c500a6a5e992b78aedead4869",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-7800",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-7800-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "7f5acb90fb5286a9bbe3f3c39d0d15b22417d7c3d2586fbd954e561778ac9da1",
+      "executable_sha256": "d4ed8a5a7d508c0aa6439f8249c66d6c80c3af0b7967a671cc504d5f47044eb9",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-800xl",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-800xl-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "35539e0bd61a92041c48e0f46825248faffd2bb767eb5a1f1607a54d211a4c8d",
+      "executable_sha256": "a1b96c7d08293ed43585ab18c3bd4081941e3cffd351015c51f53914b0dd3c9e",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-c64",
+      "version": "0.34.1",
+      "archive": "emu198x-c64-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "30321b40cae267107246a21e6cf6e5273360bce99193134bf8a0e2ecb66d45d9",
+      "executable_sha256": "0f77898cb1faa61e47afc32bd20a17d1cc1c2f4058802e9dcf1965d17db238a6",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-colecovision",
+      "version": "0.34.1",
+      "archive": "emu198x-colecovision-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "c13e90bca9407c3331c29b6a09b139412f53c05d62987b26c24a78f83d6da562",
+      "executable_sha256": "0096189447689a9d80b8d5ce60ca7cd7659f5f111a1872a76cf2d9e2a598e299",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-pet",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-pet-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "3274c8fd6c4327e4516953871b7daeb7342eb727346e211c100aca4c5038c0e7",
+      "executable_sha256": "a3f0e9f656245f7fa94298c3137946ce42eeedb2f637d65f45ca7b39d92f20b7",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-vic-20",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-vic-20-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "e6c04e8091549a1dc6a4d3ab13abc92884d4e1cd3b6aac9e373081f4f710835b",
+      "executable_sha256": "ea4fbee4e4ae8ccb3714b1415f4e398608a3eb4e641b9ebd0645b2b944f2661d",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-dragon",
+      "version": "0.34.1",
+      "archive": "emu198x-dragon-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "56a408def2503c832cd789e304c9a7493134722b9a9403c8caddc81bc923918c",
+      "executable_sha256": "afaecee68338ae6a491fa73b1d1c70874e77d875d3c3f389dfb9c0ab7d45a406",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-game-boy",
+      "version": "0.34.1",
+      "archive": "emu198x-game-boy-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "cc20108c573f200ed271f876009632969a4953e3fe9797404703b38e4537ec09",
+      "executable_sha256": "e5054ad6b0a93df5494e734ae1b2e624dfb5ea8c314a1c8a211bb8256b7cbac1",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-jupiter-ace",
+      "version": "0.34.1",
+      "archive": "emu198x-jupiter-ace-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "86b3493705b909360b917e0e07030edb12abb1dcd385279d4d2b37dfab1b074f",
+      "executable_sha256": "d39cba827ee52b3ba6d601783d41524e798a64a076fe9b4e2ed7cd56ae6572a7",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-mattel-aquarius",
+      "version": "0.34.1",
+      "archive": "emu198x-mattel-aquarius-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "f5e510158baafcf613335dfa8daec4863d5b28f6fc13ce6b9382f6cd5149d7d8",
+      "executable_sha256": "f67a732e87642e16dd8ac0aed95a54965f5f165e9a304267373c41790a494ee2",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-memotech-mtx",
+      "version": "0.34.1",
+      "archive": "emu198x-memotech-mtx-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "c51af2062db5147fda33f238b0dade8961765ed6682d7868204acc4f1ffa5405",
+      "executable_sha256": "0f44b4bad8402026a2537505857de9358b0e7949a8d6cfe1e24698d8df685e65",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-msx",
+      "version": "0.34.1",
+      "archive": "emu198x-msx-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "41cdc1d370d6f357324a217a15644e430e0c4a0787672a6bb7faa3c533a59cfa",
+      "executable_sha256": "5d4015b33e4b8a35362a8106c66a30a8743a66173b1989ca8130bc57590e1299",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-nes",
+      "version": "0.34.1",
+      "archive": "emu198x-nes-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "053118bb865361fdf2d821a6285c093989af395baf555a5b2d5b3c97f95429f8",
+      "executable_sha256": "942363d4a93297b3873972ac1ee2d1bc1433253b68e4c32e371de38f016cec55",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-oric-atmos",
+      "version": "0.34.1",
+      "archive": "emu198x-oric-atmos-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "e36595ce862b28c47ea52cee0686fb7e7687b9584f24f62161d3e078ffa94fcd",
+      "executable_sha256": "272c9b797a45c57a4ee773c5a712cb343b9980ec54a047f008a50198f32808de",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-game-gear",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "f682599a1ff38ddca3e6460b3fb13af73e9ab37fcf4c99f8cd585c68cf93afe2",
+      "executable_sha256": "82604067cfd74cd13da9def0d21906775a1ebac73f5f645a1ef168a70f6c3b15",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-master-system",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-master-system-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "631b31f4ede9b6f47324e9075d867bd961f63a55a9ddac5f57010e456638af18",
+      "executable_sha256": "7a5e5074ec0746ce61080f48c11d7fab375f015ce68ba81ea5c1e7cc8a97d6ad",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-sg-1000",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "faab1a47d5f8b296c9c9f991a61e08e4a78fc457ca552e18eef01f59e2bc41d4",
+      "executable_sha256": "f08a95993369b3bc32c9bb948a41674af56b4c6159ade8028dd575e26929c50b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx80",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx80-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "f92cc3e0a695cfee946aeb23a117dded66eb33a0658f821f7a0512b9ff60b763",
+      "executable_sha256": "e82d96e5b0a3a05766be1e7612b1909b13a92a4b41d3d78a6234b2ca163e193e",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx81",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx81-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "e0d616d9efd5db6e5bdcc240f79137a99a0be8c1fbfa25b11fa87e7b69824d6a",
+      "executable_sha256": "99eb6b4aa33b51e957a0b049a6f9de65654768f6bda54b60407d8a90abc01d44",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sord-m5",
+      "version": "0.34.1",
+      "archive": "emu198x-sord-m5-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "f06bc51b0a432cceed4e193d4eab070077a22a4f658193634547a15c84f9b609",
+      "executable_sha256": "7d20df8f0c5b7fc73dfe80e9e5e70a5b1a7224103192f3e4069ba04f929e9928",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectravideo-svi-328",
+      "version": "0.34.1",
+      "archive": "emu198x-spectravideo-svi-328-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "6c68fb9dfae2a2dfbaa88564e98d0d37d8d473e32fe7b91e9055df2b0fc2d640",
+      "executable_sha256": "15b03d5f758cb1723e5406dddcbe2748e6917eb5777fb479a7d60b7b690d4cbc",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectrum",
+      "version": "0.34.1",
+      "archive": "emu198x-spectrum-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "3143ebd186ffc5a1777b26dc5b7fba98642a55b4c6bc5f5604163d0a6de27d46",
+      "executable_sha256": "89f09da9cd448b12ec2fd7949390d2c32196b52385c126d124429fb1795c7859",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-tatung-einstein",
+      "version": "0.34.1",
+      "archive": "emu198x-tatung-einstein-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "165e13b616599dc2499550044913d2857115f458837ef049c74c4a97b99a4665",
+      "executable_sha256": "b824d7583c700696f6e08dcf7ff6fc7f7ffc8cc1133a9c7fda537b0446baec58",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=aarch64-apple-darwin"
+      ],
+      "compiled_dependency_graph": "unknown"
+    }
+  ]
+}

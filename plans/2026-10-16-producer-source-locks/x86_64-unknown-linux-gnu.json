@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "kind": "producer-source-lock-verification",
+  "verified": true,
+  "scope": "producer-source-lock",
+  "source": {
+    "commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+    "cargo_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718"
+  },
+  "target": "x86_64-unknown-linux-gnu",
+  "receipts": [
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-atom",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-atom-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "cb34bdb72f8a82deb7b63043d439484d81dadc70a40c291a4359b698f6bf79c5",
+      "executable_sha256": "42bee54ad8941e032da37f5a93f89c8e984056ccf20eb18581daffc66bab3fa4",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-bbc-micro",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-bbc-micro-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "59288820533f933eefc39369a4990836304a61cfe45c0f9843f9612a5ef2c0e4",
+      "executable_sha256": "a71c507c0f907a9dbaa2e12118c879be1f3e6e48d73e068a9011344a9e7b4f86",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-electron",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-electron-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "b51a9560eaf5015fa64b56f0288cf5bebad9f7fef0e685433845a1fe46c8c8a2",
+      "executable_sha256": "86f9f36655a28efd21c706c858e79544d3799f9bc8d92d84d490e83ed784aad4",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amiga",
+      "version": "0.34.1",
+      "archive": "emu198x-amiga-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "d1ab39db31503a502e0d68057d093173ee1a3abef3272abbb0b4953d02e793fa",
+      "executable_sha256": "0d861ea65fcfb702918c7aa9987289e8d52900dc29f1c92a6ee53b9d858f0e8b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amstrad-cpc",
+      "version": "0.34.1",
+      "archive": "emu198x-amstrad-cpc-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "6e6ac9a112ec3ccb4e39b554252ad85802d302d3658c72e8c5a00f0a34a50727",
+      "executable_sha256": "e667ca7b4f25d08d2c78fd50b1976bcb48f589d09aae16a7ac30938da3bea0dc",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-2600",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-2600-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "5a7686c71f36675eb6d4a84e59ab8b28dc3e54d24c53a0d2b26d9676cb4b4d04",
+      "executable_sha256": "dd4412ae5b0cff8cfa367068aa62d6bb3ff4ca1f11ee6539c187019e69287007",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-5200",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "9116b93141045752d2448f960bf9fd0f1ea471e842b5a89c8d40313ec672af2b",
+      "executable_sha256": "d4a611d05bd954d5ddfd0ad58b29df8f38a04bfc6c7625731f52d32a1769eeae",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-7800",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "007779981abf701bcd247923545f7c78455ce5ab4bd9bd599e3a5d60f6830aea",
+      "executable_sha256": "ef8e9acf7b8199ab1e17b0bf43e0ff5da969cfc8d64f8c335c33a67b2379b8f2",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-800xl",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-800xl-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "56d917c0adedcb99dd865b5f7fd17bdd340aafb908cfd31085dba642c4aacc85",
+      "executable_sha256": "a8e39729ea6c49c38a47d1f5d9c094286ed635e72dbfb75636a2741efed58df3",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-c64",
+      "version": "0.34.1",
+      "archive": "emu198x-c64-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "6151ff37aae475d6b830e418092a82208a7da594d9fe0cb1616d7f23167568b0",
+      "executable_sha256": "20637c7be3accba9b93256356cb386037a22dd841bd3c5970682ee8b77623f05",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-colecovision",
+      "version": "0.34.1",
+      "archive": "emu198x-colecovision-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "91755582b086aefd22246c5b9504d6cafaeb67dfa40716a5fffe69a9676c1e19",
+      "executable_sha256": "6eec4cd27dc149f3bddbc4f37e5d38c5756461adbb58e255ae28aa830867a528",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-pet",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-pet-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "4c3979a8158452580d0d93dde3d3c88df7c230db8f083d1ad45a6240424973a1",
+      "executable_sha256": "cbe28d1edba9af4061622e7606a4fd2e7f17a79bd84da39e1e5c63ae496558ff",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-vic-20",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-vic-20-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "0458e806ec4619d8720db0307dbd8aa5e80679b582415fbbed5763632da31ac5",
+      "executable_sha256": "8fa2f3f4b6db42056d77ee44c48d36dcfa78234ec39a5839b655d2166c96edab",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-dragon",
+      "version": "0.34.1",
+      "archive": "emu198x-dragon-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "cf292bda95218815ba2c2e1c68b4e20a237ed22492a6bb23798a0000d3d85fe0",
+      "executable_sha256": "958186f28a7bd68411326927d5468ed0ad5cbb648e141c6f594c5075b9496a94",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-game-boy",
+      "version": "0.34.1",
+      "archive": "emu198x-game-boy-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "47554bd24058afc9a6d0d1ee9e796d1830be8fe551d84c8fc4f2423104329ed3",
+      "executable_sha256": "772b110a871dd402d5229de3d0393b7f34e20e1c40e8aa26263895662b9a300e",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-jupiter-ace",
+      "version": "0.34.1",
+      "archive": "emu198x-jupiter-ace-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "ee2377b4d4a520e619e6cb8b5084a820ae3d31c9dcc42a85ee3494fb05168934",
+      "executable_sha256": "2a93f8ef9b2e6ca9726ca574e2a9456e11e9dd10af75ad13933e501172277513",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-mattel-aquarius",
+      "version": "0.34.1",
+      "archive": "emu198x-mattel-aquarius-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "e18ea5a8b86a02535fb226b68d9f5a8d251f45002ce07ae9abbaf5c7bd678efd",
+      "executable_sha256": "4103d88ff07b693dab49c44ee79d9d4068cfd2540c207661bf4d9b2bce9265ca",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-memotech-mtx",
+      "version": "0.34.1",
+      "archive": "emu198x-memotech-mtx-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "c9015b6cda06d8ab1ae0163ce3b34702709d36ede2c169ea0ff9ece432932747",
+      "executable_sha256": "31963b96c6358aa4666bb3f365c822a70ebe95b2590591c11768d9c60e0b6e82",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-msx",
+      "version": "0.34.1",
+      "archive": "emu198x-msx-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "2919eff4d5d63ede57f18cd7983ca4b0e24ee1e72882ca91a60b4beeef9267ae",
+      "executable_sha256": "37a18ee8f468e5a08bc653a8834a6e27f1055e8ad46a5c278a49280a6f292a5b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-nes",
+      "version": "0.34.1",
+      "archive": "emu198x-nes-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "5b3bca88b581d2b5bcc32981a714e8af0da2488595d060cfb80f035611f8e113",
+      "executable_sha256": "3926daa0b8f5f6bf8e3037c4323669d7910fc1f9c1512441041d5db014a8c9aa",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-oric-atmos",
+      "version": "0.34.1",
+      "archive": "emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "a55be7292ede16f68ee6555131094945a941c75fcc3d4bb594e792fda8ab69eb",
+      "executable_sha256": "f320b956c6d254d8d2556297e6b83a8fd400fb318d9af9340e471dea6771e59a",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-game-gear",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "0325a14d7f6cfc50d65de82db94d956eedaecf6259236f3ee32577be6c457a84",
+      "executable_sha256": "4e12b37eae29d50489072acfdcccbc43383f8b762c6cda34db0290ec98dff09d",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-master-system",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-master-system-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "8412e4851609fbab7bfefce68bfc702dbdc8f6da2dce3b64c6cbdd8b250dfd4a",
+      "executable_sha256": "f5fcbea6d35ace9099fafe3aeb3753afd27bef45ef48bf47e33637bb6a908f15",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-sg-1000",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "076071fc5ebdfbf37975b312ace7835aff94fcd529c82c67bb4b69ad9da72c5a",
+      "executable_sha256": "49a514e4e51c1b63abf4bcba75318755380b8e174b18db860a859e7880ec6e8c",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx80",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx80-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "b54d115f1cc79afdba499c99b718724107aa4900d63ced35c48d7d1aba1ee21c",
+      "executable_sha256": "d296d6dbb11bbc0deba075f9963651007da453857277985c239ffb391176613a",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx81",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx81-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "ff40d4e504aa5ae3bc8cf325aae93f3a39657322a20d93fa4722ddfce8f7d746",
+      "executable_sha256": "d45d2644dc9d09b726a8743b20373f3aefa83c718cf46578797e1ad68c0a9799",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sord-m5",
+      "version": "0.34.1",
+      "archive": "emu198x-sord-m5-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "e80414e7cb0324fbf4ce75a3d033830975c031b8ad6a6cd8bad5979c7b5b1e3b",
+      "executable_sha256": "ac9bd6d8d48001fc6b1e5cfbd300e143650c4a4c235d24befd0480a1961959ec",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectravideo-svi-328",
+      "version": "0.34.1",
+      "archive": "emu198x-spectravideo-svi-328-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "fbb89e0df5dff115cc3a51dd1683ee763d7e1e9950747abe112c92f266241cc4",
+      "executable_sha256": "128ce92de070ad43c0e2cd41f30e9c020bc59bda56bd9b984a4bf405eb8977ba",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectrum",
+      "version": "0.34.1",
+      "archive": "emu198x-spectrum-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "44e60cf0f066578d222102c11476d631865c40962b4b58855c9f08a5d9293350",
+      "executable_sha256": "5acd8cba9352dc9eb1010306cc36fe77befbc4d28411fe2e0df4537aa5a804bb",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-tatung-einstein",
+      "version": "0.34.1",
+      "archive": "emu198x-tatung-einstein-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "archive_sha256": "fb39fcbd7b04ff02b7a8a9e43714ecafc14fc5997f9ef206544ea6eb8208bf9c",
+      "executable_sha256": "007ba0ec18f38c798df690883563acc22acc1dc71f44a5196a37963a9535b6b1",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-unknown-linux-gnu"
+      ],
+      "compiled_dependency_graph": "unknown"
+    }
+  ]
+}

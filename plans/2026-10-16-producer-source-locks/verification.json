@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "scope": "producer-source-lock",
+  "signed": false,
+  "compiled_dependency_graph": "unknown",
+  "head_commit": "65a449bf14dc91c6736da28d6f306234d377557d",
+  "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+  "local_checks": {
+    "producer_tests": 15,
+    "existing_homebrew_release_tests": 3,
+    "ruff": "passed",
+    "yaml_syntax": "passed",
+    "real_dist_plan_counts": {
+      "aarch64-apple-darwin": 30,
+      "x86_64-apple-darwin": 30,
+      "x86_64-unknown-linux-gnu": 30,
+      "aarch64-unknown-linux-gnu": 30,
+      "x86_64-pc-windows-msvc": 30
+    }
+  },
+  "windows_checkout_control": {
+    "without_attribute": "producer Cargo.lock differs from checkout commit",
+    "translated_lines": 6216,
+    "with_narrow_attribute": "exact committed bytes"
+  },
+  "candidate_run": 38873380443,
+  "candidate_verification": "passed",
+  "checkout_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+  "checkout_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+  "independent_receipt_verification": {
+    "aarch64-unknown-linux-gnu": {
+      "verified": true,
+      "packages": 30,
+      "report_sha256": "d032e2ebb274028b50ab29b698010d2dbb7c502ebb643fe1a95b30a859ef2d16"
+    },
+    "aarch64-apple-darwin": {
+      "verified": true,
+      "packages": 30,
+      "report_sha256": "4472a036d7910d296ab97b6649f71b66bca87d2b61dd275f7020abae757d0433"
+    },
+    "x86_64-pc-windows-msvc": {
+      "verified": true,
+      "packages": 30,
+      "report_sha256": "0fb76043830df0169d7c9b098736bfdd229c0c1191ee198d040fb981c73eb18f"
+    },
+    "x86_64-unknown-linux-gnu": {
+      "verified": true,
+      "packages": 30,
+      "report_sha256": "9230e6597534b8e06d90c820cc9cc134ed805c07dbca6152b26d4bbf8b551dee"
+    },
+    "x86_64-apple-darwin": {
+      "verified": true,
+      "packages": 30,
+      "report_sha256": "e3460aae7ac5c69c383929710d52a1c5971c55e32bf04dab7d69598a3f27aa8a"
+    }
+  },
+  "verified_packages": 150,
+  "linux_install": {
+    "x86_64": {
+      "completed_packages": [
+        "emu198x-acorn-atom",
+        "emu198x-acorn-bbc-micro",
+        "emu198x-acorn-electron",
+        "emu198x-amiga",
+        "emu198x-amstrad-cpc",
+        "emu198x-atari-2600",
+        "emu198x-atari-5200",
+        "emu198x-atari-7800",
+        "emu198x-atari-800xl",
+        "emu198x-c64",
+        "emu198x-colecovision",
+        "emu198x-commodore-pet",
+        "emu198x-commodore-vic-20",
+        "emu198x-dragon",
+        "emu198x-game-boy",
+        "emu198x-jupiter-ace",
+        "emu198x-mattel-aquarius",
+        "emu198x-memotech-mtx",
+        "emu198x-msx",
+        "emu198x-nes",
+        "emu198x-oric-atmos",
+        "emu198x-sega-game-gear",
+        "emu198x-sega-master-system",
+        "emu198x-sega-sg-1000",
+        "emu198x-sinclair-zx80",
+        "emu198x-sinclair-zx81",
+        "emu198x-sord-m5",
+        "emu198x-spectravideo-svi-328",
+        "emu198x-spectrum",
+        "emu198x-tatung-einstein"
+      ],
+      "checksum_rejection_controls": 30,
+      "native_cli_checks": 30,
+      "nes_generated_cartridge_frames": 2
+    },
+    "aarch64": {
+      "completed_packages": [
+        "emu198x-acorn-atom",
+        "emu198x-acorn-bbc-micro",
+        "emu198x-acorn-electron",
+        "emu198x-amiga",
+        "emu198x-amstrad-cpc",
+        "emu198x-atari-2600",
+        "emu198x-atari-5200",
+        "emu198x-atari-7800",
+        "emu198x-atari-800xl",
+        "emu198x-c64",
+        "emu198x-colecovision",
+        "emu198x-commodore-pet",
+        "emu198x-commodore-vic-20",
+        "emu198x-dragon",
+        "emu198x-game-boy",
+        "emu198x-jupiter-ace",
+        "emu198x-mattel-aquarius",
+        "emu198x-memotech-mtx",
+        "emu198x-msx",
+        "emu198x-nes",
+        "emu198x-oric-atmos",
+        "emu198x-sega-game-gear",
+        "emu198x-sega-master-system",
+        "emu198x-sega-sg-1000",
+        "emu198x-sinclair-zx80",
+        "emu198x-sinclair-zx81",
+        "emu198x-sord-m5",
+        "emu198x-spectravideo-svi-328",
+        "emu198x-spectrum",
+        "emu198x-tatung-einstein"
+      ],
+      "checksum_rejection_controls": 30,
+      "native_cli_checks": 30,
+      "nes_generated_cartridge_frames": 2
+    }
+  },
+  "jobs": [
+    {
+      "name": "plan",
+      "databaseId": 116882543717,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882543717"
+    },
+    {
+      "name": "build-local-artifacts (x86_64-unknown-linux-gnu)",
+      "databaseId": 116882761404,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882761404"
+    },
+    {
+      "name": "build-local-artifacts (x86_64-pc-windows-msvc)",
+      "databaseId": 116882761415,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882761415"
+    },
+    {
+      "name": "build-local-artifacts (aarch64-unknown-linux-gnu)",
+      "databaseId": 116882761435,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882761435"
+    },
+    {
+      "name": "build-local-artifacts (x86_64-apple-darwin)",
+      "databaseId": 116882761509,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882761509"
+    },
+    {
+      "name": "build-local-artifacts (aarch64-apple-darwin)",
+      "databaseId": 116882761513,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116882761513"
+    },
+    {
+      "name": "build-global-artifacts",
+      "databaseId": 116889325260,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889325260"
+    },
+    {
+      "name": "custom-qualify-packages / Verify source lock (aarch64-unknown-linux-gnu)",
+      "databaseId": 116889830127,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830127"
+    },
+    {
+      "name": "custom-qualify-packages / Verify source lock (x86_64-unknown-linux-gnu)",
+      "databaseId": 116889830159,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830159"
+    },
+    {
+      "name": "custom-qualify-packages / Verify source lock (x86_64-pc-windows-msvc)",
+      "databaseId": 116889830185,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830185"
+    },
+    {
+      "name": "custom-qualify-packages / Verify source lock (x86_64-apple-darwin)",
+      "databaseId": 116889830241,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830241"
+    },
+    {
+      "name": "custom-qualify-packages / Verify source lock (aarch64-apple-darwin)",
+      "databaseId": 116889830267,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830267"
+    },
+    {
+      "name": "custom-qualify-packages / linux-install / Install and exercise (aarch64-unknown-linux-gnu)",
+      "databaseId": 116889830747,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830747"
+    },
+    {
+      "name": "custom-qualify-packages / linux-install / Install and exercise (x86_64-unknown-linux-gnu)",
+      "databaseId": 116889830760,
+      "conclusion": "success",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116889830760"
+    },
+    {
+      "name": "host",
+      "databaseId": 116891715643,
+      "conclusion": "skipped",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116891715643"
+    },
+    {
+      "name": "publish-homebrew-formula",
+      "databaseId": 116891716762,
+      "conclusion": "skipped",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116891716762"
+    },
+    {
+      "name": "announce",
+      "databaseId": 116891717283,
+      "conclusion": "skipped",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116891717283"
+    },
+    {
+      "name": "custom-notify-discord",
+      "databaseId": 116891718546,
+      "conclusion": "skipped",
+      "url": "https://github.com/emu198x/emu198x/actions/runs/38873380443/job/116891718546"
+    }
+  ],
+  "producer_step_results": {
+    "build-local-artifacts (x86_64-unknown-linux-gnu)": {
+      "Run producer rejection controls": "success",
+      "Configure macOS signing": "skipped",
+      "Build artifacts": "success",
+      "Notarise macOS binaries": "skipped",
+      "Recheck packaged bytes after notarization": "success"
+    },
+    "build-local-artifacts (x86_64-pc-windows-msvc)": {
+      "Run producer rejection controls": "success",
+      "Configure macOS signing": "skipped",
+      "Build artifacts": "success",
+      "Notarise macOS binaries": "skipped",
+      "Recheck packaged bytes after notarization": "success"
+    },
+    "build-local-artifacts (aarch64-unknown-linux-gnu)": {
+      "Run producer rejection controls": "success",
+      "Configure macOS signing": "skipped",
+      "Build artifacts": "success",
+      "Notarise macOS binaries": "skipped",
+      "Recheck packaged bytes after notarization": "success"
+    },
+    "build-local-artifacts (x86_64-apple-darwin)": {
+      "Run producer rejection controls": "success",
+      "Configure macOS signing": "skipped",
+      "Build artifacts": "success",
+      "Notarise macOS binaries": "skipped",
+      "Recheck packaged bytes after notarization": "success"
+    },
+    "build-local-artifacts (aarch64-apple-darwin)": {
+      "Run producer rejection controls": "success",
+      "Configure macOS signing": "skipped",
+      "Build artifacts": "success",
+      "Notarise macOS binaries": "skipped",
+      "Recheck packaged bytes after notarization": "success"
+    }
+  },
+  "pr_checks": {
+    "SUCCESS": 33,
+    "SKIPPED": 4
+  }
+}
