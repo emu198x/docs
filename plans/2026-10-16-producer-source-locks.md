@@ -8,6 +8,8 @@ work: shared infrastructure and validation. Tracks umbrella issue #137.
    every package on each native target, and bind receipts to the checked-out
    commit, unchanged committed lock, run, attempt and actual archive/executable
    bytes. Verify with deliberate missing/changed lock, receipt and archive cases.
+   Preserve `Cargo.lock` LF bytes in the emulator's `.gitattributes`; exercise
+   Windows-style checkout translation as a rejection control.
 2. Update `Cargo.toml` and `.github/workflows/release.yml` to build unpublished
    PR packages through the real release producer. Gate signing credentials to
    publishing runs; retain existing signing and notarization steps. Recheck

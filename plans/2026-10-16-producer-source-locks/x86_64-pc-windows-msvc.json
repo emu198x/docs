@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "kind": "producer-source-lock-verification",
+  "verified": true,
+  "scope": "producer-source-lock",
+  "source": {
+    "commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+    "cargo_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718"
+  },
+  "target": "x86_64-pc-windows-msvc",
+  "receipts": [
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-atom",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-atom-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "b124fa9fc6fe184f86249cc795bbde0ff42ff61f184786c45732e80be154d7d5",
+      "executable_sha256": "c382863ecc0c7fcf84c8ccc06d325b9b39b948a58f1b04978769d86b70b0569b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-bbc-micro",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-bbc-micro-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "f255c59a3dad97b97718dd75536aafab01c6c00f47e30db8f109f17d41cacfa3",
+      "executable_sha256": "8d94be6889457a971904db7abc1a66b155e5561118b8f5ae31fffe0cb295825c",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-acorn-electron",
+      "version": "0.34.1",
+      "archive": "emu198x-acorn-electron-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "5afddac152c238af3e0bd6663b4b4072e5348595857afd1a748f7cf94927eaa5",
+      "executable_sha256": "7b3d104f9270f0c2fefde390e0c9c92c190a7e8186d6e48edc56971b425e304d",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amiga",
+      "version": "0.34.1",
+      "archive": "emu198x-amiga-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "ad58ec76adb043919fac207b904cdd3b7571570e873d42296016fcb39c2ede28",
+      "executable_sha256": "4da29a30f49111c8faa23dfd2148c20c6ef59de2f8eeff2cbbe730d53ed01eca",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-amstrad-cpc",
+      "version": "0.34.1",
+      "archive": "emu198x-amstrad-cpc-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "a67db6801f166fb4b7faa510a9fdfa6c0ff5487958e2ceefd83e1a7d3bdc3036",
+      "executable_sha256": "4669226b979e2bbd0f82fd9c18eee9fc8a8f6daf631c7d12f34751bc8de0a72b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-2600",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-2600-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "597514902938e2617050687fb339b65cc6e8664228d8c66eb425fd98861db3ac",
+      "executable_sha256": "bf740558a10c58c6fa06964caee27712315fb3c8927bca476a1911b1d1841dd7",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-5200",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-5200-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "44127dc4e73987de9683186cd17bd77295e8be9da56fd34083ff1330eddb3f99",
+      "executable_sha256": "36ff85c8263e25426c53e9ec83ba4711ad86aa55fd115cdbbd528b4aa6626a6b",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-7800",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-7800-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "f34539f9812c4e6170808a1d42225734fbb4515890c397456d9e9bcae6273507",
+      "executable_sha256": "9c1b695613ac45cd1099e198922a8f757128310154bb081950d47bdca5413a07",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-atari-800xl",
+      "version": "0.34.1",
+      "archive": "emu198x-atari-800xl-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "a0a439fd6075aaadd1adbfcec427f985fa6d17e194b4c18c2a30cfccd50c2327",
+      "executable_sha256": "7c3e95e5919a5b141d4a03550c1bbf58203505ba6808142991527949722a4955",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-c64",
+      "version": "0.34.1",
+      "archive": "emu198x-c64-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "095eae7e7807e12c008912736bd44e6812fdbd13974c1739c869af46b1fc6e8b",
+      "executable_sha256": "c8f9f2d14ce54597d08cd5ed35214b8f330fd75c4a5575d7325fa67550e3e64c",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-colecovision",
+      "version": "0.34.1",
+      "archive": "emu198x-colecovision-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "27cc0b785d7fa474449cb7f4586850f2ae0eac3637d32e7d408c18cca6020143",
+      "executable_sha256": "692f3da063a7c8c73ae813dbfc731133a737a2b971a0aa4ba6e7e1c5a41e91ad",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-pet",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-pet-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "61bbfcbf8061cf61ebcffc43732152a08a1c94b423fdc629800cf4bbf92f86b8",
+      "executable_sha256": "42dec7de888291a1f262d697dab335747fd7defccd0922c1c0689481d145a881",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-commodore-vic-20",
+      "version": "0.34.1",
+      "archive": "emu198x-commodore-vic-20-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "bf82f6e2d1d8b36303054859f0c79897ff60d5ca90fc19a5a09f7c1f1e819232",
+      "executable_sha256": "2f28bcb3df751d7f2f086dd008253de1058395aa5c4701a9c7abb1467019aa17",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-dragon",
+      "version": "0.34.1",
+      "archive": "emu198x-dragon-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "85a01283c8f5384472317c9bfe84e60768cdbb0607289134e699f6be5db4bbc0",
+      "executable_sha256": "20761a1f979fa351a31c136fc616d8494f23da792673f234401f3ff34d95bfd1",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-game-boy",
+      "version": "0.34.1",
+      "archive": "emu198x-game-boy-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "6abc2cfae44aef1b242f3f0c9e5eef04ce7aadf398c053c91c2f2783ae8c9e4e",
+      "executable_sha256": "032a25036eeb6a7c36a9d4a6baa98f224a6c48f434d1bd468f9f4e107304d2b4",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-jupiter-ace",
+      "version": "0.34.1",
+      "archive": "emu198x-jupiter-ace-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "2ac1f249d58c969d16cb4964233c4011ed3e35810c12800d237b545977f106c0",
+      "executable_sha256": "4b10e342dd23d7711bd33a2299a9363f78a3a79b486a5ac2b6f2e3ad44f2840d",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-mattel-aquarius",
+      "version": "0.34.1",
+      "archive": "emu198x-mattel-aquarius-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "cff7231c3c9304ce9edc735d4b74c810c6c5e1b5fcbccc8c87f670be12563edf",
+      "executable_sha256": "5bcc9d10fe8bcafc122bb627ed4d5014c28ef1c26397c607c62c6f363d7a3712",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-memotech-mtx",
+      "version": "0.34.1",
+      "archive": "emu198x-memotech-mtx-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "c56bbf91008c95ec4e2cbe95764949797c6a601b60d8f56ada707fd81636203c",
+      "executable_sha256": "a1772c4b7745232b056246570dac9b1139e56d946ca1e262af575c3a03b17d1c",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-msx",
+      "version": "0.34.1",
+      "archive": "emu198x-msx-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "452e02c2c2c63bbb0cedc5876f8c9d42aad25221bc5ce3ed3412e6f2462056e2",
+      "executable_sha256": "37b286e76d5c7b72995eb055ef2b3c78a3dec835ecd1882bb01a9ab8cac008b7",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-nes",
+      "version": "0.34.1",
+      "archive": "emu198x-nes-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "f322a0dbba7b452e42c72f4d2e64bd1798051701997a93a4e7a37f443b4e7d67",
+      "executable_sha256": "ffeaa491011b1b7d35b760d0959c42708bdcfa85c158e69d766f69ebe1e68f66",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-oric-atmos",
+      "version": "0.34.1",
+      "archive": "emu198x-oric-atmos-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "3f2200ac7b809a70f0e4614390dc7140517e801a481bede980f6b83b1319498f",
+      "executable_sha256": "bbeae8047ad2d711a74ee3e576508bc4b8ea2ea9d55ecd0b86dbd8a2a04e46ae",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-game-gear",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-game-gear-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "54061533ae7953901158643279b16aab9303417742a6f7f3a3c7f99e01fe1158",
+      "executable_sha256": "283460fce7df02bfd09d3fed15884e3c061e320dc2e23cc64fc1b2f3cb5873f9",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-master-system",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-master-system-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "797908d219cb25b0fe316401ca29d09d6bca9af06590760809bc271136b017c5",
+      "executable_sha256": "83ad5087a4cfdbb0535c690b98627c4b93450ade8bc04b91df606784576a87d2",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sega-sg-1000",
+      "version": "0.34.1",
+      "archive": "emu198x-sega-sg-1000-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "1f15ec847144b35a4813f2ba311eae51ca39535ec47c3188c40c8a658bb65bbc",
+      "executable_sha256": "c926313170055a1f52edf4e8ce02750b1cb16eb0022f0b56b9edeb0b341822e9",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx80",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx80-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "ae7120f114b7bc810b85c6905d65b7a81b1029dee71f34f2e5dc7dd71779695c",
+      "executable_sha256": "3b665c85b7e4ffda96f23868cf74180072d61ff0ae13a5743653b0ccb1ac215e",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sinclair-zx81",
+      "version": "0.34.1",
+      "archive": "emu198x-sinclair-zx81-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "0ea88c5e2f75717c4e2f85f8d0b92b695d2b54b40444a222adede4524100a53a",
+      "executable_sha256": "6fc269346b3739258f2e9010dfa9cf0c789b8b972d186e6798cf72e72f10d277",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-sord-m5",
+      "version": "0.34.1",
+      "archive": "emu198x-sord-m5-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "c108b19321f1fdf0ffb1b8d7f05902e7b6849db7e0eb2688b44db42537541a66",
+      "executable_sha256": "c710207199c51641954f1b07f426302d32c9c088c579c3074e1fce609c7d3e40",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectravideo-svi-328",
+      "version": "0.34.1",
+      "archive": "emu198x-spectravideo-svi-328-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "5020e66ffe6648844a075b0d84441e5f1134108ae944118b2c826d59cc5d0035",
+      "executable_sha256": "520950846461b3125ebb246b504e5b208586f995c8d9daf082d6244c2c58ca45",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-spectrum",
+      "version": "0.34.1",
+      "archive": "emu198x-spectrum-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "961eb88da8800593ddeaf1f74369082b77b540e214b2f51e1d7f61b515ebd0e2",
+      "executable_sha256": "35c126fb75cb4695a86d77e208deab65d92e0583e1b99f7090e3164f8a2a1446",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    },
+    {
+      "schema_version": 1,
+      "kind": "producer-source-lock",
+      "signed": false,
+      "source_commit": "f8b8430ef437ab291015f565cdb1efbcb56da2b8",
+      "committed_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "before_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "after_lock_sha256": "8b4743195496b18e8f64d124ab0bdb130b4c4660bc19d3c4a3035e0e999ae718",
+      "package": "emu198x-tatung-einstein",
+      "version": "0.34.1",
+      "archive": "emu198x-tatung-einstein-x86_64-pc-windows-msvc.zip",
+      "target": "x86_64-pc-windows-msvc",
+      "archive_sha256": "8f35cbb17496bebea941a1cb2e1ce5fe3584f352a82e4d0aa17ac621e3ca4c97",
+      "executable_sha256": "71a1d0a55d30c47ee0d3f0c7b2aebcf691352eced0c3cb01c4ad8676e401fda8",
+      "build": {
+        "job": "build-local-artifacts",
+        "run_id": "38873380443",
+        "run_attempt": "1"
+      },
+      "command": [
+        "dist",
+        "build",
+        "--print=linkage",
+        "--output-format=json",
+        "--artifacts=local",
+        "--target=x86_64-pc-windows-msvc"
+      ],
+      "compiled_dependency_graph": "unknown"
+    }
+  ]
+}
