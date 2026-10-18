@@ -1,0 +1,29 @@
+[
+  {
+    "action": "run_frames",
+    "frames": 120
+  },
+  {
+    "action": "memory_read",
+    "addr": 174,
+    "len": 2
+  },
+  {
+    "action": "memory_read",
+    "addr": 2088,
+    "len": 40
+  },
+  {
+    "action": "type_string",
+    "text": "RUN\n",
+    "hold_frames": 6
+  },
+  {
+    "action": "run_frames",
+    "frames": 600
+  },
+  {
+    "action": "save_screenshot",
+    "path": "mule-run.png"
+  }
+]

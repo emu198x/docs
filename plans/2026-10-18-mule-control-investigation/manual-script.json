@@ -1,0 +1,314 @@
+[
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "p",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "p",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "r",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "r",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "i",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "i",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "n",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "n",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "t",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "t",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "space",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "space",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "1",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "1",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "2",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "2",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "3",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "3",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "return",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "return",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 12
+  },
+  {
+    "action": "run_frames",
+    "frames": 120
+  },
+  {
+    "action": "save_screenshot",
+    "path": "manual.png"
+  }
+]
