@@ -1,0 +1,274 @@
+[
+  {
+    "action": "run_frames",
+    "frames": 1800
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "fire",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "fire",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "run_frames",
+    "frames": 120
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "select",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-zero-player.png"
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "start",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "start",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 10
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-00.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-01.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-02.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-03.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-04.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-05.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-06.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-07.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-08.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "save_screenshot",
+    "path": "atari-demo-09.png"
+  }
+]

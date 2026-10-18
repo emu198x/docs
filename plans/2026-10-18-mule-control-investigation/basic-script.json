@@ -1,0 +1,19 @@
+[
+  {
+    "action": "run_frames",
+    "frames": 300
+  },
+  {
+    "action": "type_string",
+    "text": "PRINT 123\n",
+    "hold_frames": 6
+  },
+  {
+    "action": "run_frames",
+    "frames": 120
+  },
+  {
+    "action": "save_screenshot",
+    "path": "basic.png"
+  }
+]
