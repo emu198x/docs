@@ -1,0 +1,130 @@
+mise WARN  tracking config: failed to ln -sf ${SOURCE}/rust-toolchain.toml ${HOME}/.local/state/mise/tracked-configs/676419fb87f1ad00: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling objc2 v0.6.4
+   Compiling objc2-encode v4.1.0
+   Compiling libc v0.2.186
+   Compiling bitflags v2.11.1
+   Compiling simd-adler32 v0.3.9
+   Compiling crc32fast v1.5.0
+   Compiling cfg-if v1.0.4
+   Compiling format198x-commodore-amiga-adf v0.3.3
+   Compiling adler2 v2.0.1
+   Compiling thiserror v2.0.20
+   Compiling zmij v1.0.21
+   Compiling log v0.4.29
+   Compiling miniz_oxide v0.9.1
+   Compiling typenum v1.20.1
+   Compiling zlib-rs v0.6.3
+   Compiling serde_json v1.0.151
+   Compiling memchr v2.8.0
+   Compiling cpal v0.18.2
+   Compiling hashbrown v0.17.1
+   Compiling vec_map v0.8.2
+   Compiling itoa v1.0.18
+   Compiling bumpalo v3.20.2
+   Compiling equivalent v1.0.2
+   Compiling uuid v1.23.1
+   Compiling gilrs v0.11.2
+   Compiling miniz_oxide v0.8.9
+   Compiling zopfli v0.8.3
+   Compiling fdeflate v0.3.7
+   Compiling indexmap v2.14.0
+   Compiling typed-path v0.12.3
+   Compiling syn v3.0.3
+   Compiling mach2 v0.6.0
+   Compiling hybrid-array v0.4.14
+   Compiling isa198x v0.1.0
+   Compiling fnv v1.0.7
+   Compiling dasp_sample v0.11.0
+   Compiling const-oid v0.10.2
+   Compiling block2 v0.6.2
+   Compiling dispatch2 v0.3.1
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-core-audio-types v0.3.2
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.1
+   Compiling cpufeatures v0.3.0
+   Compiling emu198x-test-skip v0.34.2 (${SOURCE}/crates/emu198x-test-skip)
+   Compiling twox-hash v2.1.4
+   Compiling objc2-core-foundation v0.3.2
+   Compiling digest v0.11.3
+   Compiling isa198x-disasm v0.1.0
+   Compiling sha2 v0.11.0
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.20
+   Compiling cobs v0.3.0
+   Compiling objc2-core-audio v0.3.2
+   Compiling objc2-io-kit v0.3.2
+   Compiling objc2-audio-toolbox v0.3.2
+   Compiling gilrs-core v0.6.8
+   Compiling coreaudio-rs v0.14.2
+   Compiling flate2 v1.1.10
+   Compiling png v0.18.1
+   Compiling zip v8.6.0
+   Compiling serde-big-array v0.5.1
+   Compiling motorola-68k-common v0.34.2 (${SOURCE}/crates/motorola-68k-common)
+   Compiling commodore-agnus-ocs v0.34.2 (${SOURCE}/crates/commodore-agnus-ocs)
+   Compiling peripheral-commodore-amiga-floppy v0.34.2 (${SOURCE}/crates/peripheral-commodore-amiga-floppy)
+   Compiling mos-cia-8520 v0.34.2 (${SOURCE}/crates/mos-cia-8520)
+   Compiling peripheral-commodore-amiga-keyboard v0.34.2 (${SOURCE}/crates/peripheral-commodore-amiga-keyboard)
+   Compiling emu198x-commodore-paula-8364 v0.6.0 (${SOURCE}/crates/emu198x-commodore-paula-8364)
+   Compiling commodore-amiga-autoconfig v0.34.2 (${SOURCE}/crates/commodore-amiga-autoconfig)
+   Compiling commodore-denise-ocs v0.34.2 (${SOURCE}/crates/commodore-denise-ocs)
+   Compiling commodore-gary v0.34.2 (${SOURCE}/crates/commodore-gary)
+   Compiling commodore-gayle v0.34.2 (${SOURCE}/crates/commodore-gayle)
+   Compiling postcard v1.1.3
+   Compiling debug198x v0.1.0
+   Compiling emu198x-shell v0.34.2 (${SOURCE}/crates/emu198x-shell)
+   Compiling motorola-68000 v0.34.2 (${SOURCE}/crates/motorola-68000)
+   Compiling gvp-a530 v0.34.2 (${SOURCE}/crates/gvp-a530)
+   Compiling commodore-denise-ecs v0.34.2 (${SOURCE}/crates/commodore-denise-ecs)
+   Compiling motorola-68010 v0.34.2 (${SOURCE}/crates/motorola-68010)
+   Compiling commodore-agnus-ecs v0.34.2 (${SOURCE}/crates/commodore-agnus-ecs)
+   Compiling motorola-68020 v0.34.2 (${SOURCE}/crates/motorola-68020)
+   Compiling commodore-agnus-aga v0.34.2 (${SOURCE}/crates/commodore-agnus-aga)
+   Compiling motorola-68030 v0.34.2 (${SOURCE}/crates/motorola-68030)
+   Compiling motorola-68040 v0.34.2 (${SOURCE}/crates/motorola-68040)
+   Compiling common-commodore-amiga v0.34.2 (${SOURCE}/crates/common-commodore-amiga)
+   Compiling machine-commodore-amiga-ocs v0.34.2 (${SOURCE}/crates/machine-commodore-amiga-ocs)
+   Compiling commodore-denise-aga v0.34.2 (${SOURCE}/crates/commodore-denise-aga)
+   Compiling machine-commodore-amiga-a1200 v0.34.2 (${SOURCE}/crates/machine-commodore-amiga-a1200)
+   Compiling machine-commodore-amiga-ecs v0.34.2 (${SOURCE}/crates/machine-commodore-amiga-ecs)
+   Compiling runtime-commodore-amiga v0.34.2 (${SOURCE}/crates/runtime-commodore-amiga)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.97s
+     Running tests/disk_change.rs (${TARGET}/debug/deps/disk_change-7a07ccf530770fcc)
+
+running 4 tests
+test live_replacement_signals_change_even_before_the_first_video_frame ... FAILED
+test live_insertion_after_eject_preserves_change ... FAILED
+test startup_and_reset_preserve_the_firmware_mount_policy ... ok
+test restore_reattaches_media_without_inventing_a_change ... ok
+
+failures:
+
+---- live_replacement_signals_change_even_before_the_first_video_frame stdout ----
+
+thread 'live_replacement_signals_change_even_before_the_first_video_frame' (129180787) panicked at crates/runtime-commodore-amiga/tests/disk_change.rs:25:5:
+assertion `left == right` failed: drive latch on A500OcsPal
+  left: false
+ right: true
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- live_insertion_after_eject_preserves_change stdout ----
+
+thread 'live_insertion_after_eject_preserves_change' (129180786) panicked at crates/runtime-commodore-amiga/tests/disk_change.rs:25:5:
+assertion `left == right` failed: drive latch on A500OcsPal
+  left: false
+ right: true
+
+
+failures:
+    live_insertion_after_eject_preserves_change
+    live_replacement_signals_change_even_before_the_first_video_frame
+
+test result: FAILED. 2 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+
+error: test failed, to rerun pass `-p runtime-commodore-amiga --test disk_change`

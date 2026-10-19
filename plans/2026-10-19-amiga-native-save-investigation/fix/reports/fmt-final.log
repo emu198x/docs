@@ -1,0 +1,1 @@
+mise WARN  tracking config: failed to ln -sf ${SOURCE}/rust-toolchain.toml ${HOME}/.local/state/mise/tracked-configs/676419fb87f1ad00: Operation not permitted (os error 1)
