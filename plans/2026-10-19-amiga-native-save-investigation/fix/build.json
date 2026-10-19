@@ -1,0 +1,7 @@
+{
+  "source_revision": "6ff929f366e8762d5d5b9dadf53367b2cc692821",
+  "base_revision": "6cc5d5f9e7fe6507a079f237bc44da0dc95fe25c",
+  "binary_sha256": "a3acfa056fb38e68752ca1e6b7c9c349f3312e582e20cfc209aeda1e783b202a",
+  "final_build_equals_tested_binary": true,
+  "command": "cargo build --offline --locked --profile dist -p emu198x-amiga --no-default-features"
+}

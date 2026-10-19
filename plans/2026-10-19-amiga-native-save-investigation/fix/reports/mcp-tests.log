@@ -1,0 +1,71 @@
+mise WARN  tracking config: failed to ln -sf ${SOURCE}/rust-toolchain.toml ${HOME}/.local/state/mise/tracked-configs/676419fb87f1ad00: Operation not permitted (os error 1)
+    Blocking waiting for file lock on build directory
+   Compiling serde_core v1.0.229
+   Compiling winnow v1.0.3
+   Compiling semver v1.0.28
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.9
+   Compiling cc v1.2.62
+   Compiling rustc_version v0.4.1
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling serde_spanned v1.1.1
+   Compiling toml v1.1.3+spec-1.1.0
+   Compiling embed-resource v3.0.11
+   Compiling emu198x-app-icon v0.34.2 (${SOURCE}/crates/emu198x-app-icon)
+   Compiling emu198x-amiga v0.34.2 (${SOURCE}/crates/emu198x-amiga)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.40s
+     Running unittests src/main.rs (${TARGET}/debug/deps/emu198x_amiga-45b0f53b07bcc905)
+
+running 19 tests
+test mcp::lvo::tests::dos_open_disambiguated_by_offset ... ok
+test mcp::lvo::tests::negative_offset_resolves ... ok
+test mcp::lvo::tests::all_offsets_are_negative_and_multiples_of_six ... ok
+test app::tests::model_flag_covers_the_full_family ... ok
+test app::tests::a_bad_model_is_a_usage_error ... ok
+test app::tests::flags_cover_the_window_and_default_to_the_a500 ... ok
+test app::tests::flags_cover_the_headless_boot_wait_and_queries ... ok
+test mcp::lvo::tests::canonical_landmarks_match_ndk ... ok
+test mcp::lvo::tests::library_names_all_have_tables ... ok
+test mcp::lvo::tests::positive_offset_resolves_via_magnitude ... ok
+test mcp::lvo::tests::unknown_library_or_offset_returns_none ... ok
+test app::tests::headless_only_flags_route_to_script_mode ... ok
+test mcp::tools::tests::sidecar_path_keeps_extension_and_directory ... ok
+test app::tests::flags_cover_kickstart_disk_and_capture ... ok
+test mcp::tools::tests::amiga_tools_register_and_drive_a_headless_session ... ok
+test mcp::tools::tests::full_mcp_surface_is_keyboard_and_mouse_drivable ... ok
+test script::tests::script_set_machine_step_swaps_variant ... ok
+test app::tests::every_preset_launches_with_its_regional_frame_budget ... ok
+test script::tests::run_can_capture_png_and_wav ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.12s
+
+     Running tests/headless_mcp_replatform.rs (${TARGET}/debug/deps/headless_mcp_replatform-504a49cd76ed72d0)
+
+running 2 tests
+test shared_tool_sets_register_on_the_amiga_session ... ok
+test shared_tools_drive_the_amiga_session ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.49s
+
+     Running tests/mcp_smoke.rs (${TARGET}/debug/deps/mcp_smoke-25cab2798bd6b534)
+
+running 13 tests
+test lvo::tests::all_offsets_are_negative_and_multiples_of_six ... ok
+test lvo::tests::dos_open_disambiguated_by_offset ... ok
+test lvo::tests::negative_offset_resolves ... ok
+test lvo::tests::library_names_all_have_tables ... ok
+test lvo::tests::positive_offset_resolves_via_magnitude ... ok
+test lvo::tests::canonical_landmarks_match_ndk ... ok
+test lvo::tests::unknown_library_or_offset_returns_none ... ok
+test tools::tests::sidecar_path_keeps_extension_and_directory ... ok
+test tools::tests::amiga_tools_register_and_drive_a_headless_session ... ok
+test tools::tests::full_mcp_surface_is_keyboard_and_mouse_drivable ... ok
+test mcp_server_boots_and_lists_tools ... ok
+test set_machine_swaps_the_live_variant ... ok
+test mcp_tools_drive_a_real_boot has been running for over 60 seconds
+test mcp_tools_drive_a_real_boot ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 196.07s
+

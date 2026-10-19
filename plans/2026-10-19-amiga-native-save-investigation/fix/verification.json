@@ -1,0 +1,11 @@
+{
+  "status": "native_generic_round_trip_verified",
+  "source_revision": "6ff929f366e8762d5d5b9dadf53367b2cc692821",
+  "startup_reset_and_restore_regressions_pass": true,
+  "live_tests_failed_before_fix": true,
+  "all_native_insertions_use_load_media": true,
+  "save_filesystem_and_program_verified": true,
+  "cold_boot_native_load_syntax_run_roll_bank_verified": true,
+  "original_rom_and_runtime_unchanged": true,
+  "learner_effectiveness_verified": false
+}

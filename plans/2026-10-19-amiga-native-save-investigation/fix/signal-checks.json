@@ -1,0 +1,23 @@
+{
+  "before_mount": {
+    "change_pending": false,
+    "disk_changed_latch": false,
+    "step_events": 832,
+    "cylinder": 42,
+    "writable": true
+  },
+  "after_mount": {
+    "change_pending": true,
+    "disk_changed_latch": true,
+    "step_events": 832,
+    "cylinder": 42,
+    "writable": true
+  },
+  "after_60_frames": {
+    "change_pending": false,
+    "disk_changed_latch": false,
+    "step_events": 876,
+    "cylinder": 0,
+    "writable": true
+  }
+}

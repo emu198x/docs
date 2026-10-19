@@ -1,0 +1,85 @@
+mise WARN  tracking config: failed to ln -sf ${SOURCE}/rust-toolchain.toml ${HOME}/.local/state/mise/tracked-configs/676419fb87f1ad00: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling peripheral-commodore-amiga-floppy v0.34.2 (${SOURCE}/crates/peripheral-commodore-amiga-floppy)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.47s
+     Running unittests src/lib.rs (${TARGET}/debug/deps/peripheral_commodore_amiga_floppy-a5b1eb4f943972c7)
+
+running 32 tests
+test mfm::tests::clock_bits_for_all_one_data_are_all_clear ... ok
+test mfm::tests::clock_bits_for_all_zero_data_are_all_set ... ok
+test mfm::tests::encode_odd_even_round_trip ... ok
+test tests::encode_track_returns_none_without_disk ... ok
+test tests::flush_write_no_disk_returns_zero ... ok
+test tests::deselected_drive_still_reports_mechanical_status ... ok
+test tests::disk_change_cleared_by_step ... ok
+test mfm::tests::header_info_bytes_decode_to_expected_values ... ok
+test mfm::tests::sync_words_are_preserved_in_the_stream ... ok
+test tests::head_select ... ok
+test mfm::tests::encode_track_then_decode_round_trips ... ok
+test tests::flush_write_capture_persists_to_adf ... ok
+test tests::motor_off_select_shifts_id_stream_through_ready ... ok
+test tests::motor_state_updates_while_selected ... ok
+test tests::no_step_above_79 ... ok
+test tests::no_step_below_zero ... ok
+test tests::save_adf_returns_none_without_disk ... ok
+test tests::snapshot_media_reattachment_preserves_drive_state ... ok
+test tests::encode_track_returns_data_with_disk ... ok
+test tests::motor_on_bypasses_id_stream_and_reports_spin_state ... ok
+test tests::step_toward_center ... ok
+test tests::step_toward_edge ... ok
+test tests::motor_spinup ... ok
+test tests::track0_status ... ok
+test tests::writable_mount_does_not_report_dskprot ... ok
+test tests::write_mfm_capture_records_and_clears_words ... ok
+test tests::write_protected_mount_reports_dskprot_and_rejects_save ... ok
+test tests::spun_up_deselected_drive_stops_emitting_index_pulses ... ok
+test tests::spun_up_drive_keeps_status_but_hides_read_data_after_deselect ... ok
+test tests::spinup_completes_under_repeated_motor_on_writes ... ok
+test tests::spun_up_selected_drive_emits_index_pulse_once_per_revolution ... ok
+test tests::index_period_tracks_the_installed_region_e_clock ... ok
+
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/drive_state.rs (${TARGET}/debug/deps/drive_state-d58bff5d418a6117)
+
+running 12 tests
+test drive_id_stream_shifts_on_dsksel_falling_edge_with_motor_off ... ok
+test diagnostic_snapshot_exposes_drive_id_shift_progress ... ok
+test diagnostic_snapshot_exposes_media_mechanism_and_write_state_without_side_effects ... ok
+test dskchange_latched_on_insert_and_cleared_by_step ... ok
+test head_does_not_step_below_zero ... ok
+test head_side_follows_side_select_signal ... ok
+test eject_reasserts_dskchange_even_after_acknowledgement ... ok
+test head_steps_inward_up_to_cylinder_79 ... ok
+test selecting_with_motor_on_bypasses_id_stream ... ok
+test spinning_selected_drive_emits_one_index_pulse_per_revolution ... ok
+test deselecting_drive_suppresses_index_pulses ... ok
+test motor_spin_up_takes_full_spin_up_interval ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mfm_adf.rs (${TARGET}/debug/deps/mfm_adf-22fa689b8bc42324)
+
+running 8 tests
+test flush_write_capture_returns_zero_without_disk ... ok
+test save_adf_returns_none_without_disk ... ok
+test every_sector_has_sync_word_pair_at_offset_four ... ok
+test header_info_decodes_to_original_track_and_sector_numbers ... ok
+test encoded_track_has_fixed_byte_count ... ok
+test encode_then_decode_round_trips_all_11_sectors ... ok
+test decode_rejects_sector_with_bad_data_checksum ... ok
+test write_capture_flushes_through_to_adf_save ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests peripheral_commodore_amiga_floppy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

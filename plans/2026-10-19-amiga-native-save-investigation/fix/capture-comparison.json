@@ -1,0 +1,9 @@
+{
+  "generic-confirmed": true,
+  "cold-native-loaded": true,
+  "cold-native-syntax": true,
+  "cold-native-title": true,
+  "cold-runtime-title": true,
+  "cold-native-roll": true,
+  "cold-native-bank": true
+}

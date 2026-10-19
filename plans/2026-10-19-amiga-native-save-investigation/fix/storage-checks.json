@@ -1,0 +1,10 @@
+{
+  "filesystem_valid": {
+    "sound": true,
+    "problems": []
+  },
+  "program_bytes": 17734,
+  "program_sha256": "795dc45439a741932ec90af0e2ce4946dc24096105f9d48def936dc6b482a55b",
+  "program_equals_previous_explicit_notification_control": true,
+  "disk_sha256": "a13d48f120973b41e4cf8ec18f08407d7ab866c366367f5a1c12d931db1c2128"
+}

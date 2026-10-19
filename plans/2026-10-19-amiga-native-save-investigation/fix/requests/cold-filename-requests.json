@@ -1,0 +1,258 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "load_snapshot",
+      "arguments": {
+        "path": "${RUN}/cold-directory-fixed.state"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerMotion": {
+              "device": "mouse-1",
+              "dx": 80,
+              "dy": 84
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerMotion": {
+              "device": "mouse-1",
+              "dx": 0,
+              "dy": 84
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 6,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerMotion": {
+              "device": "mouse-1",
+              "dx": 70,
+              "dy": 75
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 7,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 8,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerMotion": {
+              "device": "mouse-1",
+              "dx": 0,
+              "dy": 75
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 9,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 10,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerMotion": {
+              "device": "mouse-1",
+              "dx": 0,
+              "dy": 14
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 11,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 12,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerButton": {
+              "device": "mouse-1",
+              "button": "left",
+              "pressed": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 13,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 14,
+    "method": "tools/call",
+    "params": {
+      "name": "input",
+      "arguments": {
+        "events": [
+          {
+            "PointerButton": {
+              "device": "mouse-1",
+              "button": "left",
+              "pressed": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 15,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 16,
+    "method": "tools/call",
+    "params": {
+      "name": "type_string",
+      "arguments": {
+        "text": "finish.amos",
+        "hold_frames": 3,
+        "settle_frames": 10
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 17,
+    "method": "tools/call",
+    "params": {
+      "name": "save_screenshot",
+      "arguments": {
+        "path": "${RUN}/cold-filename.png"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 18,
+    "method": "tools/call",
+    "params": {
+      "name": "save_snapshot",
+      "arguments": {
+        "path": "${RUN}/cold-filename.state"
+      }
+    }
+  }
+]

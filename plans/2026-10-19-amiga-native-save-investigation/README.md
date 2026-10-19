@@ -5,6 +5,9 @@ The unchanged emulator can save and reload Bank or Risk when the existing
 `insert_media` tool leaves that latch pending. No runtime fix is included:
 implementation remains deferred while the approach is reviewed.
 
+The approved [runtime fix and generic-route verification](fix/README.md)
+follow this pre-fix investigation.
+
 Issue: [Emu198x #1877](https://github.com/emu198x/emu198x/issues/1877).
 Emulator: `6cc5d5f9e7fe6507a079f237bc44da0dc95fe25c`, version 0.34.2.
 Disk validator: Build198x `f7016398deb1fff9dc1efb6713dfab8c7bacf2d0`, 0.2.12.

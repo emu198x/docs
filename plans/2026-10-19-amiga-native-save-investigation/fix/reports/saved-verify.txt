@@ -1,0 +1,1 @@
+${RUN}/generic-confirmed.save.adf: OK — 880K OFS "BankOrRisk"

@@ -1,0 +1,4 @@
+mise WARN  tracking config: failed to ln -sf ${SOURCE}/rust-toolchain.toml ${HOME}/.local/state/mise/tracked-configs/676419fb87f1ad00: Operation not permitted (os error 1)
+   Compiling runtime-commodore-amiga v0.34.2 (${SOURCE}/crates/runtime-commodore-amiga)
+   Compiling emu198x-amiga v0.34.2 (${SOURCE}/crates/emu198x-amiga)
+    Finished `dist` profile [optimized] target(s) in 21.64s

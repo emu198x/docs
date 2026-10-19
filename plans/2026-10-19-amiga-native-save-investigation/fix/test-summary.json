@@ -1,0 +1,17 @@
+{
+  "runtime-tests": {
+    "passed": 183,
+    "failed": 0,
+    "ignored": 1
+  },
+  "floppy-tests": {
+    "passed": 52,
+    "failed": 0,
+    "ignored": 0
+  },
+  "mcp-tests": {
+    "passed": 34,
+    "failed": 0,
+    "ignored": 0
+  }
+}
