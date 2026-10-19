@@ -1,0 +1,69 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "load_snapshot",
+      "arguments": {
+        "path": "${RUN}/native-no-change-entered.state"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "press_key",
+      "arguments": {
+        "key": "Return",
+        "hold_frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 240
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "save_screenshot",
+      "arguments": {
+        "path": "${RUN}/native-no-change-confirmed.png"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "method": "tools/call",
+    "params": {
+      "name": "save_disk",
+      "arguments": {
+        "path": "${RUN}/native-no-change-confirmed.adf"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 6,
+    "method": "tools/call",
+    "params": {
+      "name": "save_snapshot",
+      "arguments": {
+        "path": "${RUN}/native-no-change-confirmed.state"
+      }
+    }
+  }
+]

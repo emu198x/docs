@@ -1,0 +1,91 @@
+{
+  "generic": [
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    }
+  ],
+  "native": [
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": true,
+      "disk_changed_latch": true,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 876,
+      "cylinder": 0,
+      "writable": true
+    }
+  ],
+  "native-no-change": [
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    },
+    {
+      "change_pending": false,
+      "disk_changed_latch": false,
+      "step_events": 832,
+      "cylinder": 42,
+      "writable": true
+    }
+  ],
+  "controls": {
+    "immediate_generic_equals_blank": true,
+    "immediate_native_equals_blank": true,
+    "generic_equals_explicit_no_change_after_save": true
+  },
+  "disk_hashes": {
+    "generic-confirmed.save.adf": "2ed91a1cd028de27231f3bd5afa77c8670d4165d1878ccb7b87edb217a48b636",
+    "native-confirmed.save.adf": "a13d48f120973b41e4cf8ec18f08407d7ab866c366367f5a1c12d931db1c2128",
+    "native-no-change-confirmed.save.adf": "2ed91a1cd028de27231f3bd5afa77c8670d4165d1878ccb7b87edb217a48b636",
+    "before-generic-saved.save.adf": "a98b12c7527cc087f65ac886fa63eff61cd5e9600641b645a08ad5dc297cd71e",
+    "before-native-saved.save.adf": "de3d50d9766a22dea8fd35edf49b5dae9922bc5097aec93b084571d7af0c9ffb"
+  },
+  "private_inputs": {
+    "emu198x-amiga": "56f0b81680ea5ef3aa4dead5ad0048ca8cf3e2249e8a059b09d3772859c7b0cf",
+    "finish-save-request.state": "97f65f7d1ac298b5a8f0061dde0d5e45208ce1640c593be1a31d30ee6cf2ffc9",
+    "amos-work.adf": "f5052c16b47b33dedc51ffb15c2467a5b566377c5060c9826897b10bec36c6f5",
+    "save-data.adf": "a98b12c7527cc087f65ac886fa63eff61cd5e9600641b645a08ad5dc297cd71e"
+  },
+  "status": "investigation_complete_runtime_unchanged",
+  "cold_load": "finish.amos loaded into an independently booted editor, syntax checked, ran after returning requested system disk; rolled and banked 6"
+}

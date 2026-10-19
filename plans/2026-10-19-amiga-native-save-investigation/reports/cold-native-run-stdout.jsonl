@@ -1,0 +1,8 @@
+{"jsonrpc":"2.0","id":1,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":2,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"f2\",\"hold_frames\":3,\"reached\":462339116}","type":"text"}]}}
+{"jsonrpc":"2.0","id":3,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":180,\"reached\":487835756,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":4,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":5,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"f1\",\"hold_frames\":3,\"reached\":488402348}","type":"text"}]}}
+{"jsonrpc":"2.0","id":6,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":300,\"reached\":530896748,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":7,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":8,"result":{"content":[{"text":"null","type":"text"}]}}

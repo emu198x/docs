@@ -1,0 +1,5 @@
+{"jsonrpc":"2.0","id":1,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":2,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"Return\",\"hold_frames\":3,\"reached\":410779244}","type":"text"}]}}
+{"jsonrpc":"2.0","id":3,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":360,\"reached\":461772524,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":4,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":5,"result":{"content":[{"text":"null","type":"text"}]}}

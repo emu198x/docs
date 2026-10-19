@@ -1,0 +1,6 @@
+{"jsonrpc":"2.0","id":1,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":2,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"Return\",\"hold_frames\":3,\"reached\":540953756}","type":"text"}]}}
+{"jsonrpc":"2.0","id":3,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":240,\"reached\":574949276,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":4,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":5,"result":{"content":[{"text":"{\"bytes\":901120,\"overwrote_source\":false,\"path\":\"${RUN}/native-confirmed.save.adf\",\"saved\":true}","type":"text"}]}}
+{"jsonrpc":"2.0","id":6,"result":{"content":[{"text":"null","type":"text"}]}}

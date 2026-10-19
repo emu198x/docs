@@ -1,0 +1,7 @@
+{"jsonrpc":"2.0","id":1,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":2,"result":{"content":[{"text":"{\"change_pending\":true,\"has_disk\":true,\"inserted\":true,\"kind\":\"adf\",\"path\":\"${REPRO}/amos-work.adf\",\"source\":\"${REPRO}/amos-work.adf\",\"writable\":false}","type":"text"}]}}
+{"jsonrpc":"2.0","id":3,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":180,\"reached\":556393388,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":4,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"Return\",\"hold_frames\":3,\"reached\":556959980}","type":"text"}]}}
+{"jsonrpc":"2.0","id":5,"result":{"content":[{"text":"{\"kind\":\"run_frames\",\"frames\":300,\"reached\":599454380,\"stop_reason\":\"ReachedTarget\"}","type":"text"}]}}
+{"jsonrpc":"2.0","id":6,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":7,"result":{"content":[{"text":"null","type":"text"}]}}

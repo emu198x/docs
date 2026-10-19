@@ -1,0 +1,4 @@
+{"jsonrpc":"2.0","id":1,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":2,"result":{"content":[{"text":"{\"kind\":\"press_key\",\"key\":\"Tab\",\"hold_frames\":3,\"reached\":348737420}","type":"text"}]}}
+{"jsonrpc":"2.0","id":3,"result":{"content":[{"text":"null","type":"text"}]}}
+{"jsonrpc":"2.0","id":4,"result":{"content":[{"text":"null","type":"text"}]}}
