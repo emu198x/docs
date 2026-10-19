@@ -1,0 +1,96 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "load_snapshot",
+      "arguments": {
+        "path": "${RUN}/cold-ready.state"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "insert_media",
+      "arguments": {
+        "path": "${RUN}/native-confirmed.save.adf",
+        "kind": "adf",
+        "change_pending": true
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 360
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "query",
+      "arguments": {
+        "path": "disk"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "method": "tools/call",
+    "params": {
+      "name": "press_keys",
+      "arguments": {
+        "keys": [
+          "ramiga",
+          "l"
+        ],
+        "hold_frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 6,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 60
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 7,
+    "method": "tools/call",
+    "params": {
+      "name": "save_screenshot",
+      "arguments": {
+        "path": "${RUN}/cold-load-request.png"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 8,
+    "method": "tools/call",
+    "params": {
+      "name": "save_snapshot",
+      "arguments": {
+        "path": "${RUN}/cold-load-request.state"
+      }
+    }
+  }
+]

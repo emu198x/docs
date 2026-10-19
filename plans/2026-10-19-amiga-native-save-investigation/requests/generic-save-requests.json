@@ -1,0 +1,48 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "load_snapshot",
+      "arguments": {
+        "path": "${RUN}/generic-swap.state"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "type_string",
+      "arguments": {
+        "text": "DF0:finish.amos\n",
+        "hold_frames": 3,
+        "settle_frames": 360
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "save_screenshot",
+      "arguments": {
+        "path": "${RUN}/generic-entered.png"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "save_snapshot",
+      "arguments": {
+        "path": "${RUN}/generic-entered.state"
+      }
+    }
+  }
+]

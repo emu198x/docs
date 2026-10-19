@@ -1,0 +1,71 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "load_snapshot",
+      "arguments": {
+        "path": "${RUN}/cold-ready.state"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "type_string",
+      "arguments": {
+        "text": "Print \"Disk change probe\"\nWait Key\n",
+        "hold_frames": 3,
+        "settle_frames": 30
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "press_key",
+      "arguments": {
+        "key": "f2",
+        "hold_frames": 3
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "run_frames",
+      "arguments": {
+        "frames": 30
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "method": "tools/call",
+    "params": {
+      "name": "save_screenshot",
+      "arguments": {
+        "path": "${RUN}/fresh-program.png"
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 6,
+    "method": "tools/call",
+    "params": {
+      "name": "save_snapshot",
+      "arguments": {
+        "path": "${RUN}/fresh-program.state"
+      }
+    }
+  }
+]

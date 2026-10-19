@@ -1,0 +1,1 @@
+${RUN}/before-native-saved.save.adf: OK — 880K OFS "BankOrRisk"

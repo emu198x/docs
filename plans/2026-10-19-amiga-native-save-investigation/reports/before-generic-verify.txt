@@ -1,0 +1,1 @@
+${RUN}/before-generic-saved.save.adf: OK — 880K OFS "BankOrRisk"
