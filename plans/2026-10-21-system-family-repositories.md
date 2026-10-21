@@ -28,15 +28,22 @@ Agreed in the planning discussion:
 - Shared fixes reach families through explicit dependency updates and validation.
 - The shell is normally unchanged by system work; significant shared changes
   remain possible.
+- Crates that are or could be used by other systems become separately published
+  libraries. A second current consumer is not a prerequisite.
+- All format implementations migrate to Format198x, including formats currently
+  used by only one emulator.
 
 Proposed implementation:
 
 - Retain the flagship as the shared workspace, without renaming it during the pilot.
-- Keep family-only chips, machines, formats, runtimes, binaries, tests and
-  codebase-tied knowledge with their family, except existing independently
-  published libraries, whose ownership stays intact initially.
-- Publish only the library surfaces needed across repository boundaries. Internal
-  family crates can remain unpublished and share their family's version.
+- Keep machine wiring, family runtimes, binaries, tests and family knowledge with
+  their family. Publish reusable CPUs, chips, peripherals and host infrastructure
+  independently from the shared workspace, even with one current consumer.
+- Move all format parsing, encoding and format models to Format198x. Reuse codecs
+  already there; separate emulator state/playback adapters from those codecs.
+- Classify every crate for existing or plausible reuse before family extraction.
+  Family implementation details can remain unpublished and share their family's
+  version; library publication is not restricted to the pilot's dependency closure.
 - Keep aggregate consumers in the flagship initially. They may depend on families;
   shared libraries must not. Separate aggregate test/release jobs make that
   distinction explicit, even while they occupy one repository.
@@ -54,12 +61,27 @@ PRs. Agreement to plan is not permission to silently disregard them.
 | Source `knowledge/decisions/releases-are-cut-from-commits-not-packages.md` | Scope the existing suite mechanism to the remaining suite during transition; specify the first family's commit-based release scope. Do not reintroduce release-plz merely to perform extraction. |
 | Source `knowledge/decisions/versioning-milestones.md` | Apply the existing 0.x binary policy per family; preserve library API-stability criteria. |
 | Umbrella `decisions/project-skeleton-standard.md` | Record the independent-release reason for extraction and correct its stale claim that Emu198x already releases machines independently. This is not a split for symmetry. |
+| Umbrella `decisions/formats-graduate-to-their-own-projects.md` and Format198x agent context | Add the explicit Emu198x migration scope: every format implementation moves to Format198x without waiting for a second consumer. Keep byte codecs separate from emulator behaviour. |
 | Source `knowledge/decisions/the-guards-apply-to-the-only-committer.md` | Preserve required checks for owners. Explain that this split addresses release ownership, rather than missed failures; use the newer rebase-only merge policy. |
 
 The new Emu198x-specific decision belongs in source
 `knowledge/decisions/system-family-repositories.md`. Cross-project repo-map and
 skeleton changes belong at the umbrella. Keep the master plan here in the docs
 repository; link to it from the decision.
+
+Draft addition to the new decision, reflecting the agreed ownership rule:
+
+> Publish an Emu198x crate independently when it is used, or could be used, by
+> another system. Current consumer count does not decide eligibility. Assess
+> the component's hardware or host role and document a plausible reuse case;
+> do not require an invented consumer or a new abstraction. This replaces the
+> plan's former current-consumer-only criterion. All Emu198x format implementations
+> move to Format198x, overriding the existing graduation rule's second-consumer
+> prerequisite for this migration because file formats are independently useful
+> contracts. Machine timing, controller state and playback remain emulator
+> concerns and consume the Format198x codecs.
+
+This is a draft for the binding records, not an amendment applied by this plan.
 
 ## Evidence at the planning baseline
 
@@ -149,15 +171,20 @@ groupings are proposals. A common manufacturer or CPU alone does not define a
 family. BBC/Electron and Atari console boundaries likewise remain reviewable
 before their extraction, without reopening the agreed no-per-variant rule.
 
-For each extraction, produce an explicit move/retain table covering every crate
-in its dependency closure and every incoming consumer. No dependency is assigned
-by name alone. A family-only component follows its family; a component with
-actual consumers in different families stays shared. Existing published chips
-keep their package identities and versions even if only one family uses them.
+Before extraction, classify every crate as an independently published Emu198x
+library, a Format198x format implementation, a family implementation detail, or
+an aggregate consumer. Record existing users and plausible reuse separately.
+A CPU or peripheral is not family-private merely because only one current
+machine uses it. Reuse does not require parameterising away real hardware
+differences or redesigning the implementation. Existing published libraries
+keep their identities and versions.
 
-Standalone format ownership still follows the umbrella graduation decision.
-Do not create parallel parsers or move all formats to Format198x as a side
-effect. Identify the applicable owner for each crossing format before publishing.
+The [library and format ownership schedule](2026-10-21-system-family-repositories/library-and-format-ownership.md)
+sets the publication criteria, maps all 32 remaining format-named crates, and
+identifies adapter work. No family repository retains an independent format
+parser/encoder. Codecs already in Format198x are reused rather than duplicated.
+Controller-state conversion and machine timing live in emulator adapters, with
+names and ownership that make that role clear.
 
 Published package names must carry their org prefix, preserving category words:
 for example `runtime-dragon` would publish as `emu198x-runtime-dragon`. Internal
@@ -173,9 +200,9 @@ continue from its last shipped suite version, with the next appropriate bump;
 record the old repository/tag/commit so the lineage is unambiguous. Do not reset
 every family to 0.1.0. Existing library versions do not reset.
 
-Publishable family runtime libraries have their own API versions when necessary;
-unpublished internals can use the family workspace version. A runtime exists on
-the registry only because a real aggregate consumer needs it. The integration
+Publishable libraries have independent API versions; unpublished internals can
+use the family workspace version. Family runtimes are publication candidates
+for existing aggregate consumers and other plausible hosts. The integration
 workspace selects released versions; it does not force families to release
 together. Its own release describes that selected combination.
 
@@ -213,18 +240,18 @@ Dragon has a compact family entry point and is consumed by the fleet player.
 It tests both independent native delivery and downstream runtime adoption.
 It is a candidate, not a declaration that its current accuracy gates pass.
 
-Initial move candidates, each under source `crates/`:
+Family repository move candidates, each under source `crates/`:
 
 - `emu198x-dragon`, `runtime-dragon`, `machine-dragon-32`.
-- `format-dragon-bin`, `format-dragon-cas`, `format-dragon-disk`, `format-dragon-pak`.
-- `motorola-6809`, `motorola-pia-6821`, `motorola-sam-6883`, `mos-acia-6551`,
-  subject to checking non-Cargo consumers and existing publication commitments.
 
-At the recorded baseline, those four hardware crates have only
-`machine-dragon-32` as a direct local manifest consumer. The VDG does not:
-`motorola-vdg-6847` is used by Dragon and Acorn Atom machines, runtimes and
-binaries. Retain it shared. Publish the needed shell/UI/native-video/app-icon
-and test-helper dependency closure before switching Dragon to registry inputs.
+Publish `motorola-6809`, `motorola-pia-6821`, `motorola-sam-6883` and
+`mos-acia-6551` independently from the shared Emu198x workspace, with the required
+`emu198x-` prefix. Their only current direct manifest consumer is
+`machine-dragon-32`, but their hardware role makes them reusable components.
+`motorola-vdg-6847` is already shared with Acorn Atom and is published there too.
+All four Dragon format implementations move to Format198x; the family consumes
+their published versions. Publish the shell/UI/native-video/app-icon and
+test-helper dependency closure before switching Dragon to registry inputs.
 Recalculate that closure from manifests rather than treating this list as final.
 
 Dragon-specific scripts, fixtures and knowledge follow the family; shared test
@@ -247,6 +274,9 @@ PRs. Do not mix extraction with hardware corrections or interface redesign.
   and proposed repository name before creating its remote.
 - [ ] Write the pilot's complete ownership/consumer inventory beside this plan.
   Enumerate fixture jobs, docs, scripts and non-Cargo consumers explicitly.
+- [ ] Classify all 233 recorded crates, including plausible reuse and all 32
+  format-named crates, using the ownership schedule. Document any adapter split
+  and publication prerequisites; do not limit the review to Dragon's closure.
 
 **Verify:** every current pilot dependency and incoming consumer has an owner;
 the new decision names the broader rules it changes and why. No production
@@ -269,12 +299,21 @@ screenshots/audio/state/trace or protocol assertions can detect a regression.
 Record observed shell API compatibility; if routine pilot work still requires
 shared interface edits, stop and reduce or defer the pilot.
 
-### 3. Prepare the shared boundary in place
+### 3. Publish reusable components and migrate formats in stages
 
-- [ ] Edit source `Cargo.toml`, the pilot's actual shared dependency manifests,
+- [ ] Edit source `Cargo.toml`, reusable component manifests,
   `scripts/publishable-crates.py` and `.github/workflows/publish-crates.yml`
-  only as needed to package that closure with names, versions, metadata and
-  licenses intact. Do not flip `publish` for all 232 explicit members.
+  in small publication batches with names, independent versions, metadata and
+  licenses intact. Existing or plausible reuse determines scope; do not flip
+  `publish` for every crate indiscriminately.
+- [ ] Migrate all format implementations to `Format198x/format198x/crates/`,
+  with their history, specifications, decisions and tests. Update its workspace
+  and `release-plz.toml` as applicable. Follow the ownership schedule: reuse
+  existing codecs and separate playback/controller glue before migration.
+- [ ] Switch Emu198x consumers to each released Format198x crate before deleting
+  its old implementation. Carry no format implementation into a family repo.
+  Complete Dragon's format and hardware dependencies before its cutover;
+  schedule the other formats in explicit batches until none remain unmigrated.
 - [ ] Audit outgoing shared-library dependencies for family knowledge and
   rename only packages crossing a publication boundary.
 - [ ] In `crates/emu198x-web/`, plan the relocation of real-machine integration
@@ -287,7 +326,10 @@ shared interface edits, stop and reduce or defer the pilot.
 **Verify:** format, Clippy and existing tests pass for changed crates; archives
 contain required source/assets and no private media; no production shared
 library points back to a family. After separately approved publication, build
-an isolated consumer using registry sources with no local patches.
+an isolated consumer using registry sources with no local patches. Every format
+row has a verified Format198x implementation and converted consumer; adapter
+renaming alone cannot mark migration complete. Preserve save-state layout and
+machine timing while removing format-layer dependencies on emulator state.
 
 ### 4. Prepare Dragon's repository and CI without cutting over
 
@@ -379,8 +421,10 @@ adds mixed web bindings, drives and richer release checks. Reassess this order
 against actual changes and baseline failures rather than scheduling a mass move.
 
 The remaining families follow the approved ownership table in small batches,
-each with the same gates. Shared components become shared because of verified
-consumers, not anticipated reuse. At the end, decide whether aggregate products
+each with the same gates. Components with existing or plausible cross-system
+use are published independently before their consuming families move. Complete
+the full format migration schedule rather than treating the pilot as its scope.
+At the end, decide whether aggregate products
 need a separate repository; do not create one simply for layout symmetry.
 
 ## Failure modes and rollback
@@ -419,6 +463,12 @@ native packages retain the existing qualification guarantees; source/status/
 download ownership points to the new repository; and duplicate active source
 and task workspaces are removed. A new repository that builds is an intermediate
 step, not completion.
+
+The full migration also requires every crate to have a reviewed ownership
+classification, every reusable publication candidate to have an independent
+release or an explicit unresolved blocker, and all format implementations to
+reside in Format198x. An unresolved blocker is unfinished work, not a reason
+to quietly reclassify a reusable crate as family-private.
 
 For this planning task, completion means the dependency evidence and phased plan
 are committed and pushed for review. No migration, registry publication, release
