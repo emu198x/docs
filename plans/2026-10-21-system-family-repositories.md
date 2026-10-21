@@ -53,6 +53,12 @@ Agreed in the planning discussion:
   Lang198x analysis/services, Isa198x CPU conformance and Debug198x runtime
   integration. All aim for best-in-class supported capabilities. Lang198x's
   scope grows well beyond highlighting into language analysis and services.
+- Share Actions workflows and their supporting automation wherever behaviour
+  is common. Extend `stevehill1981/198x-workflows` before duplicating release and
+  qualification pipelines into family repositories; Dragon proves the result.
+- Separate cross-family frontend/integration work from shared-library work in
+  a distinct workspace. Keep it in the existing repository initially; another
+  repository is not required by this boundary.
 
 Proposed implementation:
 
@@ -66,9 +72,10 @@ Proposed implementation:
   Publish family implementation libraries by default as well as reusable shared
   libraries. Record narrow exceptions; being family-specific is not a reason
   by itself. Publication is not restricted to the pilot's dependency closure.
-- Keep aggregate consumers in the flagship initially. They may depend on families;
-  shared libraries must not. Separate aggregate test/release jobs make that
-  distinction explicit, even while they occupy one repository.
+- Keep aggregate consumers in the flagship initially, with separate jobs, then
+  move them into a distinct integration workspace as released runtime packages
+  become available. They may depend on families; shared libraries must not.
+  A shared-library-only job must not resolve/build the whole fleet by default.
 - Trial the model with Dragon before choosing a second family.
 
 ## Binding decisions to revise before implementation
@@ -83,7 +90,7 @@ PRs. Agreement to plan is not permission to silently disregard them.
 | Source `knowledge/decisions/releases-are-cut-from-commits-not-packages.md` | Scope the existing suite mechanism to the remaining suite during transition; specify the first family's commit-based release scope. Do not reintroduce release-plz merely to perform extraction. |
 | Source `knowledge/decisions/versioning-milestones.md` | Apply the existing 0.x binary policy per family; preserve library API-stability criteria. |
 | Source `knowledge/decisions/savestate-live-machine-serde.md` | Preserve the existing live-machine serialization and per-runtime version envelopes. Record the audit and any separately agreed, unambiguous counter-reset policy without claiming all decoders already enforce identical checks. |
-| Umbrella `decisions/project-skeleton-standard.md` | Record the independent-release reason for extraction and correct its stale claim that Emu198x already releases machines independently. This is not a split for symmetry. |
+| Umbrella `decisions/project-skeleton-standard.md` | Record the independent-release reason for extraction, shared automation ownership and integration workspace boundary; correct the stale claim that Emu198x already releases machines independently. This is not a split for symmetry. |
 | Umbrella `decisions/formats-graduate-to-their-own-projects.md` and Format198x agent context | Add the explicit Emu198x migration scope: every format implementation moves to Format198x without waiting for a second consumer. Keep byte codecs separate from emulator behaviour. |
 | Source `knowledge/decisions/the-guards-apply-to-the-only-committer.md` | Preserve required checks for owners. Explain that this split addresses release ownership, rather than missed failures; use the newer rebase-only merge policy. |
 
@@ -435,6 +442,57 @@ row has a verified Format198x implementation and converted consumer; adapter
 renaming alone cannot mark migration complete. Preserve save-state layout and
 machine timing while removing format-layer dependencies on emulator state.
 
+### 3a. W1: Extract shared release and qualification automation
+
+**Prerequisite:** finish the shared contract and demonstrate W1 through Dragon
+before cutting over its independent release. Design the shared calls before
+creating family-local copies. Ownership is `stevehill1981/198x-workflows`, with
+source/consumer changes in the repositories that actually call it.
+
+The existing shared repository already supplies `rust-ci.yml`, `pr-title.yml`,
+`release-pr.yml`, `pages-astro.yml` and `release-plz.yml`. Emu uses the Rust and
+PR checks today. Extend that implementation; retain Emu's commit-derived release
+semantics instead of adopting release-plz merely to reuse a workflow.
+
+| Shared machinery | Explicit caller-owned contract |
+|---|---|
+| Rust checks and workflow lint | Toolchain, features, coverage thresholds and required check identities |
+| Crate discovery, packaging and registry publication | Manifests, package versions, publication exceptions and publisher identity |
+| Version/changelog preparation | Family/library release grouping, bump policy and authored release notes |
+| Native builds, signing, producer receipts and install checks | Expected package inventory, target matrix, signing configuration and runtime smoke assertions |
+| Corpus provisioning and evidence collection | Fixture identities, availability policy, accuracy expectations and executed-case requirements |
+
+- [ ] Map the reusable portions of source `.github/workflows/ci.yml`,
+  `maintain-release.yml`, `publish-crates.yml`, `release.yml`,
+  `qualify-packages.yml` and `test-linux-packages.yml` to shared workflow calls.
+  Define inputs/outputs and stable required-check names before porting callers.
+- [ ] Move common supporting logic too: assess `scripts/source_lock.py`,
+  `scripts/test_source_lock.py`, `scripts/publishable-crates.py` and
+  `scripts/prepare-release.py` for shared helpers and caller-specific adapters.
+  Shipping shared YAML with full script copies in every caller is incomplete.
+- [ ] Deliver helpers through versioned shared actions or an explicit checkout
+  of the shared implementation. Do not assume a caller's checkout contains the
+  reusable workflow repository's helper files. Align helper/workflow versions.
+- [ ] Follow the shared repository's compatible `@v1` release convention; input
+  or behaviour changes requiring caller changes need the appropriate version
+  transition. Exercise representative calls before advancing compatible tags.
+- [ ] Preserve caller-repository source/lock identity, exact producer run/attempt
+  matching, package completeness, all five native qualification targets,
+  signing/notarisation controls and the separation of PR checks from publication.
+  Required permissions, trusted publishers and relevant secrets remain explicit.
+- [ ] Replace the source repo's applicable calls and Dragon's small caller
+  workflows with the shared implementation. Leave family-specific accuracy
+  checks, expected results and fixture definitions with the family.
+
+**Verify:** compare old and shared behaviour on the same committed inputs; run
+the real nonpublishing packaging path and inspect its actual artifacts. Deliberate
+lock mutation, missing packages/receipts, wrong producer identity and invalid
+installation/runtime results fail. Check a newly added publishable crate is
+discovered, existing registry versions are handled correctly, and failed registry
+requests do not masquerade as absence. No source-lock guarantee may be removed
+to make the shared abstraction fit. No actual shared workflow was changed by
+this planning update.
+
 ### 4. Prepare Dragon's repository and CI without cutting over
 
 - [ ] Create the approved `emu198x/dragon` workspace with its explicit crate list,
@@ -445,14 +503,14 @@ machine timing while removing format-layer dependencies on emulator state.
 - [ ] Copy the source at the recorded commit; avoid independent edits to both
   copies. Track every temporary clone/worktree and freeze the moved paths for
   the short cutover window, replaying any intervening commits explicitly.
-- [ ] Add `.github/workflows/ci.yml`, `release-pr.yml`, `maintain-release.yml`,
-  `release.yml` and `qualify-packages.yml` scoped to the family. Reuse current
-  family workflow conventions; do not blindly regenerate maintained cargo-dist
-  signing, producer or Homebrew steps.
-- [ ] Port the applicable `scripts/source_lock.py`, `scripts/test_source_lock.py`
-  and release preparation checks. Provision required checks, registry trusted
-  publication, signing/notarisation and corpus access only at their owning repo.
-  Keep owner enforcement and rebase-only PR merges.
+- [ ] Add small caller workflows for CI, release preparation, native release and
+  qualification using W1's versioned shared implementation, plus family-specific
+  jobs. Do not copy full maintained cargo-dist/signing/Homebrew pipelines or
+  blindly regenerate them.
+- [ ] Configure the shared helpers' family inputs and retain only necessary
+  family adapters. Provision required checks, registry trusted publication,
+  signing/notarisation and corpus access at their owning repo. Keep owner
+  enforcement and rebase-only PR merges.
 
 **Verify:** a fresh isolated checkout builds/tests without sibling directories;
 renamed package APIs and feature sets match the baseline. A real nonpublishing
@@ -531,8 +589,38 @@ The remaining families follow the approved ownership table in small batches,
 each with the same gates. Components with existing or plausible cross-system
 use are published independently before their consuming families move. Complete
 the full format migration schedule rather than treating the pilot as its scope.
-At the end, decide whether aggregate products
-need a separate repository; do not create one simply for layout symmetry.
+Schedule W2 as runtime libraries become available; it need not wait until every
+family repository has moved. A separate aggregate repository remains a later
+ownership decision.
+
+### W2: Separate the cross-family integration workspace
+
+**Scope:** fleet browser bindings, player packaging, Apple host integration and
+cross-family conformance tests that select multiple released runtimes. The
+generic `emu198x-web`, shell and hardware libraries remain shared production
+libraries. Move their real-machine integration tests into integration ownership
+where necessary, preserving the tests rather than duplicating them.
+
+- [ ] Inventory `crates/emu198x-fleet-web`, `crates/emu198x-apple`, mixed
+  `crates/emu198x-commodore-web`, `web-player/`, `apple/` and the relevant build
+  scripts. Record public package/ABI ownership before selecting the workspace
+  path; family-only web bindings can stay with their family.
+- [ ] Create the distinct workspace and committed integration lockfile in the
+  existing repository after the required family/shared packages are available.
+  Final release builds use published dependencies; temporary development paths
+  do not qualify the isolated consumer. Keep unrelated family development moving
+  while incomplete publication prerequisites remain visible.
+- [ ] Give shared-library and integration checks separate explicit entry points.
+  A library change can request relevant downstream checks without making every
+  library-only build resolve all family runtimes. Integration releases record
+  their selected compatible package set and preserve public frontend behaviour.
+
+**Verify:** an isolated shared-library build has no production dependency back
+to a family; the separate integration workspace exercises its positively named
+runtime matrix with its own lockfile. Browser capability/save-state checks and
+Apple ABI/build checks continue to run. Missing selected families fail instead
+of disappearing from the matrix. This changes workspace ownership, not the
+agreed machine-family boundaries or the deferred Forge scope.
 
 ## Required sibling investigations
 
@@ -571,6 +659,7 @@ complete. No GitHub issues have been created by this planning update.
 | A reset reuses a legacy save-state number for different bytes | Retain existing identities or enforce a distinct generation/namespace before incompatible decoding; test legacy restore or explicit rejection. |
 | Extracted system vanishes from checks or downloads | Positive inventory reconciliation; missing expected family/package fails. Never infer removal from absence. |
 | Copying CI drops a guard | Deliberate failing cases for source locks, omitted packages and corrupted archives; real five-host qualification. |
+| Shared YAML still leaves drifting script copies | Versioned common helpers and small explicit caller adapters; verify actual producer artifacts through Dragon. |
 | Two copies receive fixes | Brief path freeze, source-revision map and replayed intervening commits; only one authoritative implementation after cutover. |
 | Historical knowledge or attribution is lost | Verify retained history/provenance and moved citations before source deletion. |
 
@@ -605,6 +694,9 @@ exception has a concrete recorded reason. An unresolved publication blocker is
 unfinished work, not a reason to quietly exempt a family-specific library.
 The four sibling investigations also require their recorded design/experiment
 outcomes; a successful repository split does not close them by implication.
+W1 must be demonstrated by the Dragon pilot, and W2 must preserve the explicit
+integration matrix without reintroducing family dependencies into shared
+production libraries. Reusable automation includes its supporting scripts.
 
 For this planning task, completion means the dependency evidence and phased plan
 are committed and pushed for review. No migration, registry publication, release
