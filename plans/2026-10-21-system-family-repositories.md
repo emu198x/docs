@@ -31,6 +31,10 @@ Agreed in the planning discussion:
   remain possible.
 - Crates that are or could be used by other systems become separately published
   libraries. A second current consumer is not a prerequisite.
+- crates.io publication is the default for library crates, including
+  system-specific machines, runtimes and helpers. Most crates should publish;
+  every exception needs a specific reason. Reuse determines source ownership,
+  not whether a library is eligible for publication.
 - All format implementations migrate to Format198x, including formats currently
   used by only one emulator.
 - ZX80 and ZX81 have separate repositories. Atari 8-bit computer models stay
@@ -54,9 +58,10 @@ Proposed implementation:
   independently from the shared workspace, even with one current consumer.
 - Move all format parsing, encoding and format models to Format198x. Reuse codecs
   already there; separate emulator state/playback adapters from those codecs.
-- Classify every crate for existing or plausible reuse before family extraction.
-  Family implementation details can remain unpublished and share their family's
-  version; library publication is not restricted to the pilot's dependency closure.
+- Classify every crate for ownership and publication before family extraction.
+  Publish family implementation libraries by default as well as reusable shared
+  libraries. Record narrow exceptions; being family-specific is not a reason
+  by itself. Publication is not restricted to the pilot's dependency closure.
 - Keep aggregate consumers in the flagship initially. They may depend on families;
   shared libraries must not. Separate aggregate test/release jobs make that
   distinction explicit, even while they occupy one repository.
@@ -70,7 +75,7 @@ PRs. Agreement to plan is not permission to silently disregard them.
 | Record | Required amendment |
 |---|---|
 | Source `knowledge/decisions/workspace-shape.md` | Replace the unified-workspace default for family products with staged extraction for independent releases. Record that reduced interface churn is an assumption to test. |
-| Source `knowledge/decisions/versioning-strategy.md` | Replace the requirement that native binaries remain in suite lockstep forever. Preserve independent library versions and avoid per-crate versions for family internals. |
+| Source `knowledge/decisions/versioning-strategy.md` | Replace suite lockstep and the assumption that most crates never publish. Default library crates to crates.io publication, with documented exceptions. Shared libraries version independently; tightly coupled family packages may follow their family's release cadence. |
 | Source `knowledge/decisions/releases-are-cut-from-commits-not-packages.md` | Scope the existing suite mechanism to the remaining suite during transition; specify the first family's commit-based release scope. Do not reintroduce release-plz merely to perform extraction. |
 | Source `knowledge/decisions/versioning-milestones.md` | Apply the existing 0.x binary policy per family; preserve library API-stability criteria. |
 | Source `knowledge/decisions/savestate-live-machine-serde.md` | Preserve the existing live-machine serialization and per-runtime version envelopes. Record the audit and any separately agreed, unambiguous counter-reset policy without claiming all decoders already enforce identical checks. |
@@ -85,11 +90,14 @@ repository; link to it from the decision.
 
 Draft addition to the new decision, reflecting the agreed ownership rule:
 
-> Publish an Emu198x crate independently when it is used, or could be used, by
-> another system. Current consumer count does not decide eligibility. Assess
-> the component's hardware or host role and document a plausible reuse case;
-> do not require an invented consumer or a new abstraction. This replaces the
-> plan's former current-consumer-only criterion. All Emu198x format implementations
+> Publish library crates to crates.io by default, including system-specific
+> machine, runtime and helper libraries. Record a specific reason for each
+> exception; current consumer count or family specificity is not sufficient.
+> Existing or plausible cross-system reuse determines shared source ownership
+> and independent library releases. Do not require an invented consumer or a new
+> abstraction. Tightly coupled family packages may publish on the family's
+> release cadence. This replaces the old assumption that most internal crates
+> never publish. All Emu198x format implementations
 > move to Format198x, overriding the existing graduation rule's second-consumer
 > prerequisite for this migration because file formats are independently useful
 > contracts. Machine timing, controller state and playback remain emulator
@@ -202,9 +210,11 @@ for independent publication, so separate repositories need not duplicate common
 code. Give each shared crate one owner and released dependencies. A common
 manufacturer or CPU alone does not require a combined repository.
 
-Before extraction, classify every crate as an independently published Emu198x
-library, a Format198x format implementation, a family implementation detail, or
-an aggregate consumer. Record existing users and plausible reuse separately.
+Before extraction, record each crate's source owner (shared Emu198x workspace,
+Format198x, family or aggregate host) separately from its publication status.
+Library crates publish by default in every ownership category; family ownership
+does not imply `publish = false`. Record specific exceptions and temporary
+packaging blockers separately. Record existing users and plausible reuse too.
 A CPU or peripheral is not family-private merely because only one current
 machine uses it. Reuse does not require parameterising away real hardware
 differences or redesigning the implementation. Existing published libraries
@@ -231,9 +241,12 @@ continue from its last shipped suite version, with the next appropriate bump;
 record the old repository/tag/commit so the lineage is unambiguous. Do not reset
 every family to 0.1.0. Existing library versions do not reset.
 
-Publishable libraries have independent API versions; unpublished internals can
-use the family workspace version. Family runtimes are publication candidates
-for existing aggregate consumers and other plausible hosts. The integration
+Shared libraries have independent API versions. Tightly coupled machine,
+runtime and helper packages may use their family's workspace version and publish
+together; publishing does not require a separate release schedule for every
+package. Family libraries are published even without another current consumer.
+Each published package's version must describe its compatibility under the
+existing release rules. The integration
 workspace selects released versions; it does not force families to release
 together. Its own release describes that selected combination.
 
@@ -350,6 +363,10 @@ PRs. Do not mix extraction with hardware corrections or interface redesign.
 - [ ] Classify all 233 recorded crates, including plausible reuse and all 32
   format-named crates, using the ownership schedule. Document any adapter split
   and publication prerequisites; do not limit the review to Dragon's closure.
+- [ ] Produce the default-publication list and explicit exception list for all
+  library crates. Review command-line binaries for useful crates.io installation
+  as well as native archive delivery. Packaging blockers remain pending work,
+  not permanent exceptions; family specificity is not an exception.
 - [ ] Include complete peripheral machines in the shared publication inventory:
   `machine-commodore-1541`, `machine-commodore-1571`, `machine-commodore-1581`,
   `common-commodore-iec`, `common-commodore-iec-drive` and
@@ -382,13 +399,13 @@ screenshots/audio/state/trace or protocol assertions can detect a regression.
 Record observed shell API compatibility; if routine pilot work still requires
 shared interface edits, stop and reduce or defer the pilot.
 
-### 3. Publish reusable components and migrate formats in stages
+### 3. Publish library crates and migrate formats in stages
 
 - [ ] Edit source `Cargo.toml`, reusable component manifests,
   `scripts/publishable-crates.py` and `.github/workflows/publish-crates.yml`
-  in small publication batches with names, independent versions, metadata and
-  licenses intact. Existing or plausible reuse determines scope; do not flip
-  `publish` for every crate indiscriminately.
+  in small publication batches with names, package versions, metadata and
+  licenses intact. Prepare shared and family libraries for publication by
+  default. Verify each package's readiness rather than blindly flipping flags.
 - [ ] Migrate all format implementations to `Format198x/format198x/crates/`,
   with their history, specifications, decisions and tests. Update its workspace
   and `release-plz.toml` as applicable. Follow the ownership schedule: reuse
@@ -551,11 +568,11 @@ download ownership points to the new repository; and duplicate active source
 and task workspaces are removed. A new repository that builds is an intermediate
 step, not completion.
 
-The full migration also requires every crate to have a reviewed ownership
-classification, every reusable publication candidate to have an independent
-release or an explicit unresolved blocker, and all format implementations to
-reside in Format198x. An unresolved blocker is unfinished work, not a reason
-to quietly reclassify a reusable crate as family-private.
+The full migration also requires every crate to have reviewed source ownership
+and publication status, every non-exempt library to have a published release,
+and all format implementations to reside in Format198x. Each unpublished
+exception has a concrete recorded reason. An unresolved publication blocker is
+unfinished work, not a reason to quietly exempt a family-specific library.
 
 For this planning task, completion means the dependency evidence and phased plan
 are committed and pushed for review. No migration, registry publication, release
