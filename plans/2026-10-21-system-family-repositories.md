@@ -39,6 +39,12 @@ Agreed in the planning discussion:
 - SG-1000 and SC-3000 belong together in the SG-1000-family repository. This
   boundary is agreed; separation from Master System and Game Gear remains
   provisional. SC-3000 support is future scope, not an implemented fleet feature.
+- Reusable peripheral machines, including Commodore disk drives, are independently
+  published shared libraries rather than implementation details of one host.
+- Published libraries declare compatible dependency ranges; applications select
+  exact resolved versions through committed lockfiles and reviewed updates.
+- Reuse the existing per-runtime save-state versioning. Review possible counter
+  resets per system; a reset is not automatic when a repository is extracted.
 
 Proposed implementation:
 
@@ -67,6 +73,7 @@ PRs. Agreement to plan is not permission to silently disregard them.
 | Source `knowledge/decisions/versioning-strategy.md` | Replace the requirement that native binaries remain in suite lockstep forever. Preserve independent library versions and avoid per-crate versions for family internals. |
 | Source `knowledge/decisions/releases-are-cut-from-commits-not-packages.md` | Scope the existing suite mechanism to the remaining suite during transition; specify the first family's commit-based release scope. Do not reintroduce release-plz merely to perform extraction. |
 | Source `knowledge/decisions/versioning-milestones.md` | Apply the existing 0.x binary policy per family; preserve library API-stability criteria. |
+| Source `knowledge/decisions/savestate-live-machine-serde.md` | Preserve the existing live-machine serialization and per-runtime version envelopes. Record the audit and any separately agreed, unambiguous counter-reset policy without claiming all decoders already enforce identical checks. |
 | Umbrella `decisions/project-skeleton-standard.md` | Record the independent-release reason for extraction and correct its stale claim that Emu198x already releases machines independently. This is not a split for symmetry. |
 | Umbrella `decisions/formats-graduate-to-their-own-projects.md` and Format198x agent context | Add the explicit Emu198x migration scope: every format implementation moves to Format198x without waiting for a second consumer. Keep byte codecs separate from emulator behaviour. |
 | Source `knowledge/decisions/the-guards-apply-to-the-only-committer.md` | Preserve required checks for owners. Explain that this split addresses release ownership, rather than missed failures; use the newer rebase-only merge policy. |
@@ -148,7 +155,7 @@ of a family are implemented.
 |---|---|
 | `sinclair-zx-spectrum` | `sinclair-zx-spectrum`, including existing Spectrum variants and clones |
 | `commodore-amiga` | `commodore-amiga`, with OCS, ECS and A1200 implementations together |
-| `commodore-c64` | `commodore-c64`, with its drive machines initially |
+| `commodore-c64` | `commodore-c64`; consumes independently published drive machines and IEC libraries |
 | `nintendo-game-boy` | `nintendo-game-boy` |
 | `nintendo-nes` | `nintendo-nes` |
 | `dragon` | `dragon`, keeping 32/64 together |
@@ -230,13 +237,13 @@ for existing aggregate consumers and other plausible hosts. The integration
 workspace selects released versions; it does not force families to release
 together. Its own release describes that selected combination.
 
-For the pilot, exact requirements on direct cross-repository Emu198x libraries,
-plus committed consumer lockfiles and `--locked` builds, express deliberate
-adoption. This prevents a routine compatible patch refresh from silently
-adopting a new direct shared version. Verify the full resolved lock diff too:
-an exact direct requirement does not freeze transitive dependencies by itself.
-Review this constraint policy after the pilot rather than automatically applying
-it to unrelated third-party dependencies.
+Published libraries normally declare compatible SemVer ranges. Applications and
+aggregate consumers commit their resolved `Cargo.lock` and build with `--locked`.
+Adoption is an explicit, reviewed dependency/lockfile update, including compatible
+patches and all transitive changes. Do not put exact requirements into every
+published runtime: otherwise compatible dependencies can conflict when several
+families are linked into one host. Any necessary exact requirement needs its own
+documented compatibility reason. Preserve the producer lock receipts.
 
 A shared change is released first. A consumer update PR records old/new versions,
 the intended benefit, full lockfile changes and family validation. No automatic
@@ -257,6 +264,48 @@ path escapes or `[patch]` overrides. Use patches only for bounded development
 checks. Detect normal dependency cycles before publication. Dev-only cycles
 must be separated into integration tests where packaging or independent CI
 requires it; preserve the underlying tests.
+
+### Existing save-state schemas and possible counter resets
+
+Save-state versions already exist independently of product/package versions.
+The binding source decision `knowledge/decisions/savestate-live-machine-serde.md`
+defines live-machine serialization and runtime envelopes. Reuse that design;
+repository extraction does not call for a new save-state system.
+
+A source spot check at `63efdfba1f0c7394ebec5189b2b0cccc64aac292` found:
+
+| Runtime | Source file under `crates/` | Snapshot version |
+|---|---|---|
+| Dragon | `runtime-dragon/src/runtime.rs` | 1 |
+| NES | `runtime-nintendo-nes/src/snapshot.rs` | 1 |
+| Game Boy | `runtime-nintendo-game-boy/src/snapshot.rs` | 2 |
+| Spectrum | `runtime-sinclair-zx-spectrum/src/snapshot.rs` | 10 |
+| C64 | `runtime-commodore-c64/src/snapshot.rs` | 19 |
+| Amiga | `runtime-commodore-amiga/src/snapshot.rs` | 63 |
+
+This is a later observation than the dependency inventory, not a refresh of its
+baseline or a full compatibility audit. Source, not this table, owns current
+values. Spectrum, C64 and Amiga inspect the version before full payload decode;
+the inspected Dragon and NES paths decode the envelope first. Do not claim
+uniform decoder behaviour merely because each has a counter.
+
+For every family, record its current schema identity, released readers/writers,
+known prior identities, representative saved states and intended compatibility
+policy. Unchanged serialized layout keeps its identity through extraction.
+UI-only releases and dependency updates with unchanged serialized state do not
+require a schema bump. A shared chip's serialized layout or continuation changes
+can require a family schema change even if its Rust API is compatible.
+
+Counter resets may be appropriate for particular systems, subject to that audit
+and an explicit family decision. Do not reuse a number for a different layout
+in the same accepted namespace: a reader must distinguish old and new identities
+before interpreting incompatible payloads. If a restart is chosen, agree an
+enforced format-generation discriminator or other unambiguous separation, and
+define whether legacy states are converted or rejected. A repository name or
+release note alone does not distinguish file bytes. Keep existing states intact;
+test rejection without mutating the running machine or replacing the saved file.
+
+This plan changes no counters and selects no systems for a reset.
 
 ## Pilot recommendation: Dragon
 
@@ -301,6 +350,13 @@ PRs. Do not mix extraction with hardware corrections or interface redesign.
 - [ ] Classify all 233 recorded crates, including plausible reuse and all 32
   format-named crates, using the ownership schedule. Document any adapter split
   and publication prerequisites; do not limit the review to Dragon's closure.
+- [ ] Include complete peripheral machines in the shared publication inventory:
+  `machine-commodore-1541`, `machine-commodore-1571`, `machine-commodore-1581`,
+  `common-commodore-iec`, `common-commodore-iec-drive` and
+  `common-commodore-drive-gcr`. Review their actual dependency closures.
+- [ ] Audit existing save-state identities and released reader/writer behaviour
+  per family. Record any proposed reset and its byte-level distinction before
+  changing a counter; otherwise retain the existing identity.
 
 **Verify:** every current pilot dependency and incoming consumer has an owner;
 the new decision names the broader rules it changes and why. No production
@@ -317,6 +373,9 @@ manifests, releases or repository maps change in this work package.
   this plan. Enumerate pre-existing failures; fix blocking bugs before extraction.
 - [ ] Record a current packaged native baseline and the relevant browser path.
   Confirm which checks run on each of the five existing native targets.
+- [ ] Retain representative states from the shipped baseline and verify restore
+  and subsequent execution after extraction. Exercise incompatible-state
+  rejection; where a reset is proposed, prove old/new identities cannot collide.
 
 **Verify:** required fixtures are present, tests really execute, and chosen
 screenshots/audio/state/trace or protocol assertions can detect a regression.
@@ -434,7 +493,10 @@ route. No path reference or release automation still expects deleted source.
 
 **Verify:** unrelated products retain versions and archive identities; the
 updated consumer has the intended shared fix; all selected integration paths
-pass. If coordination exceeds the benefit, stop rollout with one family extracted.
+pass. The lockfile records adopted versions without unnecessary exact constraints
+in published libraries, and save-state outcomes match the family's declared
+compatibility policy. If coordination exceeds the benefit, stop rollout with one
+family extracted.
 
 ## Rollout after the pilot
 
@@ -459,6 +521,7 @@ need a separate repository; do not create one simply for layout symmetry.
 | Shared fix is never adopted | Explicit affected-consumer checklist with verified update or documented deferral. |
 | Local paths hide missing registry packages | Fresh isolated checkout and registry-backed package build, without sibling paths or patches. |
 | Shell types or feature sets diverge | Native and aggregate builds with real selected versions; compare resolved dependency graphs and capabilities. |
+| A reset reuses a legacy save-state number for different bytes | Retain existing identities or enforce a distinct generation/namespace before incompatible decoding; test legacy restore or explicit rejection. |
 | Extracted system vanishes from checks or downloads | Positive inventory reconciliation; missing expected family/package fails. Never infer removal from absence. |
 | Copying CI drops a guard | Deliberate failing cases for source locks, omitted packages and corrupted archives; real five-host qualification. |
 | Two copies receive fixes | Brief path freeze, source-revision map and replayed intervening commits; only one authoritative implementation after cutover. |

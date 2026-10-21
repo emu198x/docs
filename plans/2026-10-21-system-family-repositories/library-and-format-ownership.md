@@ -17,6 +17,7 @@ package contents, changelog and release process.
 |---|---|
 | CPU cores and instruction-family support | Independently published Emu198x libraries. A single implemented machine is not a reason to bury a general CPU core in that family. |
 | Chips and peripherals | Publish when their hardware function can serve another system, including components with one current consumer. Model the actual part; no invented generic interface is required. |
+| Complete peripheral machines | Independently published Emu198x libraries where reusable. Keep the 1541/1571/1581 drive machines and IEC/GCR support in the shared workspace; host families consume their released versions. |
 | Shell, UI, native video, browser host, app icon, test support | Publish the reusable host/tooling surfaces independently. Keep real-machine integration tests outside the shared production dependency graph. |
 | Common tape, cassette, bus and family helpers | Review the actual responsibility. Publish reusable interpretation or hardware behaviour; place file byte layouts and codecs in Format198x. Keep machine wiring with its family. |
 | Machines and runtimes | Keep ownership with the family. Publish library entry points useful to existing or plausible alternate hosts; internals need not each acquire a registry identity. |
@@ -34,6 +35,20 @@ are reusable hardware libraries and stay in the shared workspace for independent
 publication. They do not move into Dragon simply because several currently have
 only one local consumer. Preserve published identities where they already exist;
 add `emu198x-` to newly published package names without dropping category words.
+
+The reusable machine rule includes a peripheral's complete emulation, not just
+its chips. `machine-commodore-1541`, `machine-commodore-1571` and
+`machine-commodore-1581`, with the applicable `common-commodore-iec`,
+`common-commodore-iec-drive` and `common-commodore-drive-gcr` dependencies, remain
+shared publication candidates. Their disk byte codecs move to Format198x.
+The C64 repository integrates drives through released dependencies; it does not
+own their implementations merely because it is their current host.
+
+Published libraries normally use compatible dependency ranges; committed
+application lockfiles select the exact shipped combination. Validate peripheral
+state inside the owning family's save-state envelope when adopting a new drive
+or chip version: API compatibility alone does not establish serialized-state
+compatibility.
 
 ## Format migration inventory
 
