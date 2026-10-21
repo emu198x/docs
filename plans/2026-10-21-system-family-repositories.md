@@ -49,6 +49,10 @@ Agreed in the planning discussion:
   exact resolved versions through committed lockfiles and reviewed updates.
 - Reuse the existing per-runtime save-state versioning. Review possible counter
   resets per system; a reset is not automatic when a repository is extracted.
+- Include four downstream investigations: Build198x artifact execution,
+  Lang198x analysis/services, Isa198x CPU conformance and Debug198x runtime
+  integration. All aim for best-in-class supported capabilities. Lang198x's
+  scope grows well beyond highlighting into language analysis and services.
 
 Proposed implementation:
 
@@ -530,6 +534,32 @@ the full format migration schedule rather than treating the pilot as its scope.
 At the end, decide whether aggregate products
 need a separate repository; do not create one simply for layout symmetry.
 
+## Required sibling investigations
+
+The [sibling investigation findings and work items](2026-10-21-system-family-repositories/sibling-investigations.md)
+record source baselines, executed existing checks and four required follow-ups:
+
+| Work item | Owner and concrete outcome | Dependency |
+|---|---|---|
+| B1: artifact-to-execution validation | Build198x builds a Spectrum BASIC TAP and verifies actual diagnostic execution through registry-backed runtime dependencies. | Published Spectrum runtime/shared closure; does not require moving the Spectrum repository first. |
+| L1: language-analysis extraction and growth | Lang198x reviews Spectrum AST/parser and BASIC diagnostic ownership, preserves existing consumers, and defines a bounded next semantic service alongside continued AMOS expansion. | Existing source and profiles; design work can begin before family extraction. |
+| I1: published CPU conformance | Reproduce the Z80 decoder check with published crates, reconcile coverage and investigate a documented execution subset. | Published CPU and Isa packages; no per-CPU Isa split assumed. |
+| D1: debug sidecar through a family runtime | Execute an Asm198x-built diagnostic with its actual Debug198x mapping and verify a source breakpoint through the published Dragon runtime. | Dragon runtime/shared libraries published; follows the pilot. |
+
+Best-in-class is the quality target for each supported surface, including
+usability, correctness, independent reference evidence and adverse inputs.
+Package availability alone does not meet it. Lang198x highlighting is an early
+surface: source-preserving parsing, semantic diagnostics, profiles and language
+services/LSP are part of its direction, with native interoperability and
+compiler/interpreter work requiring their own designs. Preserve canonical
+ownership rather than inventing duplicate parsers or debugger formats.
+
+These investigations are programme deliverables and should have distinct linked
+subissues in their owning projects. They are not all prerequisites for Dragon
+cutover. Record the design/experiment results, blockers and follow-on work; the
+existing baseline tests in the findings document do not mark the investigations
+complete. No GitHub issues have been created by this planning update.
+
 ## Failure modes and rollback
 
 | Current risk or split risk | Required evidence/control |
@@ -573,6 +603,8 @@ and publication status, every non-exempt library to have a published release,
 and all format implementations to reside in Format198x. Each unpublished
 exception has a concrete recorded reason. An unresolved publication blocker is
 unfinished work, not a reason to quietly exempt a family-specific library.
+The four sibling investigations also require their recorded design/experiment
+outcomes; a successful repository split does not close them by implication.
 
 For this planning task, completion means the dependency evidence and phased plan
 are committed and pushed for review. No migration, registry publication, release
