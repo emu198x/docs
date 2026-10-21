@@ -3,32 +3,49 @@
 **Status:** Planning. No crates move or publish as part of this document.
 
 This supplements the [family repository plan](../2026-10-21-system-family-repositories.md).
-The ownership rule is existing **or potential** cross-system reuse. Formats
-move to Format198x regardless of current consumer count.
+Library crates publish to crates.io by default, including system-specific
+libraries. Existing **or potential** cross-system reuse determines shared
+source ownership, not publication eligibility. Formats move to Format198x
+regardless of current consumer count.
 
 ## Independently published Emu198x libraries
 
 Publish reusable crates individually from the shared Emu198x workspace; this
 does not require a repository per library. Family repositories consume released
-versions. Each publication gets its own version, API documentation, tests,
-package contents, changelog and release process.
+versions. Each publication needs a package version, API documentation, tests,
+reviewed package contents and release notes. Shared libraries release
+independently; tightly coupled family libraries can publish together using
+their family's version and changelog.
 
 | Component | Publication criterion and intended owner |
 |---|---|
 | CPU cores and instruction-family support | Independently published Emu198x libraries. A single implemented machine is not a reason to bury a general CPU core in that family. |
-| Chips and peripherals | Publish when their hardware function can serve another system, including components with one current consumer. Model the actual part; no invented generic interface is required. |
+| Chips and peripherals | Publish by default. Existing or potential cross-system hardware use places them in the shared workspace, including components with one current consumer. Model the actual part; no invented generic interface is required. |
 | Complete peripheral machines | Independently published Emu198x libraries where reusable. Keep the 1541/1571/1581 drive machines and IEC/GCR support in the shared workspace; host families consume their released versions. |
 | Shell, UI, native video, browser host, app icon, test support | Publish the reusable host/tooling surfaces independently. Keep real-machine integration tests outside the shared production dependency graph. |
-| Common tape, cassette, bus and family helpers | Review the actual responsibility. Publish reusable interpretation or hardware behaviour; place file byte layouts and codecs in Format198x. Keep machine wiring with its family. |
-| Machines and runtimes | Keep ownership with the family. Publish library entry points useful to existing or plausible alternate hosts; internals need not each acquire a registry identity. |
-| Native executables and aggregate applications | Product releases, with reusable library entry points assessed separately. |
+| Common tape, cassette, bus and family helpers | Publish library crates by default. Review responsibility for ownership: reusable interpretation/hardware behaviour stays shared; byte layouts/codecs go to Format198x; machine wiring stays with its family. |
+| Machines and runtimes | Publish libraries by default, with ownership in the family. No second consumer or alternate-host proposal is required. Coupled family packages may publish on one release cadence. |
+| Native executables and aggregate applications | Preserve product releases and publish library entry points by default. Review command-line binaries for crates.io installation where useful; do not assume every platform packaging wrapper belongs on the registry. |
+
+Publication exceptions must describe the concrete reason: for example, a local
+corpus provisioning harness that cannot operate as a standalone package, or a
+temporary packaging-only crate with no distributable implementation. These are
+examples to evaluate, not blanket exemptions for helpers, tests or family code.
+Private/media inputs, missing metadata, naming work and unpublished dependencies
+are readiness blockers to resolve, not permission to forget the default.
+
+For each exception, record its owner, reason and when it should be reconsidered.
+Do not publish empty placeholders or add generic interfaces to make a package
+appear reusable. Publish the existing useful implementation with an honest API
+and pre-1.0 compatibility policy.
 
 For every crate in `dependencies.tsv`, the implementation inventory must record:
-owner, independently published or internal status, existing consumers, plausible
+owner, publication target or explicit exception, existing consumers, plausible
 reuse, package name/version, dependency closure, packaging blockers, relevant
 tests and migration batch. Assess the responsibility, not just the name or the
-number of current incoming edges. Record a concrete reuse case without claiming
-an unimplemented consumer exists.
+number of current incoming edges. A reuse case explains shared ownership;
+absence of one does not block publication of a family library. Do not claim an
+unimplemented consumer exists.
 
 For the Dragon pilot, the 6809 CPU, 6821 PIA, 6883 SAM, 6847 VDG and 6551 ACIA
 are reusable hardware libraries and stay in the shared workspace for independent
