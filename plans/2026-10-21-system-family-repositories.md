@@ -36,6 +36,9 @@ Agreed in the planning discussion:
 - ZX80 and ZX81 have separate repositories. Atari 8-bit computer models stay
   together as variants are added. The other listed boundaries are agreed, with
   separate Sega repositories the current preference rather than a final decision.
+- SG-1000 and SC-3000 belong together in the SG-1000-family repository. This
+  boundary is agreed; separation from Master System and Game Gear remains
+  provisional. SC-3000 support is future scope, not an implemented fleet feature.
 
 Proposed implementation:
 
@@ -165,7 +168,7 @@ of a family are implemented.
 | `memotech-mtx` | `memotech-mtx` |
 | `msx` | `msx` |
 | `oric` | `oric-atmos` |
-| `sega-sg-1000` (provisional separate repository) | `sega-sg-1000` |
+| `sega-sg-1000` (SG-1000/SC-3000 together; wider Sega split provisional) | `sega-sg-1000` now; SC-3000 joins this repository when implemented |
 | `sega-master-system` (provisional separate repository) | `sega-master-system` |
 | `sega-game-gear` (provisional separate repository) | `sega-game-gear` |
 | `sinclair-zx80` | `sinclair-zx80` |
@@ -179,8 +182,14 @@ within each remain together. Atari's 8-bit computer repository is deliberately
 broader than the currently implemented 800XL. Atari consoles retain their
 separate listed repositories.
 
-The current preference is separate SG-1000, Master System and Game Gear
-repositories. Confirm this grouping before their extraction. Their shared
+SG-1000 and SC-3000 share the SG-1000-family repository, including their model
+variants. The source knowledge record
+`knowledge/systems/sega-sg-1000/overview.md` and its upward reference citations
+distinguish their RAM and I/O circuitry as well as the keyboard. Shared ownership
+does not imply identical hardware or claim that SC-3000 is already implemented.
+
+The current preference is separate SG-1000/SC-3000, Master System and Game Gear
+repositories. Confirm that wider grouping before their extraction. Their shared
 `runtime-sega-master-system-class`, video and sound components are candidates
 for independent publication, so separate repositories need not duplicate common
 code. Give each shared crate one owner and released dependencies. A common
