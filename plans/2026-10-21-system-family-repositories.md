@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-21
 
-**Status:** Planning only. The family boundary is agreed; migration and publication are not authorised by this plan.
+**Status:** Planning only. Repository boundaries are agreed except the provisional Sega split; migration and publication are not authorised by this plan.
 
 **Lane:** Engineering-frontier work — repository ownership and release infrastructure.
 
@@ -17,7 +17,8 @@ to each emulator without requiring every emulator to adopt and ship it together.
 
 This document defines the proposed migration, its checks and its stopping points.
 It changes no current release policy, repository ownership or executable code.
-Names, the pilot and the rollout order below are recommendations for review.
+Repository slugs, the pilot and the rollout order below are recommendations for
+review. Sega's grouping remains provisional.
 
 ## Agreed intent and proposed details
 
@@ -32,6 +33,9 @@ Agreed in the planning discussion:
   libraries. A second current consumer is not a prerequisite.
 - All format implementations migrate to Format198x, including formats currently
   used by only one emulator.
+- ZX80 and ZX81 have separate repositories. Atari 8-bit computer models stay
+  together as variants are added. The other listed boundaries are agreed, with
+  separate Sega repositories the current preference rather than a final decision.
 
 Proposed implementation:
 
@@ -133,8 +137,9 @@ if its manifests happen to match. The inventory is not a release manifest.
 ## Repository and package ownership
 
 Proposed repository slugs use the existing family identifiers where practical.
-The table covers every current fleet feature. A row is an ownership proposal,
-not a claim that all models of that family are implemented.
+The table covers every current fleet feature. Boundaries are agreed except the
+marked Sega rows; slugs remain proposed. The table does not claim that all models
+of a family are implemented.
 
 | Proposed repository under `emu198x/` | Current fleet feature(s) |
 |---|---|
@@ -151,7 +156,7 @@ not a claim that all models of that family are implemented.
 | `atari-2600` | `atari-2600` |
 | `atari-5200` | `atari-5200` |
 | `atari-7800` | `atari-7800` |
-| `atari-8bit` | `atari-800xl` |
+| `atari-8bit` | `atari-800xl` now; other Atari 8-bit computer variants join this repository as implemented |
 | `commodore-pet` | `commodore-pet` |
 | `commodore-vic-20` | `commodore-vic-20` |
 | `coleco-colecovision` | `coleco-colecovision` |
@@ -160,16 +165,26 @@ not a claim that all models of that family are implemented.
 | `memotech-mtx` | `memotech-mtx` |
 | `msx` | `msx` |
 | `oric` | `oric-atmos` |
-| `sega-8bit` | `sega-sg-1000`, `sega-master-system`, `sega-game-gear` |
-| `sinclair-zx80-zx81` | `sinclair-zx80`, `sinclair-zx81` |
+| `sega-sg-1000` (provisional separate repository) | `sega-sg-1000` |
+| `sega-master-system` (provisional separate repository) | `sega-master-system` |
+| `sega-game-gear` (provisional separate repository) | `sega-game-gear` |
+| `sinclair-zx80` | `sinclair-zx80` |
+| `sinclair-zx81` | `sinclair-zx81` |
 | `sord-m5` | `sord-m5` |
 | `spectravideo-svi` | `spectravideo-svi-328` |
 | `tatung-einstein` | `tatung-einstein` |
 
-Sega's shared runtime and the ZX80/ZX81 grouping warrant joint review; these
-groupings are proposals. A common manufacturer or CPU alone does not define a
-family. BBC/Electron and Atari console boundaries likewise remain reviewable
-before their extraction, without reopening the agreed no-per-variant rule.
+ZX80 and ZX81 are separate product lines for repository ownership; variants
+within each remain together. Atari's 8-bit computer repository is deliberately
+broader than the currently implemented 800XL. Atari consoles retain their
+separate listed repositories.
+
+The current preference is separate SG-1000, Master System and Game Gear
+repositories. Confirm this grouping before their extraction. Their shared
+`runtime-sega-master-system-class`, video and sound components are candidates
+for independent publication, so separate repositories need not duplicate common
+code. Give each shared crate one owner and released dependencies. A common
+manufacturer or CPU alone does not require a combined repository.
 
 Before extraction, classify every crate as an independently published Emu198x
 library, a Format198x format implementation, a family implementation detail, or
