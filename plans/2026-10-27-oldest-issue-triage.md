@@ -66,6 +66,8 @@ All commands used `--locked` and a separate disposable target directory.
 | `cargo test --locked -p nintendo-nes-cartridge --lib` | 47 passed; zero failures, ignores or filters. Includes the three FME7 tests, three VRC7 tests and five Namco 163 tests. |
 | `cargo test --locked -p machine-nintendo-nes --test expansion_audio` | Four passed; zero failures, ignores or filters. Sunsoft 5B, Namco 163, VRC6 and VRC7 reach the machine mix. |
 | `cargo test --locked -p emu198x-yamaha-ym2413 --lib` | 11 passed; zero failures, ignores or filters. Includes VRC7 variant behaviour and deterministic snapshot continuation. |
+| `cargo test --locked -p emu198x-yamaha-ym2413 --test nuked_oracle` | One test passes all 28 committed Nuked-OPLL golden cases: 14 each for YM2413/VRC7, including every instrument and all channels. The test asserts the case count. No goldens were regenerated. |
+| `cargo test --locked -p emu198x-gi-ay-3-8910 --lib` | 22 passed; zero failures, ignores or filters. |
 | `cargo test --locked -p emu198x-commodore-agnus-ecs -p emu198x-commodore-gayle -p emu198x-peripheral-sinclair-zx-spectrum-beta-disk -p machine-nintendo-nes --lib` | Respectively 78, 11, 5 and 24 passed. Four NES tests remain ignored. No failures. |
 
 The cartridge tests assert actual bank contents, IRQ transitions and generated
