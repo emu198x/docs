@@ -20,19 +20,12 @@ records creation order and original titles, not live status.
 | [1](2026-10-27-oldest-issue-triage.md) | #35–#102 | 25 | #86/#88 completed; scope/evidence comments. |
 | [2](2026-10-27-issue-triage-batch-02.md) | #103–#211 | 25 | #105 consolidated into #1284; hardware/scope corrections and fresh audio/pot reproductions. |
 | [3](2026-10-27-issue-triage-batch-03.md) | #215–#260 | 25 | #244 completed; stale board, media, persistence and hardware premises corrected. |
-
 | [4](2026-10-27-issue-triage-batch-04.md) | #261–#329 | 25 | MTX/Ace fixes in PRs #2167/#2168; malformed Einstein DSK input reproduced and promoted to a bug. |
-
 | [5](2026-10-27-issue-triage-batch-05.md) | #333–#418 | 25 | Narrowed BBC Model B disk and Electron ROM work; preserved source/design gates and corrected persistence scope. |
-
 | [6](2026-10-27-issue-triage-batch-06.md) | #421–#810 | 25 | #499 completed with real CPC disk execution; narrowed implemented cartridge/core work and retained qualification gaps. |
-
 | [7](2026-10-27-issue-triage-batch-07.md) | #823–#1424, plus docs/site | 25 | docs #2 completed; aligned Amiga epics with implemented A530/configuration and retained proposed contracts. |
-
 | [8](2026-10-27-issue-triage-batch-08.md) | #1427–#1814 | 25 | #1794 completed with ROM-driven tape workflow; retained video/controller reference disagreements and quality gates. |
-
 | [9](2026-10-27-issue-triage-batch-09.md) | #1831–#2007 | 25 | #1983 completed; separated shipped controller fixes from remaining physical research and extraction gates. |
-
 | [10](2026-10-27-issue-triage-batch-10.md) | #2032–#2149 | 23 | #2032 completed; #2060 consolidated into #2138; concrete runner/firmware/input bugs and rule-34 splits retained. |
 
 ## Sweep complete
@@ -65,4 +58,4 @@ evidence gates. Family extraction #1999 waits for the measured shell-stability
 window (starting no earlier than 27 October) and publication prerequisites.
 
 This is a dated triage record, not an all-system usability or hardware-accuracy
-claim. Findings remain in **draft docs PR #137** for editing. The [final positive state read and finite-queue reconciliation](2026-10-27-issue-triage-final-states.json) are retained beside this index.
+claim. Findings remain in [draft docs PR #137](https://github.com/emu198x/docs/pull/137) for editing. The [final positive state read and finite-queue reconciliation](2026-10-27-issue-triage-final-states.json) are retained beside this index.
