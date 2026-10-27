@@ -1,0 +1,27 @@
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling emu198x-tape-playback v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-tape-playback)
+   Compiling emu198x-nec-upd765a v0.1.0
+   Compiling emu198x-gi-ay-3-8910 v0.6.1 (/private/tmp/198x-triage-source/crates/emu198x-gi-ay-3-8910)
+   Compiling emu198x-zilog-z80 v0.8.0
+   Compiling emu198x-motorola-6845 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-motorola-6845)
+   Compiling emu198x-intel-8255 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-intel-8255)
+   Compiling emu198x-amstrad-gate-array v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-amstrad-gate-array)
+   Compiling format-tzx v0.45.0 (/private/tmp/198x-triage-source/crates/format-tzx)
+   Compiling emu198x-gi-ay-3-8912 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-gi-ay-3-8912)
+   Compiling format-amstrad-cpc-cdt v0.45.0 (/private/tmp/198x-triage-source/crates/format-amstrad-cpc-cdt)
+   Compiling format-amstrad-dsk v0.45.0 (/private/tmp/198x-triage-source/crates/format-amstrad-dsk)
+   Compiling machine-amstrad-cpc v0.45.0 (/private/tmp/198x-triage-source/crates/machine-amstrad-cpc)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.80s
+     Running tests/firmware_disc.rs (/private/tmp/198x-triage-target/debug/deps/firmware_disc-9bf2f7a4759294e1)
+
+running 2 tests
+test the_664_catalogues_and_runs_a_program_from_disc ... ok
+test the_6128_catalogues_and_runs_a_program_from_disc ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.70s
+

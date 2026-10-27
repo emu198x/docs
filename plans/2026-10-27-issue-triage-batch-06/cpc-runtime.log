@@ -1,0 +1,33 @@
+ Downloading crates ...
+  Downloaded emu198x-nec-upd765a v0.1.0
+   Compiling emu198x-tape-playback v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-tape-playback)
+   Compiling emu198x-nec-upd765a v0.1.0
+   Compiling format198x-tzx v0.1.0
+   Compiling emu198x-amstrad-gate-array v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-amstrad-gate-array)
+   Compiling format198x-amstrad-cpc-dsk v0.1.1
+   Compiling format-tzx v0.45.0 (/private/tmp/198x-triage-source/crates/format-tzx)
+   Compiling format-amstrad-cpc-cdt v0.45.0 (/private/tmp/198x-triage-source/crates/format-amstrad-cpc-cdt)
+   Compiling machine-amstrad-cpc v0.45.0 (/private/tmp/198x-triage-source/crates/machine-amstrad-cpc)
+   Compiling format-amstrad-dsk v0.45.0 (/private/tmp/198x-triage-source/crates/format-amstrad-dsk)
+   Compiling runtime-amstrad-cpc v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-amstrad-cpc)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.12s
+     Running tests/disc_media.rs (/private/tmp/198x-triage-target/debug/deps/disc_media-ce2a78263cad855f)
+
+running 5 tests
+test a_464_has_no_disc_slots ... ok
+test export_writes_the_live_disc_as_extended_dsk ... ok
+test a_malformed_disc_is_refused ... ok
+test reset_keeps_the_discs_and_eject_removes_them ... ok
+test a_disc_goes_into_the_named_drive ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-triage-target/debug/deps/snapshot_roundtrip-d8a053621b781cb1)
+
+running 3 tests
+test a_runtime_with_no_firmware_runs_without_advancing ... ok
+test a_snapshot_from_another_model_is_refused ... ok
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+

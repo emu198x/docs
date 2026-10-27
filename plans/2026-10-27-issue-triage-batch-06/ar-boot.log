@@ -1,0 +1,9 @@
+   Compiling machine-atari-2600 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-atari-2600)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running tests/supercharger_boot.rs (/private/tmp/198x-triage-target/debug/deps/supercharger_boot-bc0ca5128802ed06)
+
+running 1 test
+test phaser_patrol_fast_loads_and_renders ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+
