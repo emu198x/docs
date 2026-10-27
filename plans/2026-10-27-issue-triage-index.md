@@ -29,11 +29,13 @@ records creation order and original titles, not live status.
 
 | [7](2026-10-27-issue-triage-batch-07.md) | #823–#1424, plus docs/site | 25 | docs #2 completed; aligned Amiga epics with implemented A530/configuration and retained proposed contracts. |
 
+| [8](2026-10-27-issue-triage-batch-08.md) | #1427–#1814 | 25 | #1794 completed with ROM-driven tape workflow; retained video/controller reference disagreements and quality gates. |
+
 ## Remaining plan
 
-Continue at **#1427**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **73** unreviewed entries after
-batch 7. Give every batch its own plan/findings file and commit; read back issue
+Continue at **#1831**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **48** unreviewed entries after
+batch 8. Give every batch its own plan/findings file and commit; read back issue
 states/edits before recording the outcome. Reuse the isolated checkout and build
 cache while the sweep is active, then verify remote retention and remove all
 task workspaces, caches and processes.
