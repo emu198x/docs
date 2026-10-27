@@ -58,3 +58,5 @@ Einstein bounded public-API probe: valid synthetic control accepted; descriptor 
 MTX PR #2167: regression failed before the fix, then all 14 runtime tests passed; targeted Clippy and formatting passed. Ace PR #2168 changes provenance comments only. Their final CI/merge status will be recorded separately; #261 remains open.
 
 Ownership correction: the October 25 Emu198x layout exception removes the second-reader gate for existing Emu format crates. New parser ownership still needs an explicit scoped choice; machine adapters stay with Emu198x.
+
+Final source-fix status: PR #2167 and PR #2168 both merged after every reported check completed successfully or explicitly skipped. #2167’s first GTK attempt failed during Ubuntu apt/dpkg setup before compilation; the bounded rerun passed. #286 is closed completed by #2168. #261 remains open for actual direct file loading.

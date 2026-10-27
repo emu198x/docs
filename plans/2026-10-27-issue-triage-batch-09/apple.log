@@ -1,0 +1,37 @@
+    Updating crates.io index
+   Compiling machine-nintendo-game-boy v0.45.0 (/private/tmp/198x-triage-source/crates/machine-nintendo-game-boy)
+   Compiling emu198x-pointer v0.45.0 (/private/tmp/198x-triage-source/crates/emu198x-pointer)
+   Compiling runtime-nintendo-game-boy v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-nintendo-game-boy)
+   Compiling emu198x-fleet-web v0.45.0 (/private/tmp/198x-triage-source/crates/emu198x-fleet-web)
+   Compiling emu198x-apple v0.45.0 (/private/tmp/198x-triage-source/crates/emu198x-apple)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.64s
+     Running tests/c_interface.rs (/private/tmp/198x-triage-target/debug/deps/c_interface-446a3a0134107e57)
+
+running 16 tests
+test queries_answer_as_fleet_does ... ok
+test autoload_reaches_the_runtime_and_is_spectrum_only ... ok
+test pixel_aspect_comes_from_the_runtime ... ok
+test the_catalogue_lists_compiled_variants ... ok
+test null_arguments_are_refused_not_dereferenced ... ok
+test the_commands_are_the_shell_catalogue ... ok
+test failures_report_a_status_and_a_message ... ok
+test advance_runs_the_frames_wall_clock_time_owes ... ok
+test audio_that_does_not_fit_waits_for_the_next_read ... ok
+test port_zero_drives_the_spectrum_kempston_joystick ... ok
+test a_saved_state_resumes_identically ... ok
+test game_boy_frames_and_audio_match_fleet ... ok
+test machines_tear_down_repeatedly ... ok
+test synthetic_spectrum_sound_and_picture_match_fleet ... ok
+test autoload_starts_a_tape_with_the_real_rom ... ok
+test spectrum_boots_and_matches_fleet ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.67s
+
+     Running tests/header.rs (/private/tmp/198x-triage-target/debug/deps/header-487237d67d3bea5b)
+
+running 2 tests
+test header_status_values_match_rust ... ok
+test header_declares_every_export_and_nothing_else ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

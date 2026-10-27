@@ -31,11 +31,13 @@ records creation order and original titles, not live status.
 
 | [8](2026-10-27-issue-triage-batch-08.md) | #1427–#1814 | 25 | #1794 completed with ROM-driven tape workflow; retained video/controller reference disagreements and quality gates. |
 
+| [9](2026-10-27-issue-triage-batch-09.md) | #1831–#2007 | 25 | #1983 completed; separated shipped controller fixes from remaining physical research and extraction gates. |
+
 ## Remaining plan
 
-Continue at **#1831**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **48** unreviewed entries after
-batch 8. Give every batch its own plan/findings file and commit; read back issue
+Continue at **#2032**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **23** unreviewed entries after
+batch 9. Give every batch its own plan/findings file and commit; read back issue
 states/edits before recording the outcome. Reuse the isolated checkout and build
 cache while the sweep is active, then verify remote retention and remove all
 task workspaces, caches and processes.
