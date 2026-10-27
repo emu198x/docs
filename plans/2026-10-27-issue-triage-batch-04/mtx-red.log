@@ -1,0 +1,24 @@
+
+running 2 tests
+test unsupported_media_does_not_report_success_or_change_live_state ... FAILED
+test an_empty_media_set_preserves_the_live_machine ... ok
+
+failures:
+
+---- unsupported_media_does_not_report_success_or_change_live_state stdout ----
+
+thread 'unsupported_media_does_not_report_success_or_change_live_state' (198804400) panicked at crates/runtime-memotech-mtx/tests/media.rs:26:13:
+MTX must not claim that Tape media was loaded on Mtx500
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    unsupported_media_does_not_report_success_or_change_live_state
+
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+   Compiling machine-memotech-mtx v0.45.0 (/private/tmp/198x-triage-source/crates/machine-memotech-mtx)
+   Compiling runtime-memotech-mtx v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.55s
+     Running tests/media.rs (/private/tmp/198x-triage-target/debug/deps/media-9304188cb8dbc30c)
+error: test failed, to rerun pass `-p runtime-memotech-mtx --test media`

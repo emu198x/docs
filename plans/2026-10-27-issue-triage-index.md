@@ -33,15 +33,36 @@ records creation order and original titles, not live status.
 
 | [9](2026-10-27-issue-triage-batch-09.md) | #1831–#2007 | 25 | #1983 completed; separated shipped controller fixes from remaining physical research and extraction gates. |
 
-## Remaining plan
+| [10](2026-10-27-issue-triage-batch-10.md) | #2032–#2149 | 23 | #2032 completed; #2060 consolidated into #2138; concrete runner/firmware/input bugs and rule-34 splits retained. |
 
-Continue at **#2032**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **23** unreviewed entries after
-batch 9. Give every batch its own plan/findings file and commit; read back issue
-states/edits before recording the outcome. Reuse the isolated checkout and build
-cache while the sweep is active, then verify remote retention and remove all
-task workspaces, caches and processes.
+## Sweep complete
+
+All **248** initial issues have a disposition across ten batches: nine batches
+of 25 and one of 23. The frozen open-at-start queue has 246 entries; #86/#88
+had already closed in batch 1. Repository plus issue number is the identity,
+including docs #2 and site #6. New arrivals are outside this sweep.
+
+Nine verified completions: flagship #86, #88, #244, #286, #499, #1794, #1983
+and #2032, plus docs #2. Two superseded/duplicate scopes were consolidated:
+#105 into #1284 and #2060 into #2138. Existing source, dated retained evidence,
+fresh tests and missing physical/browser/OS qualification are distinguished in
+each batch. Detailed original requirements remain alongside current corrections.
+
+Two small source fixes merged after complete CI: #2167 rejects unsupported MTX
+media instead of reporting a successful no-op; #2168 records the Ace gray level
+as an uncalibrated presentation default. #261 remains open for actual file
+loading. The new bounded Einstein DSK probe promoted #277 to a bug: two malformed
+inputs panic and a missing sector payload is silently accepted.
+
+## Next bounded work
+
+Address the confirmed bugs before broader features. #277 needs complete parser
+bounds/payload/geometry handling; agree any dependency migration first. Other
+small candidates include C64 MCP PRG startup #1858, CoCo firmware/text input
+#2134/#2135, native-UI audit scope #2137 and the source-backed A2000 prose
+correction #2147. Larger timing/schema/host work retains its explicit design and
+evidence gates. Family extraction #1999 waits for the measured shell-stability
+window (starting no earlier than 27 October) and publication prerequisites.
 
 This is a dated triage record, not an all-system usability or hardware-accuracy
-claim. Source revision, test counts, fixture omissions and evidence limits live
-in each batch. Findings are being retained in draft docs PR #137 for editing.
+claim. Findings remain in **draft docs PR #137** for editing. The [final positive state read and finite-queue reconciliation](2026-10-27-issue-triage-final-states.json) are retained beside this index.
