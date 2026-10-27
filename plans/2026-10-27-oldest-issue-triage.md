@@ -11,7 +11,7 @@ of a quick-fix pass.
 1. Fetch the ordered issue queue and review the first 25 entries, #35–#102.
 2. Verify likely completions with focused tests and follow their output into
    the machine's audio mix. Record omissions and ignored tests explicitly.
-3. After the dependency work lands, close evidenced completions and comment
+3. After the dependency review, close evidenced completions and comment
    where the old scope materially differs from the current source.
 4. Commit and push this evidence. Remove task-owned worktrees and build caches
    after checking that their commits are retained remotely.
@@ -47,9 +47,9 @@ source repository's status records remain authoritative.
 | [#79](https://github.com/emu198x/emu198x/issues/79) | Mapper 66 is still absent from cartridge dispatch. | Keep open; bus-conflict behaviour and a ROM-level check remain prerequisites. |
 | [#80](https://github.com/emu198x/emu198x/issues/80) | `Region::Pal` now selects PAL clock divisors, scanlines, APU tables and odd-frame behaviour. The region enum still has no Dendy variant. | Keep open, distinguish implemented PAL from remaining Dendy and selection-path verification. |
 | [#81](https://github.com/emu198x/emu198x/issues/81) | The issue already records merged ROM-size and trainer corrections while retaining its metadata/board-policy gaps. | Keep open; those bounded fixes do not complete NES 2.0. |
-| [#86](https://github.com/emu198x/emu198x/issues/86) | Mapper 69 has PRG/CHR/RAM banking, IRQ counter and AY-backed 5B audio, clocked into the machine mix. Banking, IRQ, pitch and mix tests pass. | Ready to close the implementation request with explicit test limits. |
+| [#86](https://github.com/emu198x/emu198x/issues/86) | Mapper 69 has PRG/CHR/RAM banking, IRQ counter and AY-backed 5B audio, clocked into the machine mix. Banking, IRQ, pitch and mix tests pass. | Closed as completed, with commands and test limits in the issue comment. |
 | [#87](https://github.com/emu198x/emu198x/issues/87) | Mapper 19 has banking, IRQ, wave RAM and channel scheduling, but explicitly averages enabled channels instead of emitting the multiplexed output requested by the issue. | Keep open; narrow attention to that remaining output approximation. |
-| [#88](https://github.com/emu198x/emu198x/issues/88) | Mapper 85 uses the VRC7 variant of the YM2413 core, both board wirings and the VRC IRQ. A keyed FM note reaches the machine mix. | Ready to close the implementation request with explicit test limits. |
+| [#88](https://github.com/emu198x/emu198x/issues/88) | Mapper 85 uses the VRC7 variant of the YM2413 core, both board wirings and the VRC IRQ. A keyed FM note reaches the machine mix. | Closed as completed, with commands and test limits in the issue comment. |
 | [#90](https://github.com/emu198x/emu198x/issues/90) | Cartridge loading still exposes iNES/NES 2.0 rather than a UNIF parser/board mapping. | Keep open; this is a format plus board-identification feature. |
 | [#91](https://github.com/emu198x/emu198x/issues/91) | Existing controller serial paths do not implement the requested Power Pad, Arkanoid paddle and R.O.B. set. | Keep open; each device needs its own protocol and input path. |
 | [#92](https://github.com/emu198x/emu198x/issues/92) | The parent explicitly remains a mapper/hardware-test ledger, including unresolved MMC5 findings. | Keep open; closing two implementation children does not complete the ledger. |
@@ -76,7 +76,14 @@ exceed the silent control by more than 0.01. They can fail without the mapped de
 the existence of a module is not the evidence.
 
 These are synthetic tests. We did not run Gimmick!, Lagrange Point, a complete
-licensed-ROM matrix or a physical waveform comparison. Closing #86/#88 would
-settle their missing-implementation claims, not certify every title or analogue
+licensed-ROM matrix or a physical waveform comparison. Closing #86/#88 settles
+their missing-implementation claims, not certify every title or analogue
 characteristic. #87 remains open because its requested multiplexed output is
 explicitly approximated even though its current tests pass.
+
+## Applied issue actions
+
+Closed #86 and #88 as completed after the checks above. Added source-grounded
+comments to #35, #80 and #87; all three remain open. The other 20 issues retain
+their existing scope and open state. No emulator implementation, architecture
+or snapshot schema changed in this pass.
