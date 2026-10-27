@@ -1,0 +1,81 @@
+ Downloading crates ...
+  Downloaded emu198x-wdc-65c816 v0.1.0
+   Compiling emu198x-wdc-65c816 v0.1.0
+   Compiling emu198x-sony-spc700 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-sony-spc700)
+   Compiling emu198x-nintendo-s-ppu v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-nintendo-s-ppu)
+   Compiling emu198x-sony-s-dsp v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-sony-s-dsp)
+   Compiling format-nintendo-snes-sfc v0.45.0 (/private/tmp/198x-triage-source/crates/format-nintendo-snes-sfc)
+   Compiling motorola-68k-common v0.45.0 (/private/tmp/198x-triage-source/crates/motorola-68k-common)
+   Compiling emu198x-sega-315-5313 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-sega-315-5313)
+   Compiling motorola-68000 v0.45.0 (/private/tmp/198x-triage-source/crates/motorola-68000)
+   Compiling machine-nintendo-snes v0.45.0 (/private/tmp/198x-triage-source/crates/machine-nintendo-snes)
+   Compiling runtime-nintendo-snes v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-nintendo-snes)
+   Compiling machine-sega-mega-drive v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sega-mega-drive)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.13s
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/machine_sega_mega_drive-532d2012ff0a34f2)
+
+running 29 tests
+test io::tests::a_six_button_pad_answers_on_the_third_th_cycle ... ok
+test power_base::tests::the_pads_read_as_master_system_ports ... ok
+test io::tests::a_three_button_pad_reports_by_th ... ok
+test power_base::tests::cartridge_ram_replaces_slot_2_when_enabled ... ok
+test power_base::tests::a_codemasters_image_pages_by_slot_strobes ... ok
+test io::tests::output_bits_read_back_from_the_latch ... ok
+test power_base::tests::th_outputs_read_back_on_export_consoles_only ... ok
+test power_base::tests::a_header_identifies_a_master_system_image ... ok
+test power_base::tests::the_sega_mapper_pages_three_slots_and_fixes_the_first_kilobyte ... ok
+test tests::peek_and_poke_reach_rom_and_both_rams_without_side_effects ... ok
+test tests::busreq_stops_the_z80_at_a_cycle_boundary_and_release_resumes_it ... ok
+test power_base_tests::the_fm_chip_is_unreachable_and_the_psg_is_heard ... ok
+test tests::the_framebuffer_passes_the_vdps_through ... ok
+test power_base_tests::a_master_system_cartridge_draws_in_mode_4 ... ok
+test tests::a_dma_from_rom_fills_cram_while_the_68000_waits ... ok
+test tests::the_68000_loads_and_starts_a_z80_program ... ok
+test tests::the_68000_runs_at_a_seventh_of_the_master_clock_less_refresh ... ok
+test tests::the_z80_reaches_the_ym2612_and_the_68000_window ... ok
+test tests::the_pad_reads_through_the_io_port ... ok
+test tests::the_z80_reaches_the_vdp_and_psg_and_the_68000_reads_the_hv_counter ... ok
+test power_base_tests::the_cartridge_reads_the_pad_through_port_dc ... ok
+test tests::the_reset_button_restarts_the_68000_and_holds_the_z80 ... ok
+test tests::a_snapshot_resumes_in_lockstep ... ok
+test tests::the_68000_sets_the_backdrop_through_the_vdp_ports ... ok
+test tests::run_frame_returns_a_frames_master_clocks ... ok
+test tests::the_version_register_reports_the_region ... ok
+test power_base_tests::start_is_pause_and_raises_one_nmi_a_press ... ok
+test tests::v_int_runs_the_level_6_handler_once_a_frame ... ok
+test tests::audio_comes_out_as_48_khz_stereo_within_range ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.27s
+
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/runtime_nintendo_snes-2ea46d0d2cfa99d1)
+
+running 11 tests
+test profiles::tests::frames_run_at_about_60_and_50_hz ... ok
+test profiles::tests::the_ipl_rom_is_optional_firmware ... ok
+test profiles::tests::the_header_picks_the_model ... ok
+test profiles::tests::variant_ids_round_trip_and_are_unique ... ok
+test cartridge::tests::a_headerless_image_is_a_plain_lorom_board ... ok
+test snapshot::tests::decode_rejects_a_future_version_before_the_payload ... ok
+test snapshot::tests::decode_rejects_another_models_snapshot ... ok
+test input::tests::each_name_reaches_its_button_on_its_port ... ok
+test input::tests::keys_go_to_port_1_and_unknown_names_and_ports_are_ignored ... ok
+test debug::tests::peek_and_poke_go_through_the_machine ... ok
+test debug::tests::stepping_walks_the_program_an_instruction_at_a_time ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/runtime.rs (/private/tmp/198x-triage-target/debug/deps/runtime-1b60d66501f10d26)
+
+running 9 tests
+test the_ipl_rom_is_taken_when_it_is_64_bytes ... ok
+test the_header_names_the_model_a_cartridge_wants ... ok
+test media_goes_into_the_cartridge_slot_only ... ok
+test queries_resolve_with_a_cartridge_and_need_one ... ok
+test a_soft_reset_keeps_ram ... ok
+test a_pad_press_reaches_the_program_through_auto_read ... ok
+test model_switches_cold_boot_with_the_same_cartridge ... ok
+test a_snapshot_restores_and_runs_in_lockstep ... ok
+test frames_are_512_wide_and_a_frame_of_master_clocks ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
