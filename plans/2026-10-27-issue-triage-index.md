@@ -27,11 +27,13 @@ records creation order and original titles, not live status.
 
 | [6](2026-10-27-issue-triage-batch-06.md) | #421–#810 | 25 | #499 completed with real CPC disk execution; narrowed implemented cartridge/core work and retained qualification gaps. |
 
+| [7](2026-10-27-issue-triage-batch-07.md) | #823–#1424, plus docs/site | 25 | docs #2 completed; aligned Amiga epics with implemented A530/configuration and retained proposed contracts. |
+
 ## Remaining plan
 
-Continue at **#823**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **98** unreviewed entries after
-batch 6. Give every batch its own plan/findings file and commit; read back issue
+Continue at **#1427**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **73** unreviewed entries after
+batch 7. Give every batch its own plan/findings file and commit; read back issue
 states/edits before recording the outcome. Reuse the isolated checkout and build
 cache while the sweep is active, then verify remote retention and remove all
 task workspaces, caches and processes.
