@@ -21,11 +21,13 @@ records creation order and original titles, not live status.
 | [2](2026-10-27-issue-triage-batch-02.md) | #103–#211 | 25 | #105 consolidated into #1284; hardware/scope corrections and fresh audio/pot reproductions. |
 | [3](2026-10-27-issue-triage-batch-03.md) | #215–#260 | 25 | #244 completed; stale board, media, persistence and hardware premises corrected. |
 
+| [4](2026-10-27-issue-triage-batch-04.md) | #261–#329 | 25 | MTX/Ace fixes in PRs #2167/#2168; malformed Einstein DSK input reproduced and promoted to a bug. |
+
 ## Remaining plan
 
-Continue at **#261**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **173** unreviewed entries after
-batch 3. Give every batch its own plan/findings file and commit; read back issue
+Continue at **#333**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **148** unreviewed entries after
+batch 4. Give every batch its own plan/findings file and commit; read back issue
 states/edits before recording the outcome. Reuse the isolated checkout and build
 cache while the sweep is active, then verify remote retention and remove all
 task workspaces, caches and processes.
