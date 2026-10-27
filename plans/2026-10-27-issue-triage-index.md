@@ -23,11 +23,13 @@ records creation order and original titles, not live status.
 
 | [4](2026-10-27-issue-triage-batch-04.md) | #261–#329 | 25 | MTX/Ace fixes in PRs #2167/#2168; malformed Einstein DSK input reproduced and promoted to a bug. |
 
+| [5](2026-10-27-issue-triage-batch-05.md) | #333–#418 | 25 | Narrowed BBC Model B disk and Electron ROM work; preserved source/design gates and corrected persistence scope. |
+
 ## Remaining plan
 
-Continue at **#333**, then take the next roughly 25 creation-ordered entries
-until the initial queue is exhausted. There are **148** unreviewed entries after
-batch 4. Give every batch its own plan/findings file and commit; read back issue
+Continue at **#421**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **123** unreviewed entries after
+batch 5. Give every batch its own plan/findings file and commit; read back issue
 states/edits before recording the outcome. Reuse the isolated checkout and build
 cache while the sweep is active, then verify remote retention and remove all
 task workspaces, caches and processes.
