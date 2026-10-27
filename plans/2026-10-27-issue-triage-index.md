@@ -1,0 +1,35 @@
+# Creation-ordered Emu198x issue triage
+
+Review the initial organisation-wide queue in batches of around 25. Compare
+issue bodies and latest scope comments with fixed main source, then record
+positive completion evidence, remaining gaps and safe implementation boundaries.
+Close only verified completions or exact duplicates. Keep architecture, API and
+schema approval requirements explicit; do not turn a proposed design into an
+adopted one merely because its documentation PR merged.
+
+The frozen queue contains 246 issues open at the start of this continuation.
+Twenty-three were already reviewed in batch 1; its two completed issues are no
+longer open. Together these records cover 248 initial issues. New arrivals are
+outside this sweep. The public [queue snapshot](2026-10-27-issue-triage-queue.json)
+records creation order and original titles, not live status.
+
+## Completed batches
+
+| Batch | Original range | Count | Outcomes |
+|---|---|---|---|
+| [1](2026-10-27-oldest-issue-triage.md) | #35–#102 | 25 | #86/#88 completed; scope/evidence comments. |
+| [2](2026-10-27-issue-triage-batch-02.md) | #103–#211 | 25 | #105 consolidated into #1284; hardware/scope corrections and fresh audio/pot reproductions. |
+| [3](2026-10-27-issue-triage-batch-03.md) | #215–#260 | 25 | #244 completed; stale board, media, persistence and hardware premises corrected. |
+
+## Remaining plan
+
+Continue at **#261**, then take the next roughly 25 creation-ordered entries
+until the initial queue is exhausted. There are **173** unreviewed entries after
+batch 3. Give every batch its own plan/findings file and commit; read back issue
+states/edits before recording the outcome. Reuse the isolated checkout and build
+cache while the sweep is active, then verify remote retention and remove all
+task workspaces, caches and processes.
+
+This is a dated triage record, not an all-system usability or hardware-accuracy
+claim. Source revision, test counts, fixture omissions and evidence limits live
+in each batch. Findings are being retained in draft docs PR #137 for editing.
