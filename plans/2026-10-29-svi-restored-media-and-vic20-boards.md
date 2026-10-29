@@ -55,8 +55,8 @@ remain separate; no chip or clock behaviour changes belong to this split.
   wiring/history into the common owner, with fixed concrete board constructors.
   Neither machine depends on the other. Replace the internal shared model-based
   construction API and its `cold_boot(model, expansion)` operation with fixed
-  board construction and family-runtime selection. The family still ships as
-  `emu198x-vic-20` and uses `runtime-commodore-vic-20`.
+  board construction and family-runtime selection. The shipping crate remains
+  `emu198x-commodore-vic-20` and uses `runtime-commodore-vic-20`.
 - Update `Cargo.toml`, `Cargo.lock`, affected runtime/app imports and dispatch;
   add no external registry package and publish nothing. Add distinct machine IDs
   and explicit board evidence owners in `docs/status/systems.toml` and profiles;
