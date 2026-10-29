@@ -41,7 +41,7 @@ wave spans alongside mutable transport position.
    PR; merge only after all exact-head checks succeed or are intentionally
    skipped. Close #2189 only after verifying the behaviour and CI outcome.
 
-## Proposed next split: VIC-20 NTSC/PAL
+## Approved next split: VIC-20 NTSC/PAL
 
 Recommended: apply the existing Sord/Coleco/SVI static common-core pattern to
 VIC-20. Alternative: complete #2189 and do reference/data corrections alone.
@@ -66,6 +66,11 @@ remain separate; no chip or clock behaviour changes belong to this split.
   serialized machine fields and the v8 envelope's separate `cartridge_image`.
   Verify reset after restore still uses the saved cartridge. Keep regional ROM
   selection and external user-port/modem line behaviour intact.
+- Keep each concrete board’s synthetic boot and matched-firmware tests beside
+  that board. Move the existing family-spanning VIC-I/VICE survey, VIA and
+  joystick diagnostics to the family runtime, preserving every regional case,
+  golden and negative control. The runtime enum owns regional selection; the
+  common core and concrete boards never select a region at construction.
 - Source-check board differences against the primary VIC-20 library and vendored
   VICE, then verify fixed-board identity and wrong-board rejection. Compare
   original execution methods after field qualification. Run existing machine,
