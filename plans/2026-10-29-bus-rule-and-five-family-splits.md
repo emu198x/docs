@@ -153,3 +153,35 @@ is using it. Confirm exact-head CI success and actual per-board tests, retain
 commits on verified remote/main refs, and remove all owned worktrees/caches
 and processes before reporting completion. Preserve primary branches, the
 unrelated ZIP plan and other agents' locked worktrees.
+
+### BBC concrete inventory, before extraction
+
+Keep Model B's `machine-acorn-bbc-micro` owner; add
+`machine-acorn-bbc-micro-b-plus` and `machine-acorn-bbc-master-128` over
+`common-acorn-bbc-micro`. The common state preserves the exact original
+`BbcMicro` field order/attrs. Fixed board descriptors provide CPU construction,
+model, extra-RAM length and sideways-RAM mask. Restore validates those fixed
+properties and reinstates the nonserialized CPU variant, including 65C12.
+
+Move `src/rtc.rs`, `src/saa5050.rs` and private wiring tests to the common
+owner. Keep Model B BIOS/tape tests in its machine crate; move
+`tests/bplus_disc.rs` and `tests/master_disc.rs` to their concrete owners.
+Give each board synthetic boot/control tests and identity/cadence tests.
+Stateless DFS image helpers remain common rather than selecting a board.
+
+`runtime-acorn-bbc-micro/src/machine.rs` owns three-way static dispatch and
+transparent state serialization. Its other concern modules keep their current
+roles. Add model/board consistency rejection in `snapshot.rs` before receiver
+mutation. Update workspace/lock/app manifests and the existing current test
+commands; retain version 10, profile IDs, routes and actual clock/video logic.
+Add B+ and Master machine IDs and their own tracker labels/milestones, then
+regenerate status pages. Frozen inputs/outputs live under
+`test-data/acorn/bbc-micro/split-v10/`; check the initial and continued whole
+state bytes as well as every pixel/sample and native-frame timestamp.
+
+The 1987 New Advanced User Guide and BBC/Master reference distinguish the
+B+'s paging/shadow/1770 from the Master's 65C12/ACCCON/CMOS/banked memory.
+Vendored b-em supplies implementation precedent. Local Model B ROMs are
+present; locate and identify matching B+/Master sets before the real-disc
+checks, without committing manufacturer firmware. Source inventory does not
+authorise inventing additional BBC models or changing board timing.
