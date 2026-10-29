@@ -32,13 +32,15 @@ Their payload carries the TV strap and fitted RAM. The old reader accepts a
 foreign strap/RAM state without updating the runtime's selected Model, so a
 valid USA/TS1000 save can run under a misleading UK profile label.
 
-Proposed: preserve the v4/v5 bytes, recover the concrete owner and published
-RAM profile from the payload before committing restore, and update the live
-Model to match the restored hardware. Empty states retain the selected profile;
-malformed or unsupported combinations reject atomically. This behaviour choice
-needs agreement before implementing the ZX decoders. The alternative is strict
-receiver-profile matching with explicit legacy-loader selection; that changes
-old direct-restore acceptance. Atari work does not depend on this answer.
+Decision: require the selected profile to match the saved hardware (Steve,
+2026-10-29). Preserve v4/v5 bytes and the existing shared family header, but
+validate the payload's strap and RAM against the selected profile before any
+receiver mutation. Do not adopt a different runtime Model from a save. Loading
+an old USA/TS1000 or RAM-pack state therefore requires selecting its matching
+existing profile explicitly. Empty states retain the selected profile because
+there is no hardware payload to identify. Mismatches and malformed states
+reject atomically. Add direct-runtime and loader regression checks for this
+contract; no nominal timing or format-version changes are implied.
 
 ## Work and verification
 
