@@ -201,8 +201,9 @@ Boy 2, Game Boy Color and Advance-in-CGB-mode owners. The last owner must name
 its compatibility surface rather than claim a full Game Boy Advance emulator.
 SGB/SGB2 currently provide only Game Boy execution with skipped-boot states.
 Retain that limitation explicitly, with boot-ROM/SNES protocol/host timing
-work still in #326 under the previously agreed scope. An optional scope
-question is pending; additional SGB behaviour needs its own hardware design.
+work still in #326 under the previously agreed scope. On 2026-10-29, we explicitly confirmed preserving the current behaviour
+and keeping full SGB hardware work in #326; additional behaviour needs its own
+hardware design.
 
 The old machine payload has no physical-board tag. The v3/v4 envelope's
 existing profile ID is the authoritative board identity on restore. Decode
