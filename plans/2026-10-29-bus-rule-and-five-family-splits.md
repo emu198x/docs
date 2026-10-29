@@ -230,3 +230,44 @@ continuations. Move common private tests with their code; move cgb-acid2 to
 its concrete board, retaining its pinned input/reference and negative control.
 Give every concrete owner fixture-free boot/control and identity tests, and
 preserve boot/logo, screenshot/hash, OAM, native-frame, audio and input gates.
+
+### Sega inventory, before extraction
+
+`machine-sega-master-system/src/lib.rs` holds seven serialized `SmsVariant`
+values, but the family catalogue has nine physical profiles: late export
+Master System NTSC/PAL, early 315-5124 Master System NTSC/PAL, Japanese
+Master System, Master System II NTSC/PAL, Mark III and Game Gear. The II
+profiles currently select the late export execution engine because removed
+ports/buttons are not modelled. Preserve that execution mapping while giving
+those physical boards distinct owners; do not claim the missing ports are
+already emulated. Keep every existing profile ID and both runners.
+
+Retain `machine-sega-master-system` for the late export NTSC owner; introduce
+`machine-sega-master-system-pal`, `-japan`, `-1-ntsc`, `-1-pal`, `-2-ntsc`,
+`-2-pal`, `machine-sega-mark-iii` and `machine-sega-game-gear`. Move original
+wiring, cartridge and FM modules to `common-sega-master-system`. Its raw state
+keeps the original field order and serialized enum order; no new enum variants
+are inserted into old save payloads. Static concrete wrappers bind construction
+to a board. A family enum in `runtime-sega-master-system-class/src/machine.rs`
+selects those owners from the existing model IDs; the raw-state variant must
+match that model's existing execution mapping before a restore mutates state.
+The envelope model identifies II versus the late export board, which the old
+raw engine enum cannot distinguish by itself. Keep envelope version 10.
+
+Freeze each of the nine profiles before moving code, with original whole
+states and complete continued frames/audio/time. Include mapper SRAM and
+control state, Game Gear stereo/Start/viewport, Japanese FM and early/later
+VDP revisions. Move the existing synthetic boot/control tests to every owner,
+keep private tests beside the common wiring, and add fixed-construction and
+atomic wrong-board restore checks. `runtime-sega-master-system-class` keeps
+its current snapshot/input/query concerns and both family runtime consumers.
+Update workspace/lock manifests and machine/evidence IDs, then regenerate and
+check status pages. No machine depends on another machine.
+
+Source anchors are `reference/by-system/sega-master-system/sms-reference.md`,
+the Mark III software reference and the compendium, with Genesis Plus GX's
+`core/system.c`, `core/io_ctrl.c`, `core/cart_hw/sms_cart.c` and MAME's
+`src/mame/sega/sms.cpp` as implementation precedent. This extraction changes
+ownership, not clocks, VDP access timing, FM synthesis or compatibility mode.
+Locate the existing Sonic Rev 0 dump and verify the complete identity before
+its real title/attract test. Keep #149/#220/#1932 separate from split completion.
