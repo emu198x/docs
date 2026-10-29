@@ -185,3 +185,44 @@ Vendored b-em supplies implementation precedent. Local Model B ROMs are
 present; locate and identify matching B+/Master sets before the real-disc
 checks, without committing manufacturer firmware. Source inventory does not
 authorise inventing additional BBC models or changing board timing.
+
+### Game Boy inventory, before extraction
+
+`common-nintendo-game-boy` already exists. Extend that owner with the original
+state/wiring implementation and its CGB and v3-reader modules; do not create a
+second common crate. Keep the old state fields, attrs and execution methods
+intact. A statically bound board wrapper owns construction and delegates to
+that common state engine. Existing chip/format dependencies move with the
+code; no new registry package is needed.
+
+Concrete owners: retain `machine-nintendo-game-boy` for DMG (DMG0 and later
+boot-ROM revisions remain profiles); add Pocket, Super Game Boy, Super Game
+Boy 2, Game Boy Color and Advance-in-CGB-mode owners. The last owner must name
+its compatibility surface rather than claim a full Game Boy Advance emulator.
+SGB/SGB2 currently provide only Game Boy execution with skipped-boot states.
+Retain that limitation explicitly, with boot-ROM/SNES protocol/host timing
+work still in #326 under the previously agreed scope. An optional scope
+question is pending; additional SGB behaviour needs its own hardware design.
+
+The old machine payload has no physical-board tag. The v3/v4 envelope's
+existing profile ID is the authoritative board identity on restore. Decode
+into the exact common state first, validate profile/firmware and monochrome
+versus colour consistency, then bind it to the matching concrete board.
+Do not infer DMG versus Pocket/SGB/AGB identity from mutable boot register
+values or pretend an old payload encodes information it lacks. Do not add a
+serialized enum tag or change envelope versions for this extraction.
+
+Retain the family runtime/runner and all seven profile IDs. Update the stale
+catalogue prose that says CGB is the same machine or that monochrome boot-ROM
+execution has not landed. Add separate, honest machine IDs/evidence owners
+and board-appropriate labels/milestones. Constructor boot profiles may select
+ROM revisions of one fixed board, never another board; reject those requests.
+
+Capture v4 whole-state, every emitted native-frame pixel/palette and all audio
+sample bits for each existing profile. Include active timers, joypad, OAM DMA
+and CGB banking/HDMA/speed state, plus mid-boot cases for firmware-capable
+models. Preserve the existing genuine v3 fixtures and independent DMG/CGB
+continuations. Move common private tests with their code; move cgb-acid2 to
+its concrete board, retaining its pinned input/reference and negative control.
+Give every concrete owner fixture-free boot/control and identity tests, and
+preserve boot/logo, screenshot/hash, OAM, native-frame, audio and input gates.
