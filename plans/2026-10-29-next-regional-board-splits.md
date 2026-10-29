@@ -50,7 +50,10 @@ contract; no nominal timing or format-version changes are implied.
 2. Before extraction, add per-family original-state captures under
    `test-data/{zx80,zx81,atari-2600,atari-7800}/board-split-*`, with test-only recipes in
    `runtime-*/src/board_baseline_tests.rs` where private clock alignment is
-   needed, plus normal replay tests.
+   needed, plus normal replay tests. ZX recipes live privately in each common
+   engine's `src/board_baseline_tests.rs`, where they can capture after 37
+   T-states without widening a production API solely for testing. Normal
+   runtime tests replay the same envelopes and verify host output separately.
    Cover every existing profile, partial CPU/video phase, keyboard/controller,
    tape/cartridge state and audio. Compare full initial/continued state and
    every native-frame pixel, dimension, timestamp and audio sample bit. Prove
@@ -83,3 +86,18 @@ canonical crystal frequency, with a red/green agreement test. Preserve the
 original engine clocks. The 7800 captures include cartridge POKEY native output
 without claiming the runtime currently mixes it into the TIA host packet; its
 existing PAL border-placement uncertainty remains separate accuracy work.
+
+## Verification record
+
+All four extracted engine implementations match the original source after
+explicit type/import/export changes, documentation-link fixes and formatting.
+No CPU/chip/timing algorithm changes are part of extraction. Each of the eight
+owners has four fixture-free tests. Frozen states and complete output cover
+all ten existing profiles, including F8 banks and independent native cartridge
+POKEY samples. ZX runtime tests cover every selected/saved profile pair,
+explicit RAM overrides and the snapshot-only loader. Deliberately corrupted
+expected rasters fail before the original files are restored.
+
+The ZX fixtures preserve the existing video safety completion. They do not
+establish that a fallback completion represents a physical VSYNC edge; that
+accuracy concern remains separate from physical ownership.
