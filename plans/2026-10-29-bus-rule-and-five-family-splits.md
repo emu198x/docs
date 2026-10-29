@@ -197,8 +197,11 @@ code; no new registry package is needed.
 
 Concrete owners: retain `machine-nintendo-game-boy` for DMG (DMG0 and later
 boot-ROM revisions remain profiles); add Pocket, Super Game Boy, Super Game
-Boy 2, Game Boy Color and Advance-in-CGB-mode owners. The last owner must name
-its compatibility surface rather than claim a full Game Boy Advance emulator.
+Boy 2, Game Boy Color and Game Boy Advance owners. The AGB machine ID names
+the physical board (`nintendo-game-boy-advance`); its profile, status and crate
+documentation must explicitly limit current execution to CGB compatibility.
+Do not invent a second physical board identity for a different execution mode
+when native GBA support arrives.
 SGB/SGB2 currently provide only Game Boy execution with skipped-boot states.
 Retain that limitation explicitly, with boot-ROM/SNES protocol/host timing
 work still in #326 under the previously agreed scope. On 2026-10-29, we explicitly confirmed preserving the current behaviour
