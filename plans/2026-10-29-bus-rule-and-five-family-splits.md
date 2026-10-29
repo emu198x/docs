@@ -271,3 +271,47 @@ the Mark III software reference and the compendium, with Genesis Plus GX's
 ownership, not clocks, VDP access timing, FM synthesis or compatibility mode.
 Locate the existing Sonic Rev 0 dump and verify the complete identity before
 its real title/attract test. Keep #149/#220/#1932 separate from split completion.
+
+### Dragon/CoCo inventory, before extraction
+
+The existing family has four profiles, backed by five serialized memory-decode
+states: Dragon 32, Dragon 64 compatible/native modes, CoCo 1 and CoCo 2. The
+Dragon 64 modes belong to one physical board. Preserve that runtime transition;
+never turn the mode into another machine. Retain `machine-dragon-32`; add
+`machine-dragon-64`, `machine-tandy-coco-1` and `machine-tandy-coco-2`, over
+`common-dragon`. Their fixed construction selects the existing board decode
+and PAL/NTSC wiring. No constructor in a concrete owner selects another board
+or changes television standard. Shared keyboard/debug/media types remain in
+the common layer, not borrowed from Dragon 32.
+
+Move the original `machine-dragon-32/src/lib.rs` engine and `disk_serde.rs`
+without changing state fields, clock/VDG/SAM/PIA/ACIA behaviour or media encoding.
+Keep private hardware tests beside that common state; each fixed owner gets
+synthetic boot/control, identity and partial-step/native-boundary evidence.
+The family dispatcher lives in `runtime-dragon/src/machine.rs`; all existing
+runtime concern placement stays intact. This explicitly respects
+`runtime-internal-shape.md`'s exclusion of Dragon from unrelated normalization.
+
+The version-2 envelope is currently in `runtime-dragon/src/runtime.rs`, not a
+separate snapshot module. Decode its original owning machine payload into
+common state, validate envelope/profile and embedded board/video standard,
+then bind the physical owner before changing any live receiver state. Encode
+through an equivalent borrowing machine field if needed, preserving every
+serialized field, order and media attribute. Retain `media_serde.rs`, model
+IDs, firmware routes, live mounted media and the one family runner.
+
+Before extraction freeze all four profiles and a Dragon 64 native-mode case:
+whole envelope/state and full continued frame/audio/time, including SAM phase,
+PIA interrupt/keyboard/joystick state, Dragon 64 ACIA and available tape/disc
+state. Preserve current restore/reset and serial regressions. Source anchors
+are `reference/by-system/dragon-32/1983-inside-the-dragon.md`,
+`dragon32-reference.md`, and the CoCo technical/service references in
+`reference/by-system/tandy-coco/`; XRoar and MAME are implementation precedent.
+
+After extraction, rerun matched Dragon firmware and both CoCo ROM sets:
+Color BASIC 1.2/1.3 plus Extended Color BASIC 1.1 must reach `OK` and execute
+a typed `PRINT`. Preserve #2134's ROM-directory selection and #2135's keyboard
+symbols rather than treating family tests as proof of either CoCo board.
+Register four physical IDs and evidence owners, preserving the existing
+family shipping surface. Inspect each owner's own CI tests before completing
+#2138 and its #2144 rows.
