@@ -48,8 +48,9 @@ contract; no nominal timing or format-version changes are implied.
    documented in `reference/by-system/sinclair-zx80/` and `sinclair-zx81/`.
    Check Atari primary/programming references before moving region wiring.
 2. Before extraction, add per-family original-state captures under
-   `test-data/{zx80,zx81,atari-2600,atari-7800}/board-split-*`, with recipes in
-   `runtime-*/examples/board_baseline.rs` and normal integration replay tests.
+   `test-data/{zx80,zx81,atari-2600,atari-7800}/board-split-*`, with test-only recipes in
+   `runtime-*/src/board_baseline_tests.rs` where private clock alignment is
+   needed, plus normal replay tests.
    Cover every existing profile, partial CPU/video phase, keyboard/controller,
    tape/cartridge state and audio. Compare full initial/continued state and
    every native-frame pixel, dimension, timestamp and audio sample bit. Prove
@@ -75,3 +76,10 @@ contract; no nominal timing or format-version changes are implied.
 7. Update #2144 with the completed owners and any separately tracked accuracy
    gaps. Verify retention and remove the task worktrees, clones, caches and
    background processes before reporting completion.
+
+Atari source audit: PAL 2600 profile metadata advertised the NTSC clock while
+the existing core/TIA use PAL timing. Correct the profile using TiaRegion's
+canonical crystal frequency, with a red/green agreement test. Preserve the
+original engine clocks. The 7800 captures include cartridge POKEY native output
+without claiming the runtime currently mixes it into the TIA host packet; its
+existing PAL border-placement uncertainty remains separate accuracy work.
