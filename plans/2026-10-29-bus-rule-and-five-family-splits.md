@@ -333,7 +333,7 @@ Move the unchanged `machine-msx/src/{lib,sound,note_tests}.rs` engine into
 `common-msx`; retire the generic machine owner. Add nine thin private owners:
 `machine-sony-hb-10p`, `machine-toshiba-hx-10`, `machine-mitsubishi-ml-f80`,
 `machine-yamaha-cx5m`, `machine-mitsubishi-ml-fx1`, `machine-sony-hb-10`,
-`machine-philips-vg-8235`, `machine-sony-hb-f1`, `machine-panasonic-fs-a1`.
+`machine-philips-vg-8235-00`, `machine-sony-hb-f1`, `machine-panasonic-fs-a1`.
 Each fixes its region, video generation and existing evidenced slot/subslot/
 RAM/mapper layout. Move layout ownership from the runtime into those board
 policies. The common engine retains all old fields, attrs and device logic.
@@ -362,3 +362,12 @@ cross-board states atomically. Update workspace/lock/CI commands and remove
 obsolete registry entries, only after a positive inventory of their nine
 replacement owners. Run all named-board/runtime/runner/fleet, strict Clippy/
 rustdoc and registry/hygiene gates and inspect per-board CI evidence.
+
+The existing Philips profile specifically resolves VG-8235/00 firmware, so
+its physical owner/ID names `/00` while the existing profile ID remains an
+alias for it. The openMSX HB-10P configuration records a slot-0 page-3 mirror
+and wider I/O decoding absent from our current layout. Preserve current
+execution/save bytes in this extraction and state that limitation explicitly;
+do not silently claim the named owner already models every S3527/T6950 detail.
+The CX5M's removable SFG-01 and the MSX2 models' omitted disk/menu hardware
+also remain separate accuracy/peripheral work.
