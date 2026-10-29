@@ -315,3 +315,50 @@ symbols rather than treating family tests as proof of either CoCo board.
 Register four physical IDs and evidence owners, preserving the existing
 family shipping surface. Inspect each owner's own CI tests before completing
 #2138 and its #2144 rows.
+
+### MSX scope decision and concrete inventory
+
+On 2026-10-29 we explicitly chose **retire the generic presets**, rather than
+keep virtual C-BIOS reference configurations. This supersedes this plan's
+earlier general requirement to retain every MSX profile ID: remove the four
+generic MSX1/MSX2 PAL/NTSC selections and their aliases. Do not relabel their
+old saves as a manufacturer board merely because a slot map happens to match.
+Preserve the nine existing manufacturer profile IDs and their v10 save bytes;
+retired IDs fail selection/restore explicitly. C-BIOS remains test firmware
+for named boards, not a machine identity. Use the first named MSX1 profile,
+Sony HB-10P, as the default. The original thirteen-profile captures remain as
+historical inputs, with the four retired envelopes tested for rejection.
+
+Move the unchanged `machine-msx/src/{lib,sound,note_tests}.rs` engine into
+`common-msx`; retire the generic machine owner. Add nine thin private owners:
+`machine-sony-hb-10p`, `machine-toshiba-hx-10`, `machine-mitsubishi-ml-f80`,
+`machine-yamaha-cx5m`, `machine-mitsubishi-ml-fx1`, `machine-sony-hb-10`,
+`machine-philips-vg-8235`, `machine-sony-hb-f1`, `machine-panasonic-fs-a1`.
+Each fixes its region, video generation and existing evidenced slot/subslot/
+RAM/mapper layout. Move layout ownership from the runtime into those board
+policies. The common engine retains all old fields, attrs and device logic.
+
+`runtime-msx/src/machine.rs` owns static dispatch. Keep the existing runtime,
+runner, concern modules, clock/input/audio and media contracts. Decode the v10
+raw state without a new tag, validate the saved named model's region, video
+generation and fixed topology, then bind the corresponding owner before
+mutating a receiver. The existing envelope model is authoritative where the
+old payload lacks a physical-board distinction. No machine-to-machine deps.
+
+Inventory and update all old generic model references in the runtime, native
+and browser launchers, fleet factory/conformance and tests. Tests of generic
+slot algorithms can remain common-engine tests; they must not keep a retired
+public profile alive. Replace generic firmware gates with named-board gates,
+and give each owner its own fixture-free boot/control and identity/native
+boundary checks. Retain #244 topology regressions, C-BIOS model tests and
+identified Sony HB-F1 original firmware. Existing unsupported maker-specific
+hardware is not implemented or claimed by this ownership change.
+
+Source anchors: the nine maker slot maps already cite the primary MSX model
+references and openMSX machine configurations. Check those exact records
+before moving layout data. Capture all original profiles before extraction;
+then replay the nine retained models and reject the four retired IDs and
+cross-board states atomically. Update workspace/lock/CI commands and remove
+obsolete registry entries, only after a positive inventory of their nine
+replacement owners. Run all named-board/runtime/runner/fleet, strict Clippy/
+rustdoc and registry/hygiene gates and inspect per-board CI evidence.
