@@ -35,6 +35,11 @@ Expander remain configurations.
 
 ## Not implemented / accuracy gaps
 
+- **Held controller history after restore** — version-4 saves retain the current
+  electrical controller byte but omit the host’s logical button mirror. The
+  next press/release can clear another held control; opposing-direction history
+  cannot be recovered from that byte. Tracked in [#2205](https://github.com/emu198x/emu198x/issues/2205).
+
 - **Mapper view / port `$FD`** — MAME has a second memory layout (cart at
   `$0000`, BIOS relocated) switched via `$FD`. We implement only the default
   layout; software that switches it is unhandled.
