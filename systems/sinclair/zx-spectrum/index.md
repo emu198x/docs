@@ -43,6 +43,21 @@ and **the peripheral catalogue** — plus a few accuracy edges.
   port r/w, step, run_until_pc, press_key/type_string, watch_memory/ay,
   snapshots, screenshots, `save_tape`).
 
+## Native save states
+
+The Spectrum family writes version-17 native saves, preserving pending video
+fetches, the border output latch and the in-flight rendering phase. Restoring
+these saves retains the first resumed frame, audio and machine clock rather
+than waiting for a rendering transient to settle. This applies to all 13
+family profiles, including the three Timex models.
+
+Version-16 native saves are rejected before decoding because they omit pipeline
+state needed for exact continuation. Earlier native versions retain their
+existing rejection policy. SNA and Z80 imports use their separate format readers.
+The [save-state decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/spectrum-video-pipeline-snapshots.md)
+records the contract and regression evidence; independent Timex rendering and
+ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/52).
+
 ## Models
 
 | Model | ULA / core | ROMs | Paging | Storage | State |
