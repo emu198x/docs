@@ -67,7 +67,7 @@ ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/5
 | +2A / +2B / +3 | 40078 (Amstrad class) | 4 | `$7FFD`+`$1FFD` | Tape (+3: 3″ FDC) | Playable; disk read-only |
 | Pentagon 128 | pentagon-ula | 2 | `$7FFD` | Tape; Beta (not wired) | Boots; no TRD load yet |
 | Scorpion ZS-256 | scorpion-ula | — | `$7FFD`+`$1FFD` | Tape; Beta | **No screen output** (bug) |
-| Timex TC2048 | SCLD | 1 | none | Tape | Boots; SCLD **mode 0 only** |
+| Timex TC2048 | SCLD | 1 | none | Tape | Extended-rendering qualification remains #52 |
 | Timex TC2068 (PAL) | SCLD; fixed TC2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; matching-firmware BASIC boot unqualified (#52) |
 | Timex TS2068 (NTSC) | SCLD; fixed TS2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; local ROM check matches diagnostic stripes (#52) |
 
