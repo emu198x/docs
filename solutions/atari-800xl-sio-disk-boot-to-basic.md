@@ -6,7 +6,7 @@ prompt. With the MiSTer Atari800 OS + BASIC ROM bundle
 detects built-in BASIC, attempts and times out the SIO disk boot, runs the
 BASIC cartridge, and prints `READY` (screen-RAM codes `32 25 21 24 39`) by
 ~frame 300, then idles in the keyboard-input wait. Guarded by
-`crates/machine-atari-800xl/tests/basic_boot_probe.rs::boots_to_basic_ready`.
+`crates/common-atari-800xl/tests/basic_boot_probe.rs::boots_to_basic_ready`.
 
 ## The chain of bugs (each its own commit)
 
@@ -15,7 +15,7 @@ same "a register's bits were assigned to the wrong source" shape:
 
 | Area | Bug | Fix |
 |---|---|---|
-| PIA (`machine-atari-800xl` wiring) | Atari cross-wires CPU A0↔A1 into the PIA RS pins; `$D300/01/02/03` = PORTA/PORTB/CRA/CRB | `bus_to_pia_addr` swaps address bits 0/1 |
+| PIA (`common-atari-800xl` wiring) | Atari cross-wires CPU A0↔A1 into the PIA RS pins; `$D300/01/02/03` = PORTA/PORTB/CRA/CRB | `bus_to_pia_addr` swaps address bits 0/1 |
 | ANTIC NMIEN | VBI/DLI enable bits swapped (VBI = bit 6, DLI = bit 7) | corrected bit tests |
 | ANTIC DL instruction | DLI/LMS bits swapped (DLI = bit 7, LMS = bit 6) | corrected decode |
 | ANTIC hi-res text colour | modes 2/3/F: bg = COLPF2, fg = COLPF2 hue + COLPF1 lum | dedicated compose path |
@@ -71,6 +71,7 @@ Implementation (`crates/atari-pokey/src/lib.rs`):
 
 ## Verification
 
-`cargo test -p machine-atari-800xl --test basic_boot_probe -- --ignored`
-runs both gated tests: `basic_boot_programs_antic_and_gtia` (render) and
-`boots_to_basic_ready` (BASIC LOMEM/VNTP non-zero + "READY" in screen RAM).
+`cargo test -p common-atari-800xl --test basic_boot_probe -- --ignored`
+runs the gated display, BASIC READY and keyboard regressions. They require
+locally staged OS and BASIC ROMs. The four-profile boot check is
+`cargo test -p runtime-atari-800xl --test local_firmware -- --ignored`.
