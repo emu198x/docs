@@ -78,9 +78,13 @@ serialized state. The three machine crates bind fixed regional wiring;
 `runtime-sega-mega-drive` owns the family catalogue, snapshots, input and debug
 surface. CPU, VDP and sound chips remain separate component crates.
 
+Use the bundled wiring-check cartridge to capture its red backdrop:
+
 ```sh
 cargo run --release -p emu198x-sega-mega-drive -- \
-  --model genesis --cart game.bin --frames 120 --screenshot frame.png
+  --model genesis \
+  --cart test-data/sega-mega-drive/board-split-v2/native.bin \
+  --frames 3 --screenshot frame.png
 ```
 
 Use `--model mega-drive-japan` or `--model mega-drive-europe` for the other two
