@@ -47,7 +47,7 @@ attempt held bit 4 asserted as a *level*; the dispatcher then looped on bit 4
 forever and never reached the bit-3 "transmission done" handler, so the frame
 never completed. (That attempt was reverted before the edge model landed.)
 
-Implementation (`crates/atari-pokey/src/lib.rs`):
+Implementation (`crates/emu198x-atari-pokey/src/lib.rs`):
 
 * `serout_hold_delay` → bit 4 edge (≈ `SEROUT_HOLD_TICKS`).
 * `serout_shift_delay` → bit 3 edge (≈ `SEROUT_SHIFT_TICKS`).
