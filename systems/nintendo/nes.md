@@ -151,10 +151,10 @@ Run with `cargo test -p common-nintendo-nes --test <file> -- --ignored`.
 
 | Crate | Role | Status |
 |-------|------|--------|
-| `mos-6502` | Shared 6502 core with 2A03 mode | Done |
-| `ricoh-ppu-2c02` | NES PPU | Ported |
-| `ricoh-apu-2a03` | NES APU | Ported |
-| `format-nintendo-nes-ines` | iNES parser + NROM/MMC1/UxROM/CNROM/MMC3/MMC5/AxROM/Color Dreams/VRC2a/Action 53/BxROM/NINA-001/Sunsoft-4/Camerica mappers | Active |
+| `emu198x-mos-6502` | Shared 6502 core with 2A03 mode | Active |
+| `emu198x-ricoh-ppu-2c02` | NES PPU | Active |
+| `emu198x-ricoh-apu-2a03` | NES APU | Active |
+| `nintendo-nes-cartridge` | Cartridge parsing and mapper implementations | Active |
 | `common-nintendo-nes` | Shared wiring and core regression tests | Active |
 | `machine-nintendo-nes-ntsc` | Fixed NTSC board and direct tests | Active |
 | `machine-nintendo-nes-pal` | Fixed PAL board and direct tests | Active |
