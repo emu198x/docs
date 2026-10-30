@@ -57,31 +57,16 @@ cargo run --release -p emu198x-nes --no-default-features -- --rom apu_test.nes -
 cargo run --release -p emu198x-nes --no-default-features -- --smoke-root path/to/blargg/rom_singles --frames 1200 --assert-blargg --smoke-report tmp/nes-apu-blargg-report.json
 ```
 
-## Not implemented / accuracy gaps
+## Board scope and qualification
 
-- **Mapper long tail** — 14 mapper numbers are in (NROM, MMC1, UxROM, CNROM,
-  MMC3, MMC5, AxROM, Color Dreams, VRC2a, Action 53, BxROM/NINA-001, Sunsoft-4,
-  Camerica); ~75–82% of the commercial NTSC library boots. **Missing cheap wins:**
-  MMC2 (9) / MMC4 (10) — Punch-Out!!, Fire Emblem — and GxROM (66). **Missing tail
-  (effort-heavy, mostly JP/niche):** the VRC4/6/7 IRQ + audio family, Namco 163,
-  Sunsoft 5B. 155-ROM sweep (2026-06-05): 135 PASS / 5 FAIL / 15 VISUAL.
-- **MMC5 register-read routing bug** — the machine returns open-bus for
-  `$4020–$5FFF` and never calls `mapper.cpu_read` there, so MMC5's IRQ-status,
-  multiplier, and ExRAM *reads* are dead (writes work). The mapper itself is
-  implemented; the routing gap is flagged in-code (`common-nintendo-nes/src/lib.rs`).
-  Any MMC5 game that reads back IRQ status or the multiplier misbehaves. Small fix.
-- **Regional scope** — NTSC and PAL are selectable fixed boards with their own
-  CPU/PPU ratios and APU tables. Dendy is not a separately implemented profile.
-- **CPU edge timing** — `blargg_nes_cpu_test5` is **10/11** sub-tests; only
-  `01-implied` lacks its `[OK]` marker (a side-effect on one implied/NOP opcode
-  the looser standalone `instr_test` misses). `cpu_timing_test6` runs and reports
-  a real `$F0` fail (frame-relative instruction timing) — both need a reference
-  trace to localise, not guessing.
-- **DMA interleave** — `sprdma_and_dmc_dma` (code 1) still fails; the OAMDMA
-  odd-cycle penalty + DMC sample-DMA cycle interleave aren't cycle-exact. The
-  read-side `dmc_dma_during_read4` ROMs are VISUAL (no `$6000` protocol), not
-  fails. The remaining known core accuracy frontier — machine-layer DMA, not the
-  APU or PPU.
+NTSC and PAL are selectable fixed boards with their own CPU/PPU ratios and
+APU tables. Dendy and separate Famicom board revisions are not established by
+these two owners. The NTSC profile retains the existing FDS execution path.
+
+The direct board tests prove those execution and preservation paths; they do
+not establish complete commercial-library compatibility. The ledger below is
+a dated measurement. Check current source tests and issue evidence before
+using an old result to select an accuracy fix.
 
 ## Test-ROM ledger (2026-06-07)
 
@@ -154,9 +139,10 @@ Run with `cargo test -p common-nintendo-nes --test <file> -- --ignored`.
 
 ## Peripherals & connectivity
 
-- **Emulated now** — cartridge (many mappers), controllers.
-- **Period peripherals (emulatable)** — Zapper light gun, R.O.B., Power Pad, Four
-  Score, the Famicom Disk System.
+- **Emulated now** — cartridge mappers, pads, Zapper, Four Score and the
+  existing NTSC FDS disk path.
+- **Other period peripherals** — R.O.B. and Power Pad require their own
+  implementation and qualification.
 - **Internet-capable** — **Yes (Japan)**: the **Famicom Modem / Famicom Network
   System** (1988) ran stock-trading and betting services — a real, documented,
   emulatable modem. Modern flash-cart WiFi is also feasible. Marginal in the West.
@@ -169,7 +155,9 @@ Run with `cargo test -p common-nintendo-nes --test <file> -- --ignored`.
 | `ricoh-ppu-2c02` | NES PPU | Ported |
 | `ricoh-apu-2a03` | NES APU | Ported |
 | `format-nintendo-nes-ines` | iNES parser + NROM/MMC1/UxROM/CNROM/MMC3/MMC5/AxROM/Color Dreams/VRC2a/Action 53/BxROM/NINA-001/Sunsoft-4/Camerica mappers | Active |
-| `common-nintendo-nes` | NES machine wiring | Active |
+| `common-nintendo-nes` | Shared wiring and core regression tests | Active |
+| `machine-nintendo-nes-ntsc` | Fixed NTSC board and direct tests | Active |
+| `machine-nintendo-nes-pal` | Fixed PAL board and direct tests | Active |
 | `runtime-nintendo-nes` | Shared shell runtime | Active |
 | `emu198x-nes` | Native verifier shell | Active |
 
