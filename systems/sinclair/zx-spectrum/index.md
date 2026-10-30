@@ -5,7 +5,7 @@
 The mainstream Sinclair/Amstrad models — **48K, 16K, +, 128K, +2, +2A, +2B, +3** —
 are effectively at 100% on the hard parts (CPU, timing, video, audio) and run
 games. The family also includes Russian clones (**Pentagon 128, Scorpion ZS-256**)
-and US **Timex** machines (TC2048, TC2068, TS2068), which are at varying
+and **Timex** models (TC2048, TC2068, TS2068), which are at varying
 completeness. Tape both **LOADs and SAVEs**; +3/Beta disks **read** (write is not
 yet implemented). The remaining distance to a fully complete Spectrum line is
 concentrated in three buckets — **disk-write + format breadth**, **the clones**,
@@ -68,7 +68,30 @@ ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/5
 | Pentagon 128 | pentagon-ula | 2 | `$7FFD` | Tape; Beta (not wired) | Boots; no TRD load yet |
 | Scorpion ZS-256 | scorpion-ula | — | `$7FFD`+`$1FFD` | Tape; Beta | **No screen output** (bug) |
 | Timex TC2048 | SCLD | 1 | none | Tape | Boots; SCLD **mode 0 only** |
-| Timex TC2068 / TS2068 | SCLD | 2 | bank-switch | Tape (cart) | **Does not reach menu** |
+| Timex TC2068 (PAL) | SCLD; fixed TC2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; matching-firmware BASIC boot unqualified (#52) |
+| Timex TS2068 (NTSC) | SCLD; fixed TS2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; local ROM check matches diagnostic stripes (#52) |
+
+## Fixed Timex 2068 owners
+
+`machine-timex-tc2068` and `machine-timex-ts2068` each construct one board over
+`common-timex-2068`. They share the Spectrum runner. Profiles remain
+`timex-tc2068-pal` and `timex-ts2068-ntsc`, with the existing `timex_tc2068` and
+`timex_ts2068` CLI choices. Their machine IDs are `timex-tc2068` and
+`timex-ts2068`.
+
+Both retain the legacy firmware slot IDs `timex-ts2068-rom-0` (16 KiB HOME ROM)
+and `timex-ts2068-rom-1` (8 KiB EXROM). Those slot names do not identify a ROM
+dump. The selected profile owns the board; a saved payload naming the other
+board is rejected before changing time or hardware. Correctly labelled version-17
+saves retain their bytes and continued pixels, audio and clocks. Tape playback,
+held-key release, loaded firmware and reset retention have separate regressions.
+The native save filenames remain based on the unchanged profile IDs.
+
+Seven exclusive synthetic tests per owner establish construction, guest video
+and keyboard execution, ports, paging, partial-field equivalence and reset
+retention. They preserve the existing model; they do not qualify its clocks or
+ROM boot against hardware. The known stripe captures are diagnostics rather than
+public boot evidence, and DOCK cartridge images remain unimplemented.
 
 ## Not implemented / accuracy gaps
 
@@ -91,10 +114,12 @@ ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/5
   `$4000–$5AFF`; three coupled memory-map bugs identified vs FUSE
   (`machine-scorpion-zs256/src/memory.rs`: `$1FFD` page-select bit, ROM-select
   logic, ROM 3 / Beta overlay).
-- **Timex extended SCLD video** — modes 1–7 (hi-res 512×192, hi-colour 8×1,
-  dual-screen) stored but **unrendered** (`timex-scld` renders mode 0 only); the
-  Timex headline feature. TC2068/TS2068 also do not reach the boot menu; TS2068's
-  in-core `frame_timing()` returns PAL despite being a 60 Hz NTSC machine.
+- **Timex SCLD qualification** — standard, alternate-screen, hi-colour and
+  hi-res rendering paths exist. Ink/paper/border correctness and real-ROM BASIC
+  startup still need independent qualification ([#52](https://github.com/emu198x/emu198x/issues/52)).
+  The TC2068 and TS2068 drivers use their selected PAL/NTSC timing; the SCLD's
+  separate ULA-trait timing accessor still reports PAL. That metadata discrepancy
+  remains part of #52 and is not the active machine clock path.
 
 ### Peripherals (none of these are architecturally blocked — the `Peripheral`
 trait + the proven ROM-paging precedent pave the road)
