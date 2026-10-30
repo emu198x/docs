@@ -74,7 +74,8 @@ Expander remain configurations.
 ## Timing & cycle-accuracy
 
 - **Master clock & dividers** — single 7.15909 MHz crystal; Z80A at ÷2 =
-  3.579545 MHz (MAME `7.15909_MHz_XTAL / 2`). The common engine’s existing regional timing is fixed by each owner: NTSC (262 lines, ~59.7 Hz — the Mattel US machine, default)
+  3.579545 MHz (MAME `7.15909_MHz_XTAL / 2`). The common engine’s existing regional
+  timing is fixed by each owner: NTSC (262 lines, ~59.7 Hz — the default)
   or PAL (313 lines, ~50.1 Hz); the frame is
   458 × lines ÷ 2 T-states. The core previously hardcoded 3.5 MHz / PAL-50 Hz,
   running the NTSC machine ~20% slow with the CPU ~2% off; fixed 2026-06-08.
@@ -90,7 +91,7 @@ Expander remain configurations.
 ## Tooling & drivability
 
 - **Script / MCP** — `--script` + `--mcp`; `run_until_pc` + the gated cart-boot
-  probes used to crack the scrambler this session.
+  probes cover cartridge detection and descrambling.
 - **Native window** — shared `emu198x-ui` window with keyboard and Mini Expander
   controller input; select the board at launch with `--model`. Live switching
   is not advertised by this runtime.
