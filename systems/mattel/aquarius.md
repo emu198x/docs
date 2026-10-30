@@ -7,9 +7,14 @@ Astrosmash, Snafu, Burgertime, Night Stalker, Utopia and Tron all reach play.
 Z80A + Microsoft BASIC ROM (8 KB) + separate 2 KB character ROM, 4 KB internal
 RAM, optional 16 KB expansion.
 
+The family runtime selects two fixed regional board owners: `mattel-aquarius`
+(NTSC, the existing default) and `mattel-aquarius-pal`. Both retain version-4
+live saves and use the same firmware directory. Expansion RAM and the Mini
+Expander remain configurations.
+
 ## What works
 
-- **Z80A core** — shared `zilog-z80` at 3.579545 MHz.
+- **Z80A core** — shared `emu198x-zilog-z80` at 3.579545 MHz.
 - **Text rendering** — glyphs from the separate 2 KB character-generator ROM
   (`aq2.u5`), not the BASIC ROM. BASIC boots to "BASIC / Press RETURN".
 - **Cartridge auto-start** — the BIOS cart-detect descrambles correctly and
@@ -20,21 +25,21 @@ RAM, optional 16 KB expansion.
   descrambling for cart ROM.
 - **16 KB cart mapping** — carts map at the top of memory by size (8 KB at
   `$E000`, 16 KB at `$C000`).
+- **Speaker audio** — port `$FC` bit 0 is sampled into the runtime’s 48 kHz mono
+  output. Port `$FF` controls the software lock and does not drive the speaker.
+- **Live saves** — CPU, AY, firmware, character ROM, cartridge, RAM and video
+  state resume from version-4 payloads. Restore checks the selected regional
+  board before changing the runtime; reset retains the restored firmware,
+  cartridge and RAM expansion.
 - **Controllers** — read through the Mini Expander AY-3-8910 I/O ports.
 
 ## Not implemented / accuracy gaps
 
-- **Sound** — the 1-bit speaker (`$FC` / `$FF` bit 0) isn't routed to host audio;
-  the runtime emits silent packets. Games bit-bang it (audible boot beep, in-game
-  tones) but nothing is heard.
 - **Mapper view / port `$FD`** — MAME has a second memory layout (cart at
   `$0000`, BIOS relocated) switched via `$FD`. We implement only the default
   layout; software that switches it is unhandled.
 - **Expansion RAM region** — modelled at `$4000-$7FFF`; MAME's external region is
   `$4000-$BFFF`. Not exercised by tested carts.
-- **Speaker bit lives on port `$FF`** alongside the scrambler — a likely
-  inaccuracy (the cassette/speaker output is port `$FC`); harmless while audio is
-  unrouted, worth correcting when audio lands.
 
 ## Known unknowns / disproven hypotheses
 
@@ -58,7 +63,6 @@ RAM, optional 16 KB expansion.
   `5196c74a`.)
 - **Open: no-cart RUN/playability depth.** BASIC boots to the prompt; typing
   full programs into BASIC isn't exercised here.
-- **Open: audio.** Until the speaker is routed, all sound is untested.
 
 ## Validated against
 
@@ -70,15 +74,14 @@ RAM, optional 16 KB expansion.
 ## Timing & cycle-accuracy
 
 - **Master clock & dividers** — single 7.15909 MHz crystal; Z80A at ÷2 =
-  3.579545 MHz (MAME `7.15909_MHz_XTAL / 2`). **Region-selectable** via
-  `AquariusRegion`: NTSC (262 lines, ~59.7 Hz — the Mattel US machine, default)
-  or PAL (313 lines, ~50.1 Hz — the European Radofin machine); the frame is
+  3.579545 MHz (MAME `7.15909_MHz_XTAL / 2`). The common engine’s existing regional timing is fixed by each owner: NTSC (262 lines, ~59.7 Hz — the Mattel US machine, default)
+  or PAL (313 lines, ~50.1 Hz); the frame is
   458 × lines ÷ 2 T-states. The core previously hardcoded 3.5 MHz / PAL-50 Hz,
   running the NTSC machine ~20% slow with the CPU ~2% off; fixed 2026-06-08.
   **No periodic CPU interrupt** — the base machine wires neither IRQ nor NMI
   (per MAME; only the expansion port can assert them). This is load-bearing: a
-  fictitious per-frame NMI corrupted cart-detect (fixed this session).
-- **Timing model realised** — relaxed: the 40×24 character display renders
+  fictitious per-frame NMI corrupted cart-detect (fixed `5196c74a`).
+- **Timing model realised** — relaxed: the 40×25 character display renders
   **end-of-frame** (mid-frame char/colour writes show next frame).
 - **CPU timing** — Z80 cycle-accurate (§62).
 - **Distance to full cycle-accuracy** — per-scanline display; correct external-bus
@@ -88,7 +91,9 @@ RAM, optional 16 KB expansion.
 
 - **Script / MCP** — `--script` + `--mcp`; `run_until_pc` + the gated cart-boot
   probes used to crack the scrambler this session.
-- **Native window** — headless only (extended tier).
+- **Native window** — shared `emu198x-ui` window with keyboard and Mini Expander
+  controller input; select the board at launch with `--model`. Live switching
+  is not advertised by this runtime.
 - **Disassembler** — pending the Asm198x shared Z80 disassembler.
 
 ## Peripherals & connectivity
@@ -104,11 +109,13 @@ RAM, optional 16 KB expansion.
 
 | Crate | Role |
 |-------|------|
-| `zilog-z80` | CPU |
-| `general-instrument-ay-3-8910` | Mini Expander PSG + controller ports |
-| `machine-mattel-aquarius` | machine wiring (display, scrambler, cart map) |
+| `emu198x-zilog-z80` | CPU |
+| `emu198x-gi-ay-3-8910` | Mini Expander PSG + controller ports |
+| `common-mattel-aquarius` | shared original engine, serialized state and component tests |
+| `machine-mattel-aquarius` | fixed NTSC board owner |
+| `machine-mattel-aquarius-pal` | fixed PAL board owner |
 | `runtime-mattel-aquarius` | shared-shell runtime |
-| `emu198x-mattel-aquarius` | headless runner |
+| `emu198x-mattel-aquarius` | native, script and MCP runner |
 
 ## ROMs
 
@@ -122,7 +129,15 @@ RAM, optional 16 KB expansion.
 
 ```sh
 cargo run --release -p emu198x-mattel-aquarius -- \
+  --model mattel-aquarius-pal \
   --cart "Astrosmash (1982)(Mattel).bin" --frames 400 --screenshot astro.png
 ```
 
-Behavioural memory: `project_aquarius_no_periodic_irq.md`.
+The extraction preserves the existing clock, scanline and palette algorithms.
+The shared reference library lacks a primary service manual, so the split is
+not new evidence that those timing values match every physical revision.
+
+Fixture-free tests give each board independent boot, guest input, cartridge/RAM
+and native-boundary evidence. Complete original-engine state, pixel and audio
+fixtures live in `test-data/mattel-aquarius/board-split-v4/`; optional local
+manufacturer-ROM tests live in `runtime-mattel-aquarius/tests/local_firmware.rs`.
