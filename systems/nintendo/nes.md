@@ -1,21 +1,35 @@
 # Nintendo Entertainment System (NES)
 
-## Status: Cores at/near accuracy ceiling; breadth-limited
+## Status: separate NTSC and PAL boards, shared runtime
 
-The NES has the **most finished chip cores in the fleet**. The 2A03 CPU is at the
-Tom Harte ceiling (2.56 M single-step + nestest 8991/8991); the 2C02 PPU is
-dot-exact and passes every PPU torture suite in the repo (sprite-0, overflow incl.
-the hardware diagonal bug, vbl/NMI race, read-buffer); the APU passes the entire
-blargg APU suite with an exact nonlinear mixer. It runs through the shared shell
-with screenshots, audio capture, keyboard/gamepad, reset, snapshots, smoke-matrix
-reporting, and Blargg-style `$6000` assertions.
+The implemented NTSC and PAL boards have fixed machine owners over shared
+NES wiring. Both use the existing native runner, headless session and browser
+family. Cartridge media, input peripherals and FDS compatibility remain
+configurations of those execution paths.
 
-The distance to 100% is therefore **not** the chips — it is breadth and a couple
-of genuine bugs: mapper coverage (~75–82% of the NTSC library boots today),
-controller-only peripherals (no Zapper/Four Score), PAL chip-ready but unwired,
-a MMC5 register-read routing bug, and battery `.sav` that's parsed but never
-persisted. Three narrow cycle-exact timing ROMs (DMA interleave + two CPU-timing
-cases) remain on the core, closeable with reference traces.
+| Board | Machine owner | Machine and profile ID |
+|---|---|---|
+| NES NTSC | `machine-nintendo-nes-ntsc` | `nintendo-nes-ntsc` |
+| NES PAL | `machine-nintendo-nes-pal` | `nintendo-nes-pal` |
+
+Each owner has seven direct tests. The original chip/mapper regressions live
+in `common-nintendo-nes`; they are shared evidence. A separate Famicom
+motherboard is not established by the NTSC profile's existing FDS support.
+
+Native saves use version 3. They retain CPU open bus, PPU per-bit refresh
+timestamps and the colour/emphasis mirror needed for the first resumed
+composite-video field. Version 2 saves are rejected before payload decoding
+because the omitted state cannot be recovered exactly. Both regional profiles
+keep their existing IDs and aliases; loaded foreign-board states are rejected
+without changing the live machine. Empty states keep the selected profile.
+The published browser player has its own release version; this native format
+change does not update an older browser bundle's save format.
+
+Pads, Four Score and Zapper configurations survive restore. Battery-backed
+PRG RAM survives reset and snapshots; the native UI loads and flushes `.sav`
+sidecars. An FDS save carries its adapter BIOS, and reset after restoring into
+a blank runtime reuses that restored BIOS. This supports the existing FDS
+execution path without claiming independent Famicom hardware qualification.
 
 ## Hardware overview
 
@@ -54,16 +68,10 @@ cargo run --release -p emu198x-nes --no-default-features -- --smoke-root path/to
 - **MMC5 register-read routing bug** — the machine returns open-bus for
   `$4020–$5FFF` and never calls `mapper.cpu_read` there, so MMC5's IRQ-status,
   multiplier, and ExRAM *reads* are dead (writes work). The mapper itself is
-  implemented; the routing gap is flagged in-code (`machine-nintendo-nes/src/lib.rs:528`).
+  implemented; the routing gap is flagged in-code (`common-nintendo-nes/src/lib.rs`).
   Any MMC5 game that reads back IRQ status or the multiplier misbehaves. Small fix.
-- **Battery `.sav` not persisted** — `has_battery` is parsed and PRG-RAM is
-  battery-backed in the mappers, but no code loads/flushes a `.sav` file, so saves
-  survive a session (and snapshots) but not across runs. RPGs are unplayable as
-  intended. Small–Medium.
-- **PAL/Dendy not selectable** — the APU has full PAL tables and the PPU accepts
-  311 lines, but the machine hardwires NTSC (`Ppu::new()` + a fixed 3:1 divider;
-  PAL needs 3.2:1) and the only runtime profile is `NesNtsc`. The whole PAL
-  library runs at the wrong speed/timing today. Small–Medium to plumb through.
+- **Regional scope** — NTSC and PAL are selectable fixed boards with their own
+  CPU/PPU ratios and APU tables. Dendy is not a separately implemented profile.
 - **CPU edge timing** — `blargg_nes_cpu_test5` is **10/11** sub-tests; only
   `01-implied` lacks its `[OK]` marker (a side-effect on one implied/NOP opcode
   the looser standalone `instr_test` misses). `cpu_timing_test6` runs and reports
@@ -77,8 +85,8 @@ cargo run --release -p emu198x-nes --no-default-features -- --smoke-root path/to
 
 ## Test-ROM ledger (2026-06-07)
 
-Landed as `#[ignore]`-gated ledger tests in `crates/machine-nintendo-nes/tests/`.
-Run with `cargo test -p machine-nintendo-nes --test <file> -- --ignored`.
+Landed as `#[ignore]`-gated ledger tests in `crates/common-nintendo-nes/tests/`.
+Run with `cargo test -p common-nintendo-nes --test <file> -- --ignored`.
 
 - **`mmc3_test` 5/6** (`blargg_ppu.rs`) — scanline-IRQ A12 counter. Was 0/6: the
   PPU only notified the mapper of A12 edges while rendering, so the `$2006`-driven
@@ -122,7 +130,7 @@ Run with `cargo test -p machine-nintendo-nes --test <file> -- --ignored`.
 - Per-suite ledgers (2026-06-07): `mmc3_test` 5/6, `ppu_read_buffer`,
   `cpu_dummy_reads`, sprite_hit 11/11, sprite_overflow 5/5, `ppu_vbl_nmi` 10/10,
   `instr_test-v5`, `instr_misc`, `oam_read`, `cpu_exec_space` (see the test-ROM
-  ledger above; harnesses in `crates/machine-nintendo-nes/tests/`).
+  ledger above; harnesses in `crates/common-nintendo-nes/tests/`).
 - Reference: Mesen2, fceux, nestopia (`emulators/nes/`).
 
 ## Timing & cycle-accuracy
@@ -161,12 +169,13 @@ Run with `cargo test -p machine-nintendo-nes --test <file> -- --ignored`.
 | `ricoh-ppu-2c02` | NES PPU | Ported |
 | `ricoh-apu-2a03` | NES APU | Ported |
 | `format-nintendo-nes-ines` | iNES parser + NROM/MMC1/UxROM/CNROM/MMC3/MMC5/AxROM/Color Dreams/VRC2a/Action 53/BxROM/NINA-001/Sunsoft-4/Camerica mappers | Active |
-| `machine-nintendo-nes` | NES machine wiring | Active |
+| `common-nintendo-nes` | NES machine wiring | Active |
 | `runtime-nintendo-nes` | Shared shell runtime | Active |
 | `emu198x-nes` | Native verifier shell | Active |
 
 ## Road to 100%
 
-The remaining work is tiered: bugs first (MMC5 read routing, `.sav`), then
-library coverage (MMC2/4, GxROM, PAL, Zapper/Four Score), then the cycle-exact
-core finish, then expansion-audio + FDS breadth.
+The dated test-ROM ledger records its original measurements. Current failures
+and compatibility work should be verified against the source tests and live
+issues before choosing the next accuracy change. Regional separation does not
+by itself qualify every board revision, mapper or peripheral.
