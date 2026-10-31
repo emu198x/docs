@@ -2,7 +2,7 @@
   "source_pr": 2219,
   "source_head": "ce33008f9ee8bc509d51200a9bfe9c73b7498df8",
   "source_ci_run": 41222107936,
-  "source_ci_status": "pending",
+  "source_ci_status": "success",
   "local": {
     "passed": 76,
     "failed": 0,
@@ -53,6 +53,52 @@
     "built_routes": 114,
     "registry_machines": 88,
     "registry_embeds": 51,
-    "a11y": "pending"
-  }
+    "a11y": {
+      "content_routes": 100,
+      "themes": 2,
+      "redirect_stubs_skipped": 14,
+      "defects": 0
+    },
+    "pages_with_players": 51,
+    "commit": "b7a0a19",
+    "pr": 40,
+    "head": "b7a0a19551754dd0af3af56b0df009abecd287d8",
+    "merge": "fee043b2109d06299be24f189094d9c800c0cb89",
+    "ci_run": 41223599590,
+    "ci_status": "success",
+    "deployment_run": 41223861235,
+    "deployment_status": "pending"
+  },
+  "pixel_negative_control": "one changed active pixel rejected; image restored",
+  "original_firmware_restore_probe": {
+    "boards": 3,
+    "instruction_phases": [
+      3,
+      137,
+      500000,
+      700000
+    ],
+    "cases_passed": 12,
+    "first_native_fields_per_case": 3,
+    "cold_resets_equal_fresh": 12,
+    "source": "firmware_restore_probe.rs.txt",
+    "log": "original-firmware-restore.log.gz",
+    "temporary_source_module_removed": true
+  },
+  "source_merge": "7b7128fa315bcf1067f99baed39314d2d98448bf",
+  "source_tree": "d1fbf1880bc7276e08a2b07da2cf7a6f0cdccfed",
+  "source_checks": 31,
+  "ci_owner_tests": {
+    "passed_per_owner": 7,
+    "failed": 0,
+    "skipped": 0,
+    "ignored": 0
+  },
+  "ci_shared_tests": {
+    "passed": 421,
+    "failed": 0,
+    "ignored": 8,
+    "recorded_fixture_skips": 9
+  },
+  "tracker_comment": "https://github.com/emu198x/emu198x/issues/2144#issuecomment-6546622764"
 }

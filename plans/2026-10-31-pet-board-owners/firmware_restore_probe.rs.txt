@@ -1,0 +1,28 @@
+//! Temporary original-firmware continuation probe retained in docs evidence.
+use crate::{Model,PetRuntime};
+use emu198x_shell::{MachineCore,MachineTime,HostIo,LatestFrameCapture,AudioCapture,NullTraceSink,ResetKind};
+fn runtime(model:Model)->PetRuntime {
+ let root=std::path::PathBuf::from(std::env::var("EMU198X_PET_REFERENCE_ROMS").expect("exact ROMs"));
+ let read=|n:&str|std::fs::read(root.join(n)).expect(n);
+ let (kernal,basic,editor)=match model {
+ Model::Pet2001n32k=>("kernal-2.901465-03.bin","basic-2.901465-01-02.bin","edit-2-n.901447-24.bin"),
+ Model::Pet40Col=>("kernal-4.901465-22.bin","basic-4.901465-23-20-21.bin","edit-4-40-n-50Hz.901498-01.bin"),
+ Model::Pet80Col=>("kernal-4.901465-22.bin","basic-4.901465-23-20-21.bin","edit-4-80-b-50Hz.901474-04.bin")};
+ PetRuntime::new(model,read(kernal),read(basic),read(editor),read("characters-2.901447-10.bin")).expect("firmware")
+}
+fn frame(r:&mut PetRuntime)->(Vec<u8>,Vec<u32>,u64){
+ let mut pixels=LatestFrameCapture::default();let mut audio=AudioCapture::default();
+ r.run_frame(&mut HostIo {input_events:&[],frame_sink:&mut pixels,audio_sink:&mut audio,trace_sink:&mut NullTraceSink}).expect("frame");
+ (pixels.frame().expect("pixels").pixels.clone(),audio.audio().expect("samples").samples.iter().map(|s|s.to_bits()).collect(),r.time().get())
+}
+#[test]fn original_firmware_boot_phases_restore_exactly_and_reset_retains_roms(){
+ for model in Model::ALL {
+  for instructions in [3,137,500000,700000] {
+   let mut live=runtime(model);let m=live.machine_mut().expect("loaded");for _ in 0..instructions {m.step_instruction();}let now=m.master_clock();live.set_time(MachineTime::new(now));
+   let saved=live.snapshot().expect("save");let mut restored=runtime(model);restored.restore(&saved).expect("restore");
+   for _ in 0..3 {assert_eq!(frame(&mut live),frame(&mut restored),"{model:?} at {instructions} instructions");assert!(live.snapshot().expect("live")==restored.snapshot().expect("restored"));}
+   restored.reset(ResetKind::Hard);assert!(restored.snapshot().expect("reset")==runtime(model).snapshot().expect("fresh"));
+   println!("{model:?}: {instructions} instructions / {now} clocks: three exact fields and identical cold reset");
+  }
+ }
+}
