@@ -77,3 +77,28 @@ Atari ST family, so those pages omit an embedded player. See
 [source PR #2217](https://github.com/emu198x/emu198x/pull/2217), the
 [ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/atari-st-fixed-board-owners.md)
 and the [plan](../plans/2026-10-31-atari-st-board-owners.md).
+
+## C64 and C128
+
+Four implemented breadbin/C64C PAL/NTSC configurations and two C128 regions
+have fixed machine owners, each with seven exclusive direct tests. Shared
+engines and their original regressions remain common evidence. The existing
+generic family runtime, profile and firmware IDs, aliases and version-22
+save bytes remain compatible. Six complete original saves verify the first
+three resumed native fields, audio sample bits, clocks and final state;
+restored and direct resets agree. Foreign board/chip payloads are rejected
+before replacing live machine state.
+
+Real ROMs reach BASIC on all six configurations in separate 200-field captures.
+C128 runtime tests additionally verify typed BASIC on both regions, PAL
+80-column boot and PAL mid-boot restore. The public pages select all four exact
+C64 variants from the pinned player; C128 pages omit an embed because its core
+is absent from that package. Legacy family URLs redirect to their PAL defaults.
+
+These owners identify implemented chip/clock configurations, not every PCB,
+early NTSC VIC, CIA date code or C128D fitting. C128 still lacks C64 mode,
+2 MHz execution, tape, IEC drives and cartridges. Native menu interaction and
+host audio-device output remain unverified here. See
+[source PR #2218](https://github.com/emu198x/emu198x/pull/2218), the
+[ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/commodore-fixed-board-owners.md)
+and the [verification receipt](../plans/2026-10-31-commodore-regional-board-owners/verification.json).
