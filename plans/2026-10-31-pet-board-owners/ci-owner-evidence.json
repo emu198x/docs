@@ -1,0 +1,110 @@
+[
+  {
+    "crate": "emu198x-commodore-pet",
+    "machine_crate": "machine-commodore-pet-2001n-32k",
+    "machine_id": "commodore-pet-2001n-32k",
+    "own": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "own_crates": [
+      "machine-commodore-pet-2001n-32k"
+    ],
+    "shared": {
+      "failed": 0,
+      "ignored": 8,
+      "passed": 421,
+      "skipped": 9,
+      "unexplained_ignored": 0
+    },
+    "shared_crates": [
+      "common-commodore-pet",
+      "emu198x-commodore-pet",
+      "emu198x-native-video",
+      "emu198x-pointer",
+      "emu198x-shell",
+      "emu198x-ui",
+      "emu198x-win-menu",
+      "runtime-commodore-pet"
+    ],
+    "shares_crate_with": [
+      "commodore-pet-4032",
+      "commodore-pet-8032"
+    ]
+  },
+  {
+    "crate": "emu198x-commodore-pet",
+    "machine_crate": "machine-commodore-pet-4032",
+    "machine_id": "commodore-pet-4032",
+    "own": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "own_crates": [
+      "machine-commodore-pet-4032"
+    ],
+    "shared": {
+      "failed": 0,
+      "ignored": 8,
+      "passed": 421,
+      "skipped": 9,
+      "unexplained_ignored": 0
+    },
+    "shared_crates": [
+      "common-commodore-pet",
+      "emu198x-commodore-pet",
+      "emu198x-native-video",
+      "emu198x-pointer",
+      "emu198x-shell",
+      "emu198x-ui",
+      "emu198x-win-menu",
+      "runtime-commodore-pet"
+    ],
+    "shares_crate_with": [
+      "commodore-pet-2001n-32k",
+      "commodore-pet-8032"
+    ]
+  },
+  {
+    "crate": "emu198x-commodore-pet",
+    "machine_crate": "machine-commodore-pet-8032",
+    "machine_id": "commodore-pet-8032",
+    "own": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "own_crates": [
+      "machine-commodore-pet-8032"
+    ],
+    "shared": {
+      "failed": 0,
+      "ignored": 8,
+      "passed": 421,
+      "skipped": 9,
+      "unexplained_ignored": 0
+    },
+    "shared_crates": [
+      "common-commodore-pet",
+      "emu198x-commodore-pet",
+      "emu198x-native-video",
+      "emu198x-pointer",
+      "emu198x-shell",
+      "emu198x-ui",
+      "emu198x-win-menu",
+      "runtime-commodore-pet"
+    ],
+    "shares_crate_with": [
+      "commodore-pet-2001n-32k",
+      "commodore-pet-4032"
+    ]
+  }
+]
