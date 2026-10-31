@@ -928,7 +928,36 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c128-pal",
+        "--rom-dir",
+        "{c128_rom_dir}",
+        "--80-column",
+        "--script",
+        "{script}"
+      ],
+      "script": [
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "c128.vdc.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "c128.screen.80_column"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "variant": "c128-ntsc",
@@ -992,7 +1021,381 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c128-ntsc",
+        "--rom-dir",
+        "{c128_rom_dir}",
+        "--80-column",
+        "--script",
+        "{script}"
+      ],
+      "script": [
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "c128.vdc.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "c128.screen.80_column"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     }
-  ]
+  ],
+  "source_merge": "e6dad7980ba4cf05e3f7093d4862149c5f93336a",
+  "source_ci": {
+    "run": 41213248023,
+    "url": "https://github.com/emu198x/emu198x/actions/runs/41213248023",
+    "head": "65c8aa82074654302257118887e6ba61f4ce8821",
+    "base_at_merge": "bc2eaa4c54040f6029a82a589759585b2e15ff3e",
+    "conclusion": "success",
+    "named_checks_successful_or_skipped": 34,
+    "registry_machines": 86,
+    "owners": {
+      "commodore-c128-ntsc": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c128-ntsc",
+        "machine_id": "commodore-c128-ntsc",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c128-ntsc"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 88,
+          "passed": 1024,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c128",
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-pal",
+          "commodore-c64-ntsc-breadbin",
+          "commodore-c64-pal-breadbin",
+          "commodore-c64c-ntsc",
+          "commodore-c64c-pal"
+        ]
+      },
+      "commodore-c128-pal": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c128-pal",
+        "machine_id": "commodore-c128-pal",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c128-pal"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 88,
+          "passed": 1024,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c128",
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-ntsc",
+          "commodore-c64-ntsc-breadbin",
+          "commodore-c64-pal-breadbin",
+          "commodore-c64c-ntsc",
+          "commodore-c64c-pal"
+        ]
+      },
+      "commodore-c64-ntsc-breadbin": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c64-ntsc-breadbin",
+        "machine_id": "commodore-c64-ntsc-breadbin",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c64-ntsc-breadbin"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 84,
+          "passed": 1001,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-ntsc",
+          "commodore-c128-pal",
+          "commodore-c64-pal-breadbin",
+          "commodore-c64c-ntsc",
+          "commodore-c64c-pal"
+        ]
+      },
+      "commodore-c64-pal-breadbin": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c64-pal-breadbin",
+        "machine_id": "commodore-c64-pal-breadbin",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c64-pal-breadbin"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 84,
+          "passed": 1001,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-ntsc",
+          "commodore-c128-pal",
+          "commodore-c64-ntsc-breadbin",
+          "commodore-c64c-ntsc",
+          "commodore-c64c-pal"
+        ]
+      },
+      "commodore-c64c-ntsc": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c64c-ntsc",
+        "machine_id": "commodore-c64c-ntsc",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c64c-ntsc"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 84,
+          "passed": 1001,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-ntsc",
+          "commodore-c128-pal",
+          "commodore-c64-ntsc-breadbin",
+          "commodore-c64-pal-breadbin",
+          "commodore-c64c-pal"
+        ]
+      },
+      "commodore-c64c-pal": {
+        "crate": "emu198x-c64",
+        "machine_crate": "machine-commodore-c64c-pal",
+        "machine_id": "commodore-c64c-pal",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-commodore-c64c-pal"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 84,
+          "passed": 1001,
+          "skipped": 9,
+          "unexplained_ignored": 0
+        },
+        "shared_crates": [
+          "common-commodore-c64",
+          "common-commodore-drive-gcr",
+          "common-commodore-iec",
+          "common-commodore-iec-drive",
+          "emu198x-c64",
+          "emu198x-esp-at-modem",
+          "emu198x-mos-sid-6581",
+          "emu198x-native-video",
+          "emu198x-peripheral-ultimate-uci-net",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "machine-commodore-1541",
+          "machine-commodore-1571",
+          "machine-commodore-1581",
+          "runtime-commodore-c64"
+        ],
+        "shares_crate_with": [
+          "commodore-c128-ntsc",
+          "commodore-c128-pal",
+          "commodore-c64-ntsc-breadbin",
+          "commodore-c64-pal-breadbin",
+          "commodore-c64c-ntsc"
+        ]
+      }
+    },
+    "artifact_id": 13047881055,
+    "evidence_json_sha256": "b2e2bff2b2fc539547b3c2d9f0c56d39b1a37e207a16a09d4d26bc1f94f5d940",
+    "artifact_sha256": "b58959ca929d2e77ef9c0f1bab4b9c88d3d0ec457e7bc3d42ef5b5814bc4aa96"
+  },
+  "site_pr": "https://github.com/emu198x/emu198x.github.io/pull/39",
+  "site_ci": {
+    "run": 41215475346,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41215475346",
+    "head": "665954d0c871cee32ffe0f1118e3e1272cfc6ead",
+    "conclusion": "success",
+    "tests_passed": 129,
+    "production_build": "passed",
+    "routes": 111,
+    "registry_machines": 86,
+    "registry_board_embeds": 52,
+    "accessibility": {
+      "pages": 98,
+      "themes": 2,
+      "redirect_stubs": 13,
+      "defects": 0
+    },
+    "visual_inspection": "PAL/NTSC C64 and C128 images inspected; C64C bytes match the independently captured breadbin of the same region."
+  },
+  "site_merge": "c776b14adca4f1febd702548e1faa3b918031d0f",
+  "site_deploy": {
+    "run": 41215669005,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41215669005",
+    "head": "c776b14adca4f1febd702548e1faa3b918031d0f",
+    "conclusion": "success"
+  },
+  "site_live": {
+    "routes": 111,
+    "registry_machines": 86,
+    "routes_with_players": 53,
+    "registry_board_embeds": 52,
+    "boot_images_sha256_verified": 6,
+    "c64_players": 4,
+    "c128_players": 0,
+    "legacy_redirects": {
+      "commodore-c64": "/systems/commodore-c64-pal-breadbin/",
+      "commodore-c128": "/systems/commodore-c128-pal/"
+    },
+    "site_head": "c776b14adca4f1febd702548e1faa3b918031d0f"
+  }
 }
