@@ -1,0 +1,17 @@
+//! Temporary diagnostics of the original PET save contract.
+use crate::{Model,PetRuntime};
+use emu198x_shell::{MachineCore,HostIo,NullFrameSink,NullAudioSink,NullTraceSink,MediaImage,MediaKind,MediaSet,MachineTime};
+fn runtime(model:Model)->PetRuntime{
+ let mut kernal=vec![0xea;0x1000];kernal[..3].copy_from_slice(&[0x4c,0,0xf0]);kernal[0xffc..0xffe].copy_from_slice(&[0,0xf0]);PetRuntime::new(model,kernal,vec![0;0x2000],vec![0;0x800],vec![0;0x1000]).expect("synthetic firmware")
+}
+fn field(r:&mut PetRuntime){r.run_frame(&mut HostIo{input_events:&[],frame_sink:&mut NullFrameSink,audio_sink:&mut NullAudioSink,trace_sink:&mut NullTraceSink}).expect("native frame");}
+fn queued_program(model:Model){
+ let mut live=runtime(model);let mut media=MediaSet::new();media.push(MediaImage::new("program-1",MediaKind::Program,&[0,2,0x42]));live.load_media(&media).expect("queue PRG");let saved=live.snapshot().expect("save");let mut restored=runtime(model);restored.restore(&saved).expect("restore");for _ in 0..121{field(&mut live);field(&mut restored);}assert_eq!(live.machine().expect("live").peek(0x200),0x42,"control proves the queue reached RAM");assert_eq!(restored.machine().expect("restored").peek(0x200),live.machine().expect("live").peek(0x200),"queued PRG is lost across restore");
+}
+fn queued_audio(model:Model){
+ let mut live=runtime(model);let machine=live.machine_mut().expect("machine");for _ in 0..20{machine.step_instruction();}let now=machine.master_clock();live.set_time(MachineTime::new(now));let saved=live.snapshot().expect("save");let mut restored=runtime(model);restored.restore(&saved).expect("restore");let before=live.machine_mut().expect("live").take_audio_buffer();assert!(!before.is_empty(),"control has undelivered samples");let after=restored.machine_mut().expect("restored").take_audio_buffer();assert_eq!(after,before,"undelivered audio is lost across restore");
+}
+#[test]fn queued_program_40(){queued_program(Model::Pet40Col);}
+#[test]fn queued_program_80(){queued_program(Model::Pet80Col);}
+#[test]fn queued_audio_40(){queued_audio(Model::Pet40Col);}
+#[test]fn queued_audio_80(){queued_audio(Model::Pet80Col);}
