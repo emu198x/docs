@@ -1,0 +1,385 @@
+{
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2217",
+  "source_head": "30453fb3be16f8b044bb028bd11eac22acaddf1a",
+  "baseline_source": "77e187c939f90bb7c3b5ca51ff8873ee71ea40fc",
+  "save_version": 1,
+  "save_schema_changed": false,
+  "exclusive_owner_tests": {
+    "atari-520st-pal": 7,
+    "atari-520st-ntsc": 7,
+    "atari-1040st-pal": 7,
+    "atari-1040st-ntsc": 7
+  },
+  "local_checks": {
+    "selected_tests": 109,
+    "initial_executed": 104,
+    "initial_structured_firmware_skips": 5,
+    "explicit_firmware_passed": 5,
+    "all_family_fleet_passed": 13,
+    "clippy": "passed with -D warnings, including native UI",
+    "rustdoc": "passed with -D warnings",
+    "fixture_ignore_registry_status_ownership_guards": "passed",
+    "corrupted_continuation": "rejected: atari-520st-pal-colour: direct continuation",
+    "baseline_cases": 8,
+    "continued_fields_per_case": 3
+  },
+  "frozen_fixtures": {
+    "README.md": "002e4c248209bf07d8f895731adc46f96b5479660114e67a487f8729ab1b2915",
+    "atari-1040st-ntsc-colour.output": "d39d3e1975b17b45cae180618bb81889b255bb3dde1b4961c9febed7c98745ac",
+    "atari-1040st-ntsc-colour.state": "1ab8c4c5595727c3d29ae3413093b07068a5d080eaf6b153d2568d6c12745552",
+    "atari-1040st-ntsc-mono.output": "c2d6c8af0660ceef955464fab448baec5ab5338fb3906bd3966a89ab672fbbcc",
+    "atari-1040st-ntsc-mono.state": "b546ad739eb25c8d20d3b19dc4af269133144fe1fd7346ddf906acbc813ff6f1",
+    "atari-1040st-pal-colour.output": "ea5a2ec9b407edcdaed1fba68b5f5f120b614f41f0d4aa18ff604e718573abdd",
+    "atari-1040st-pal-colour.state": "d6565ab8981be5c8659841dd77d62532e8a3c6ed8707cf68fc929189cfd8e54d",
+    "atari-1040st-pal-mono.output": "5d7b97f88f9714e62eac3eb11ac7c317527fed5609245e60a5f6c478b6b49ffc",
+    "atari-1040st-pal-mono.state": "74985f3ec7d7283d7dc66a68c93644858af10cdc1803197ff8d23f8b8423fc3c",
+    "atari-520st-ntsc-colour.output": "bceeddff1e9e9731d0c5dd6086015fe4e9a5828a7c5d656be6022490f758c7d4",
+    "atari-520st-ntsc-colour.state": "bcfca345cb074f0bd65f83ee153d9822f762f9223874566194b8fb6f1a5bab23",
+    "atari-520st-ntsc-mono.output": "9d5eb42b862bc10c2f81a203139692c5b23531c8c74d9f2dde8a1a38c41f1af1",
+    "atari-520st-ntsc-mono.state": "a83a66c59871afac2045ad62c8497edcb5ff264dcd391eb849fd5da581746389",
+    "atari-520st-pal-colour.output": "13bcb3440cfc429b1522f03e2f52ffd1ccef348800c6e86f866e3e0d1c7960b5",
+    "atari-520st-pal-colour.state": "15209b0194b590a6a73590f6e9628b936687f7878b8e0a60f6dfe12d9edc3521",
+    "atari-520st-pal-mono.output": "449935c9700f2005938665f16c0e40dbbc7d46bcfe1149380251fadc87a78978",
+    "atari-520st-pal-mono.state": "3c393a04c2ff812a92aef4a1098f7b34e8eb3edb3b053ebb09d6a8734373877b"
+  },
+  "captures": [
+    {
+      "model": "atari-520st-pal",
+      "variant": "520st-pal",
+      "firmware_release": "EmuTOS 1.3",
+      "firmware_name": "etos192us.img",
+      "firmware_sha256": "e0ce6c38c5106240249157737980ff075f1d95f7a70e2e150005bc40fcdce4fc",
+      "firmware_source": "https://sourceforge.net/projects/emutos/files/emutos/1.3/emutos-192k-1.3.zip/download",
+      "image_sha256": "f91b685796eb46ad62ef6d33fda07682db51237f93b2b2a8079de9a9f550b6c4",
+      "report": {
+        "frames_run": 600,
+        "machine_frame_counter": 600,
+        "observations": [
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.variant",
+              "value": "520st-pal"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.region",
+              "value": "Pal"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.monitor",
+              "value": "colour"
+            }
+          },
+          {
+            "frames": 600,
+            "kind": "run_frames",
+            "reached": 80242360,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.frequency",
+              "value": 60
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.resolution",
+              "value": "low"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.cycles",
+              "value": 80242360
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 600
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "tos.version",
+              "value": "01.04"
+            }
+          }
+        ],
+        "run_result": {
+          "reached": 80242360,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 80242360,
+        "tos_loaded": true
+      }
+    },
+    {
+      "model": "atari-520st-ntsc",
+      "variant": "520st-ntsc",
+      "firmware_release": "EmuTOS 1.3",
+      "firmware_name": "etos192us.img",
+      "firmware_sha256": "e0ce6c38c5106240249157737980ff075f1d95f7a70e2e150005bc40fcdce4fc",
+      "firmware_source": "https://sourceforge.net/projects/emutos/files/emutos/1.3/emutos-192k-1.3.zip/download",
+      "image_sha256": "f91b685796eb46ad62ef6d33fda07682db51237f93b2b2a8079de9a9f550b6c4",
+      "report": {
+        "frames_run": 600,
+        "machine_frame_counter": 600,
+        "observations": [
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.variant",
+              "value": "520st-ntsc"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.region",
+              "value": "Ntsc"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.monitor",
+              "value": "colour"
+            }
+          },
+          {
+            "frames": 600,
+            "kind": "run_frames",
+            "reached": 80242360,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.frequency",
+              "value": 60
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.resolution",
+              "value": "low"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.cycles",
+              "value": 80242360
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 600
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "tos.version",
+              "value": "01.04"
+            }
+          }
+        ],
+        "run_result": {
+          "reached": 80242360,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 80242360,
+        "tos_loaded": true
+      }
+    },
+    {
+      "model": "atari-1040st-pal",
+      "variant": "1040st-pal",
+      "firmware_release": "EmuTOS 1.3",
+      "firmware_name": "etos192us.img",
+      "firmware_sha256": "e0ce6c38c5106240249157737980ff075f1d95f7a70e2e150005bc40fcdce4fc",
+      "firmware_source": "https://sourceforge.net/projects/emutos/files/emutos/1.3/emutos-192k-1.3.zip/download",
+      "image_sha256": "f91b685796eb46ad62ef6d33fda07682db51237f93b2b2a8079de9a9f550b6c4",
+      "report": {
+        "frames_run": 600,
+        "machine_frame_counter": 600,
+        "observations": [
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.variant",
+              "value": "1040st-pal"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.region",
+              "value": "Pal"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.monitor",
+              "value": "colour"
+            }
+          },
+          {
+            "frames": 600,
+            "kind": "run_frames",
+            "reached": 80242360,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.frequency",
+              "value": 60
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.resolution",
+              "value": "low"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.cycles",
+              "value": 80242360
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 600
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "tos.version",
+              "value": "01.04"
+            }
+          }
+        ],
+        "run_result": {
+          "reached": 80242360,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 80242360,
+        "tos_loaded": true
+      }
+    },
+    {
+      "model": "atari-1040st-ntsc",
+      "variant": "1040st-ntsc",
+      "firmware_release": "EmuTOS 1.3",
+      "firmware_name": "etos192us.img",
+      "firmware_sha256": "e0ce6c38c5106240249157737980ff075f1d95f7a70e2e150005bc40fcdce4fc",
+      "firmware_source": "https://sourceforge.net/projects/emutos/files/emutos/1.3/emutos-192k-1.3.zip/download",
+      "image_sha256": "f91b685796eb46ad62ef6d33fda07682db51237f93b2b2a8079de9a9f550b6c4",
+      "report": {
+        "frames_run": 600,
+        "machine_frame_counter": 600,
+        "observations": [
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.variant",
+              "value": "1040st-ntsc"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.region",
+              "value": "Ntsc"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.monitor",
+              "value": "colour"
+            }
+          },
+          {
+            "frames": 600,
+            "kind": "run_frames",
+            "reached": 80242360,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.frequency",
+              "value": 60
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "video.resolution",
+              "value": "low"
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.cycles",
+              "value": 80242360
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 600
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "tos.version",
+              "value": "01.04"
+            }
+          }
+        ],
+        "run_result": {
+          "reached": 80242360,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 80242360,
+        "tos_loaded": true
+      }
+    }
+  ],
+  "limits": [
+    "Implemented RAM-bank/clock configurations only; not all ST/STF/STFM revisions or optional hardware.",
+    "Version-1 saves require external TOS and do not encode its content identity.",
+    "Pinned @emu198x/player 0.44.2 contains no Atari ST family.",
+    "Native menu interaction and host audio-device output unverified."
+  ]
+}

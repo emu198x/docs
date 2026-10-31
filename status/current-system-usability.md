@@ -53,3 +53,27 @@ See [source PR #2216](https://github.com/emu198x/emu198x/pull/2216), the
 [ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/cpc-fixed-board-owners.md)
 and the [plan](../plans/2026-10-31-cpc-board-owners.md). CI evidence distinguishes
 the three owners from the shared family regression suite.
+
+## Atari ST
+
+The implemented 520ST and 1040ST PAL/NTSC configurations now have four fixed
+machine owners over `common-atari-st`. Each owner has seven direct tests.
+The family runtime retains its profile IDs and exact version-1 save bytes;
+eight original colour/monochrome fixtures compare the first three continued
+native fields, audio, clock deltas and final state. Restore checks the saved
+model, oscillator, physical RAM banks and framebuffer geometry before replacing
+the selected machine.
+
+EmuTOS 1.3 tests cover colour and monochrome desktops, Line-A/VDI mouse
+behaviour, floppy DMA boot and the family runtime. Separate 600-field captures
+verify all four selected configurations. These names describe implemented RAM
+bank and clock configurations, not every ST/STF/STFM board revision or optional
+hardware fitting. Monitor selection remains a peripheral choice. Version-1
+saves still require host-supplied TOS and do not encode its content identity.
+Native menu interaction and host audio-device output remain unverified here.
+
+The public pages have model-specific captures. The pinned browser player has no
+Atari ST family, so those pages omit an embedded player. See
+[source PR #2217](https://github.com/emu198x/emu198x/pull/2217), the
+[ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/atari-st-fixed-board-owners.md)
+and the [plan](../plans/2026-10-31-atari-st-board-owners.md).
