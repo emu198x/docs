@@ -1,89 +1,85 @@
 # Commodore PET
 
-## Status: Boots to BASIC `READY.`; keyboard wired
+Three implemented 32K configurations have fixed machine owners over shared PET
+wiring. All three reach BASIC READY and execute typed arithmetic with matching
+manufacturer firmware. They do not represent the whole PET family.
 
-The 1977 business machine (one of the "1977 trinity"). Boots to `### COMMODORE
-BASIC ###` / `31743 BYTES FREE` / `READY.`. Headless extended system. 6502 +
-PIA-6520 + VIA-6522 + 6845 CRTC — all reused, no new chip crate.
+| Machine owner | Profile ID | Firmware and keyboard | Native frame |
+|---|---|---|---|
+| `machine-commodore-pet-2001n-32k` | `commodore-pet-2001n-32k` | 2001N/3032 discrete video, BASIC 2, graphics keyboard | 16,640 CPU clocks |
+| `machine-commodore-pet-4032` | `commodore-pet-40col` | 4032 50 Hz CRTC, BASIC 4, graphics keyboard, editor 901498-01 | 20,000 CPU clocks |
+| `machine-commodore-pet-8032` | `commodore-pet-80col` | 8032 50 Hz CRTC, BASIC 4, UK business keyboard, exact editor 901474-04 | 19,992 CPU clocks |
 
-## What works
+These are the stable rasters programmed by the qualified editors, measured
+against VICE 3.10. Other software can reprogram a CRTC. The 8032 fetches two
+characters per CRTC address at the same 1 MHz machine cadence; it does not
+clock the CRTC twice per CPU cycle. Its 25 ten-line rows occupy 250 active lines.
 
-- **Boot to BASIC** (2026-06-04) with the VICE 901465-* ROM set (BASIC 2 + Kernal
-  2 + Editor 2N) + 4K character ROM. Smoke asserts the banner + free-bytes.
-- **Keyboard** — PIA port A column-select, port B row read (10×8 matrix); the
-  editor's vertical-retrace spin-wait is satisfied via VIA PB5 ← CRTC retrace
-  (2026-06-05).
-- **CRTC** — 40/80-column geometry, latched `ma_output` so the displayed char
-  isn't dropped.
+The old 40/80 profile IDs remain, but they now select coherent CRTC machines.
+Use the new discrete profile for BASIC 2. Firmware contents never silently
+select different hardware.
 
-## Not implemented / accuracy gaps
+## Firmware
 
-- **Cassette / IEEE-488** unwired (VIA exists, external lines not connected).
-- **Speaker** (VIA CB2 piezo) unwired.
-- **`.prg` / `.tap` load** not implemented. **Snapshot** deferred. **No native
-  window.**
-- **80-column CRTC clock** — runs at 1× CPU; real 80-column hardware clocks the
-  CRTC at 2 MHz (donor-v1 simplification).
+Place the matching parts in a directory and pass `--rom-dir`, or use
+`--kernal`, `--basic`, `--editor` and `--char` explicitly. The default directory
+is `~/.emu198x/roms/commodore-pet/`; each profile searches part-specific filenames.
+The four firmware IDs and their environment overrides remain available.
 
-## Known unknowns / disproven hypotheses
+| Part | 2001N/3032 | 4032 | 8032 |
+|---|---|---|---|
+| KERNAL, 4 KB | `kernal-2.901465-03.bin` | `kernal-4.901465-22.bin` | same BASIC-4 KERNAL |
+| BASIC | `basic-2.901465-01-02.bin`, 8 KB at C000 | `basic-4.901465-23-20-21.bin`, 12 KB at B000 | same BASIC-4 image |
+| Editor, 2 KB | `edit-2-n.901447-24.bin` | `edit-4-40-n-50Hz.901498-01.bin` | `edit-4-80-b-50Hz.901474-04.bin` |
+| Characters, 2 KB | `characters-2.901447-10.bin` | same character ROM | same character ROM |
 
-- **DISPROVEN: "the CPU cold-starts."** `Pet::new()` left the 6502 at PC=`$0000`,
-  running the BRK there instead of the `$FFFC` reset vector. Added `cpu.reset()`
-  (the C64/5200 do the same).
-- **DISPROVEN (donor): "glyph stride is 16 bytes."** The PET glyph ROM is 8
-  bytes/char; `code*16` made every glyph read its neighbour and "spaces" fetch a
-  non-blank glyph (horizontal-line noise). Now `code*8 + scanline`.
-- **DISPROVEN (`motorola-6845`): "sample `ma` after advancing."** The CRTC
-  pre-incremented, dropping the first cell of every row (banner lost its leading
-  `*`). Now latches `ma_output` and advances behind it.
-- **Verification target** — 80-column CRTC timing.
-
-## Validated against
-
-- VICE 901465-* ROM set → `READY.`; keyboard matrix ground-truthed (CB1 retrace
-  IRQ + scan, 2026-06-05). Reference: VICE.
-
-## Timing & cycle-accuracy
-
-- **Master clock & dividers** — 6502 at ~1 MHz (8 MHz crystal ÷ 8); CRTC ticks at
-  the same 1× rate (donor-v1 simplification — real 80-column hardware clocks the
-  CRTC at 2 MHz).
-- **Timing model realised** — relaxed: one master tick = one 6502 cycle = one CRTC
-  tick; vertical-retrace is reflected via VIA PB5 so the editor's spin-wait
-  releases, but the 80-column 2 MHz CRTC clock isn't modelled.
-- **CPU timing** — 6502 cycle-accurate (§62).
-- **Distance to full cycle-accuracy** — 80-column CRTC at 2 MHz; exact CRTC
-  character timing.
-
-## Tooling & drivability
-
-- **Script / MCP** — `--script` + `--mcp`.
-- **Native window** — headless only (extended tier).
-- **Disassembler** — pending the Asm198x shared 6502 disassembler.
-
-## Peripherals & connectivity
-
-- **Emulated now** — keyboard; CRTC display.
-- **Period peripherals (emulatable)** — IEEE-488 drives (2040/4040/8050), datasette,
-  printers, the PET's expansion/userport.
-- **Internet-capable** — **Marginal-to-Yes**: RS-232 + IEEE-488-attached modems
-  gave period BBS access; no prioritised modern device, but a serial-modem bridge
-  is realistic.
-
-## Crates
-
-| Crate | Role |
-|-------|------|
-| `mos-6502` | CPU |
-| `mos-pia-6520` / `mos-via-6522` / `motorola-6845` | PIA · VIA · CRTC |
-| `machine-commodore-pet` / `runtime-…` / `emu198x-commodore-pet` | wiring + runner |
-
-## ROMs
-
-BASIC2 + Kernal2 + Editor2N + character ROM at `~/.emu198x/roms/commodore-pet/`.
-
-## Launch
+Multiple archived 901474-04 dumps exist. The qualified 8032 editor has SHA-1
+`66887061b6c4ebef7d6efb90af9afd5e2c3b08ba`; its name alone is insufficient.
+The [verification inputs](../../plans/2026-10-31-pet-board-owners/reference-runs.json)
+record full SHA-256 identities. No ROM images are distributed here.
 
 ```sh
-cargo run --release -p emu198x-commodore-pet -- --frames 200 --screenshot pet.png
+cargo run --release -p emu198x-commodore-pet -- \
+  --model commodore-pet-2001n-32k --rom-dir /path/to/pet-roms \
+  --headless --frames 120 --screenshot pet.png
 ```
+
+## Implemented surfaces and saves
+
+The shared runner provides a native window, headless capture, script and MCP
+surfaces. Graphics and business layouts drive the PIA's binary row select and
+active-low column inputs. Business symbols close the required base and Shift
+contacts. VIA CB2 produces queued audio, and PRG autoload waits until frame 120.
+
+Version-5 saves retain installed firmware, CPU/chip/RAM state, video phase and
+pixels, held contacts, pending PRGs and undelivered audio. Foreign board state
+and malformed firmware/framebuffer payloads are rejected before installation.
+Version 4 is rejected before decoding because it omits state needed for exact
+continuation. Reset uses the firmware restored with the machine.
+
+## Evidence and limits
+
+Each fixed owner has seven direct tests. Shared tests cover memory decode,
+character banks/inversion, paired fetches, retrace wiring, business modifiers,
+malformed saves and exact continuations. Project-written v5 fixtures compare
+the first three resumed native fields, sample bits, clocks and final state.
+A corrupt continuation fails that gate.
+
+Exact original ROM sets reach READY within the existing 120-frame budget.
+After `PRINT3+4`, all three match VICE's complete screen RAM and every active
+monochrome pixel: 64,000 for each 40-column board and 160,000 for the 8032.
+Host palette and presentation borders are outside that comparison. Original
+BASIC-2 keyboard tests and PRG autoload pass on the explicitly discrete board.
+See the [retained comparison](../../plans/2026-10-31-pet-board-owners/README.md)
+and [source PR #2219](https://github.com/emu198x/emu198x/pull/2219).
+
+Second PIA, IEEE-488 drives and cassette remain incomplete. The validated CRTC
+rasters use the existing counter stages; full MOS 6545 personality/interlace is
+not qualified. BASIC-1/chiclet machines, other RAM fittings, 60 Hz CRTC models,
+SuperPET and other family members remain separate work in #355 and related
+issues. Native menu interaction and host audio-device output were not tested
+in this slice.
+
+The pinned public browser package still contains the old hybrid PET contract.
+The three corrected machine pages omit a player until a corrected package is
+published and qualified; matching old profile strings alone are insufficient.

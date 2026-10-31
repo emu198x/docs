@@ -35,7 +35,7 @@ the standalone internet-capability verdict.
 | [Memotech MTX](memotech/mtx.md) | BASIC `Ready` | per-dot VDP | mcp | Marginal |
 | [Tatung Einstein](tatung/einstein.md) | MOS prompt; types | per-dot VDP (exact 4 MHz:5.37 MHz) | mcp | Marginal |
 | [Spectravideo SVI-328](spectravideo/svi-328.md) | SV-BASIC; types | per-dot VDP | mcp | Marginal |
-| [Commodore PET](commodore/pet.md) | BASIC `READY.` | relaxed (1x CRTC) | mcp | Marginal |
+| [Commodore PET](commodore/pet.md) | Three board-specific BASIC `READY.` configurations | discrete / paired CRTC fetches | native, script, MCP | Marginal |
 | [Jupiter Ace](jupiter/ace.md) | Forth; interactive | hc-ish; e-o-f display | mcp | No |
 | [Mattel Aquarius](mattel/aquarius.md) | BASIC + carts play | end-of-frame (NTSC/PAL) | mcp | No |
 | [Sega Master System](sega/master-system.md) | Cart title (Mode 4) | per-dot VDP (3:2 interleave) | mcp | Marginal |

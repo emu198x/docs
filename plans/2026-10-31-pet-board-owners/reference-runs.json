@@ -1,0 +1,113 @@
+[
+  {
+    "model": "3032",
+    "exit": 0,
+    "firmware": {
+      "kernal-2.901465-03.bin": "056d5e84a6e4f2b5b40a4109f49515c2496a4bf99139a9f59abe486ded5cd03d",
+      "basic-2.901465-01-02.bin": "5b426b5c50350e5d50c4308a81288bb34f310d7384bcc43c66a0e18716a4cdbe",
+      "edit-2-n.901447-24.bin": "5338b1dffebd695f6110c9995e16f7536bb63a909c2a0062b4789de46904ade9",
+      "characters-2.901447-10.bin": "da3374c21d6ea440cef5f338ce3f524e0a1e40dcb1ef64446c695f92c636f1fa"
+    },
+    "command": [
+      "/opt/homebrew/bin/xpet",
+      "-default",
+      "-console",
+      "-model",
+      "3032",
+      "-kernal",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/kernal-2.901465-03.bin",
+      "-basic",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/basic-2.901465-01-02.bin",
+      "-editor",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/edit-2-n.901447-24.bin",
+      "-chargen",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/characters-2.901447-10.bin",
+      "-sounddev",
+      "dummy",
+      "-warp",
+      "-limitcycles",
+      "10000000",
+      "-initbreak",
+      "reset",
+      "-monlog",
+      "-monlogname",
+      "/private/tmp/198x-pet-reference/3032-typed-monitor.log",
+      "-moncommands",
+      "/private/tmp/198x-pet-reference/3032-typed.mon"
+    ]
+  },
+  {
+    "model": "4032",
+    "exit": 0,
+    "firmware": {
+      "kernal-4.901465-22.bin": "7cf8678b748bda1ffedee69ea54888feb3f5ec66dca8143375cbdf8c3de4d573",
+      "basic-4.901465-23-20-21.bin": "71bb94523f666fc10a2da1b15790620d07ef0ed9696a37922cbea28d8f468025",
+      "edit-4-40-n-50Hz.901498-01.bin": "e851f8c61b9ae8d81236e093ba9efbb21576d7eeab4f82435ba3be5e081d8d48",
+      "characters-2.901447-10.bin": "da3374c21d6ea440cef5f338ce3f524e0a1e40dcb1ef64446c695f92c636f1fa"
+    },
+    "command": [
+      "/opt/homebrew/bin/xpet",
+      "-default",
+      "-console",
+      "-model",
+      "4032",
+      "-kernal",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/kernal-4.901465-22.bin",
+      "-basic",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/basic-4.901465-23-20-21.bin",
+      "-editor",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/edit-4-40-n-50Hz.901498-01.bin",
+      "-chargen",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/characters-2.901447-10.bin",
+      "-sounddev",
+      "dummy",
+      "-warp",
+      "-limitcycles",
+      "10000000",
+      "-initbreak",
+      "reset",
+      "-monlog",
+      "-monlogname",
+      "/private/tmp/198x-pet-reference/4032-typed-monitor.log",
+      "-moncommands",
+      "/private/tmp/198x-pet-reference/4032-typed.mon"
+    ]
+  },
+  {
+    "model": "8032",
+    "exit": 0,
+    "firmware": {
+      "kernal-4.901465-22.bin": "7cf8678b748bda1ffedee69ea54888feb3f5ec66dca8143375cbdf8c3de4d573",
+      "basic-4.901465-23-20-21.bin": "71bb94523f666fc10a2da1b15790620d07ef0ed9696a37922cbea28d8f468025",
+      "edit-4-80-b-50Hz.901474-04.bin": "0c7b772881f437cf8526f9c8e3d03acb16ab1ae07aa7b69f940c2ce5a44a6099",
+      "characters-2.901447-10.bin": "da3374c21d6ea440cef5f338ce3f524e0a1e40dcb1ef64446c695f92c636f1fa"
+    },
+    "command": [
+      "/opt/homebrew/bin/xpet",
+      "-default",
+      "-console",
+      "-model",
+      "8032",
+      "-kernal",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/kernal-4.901465-22.bin",
+      "-basic",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/basic-4.901465-23-20-21.bin",
+      "-editor",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/edit-4-80-b-50Hz.901474-04.bin",
+      "-chargen",
+      "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/PET/characters-2.901447-10.bin",
+      "-sounddev",
+      "dummy",
+      "-warp",
+      "-limitcycles",
+      "10000000",
+      "-initbreak",
+      "reset",
+      "-monlog",
+      "-monlogname",
+      "/private/tmp/198x-pet-reference/8032-typed-monitor.log",
+      "-moncommands",
+      "/private/tmp/198x-pet-reference/8032-typed.mon"
+    ]
+  }
+]

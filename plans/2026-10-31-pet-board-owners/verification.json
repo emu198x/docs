@@ -1,0 +1,58 @@
+{
+  "source_pr": 2219,
+  "source_head": "ce33008f9ee8bc509d51200a9bfe9c73b7498df8",
+  "source_ci_run": 41222107936,
+  "source_ci_status": "pending",
+  "local": {
+    "passed": 76,
+    "failed": 0,
+    "ignored": 8,
+    "original_firmware_checks_passed": 8,
+    "owner_tests": [
+      7,
+      7,
+      7
+    ],
+    "strict_clippy": "passed",
+    "strict_rustdoc": "passed",
+    "fleet_pet_feature_tests_passed": 13,
+    "negative_continuation": "failed as expected, original restored"
+  },
+  "vice_3_10": [
+    {
+      "model": "3032",
+      "native_cycles": 16640,
+      "screen_bytes": 1000,
+      "active_pixels": 64000,
+      "different_pixels": 0
+    },
+    {
+      "model": "4032",
+      "native_cycles": 20000,
+      "screen_bytes": 1000,
+      "active_pixels": 64000,
+      "different_pixels": 0
+    },
+    {
+      "model": "8032",
+      "native_cycles": 19992,
+      "screen_bytes": 2000,
+      "active_pixels": 160000,
+      "different_pixels": 0
+    }
+  ],
+  "remaining": [
+    "second PIA",
+    "IEEE-488",
+    "cassette",
+    "full MOS 6545/interlace",
+    "other PET boards and firmware fittings"
+  ],
+  "site": {
+    "tests_passed": 130,
+    "built_routes": 114,
+    "registry_machines": 88,
+    "registry_embeds": 51,
+    "a11y": "pending"
+  }
+}

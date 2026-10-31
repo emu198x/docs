@@ -1,0 +1,53 @@
+[
+  {
+    "profile": "commodore-pet-2001n-32k",
+    "image": "commodore-pet-2001n-32k.png",
+    "sha256": "a89f892ef97489361c0f8f6ed2870b9d0c8f5f773c8436ac00e040e08b9d955e",
+    "report": {
+      "columns": 40,
+      "frames_run": 120,
+      "machine_frame_counter": 120,
+      "observations": [],
+      "roms_loaded": true,
+      "run_result": {
+        "reached": 1996800,
+        "stop_reason": "ReachedTarget"
+      },
+      "time": 1996800
+    }
+  },
+  {
+    "profile": "commodore-pet-40col",
+    "image": "commodore-pet-4032.png",
+    "sha256": "a10061031ce556da1f3df9d54f641c94676db59a7f3df79f1764b9a867015646",
+    "report": {
+      "columns": 40,
+      "frames_run": 120,
+      "machine_frame_counter": 120,
+      "observations": [],
+      "roms_loaded": true,
+      "run_result": {
+        "reached": 2400000,
+        "stop_reason": "ReachedTarget"
+      },
+      "time": 2400000
+    }
+  },
+  {
+    "profile": "commodore-pet-80col",
+    "image": "commodore-pet-8032.png",
+    "sha256": "7e63d2af939b89cc438538051b2ee062f49ce8ae6f2250ab03ea181b877790c0",
+    "report": {
+      "columns": 80,
+      "frames_run": 120,
+      "machine_frame_counter": 120,
+      "observations": [],
+      "roms_loaded": true,
+      "run_result": {
+        "reached": 2399040,
+        "stop_reason": "ReachedTarget"
+      },
+      "time": 2399040
+    }
+  }
+]

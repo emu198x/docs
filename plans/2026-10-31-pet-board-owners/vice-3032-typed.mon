@@ -1,0 +1,10 @@
+step 100000
+sw
+io e880
+keybuf print3+4\n
+step 100000
+sw
+io e880
+bsave "/private/tmp/198x-pet-reference/3032-screen.bin" 0 8000 83e7
+screenshot "/private/tmp/198x-pet-reference/3032-typed.png" 2
+quit
