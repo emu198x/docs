@@ -24,7 +24,6 @@
     "continued_fields_per_case": 3
   },
   "frozen_fixtures": {
-    "README.md": "002e4c248209bf07d8f895731adc46f96b5479660114e67a487f8729ab1b2915",
     "atari-1040st-ntsc-colour.output": "d39d3e1975b17b45cae180618bb81889b255bb3dde1b4961c9febed7c98745ac",
     "atari-1040st-ntsc-colour.state": "1ab8c4c5595727c3d29ae3413093b07068a5d080eaf6b153d2568d6c12745552",
     "atari-1040st-ntsc-mono.output": "c2d6c8af0660ceef955464fab448baec5ab5338fb3906bd3966a89ab672fbbcc",
@@ -381,5 +380,17 @@
     "Version-1 saves require external TOS and do not encode its content identity.",
     "Pinned @emu198x/player 0.44.2 contains no Atari ST family.",
     "Native menu interaction and host audio-device output unverified."
-  ]
+  ],
+  "site_local": {
+    "tests_passed": 128,
+    "production_build": "passed",
+    "routes": 105,
+    "accessibility": {
+      "pages": 94,
+      "themes": 2,
+      "redirect_stubs": 11,
+      "defects": 0
+    },
+    "capture_visual_check": "All four PNGs have identical bytes to the visually inspected 520ST PAL desktop; selected variants and regions were independently queried."
+  }
 }
