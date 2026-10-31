@@ -1,0 +1,141 @@
+{
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2216",
+  "source_head": "a4d32ce60bd5b8f5ed3f5879d3b181ce3354017c",
+  "baseline_source": "4bec5f901",
+  "save_version": 4,
+  "save_schema_changed": false,
+  "exclusive_owner_tests": {
+    "amstrad-cpc464": 7,
+    "amstrad-cpc664": 7,
+    "amstrad-cpc6128": 7
+  },
+  "local_checks": {
+    "common_owners_runtime_headless_runner": {
+      "passed": 113,
+      "failed": 0,
+      "ignored": 16
+    },
+    "explicit_local_firmware": {
+      "passed": 4,
+      "failed": 0,
+      "ignored": 0
+    },
+    "all_family_fleet": {
+      "passed": 13,
+      "failed": 0,
+      "ignored": 0
+    },
+    "clippy_headless_all_targets": "passed with -D warnings",
+    "clippy_native_ui_all_targets": "passed with -D warnings",
+    "rustdoc": "passed with -D warnings",
+    "fixture_ignore_registry_status_ownership_guards": "passed",
+    "corrupted_continuation": "rejected: amstrad-cpc464: direct output",
+    "raw_engine": "all hardware bodies and original unit tests unchanged from cache-fix commit"
+  },
+  "frozen_fixtures": {
+    "amstrad-cpc464.output": "fc2f04c1f7021ae976119b350297e7b70de7be0a0e42c1c04b140cf30a360378",
+    "amstrad-cpc464.state": "7110e2068dd25245654cb1828c831e95db4cb759ab61500a268dc34115eaf3e2",
+    "amstrad-cpc6128.output": "7c532beba8f675c9014692bd3b86b2079ad3e5f9864c75fea4887d8c6e1db358",
+    "amstrad-cpc6128.state": "7529cea8cdceffcf3ee3bb8b95c0f1beae40a52bfed1fbd757592f30684316ef",
+    "amstrad-cpc664.output": "0ad5709b29e4f3c0756bbe48d125cd6d4ad6b942a28822e9f60daf51a2ecabad",
+    "amstrad-cpc664.state": "8b4156c0612bd519befbd12fa762bb1b5ebde158ee763c98b7da2bda8cd822ed"
+  },
+  "captures": [
+    {
+      "model": "amstrad-cpc464",
+      "firmware": [
+        {
+          "name": "cpc464.rom",
+          "sha256": "00960d9bf75b2b90856c970f1aa078e1e2aa028b2c104f1dded0262f5d37b15e"
+        }
+      ],
+      "capture_sha256": "7399f61dda86a719fa8f8d2fea439222f9630119dc7f0465298bd46b26228065",
+      "report": {
+        "discs_loaded": 0,
+        "frames_run": 300,
+        "machine_frame_counter": 300,
+        "model": "amstrad-cpc464",
+        "observations": [],
+        "rom_loaded": true,
+        "run_result": {
+          "reached": 10687664,
+          "stop_reason": "ReachedTarget"
+        },
+        "tape_loaded": false,
+        "time": 10687664
+      }
+    },
+    {
+      "model": "amstrad-cpc664",
+      "firmware": [
+        {
+          "name": "cpc664.rom",
+          "sha256": "1fcb20cf169f170774bf94954db9372c95edd038a5cb8e5199774552b93f8747"
+        },
+        {
+          "name": "cpcados.rom",
+          "sha256": "ea65e0fb44ee93ede4b6c507509b7e5ddf497fb7155023bea91ef229469fa04d"
+        }
+      ],
+      "capture_sha256": "151b7d141b8526629ac028b264297362e47b3dbb5d3e85d6050272983eb21d6b",
+      "report": {
+        "discs_loaded": 0,
+        "frames_run": 300,
+        "machine_frame_counter": 300,
+        "model": "amstrad-cpc664",
+        "observations": [],
+        "rom_loaded": true,
+        "run_result": {
+          "reached": 10687664,
+          "stop_reason": "ReachedTarget"
+        },
+        "tape_loaded": false,
+        "time": 10687664
+      }
+    },
+    {
+      "model": "amstrad-cpc6128",
+      "firmware": [
+        {
+          "name": "cpc6128.rom",
+          "sha256": "31c3668c67bea027dab698ece233c9434d9324f9ba7dac84db58f400b6689562"
+        },
+        {
+          "name": "cpcados.rom",
+          "sha256": "ea65e0fb44ee93ede4b6c507509b7e5ddf497fb7155023bea91ef229469fa04d"
+        }
+      ],
+      "capture_sha256": "74f8aed9858ee9a23b73e0cee57b62c0d9b4c524b09391d0ed84dea3e4d195b3",
+      "report": {
+        "discs_loaded": 0,
+        "frames_run": 300,
+        "machine_frame_counter": 300,
+        "model": "amstrad-cpc6128",
+        "observations": [],
+        "rom_loaded": true,
+        "run_result": {
+          "reached": 10687664,
+          "stop_reason": "ReachedTarget"
+        },
+        "tape_loaded": false,
+        "time": 10687664
+      }
+    }
+  ],
+  "site_local": {
+    "routes": 101,
+    "players": 50,
+    "cpc_images": 3,
+    "cpc_players": 1,
+    "legacy_redirect": "/systems/amstrad-cpc464/",
+    "tests": 127,
+    "a11y_routes": 91,
+    "a11y_themes": 2,
+    "a11y_defects": 0
+  },
+  "limits": [
+    "HD6845S and generic Gate Array baseline; other revisions, regions and manufacturer links unqualified",
+    "Pinned browser player 0.44.2 contains CPC464 only; other CPC pages omit a player",
+    "No native Machine-menu selector; native interaction and host audio-device output unverified"
+  ]
+}

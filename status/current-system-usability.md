@@ -27,3 +27,29 @@ firmware/media identities, configuration, command, and observed result. A window
 implementation, generated crate list, or old screenshot does not establish every
 machine's current usability. There is no freshly verified all-system usability
 matrix at this path.
+
+
+## CPC464, CPC664 and CPC6128
+
+The three implemented CPC configurations have separate machine crates and
+registry entries, with shared hardware and regression code in
+`common-amstrad-cpc`. Their family runtime, profile/firmware IDs and v4 save
+bytes remain compatible. Each owner has seven direct fixture-free tests;
+original complete saves also verify the first three resumed native fields,
+audio, clocks and final state. Reset after restore now retains the restored
+firmware, tape, expansion ROMs and modified discs.
+
+Local external-firmware tests verify the CPC464 boot banner and text, and
+catalogue/run from disc on the CPC664 and CPC6128. Separate headless captures
+show each model's own BASIC prompt. These checks do not qualify all CRTC/Gate
+Array revisions, regional boards or manufacturer-ID links: the implementation
+retains its HD6845S and generic Gate Array baseline. Native launch accepts
+`--model`; the CPC adapter still has no Machine-menu selector. The pinned public browser player
+currently includes only CPC464; the other board pages omit a player until
+their exact profiles are published. Host audio-device output and native menu
+interaction remain unverified in this slice.
+
+See [source PR #2216](https://github.com/emu198x/emu198x/pull/2216), the
+[ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/cpc-fixed-board-owners.md)
+and the [plan](../plans/2026-10-31-cpc-board-owners.md). CI evidence distinguishes
+the three owners from the shared family regression suite.
