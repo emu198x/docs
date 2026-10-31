@@ -87,7 +87,8 @@ generic family runtime, profile and firmware IDs, aliases and version-22
 save bytes remain compatible. Six complete original saves verify the first
 three resumed native fields, audio sample bits, clocks and final state;
 restored and direct resets agree. Foreign board/chip payloads are rejected
-before replacing live machine state.
+before replacing live machine state. C64 restore keeps the receiving machine’s
+live Ultimate host interface and rejects malformed memory before changing chips.
 
 Real ROMs reach BASIC on all six configurations in separate 200-field captures.
 C128 runtime tests additionally verify typed BASIC on both regions, PAL

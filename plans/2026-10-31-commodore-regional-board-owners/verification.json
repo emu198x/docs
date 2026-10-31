@@ -1,6 +1,6 @@
 {
   "source_pr": "https://github.com/emu198x/emu198x/pull/2218",
-  "source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+  "source_head": "65c8aa82074654302257118887e6ba61f4ce8821",
   "baseline_source": "8d5d5e15e921000cb14676611b10c0cf7395ff2e",
   "save_version": 22,
   "save_schema_changed": false,
@@ -16,9 +16,7 @@
     "owner_tests_passed": 42,
     "original_six_configuration_continuations": "passed; complete saves and first three native fields, sample bits, time deltas and final state; restored reset agrees",
     "deliberate_corruption": "rejected: commodore-c64-pal-breadbin: direct continuation",
-    "common_runtime_runner_reported_passes": 363,
     "common_runtime_runner_ignored": 86,
-    "additional_binding_tests_passed": 2,
     "real_c128_tests_passed": 3,
     "real_c128_coverage": "Both regions BASIC and typed PRINT 6*7; PAL 80-column boot and mid-boot restore",
     "real_c64_kernal_test_passed": 1,
@@ -26,7 +24,18 @@
     "strict_clippy": "passed, including native UI and all six owners",
     "strict_rustdoc": "passed",
     "fixture_ignore_registry_ownership_status_guards": "passed",
-    "original_engine_source": "13 C64 and 3 C128 non-front-door source files unchanged apart from common import names; raw structs and timing loops unchanged"
+    "original_engine_source": "12 C64 and 3 C128 non-front-door source files unchanged apart from common import names. C64 restore now stages validated memory and keeps live host state in place; chip/timing algorithms and raw serialized fields are unchanged.",
+    "truncated_rom_binding": {
+      "red": "mutation 7: truncated BASIC ROM was accepted",
+      "green": "all ten malformed model/chip/memory cases rejected; original six v22 continuations still exact"
+    },
+    "selected_passes_including_owners": 409,
+    "recorded_fixture_skips": 0,
+    "additional_binding_regressions": 4,
+    "live_ultimate_restore": {
+      "red": "fixed restore must keep the same host interface; the original engine retained it",
+      "green": "live interface retained; malformed memory rejected before any live-chip change; all four C64 owners check the interface too"
+    }
   },
   "frozen_fixtures": {
     "commodore-c128-ntsc.output": "41a16c3b908588cf4ac6971de74cffe34d06f1fbc091560c2f44f5088cb42f57",
