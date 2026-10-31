@@ -22,8 +22,11 @@ aliases. Do not equate the current implementation with the original 1977 PET
    and both profile years say 1977. Proper 4032/8032 qualification requires
    BASIC 4 mapping/firmware selection and matching graphics/business keyboard
    input, plus primary confirmation of the board's video RAM/clock wiring.
-   Agree this prerequisite scope before implementing it; otherwise defer PET
-   and select another documented regional split rather than inventing boards.
+   The recommended split names only the existing implemented CRTC 40/80
+   configurations and explicitly retains these historical qualification gaps.
+   BASIC 4/business-keyboard work is a separate feature task, not evidence
+   supplied by the split. Do not change hardware behaviour without its own
+   source-backed plan.
 4. Following approval, repair save fidelity in the machine/runtime before
    extraction. Verify queued loads, queued samples, arbitrary CPU/CRTC phases,
    first resumed pixels/audio/clocks, held keys and restored reset. Freeze full

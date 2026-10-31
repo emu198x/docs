@@ -1,0 +1,33 @@
+{
+  "source": "e6dad7980ba4cf05e3f7093d4862149c5f93336a",
+  "version": 4,
+  "diagnostic_cases": 4,
+  "failed_cases": 4,
+  "profiles": [
+    "commodore-pet-40col",
+    "commodore-pet-80col"
+  ],
+  "queued_program": {
+    "uninterrupted_ram_0200": 66,
+    "restored_ram_0200": 0,
+    "frames": 121
+  },
+  "queued_audio": {
+    "uninterrupted": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "restored": []
+  },
+  "cause": [
+    "pending_prg is not in the runtime envelope",
+    "audio_buffer has serde(skip) in the machine"
+  ],
+  "proposed_schema": {
+    "version": 5,
+    "pending_prg": "include runtime queue",
+    "audio_buffer": "serialize undelivered samples",
+    "legacy_v4": "reject before decoding; approval pending"
+  }
+}
