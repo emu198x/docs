@@ -45,3 +45,13 @@ framebuffer/audio/clock tuples and complete state, then checks that reset is
 byte-identical to a fresh machine with those ROMs. All cases passed. This
 external-input probe supplements the permanent fixture-free CI regressions;
 it is not counted among the 76 normal source tests.
+
+
+The source and site worktrees and build artifacts were removed after verifying
+remote PR-head retention and identical merge trees. The nested shared-UI clone
+was clean, and its commit was retained by the verified remote v0.5.0 tag.
+The docs worktree is removed after this receipt is merged. Unrelated primary
+checkouts and locked worktree records are preserved.
+
+Separate follow-up: the site pins shared UI v0.5.0; a newer v0.10.0 tag exists.
+This PET change does not upgrade the shared site kit.
