@@ -1,7 +1,7 @@
 {
   "source_pr": "https://github.com/emu198x/emu198x/pull/2216",
   "source_head": "a4d32ce60bd5b8f5ed3f5879d3b181ce3354017c",
-  "baseline_source": "4bec5f901",
+  "baseline_source": "4bec5f9019d894b4776772e05c9eca10982aca02",
   "save_version": 4,
   "save_schema_changed": false,
   "exclusive_owner_tests": {
@@ -124,18 +124,84 @@
   ],
   "site_local": {
     "routes": 101,
-    "players": 50,
     "cpc_images": 3,
     "cpc_players": 1,
     "legacy_redirect": "/systems/amstrad-cpc464/",
     "tests": 127,
     "a11y_routes": 91,
     "a11y_themes": 2,
-    "a11y_defects": 0
+    "a11y_defects": 0,
+    "routes_with_players": 50,
+    "registry_board_embeds": 49
   },
   "limits": [
     "HD6845S and generic Gate Array baseline; other revisions, regions and manufacturer links unqualified",
     "Pinned browser player 0.44.2 contains CPC464 only; other CPC pages omit a player",
     "No native Machine-menu selector; native interaction and host audio-device output unverified"
-  ]
+  ],
+  "source_merge": "c6cb0da7173db46d6ba3557ae38b8b82e3543f42",
+  "capture_engine_commit": "f951cce401910efdc39b6ef15d3f84dc5e0a2377",
+  "source_ci": {
+    "run": 41184921897,
+    "url": "https://github.com/emu198x/emu198x/actions/runs/41184921897",
+    "source_head": "a4d32ce60bd5b8f5ed3f5879d3b181ce3354017c",
+    "named_checks": 31,
+    "systems": 79,
+    "owners": {
+      "amstrad-cpc464": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "amstrad-cpc664": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "amstrad-cpc6128": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      }
+    },
+    "artifact_id": 13037265898,
+    "artifact_sha256": "539c7304c8dd9495b978508aff842e5809e090d19293c72b0faa1a62181f48fd"
+  },
+  "site_pr": "https://github.com/emu198x/emu198x.github.io/pull/37",
+  "site_merge": "c22475e385e163533b78587eff77735a2819feee",
+  "site_ci": {
+    "run": 41186727727,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41186727727",
+    "head": "ceaa26e1dc36e6d6595aa0ee89b088ced21b8e52",
+    "conclusion": "success",
+    "tests": 127,
+    "registry_board_embeds": 49,
+    "registry_machines": 79,
+    "routes": 101,
+    "a11y_routes": 91,
+    "a11y_themes": 2,
+    "a11y_defects": 0
+  },
+  "site_deploy": {
+    "run": 41187104093,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41187104093",
+    "head": "c22475e385e163533b78587eff77735a2819feee",
+    "conclusion": "success"
+  },
+  "site_live": {
+    "routes": 101,
+    "registry_machines": 79,
+    "routes_with_players": 50,
+    "registry_board_embeds": 49,
+    "cpc_boot_images_sha256_verified": 3,
+    "cpc_players": 1,
+    "legacy_cpc_redirect": "/systems/amstrad-cpc464/",
+    "site_head": "c22475e385e163533b78587eff77735a2819feee"
+  }
 }
