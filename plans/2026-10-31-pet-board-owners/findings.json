@@ -28,6 +28,7 @@
     "version": 5,
     "pending_prg": "include runtime queue",
     "audio_buffer": "serialize undelivered samples",
-    "legacy_v4": "reject before decoding; approval pending"
-  }
+    "legacy_v4": "Reject before decoding, already approved in plans/2026-10-11-pet-board-firmware-design.md"
+  },
+  "authorization": "Merged docs PR #129 and its approved three-configuration correction; no additional schema permission required"
 }
