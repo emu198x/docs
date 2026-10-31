@@ -1,7 +1,7 @@
 {
   "source_pr": "https://github.com/emu198x/emu198x/pull/2218",
   "source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
-  "baseline_source": "8d5d5e15e",
+  "baseline_source": "8d5d5e15e921000cb14676611b10c0cf7395ff2e",
   "save_version": 22,
   "save_schema_changed": false,
   "exclusive_owner_tests": {
@@ -131,7 +131,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "pal",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "pal"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "machine": "commodore-c64-ntsc-breadbin",
@@ -221,7 +261,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "ntsc",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "ntsc"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "machine": "commodore-c64c-pal",
@@ -311,7 +391,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c64c-pal",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "c64c-pal"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "machine": "commodore-c64c-ntsc",
@@ -401,7 +521,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c64c-ntsc",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "c64c-ntsc"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "machine": "commodore-c128-pal",
@@ -495,7 +655,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c128-pal",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "c128-pal"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     },
     {
       "machine": "commodore-c128-ntsc",
@@ -589,7 +789,47 @@
         "query_values": [],
         "screen_text_lines": null,
         "trace_lines": null
-      }
+      },
+      "runner_source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+      "command": [
+        "emu198x-c64",
+        "--model",
+        "c128-ntsc",
+        "--rom-dir",
+        "{rom_dir}",
+        "--script",
+        "{script}"
+      ],
+      "environment": {
+        "EMU198X_C64_ROM_DIR": "{rom_dir}",
+        "EMU198X_C128_ROM_DIR": "{c128_rom_dir}"
+      },
+      "script": [
+        {
+          "action": "set_machine",
+          "machine": "c128-ntsc"
+        },
+        {
+          "action": "run_frames",
+          "frames": 200
+        },
+        {
+          "action": "query",
+          "path": "boot.detected"
+        },
+        {
+          "action": "query",
+          "path": "screen.text.lines"
+        },
+        {
+          "action": "query",
+          "path": "machine.frame_count"
+        },
+        {
+          "action": "save_screenshot",
+          "path": "{output}"
+        }
+      ]
     }
   ],
   "site_local": {
@@ -611,5 +851,139 @@
     "C128 remains C128-mode only, with no 2 MHz execution, tape, IEC drives or cartridges; C128D not qualified.",
     "Pinned @emu198x/player 0.44.2 has all four C64 variants and no C128 core.",
     "Native menu interaction and host audio-device output unverified in this slice."
+  ],
+  "capture_rom_directories": {
+    "c64": "/Users/stevehill/.emu198x/roms/commodore-c64",
+    "c128": "/Users/stevehill/Projects/198x/emulators/c64/vice-3.10/data/C128"
+  },
+  "additional_80_column_probes": [
+    {
+      "variant": "c128-pal",
+      "frames": 200,
+      "width": 704,
+      "height": 270,
+      "image_sha256": "9415b4445cd902aa6eaa3694e4174e12a67b3572352c6bd8988fa2ec66830706",
+      "report": {
+        "observations": [
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3931200,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "c128.vdc.text.lines",
+              "value": [
+                "                                                                                ",
+                "                     COMMODORE BASIC V7.0 122365 BYTES FREE                     ",
+                "                       (C)1986 COMMODORE ELECTRONICS, LTD.                      ",
+                "                             (C)1977 MICROSOFT CORP.                            ",
+                "                               ALL RIGHTS RESERVED                              ",
+                "                                                                                ",
+                "READY.                                                                          ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "c128.screen.80_column",
+              "value": true
+            }
+          }
+        ],
+        "time": 3931200,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $01E0 on row 6 of the 80-column screen",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "variant": "c128-ntsc",
+      "frames": 200,
+      "width": 704,
+      "height": 270,
+      "image_sha256": "9415b4445cd902aa6eaa3694e4174e12a67b3572352c6bd8988fa2ec66830706",
+      "report": {
+        "observations": [
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3419000,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "c128.vdc.text.lines",
+              "value": [
+                "                                                                                ",
+                "                     COMMODORE BASIC V7.0 122365 BYTES FREE                     ",
+                "                       (C)1986 COMMODORE ELECTRONICS, LTD.                      ",
+                "                             (C)1977 MICROSOFT CORP.                            ",
+                "                               ALL RIGHTS RESERVED                              ",
+                "                                                                                ",
+                "READY.                                                                          ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                ",
+                "                                                                                "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "c128.screen.80_column",
+              "value": true
+            }
+          }
+        ],
+        "time": 3419000,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $01E0 on row 6 of the 80-column screen",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    }
   ]
 }
