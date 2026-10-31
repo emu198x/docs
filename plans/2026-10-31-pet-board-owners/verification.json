@@ -67,7 +67,10 @@
     "ci_run": 41223599590,
     "ci_status": "success",
     "deployment_run": 41223861235,
-    "deployment_status": "pending"
+    "deployment_status": "success",
+    "live_routes_verified": 114,
+    "live_registry_machines": 88,
+    "live_png_hashes_matched": 3
   },
   "pixel_negative_control": "one changed active pixel rejected; image restored",
   "original_firmware_restore_probe": {
@@ -100,5 +103,11 @@
     "ignored": 8,
     "recorded_fixture_skips": 9
   },
-  "tracker_comment": "https://github.com/emu198x/emu198x/issues/2144#issuecomment-6546622764"
+  "tracker_comment": "https://github.com/emu198x/emu198x/issues/2144#issuecomment-6546622764",
+  "cleanup": {
+    "source_worktree_removed": true,
+    "source_target_removed": true,
+    "task_processes_found": 0,
+    "site_and_docs_worktrees": "remove after retaining these receipts"
+  }
 }

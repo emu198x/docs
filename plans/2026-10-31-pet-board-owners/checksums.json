@@ -1,5 +1,5 @@
 {
-  "README.md": "47eef373ed7f231435a17e6e75be96b75a0af7b4ffb96e817ddba07b217858d8",
+  "README.md": "c8cb3999cb6e9ab7c687449609ad6c0ddac26d17898a3025f8f75c9782dc4fd5",
   "boot-captures.json": "4a1bcdd2ff595c7aaa87a590a496c196f9fa1afa9f6a321e6c564e61faea66ee",
   "ci-checks.json": "8bbb937ba356f446017791e371940b8595e4833074dbc6aff857d7270c1e06cf",
   "ci-owner-evidence.json": "f58b9172c4b758ba7229957cef981866197053169ce1a739f825c276e295f569",
@@ -11,6 +11,7 @@
   "emu198x-8032-typed.png": "1b26297a3d845a813971991bd111a1165baf1922e6c90dd983fe952e4ad5e6ca",
   "findings.json": "6f20d3c690489b665699dcb366aeaece37993c56fc3a9957d6667b2ab79f5249",
   "firmware_restore_probe.rs.txt": "96d27d87f79d2fe4dc0cc2e0a90e120000d6f8d259e21458caaade32a4f42d07",
+  "live-verification.json": "0d5519c3278cc3ef9d87b14d0b9c9e5a1c713c1027eb64430f72d5d47ca23e0d",
   "local-tests.log.gz": "38c83fb36c3f21640c30b3fab464945077b4ddcffc47ac28098f34da35e0edd1",
   "negative-continuation.log.gz": "411a724e46604fddaa858c573b1bb817aa0bef537b98e7e413d3423e6db64832",
   "original-firmware-restore.log.gz": "41a1737289e4a7c1d7a177e71191d0047367fed442457975ef6c6eb761678cc0",
@@ -19,6 +20,7 @@
   "pre-split-red.log": "e3048681422760901c8c2e146b41eec3681b9bd5eda6d66f922635365a48c9d0",
   "reference-runs.json": "2d22050324c029411beeadebbea02aaaf476e9d4526c7b717d93ccd24adda169",
   "site-ci-checks.json": "73f22253a66f53b730927cfca399203464fcd0cb318cfedfdf4c6fe2316f394f",
+  "site-deployment.json": "f2d7c35495435ba04dcb4c917bb9291f1283699ab81ccb401e600e5ee1d65b56",
   "site-verification.json": "409619978df77ed9a0c0285dee28f58d6f723c09d93b13d57b4cdc99067dbef2",
   "verify_pixels.py": "be3af48f6f6dac3ebf25bfcf321c43ee71eb409cd99920febbc687afb2b90407",
   "vice-3032-screen.bin.gz": "55e1d147f7e4950f4b2fd3059c1a5603d1ebcfec00edc05eb260090cb9a19dcf",
