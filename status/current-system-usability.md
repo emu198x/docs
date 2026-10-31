@@ -91,7 +91,8 @@ before replacing live machine state.
 
 Real ROMs reach BASIC on all six configurations in separate 200-field captures.
 C128 runtime tests additionally verify typed BASIC on both regions, PAL
-80-column boot and PAL mid-boot restore. The public pages select all four exact
+80-column boot and PAL mid-boot restore. Separate 704×270 captures also
+verify 80-column READY on both regions. The public pages select all four exact
 C64 variants from the pinned player; C128 pages omit an embed because its core
 is absent from that package. Legacy family URLs redirect to their PAL defaults.
 
