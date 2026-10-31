@@ -392,5 +392,225 @@
       "defects": 0
     },
     "capture_visual_check": "All four PNGs have identical bytes to the visually inspected 520ST PAL desktop; selected variants and regions were independently queried."
+  },
+  "source_merge": "bc2eaa4c54040f6029a82a589759585b2e15ff3e",
+  "source_ci": {
+    "run": 41204967578,
+    "url": "https://github.com/emu198x/emu198x/actions/runs/41204967578",
+    "head": "30453fb3be16f8b044bb028bd11eac22acaddf1a",
+    "base_at_merge": "0b845c10577dcf29eb1d6d486108e973412386ae",
+    "conclusion": "success",
+    "successful_or_skipped_named_checks": 31,
+    "registry_machines": 82,
+    "owners": {
+      "atari-1040st-ntsc": {
+        "crate": "emu198x-atari-st",
+        "machine_crate": "machine-atari-1040st-ntsc",
+        "machine_id": "atari-1040st-ntsc",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-atari-1040st-ntsc"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 9,
+          "passed": 693,
+          "skipped": 14,
+          "unexplained_ignored": 6
+        },
+        "shared_crates": [
+          "common-atari-st",
+          "emu198x-atari-st",
+          "emu198x-atari-st-glue-mmu",
+          "emu198x-atari-st-shifter",
+          "emu198x-native-video",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "format-atari-st-msa",
+          "format-atari-st-st",
+          "motorola-68000",
+          "motorola-68k-common",
+          "runtime-atari-st"
+        ],
+        "shares_crate_with": [
+          "atari-1040st-pal",
+          "atari-520st-ntsc",
+          "atari-520st-pal"
+        ]
+      },
+      "atari-1040st-pal": {
+        "crate": "emu198x-atari-st",
+        "machine_crate": "machine-atari-1040st-pal",
+        "machine_id": "atari-1040st-pal",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-atari-1040st-pal"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 9,
+          "passed": 693,
+          "skipped": 14,
+          "unexplained_ignored": 6
+        },
+        "shared_crates": [
+          "common-atari-st",
+          "emu198x-atari-st",
+          "emu198x-atari-st-glue-mmu",
+          "emu198x-atari-st-shifter",
+          "emu198x-native-video",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "format-atari-st-msa",
+          "format-atari-st-st",
+          "motorola-68000",
+          "motorola-68k-common",
+          "runtime-atari-st"
+        ],
+        "shares_crate_with": [
+          "atari-1040st-ntsc",
+          "atari-520st-ntsc",
+          "atari-520st-pal"
+        ]
+      },
+      "atari-520st-ntsc": {
+        "crate": "emu198x-atari-st",
+        "machine_crate": "machine-atari-520st-ntsc",
+        "machine_id": "atari-520st-ntsc",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-atari-520st-ntsc"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 9,
+          "passed": 693,
+          "skipped": 14,
+          "unexplained_ignored": 6
+        },
+        "shared_crates": [
+          "common-atari-st",
+          "emu198x-atari-st",
+          "emu198x-atari-st-glue-mmu",
+          "emu198x-atari-st-shifter",
+          "emu198x-native-video",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "format-atari-st-msa",
+          "format-atari-st-st",
+          "motorola-68000",
+          "motorola-68k-common",
+          "runtime-atari-st"
+        ],
+        "shares_crate_with": [
+          "atari-1040st-ntsc",
+          "atari-1040st-pal",
+          "atari-520st-pal"
+        ]
+      },
+      "atari-520st-pal": {
+        "crate": "emu198x-atari-st",
+        "machine_crate": "machine-atari-520st-pal",
+        "machine_id": "atari-520st-pal",
+        "own": {
+          "failed": 0,
+          "ignored": 0,
+          "passed": 7,
+          "skipped": 0,
+          "unexplained_ignored": 0
+        },
+        "own_crates": [
+          "machine-atari-520st-pal"
+        ],
+        "shared": {
+          "failed": 0,
+          "ignored": 9,
+          "passed": 693,
+          "skipped": 14,
+          "unexplained_ignored": 6
+        },
+        "shared_crates": [
+          "common-atari-st",
+          "emu198x-atari-st",
+          "emu198x-atari-st-glue-mmu",
+          "emu198x-atari-st-shifter",
+          "emu198x-native-video",
+          "emu198x-pointer",
+          "emu198x-shell",
+          "emu198x-ui",
+          "emu198x-win-menu",
+          "format-atari-st-msa",
+          "format-atari-st-st",
+          "motorola-68000",
+          "motorola-68k-common",
+          "runtime-atari-st"
+        ],
+        "shares_crate_with": [
+          "atari-1040st-ntsc",
+          "atari-1040st-pal",
+          "atari-520st-ntsc"
+        ]
+      }
+    },
+    "artifact_id": 13044626856,
+    "artifact_sha256": "753006d7eb9cbfe07661104996f34be55d4d4c809e1bf68075fa2303e38d6ced"
+  },
+  "site_pr": "https://github.com/emu198x/emu198x.github.io/pull/38",
+  "site_merge": "4142c199b023d550efd96c3576bf8793f13b7e18",
+  "site_ci": {
+    "run": 41206971092,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41206971092",
+    "head": "ddc6120bf98e0adcf06d5ee0baad424cfdc7c2f9",
+    "conclusion": "success",
+    "tests_passed": 128,
+    "production_build": "passed",
+    "routes": 105,
+    "accessibility": {
+      "pages": 94,
+      "themes": 2,
+      "redirect_stubs": 11,
+      "defects": 0
+    },
+    "capture_visual_check": "All four PNGs have identical bytes to the visually inspected 520ST PAL desktop; selected variants and regions were independently queried."
+  },
+  "site_deploy": {
+    "run": 41207168179,
+    "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41207168179",
+    "head": "4142c199b023d550efd96c3576bf8793f13b7e18",
+    "conclusion": "success"
+  },
+  "site_live": {
+    "routes": 105,
+    "registry_machines": 82,
+    "routes_with_players": 50,
+    "registry_board_embeds": 49,
+    "st_boot_images_sha256_verified": 4,
+    "st_players": 0,
+    "legacy_st_redirect": "/systems/atari-520st-pal/",
+    "site_head": "4142c199b023d550efd96c3576bf8793f13b7e18"
   }
 }
