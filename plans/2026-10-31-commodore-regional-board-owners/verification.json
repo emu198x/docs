@@ -1,0 +1,615 @@
+{
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2218",
+  "source_head": "30dc7c55995ac016c5f4621674245b6b6361ba44",
+  "baseline_source": "8d5d5e15e",
+  "save_version": 22,
+  "save_schema_changed": false,
+  "exclusive_owner_tests": {
+    "commodore-c64-pal-breadbin": 7,
+    "commodore-c64-ntsc-breadbin": 7,
+    "commodore-c64c-pal": 7,
+    "commodore-c64c-ntsc": 7,
+    "commodore-c128-pal": 7,
+    "commodore-c128-ntsc": 7
+  },
+  "local_checks": {
+    "owner_tests_passed": 42,
+    "original_six_configuration_continuations": "passed; complete saves and first three native fields, sample bits, time deltas and final state; restored reset agrees",
+    "deliberate_corruption": "rejected: commodore-c64-pal-breadbin: direct continuation",
+    "common_runtime_runner_reported_passes": 363,
+    "common_runtime_runner_ignored": 86,
+    "additional_binding_tests_passed": 2,
+    "real_c128_tests_passed": 3,
+    "real_c128_coverage": "Both regions BASIC and typed PRINT 6*7; PAL 80-column boot and mid-boot restore",
+    "real_c64_kernal_test_passed": 1,
+    "all_family_fleet_tests_passed": 3,
+    "strict_clippy": "passed, including native UI and all six owners",
+    "strict_rustdoc": "passed",
+    "fixture_ignore_registry_ownership_status_guards": "passed",
+    "original_engine_source": "13 C64 and 3 C128 non-front-door source files unchanged apart from common import names; raw structs and timing loops unchanged"
+  },
+  "frozen_fixtures": {
+    "commodore-c128-ntsc.output": "41a16c3b908588cf4ac6971de74cffe34d06f1fbc091560c2f44f5088cb42f57",
+    "commodore-c128-ntsc.state": "05d2effaead5070f008b9fc00183b9bbf48d884ced89d08aedbf5ffe6c29a484",
+    "commodore-c128-pal.output": "30de48257622138b8bff60696a242119c65eb90b9c9a275adc82f39737e22940",
+    "commodore-c128-pal.state": "f428103ea011de4fe46e81a3f9290deae0df8c7c1a4df58bc2bc25824dd45c95",
+    "commodore-c64-ntsc-breadbin.output": "6152e5ff676fd35be489433998a7a8dd8b362a01783b689fff4580b0349e38a0",
+    "commodore-c64-ntsc-breadbin.state": "f48343a3b18b912f720ed5ec1b74e38d3e81356b1330b682dfbc9b60df80ef1d",
+    "commodore-c64-pal-breadbin.output": "c5c0e97cda26fc30827f5608ce358d9258c0f42eeb79ef859adaa7a2554aae00",
+    "commodore-c64-pal-breadbin.state": "2882f13856f25883453dc1a1e58bdb95f5a8d4fd68f9b4973d35f9cb62bf8d43",
+    "commodore-c64c-ntsc.output": "1869d1646911cec85b8a805745aced4e31d9ae6299994e27e9954a5dcf762e79",
+    "commodore-c64c-ntsc.state": "8ccea63b4d19371a8705798b5df30c6dc5770700dee21be0e7ad9acf7991f88c",
+    "commodore-c64c-pal.output": "3dccaaf713559a98b15e27e17586c34f16ab6040698a521be69527fc2d0cf343",
+    "commodore-c64c-pal.state": "0c84171dc64632df28a08960ccb314a96a075963d815d6d81f881c3bb15e054a"
+  },
+  "captures": [
+    {
+      "machine": "commodore-c64-pal-breadbin",
+      "variant": "pal",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal.rom",
+          "sha256": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721"
+        },
+        {
+          "file": "basic.rom",
+          "sha256": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d"
+        },
+        {
+          "file": "chargen.rom",
+          "sha256": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420"
+        }
+      ],
+      "image_sha256": "961233ea8e7cf40ce7a5ba97acb34659ad0ca8ee822e367c680af9d395d62d1a",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "pal",
+            "profile_id": "commodore-c64-pal-breadbin",
+            "display_name": "Commodore 64 (PAL Breadbin)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3931200,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                "    **** COMMODORE 64 BASIC V2 ****     ",
+                "                                        ",
+                " 64K RAM SYSTEM  38911 BASIC BYTES FREE ",
+                "                                        ",
+                "READY.                                  ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3931200,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00C8 on row 5",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "machine": "commodore-c64-ntsc-breadbin",
+      "variant": "ntsc",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal.rom",
+          "sha256": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721"
+        },
+        {
+          "file": "basic.rom",
+          "sha256": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d"
+        },
+        {
+          "file": "chargen.rom",
+          "sha256": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420"
+        }
+      ],
+      "image_sha256": "3e2c5a379f25c358b5c33aad881db14edba1ff207bcd4bb20aec0fc347f0863a",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "ntsc",
+            "profile_id": "commodore-c64-ntsc-breadbin",
+            "display_name": "Commodore 64 (NTSC Breadbin)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3419000,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                "    **** COMMODORE 64 BASIC V2 ****     ",
+                "                                        ",
+                " 64K RAM SYSTEM  38911 BASIC BYTES FREE ",
+                "                                        ",
+                "READY.                                  ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3419000,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00C8 on row 5",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "machine": "commodore-c64c-pal",
+      "variant": "c64c-pal",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal.rom",
+          "sha256": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721"
+        },
+        {
+          "file": "basic.rom",
+          "sha256": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d"
+        },
+        {
+          "file": "chargen.rom",
+          "sha256": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420"
+        }
+      ],
+      "image_sha256": "961233ea8e7cf40ce7a5ba97acb34659ad0ca8ee822e367c680af9d395d62d1a",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "c64c-pal",
+            "profile_id": "commodore-c64c-pal",
+            "display_name": "Commodore 64C (PAL)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3931200,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                "    **** COMMODORE 64 BASIC V2 ****     ",
+                "                                        ",
+                " 64K RAM SYSTEM  38911 BASIC BYTES FREE ",
+                "                                        ",
+                "READY.                                  ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3931200,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00C8 on row 5",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "machine": "commodore-c64c-ntsc",
+      "variant": "c64c-ntsc",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal.rom",
+          "sha256": "83c60d47047d7beab8e5b7bf6f67f80daa088b7a6a27de0d7e016f6484042721"
+        },
+        {
+          "file": "basic.rom",
+          "sha256": "89878cea0a268734696de11c4bae593eaaa506465d2029d619c0e0cbccdfa62d"
+        },
+        {
+          "file": "chargen.rom",
+          "sha256": "fd0d53b8480e86163ac98998976c72cc58d5dd8eb824ed7b829774e74213b420"
+        }
+      ],
+      "image_sha256": "3e2c5a379f25c358b5c33aad881db14edba1ff207bcd4bb20aec0fc347f0863a",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "c64c-ntsc",
+            "profile_id": "commodore-c64c-ntsc",
+            "display_name": "Commodore 64C (NTSC)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3419000,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                "    **** COMMODORE 64 BASIC V2 ****     ",
+                "                                        ",
+                " 64K RAM SYSTEM  38911 BASIC BYTES FREE ",
+                "                                        ",
+                "READY.                                  ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3419000,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00C8 on row 5",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "machine": "commodore-c128-pal",
+      "variant": "c128-pal",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal-318020-05.bin",
+          "sha256": "64ed21ad31da2840aa90eab70c6ed4731f63268a1b3c5cf85273e28d6cfa6d4d"
+        },
+        {
+          "file": "basiclo-318018-04.bin",
+          "sha256": "ccb0d516219f12857fef3ae7409fff072e47b9480d7eafb5eea7e0b188c958f5"
+        },
+        {
+          "file": "basichi-318019-04.bin",
+          "sha256": "121b7c7f15f9b72e83f293f8fb3c4686730ee02359cea71d18a72c6f489cd2d7"
+        },
+        {
+          "file": "chargen-390059-01.bin",
+          "sha256": "f08d8f525b44f5cbb3f5776739fcdff737886e1813f1eb7a20aedb128db1d4a8"
+        }
+      ],
+      "image_sha256": "b3c96f8c7230996e5362f1a274a62e5ea016f66064f0ad0c547b94897bf53331",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "c128-pal",
+            "profile_id": "commodore-c128-pal",
+            "display_name": "Commodore 128 (PAL)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3931200,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                " COMMODORE BASIC V7.0 122365 BYTES FREE ",
+                "   (C)1986 COMMODORE ELECTRONICS, LTD.  ",
+                "         (C)1977 MICROSOFT CORP.        ",
+                "           ALL RIGHTS RESERVED          ",
+                "                                        ",
+                "READY.                                  ",
+                "?                                       ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3931200,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00F0 on row 6",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    },
+    {
+      "machine": "commodore-c128-ntsc",
+      "variant": "c128-ntsc",
+      "frames": 200,
+      "firmware": [
+        {
+          "file": "kernal-318020-05.bin",
+          "sha256": "64ed21ad31da2840aa90eab70c6ed4731f63268a1b3c5cf85273e28d6cfa6d4d"
+        },
+        {
+          "file": "basiclo-318018-04.bin",
+          "sha256": "ccb0d516219f12857fef3ae7409fff072e47b9480d7eafb5eea7e0b188c958f5"
+        },
+        {
+          "file": "basichi-318019-04.bin",
+          "sha256": "121b7c7f15f9b72e83f293f8fb3c4686730ee02359cea71d18a72c6f489cd2d7"
+        },
+        {
+          "file": "chargen-390059-01.bin",
+          "sha256": "f08d8f525b44f5cbb3f5776739fcdff737886e1813f1eb7a20aedb128db1d4a8"
+        }
+      ],
+      "image_sha256": "87fad390f478d7ef9c54f3f8b9182b2fb0d6f79a29b09460802b5000c5a1a06f",
+      "report": {
+        "observations": [
+          {
+            "kind": "set_machine",
+            "machine": "c128-ntsc",
+            "profile_id": "commodore-c128-ntsc",
+            "display_name": "Commodore 128 (NTSC)"
+          },
+          {
+            "kind": "run_frames",
+            "frames": 200,
+            "reached": 3419000,
+            "stop_reason": "ReachedTarget"
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "boot.detected",
+              "value": true
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "screen.text.lines",
+              "value": [
+                "                                        ",
+                " COMMODORE BASIC V7.0 122365 BYTES FREE ",
+                "   (C)1986 COMMODORE ELECTRONICS, LTD.  ",
+                "         (C)1977 MICROSOFT CORP.        ",
+                "           ALL RIGHTS RESERVED          ",
+                "                                        ",
+                "READY.                                  ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        ",
+                "                                        "
+              ]
+            }
+          },
+          {
+            "kind": "query",
+            "result": {
+              "path": "machine.frame_count",
+              "value": 200
+            }
+          }
+        ],
+        "time": 3419000,
+        "boot_detected": true,
+        "boot_reason": "found READY. screen codes at offset $00F0 on row 6",
+        "loaded_program": null,
+        "query_values": [],
+        "screen_text_lines": null,
+        "trace_lines": null
+      }
+    }
+  ],
+  "site_local": {
+    "tests_passed": 129,
+    "production_build": "passed",
+    "routes": 111,
+    "registry_machines": 86,
+    "registry_board_embeds": 52,
+    "accessibility": {
+      "pages": 98,
+      "themes": 2,
+      "redirect_stubs": 13,
+      "defects": 0
+    },
+    "visual_inspection": "PAL/NTSC C64 and C128 images inspected; C64C bytes match the independently captured breadbin of the same region."
+  },
+  "limits": [
+    "Implemented chip/clock configurations only; not every PCB revision, early NTSC VIC or CIA date code.",
+    "C128 remains C128-mode only, with no 2 MHz execution, tape, IEC drives or cartridges; C128D not qualified.",
+    "Pinned @emu198x/player 0.44.2 has all four C64 variants and no C128 core.",
+    "Native menu interaction and host audio-device output unverified in this slice."
+  ]
+}
