@@ -35,3 +35,18 @@ impossible. No new registry dependency or chip timing change is planned.
 7. Commit and push green increments, merge exact verified heads, retain evidence
    and inspect all ignored files and remote retention. Remove task worktrees,
    caches and processes; preserve primary checkouts and unrelated locked records.
+
+## Additional reproduced v1 omission — awaiting schema approval
+
+A firmware-bearing runtime with no cartridge saves `machine: None`. Its IPL
+exists only in the runtime cache and is absent from the v1 envelope. A restored
+blank state therefore cannot recover that firmware for a later insertion.
+The red regression is `a_blank_save_retains_firmware_for_a_later_cartridge`.
+
+Proposed: write v2 with an independent optional IPL field, validate it against
+any embedded machine before installation, retain a reader for cartridge-bearing
+v1 states and reject v1 blank states whose firmware is unknowable. The original
+six v1 fixtures remain immutable: test their raw machine/envelope continuation
+through a test-only legacy encoder, and separately test complete v2 round trips
+for blank/loaded, built-in/external IPL, reset and replacement. This needs schema
+approval; no v2 production code is written before it arrives.
