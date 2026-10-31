@@ -1,0 +1,597 @@
+{
+  "source_merge": "7b7128fa315bcf1067f99baed39314d2d98448bf",
+  "site_merge": "fee043b2109d06299be24f189094d9c800c0cb89",
+  "deployment_run": 41223861235,
+  "routes_verified": 114,
+  "registry_machines": 88,
+  "pages_with_players": 51,
+  "pet_players": 0,
+  "legacy_redirect": "/systems/commodore-pet-2001n-32k/",
+  "images": [
+    {
+      "path": "/media/boot/commodore-pet-2001n-32k.png",
+      "sha256": "a89f892ef97489361c0f8f6ed2870b9d0c8f5f773c8436ac00e040e08b9d955e"
+    },
+    {
+      "path": "/media/boot/commodore-pet-4032.png",
+      "sha256": "a10061031ce556da1f3df9d54f641c94676db59a7f3df79f1764b9a867015646"
+    },
+    {
+      "path": "/media/boot/commodore-pet-8032.png",
+      "sha256": "7e63d2af939b89cc438538051b2ee062f49ce8ae6f2250ab03ea181b877790c0"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/accuracy/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/capture/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/changelog/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/getting-started/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/mcp/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/observability/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/scripting/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/docs/status/current-system-usability/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/downloads/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/emulators/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/acorn-atom/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/acorn-bbc-master-128/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/acorn-bbc-micro-b-plus/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/acorn-bbc-micro/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/acorn-electron/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/amstrad-cpc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/amstrad-cpc464/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/amstrad-cpc6128/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/amstrad-cpc664/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-1040st-ntsc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-1040st-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-130xe-ntsc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-130xe-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-2600-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-2600/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-5200/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-520st-ntsc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-520st-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/atari-7800-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-7800/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-800xl-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-800xl/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/atari-st/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/coleco-colecovision-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/coleco-colecovision-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/coleco-colecovision/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-amiga/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-c128-ntsc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-c128-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-c128/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-c64-ntsc-breadbin/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-c64-pal-breadbin/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-c64/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-c64c-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-c64c-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-pet-2001n-32k/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-pet-4032/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-pet-8032/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-pet/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/commodore-vic-20-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-vic-20-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/commodore-vic-20/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/dragon-64/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/dragon/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/jupiter-ace/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/mattel-aquarius-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/mattel-aquarius/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/memotech-mtx/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/microsoft-msx1/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/microsoft-msx2/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/mitsubishi-ml-f80/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/mitsubishi-ml-fx1/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/nintendo-game-boy-advance/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/nintendo-game-boy-color/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/nintendo-game-boy-pocket/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/nintendo-game-boy/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/nintendo-nes-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/nintendo-nes-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/nintendo-nes/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/nintendo-snes/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy-2/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/oric/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/panasonic-fs-a1/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/philips-vg-8235-00/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-game-gear/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-genesis/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-mark-iii/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-master-system-1-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-master-system-1-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-master-system-2-ntsc/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-master-system-2-pal/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-master-system-japan/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-master-system-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-master-system/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sega-mega-drive-europe/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-mega-drive-japan/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-mega-drive/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sega-sg-1000/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sinclair-zx-spectrum/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sinclair-zx80-usa/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sinclair-zx80/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sinclair-zx81/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/snk-neo-geo/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sony-hb-10/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sony-hb-10p/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sony-hb-f1/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/sord-m5-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sord-m5-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/sord-m5/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-ntsc/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-pal/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/spectravideo-svi-328/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/tandy-coco-2/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/tandy-coco/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/tatung-einstein/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/timex-tc2068/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/timex-ts1000/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/timex-ts2068/",
+      "status": 200,
+      "player": true
+    },
+    {
+      "route": "/systems/toshiba-hx-10/",
+      "status": 200,
+      "player": false
+    },
+    {
+      "route": "/systems/yamaha-cx5m/",
+      "status": 200,
+      "player": false
+    }
+  ],
+  "verified_at": "2026-10-31T17:22:36.266394+00:00"
+}
