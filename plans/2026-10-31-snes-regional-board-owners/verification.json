@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-01",
+  "source_head": "605b0457b63bb53b16647cc4e7c9b41ce64823fd",
+  "source_pr": 2221,
+  "site_pr": 41,
+  "rust_tests_passed": 89,
+  "direct_tests_per_owner": 7,
+  "v2_matrix_cases": 18,
+  "original_v1_profiles": 3,
+  "fields_per_continuation": 3,
+  "progressive_and_interlaced": true,
+  "negative_control": "Corrupt last byte of one original output; direct-output assertion fails. Restore original; gate passes.",
+  "clippy": "pass: all selected targets, -D warnings",
+  "rustdoc": "pass: -D warnings",
+  "status_tests": 18,
+  "registry": {
+    "machines": 89,
+    "binaries": 34
+  },
+  "fixture_guard": "self-test and scan pass",
+  "ignore_guard": "12 self-test cases and scan pass; backlog 97 unchanged",
+  "site_tests": 131,
+  "site_routes": 116,
+  "a11y": {
+    "content_routes": 101,
+    "themes": 2,
+    "redirect_stubs": 15,
+    "defects": 0
+  },
+  "limitations": [
+    "No original SNES software found in configured library; synthetic cartridge validation only.",
+    "No new boot captures. Pinned player 0.44.2 has no SNES module; pages omit embeds.",
+    "Specific PCB/chip revisions, CIC, native menu interaction and host audio-device output unqualified."
+  ],
+  "v1_fixtures": {
+    "README.md": "2384bcc16d0c1c97e41b0f4ecae5d1c7aa2f7c5270c108b2545668fbe16341c2",
+    "nintendo-snes-ntsc-interlaced.output": "e9ab9a74c25b6db84805468390a439cacceffa7cb6482a81feea99454037dd24",
+    "nintendo-snes-ntsc-interlaced.state": "6439d4f909c7f24f3da3b0a72ce8b8809abf0c4b0f47fad85a674785c0ffb40b",
+    "nintendo-snes-ntsc-progressive.output": "d0856282c3932a0862ec8c5b05cc556ec00c40c73921d058fad12988c4d345bd",
+    "nintendo-snes-ntsc-progressive.state": "7c4dd5efc35a58ca3d72d27b063d37287225d6a50741f539b434a5574b56ee9c",
+    "nintendo-snes-pal-interlaced.output": "1946c84bbea353856ae9c7ecf2245bc8cb0d90bc1e0ce43ff4d9c620c4e996f9",
+    "nintendo-snes-pal-interlaced.state": "13a5bc17e836f73c320d266a1f8ee21621697fd72e13c7d3bfbf0d229dd3fb82",
+    "nintendo-snes-pal-progressive.output": "7f19e7c13e885f324cb85fbb1330474debae6c5146fe39bc6be22b9fb925060f",
+    "nintendo-snes-pal-progressive.state": "fdfe55ca845d26bc0323cb694848e59213f2db97cb2ef880584cdd83df896fa8",
+    "nintendo-super-famicom-interlaced.output": "c4fb5db59065c8f65058808ad339d72f54c3a6559938183912880d6f5cef2040",
+    "nintendo-super-famicom-interlaced.state": "8fa423d6c193de7d7f393e98883d02adebb0b4d1d0ca25eaf79c9aa94f7dc83a",
+    "nintendo-super-famicom-progressive.output": "f95e36bc322ebdbfd86b71420c84b26b13620e42a5f8f0efcc338b098d257bfa",
+    "nintendo-super-famicom-progressive.state": "4fb0ed5cd4b8a85fa1e83079377d59d5b24b9f5fe1c6f9cf14f69b8c96dcaac3"
+  }
+}

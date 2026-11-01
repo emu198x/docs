@@ -1,11 +1,21 @@
 {
   "blank-red.log.gz": "4361e0c92f53815a3c512bbe97934c8b4368d47316ec885995a2858236dc7a48",
   "clippy.log.gz": "9d73da509bcfc0ab1e450b35bac5411a99235dbc7ba94f377518bbcda819ddf1",
-  "handoff.md": "17fba18b7713e38abc12ed4d1417ba3fb03029c99b2de82304ba85fcccef3f28",
+  "handoff.md": "fe4f12c8d63f1affaff23c7a069f1a8015bde1d80f330fe90f00adbe86651aa6",
   "legacy-continuations.log.gz": "d5e8d718cde6b9064b4f860fbdc277ce7d37375f6e41660ca659482afe249ebf",
+  "negative-control.log.gz": "d65f47c15f43cd4d45da860c19ccd046f7b9ac4989febd92dfec8b4e46794d54",
+  "positive-control.log.gz": "94472aa8c167a473bfa04f6f824b49592ce39a4704e68aa90d4ce0072518ea37",
   "pre-blank-probe-tests.log.gz": "9dd66a93c72ae97e86a1b3e6aa5496f67762502d1d3ae7c9b3e78456fafff01f",
   "pre-split-probe.rs.txt": "ff445b8078fa6f901cb20ecbc93860118b45b5e34e70d3a031cad5e27ded891b",
   "pre-split-red.log.gz": "24a5fa70c0f6ffae72b096cd24ca0a4a67bb2eacf64fdc81e551b7f4edaf8408",
   "prerequisite-green.log.gz": "28767fe0b17f23b80ef1221b0afd1b185da2c0862f56f100e7c10d08b8073f8b",
-  "switch-red.log.gz": "52c654855d9355aa99406e9cf17d9483e8f4ce69a4f3a71519d1e1f41420bbb1"
+  "site-a11y.log.gz": "eb1e798db4ec4a30c62cdabafe58038fb9a58effceaecf93d9722074881a34d8",
+  "site-build.log.gz": "fbca0d760585d2c82ced7852cabc7ffc589f80ebb31e5dd68ed6184659e3e731",
+  "site-tests.log.gz": "53b9240c6453a41f1a555ed313f38aebec081e6d3f3a570e65f1e617d7b46adc",
+  "status-tests.log.gz": "a6c3cb0e84712d42aff6fa1bd3ddc7dc333cd588b5c8c1165ccdfed0e2acb3a8",
+  "switch-red.log.gz": "52c654855d9355aa99406e9cf17d9483e8f4ce69a4f3a71519d1e1f41420bbb1",
+  "v2-clippy.log.gz": "69c2b517aa22a0429b02621476631fb4f75ca9767c7c4d2a704ebf93113a5839",
+  "v2-rustdoc.log.gz": "7fb01e371be9d691d4c4eea3b53f964fe820068cb6fdc129a854978c338e3309",
+  "v2-tests.log.gz": "61203fbabd87d5c8464862a42fbfbc10047f4e5eff8c08caa3772940bbed4627",
+  "verification.json": "664e0fae0a41c9a2b10dcb2b9f90d9bf4f0ba3883b56dc5b8d20ca4a1f609be6"
 }
