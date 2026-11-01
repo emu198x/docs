@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-01",
+  "source_head": "990e54c8ec5c927bad2ea9b651a5fc8385efc222",
+  "source_pr": 2224,
+  "base": "194d68dd002e1137573ecee0f01d4036e00e8936",
+  "local_results": {
+    "common_and_three_machines": {
+      "passed": 502,
+      "failed": 0,
+      "ignored": 91
+    },
+    "targeted_runtime": {
+      "passed": 76,
+      "failed": 0,
+      "ignored": 0
+    },
+    "python_gate_tests": 4,
+    "strict_all_target_clippy": "passed",
+    "strict_rustdoc": "blocked by pre-existing private-intra-doc-links in unchanged board.rs and driver.rs",
+    "registry": "91 machines / 34 binaries",
+    "cargo_metadata_machine_packages": 106,
+    "machine_dependency_edges": []
+  },
+  "original_manifest_negative_control": [
+    "machine-commodore-amiga-a1200: package dependencies depends on machine-commodore-amiga-ocs; shared hardware belongs in common-* (rule 34)",
+    "machine-commodore-amiga-ecs: package dependencies depends on machine-commodore-amiga-ocs; shared hardware belongs in common-* (rule 34)"
+  ],
+  "snapshot": "v66 unchanged; old import paths and three-u32 wire layout retained; field-order negative fails and original passes",
+  "scope": "No regional owner extraction or new hardware qualification in this prerequisite. No site changes required."
+}
