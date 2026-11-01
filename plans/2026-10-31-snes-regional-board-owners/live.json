@@ -1,0 +1,589 @@
+{
+  "routes_verified": 116,
+  "regional_pages": "exact IDs, no captures or embeds",
+  "legacy_redirect": "/systems/nintendo-snes/ -> /systems/nintendo-snes-ntsc/",
+  "results": [
+    {
+      "route": "/",
+      "players": 0,
+      "sha256": "1f890ef4a290c07b005e4b16ad246a16aa258830f4e1623393ff6eaabb57366b"
+    },
+    {
+      "route": "/accuracy/",
+      "players": 0,
+      "sha256": "5c107e634d3a634c866d25310ca5d9827dc25aaca97101b760c5360c630960d2"
+    },
+    {
+      "route": "/docs/",
+      "players": 0,
+      "sha256": "3dd765c12ac0efccb903d6c1e844e46e7427cc913e3e744a15c710c760b2f2c2"
+    },
+    {
+      "route": "/docs/capture/",
+      "players": 0,
+      "sha256": "fc321dd7392ca51e391ebcee1c51deed80b5e014336a0236f3c107ee5ac6c528"
+    },
+    {
+      "route": "/docs/changelog/",
+      "players": 0,
+      "sha256": "050ce273a93ad9aef39622bd02e088b369469a24607643d1dad880297e2ea260"
+    },
+    {
+      "route": "/docs/getting-started/",
+      "players": 0,
+      "sha256": "95d5441cad00b89bbbcce245825337b4a51393d15b271e8c2e7120174793401a"
+    },
+    {
+      "route": "/docs/mcp/",
+      "players": 0,
+      "sha256": "7a36b7ecf22d5c548a60793baf4dd2e5da6a53cdb3783530c6eb626706671b1f"
+    },
+    {
+      "route": "/docs/observability/",
+      "players": 0,
+      "sha256": "89748eab21d75598954c42a262a39f5629ea4ef87d0491ba20b7df7d580d6b2a"
+    },
+    {
+      "route": "/docs/scripting/",
+      "players": 0,
+      "sha256": "ee32aa0317f6e804ee81ca7ba7699c89c1d7d19d40e8a93750c23241929b83fd"
+    },
+    {
+      "route": "/docs/status/current-system-usability/",
+      "players": 0,
+      "sha256": "d103f2d56776fa1a204e079a34cc3f5a07bfe77fe4015a249e21412522c6e52a"
+    },
+    {
+      "route": "/downloads/",
+      "players": 0,
+      "sha256": "1c67207963a8705e1cfbb27d5d0662beed07775b1f5617404a22aecae058c208"
+    },
+    {
+      "route": "/emulators/",
+      "players": 1,
+      "sha256": "797f001e3c7e739d1ea80d6fdb4a872044bc68b1d0b243010377f8a87d862587"
+    },
+    {
+      "route": "/systems/",
+      "players": 0,
+      "sha256": "37a9a702fbba074cd0353700a6176c420db6d0a74dfa80b02f8865c91f2960cf"
+    },
+    {
+      "route": "/systems/acorn-atom/",
+      "players": 1,
+      "sha256": "d4ce5671619ce9b2d57ab8d84f729a42717a17fbf28e2edb4841d6b1917384da"
+    },
+    {
+      "route": "/systems/acorn-bbc-master-128/",
+      "players": 0,
+      "sha256": "892d10e24809e26655d0bf23c30bc9882c518b16f1d1d08ec4cab41e81189054"
+    },
+    {
+      "route": "/systems/acorn-bbc-micro-b-plus/",
+      "players": 0,
+      "sha256": "260a596bf324b931a87693d882148cd3cde03a4d10949848db98a13fad68c54c"
+    },
+    {
+      "route": "/systems/acorn-bbc-micro/",
+      "players": 1,
+      "sha256": "47710108ecf39de2387f50373c6f31677c5b6ba6338ff100d773b15384aeb7e0"
+    },
+    {
+      "route": "/systems/acorn-electron/",
+      "players": 1,
+      "sha256": "da51879b34d9cf6b7a407128be2f700337af18ed97a4cb692fb942751fc46997"
+    },
+    {
+      "route": "/systems/amstrad-cpc/",
+      "players": 0,
+      "sha256": "0f10a2cc5aa4d69acbbf470bb00c57f8de39929206b6467694e39dd926bc7a4a"
+    },
+    {
+      "route": "/systems/amstrad-cpc464/",
+      "players": 1,
+      "sha256": "21b17785515fb0a78775ae780b284bee1097b5fc6cf7ad3bc739af4672111245"
+    },
+    {
+      "route": "/systems/amstrad-cpc6128/",
+      "players": 0,
+      "sha256": "c49b858f7c6aa140f0dda4927566f23b318ea80763592a48799722800087ea1e"
+    },
+    {
+      "route": "/systems/amstrad-cpc664/",
+      "players": 0,
+      "sha256": "42600dd7f2f12305b7982e11a38661bf7df62270c2655df5dae474b96dbd8f52"
+    },
+    {
+      "route": "/systems/atari-1040st-ntsc/",
+      "players": 0,
+      "sha256": "a9e98fb00bd4ade9223fc4a7bd78c88a45968a6266ba9a88bdc7cffb550e1b72"
+    },
+    {
+      "route": "/systems/atari-1040st-pal/",
+      "players": 0,
+      "sha256": "ff32b10935a3999927e8e3a9c8c506da3ac9747e4d04e1241163ae77e9c22f39"
+    },
+    {
+      "route": "/systems/atari-130xe-ntsc/",
+      "players": 0,
+      "sha256": "dce0b1286b5602c3916109dcb71e6914a6f3a034098a3db2a81d6d085c339d24"
+    },
+    {
+      "route": "/systems/atari-130xe-pal/",
+      "players": 0,
+      "sha256": "131c34b8f503761e268e9685ebcebfd40cb20f98303b4bf630c7e9dc19455acb"
+    },
+    {
+      "route": "/systems/atari-2600-pal/",
+      "players": 1,
+      "sha256": "34965a5f7911c6073c0eea7ede23c8a4f19d03a7f2428a4800eb66537d2ce836"
+    },
+    {
+      "route": "/systems/atari-2600/",
+      "players": 1,
+      "sha256": "48494060548d72a7724678a5b68944d50b735cf7b5bd206143c50942f2de7631"
+    },
+    {
+      "route": "/systems/atari-5200/",
+      "players": 1,
+      "sha256": "cff44180d95cd4d68db5bee969436b25798c6fa7496f0adcfad8f704c2c67a03"
+    },
+    {
+      "route": "/systems/atari-520st-ntsc/",
+      "players": 0,
+      "sha256": "d8404216c38c763c97c80d4d83bcab4923f6844edfd258d574b34051a5c03286"
+    },
+    {
+      "route": "/systems/atari-520st-pal/",
+      "players": 0,
+      "sha256": "9baaeac08023f725bc9487138ebb3ab1b7204b0d5db48ce627c6c74378f51467"
+    },
+    {
+      "route": "/systems/atari-7800-pal/",
+      "players": 1,
+      "sha256": "1bee53766934ccb1f603dcc37719b4d133bf54fcd75a4c417f1b5403c1f85956"
+    },
+    {
+      "route": "/systems/atari-7800/",
+      "players": 1,
+      "sha256": "f7c0ad27c0e7626ae0b456bd037ed28a5001d8febc18e79c7acdd9c9953658a1"
+    },
+    {
+      "route": "/systems/atari-800xl-pal/",
+      "players": 1,
+      "sha256": "38fe8564724d8db84f2e4300adf339222f938297b8e1ef5501b22e7c5a413736"
+    },
+    {
+      "route": "/systems/atari-800xl/",
+      "players": 1,
+      "sha256": "b56b4e2c6986871671c4e349a6b5ab80b3794335da5a5b7d5207051db0258d12"
+    },
+    {
+      "route": "/systems/atari-st/",
+      "players": 0,
+      "sha256": "224bf72f410383b05d233847c81fdcefb29300eaaf4698e17abea6718ea36f19"
+    },
+    {
+      "route": "/systems/coleco-colecovision-ntsc/",
+      "players": 1,
+      "sha256": "11b77f689a8a2383ec3dceef5ee74969ce47a3f1b3001769dd973cae0a607305"
+    },
+    {
+      "route": "/systems/coleco-colecovision-pal/",
+      "players": 1,
+      "sha256": "c2bfb3753f4f1a0d43c2936757bba8ebceea20027e99e804ee3bbe9f82c3b727"
+    },
+    {
+      "route": "/systems/coleco-colecovision/",
+      "players": 0,
+      "sha256": "6e4de40bae9a419cfe184744f577447f30e58f6c59bdd30c58bed2847ed329af"
+    },
+    {
+      "route": "/systems/commodore-amiga/",
+      "players": 1,
+      "sha256": "0958012b01e43bd694919de4607ca7249d1752b3f31765f5c2cb637a39655926"
+    },
+    {
+      "route": "/systems/commodore-c128-ntsc/",
+      "players": 0,
+      "sha256": "dcef6dfd36abe8b2b73c79208b067033d38d8994ad906a597b84805ccb72310e"
+    },
+    {
+      "route": "/systems/commodore-c128-pal/",
+      "players": 0,
+      "sha256": "972db883eadde3bdcf75dba48fe46e9280086570e29d4b54c7b3b4aefc068bd0"
+    },
+    {
+      "route": "/systems/commodore-c128/",
+      "players": 0,
+      "sha256": "2a3ae5083d71ec6baf7466719cea2fe450f42fe449d74b27b4ef9995b81d7691"
+    },
+    {
+      "route": "/systems/commodore-c64-ntsc-breadbin/",
+      "players": 1,
+      "sha256": "2e621d8292ed7479355e698209454a5861f78cda58b7f6431dd53fda1e043547"
+    },
+    {
+      "route": "/systems/commodore-c64-pal-breadbin/",
+      "players": 1,
+      "sha256": "ffb4a9494fd760f4ee81d5b1597a5bb2ac618c3007c9059335fbb7aa5e79082b"
+    },
+    {
+      "route": "/systems/commodore-c64/",
+      "players": 0,
+      "sha256": "1aefeca9563266c08037231f78a3cd0a2842a949f785f8e1db6b5be0eec66aae"
+    },
+    {
+      "route": "/systems/commodore-c64c-ntsc/",
+      "players": 1,
+      "sha256": "0994334f093fbdee0ef7cc0f7c5e76b9ea763484cb2e470a74fc4c1908b695e3"
+    },
+    {
+      "route": "/systems/commodore-c64c-pal/",
+      "players": 1,
+      "sha256": "871661caf104e609481d654630b67b9426c4a221b8b2d462295c03d860a08a54"
+    },
+    {
+      "route": "/systems/commodore-pet-2001n-32k/",
+      "players": 0,
+      "sha256": "47ffdd57f0639fc82a6a20aec4edabebf144a28767e0e0d575a670541ed7fcaa"
+    },
+    {
+      "route": "/systems/commodore-pet-4032/",
+      "players": 0,
+      "sha256": "a464f99fe11b7075a9cc99220b8d78f27c670d3c43242aca8b52ce612847fdec"
+    },
+    {
+      "route": "/systems/commodore-pet-8032/",
+      "players": 0,
+      "sha256": "714360941cd60972502e38328c1d8351cdc63c4e27c30d666d573aaff2a6e896"
+    },
+    {
+      "route": "/systems/commodore-pet/",
+      "players": 0,
+      "sha256": "fd039403e2a63f7cda54d65a956798c8d9b6f692642fffa5f719832686aed1f2"
+    },
+    {
+      "route": "/systems/commodore-vic-20-ntsc/",
+      "players": 1,
+      "sha256": "55a4bd8ca355c4f0fe594cdc6fbd31724de2295b43b4383a15507d3748a9ef3b"
+    },
+    {
+      "route": "/systems/commodore-vic-20-pal/",
+      "players": 1,
+      "sha256": "f541888cf5aa3f0b848ed2a47fc30263b9722060d109580c349df7374c308c1f"
+    },
+    {
+      "route": "/systems/commodore-vic-20/",
+      "players": 0,
+      "sha256": "69500d1d0254a39f0e6c5c12d06927c445dcf6ec5c8fd00fb86bb6e7be1be1af"
+    },
+    {
+      "route": "/systems/dragon-64/",
+      "players": 1,
+      "sha256": "833a980f92ce10623c9c110c7721701b66edc7b5dc7e358caf673a5786eafeba"
+    },
+    {
+      "route": "/systems/dragon/",
+      "players": 1,
+      "sha256": "4bb2ea2ef896c7774e2198137fa244d487b5957f9ca129063ca98104037084b2"
+    },
+    {
+      "route": "/systems/jupiter-ace/",
+      "players": 1,
+      "sha256": "e828a2546b7c95724fd99ef567eee21dbe404d03ed384a5a39ec54eca676ec46"
+    },
+    {
+      "route": "/systems/mattel-aquarius-pal/",
+      "players": 0,
+      "sha256": "1a3f5ba356688d2cc43ff983d3eb0dc1fd81680a448012c9f5b5eab080c4d3ad"
+    },
+    {
+      "route": "/systems/mattel-aquarius/",
+      "players": 1,
+      "sha256": "c8698680a6a9990c722560275321d0fc4b1cc28b2e83ad9fe865c737fa7e899c"
+    },
+    {
+      "route": "/systems/memotech-mtx/",
+      "players": 1,
+      "sha256": "751455092d9c62bfbb09677be762dddb83adc14f52beae0d889031d2c298d47e"
+    },
+    {
+      "route": "/systems/microsoft-msx1/",
+      "players": 0,
+      "sha256": "f51c0205186e2e0755b938d7dc26c9ad667498dcb71dc328a7adf400451989b6"
+    },
+    {
+      "route": "/systems/microsoft-msx2/",
+      "players": 0,
+      "sha256": "e90eb72e01ad8f034f9f9c9ff044063b1d40a74271a82350d9596147ac861409"
+    },
+    {
+      "route": "/systems/mitsubishi-ml-f80/",
+      "players": 0,
+      "sha256": "41b54dab3cfb95bccb25a86703b71df18fd8a3cd774bbc80570f2c77438979ff"
+    },
+    {
+      "route": "/systems/mitsubishi-ml-fx1/",
+      "players": 0,
+      "sha256": "c63b2b9b32b8cf92f4b2106cb02adb583dc54ab5161021b562dede54b1a547de"
+    },
+    {
+      "route": "/systems/nintendo-game-boy-advance/",
+      "players": 0,
+      "sha256": "9c78df06eda182b6af0b24f38425b2ded9fd0e6d99a6840304029b6eae3bc6d0"
+    },
+    {
+      "route": "/systems/nintendo-game-boy-color/",
+      "players": 0,
+      "sha256": "8dbfb1fd01c907e9113ec920d12f1865ce398bb06dbf7752f48bbcce31dccb09"
+    },
+    {
+      "route": "/systems/nintendo-game-boy-pocket/",
+      "players": 1,
+      "sha256": "2f97ae216a9306a4a52bf936ef39ab1b0d77b27e1083fc203cc5f9c41de65e8a"
+    },
+    {
+      "route": "/systems/nintendo-game-boy/",
+      "players": 1,
+      "sha256": "c223bde72705cb74916ab4dc58e1a46d5e3dd9eb103e20bc31dbfca106e26259"
+    },
+    {
+      "route": "/systems/nintendo-nes-ntsc/",
+      "players": 1,
+      "sha256": "d5b3ea115fa8493a0b188b8690a4cd237f9027014962d08c6e6e915199246fb0"
+    },
+    {
+      "route": "/systems/nintendo-nes-pal/",
+      "players": 1,
+      "sha256": "b0af853248b2b3fd4c9c6c44c6106081302e8bfe556ebfd7754e654ccee818b3"
+    },
+    {
+      "route": "/systems/nintendo-nes/",
+      "players": 0,
+      "sha256": "d5b8ebdcabc980c9a5f1c58fa9c1899fa02593840117fc8b61e177d5ccafd1df"
+    },
+    {
+      "route": "/systems/nintendo-snes-ntsc/",
+      "players": 0,
+      "sha256": "4a7f38ac137e1d07f31eb34416103bb69ec5b116d9dfca28e04c4f2e28ec8af5"
+    },
+    {
+      "route": "/systems/nintendo-snes-pal/",
+      "players": 0,
+      "sha256": "77ff3eef28f0336ce96cdb150e15e0b74b6c92ae8d3141ef101b9915901ac2a1"
+    },
+    {
+      "route": "/systems/nintendo-snes/",
+      "players": 0,
+      "sha256": "f5c6beec44936df6c061037cce844765f5755720b451fad8c5ae44784e482a91"
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy-2/",
+      "players": 1,
+      "sha256": "d7d78f043487b02e4ddb3c6d6f35d2d51132f7dccac0e2461096547e56c1b21c"
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy/",
+      "players": 1,
+      "sha256": "b57899482dc5f358b0eefb22eb317908ba74d47a798e8f591ed8cdf70296f6eb"
+    },
+    {
+      "route": "/systems/oric/",
+      "players": 1,
+      "sha256": "bbd40d52ba4dbdb5efbb784b2c199ecdc97040759f5ab23403c5f24b2c65ccb7"
+    },
+    {
+      "route": "/systems/panasonic-fs-a1/",
+      "players": 0,
+      "sha256": "7233f8b4483d8dcebf6e2579b15992fe82ba10d4e6910830cae3ca46b616a38c"
+    },
+    {
+      "route": "/systems/philips-vg-8235-00/",
+      "players": 0,
+      "sha256": "680cc5b3c8bc02bb934b12a82c8dfde29cdfc46f27ba638c0aaeff71b9e67152"
+    },
+    {
+      "route": "/systems/sega-game-gear/",
+      "players": 1,
+      "sha256": "e03cb3b3e07f6d76579454a225c73c0368c38df15ce8e0578d028e5378cd7f72"
+    },
+    {
+      "route": "/systems/sega-genesis/",
+      "players": 0,
+      "sha256": "ea20123e6c3c3cbadcbdd6db2f2cfe9b4f95c325c7b5b6c359d16dbf874dc8a0"
+    },
+    {
+      "route": "/systems/sega-mark-iii/",
+      "players": 0,
+      "sha256": "8e7f0b0e105e6db1ce4db66301715a8438c5ab4500b7a5aedba3619731bd97a4"
+    },
+    {
+      "route": "/systems/sega-master-system-1-ntsc/",
+      "players": 1,
+      "sha256": "a36fcc3518157cab3f22c3c37197b848fedc6b996c93ac0558518721ec9eee69"
+    },
+    {
+      "route": "/systems/sega-master-system-1-pal/",
+      "players": 1,
+      "sha256": "96669e05e0bf7bd5457ab244530a988d341e645ec5027a591349a4b273516050"
+    },
+    {
+      "route": "/systems/sega-master-system-2-ntsc/",
+      "players": 0,
+      "sha256": "482e9f432c319f4910bb8029e26b7fc682203f4902167100e63b77c67f9ca3c2"
+    },
+    {
+      "route": "/systems/sega-master-system-2-pal/",
+      "players": 0,
+      "sha256": "98024a7d511cfb6038178d5582a155f1b75875d7c04af4fb7817ced7d59ba4bd"
+    },
+    {
+      "route": "/systems/sega-master-system-japan/",
+      "players": 1,
+      "sha256": "ddbad46b97c92d160b078ef98a45c0c6d8282dcab2c581438a479069e41e14a9"
+    },
+    {
+      "route": "/systems/sega-master-system-pal/",
+      "players": 1,
+      "sha256": "ab02a5438ac48f008b66781ab1bd5b9ba4edd412274dcb82baabd701572f00ba"
+    },
+    {
+      "route": "/systems/sega-master-system/",
+      "players": 1,
+      "sha256": "8d53dd692182ab1027fec62a03943e3215995c27da588a274935dbeafa568c8f"
+    },
+    {
+      "route": "/systems/sega-mega-drive-europe/",
+      "players": 0,
+      "sha256": "746a308eed62f8701b7f6ced7e0d728a215ca9eca38df27bdbc35c365c18effe"
+    },
+    {
+      "route": "/systems/sega-mega-drive-japan/",
+      "players": 0,
+      "sha256": "389fc99394bc6f33f6e548c7c1d5f1848bacad31a5a317f70900544ba0ea2db8"
+    },
+    {
+      "route": "/systems/sega-mega-drive/",
+      "players": 0,
+      "sha256": "14a2a1c31e6fd256b02efd1fec5504d93df259ce2b3835462af6d9eec4aa495b"
+    },
+    {
+      "route": "/systems/sega-sg-1000/",
+      "players": 1,
+      "sha256": "6eb386e4c4b9e982cfafeb8b8b40af4cd7066b16fe70e01fd8db080b3e9fdd9d"
+    },
+    {
+      "route": "/systems/sinclair-zx-spectrum/",
+      "players": 1,
+      "sha256": "016def4691d1ef94f90bc4459bfafbb34377086fc22f3cdb4b29910bb45b4e9f"
+    },
+    {
+      "route": "/systems/sinclair-zx80-usa/",
+      "players": 1,
+      "sha256": "afc44a1605b6ddbbfb3f52a368b697040fc1d4467efdc5ad0031170b76203013"
+    },
+    {
+      "route": "/systems/sinclair-zx80/",
+      "players": 1,
+      "sha256": "63b214e712645ee00c4be1127f40a933447db1f59757f1d7d292350db487df07"
+    },
+    {
+      "route": "/systems/sinclair-zx81/",
+      "players": 1,
+      "sha256": "2e34c2d06d27d117e0bc00f7f7b7e49ae059f7e67f4a2c594aa73f57294dd417"
+    },
+    {
+      "route": "/systems/snk-neo-geo/",
+      "players": 0,
+      "sha256": "73b5a49ed992f54aa95a38a91e347506ccb25a92ebde437a1bbaf335880d1729"
+    },
+    {
+      "route": "/systems/sony-hb-10/",
+      "players": 0,
+      "sha256": "47f79089d7881e9dc00ba4cec18dccec200cb402bb0829c9b71e6ab2fa2e168c"
+    },
+    {
+      "route": "/systems/sony-hb-10p/",
+      "players": 0,
+      "sha256": "e7cbe13e3f9da4cfe4ce837a75cf5112839751e872dc6adc11ac621f927f7ad8"
+    },
+    {
+      "route": "/systems/sony-hb-f1/",
+      "players": 0,
+      "sha256": "abe6b36870dd3f81d9ab0463c7e5af87c1e4c54b1b3129090ab88c02ddfc9d4c"
+    },
+    {
+      "route": "/systems/sord-m5-ntsc/",
+      "players": 1,
+      "sha256": "605b3781603776671f5af2f62543ebc302a74eed382d46c96590db0207df018b"
+    },
+    {
+      "route": "/systems/sord-m5-pal/",
+      "players": 1,
+      "sha256": "00b6d00608c0c75b0a31f6265084bf8b1f00cc47394cde83a5742e14c9a74e60"
+    },
+    {
+      "route": "/systems/sord-m5/",
+      "players": 0,
+      "sha256": "b78a1e7560f3dc69951d7f7414e9a5a918d356760102223c514e550b71ddd577"
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-ntsc/",
+      "players": 1,
+      "sha256": "0b6b3a6e382692fe1bd4b25cfac5233a52dfcffb0bab455149670bd0d549b540"
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-pal/",
+      "players": 1,
+      "sha256": "85ea2efd13c04f7832d6710ae5de8f27f7337a0b0242f3f6d278cd3110f90993"
+    },
+    {
+      "route": "/systems/spectravideo-svi-328/",
+      "players": 0,
+      "sha256": "700a15387d0af20df7037b5664979cd913a053f7369d56a50db2e35f4449d280"
+    },
+    {
+      "route": "/systems/tandy-coco-2/",
+      "players": 0,
+      "sha256": "7e46886c838775c7d2fd3269d9757e325edffcf571f649e1fb7f995b33491235"
+    },
+    {
+      "route": "/systems/tandy-coco/",
+      "players": 0,
+      "sha256": "f2bff57dcb431ad5b38124944acd72d3fd99a7e352364fbdfa1e52e6a2079734"
+    },
+    {
+      "route": "/systems/tatung-einstein/",
+      "players": 1,
+      "sha256": "105a63532a3421441a8679df890be3e767b6c7f8845129ba431f428ec3e9c691"
+    },
+    {
+      "route": "/systems/timex-tc2068/",
+      "players": 1,
+      "sha256": "512db3bc58bec43c51d8c024f16657df4f09d636f1600c097712effb4db302c4"
+    },
+    {
+      "route": "/systems/timex-ts1000/",
+      "players": 1,
+      "sha256": "1ce6e02d3c32dd96285f9668322a94a28d75922e56ee8e4215b00c79382de6cb"
+    },
+    {
+      "route": "/systems/timex-ts2068/",
+      "players": 1,
+      "sha256": "4039012cd1a627c131c11db343c3f7cd58f3b52fec7ae2838545eec1b0db595b"
+    },
+    {
+      "route": "/systems/toshiba-hx-10/",
+      "players": 0,
+      "sha256": "f3d2738a040eab379ffc21908aac79ccda84fdc3d9ff1a17edde556d08dbaad9"
+    },
+    {
+      "route": "/systems/yamaha-cx5m/",
+      "players": 0,
+      "sha256": "c3cdae75a7f8e3a9ec311adf163685ac86df534e39a43bb235c20d1ff7824f41"
+    }
+  ],
+  "registry_player_embeds": 51,
+  "all_route_player_embeds": 52
+}

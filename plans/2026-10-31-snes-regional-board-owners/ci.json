@@ -1,0 +1,21 @@
+{
+  "run": 41301727818,
+  "tested_head": "605b0457b63bb53b16647cc4e7c9b41ce64823fd",
+  "source_merge": "a14c6a7d1974e980ce8d95aa52f66995ad166a0c",
+  "merged_tree_matches_tested_tree": true,
+  "source_pr": 2221,
+  "ntsc_owner": 7,
+  "pal_owner": 7,
+  "runtime_passed": 31,
+  "snes_skips": 0,
+  "evidence_sha256": "00dc88814c32d814e1851f9b31fe6ba20d8d0df4c474f8f2e5da29a13b211581",
+  "site_ci_run": 41301777915,
+  "site_ci_attempt": 2,
+  "site_tested_head": "979eb896512df66f905bc349b2ba287f5e9951ab",
+  "site_merge": "d6ad05f11f059684a8858d457c3f30d55a4038ec",
+  "site_merged_tree_matches_tested_tree": true,
+  "site_ci_source": "a14c6a7d1974e980ce8d95aa52f66995ad166a0c",
+  "site_deploy_run": 41303894556,
+  "site_deploy_conclusion": "success",
+  "site_first_attempt": "Failed unknown board check because source split was not yet merged; unchanged site passed against merged source."
+}
