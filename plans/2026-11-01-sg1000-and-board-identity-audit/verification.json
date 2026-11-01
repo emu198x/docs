@@ -14,7 +14,7 @@
   },
   "negative_control": "Mutated original continuation fails direct comparison; restoring original passes.",
   "clock_probe": "NTSC 48062 vs expected 48061; PAL 49254 vs expected 48804. Tone output nonzero; compare actual elapsed time.",
-  "approval": "PAL independent oscillators and v6/v5 policy pending; no production timing or schema changes implemented.",
+  "approval": "Pending: no PAL timing or schema implementation. Active clock regression is staged in the durable source worktree and remains red; PR #2222 stays draft.",
   "registry_machines": 89,
   "ignore_backlog": 97,
   "fixture_and_ignore_self_tests": "pass",
@@ -32,5 +32,8 @@
     "No completed SG owner split.",
     "No new historical-software or native UI/audio-device qualification.",
     "Physical PAL-console revisions, later SG-II VDPs and Oric/5200 circuit populations remain unqualified."
-  ]
+  ],
+  "active_gate_sha256": "299fbce41d822b79c6093c1ef417acd4e38ea1e8f66151f579f5434a0ab6c7d5",
+  "metadata_ci_run": 41311120382,
+  "metadata_ci_status_at_handoff": "in progress; does not include the staged clock regression"
 }

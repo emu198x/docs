@@ -1,7 +1,9 @@
 {
   "5200-tests.log.gz": "4db9aeaaf1d47494721d48b8550336fffd27f58035723bd6b7eaf885bba39d84",
+  "active-clock-red.log.gz": "7ee59efa1a3a2ede1792915f0334c46ab68dec0595b8a68fa06e90266a54ca3a",
   "clock-red.log.gz": "3213d0a200f84314adb6d5b6944c2c6452b3b536a5931f7c9d4e3869de1090a9",
   "clock_agreement.rs.txt": "299fbce41d822b79c6093c1ef417acd4e38ea1e8f66151f579f5434a0ab6c7d5",
+  "handoff.md": "e51c6914c009ce148591f7c41abf7a5aacf8e939b85606e46cabacc4a4ad7e1e",
   "help.log.gz": "bc2b7208adf58352fa5fa58453c301fc24f5d1b1cf9bec752a724262f7b075b8",
   "metadata-clippy.log.gz": "91de0517126e6325fb5c53d17a6b6fc6c7ae8698bb2b8fd77fde84ba12503e56",
   "metadata-tests.log.gz": "a1b2343feca7f89b6d8d22b231824b9c6b3a30d3a25bc12bb22bdfd665ccd893",
@@ -12,5 +14,5 @@
   "sg-metadata-clippy.log.gz": "8fd39f24ff0da81d35b18922431ef9e644d548b317b6656dc49a16aebdfaea3c",
   "v5-baseline.log.gz": "423f5d0b3efe9e34e2ad64eb1dc4a646e589422f4710ae8d58cc23e88f2ad5c3",
   "v5-capture.log.gz": "42819ca1e3f19c71ba870ac3ff30956debcf5f5a6db6ed5a9873b9fe384b3c75",
-  "verification.json": "90f1a0e11d55e71008788d2e6f7138c63a138db86b1bb66269ddf1bda22092bd"
+  "verification.json": "ac8bf9ad48f2cbe711dd37c2c6102a46f79e1bb72ae97cd0889545aa3dd1106e"
 }
