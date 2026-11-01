@@ -34,3 +34,36 @@ Next extraction: A1200 PAL/NTSC fixed owners over shared AGA wiring, preserving
 v66 state bytes and generic Amiga runtime/live access. Inspect the schematic's
 oscillator/strap identities and qualify both configurations before claiming
 particular PCB revisions. OCS/ECS multi-board groupings remain separate work.
+
+## A1200 extraction checks from this inspection
+
+The current AGA machine exposes PAL/NTSC construction through one type.
+`runtime-commodore-amiga` is already generic over the machine and forwards its
+live debugger access through `AmigaRuntimeKind`. Keep that shared runtime;
+introduce fixed PAL/NTSC construction below it and prevent a public mutable raw
+engine from replacing a fixed owner's region. Preserve the v66 snapshot fields.
+A foreign-region save must fail candidate validation before mutating the live
+owner. Keep independently frozen pre-extraction state/output continuations.
+
+The current `emu198x-commodore-web` constructor selects
+`AmigaModel::A500OcsPalA501` explicitly; its boxed family runtime alone is not
+proof of A1200 browser construction. New A1200 board routes must require an
+exact qualified browser profile or omit the embed. The existing family route
+and its A500 presentation can remain. This prerequisite changes no web surface.
+
+Strict rustdoc currently fails on private links to
+`BridgePhase::AddressAccepted` in common `board.rs` and `CIA_ACCESS_END_PHASE`
+in common `driver.rs`; both source files are unchanged. The same warnings
+remain with private items included. Retain both logs rather than claim a strict
+documentation pass or suppress warnings. All selected doctests pass.
+
+## Result
+
+Source PR #2224 merged after all checks passed on
+`990e54c8ec5c927bad2ea9b651a5fc8385efc222`. The merged tree is identical.
+The final CI package ledger, run/check receipts and local logs are retained
+in the adjacent evidence directory. Local Cargo reports 502 common/machine
+passes and 76 targeted runtime passes; the CI ledger separately records
+existing fixture skips and ignored-test debt. No ignore or skip was added.
+The new dependency gate passes across all 106 machine packages.
+The A1200 regional split itself remains open in #2144.
