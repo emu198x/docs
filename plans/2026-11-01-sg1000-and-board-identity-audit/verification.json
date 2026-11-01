@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-01",
+  "source_head": "fc3b716598cb0f706d02a9f8b548f17a692e8e1a",
+  "source_pr": 2222,
+  "reference_pr": 291,
+  "reference_merge": "c818b4e2c58aab8b3a8bff101a8bd646eb433f0e",
+  "reference_merged_tree_matches_tested_tree": true,
+  "clock_issue": 2223,
+  "local_tests": {
+    "oric_runtime_lib": 14,
+    "atari_5200_machine_lib": 43,
+    "sg_machine_runtime_headless_runner": 44,
+    "sg_external_cart_boot_ignored": 1
+  },
+  "negative_control": "Mutated original continuation fails direct comparison; restoring original passes.",
+  "clock_probe": "NTSC 48062 vs expected 48061; PAL 49254 vs expected 48804. Tone output nonzero; compare actual elapsed time.",
+  "approval": "PAL independent oscillators and v6/v5 policy pending; no production timing or schema changes implemented.",
+  "registry_machines": 89,
+  "ignore_backlog": 97,
+  "fixture_and_ignore_self_tests": "pass",
+  "fixtures": {
+    "README.md": "6a055108a2b35b81ce334955a24d8652156d4f8edbc05ef319e6e70f69e6afe3",
+    "sega-sg-1000-ii-ntsc.output": "5a2d5897a8411b9118952af8fb1ddbea90a6f61cbdd112ba134929202d6e2c50",
+    "sega-sg-1000-ii-ntsc.state": "d9638a2899a9f75a6eaaab4c9d1212e4e375e4598b518b80218f41aca8ffd57e",
+    "sega-sg-1000-ntsc.output": "2b74a504d301b247e3783c3725ca021781a2d14006e780879b3ac893cff0f6ef",
+    "sega-sg-1000-ntsc.state": "80d0d17d424c4539c9df264afbf84beb323fc8a611cf812e425a2e6c9570e8bd",
+    "sega-sg-1000-pal.output": "a18486ded8c7e6b97014664ae43dfe523d03d3e0d18aa5911913b13f1d7a90e4",
+    "sega-sg-1000-pal.state": "c1a6cbe89a4ee5f1f8258dc4eb1f5876ad0bb0527fd59461dd3a9cbbe10e28c0"
+  },
+  "primary_retention": "Oric PDF matches original recorded SHA256; Oric PDF and two inspected SG-II board photos retained in private Reference-PDFs.",
+  "limits": [
+    "No completed SG owner split.",
+    "No new historical-software or native UI/audio-device qualification.",
+    "Physical PAL-console revisions, later SG-II VDPs and Oric/5200 circuit populations remain unqualified."
+  ]
+}
