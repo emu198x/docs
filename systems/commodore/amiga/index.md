@@ -1,5 +1,8 @@
 # Commodore Amiga
 
+For the fixed regional A1200 owners and their current verification scope, see
+[A1200 PAL and NTSC](a1200.md).
+
 ## Status: Boots Workbench 1.3 (OCS) + 3.1 (AGA); deep chips, integration-limited
 
 The most ambitious target in the project. A1200 + Kickstart 3.1 boots to a clean

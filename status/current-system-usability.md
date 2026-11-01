@@ -191,3 +191,19 @@ See [source PR #2222](https://github.com/emu198x/emu198x/pull/2222), the
 [primary audit](https://github.com/stevehill1981/198x/pull/291) and the
 [plan](../plans/2026-11-01-sg1000-and-board-identity-audit.md). The Oric/5200 scope corrections do not complete their remaining board work;
 the three implemented SG configurations are split without claiming all PCB populations.
+
+
+## A1200 PAL and NTSC
+
+The two implemented regional configurations have fixed owners over common AGA
+wiring. Existing profiles and v66 save fields remain. Each owner has seven
+direct tests; eight original save specimens check exact continuation, including
+first-field picture, all emitted audio and complete final saves. A fixed shared
+resampler kernel removes the host-math difference in pending audio history.
+Both regional native captures show the Kickstart 3.1 insert-disk screen.
+This does not qualify Workbench, every PCB revision, native menus or host audio
+devices. The public player remains A500+A501-only, so A1200 pages omit embeds.
+
+See the [A1200 scope and evidence](../systems/commodore/amiga/a1200.md) and
+[source PR #2226](https://github.com/emu198x/emu198x/pull/2226). The aggregate
+Amiga entry remains for the still-grouped OCS/ECS implementations.

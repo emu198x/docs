@@ -83,14 +83,13 @@ saved field, including analog-filter history, matches. Original Linux x86 CI
 also fails the strict continuation assertion; direct x86 state has not been
 captured. See [the failing baseline run](https://github.com/emu198x/emu198x/actions/runs/41332390233).
 
-The pending choice is a focused portable-coefficient fix before merging,
-recommended to retain one exact cross-host baseline, or preserving the old
-host-dependent behaviour with separately captured exact platform baselines.
+The approved fix freezes the original coefficient bits in a portable table.
+All eight original continuations now match exactly on both macOS and Linux ARM.
 No tolerance or skipped assertion has been introduced. The split and its site
-publication remain gated on resolving this choice and passing final CI.
+publication remain gated on final Linux x86 CI.
 
 
-Source draft: [#2226](https://github.com/emu198x/emu198x/pull/2226).
+Source PR: [#2226](https://github.com/emu198x/emu198x/pull/2226).
 The native UI and both browser consumers compile with default features.
 The site companion branch `docs/a1200-fixed-board-pages` passes 133 tests,
 builds and checks 121 routes, and audits 105 content routes in both themes
@@ -123,3 +122,39 @@ four worktrees; completing that regression permits removing diagnostic images,
 volumes and build caches. No task-owned build, browser or container process is
 still running. All unique code and evidence are committed and pushed; temporary
 logs and output copies can be removed once their retained checksums are verified.
+
+
+## Approved portable resampler correction
+
+Steve approved the focused coefficient fix on 2026-11-01. Freeze the existing
+macOS ARM kernel as explicit little-endian f64 data, retaining its formula,
+normalisation and original production coefficient bits. Runtime construction
+loads this fixed table rather than calling host sin/cos. Keep the standalone
+original formula generator and SHA-256 provenance with the data. This adds no
+dependency, changes no history layout and preserves the original frozen v66
+continuations. It makes a previously host-dependent discretisation explicit;
+it does not introduce a new analog model or promise every floating-point
+filter in the fleet is portable.
+
+Verify: generator byte identity on the original host, existing shell pulse/
+settling/bounds tests, all eight unchanged A1200 fixture cases on macOS and
+native Linux ARM, then Linux x86 CI. Keep all comparisons exact. If any field
+still differs, diagnose it before further changes. Re-run selected strict
+Clippy, consumers and the source/site/doc gates before exact-head merges.
+
+
+The original diagnostic worktree, both Docker probe images and the Linux target
+volume were removed after successful portable replay and positive byte checks
+against committed source/docs copies. Final selected runtime tests at
+`3fc8b66bc689193d93a913b04db69a834578ebee` report 75 passed and one existing
+ignored diagnostic. Source CI is run 41340229567; Linux x86 remains pending.
+
+
+The commit-policy check rejected the release merge commit. Rebase-linearised
+the task branch only, retaining a remote backup and the verified
+`pre-linearization.bundle`. The original baseline also has the durable remote
+tag `evidence/a1200-v66-original-baseline`. Final linear head is
+`8bf0f81710aa218a0366a98f6484b27c5c5b3894`, with the **identical** verified tree
+`56b5a771b04a89b414c3d0e9b16cc9fc540a9a47`. A lease guarded the task-branch update;
+no main/shared history was rewritten. The backup branch can be removed after
+the bundle is retained in merged docs and final source CI passes.
