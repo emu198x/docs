@@ -1,0 +1,327 @@
+{
+  "headRefOid": "990e54c8ec5c927bad2ea9b651a5fc8385efc222",
+  "mergeStateStatus": "CLEAN",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:46:50Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062194/job/124912092722",
+      "name": "Release PR / Released versions have changelog entries",
+      "startedAt": "2026-11-01T16:46:50Z",
+      "status": "COMPLETED",
+      "workflowName": "Release PR"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:49:40Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328061650/job/124912089331",
+      "name": "A500 Paula sample (private firmware)",
+      "startedAt": "2026-11-01T16:46:52Z",
+      "status": "COMPLETED",
+      "workflowName": "Amiga pattern evidence"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:48:05Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328061642/job/124912089437",
+      "name": "C64 sprites against VICE (private firmware)",
+      "startedAt": "2026-11-01T16:46:52Z",
+      "status": "COMPLETED",
+      "workflowName": "C64 pattern evidence"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:17Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092670",
+      "name": "Rust / Format",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:39Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328058046/job/124912081453",
+      "name": "Analyze (javascript-typescript)",
+      "startedAt": "2026-11-01T16:46:51Z",
+      "status": "COMPLETED",
+      "workflowName": "CodeQL - Code Quality"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:46:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062282/job/124912091789",
+      "name": "PR title / Conventional title",
+      "startedAt": "2026-11-01T16:46:52Z",
+      "status": "COMPLETED",
+      "workflowName": "PR title"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912091763",
+      "name": "plan",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328058046/job/124912081159",
+      "name": "Analyze (python)",
+      "startedAt": "2026-11-01T16:46:50Z",
+      "status": "COMPLETED",
+      "workflowName": "CodeQL - Code Quality"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912237199",
+      "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:48:41Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092644",
+      "name": "Rust / Clippy",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062282/job/124912091622",
+      "name": "PR title / Conventional commits",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "PR title"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912237493",
+      "name": "build-global-artifacts",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092827",
+      "name": "Rust / Workflows / actionlint",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:48:42Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912565849",
+      "name": "Rust / Coverage",
+      "startedAt": "2026-11-01T16:48:42Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912237181",
+      "name": "custom-qualify-packages",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:48:42Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912566008",
+      "name": "Rust / Build (${{ matrix.os }})",
+      "startedAt": "2026-11-01T16:48:42Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:07Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092761",
+      "name": "Test hygiene",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:14Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092437",
+      "name": "System registry",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:48:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092685",
+      "name": "Shell semver",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092674",
+      "name": "Synthetic cartridges",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:49:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092679",
+      "name": "Firmware boot evidence",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912237412",
+      "name": "host",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:49:17Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092741",
+      "name": "Build (macos-latest)",
+      "startedAt": "2026-11-01T16:46:58Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:50:30Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092700",
+      "name": "Build (windows-latest)",
+      "startedAt": "2026-11-01T16:47:05Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912237883",
+      "name": "publish-homebrew-formula",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T17:13:06Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092673",
+      "name": "Test",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:24Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912238010",
+      "name": "announce",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:49:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092589",
+      "name": "Browser parity",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:25Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062318/job/124912238789",
+      "name": "custom-notify-discord",
+      "startedAt": "2026-11-01T16:47:25Z",
+      "status": "COMPLETED",
+      "workflowName": "Release"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:53:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092615",
+      "name": "Apple hosts",
+      "startedAt": "2026-11-01T16:46:54Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-01T16:47:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41328062561/job/124912092676",
+      "name": "GTK host",
+      "startedAt": "2026-11-01T16:46:53Z",
+      "status": "COMPLETED",
+      "workflowName": "CI"
+    }
+  ],
+  "source": {
+    "headRefOid": "990e54c8ec5c927bad2ea9b651a5fc8385efc222",
+    "mergeCommit": {
+      "oid": "cbcda19a116bdf3a86a8d41c186c046842c342b8"
+    },
+    "mergedAt": "2026-11-01T17:14:59Z",
+    "url": "https://github.com/emu198x/emu198x/pull/2224"
+  },
+  "run": 41328062561,
+  "merged_tree_matches_tested_tree": true,
+  "original_head_retained_at": "refs/pull/2224/head"
+}

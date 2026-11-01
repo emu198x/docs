@@ -26,5 +26,43 @@
     "machine-commodore-amiga-ecs: package dependencies depends on machine-commodore-amiga-ocs; shared hardware belongs in common-* (rule 34)"
   ],
   "snapshot": "v66 unchanged; old import paths and three-u32 wire layout retained; field-order negative fails and original passes",
-  "scope": "No regional owner extraction or new hardware qualification in this prerequisite. No site changes required."
+  "scope": "No regional owner extraction or new hardware qualification in this prerequisite. No site changes required.",
+  "ci_package_results": {
+    "common-commodore-amiga": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 166,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-ocs": {
+      "failed": 0,
+      "ignored": 90,
+      "passed": 203,
+      "skipped": 33,
+      "unexplained_ignored": 76
+    },
+    "machine-commodore-amiga-ecs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 43,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a1200": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 47,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "runtime-commodore-amiga": {
+      "failed": 0,
+      "ignored": 31,
+      "passed": 329,
+      "skipped": 2,
+      "unexplained_ignored": 0
+    }
+  },
+  "count_scope": "Local counts are Cargo result summaries. The CI ledger separates runtime fixture skips and ignored-test debt; this patch adds no ignore/skip and claims no new historical-software qualification."
 }
