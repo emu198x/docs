@@ -6,9 +6,9 @@ The former red blank-save regression is green. See verification.json and the
 compressed logs for local results, controls, immutable fixture hashes and limits.
 
 Source branch: refactor/snes-fixed-board-owners. Docs PR #169 and site PR #41
-are the companion surfaces. Repository CI, merge receipts and live verification
-are recorded separately after they finish. Do not infer merge or live status
-from local checks. No historical-software or original-firmware qualification
+are the companion surfaces. Source and site are merged; ci.json records exact tested/merged heads and
+successful CI/deployment runs. live.json verifies all 116 routes, exact regional
+IDs, no SNES capture/embed, the legacy redirect and 51 registry player embeds. No historical-software or original-firmware qualification
 was added; the available tests use project-written cartridges and IPL programs.
 
 Primary checkouts and unrelated worktree records remain untouched. Task-only
