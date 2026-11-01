@@ -9,7 +9,7 @@
     "a1200-ntsc"
   ],
   "qualification": "Insert-disk screen visually inspected; no disk/software qualification or host audio device test",
-  "cross_host_limit": "Untouched original: macOS ARM exact. Linux ARM board/pixels/all emitted audio/clocks exact; four pending resampler f64 corrections differ. Original x86 Linux CI also failed frozen final-state assertion; direct x86 state not captured.",
+  "cross_host_limit": "Resolved for all eight unchanged frozen v66 continuations on macOS ARM and Linux ARM. Original-host coefficient bits are now loaded from one fixed table; Linux x86 final CI pending.",
   "site_head": "a5a6eccfae0277fed5c15be46fa59b8ed0c85ac0",
   "site_verification": {
     "tests_passed": 133,
@@ -18,5 +18,15 @@
     "a11y_themes": 2,
     "redirect_stubs_skipped": 16,
     "a11y_defects": 0
-  }
+  },
+  "final_source_head": "3fc8b66bc689193d93a913b04db69a834578ebee",
+  "portable_coefficients_sha256": "1c5f2d3373b63b6644afe27da4a09a853683a70a7c74506a7bf1d722b0221e67",
+  "final_selected_runtime_tests": {
+    "passed": 75,
+    "failed": 0,
+    "ignored": 1
+  },
+  "linear_source_head": "8bf0f81710aa218a0366a98f6484b27c5c5b3894",
+  "verified_tree": "56b5a771b04a89b414c3d0e9b16cc9fc540a9a47",
+  "pre_linearization_bundle": "pre-linearization.bundle"
 }
