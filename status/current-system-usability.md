@@ -155,3 +155,32 @@ regional pages omit a player and have no new boot capture.
 See [source PR #2221](https://github.com/emu198x/emu198x/pull/2221), the
 [ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/snes-fixed-regional-owners.md)
 and the [plan](../plans/2026-10-31-snes-regional-board-owners.md).
+
+
+## Remaining board-identity audit
+
+The 48K Oric-1 and Atmos profiles both use 64 KiB of physical DRAM, with ROM
+normally selected over the upper 16 KiB. Their old 48-versus-64 descriptions
+were wrong. The manufacturer separately identifies a 16K Oric-1 PCB and warns
+that PCB and electrical circuit revisions differ; the current profiles do not
+qualify all of those populations.
+
+Atari's 5200 service manual identifies CA018087 four-port, CA020108 four-port
+universal and CA021374 two-port universal boards with explicit IC/port changes.
+The shipping runtime is NTSC-only. The machine API's experimental PAL timing
+option does not identify a manufactured PAL board, nor does this audit prove
+that no PAL prototype ever existed. The three documented boards still need
+individual implementation/qualification.
+
+The SG-1000 II profile is limited to the early TMS9918 configuration. Later
+TMS9118/custom-VDP populations remain unqualified. The console's hold button
+is real and its current NMI input is exercised by project-written software;
+SC-3000 keyboard/PPI support is absent. Complete original v5 continuations are
+retained for all three profiles. The measured PAL audio/time disagreement is
+[#2223](https://github.com/emu198x/emu198x/issues/2223); its proposed timing/save
+change awaits agreement before the owner split proceeds.
+
+See [source PR #2222](https://github.com/emu198x/emu198x/pull/2222), the
+[primary audit](https://github.com/stevehill1981/198x/pull/291) and the
+[plan](../plans/2026-11-01-sg1000-and-board-identity-audit.md). These metadata
+corrections and compatibility captures are not completed hardware splits.
