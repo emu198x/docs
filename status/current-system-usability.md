@@ -127,3 +127,31 @@ browser package predates this correction, so the new pages omit its hybrid
 PET player. See the [current PET contract](../systems/commodore/pet.md),
 [source PR #2219](https://github.com/emu198x/emu198x/pull/2219) and
 [comparison evidence](../plans/2026-10-31-pet-board-owners/README.md).
+
+
+## Super NES NTSC and PAL
+
+The implemented NTSC and PAL configurations have separate machine owners over
+`common-nintendo-snes`, each with seven exclusive direct tests. One family
+runtime retains all three profile IDs; Super Famicom remains an NTSC profile.
+These owners do not qualify every PCB/chip revision, CIC behaviour or regional
+front-panel electrical differences.
+
+Version-2 saves retain optional IPL firmware even without a cartridge. Loaded
+v1 saves keep an exact reader; blank v1 saves are rejected because their omitted
+firmware cannot be recovered. Restore validates board, memory and firmware
+consistency before installation. Restored hard resets retain IPL and cartridge
+SRAM; empty restores clear old cartridge caches, and region changes retain SRAM.
+Six immutable original v1 saves compare three resumed native fields, audio bits,
+clocks and final state across progressive/interlaced output and all profiles.
+Separate v2 checks cover blank/loaded states with built-in and supplied firmware.
+
+The available validation uses project-written cartridges. No original SNES
+software was found in the configured local library for this slice; historical
+software qualification, native menu interaction and host audio-device output
+remain unverified. The pinned browser package has no SNES module, so both
+regional pages omit a player and have no new boot capture.
+
+See [source PR #2221](https://github.com/emu198x/emu198x/pull/2221), the
+[ownership decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/snes-fixed-regional-owners.md)
+and the [plan](../plans/2026-10-31-snes-regional-board-owners.md).

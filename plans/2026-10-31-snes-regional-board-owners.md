@@ -17,7 +17,8 @@ impossible. No new registry dependency or chip timing change is planned.
    PPU, firmware and vector bounds before changing runtime state.
 3. Freeze complete original v1 states and the first three native frame/audio/
    clock continuations for all three profiles, including held controls,
-   cartridge SRAM, nondefault IPL, DMA and interlace where supported. Prove a
+   cartridge SRAM, built-in IPL, DMA and interlace where supported. Supplied
+   firmware is checked separately by the restore/reset and v2 matrix tests. Prove a
    corrupted continuation fails. Retain the original generator and receipts.
 4. Move machine-nintendo-snes intact to common-nintendo-snes. Create fixed
    machine-nintendo-snes-ntsc and machine-nintendo-snes-pal owners. Preserve raw
@@ -36,7 +37,7 @@ impossible. No new registry dependency or chip timing change is planned.
    and inspect all ignored files and remote retention. Remove task worktrees,
    caches and processes; preserve primary checkouts and unrelated locked records.
 
-## Additional reproduced v1 omission — awaiting schema approval
+## Additional reproduced v1 omission — v2 approved 2026-11-01
 
 A firmware-bearing runtime with no cartridge saves `machine: None`. Its IPL
 exists only in the runtime cache and is absent from the v1 envelope. A restored
@@ -48,5 +49,5 @@ any embedded machine before installation, retain a reader for cartridge-bearing
 v1 states and reject v1 blank states whose firmware is unknowable. The original
 six v1 fixtures remain immutable: test their raw machine/envelope continuation
 through a test-only legacy encoder, and separately test complete v2 round trips
-for blank/loaded, built-in/external IPL, reset and replacement. This needs schema
-approval; no v2 production code is written before it arrives.
+for blank/loaded, built-in/external IPL, reset and replacement. Steve approved this v2 policy on 2026-11-01. Validate malformed and inconsistent
+firmware without mutation, and preserve the original v1 fixture bytes.
