@@ -104,3 +104,22 @@ branches preserve the work. Remove them after exact-head merges and deployed
 route/image verification. The original diagnostic worktree and Linux ARM
 Docker image/target volume are still needed for the cross-host regression;
 remove them after portable-coefficient verification or platform-baseline capture.
+
+
+Retained diagnostic resources, all task-owned:
+
+- `/Users/stevehill/Projects/198x/Emu198x/.worktrees/a1200-source`
+- `/Users/stevehill/Projects/198x/Emu198x/.worktrees/a1200-docs`
+- `/Users/stevehill/Projects/198x/Emu198x/.worktrees/a1200-site`
+- `/Users/stevehill/Projects/198x/Emu198x/.worktrees/a1200-original`
+- `/private/tmp/198x-a1200-target` (incremental-disabled local build cache)
+- `/private/tmp/198x-a1200-docker` and `/private/tmp/198x-a1200-buildx`
+- Docker images `198x-a1200-probe:20261101` and
+  `198x-a1200-probe-arm:20261101`; volume `198x-a1200-linux-target`.
+
+The original worktree, build cache and Linux ARM image/volume enable the pending
+cross-host regression. Exact final merges and publication permit removing all
+four worktrees; completing that regression permits removing diagnostic images,
+volumes and build caches. No task-owned build, browser or container process is
+still running. All unique code and evidence are committed and pushed; temporary
+logs and output copies can be removed once their retained checksums are verified.
