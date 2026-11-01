@@ -1,7 +1,8 @@
 # SG-1000 owners and remaining board-identity audit
 
 Engineering-frontier continuation of #2144. Broad fixed-owner/private-workspace
-split approval persists; a changed PAL save contract needs explicit agreement.
+split approval persists. Steve approved the PAL correction and v6 policy on
+2026-11-01.
 
 1. Confirm SG board populations from original hardware photographs and Sega's
    own model pages. Consult existing PAL clock observations, the TI VDP manual,
@@ -13,8 +14,7 @@ split approval persists; a changed PAL save contract needs explicit agreement.
    corroborated by Sega's SC-3000 circuit and the original console clock report,
    but does not qualify every PAL console revision. Preserve NTSC 3:2 phase.
    Recommend v6 saves, exact reading of v5 NTSC/early-II saves, rejection of v5
-   PAL saves whose old phase units cannot retain exact continuation. Await this
-   specific schema/timing agreement before implementing the change.
+   PAL saves whose old phase units cannot retain exact continuation. This schema/timing policy is now explicitly approved.
 3. Independently inspect Oric's 1984 service manual pp. 8, 10–11, 22–23 and
    parts lists: correct the false Oric-1-versus-Atmos RAM distinction in
    runtime-oric-atmos/src/profiles.rs. Shared 48K-board identity is distinct

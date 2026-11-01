@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-01",
+  "source_head": "fe63f9febb2263b99033af5b5bd5101dfcd27e4e",
+  "source_pr": 2222,
+  "clock_fix_commit": "410c64b1b",
+  "schema": "v6 writes; exact v5 NTSC/early-II readers; v5 PAL rejected before decoding",
+  "approval": "explicitly approved 2026-11-01; no outstanding schema approval",
+  "selected_rust_tests": 75,
+  "direct_tests_per_owner": 7,
+  "external_cart_test_ignored": 1,
+  "last_profile_label_lib_tests": 10,
+  "strict_clippy_and_rustdoc": "pass",
+  "registry": {
+    "machines": 91,
+    "binaries": 34
+  },
+  "fixture_guard": "self-test and scan pass",
+  "ignore_guard": "12 self-tests pass; 97 unchanged backlog entries",
+  "clock_observations": "PAL captured/expected sample frames: 48805/48805, 47848/47848, 47849/47848 across successive actual elapsed windows. NTSC legacy timing unchanged.",
+  "raster_observations": "PAL phase agrees with independent crystal/CPU ratio at 1,2,37,71364 and3580000 elapsed T-states",
+  "negative_control": "Mutated immutable NTSC output fails after extraction; restoring original passes",
+  "site": {
+    "head": "38e9a26cf6d5dc8562c032fab1ebf713833da06d",
+    "tests": 132,
+    "routes": 119,
+    "a11y_content_routes": 103,
+    "a11y_themes": 2,
+    "redirects": 16,
+    "a11y_defects": 0,
+    "sg_embeds": "omitted until the pinned family clock is corrected; cannot switch into old PAL",
+    "captured_control": "same launcher with inactive HALT cartridge yields black, active synthetic VDP writes yield white"
+  },
+  "captures": {
+    "sega-sg-1000-ntsc": {
+      "png_sha256": "997d547c7797bfce3ecf650f3ed8df9a57d6811dbf6885a547a549ab4084593a",
+      "report": {
+        "cart_loaded": true,
+        "frames_run": 120,
+        "machine_frame_counter": 120,
+        "observations": [
+          {
+            "colour": "#FFFFFF",
+            "frames_seen": 120,
+            "height": 240,
+            "kind": "blank_frame",
+            "last_painted_frame": 0,
+            "width": 280
+          }
+        ],
+        "run_result": {
+          "reached": 7168320,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 7168320
+      },
+      "command": [
+        "emu198x-sega-sg-1000",
+        "--cart",
+        "test-data/sega/synthetic-cart/sg-1000.sg",
+        "--model",
+        "sega-sg-1000-ntsc",
+        "--frames",
+        "120",
+        "--screenshot",
+        "sega-sg-1000-ntsc.png"
+      ]
+    },
+    "sega-sg-1000-pal": {
+      "png_sha256": "34b3728220daaf90a67df8f2be9ee41ab1634d8ac0be4e17d4044c40384c5698",
+      "report": {
+        "cart_loaded": true,
+        "frames_run": 120,
+        "machine_frame_counter": 120,
+        "observations": [
+          {
+            "colour": "#FFFFFF",
+            "frames_seen": 120,
+            "height": 288,
+            "kind": "blank_frame",
+            "last_painted_frame": 0,
+            "width": 278
+          }
+        ],
+        "run_result": {
+          "reached": 8564769,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 8564769
+      },
+      "command": [
+        "emu198x-sega-sg-1000",
+        "--cart",
+        "test-data/sega/synthetic-cart/sg-1000.sg",
+        "--model",
+        "sega-sg-1000-pal",
+        "--frames",
+        "120",
+        "--screenshot",
+        "sega-sg-1000-pal.png"
+      ]
+    },
+    "sega-sg-1000-ii-ntsc": {
+      "png_sha256": "997d547c7797bfce3ecf650f3ed8df9a57d6811dbf6885a547a549ab4084593a",
+      "report": {
+        "cart_loaded": true,
+        "frames_run": 120,
+        "machine_frame_counter": 120,
+        "observations": [
+          {
+            "colour": "#FFFFFF",
+            "frames_seen": 120,
+            "height": 240,
+            "kind": "blank_frame",
+            "last_painted_frame": 0,
+            "width": 280
+          }
+        ],
+        "run_result": {
+          "reached": 7168320,
+          "stop_reason": "ReachedTarget"
+        },
+        "time": 7168320
+      },
+      "command": [
+        "emu198x-sega-sg-1000",
+        "--cart",
+        "test-data/sega/synthetic-cart/sg-1000.sg",
+        "--model",
+        "sega-sg-1000-ii-ntsc",
+        "--frames",
+        "120",
+        "--screenshot",
+        "sega-sg-1000-ii-ntsc.png"
+      ]
+    }
+  },
+  "original_v5_files": {
+    "README.md": "6a055108a2b35b81ce334955a24d8652156d4f8edbc05ef319e6e70f69e6afe3",
+    "sega-sg-1000-ii-ntsc.output": "5a2d5897a8411b9118952af8fb1ddbea90a6f61cbdd112ba134929202d6e2c50",
+    "sega-sg-1000-ii-ntsc.state": "d9638a2899a9f75a6eaaab4c9d1212e4e375e4598b518b80218f41aca8ffd57e",
+    "sega-sg-1000-ntsc.output": "2b74a504d301b247e3783c3725ca021781a2d14006e780879b3ac893cff0f6ef",
+    "sega-sg-1000-ntsc.state": "80d0d17d424c4539c9df264afbf84beb323fc8a611cf812e425a2e6c9570e8bd",
+    "sega-sg-1000-pal.output": "a18486ded8c7e6b97014664ae43dfe523d03d3e0d18aa5911913b13f1d7a90e4",
+    "sega-sg-1000-pal.state": "c1a6cbe89a4ee5f1f8258dc4eb1f5876ad0bb0527fd59461dd3a9cbbe10e28c0"
+  },
+  "limits": [
+    "Nominal PAL circuit model, no new physical oscillator waveform or every console revision qualification",
+    "Early TMS9918 SG-II only; later TMS9118/custom-VDP populations remain unqualified",
+    "No new original-software, native menu interaction or host audio-device qualification"
+  ],
+  "synthetic_cartridge_sha256": "0dc3b3e2e5994ef79f8f80bbe00638f9af0b6665f4644c0e263e842685b59317"
+}

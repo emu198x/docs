@@ -172,15 +172,22 @@ option does not identify a manufactured PAL board, nor does this audit prove
 that no PAL prototype ever existed. The three documented boards still need
 individual implementation/qualification.
 
+SG-1000 NTSC, PAL and early TMS9918 SG-1000 II now have three fixed owners
+over common wiring, with seven direct tests each and one family runtime.
 The SG-1000 II profile is limited to the early TMS9918 configuration. Later
 TMS9118/custom-VDP populations remain unqualified. The console's hold button
 is real and its current NMI input is exercised by project-written software;
 SC-3000 keyboard/PPI support is absent. Complete original v5 continuations are
-retained for all three profiles. The measured PAL audio/time disagreement is
-[#2223](https://github.com/emu198x/emu198x/issues/2223); its proposed timing/save
-change awaits agreement before the owner split proceeds.
+retained for all three profiles. The PAL audio/time disagreement in
+[#2223](https://github.com/emu198x/emu198x/issues/2223) is corrected with independent
+nominal CPU/PSG and VDP oscillators. V6 writes, exact v5 NTSC/early-II readers
+and explicit v5 PAL rejection follow the approved policy. Native-host pacing
+and display metadata use the corrected clocks. The original v5 files remain
+immutable; corrected PAL v6 continuation is checked separately. All three
+profiles have fresh synthetic backdrop captures, while the pinned browser
+family is withheld until its PAL clock correction is published.
 
 See [source PR #2222](https://github.com/emu198x/emu198x/pull/2222), the
 [primary audit](https://github.com/stevehill1981/198x/pull/291) and the
-[plan](../plans/2026-11-01-sg1000-and-board-identity-audit.md). These metadata
-corrections and compatibility captures are not completed hardware splits.
+[plan](../plans/2026-11-01-sg1000-and-board-identity-audit.md). The Oric/5200 scope corrections do not complete their remaining board work;
+the three implemented SG configurations are split without claiming all PCB populations.

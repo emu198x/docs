@@ -1,39 +1,32 @@
-# SG-1000 timing agreement pending
+# SG-1000 v6 correction and owner split
 
-The reference audit is merged in umbrella PR #291 at c818b4e2; its tree exactly
-matches original head 1d3102eb. The Oric manual and two SG-II photos are retained
-privately with verified hashes. No temporary reference worktree remains.
+Steve approved the independent PAL clocks and v6/v5 policy on 2026-11-01.
+The former staged rate regression is committed with its green fix. Source PR
+#2222 now includes three fixed owners, native-host pacing/display correction,
+v6 writes, exact v5 NTSC/early-II reading and early v5 PAL rejection. The
+original v5 fixture bytes are unchanged. It is ready for review; read current
+CI conclusions and tested/merged heads before merging.
 
-Draft source PR #2222 has three pushed commits ending fc3b716598cb0f706d02a9f8b548f17a692e8e1a:
-Oric/5200 descriptions, SG console/early-II scope and immutable original v5
-continuations, then the missing existing II profile in launch help. Existing
-related local suites pass 101 tests, with one external SG cart check ignored.
-Strict lint and registry/fixture/ignore guards pass. Metadata CI is run
-41311120382; read its actual conclusion when resuming. It does not contain the
-staged future regression and cannot establish that #2223 is fixed.
+The final local selected suite passes 75 tests with seven exclusive direct
+tests per owner. One original-cart test remains fixture-ignored. Strict
+Clippy/rustdoc, registry (91 machines/34 binaries), generated-status and
+fixture/ignore guards pass. A corrupted NTSC continuation fails, then the
+restored original passes. The active/inactive screenshot path emits white/
+black respectively. Three fresh 120-native-field profile captures have the
+expected dimensions and elapsed clocks; these use project-written software.
 
-The original PAL rate probe is restored as an ACTIVE STAGED SOURCE TEST:
-crates/runtime-sega-sg-1000/tests/clock_agreement.rs. It fails with
-“Sg1000Pal: 49254 audio frames disagree with 48804 frames of declared elapsed time”.
-Do not merge around this known defect. Keep the source PR draft until the
-approved implementation makes this test green. Do not commit the red-only
-increment: the agreed coding cadence requires a green self-contained fix.
-The reproduction source, red logs and hashes are also retained in this docs PR.
+Docs PR #170 and the site branch docs/sg1000-board-pages are the companion
+surfaces. The site has 132 passing tests, 119 built routes and zero accessibility
+defects over 103 content routes in two themes (16 redirects checked separately).
+The pinned SG browser family can switch into its old PAL clock path, so all SG
+embeds are withheld until a corrected module is published. No new historical
+software, audio-device, every-PCB or physical-waveform qualification is claimed.
 
-The pending async question proposes independent nominal PAL CPU/PSG and VDP
-oscillators (3,580,000 Hz and 10,738,635 Hz / 2), v6 writes, exact v5 NTSC/early-II
-reading and v5 PAL rejection. No reply has arrived and no timing/schema
-production change is written. After agreement, correct and test the oscillators
-before the fixed-owner split, preserving original fixtures. Qualify the early
-II configuration without pretending to cover later TMS9118/custom-chip boards.
-All tasks and explicit source/physical-qualification gaps are in the plan.
+Reference audit #291 is merged; manual/photo originals remain in the private
+Reference-PDFs library. Old red probes/metadata receipts are historical evidence;
+use the v6 verification/CI/live receipts for the current implementation.
 
-Durable worktrees retained for the pending implementation and its evidence:
-- /Users/stevehill/Projects/198x/Emu198x/.worktrees/sg1000-source (staged red test)
-- /Users/stevehill/Projects/198x/Emu198x/.worktrees/sg1000-docs (plan and receipts)
-Remove them after the approved green work is committed, pushed, verified and
-merged. Temporary target/capture/render/cache directories can be removed now.
-
-#2144 now names the three actual 5200 board targets, the Oric memory/revision
-scope and the SG clock prerequisite. #2223 tracks the measured clock defect.
-Primary checkouts and unrelated locked worktrees remain untouched.
+Finish the exact-head CI/merge checks, publish and verify all live routes,
+update #2144/#2223 with final evidence, then inspect remote retention and remove
+all three task worktrees and caches. Preserve the primary checkouts and the
+unrelated locked worktrees. No further schema approval is outstanding.
