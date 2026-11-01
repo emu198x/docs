@@ -1,0 +1,11 @@
+{
+  "clippy.log.gz": "2f7df86b29b876c1225d6759978ce2be731e442114b59ba47fce88bc3ed8ec69",
+  "machine-tests.log.gz": "fe82b738c40e05e3a865ddaa8bf8ad6edbdc61e95eea7a709c53aea5f0fe88a3",
+  "registry.log.gz": "62f9425dced6187caab69498cd1af797dba73caba0032c8f7d2263c87f4dc642",
+  "runtime-tests.log.gz": "ceb2153d91decd4d0d28ccba0a748ddbcb25b321074c524798c0a70c128333a0",
+  "rustdoc-private.log.gz": "af7c0a33d2fd6dba1ae6c2f5174d87fd8a695b77215f1a5011422cc1af39f0c6",
+  "rustdoc.log.gz": "9cc046e20bf167aa4b90a39ddb46eeefa9c1d9ee4d740b559a58e4d92f7e3d3e",
+  "serialization-negative.log.gz": "5cdf2076fb9b2cf56000d7ff7dbb13c1ff541f4249a4c4daf4a7e75f691902b8",
+  "serialization-positive.log.gz": "2ec457425a60720acb1a2d9697729e24912075bc6dfc83f9cebb712ad8d0e449",
+  "verification.json": "acc75d790e697980e363470ab662d06239d499e526c420efe02a68ab90f1e833"
+}
