@@ -158,3 +158,50 @@ tag `evidence/a1200-v66-original-baseline`. Final linear head is
 `56b5a771b04a89b414c3d0e9b16cc9fc540a9a47`. A lease guarded the task-branch update;
 no main/shared history was rewritten. The backup branch can be removed after
 the bundle is retained in merged docs and final source CI passes.
+
+
+## Source completion and site publication dependency
+
+[Source PR #2226](https://github.com/emu198x/emu198x/pull/2226) merged as
+`85f99c20e45814daba85197bfc0ab662248b811b` after final-head
+[CI run 41340813947](https://github.com/emu198x/emu198x/actions/runs/41340813947)
+passed. Both original v66 continuation binaries ran and passed on Linux x86;
+the ledger records seven passed, zero ignored/skipped/failed for each owner.
+The runtime ledger records 336 passed, 31 ignored and two explicit external
+fixture skips. Exact replay tests have no skips. The source implementation,
+fixtures and generated status files match the verified head. Parallel release
+runner commit `89055fa89` changes only qualification workflow/metadata and was
+preserved. Evidence tag `evidence/a1200-fixed-owners-2026-11-01` retains the
+exact tested head; the original-fixture tag remains too.
+
+[Site PR #43](https://github.com/emu198x/emu198x.github.io/pull/43) remains a
+draft. Its CI passed all 133 tests, then correctly failed the build because
+`https://github.com/emu198x/emu198x/releases/download/v0.46.0/dist-manifest.json`
+returns 404. `gh release view v0.46.0` also reports `release not found`.
+No fallback, release publication, tag change or guard bypass was introduced.
+The running main-branch package qualification does not publish releases.
+After v0.46.0 is published, rerun Pages on head
+`a5a6eccfae0277fed5c15be46fa59b8ed0c85ac0`, merge after green checks and verify
+both regional routes/images. Until then, neither page is claimed as deployed.
+The task worktree is unnecessary for that retry: the branch and captures are
+pushed, with all local build/accessibility receipts retained here.
+
+
+## Cleanup receipt
+
+The original, source and site task worktrees have been removed with
+`git worktree remove` after checking tracked, untracked and ignored files.
+Source commits are retained by the verified-head evidence tag; the unfinished
+site branch remains pushed for its release-dependent CI retry. The shared UI
+clone was clean and matched remote tag v0.5.0 before removal. Both Docker probe
+images and the target volume are gone. The task build cache, diagnostic output
+copies, generator scratch output and npm cache are removed; `df` reports 30 GiB
+free, compared with about 22 GiB before this cleanup. Original code/probe data,
+CI logs, captures, checksums and recovery history are retained in this repo.
+
+Tracker #2144 records only the two implemented A1200 regional configurations
+as split; other PCB/chip populations and OCS/ECS owner work remain open.
+The site blocker is recorded in
+[PR #43's retry comment](https://github.com/emu198x/emu198x.github.io/pull/43#issuecomment-6562868660).
+The docs task worktree will be removed after its exact-head merge; no workspace
+is required to retry the pushed site branch when the release becomes public.
