@@ -9,7 +9,7 @@
     "a1200-ntsc"
   ],
   "qualification": "Insert-disk screen visually inspected; no disk/software qualification or host audio device test",
-  "cross_host_limit": "Resolved for all eight unchanged frozen v66 continuations on macOS ARM and Linux ARM. Original-host coefficient bits are now loaded from one fixed table; Linux x86 final CI pending.",
+  "cross_host_limit": "Resolved for all eight unchanged frozen v66 continuations on macOS ARM, Linux ARM and Linux x86 CI; no tolerance or platform-specific expected output.",
   "site_head": "a5a6eccfae0277fed5c15be46fa59b8ed0c85ac0",
   "site_verification": {
     "tests_passed": 133,
@@ -28,5 +28,20 @@
   },
   "linear_source_head": "8bf0f81710aa218a0366a98f6484b27c5c5b3894",
   "verified_tree": "56b5a771b04a89b414c3d0e9b16cc9fc540a9a47",
-  "pre_linearization_bundle": "pre-linearization.bundle"
+  "pre_linearization_bundle": "pre-linearization.bundle",
+  "source_ci": {
+    "run": 41340813947,
+    "head": "8bf0f81710aa218a0366a98f6484b27c5c5b3894",
+    "conclusion": "success",
+    "merge": "85f99c20e45814daba85197bfc0ab662248b811b",
+    "preserved_parallel_release_commit": "89055fa8902f76e5bdc7b16ce8c2d76f541c457d"
+  },
+  "site_ci": {
+    "run": 41342486837,
+    "head": "a5a6eccfae0277fed5c15be46fa59b8ed0c85ac0",
+    "tests_passed": 133,
+    "conclusion": "blocked: public v0.46.0 dist-manifest.json returns 404",
+    "pr": "https://github.com/emu198x/emu198x.github.io/pull/43",
+    "deployed": false
+  }
 }
