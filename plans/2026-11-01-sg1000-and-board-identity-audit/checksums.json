@@ -1,13 +1,18 @@
 {
   "5200-tests.log.gz": "4db9aeaaf1d47494721d48b8550336fffd27f58035723bd6b7eaf885bba39d84",
   "active-clock-red.log.gz": "7ee59efa1a3a2ede1792915f0334c46ab68dec0595b8a68fa06e90266a54ca3a",
+  "capture-build.log.gz": "b533642f52a713107622444b2d54dced82903d59facc3d5db94eb43d967aea63",
+  "ci-evidence.json.gz": "d83067063e41ab8de4b5173a50a09c6e151d61bc8b64f3e7a48d046cbbb63af5",
+  "ci.json": "2e29ef38f862494c5da72dd95e109497398a141be93332a86741382de660b032",
   "clock-clippy.log.gz": "9b38ae1792f02350ca6a61f1917a969b191a1d70c2d9f2dd7907a371a09ee581",
   "clock-green.log.gz": "bf9c5c50dc66e1c8d875bd8b0c8b831d4382e0d8fec6dd049c1ec2befafa44d6",
   "clock-measurements.log.gz": "92418db0db583424d6ab5fd616944a6a695ab3be25f486d442f04125052dedef",
   "clock-red.log.gz": "3213d0a200f84314adb6d5b6944c2c6452b3b536a5931f7c9d4e3869de1090a9",
   "clock_agreement.rs.txt": "299fbce41d822b79c6093c1ef417acd4e38ea1e8f66151f579f5434a0ab6c7d5",
-  "handoff.md": "88d7ca22788cc01781d139b978bf8e983b24df3fe391657d59576ba791ebdf4f",
+  "handoff.md": "798283df551cbcfd6c064428f6e79e34ea0b26be913ed18c0c253014815081fa",
   "help.log.gz": "bc2b7208adf58352fa5fa58453c301fc24f5d1b1cf9bec752a724262f7b075b8",
+  "inactive-control.png": "e960fe6764814e7f6fd8355f6589cf34e68c93f92aa7cb9cabcae2aafe5eb324",
+  "live.json": "f6f57696a521fc4439abc90dbbccbaca84bb03d29363128d3e1f9d26484cefff",
   "metadata-clippy.log.gz": "91de0517126e6325fb5c53d17a6b6fc6c7ae8698bb2b8fd77fde84ba12503e56",
   "metadata-tests.log.gz": "a1b2343feca7f89b6d8d22b231824b9c6b3a30d3a25bc12bb22bdfd665ccd893",
   "negative-control.log.gz": "1754ae0a6ce0b3545b6c5a7f37049c6ff990450011adacbb2e10256a4574c1ab",
@@ -28,6 +33,7 @@
   "v5-capture.log.gz": "42819ca1e3f19c71ba870ac3ff30956debcf5f5a6db6ed5a9873b9fe384b3c75",
   "v6-clippy.log.gz": "9c280dc7c210ea672bc3cf994b56792ea53779b1fb8e3de8d8b3eca017917717",
   "v6-tests.log.gz": "004eec541a2ad1f4c273ce06c1065c6629b9f8c91e882134870cde33666a2e14",
-  "v6-verification.json": "c67b67fde5acd0a0f24c55707aca6de6fff166c4a3c7f4afb8ccf96b2e93941f",
-  "verification.json": "ac8bf9ad48f2cbe711dd37c2c6102a46f79e1bb72ae97cd0889545aa3dd1106e"
+  "v6-verification.json": "981c85e85b879e54fdd8622c15060a906fb971adc114958dfbde4b49c23c551e",
+  "verification.json": "ac8bf9ad48f2cbe711dd37c2c6102a46f79e1bb72ae97cd0889545aa3dd1106e",
+  "verify-live.py.txt": "42e79c252dc4b6aba169a24cd4e2d8b3f4f85305a273bfb300698bdd9f8a8da5"
 }

@@ -148,5 +148,31 @@
     "Early TMS9918 SG-II only; later TMS9118/custom-VDP populations remain unqualified",
     "No new original-software, native menu interaction or host audio-device qualification"
   ],
-  "synthetic_cartridge_sha256": "0dc3b3e2e5994ef79f8f80bbe00638f9af0b6665f4644c0e263e842685b59317"
+  "synthetic_cartridge_sha256": "0dc3b3e2e5994ef79f8f80bbe00638f9af0b6665f4644c0e263e842685b59317",
+  "inactive_control": {
+    "report": {
+      "cart_loaded": true,
+      "frames_run": 120,
+      "machine_frame_counter": 120,
+      "observations": [
+        {
+          "colour": "#000000",
+          "frames_seen": 120,
+          "height": 240,
+          "kind": "blank_frame",
+          "last_painted_frame": null,
+          "width": 280
+        }
+      ],
+      "run_result": {
+        "reached": 7168320,
+        "stop_reason": "ReachedTarget"
+      },
+      "time": 7168320
+    },
+    "cartridge": "8192 bytes of Z80 HALT (0x76)",
+    "cartridge_sha256": "9198745c7b15b5736678c6c8ed0947a88e815db56f9d96a3ac874c675d8b3efe",
+    "png_sha256": "e960fe6764814e7f6fd8355f6589cf34e68c93f92aa7cb9cabcae2aafe5eb324"
+  },
+  "native_capture_binary_sha256": "e203b831f54357157d24acd8f9f1e9fa0bebc3bd321649b0dd3abe73b8570991"
 }
