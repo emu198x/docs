@@ -21,6 +21,13 @@ construction API follow the already approved split pattern.
    sample bits and clocks for three following native fields. Prove pre-split
    restore/replay, plus an intentionally corrupted expected-output control.
    Capture is create-new-only and refuses any source HEAD after the baseline.
+Before extraction, reproduce and fix the existing NTSC display descriptor:
+`MachineCore::display` is pinned to PAL/14.187580 MHz while emitted frame
+metadata already uses the live NTSC clock. Derive both pixel clocks from one
+helper and report the selected TV standard and its doubled active-line count.
+Do not alter frame bytes, master-clock loops or v66 fields. Compare reported
+clock directly against the emitted frame signal in a regression test.
+
 3. Move `machine-commodore-amiga-a1200` wiring/tests into
    `common-commodore-amiga-aga`. Give its core a board marker; create thin
    `machine-commodore-amiga-a1200-pal` and `-ntsc` owners with fixed regions,
@@ -52,3 +59,48 @@ construction API follow the already approved split pattern.
    untracked and ignored files, then remove task worktrees, captures, render
    intermediates and build caches, and verify task-owned processes have exited.
    Preserve primary checkouts and unrelated locked worktrees.
+
+
+## Local verification and remaining merge gate
+
+The fixed-owner implementation is prepared. Common AGA/runtime tests report
+386 passed, 32 existing ignored external-fixture/diagnostic cases; both owner
+suites report seven passed and none ignored. The eight frozen original
+continuations pass on macOS ARM. Strict selected Clippy and registry checks
+pass. These are local results, not a merged-release receipt.
+
+Both native regional configurations show the Kickstart 3.1 insert-disk screen
+after 250 native fields. The exact ROM identity, complete captures and command
+logs are retained in [the evidence directory](2026-11-01-a1200-regional-board-owners/).
+This does not qualify Workbench or a software library, original hardware,
+native menus, host audio devices, or every A1200 PCB revision.
+
+The original, untouched source also exposed a cross-host resampler-history
+limit. Linux ARM matches all board bytes, pixels, emitted audio sample bits
+and elapsed clocks but changes four pending f64 correction values in the final
+v66 envelope. macOS ARM matches the complete frozen final saves. Every other
+saved field, including analog-filter history, matches. Original Linux x86 CI
+also fails the strict continuation assertion; direct x86 state has not been
+captured. See [the failing baseline run](https://github.com/emu198x/emu198x/actions/runs/41332390233).
+
+The pending choice is a focused portable-coefficient fix before merging,
+recommended to retain one exact cross-host baseline, or preserving the old
+host-dependent behaviour with separately captured exact platform baselines.
+No tolerance or skipped assertion has been introduced. The split and its site
+publication remain gated on resolving this choice and passing final CI.
+
+
+Source draft: [#2226](https://github.com/emu198x/emu198x/pull/2226).
+The native UI and both browser consumers compile with default features.
+The site companion branch `docs/a1200-fixed-board-pages` passes 133 tests,
+builds and checks 121 routes, and audits 105 content routes in both themes
+with zero accessibility defects (16 redirect stubs excluded). It has not been
+published: source merge and the exact final CI head remain required.
+
+The source, docs and site task worktrees remain under
+`/Users/stevehill/Projects/198x/Emu198x/.worktrees/a1200-{source,docs,site}`
+for the pending DSP decision, verification and publication. Their committed
+branches preserve the work. Remove them after exact-head merges and deployed
+route/image verification. The original diagnostic worktree and Linux ARM
+Docker image/target volume are still needed for the cross-host regression;
+remove them after portable-coefficient verification or platform-baseline capture.

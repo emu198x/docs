@@ -1,0 +1,22 @@
+{
+  "source_baseline": "cbcda19a116bdf3a86a8d41c186c046842c342b8",
+  "split_verified_local_head": "c9847f8dae9905d9dbdf9215680efa8fb61bc497",
+  "kickstart_bytes": 524288,
+  "kickstart_sha256": "6d43840d4099a74170ea0f0425b6257c3891ebcaa39c4d1840075a9ab22b5707",
+  "native_fields": 250,
+  "models": [
+    "a1200",
+    "a1200-ntsc"
+  ],
+  "qualification": "Insert-disk screen visually inspected; no disk/software qualification or host audio device test",
+  "cross_host_limit": "Untouched original: macOS ARM exact. Linux ARM board/pixels/all emitted audio/clocks exact; four pending resampler f64 corrections differ. Original x86 Linux CI also failed frozen final-state assertion; direct x86 state not captured.",
+  "site_head": "a5a6eccfae0277fed5c15be46fa59b8ed0c85ac0",
+  "site_verification": {
+    "tests_passed": 133,
+    "routes_built_and_checked": 121,
+    "a11y_routes": 105,
+    "a11y_themes": 2,
+    "redirect_stubs_skipped": 16,
+    "a11y_defects": 0
+  }
+}
