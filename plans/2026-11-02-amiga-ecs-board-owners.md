@@ -44,3 +44,25 @@ The three named donor archives are absent; no archived cycle code will be ported
    and remove every task worktree, temporary build/cache and background process.
    Preserve unrelated primary checkout edits and locked worktrees. Record any
    external publication dependency and exact retry condition.
+
+
+## Approved RTC correction
+
+On 2026-11-02 Steve approved v67 output with an explicit v66 reader. Migrate
+only the A500+ saved RTC-presence flag, retaining clock history and all other
+state. Other models' v66 payloads remain unchanged. Version-67 A500+ state must
+retain the real onboard clock; a legacy flag is not a switchable board option.
+The source regression reproduces a write of 5 reading as 15 for the stock
+A500+ (PAL, slow_kb=0), matching the slow-RAM-gated decoder root cause. Primary
+manual PDF page 3 / printed 1-1 states onboard battery-backed RTC and 1 MiB
+stock RAM. Save original final envelopes too so post-migration field/byte
+retention can be checked independently of the new writer.
+
+
+Original capture/replay: 16 cases pass before production changes, with actual
+half-CCK phase and time/tick consistency asserted. A disposable corrupted-output
+control fails on elapsed clocks (141648 vs 141776), with all immutable originals
+untouched. The capture commit is d35b9f86c. Initial RTC and migration checks pass:
+all 16 ECS cases permit only the version and onboard RTC bit, all A1200 payloads
+retain exact bytes after header translation, all 18 already-valid legacy
+profiles restore, and malformed v67 missing-RTC state rejects atomically.
