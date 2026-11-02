@@ -1,0 +1,500 @@
+{
+  "source_commit": "015808f53db2be0fb5849ff0103cfe615689b45c",
+  "original_evidence_commit": "0e480f619",
+  "original_production_commit": "c06321677cde6b4aea0211197eb8436ceae0a1a7",
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2236",
+  "records": [
+    {
+      "record": "native-boot/commodore-amiga-a1000-ntsc.json",
+      "chip_kib": 256,
+      "completed_fields": 2600,
+      "fast_kib": 0,
+      "firmware_sha256": "c67d47d0ff4a4cd29104e96fe7920a2ec13dff4f7f0fbcf7be645e2ae493262c",
+      "height": 576,
+      "kickstart_adf_sha256": "cc19c8130dfc6e208f1cb3f30cc9b1a7432ec6ca5da83991fa5ccfa7b14b9fcb",
+      "legacy_profile_id": "commodore-amiga-a1000-ocs-ntsc",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 262143,
+          "size_bytes": 262144
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": {
+            "boot_rom": {
+              "address_mask": 65535,
+              "size_bytes": 65536
+            },
+            "boot_rom_visible": false,
+            "wom": {
+              "address_mask": 262143,
+              "size_bytes": 262144
+            },
+            "wom_locked": true
+          },
+          "kind": "a1000",
+          "standard": null
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a1000-ntsc",
+      "png_sha256": "7b19a2e9553422d2d716da0a7b1da853a6f3e10882c63c91483a93e22eb9cca6",
+      "rgba_sha256": "780c154ed99952eb91acba7df32b3660ef7951041249a7dad3b2b59694457795",
+      "slow_kib": 0,
+      "tick": 309946044,
+      "width": 768,
+      "wom_handoff_field": 1655
+    },
+    {
+      "record": "native-boot/commodore-amiga-a1000-pal.json",
+      "chip_kib": 256,
+      "completed_fields": 2600,
+      "fast_kib": 0,
+      "firmware_sha256": "c67d47d0ff4a4cd29104e96fe7920a2ec13dff4f7f0fbcf7be645e2ae493262c",
+      "height": 576,
+      "kickstart_adf_sha256": "cc19c8130dfc6e208f1cb3f30cc9b1a7432ec6ca5da83991fa5ccfa7b14b9fcb",
+      "legacy_profile_id": "commodore-amiga-a1000-ocs-pal",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 262143,
+          "size_bytes": 262144
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": {
+            "boot_rom": {
+              "address_mask": 65535,
+              "size_bytes": 65536
+            },
+            "boot_rom_visible": false,
+            "wom": {
+              "address_mask": 262143,
+              "size_bytes": 262144
+            },
+            "wom_locked": true
+          },
+          "kind": "a1000",
+          "standard": null
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a1000-pal",
+      "png_sha256": "ec5c02a7dda0892df2b5bfda46819055f1e9548c498297edf31c9163d8512af8",
+      "rgba_sha256": "3e20ba72a2c8a7f845dc279385d9a78c63fc3a3801f331d6307fa1201bbeab06",
+      "slow_kib": 0,
+      "tick": 368284844,
+      "width": 768,
+      "wom_handoff_field": 1388
+    },
+    {
+      "record": "native-boot/commodore-amiga-a2000cr-rev6-ntsc-kick204.json",
+      "chip_kib": 1024,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "d0b70e8a1772614b897f92c33cb299bed3fc8e3de488fc12f67f97fc2486eb79",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a2000-ocs-ntsc",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 1048575,
+          "size_bytes": 1048576
+        },
+        "floating_bus_word": 288,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 524287,
+            "size_bytes": 524288
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a2000cr-rev6-ntsc",
+      "png_sha256": "c705d87c34e4527d26b62a9f78a35027b5f8b6886e47b705d24365114ce9b918",
+      "rgba_sha256": "bfa1eaac49d84c30acd20b56382554346ed9abfc4b11d1433f1c7535ff331467",
+      "slow_kib": 0,
+      "tick": 77486544,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a2000cr-rev6-ntsc.json",
+      "chip_kib": 1024,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a2000-ocs-ntsc",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 1048575,
+          "size_bytes": 1048576
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a2000cr-rev6-ntsc",
+      "png_sha256": "6399fb3a01a7f875e52d3f9d0e152702aa039ca520cd96bd53c38bad19e18286",
+      "rgba_sha256": "a53e11e847b369c3f52fbf803c961d9f1815f7de2497e8574dd3d2d47be2dcf3",
+      "slow_kib": 0,
+      "tick": 77486544,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a2000cr-rev6-pal-kick204.json",
+      "chip_kib": 1024,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "d0b70e8a1772614b897f92c33cb299bed3fc8e3de488fc12f67f97fc2486eb79",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a2000-ocs-pal",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 1048575,
+          "size_bytes": 1048576
+        },
+        "floating_bus_word": 288,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 524287,
+            "size_bytes": 524288
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a2000cr-rev6-pal",
+      "png_sha256": "8bf03b89c873f17607a6cf96ce2d6191a11b171defe496765d351472c80e7e40",
+      "rgba_sha256": "f35d3ffdab3d5b8e0e6535d09a372b33bc8a39e34d314a604a3e1ab871007fdd",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a2000cr-rev6-pal.json",
+      "chip_kib": 1024,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a2000-ocs-pal",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 1048575,
+          "size_bytes": 1048576
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a2000cr-rev6-pal",
+      "png_sha256": "8f70795e0703edc301de2c55c2af697a1626c5c639dac42489e201e36c752af2",
+      "rgba_sha256": "f28bfeb54f3397f7983077641057b561e150627267c133eaeafbd7552624d436",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev5-ntsc.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-ntsc",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev5-ntsc",
+      "png_sha256": "6cf2fb4299cd11101efd3e37b26037352d05679cdc62a1cf677ae123875aeef2",
+      "rgba_sha256": "67e9f48fd54710234df0efc9e61bcf60589ae39c471b15ecd7cb0cd816a9e2a4",
+      "slow_kib": 0,
+      "tick": 77486544,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev5-pal.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-pal",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev5-pal",
+      "png_sha256": "cf6d837c598f74d09e2f17bd9d3009276f4777f8636444e35c0fb6251f6eae66",
+      "rgba_sha256": "27c2fecba5d51e1a80c33c7414511dec73238ba91da641ff80ad4f3ab2bc0370",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev6a-ntsc-kick204.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "d0b70e8a1772614b897f92c33cb299bed3fc8e3de488fc12f67f97fc2486eb79",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-ntsc-maxed",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 288,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 524287,
+            "size_bytes": 524288
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev6a-ntsc",
+      "png_sha256": "c705d87c34e4527d26b62a9f78a35027b5f8b6886e47b705d24365114ce9b918",
+      "rgba_sha256": "bfa1eaac49d84c30acd20b56382554346ed9abfc4b11d1433f1c7535ff331467",
+      "slow_kib": 0,
+      "tick": 77486544,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev6a-ntsc.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-ntsc-maxed",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev6a-ntsc",
+      "png_sha256": "6399fb3a01a7f875e52d3f9d0e152702aa039ca520cd96bd53c38bad19e18286",
+      "rgba_sha256": "a53e11e847b369c3f52fbf803c961d9f1815f7de2497e8574dd3d2d47be2dcf3",
+      "slow_kib": 0,
+      "tick": 77486544,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev6a-pal-kick204.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "d0b70e8a1772614b897f92c33cb299bed3fc8e3de488fc12f67f97fc2486eb79",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-pal-maxed",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 288,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 524287,
+            "size_bytes": 524288
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev6a-pal",
+      "png_sha256": "8bf03b89c873f17607a6cf96ce2d6191a11b171defe496765d351472c80e7e40",
+      "rgba_sha256": "f35d3ffdab3d5b8e0e6535d09a372b33bc8a39e34d314a604a3e1ab871007fdd",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-boot/commodore-amiga-a500-rev6a-pal.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-pal-maxed",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga-a500-rev6a-pal",
+      "png_sha256": "8f70795e0703edc301de2c55c2af697a1626c5c639dac42489e201e36c752af2",
+      "rgba_sha256": "f28bfeb54f3397f7983077641057b561e150627267c133eaeafbd7552624d436",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-before-extraction/commodore-amiga-a2000cr-rev6-pal.json",
+      "chip_kib": 1024,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a2000-ocs-pal",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 1048575,
+          "size_bytes": 1048576
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga",
+      "png_sha256": "8f70795e0703edc301de2c55c2af697a1626c5c639dac42489e201e36c752af2",
+      "rgba_sha256": "f28bfeb54f3397f7983077641057b561e150627267c133eaeafbd7552624d436",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    },
+    {
+      "record": "native-before-extraction/commodore-amiga-a500-rev6a-pal.json",
+      "chip_kib": 512,
+      "completed_fields": 650,
+      "fast_kib": 0,
+      "firmware_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "height": 576,
+      "kickstart_adf_sha256": null,
+      "legacy_profile_id": "commodore-amiga-a500-ocs-pal-maxed",
+      "memory": {
+        "chip_ram": {
+          "address_mask": 524287,
+          "size_bytes": 524288
+        },
+        "floating_bus_word": 294,
+        "overlay": false,
+        "rom": {
+          "a1000": null,
+          "kind": "standard",
+          "standard": {
+            "address_mask": 262143,
+            "size_bytes": 262144
+          }
+        },
+        "slow_ram_size_bytes": 0
+      },
+      "owner_id": "commodore-amiga",
+      "png_sha256": "8f70795e0703edc301de2c55c2af697a1626c5c639dac42489e201e36c752af2",
+      "rgba_sha256": "f28bfeb54f3397f7983077641057b561e150627267c133eaeafbd7552624d436",
+      "slow_kib": 0,
+      "tick": 92071244,
+      "width": 768,
+      "wom_handoff_field": null
+    }
+  ]
+}

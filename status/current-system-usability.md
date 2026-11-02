@@ -205,8 +205,7 @@ This does not qualify Workbench, every PCB revision, native menus or host audio
 devices. The public player remains A500+A501-only, so A1200 pages omit embeds.
 
 See the [A1200 scope and evidence](../systems/commodore/amiga/a1200.md) and
-[source PR #2226](https://github.com/emu198x/emu198x/pull/2226). The aggregate
-Amiga entry remains for the still-grouped OCS/ECS implementations.
+[source PR #2226](https://github.com/emu198x/emu198x/pull/2226). All implemented Amiga boards now have fixed regional owners.
 
 
 ## A500+ and A600 PAL/NTSC
@@ -215,10 +214,21 @@ Four fixed owners retain the existing profiles over shared ECS wiring. Each
 has seven direct invariant tests. Sixteen original v66 continuation cases
 check every native video/audio/timing observation and complete saved payloads,
 permitting only the approved version/RTC flag migration. The A500+ onboard
-clock is now visible without slow RAM. Amiga v67 saves explicitly read v66
-while preserving clock history; other models change only the header.
+clock is visible without slow RAM. Amiga v68 saves explicitly read v66/v67
+while preserving clock history. The v66 reader corrects A500+ clock fitting;
+the v66/v67 readers correct A2000 clock fitting. Other fields remain intact.
 
 Separate 650-field native captures reach each model's Kickstart insert-disk
 screen. This does not qualify every PCB, IDE/PCMCIA peripherals, Workbench,
 native menus or host audio devices. See [ECS scope and evidence](../systems/commodore/amiga/ecs.md)
 and [source PR #2230](https://github.com/emu198x/emu198x/pull/2230).
+
+## A1000, A500 and A2000 PAL/NTSC
+
+Eight fixed owners cover the existing A1000, A500 rev-5/rev-6a and A2000CR
+rev-6 configurations. The twelve existing profiles, including A501/A530 add-ons,
+remain. Each owner has seven direct invariants; 56 immutable original v67
+cases compare native output and saved payloads exactly. The A2000 onboard
+clock is decoded independently of slow RAM, with explicit v66/v67 migration
+to v68 preserving clock history. Other PCB populations and Buster/Zorro
+backplane accuracy remain unqualified. See [scope and evidence](../systems/commodore/amiga/ocs-boards.md).

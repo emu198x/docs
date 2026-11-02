@@ -1,0 +1,41 @@
+{
+  "chip_kib": 256,
+  "completed_fields": 2600,
+  "fast_kib": 0,
+  "firmware_sha256": "c67d47d0ff4a4cd29104e96fe7920a2ec13dff4f7f0fbcf7be645e2ae493262c",
+  "height": 576,
+  "kickstart_adf_sha256": "cc19c8130dfc6e208f1cb3f30cc9b1a7432ec6ca5da83991fa5ccfa7b14b9fcb",
+  "legacy_profile_id": "commodore-amiga-a1000-ocs-ntsc",
+  "memory": {
+    "chip_ram": {
+      "address_mask": 262143,
+      "size_bytes": 262144
+    },
+    "floating_bus_word": 294,
+    "overlay": false,
+    "rom": {
+      "a1000": {
+        "boot_rom": {
+          "address_mask": 65535,
+          "size_bytes": 65536
+        },
+        "boot_rom_visible": false,
+        "wom": {
+          "address_mask": 262143,
+          "size_bytes": 262144
+        },
+        "wom_locked": true
+      },
+      "kind": "a1000",
+      "standard": null
+    },
+    "slow_ram_size_bytes": 0
+  },
+  "owner_id": "commodore-amiga-a1000-ntsc",
+  "png_sha256": "7b19a2e9553422d2d716da0a7b1da853a6f3e10882c63c91483a93e22eb9cca6",
+  "rgba_sha256": "780c154ed99952eb91acba7df32b3660ef7951041249a7dad3b2b59694457795",
+  "slow_kib": 0,
+  "tick": 309946044,
+  "width": 768,
+  "wom_handoff_field": 1655
+}
