@@ -89,6 +89,12 @@ maxed runtime preset.
 Kickstart 1.3 remains a known gap on the PAL 8372A/OCS Denise configurations:
 both remain white at the same bound. The untouched pre-extraction engine
 reproduces the same complete framebuffer hashes. NTSC 1.3 and regional 2.04
-are positive controls. The cause remains under investigation; successful 2.04
+are positive controls. The cause remains under investigation in [#2237](https://github.com/emu198x/emu198x/issues/2237); successful 2.04
 captures do not qualify 1.3. See the [native receipts and scope](../../../plans/2026-11-02-amiga-remaining-board-owners/native-evidence.md)
 and [source PR #2236](https://github.com/emu198x/emu198x/pull/2236).
+
+The published player’s Model selector also overflows a 390 px viewport to
+520 px, independently reproduced on the existing public Amiga page. This
+bundle layout issue is tracked in [#2238](https://github.com/emu198x/emu198x/issues/2238).
+The seven new native-only pages fit 390/1280 px in both themes. The pinned
+player and its existing layout remain unchanged by the board mapping.

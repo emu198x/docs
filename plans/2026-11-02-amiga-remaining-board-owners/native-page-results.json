@@ -1,0 +1,246 @@
+[
+  {
+    "id": "commodore-amiga-a1000-pal",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a1000-ntsc",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev5-ntsc",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-pal",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-ntsc",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-pal",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-ntsc",
+    "theme": "light",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "theme": "light",
+    "width": 1280,
+    "legacyRedirect": true
+  },
+  {
+    "id": "commodore-amiga-a1000-pal",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a1000-ntsc",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev5-ntsc",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-pal",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-ntsc",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-pal",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-ntsc",
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "legacyRedirect": true
+  },
+  {
+    "id": "commodore-amiga-a1000-pal",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a1000-ntsc",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev5-ntsc",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-pal",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-ntsc",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-pal",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-ntsc",
+    "theme": "dark",
+    "width": 1280,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "theme": "dark",
+    "width": 1280,
+    "legacyRedirect": true
+  },
+  {
+    "id": "commodore-amiga-a1000-pal",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a1000-ntsc",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev5-ntsc",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-pal",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a500-rev6a-ntsc",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-pal",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "id": "commodore-amiga-a2000cr-rev6-ntsc",
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "player": false,
+    "imageWidth": 768
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "legacyRedirect": true
+  }
+]

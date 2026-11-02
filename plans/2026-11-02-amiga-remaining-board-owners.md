@@ -148,3 +148,27 @@ helper; its build target is `/private/tmp/198x-ocs-original-target`. Remove both
 after the evidence commit is verified remotely. The original source PR is
 #2236. CI found two native-video examples under `tools/` still using the removed
 aggregate alias; they are being converted to the same fixed rev-5 PAL owner.
+
+## Downstream checks
+
+Source head `73272ca0e2e0b168f2a8e28f80a2934cdd8d365e` fixes the two
+external native-video callers. Their strict all-target Clippy passes. The
+corrected local run covers 602 shared-core/runtime tests (121 pre-existing
+ignored fixtures/diagnostics), plus 56 direct owner tests and the raw-owner
+compile-fail proof. The broader first run's five failures were the three
+retained panic-wording checks and two stale typed-owner test callers; their
+complete affected targets pass after correction.
+
+Site checks pass 137 tests, the full build, 133 routes, links/prose and the
+published release-manifest gate. Axe checks 116 content routes in both themes
+with no serious/critical defects; 17 redirects are checked separately. The
+seven native-only pages fit 390/1280 px in both themes. The original strict
+mobile player check fails: `commodore-amiga-a500-rev5-pal overflows at 390`.
+The same 520 px document width and 459.78125 px selector reproduce on the
+already-published Amiga page. Record this as #2238 rather than masking it or
+altering the copied 0.44.2 bundle. PAL mixed-chip 1.3 compatibility is #2237.
+
+The original comparison worktree and `/private/tmp/198x-ocs-original-target`
+were removed after verifying the remote evidence tag and docs commit `792d1a9`,
+comparing the unique helper bytes and checking tracked, untracked and ignored
+files. Current task source/docs/site worktrees remain until merges/deployment.
