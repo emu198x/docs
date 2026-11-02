@@ -1,0 +1,21 @@
+{
+  "locked_missing_registrations_retained": [
+    {
+      "path": "/private/tmp/198x-atari5200-input",
+      "lock": "Active Atari 5200 controller evidence for issue 421",
+      "reason_retained": "Issue #421 remains open; production correction is not implemented in its evidence record.",
+      "removal_condition": "The owning investigation is completed or explicitly releases its lock; retain its evidence before removing the registration."
+    },
+    {
+      "path": "/private/tmp/198x-pet-crtc-ports",
+      "lock": "Active PET CRTC status and port correction",
+      "reason_retained": "The retained evidence describes an unmerged prototype with failing firmware gates.",
+      "removal_condition": "The owning investigation is completed or explicitly releases its lock; retain its evidence before removing the registration."
+    }
+  ],
+  "active_worktrees_preserved": [
+    "fix/pentagon-clock",
+    "fix/degenerate-crtc-fields"
+  ],
+  "other_workspace_preserved": "tilemaps-emulator"
+}

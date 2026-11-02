@@ -1,0 +1,9 @@
+{
+  "worktree": "/private/tmp/claude-501/-Users-stevehill-Projects-198x/2e02b271-2de7-46b6-afab-313c4c5da102/scratchpad/emusite-src",
+  "merged_pr": 24,
+  "original_head": "e57da19c2b8ff055cb5aa562346600e9bd80aedb",
+  "bundle": "/Users/stevehill/Projects/198x/Emu198x/emu198x.github.io/.git/recovery/2026-11-02-worktree-audit/emusite-src.bundle",
+  "bundle_sha256": "5161d5761c57e1de874a4c8456c17a576504717e69b11822825c88789382fbcf",
+  "reason": "The merged PR rebased the original commit; preserve its exact history before removing the missing registration.",
+  "removed_registration": true
+}

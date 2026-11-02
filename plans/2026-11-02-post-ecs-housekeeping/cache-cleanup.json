@@ -1,0 +1,49 @@
+{
+  "removed": [
+    {
+      "repo": "/Users/stevehill/Projects/198x/Emu198x/emu198x",
+      "path": "/Users/stevehill/Projects/198x/Emu198x/emu198x/tools/spectrum-composite/target",
+      "kind": "cargo",
+      "files": 984,
+      "latest_write_utc": "2026-10-01T23:31:24Z",
+      "tracked_status": "?? tools/__pycache__/\n"
+    },
+    {
+      "repo": "/Users/stevehill/Projects/198x/Emu198x/emu198x.github.io",
+      "path": "/Users/stevehill/Projects/198x/Emu198x/emu198x.github.io/node_modules",
+      "kind": "npm",
+      "files": 11603,
+      "latest_write_utc": "2026-10-27T16:22:14Z",
+      "tracked_status": ""
+    },
+    {
+      "repo": "/Users/stevehill/Projects/198x/Emu198x/emu198x.github.io",
+      "path": "/Users/stevehill/Projects/198x/Emu198x/emu198x.github.io/dist",
+      "kind": "astro",
+      "files": 299,
+      "latest_write_utc": "2026-10-07T10:07:00Z",
+      "tracked_status": ""
+    },
+    {
+      "repo": "/Users/stevehill/Projects/198x/Build198x/build198x",
+      "path": "/Users/stevehill/Projects/198x/Build198x/build198x/target",
+      "kind": "cargo",
+      "files": 15623,
+      "latest_write_utc": "2026-10-22T08:57:37Z",
+      "tracked_status": ""
+    },
+    {
+      "repo": "/Users/stevehill/Projects/198x/Format198x/format198x",
+      "path": "/Users/stevehill/Projects/198x/Format198x/format198x/target",
+      "kind": "cargo",
+      "files": 12956,
+      "latest_write_utc": "2026-10-27T13:52:28Z",
+      "tracked_status": ""
+    }
+  ],
+  "open_files_before_removal": 0,
+  "df_before": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   2176000   100% 10884830 21771000   33%   /System/Volumes/Data\n",
+  "df_after": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   4440000   100% 10854602 44660400   20%   /System/Volumes/Data\n",
+  "available_kib_increase": 2264000,
+  "measurement_note": "df is the measured free-space change over cleanup; other sessions may allocate or release space concurrently."
+}
