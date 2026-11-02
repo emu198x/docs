@@ -1,0 +1,53 @@
+import concurrent.futures
+import hashlib
+import json
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.request import urlopen
+
+ROOT = Path('/Users/stevehill/Projects/198x/Emu198x/.worktrees/ecs-site/dist')
+BASE = 'https://emu198x.github.io'
+class Page(HTMLParser):
+    def __init__(self, raw):
+        super().__init__(); self.h1 = []; self.inside = False; self.players = []; self.refresh = []; self.images = []
+        self.feed(raw)
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == 'h1': self.inside = True
+        if tag == 'emu198x-player': self.players.append(a)
+        if tag == 'meta' and a.get('http-equiv', '').lower() == 'refresh': self.refresh.append(a.get('content'))
+        if tag == 'img': self.images.append(a.get('src'))
+    def handle_endtag(self, tag):
+        if tag == 'h1': self.inside = False
+    def handle_data(self, data):
+        if self.inside: self.h1.append(data)
+def fetch(url):
+    with urlopen(url, timeout=30) as r:
+        assert r.status == 200, (url, r.status)
+        return r.read()
+def check(path):
+    route = '/' + str(path.relative_to(ROOT)).removesuffix('index.html')
+    expected = Page(path.read_text())
+    actual = Page(fetch(BASE + route).decode())
+    assert (actual.h1, actual.players, actual.refresh) == (expected.h1, expected.players, expected.refresh), route
+    if route in SG:
+        assert not actual.players, route
+        assert '/media/boot/' + SG[route] + '.png' in actual.images, (route, actual.images)
+    return dict(route=route, h1=''.join(actual.h1), players=len(actual.players), redirects=actual.refresh)
+SG = {f'/systems/commodore-amiga-{model}-{region}/': f'commodore-amiga-{model}-{region}' for model in ['a500-plus', 'a600', 'a1200'] for region in ['pal', 'ntsc']}
+paths = sorted(ROOT.rglob('index.html'))
+assert len(paths) == 125
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    routes = list(pool.map(check, paths))
+images = []
+for name in SG.values():
+    path = ROOT / 'media/boot' / (name + '.png')
+    local = path.read_bytes(); actual = fetch(BASE + '/media/boot/' + name + '.png')
+    assert local == actual, name
+    images.append(dict(path='/media/boot/' + name + '.png', sha256=hashlib.sha256(actual).hexdigest(), bytes=len(actual)))
+aggregate = next(x for x in routes if x['route'] == '/systems/commodore-amiga/')
+assert not aggregate['redirects'] and aggregate['players'] > 0, aggregate
+assert len(images) == 6
+result = dict(base=BASE, routes_checked=len(routes), player_elements=sum(x['players'] for x in routes), content_routes=sum(not x['redirects'] for x in routes), images=images, routes=routes)
+Path('/private/tmp/198x-ecs-live.json').write_text(json.dumps(result, indent=2) + '\n')
+print({k: v for k,v in result.items() if k != 'routes'})

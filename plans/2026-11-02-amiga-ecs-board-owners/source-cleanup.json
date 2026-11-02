@@ -1,0 +1,12 @@
+{
+  "source_head": "2a6df1b9bfcec0b6718eac5355598b3f7c81c388",
+  "source_tree": "8f76120cc179b8b64513cf007827231ed216e5b2",
+  "merge": "d01ec24c01aa734484c69976379b514450e371e1",
+  "verified_remote_tag": "evidence/amiga-ecs-verified",
+  "removed_ignored_directories": [
+    ".ruff_cache/",
+    "scripts/__pycache__/",
+    "scripts/status/__pycache__/"
+  ],
+  "source_worktree_removed": true
+}

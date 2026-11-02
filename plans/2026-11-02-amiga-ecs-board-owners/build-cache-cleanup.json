@@ -1,0 +1,5 @@
+{
+  "removed": "/private/tmp/198x-ecs-target",
+  "df_before": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   6560000   100% 10890855 65617040   14%   /System/Volumes/Data\n",
+  "df_after": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   7160000   100% 10883947 71944880   13%   /System/Volumes/Data\n"
+}
