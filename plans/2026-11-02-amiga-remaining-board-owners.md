@@ -172,3 +172,14 @@ The original comparison worktree and `/private/tmp/198x-ocs-original-target`
 were removed after verifying the remote evidence tag and docs commit `792d1a9`,
 comparing the unique helper bytes and checking tracked, untracked and ignored
 files. Current task source/docs/site worktrees remain until merges/deployment.
+
+## Source merged
+
+#2236 merged linearly as `0ca32342ae4799de3aafdcefad556dad759b7fb4` after
+all checks passed on exact head `73272ca0e2e0b168f2a8e28f80a2934cdd8d365e`.
+The complete workspace evidence ledger is retained, with its passed, skipped
+and ignored counts kept distinct. Every new owner's seven exclusive tests ran
+with zero failures, skips or ignores. A changed native observation (141648 →
+141776 clocks) still fails the extracted baseline after ZIP/member identities
+pass. The negative-control log is preserved. The #2144 row now records these
+eight owners; #2237/#2238 preserve the independently reproduced existing gaps.

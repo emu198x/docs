@@ -1,0 +1,84 @@
+{
+  "checked_head": "73272ca0e2e0b168f2a8e28f80a2934cdd8d365e",
+  "run": "https://github.com/emu198x/emu198x/actions/runs/41458767631",
+  "source_pr": 2236,
+  "merge_commit": "0ca32342ae4799de3aafdcefad556dad759b7fb4",
+  "workspace": {
+    "passed": 8563,
+    "failed": 0,
+    "ignored": 713,
+    "skipped": 110
+  },
+  "owners": {
+    "machine-commodore-amiga-a1000-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a1000-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-rev5-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-rev5-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-rev6a-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-rev6a-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a2000cr-rev6-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a2000cr-rev6-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    }
+  },
+  "common_ocs": {
+    "failed": 0,
+    "ignored": 90,
+    "passed": 206,
+    "skipped": 33,
+    "unexplained_ignored": 76
+  },
+  "runtime": {
+    "failed": 0,
+    "ignored": 31,
+    "passed": 358,
+    "skipped": 2,
+    "unexplained_ignored": 0
+  }
+}
