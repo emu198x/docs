@@ -115,3 +115,36 @@ identity and reject foreign profiles. No serialized ownership field is added.
 Local A1000 inputs were found: `~/.emu198x/roms/commodore-amiga/a1000-bootstrap.rom`
 and the original TOSEC Kickstart 1.2 r33.180 A1000 ZIP in the library's
 `Commodore/Amiga/Kickstart-Disks/` directory. They remain immutable local inputs.
+
+## Fixed-owner extraction verification
+
+The eight owners each pass seven direct hardware invariants (56 tests total).
+The existing original-continuation and snapshot suites pass 80 tests, including
+all 56 original OCS cases, all ECS/A1200 specimens and 65 detailed snapshot
+regressions. No replacement goldens were recorded. The registry check passes
+104 machines across 34 shipping crates. Direct-test firmware copies must match
+the independently archived originals byte for byte.
+
+Internal disk exhaustion interrupted further checks. The attempted external
+cache transfer was stopped after identifying its two task-owned processes;
+the partial external copy and the disposable 464 MB local cache were removed.
+`df` confirmed roughly 460 MB reclaimed. Serial verification rebuilt only the
+task target at `/private/tmp/198x-ocs-target`. Remove it after completion.
+Source and evidence stay in their owning Git repositories.
+
+## Native qualification and existing gap
+
+All eight regional configurations have visually inspected original-firmware
+insert-disk captures. A1000 stock 256 KiB reaches the real disk/WOM handoff
+at fields 1388 PAL / 1655 NTSC and the 1.2 screen at 2600 fields. Rev-5
+A500 uses 1.3; stock 512 KiB rev-6a and 1 MiB A2000CR use 2.04 at 650 fields.
+PAL mixed-chip 1.3 stays white. The unchanged original engine independently
+reproduces exactly that framebuffer, with tracked production clean. Receipts,
+negative images, hashes and the old helper are retained in the artifact folder.
+
+The temporary original worktree is `Emu198x/.worktrees/ocs-original`, detached
+at the verified evidence tag. Its only unique file is the preserved capture
+helper; its build target is `/private/tmp/198x-ocs-original-target`. Remove both
+after the evidence commit is verified remotely. The original source PR is
+#2236. CI found two native-video examples under `tools/` still using the removed
+aggregate alias; they are being converted to the same fixed rev-5 PAL owner.
