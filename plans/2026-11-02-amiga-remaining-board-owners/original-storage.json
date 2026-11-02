@@ -1,0 +1,8 @@
+{
+  "archive_bytes": 2752799,
+  "original_bytes": 1273988733,
+  "files": 177,
+  "verified_decompressed_sha256_all_files": true,
+  "df_before": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   4320000   100% 10923574 43267640   20%   /System/Volumes/Data\n",
+  "df_after": "Filesystem   1024-blocks      Used Available Capacity  iused    ifree %iused  Mounted on\n/dev/disk3s5   971350180 904000000   5520000   100% 10923422 55229120   17%   /System/Volumes/Data\n"
+}
