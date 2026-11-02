@@ -8,5 +8,9 @@
   "baseline_build_note": "The definitive original capture uses a pristine detached worktree. Corrected local crates were cleaned and rebuilt before the definitive corrected capture; a prior shared-target cache collision was detected and discarded.",
   "pacman_sha256": "5097b4763eefd8650781698e36b68bc0c9ae0863916312e6fa4364e4da104080",
   "bios_sha256": "06b250f18983d058c0f156ce7ee88ae48b6eaf11e6f10f21dccf6ac7ffb6a6af",
-  "hardware_scope": "Four-port controller routing, reference scanner and real BIOS/cart boot. Not physical measurement, analogue calibration, trackball support or qualification of three separate boards."
+  "hardware_scope": "Four-port controller routing, reference scanner and real BIOS/cart boot. Not physical measurement, analogue calibration, trackball support or qualification of three separate boards.",
+  "media_tested_head": "0d380944e7f9894dcbaf87b541c36197e9952863",
+  "media_rebased_head": "70166717576274f488c09b7b540ba4241a87f8bc",
+  "media_identical_tree": "1107a75b0078ff70489b365c0b003c90de5191d4",
+  "media_recovery_tag": "evidence/atari5200-media-before-parent-rebase"
 }

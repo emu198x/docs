@@ -129,3 +129,39 @@ controller paths, snapshot writer and unresolved board owners. It also adds
 the manufacturer-backed board-identity boundary to `systems/oric/atmos.md`.
 Other historical accuracy claims in these pages are outside this correction.
 Commit current-behaviour wording only after the source changes merge.
+
+
+Scanner correction #2239 merged as `4a253729351e010c4a1846f96c6e37d5ba1b7d57`.
+Its complete CI ledger records 8,573 passes, zero failures, 713 ignored and
+110 skipped tests. The test run executed 1,155 binaries and finished with
+78 GB free after the cold build. Mac/Windows, Apple hosts, browser parity,
+Clippy, format, registry, firmware and remaining checks passed.
+
+For the board-extraction follow-up, CI timed the exhaustive controller guest
+binary at 324.8 seconds and the POKEY scan binary at 42.7 seconds. Preserve
+all cases. Benchmark the eventual common engine's optimized test codegen
+against exact captures before choosing any package-level optimization; do
+not infer a fleet-wide speedup from one timing.
+
+
+The media PR's parent merged by rebase, so its old base was no longer an
+ancestor of main. Preserve `0d380944e` in the verified remote tag
+`evidence/atari5200-media-before-parent-rebase`, then rebase only the private
+task branch using an exact lease. Current head `701667175` has the identical
+final tree `1107a75b0078ff70489b365c0b003c90de5191d4`; shared main history was
+not rewritten. Its new CI checks are pending. The old full ledger records
+8,574 passes and zero failures; the Mac build never acquired a runner.
+
+For future batches in this rebase-only repository, merge the parent before
+opening a dependent fix PR. That avoids duplicate histories and repeated CI
+when the parent receives new commit IDs on merge.
+
+
+The fresh suite on `701667175` passed 8,574 tests with zero failures. The
+only unavailable hosted gate was macOS runner acquisition. Inspecting the
+workflow showed its validation is exactly `cargo check --workspace
+--all-targets`. That full check passed locally on native ARM64, pinned Rust
+1.99.0, with the same clean source tree. Retain its log and the complete
+hosted-check snapshot as the fresh Mac validation; do not report the queued
+hosted job as a passing run. No test was disabled, no check status overridden,
+and shared history or protection rules were not changed.
