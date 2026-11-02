@@ -1,0 +1,14 @@
+{
+  "focused_suites": 6,
+  "passed": 76,
+  "ignored": 0,
+  "failed": 0,
+  "cpu_guest_control_tests": {
+    "passed": 4,
+    "ignored": 0
+  },
+  "original_v67_cases": 56,
+  "original_ecs_v66_cases": 16,
+  "original_a1200_v66_cases": 8,
+  "migration": "Only the new header and the legacy A2000 presence flag change; the existing A500+ v66 migration remains."
+}
