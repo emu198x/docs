@@ -1,0 +1,27 @@
+{
+  "base": "d01ec24c01aa734484c69976379b514450e371e1",
+  "head": "7d2dbddb6df39c4d17ca670dcdd9a6bd4d7d28e5",
+  "pr": 2233,
+  "files": [
+    {
+      "file": "crates/common-commodore-amiga-aga/src/agnus.rs",
+      "non_comment_sha256_before": "f1b2d94ffba00cae45f1e0eadac30e6a18540feebb5891a3fa0befebb7a3a691",
+      "non_comment_sha256_after": "f1b2d94ffba00cae45f1e0eadac30e6a18540feebb5891a3fa0befebb7a3a691"
+    },
+    {
+      "file": "crates/common-commodore-amiga/src/lib.rs",
+      "non_comment_sha256_before": "6347cbf78e0c87d528edc71acc349d184c20fd7733fdc25b2fdde55e9d2a7ec8",
+      "non_comment_sha256_after": "6347cbf78e0c87d528edc71acc349d184c20fd7733fdc25b2fdde55e9d2a7ec8"
+    },
+    {
+      "file": "crates/runtime-commodore-amiga/src/snapshot.rs",
+      "non_comment_sha256_before": "e50f1ebe946086c9401b07f9bc1c63caf9446c0b3e26f972d2edf6cd881a2c1f",
+      "non_comment_sha256_after": "e50f1ebe946086c9401b07f9bc1c63caf9446c0b3e26f972d2edf6cd881a2c1f"
+    }
+  ],
+  "negative_control": "Changing SNAPSHOT_VERSION from 67 to 68 in memory fails the equality check.",
+  "checks_observed": [
+    "cargo fmt --all --check: passed",
+    "python3 scripts/check-doc-links.py --self-test: 20 self-tests passed; existing reference/backlog checks passed"
+  ]
+}
