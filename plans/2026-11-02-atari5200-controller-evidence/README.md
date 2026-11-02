@@ -70,7 +70,7 @@ failures, 713 ignored and 110 skipped**. Every hosted gate passed except the
 macOS runner, which was twice cancelled before execution and remained queued
 on retry. That job's complete validation command is
 `cargo check --workspace --all-targets`. The identical command passed locally
-on native ARM64 using pinned Rust 1.99.0 and the exact current tree; compiler,
+on native ARM64 using pinned Rust 1.99.1 and the exact current tree; compiler,
 OS and tree identities are in `mac-workspace-check.log.gz`. This substitutes
 executed platform validation for the unavailable hosted runner; it does not
 claim the hosted check ran or passed. The before-merge check snapshot and
