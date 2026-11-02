@@ -207,3 +207,18 @@ devices. The public player remains A500+A501-only, so A1200 pages omit embeds.
 See the [A1200 scope and evidence](../systems/commodore/amiga/a1200.md) and
 [source PR #2226](https://github.com/emu198x/emu198x/pull/2226). The aggregate
 Amiga entry remains for the still-grouped OCS/ECS implementations.
+
+
+## A500+ and A600 PAL/NTSC
+
+Four fixed owners retain the existing profiles over shared ECS wiring. Each
+has seven direct invariant tests. Sixteen original v66 continuation cases
+check every native video/audio/timing observation and complete saved payloads,
+permitting only the approved version/RTC flag migration. The A500+ onboard
+clock is now visible without slow RAM. Amiga v67 saves explicitly read v66
+while preserving clock history; other models change only the header.
+
+Separate 650-field native captures reach each model's Kickstart insert-disk
+screen. This does not qualify every PCB, IDE/PCMCIA peripherals, Workbench,
+native menus or host audio devices. See [ECS scope and evidence](../systems/commodore/amiga/ecs.md)
+and [source PR #2230](https://github.com/emu198x/emu198x/pull/2230).

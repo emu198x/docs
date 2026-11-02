@@ -1,7 +1,8 @@
 # Commodore Amiga
 
 For the fixed regional A1200 owners and their current verification scope, see
-[A1200 PAL and NTSC](a1200.md).
+[A1200 PAL and NTSC](a1200.md). The [A500+ and A600 page](ecs.md) records their
+fixed owners, clock correction and v66-to-v67 migration.
 
 ## Status: Boots Workbench 1.3 (OCS) + 3.1 (AGA); deep chips, integration-limited
 

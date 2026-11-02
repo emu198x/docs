@@ -1,0 +1,40 @@
+{
+  "source_head": "2a6df1b9bfcec0b6718eac5355598b3f7c81c388",
+  "capture_binary_implementation_head": "be4406ba5733bfa24c6eb7231751d721bcecce2d",
+  "rebase_difference": "release versions/changelog only; implementation/fixtures identical",
+  "baseline_production": "85f99c20e45814daba85197bfc0ab662248b811b",
+  "baseline_tag": "evidence/amiga-ecs-v66-original-baseline",
+  "original_cases": 16,
+  "family_tests": {
+    "passed": 391,
+    "failed": 0,
+    "ignored": 31
+  },
+  "owner_tests": {
+    "passed_each": 7,
+    "owners": 4,
+    "ignored": 0
+  },
+  "firmware": {
+    "kick204.rom": {
+      "bytes": 524288,
+      "sha256": "d0b70e8a1772614b897f92c33cb299bed3fc8e3de488fc12f67f97fc2486eb79"
+    },
+    "kick205.rom": {
+      "bytes": 524288,
+      "sha256": "59e7df327a7a680e4f2f185e17161e3257bf41247911f34ddf6564399645d703"
+    }
+  },
+  "native_capture_fields": 650,
+  "initial_ntsc_250_fields": "white startup screen; not counted as boot qualification despite display-active detector",
+  "site_local_tests": 134,
+  "site_local_routes_checked": 125,
+  "release_manifest": "https://github.com/emu198x/emu198x/releases/download/v0.46.1/dist-manifest.json",
+  "release_manifest_http": 200,
+  "site_accessibility": {
+    "routes": 109,
+    "themes": 2,
+    "redirect_stubs_skipped": 16,
+    "defects": 0
+  }
+}
