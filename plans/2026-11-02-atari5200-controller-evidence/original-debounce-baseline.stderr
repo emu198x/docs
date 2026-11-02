@@ -1,0 +1,7 @@
+46 mismatches across 84 guest captures
+
+thread 'main' (223980727) panicked at /Users/stevehill/Projects/198x/Emu198x/.worktrees/board-audit-docs/plans/2026-10-11-atari5200-controller-evidence/probe.rs:91:5:
+assertion `left == right` failed: controller observations differ from connector routing and scan-enable invariants
+  left: 46
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

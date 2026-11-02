@@ -1,0 +1,12 @@
+{
+  "original_source": "d57ba23fafe0e28acb414c3ccc43fa040fd90243",
+  "original_worktree_status": "clean; detached at the exact commit",
+  "scanner_commit": "172835c599d70fc66a86e19d1bbe8a8d64b7d7dc",
+  "restored_media_commit": "2eea8407bd869b500fddd02f850c7121bbda7bde",
+  "probe_source": "../2026-10-11-atari5200-controller-evidence/probe.rs",
+  "probe_sha256": "a7330653d93982703c8805d269bb69f815d213b9748d878cbb3401e01545e505",
+  "baseline_build_note": "The definitive original capture uses a pristine detached worktree. Corrected local crates were cleaned and rebuilt before the definitive corrected capture; a prior shared-target cache collision was detected and discarded.",
+  "pacman_sha256": "5097b4763eefd8650781698e36b68bc0c9ae0863916312e6fa4364e4da104080",
+  "bios_sha256": "06b250f18983d058c0f156ce7ee88ae48b6eaf11e6f10f21dccf6ac7ffb6a6af",
+  "hardware_scope": "Four-port controller routing, reference scanner and real BIOS/cart boot. Not physical measurement, analogue calibration, trackball support or qualification of three separate boards."
+}
