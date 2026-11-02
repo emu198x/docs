@@ -66,3 +66,38 @@ untouched. The capture commit is d35b9f86c. Initial RTC and migration checks pas
 all 16 ECS cases permit only the version and onboard RTC bit, all A1200 payloads
 retain exact bytes after header translation, all 18 already-valid legacy
 profiles restore, and malformed v67 missing-RTC state rejects atomically.
+
+
+## Extraction verification
+
+[Source PR #2230](https://github.com/emu198x/emu198x/pull/2230) has four fixed
+owners over common ECS wiring. Local verification: 391 common/runtime tests
+passed, 31 existing ignores; seven exclusive direct tests passed per owner;
+strict selected Clippy, consumer checks, registry (97 machines / 34 shipping
+crates), fixture/link guards and regression-script checks passed. Frozen
+payloads and all packet comparisons retain the approved exact migration rules.
+
+The v0.46.1 release landed during this work. A linear rebase resolved only the
+workspace lock graph, with no registry-package or implementation changes.
+The pre-rebase head is retained in `pre-release-rebase.bundle`; the original
+capture helper is retained too. Final head:
+`2a6df1b9bfcec0b6718eac5355598b3f7c81c388`. CI run: 41426792660.
+
+Four 650-native-field captures were visually checked at the Kickstart 2.04 /
+2.05 insert-disk screen, using separately identified local ROMs. NTSC at 250
+fields was still white startup; the display-active flag alone did not establish
+boot. Keep those negative observations in the receipts. No third-party ROM
+bytes are included. These captures do not qualify every PCB, IDE/PCMCIA,
+Workbench, native menus or host audio devices.
+
+The public v0.46.1 manifest now returns HTTP 200. The combined six-board site
+branch passes 134 tests and a complete 125-route build, including prose and
+internal-link checks. Extend existing draft site PR #43 after source merge so
+its CI reads the four new registry owners. Keep all six ECS/AGA embeds blocked
+for the pinned A500+A501-only constructor. Accessibility and deployed-route
+checks remain to finish.
+
+
+The combined site's local accessibility sweep passed across 109 content routes
+in both themes, with zero defects and 16 redirect stubs excluded. The six-page
+site update can proceed after source merge: v0.46.1's public manifest is valid.
