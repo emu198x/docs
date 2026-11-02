@@ -33,7 +33,12 @@ frame/audio packet must match. Production readers reject old envelopes.
 An initial CI test runner exhausted disk and lost its diagnostic log before
 completing. `ci-disk-failure.json` preserves GitHub's annotation. The follow-up
 bounds test artifacts and records free disk around the build/cache steps.
-A complete executed CI ledger is required before merging.
+The scanner correction merged after all checks passed. Run 41475725007,
+head `1e25636aa`, records **8,573 passes, zero failures, 713 ignored and 110
+skipped tests**. The collector executed 1,155 test binaries. Free disk was
+84 GB after cache restoration and 78 GB after the test build. This is one
+cold-build observation, not a worst-case capacity bound. The full ledger and
+test-job log are retained here; the media follow-up still needs its gates.
 
 A local comparison also detected a shared-target Cargo cache collision
 between worktrees. The definitive corrected captures were taken only after
@@ -46,3 +51,27 @@ execution counts, verifies file hashes and rejects twelve malformed-capture
 controls. Passing this archive check alone does not establish a passing CI
 run or a qualified physical board. Analogue charging calibration, trackball
 behaviour and separate board ownership remain outside this correction.
+
+
+The media follow-up's pre-rebase head `0d380944e` also completed the full
+suite: **8,574 passes, zero failures, 713 ignored and 110 skipped**. Its macOS
+build was cancelled before acquiring a runner, with GitHub reporting ARM64
+capacity constraints. The ledger is retained separately. After the parent
+merged by rebase, the private media branch was rebased with an exact lease;
+the original head was first preserved in a verified remote evidence tag.
+The old and new heads have identical tree
+`1107a75b0078ff70489b365c0b003c90de5191d4`. Fresh checks on `701667175` are
+required before merging; this old ledger is not a claim that those checks
+have finished.
+
+
+The fresh full suite on `701667175` again records **8,574 passes, zero
+failures, 713 ignored and 110 skipped**. Every hosted gate passed except the
+macOS runner, which was twice cancelled before execution and remained queued
+on retry. That job's complete validation command is
+`cargo check --workspace --all-targets`. The identical command passed locally
+on native ARM64 using pinned Rust 1.99.0 and the exact current tree; compiler,
+OS and tree identities are in `mac-workspace-check.log.gz`. This substitutes
+executed platform validation for the unavailable hosted runner; it does not
+claim the hosted check ran or passed. The before-merge check snapshot and
+fresh complete test ledger are retained separately.
