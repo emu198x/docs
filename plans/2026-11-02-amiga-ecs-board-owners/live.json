@@ -1,0 +1,822 @@
+{
+  "base": "https://emu198x.github.io",
+  "routes_checked": 125,
+  "player_elements": 51,
+  "content_routes": 109,
+  "images": [
+    {
+      "path": "/media/boot/commodore-amiga-a500-plus-pal.png",
+      "sha256": "155bc232f9aed6d3681d3bb6fe528796019eee54ae80cb9fbd7c8a5ef68404b3",
+      "bytes": 5515
+    },
+    {
+      "path": "/media/boot/commodore-amiga-a500-plus-ntsc.png",
+      "sha256": "5ef1c4a840a1b2fa7e4a46714090ceccf7cd03448c99bb15fd4b117e0d39b11d",
+      "bytes": 5806
+    },
+    {
+      "path": "/media/boot/commodore-amiga-a600-pal.png",
+      "sha256": "1bfd6d82958b2e57d98e5038ad7dff769cc1ed7dd3cc4b2356cd0f9d4c488ea9",
+      "bytes": 5517
+    },
+    {
+      "path": "/media/boot/commodore-amiga-a600-ntsc.png",
+      "sha256": "084215c4c22fc386eb09a08f471e15bf3a54584efa98e265c9b62e0cedfb5040",
+      "bytes": 5834
+    },
+    {
+      "path": "/media/boot/commodore-amiga-a1200-pal.png",
+      "sha256": "b4232cb6d12b0658ede06efe24423854ced5979907e7feecd5229d69324d0936",
+      "bytes": 7911
+    },
+    {
+      "path": "/media/boot/commodore-amiga-a1200-ntsc.png",
+      "sha256": "7559d66076333794874d40d99c135ec1fb4375348c68090e8ebae93a0579d257",
+      "bytes": 7894
+    }
+  ],
+  "routes": [
+    {
+      "route": "/accuracy/",
+      "h1": "Accuracy progress",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/capture/",
+      "h1": "Capture",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/changelog/",
+      "h1": "Changelog",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/getting-started/",
+      "h1": "Getting started",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/",
+      "h1": "Documentation",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/mcp/",
+      "h1": "MCP",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/observability/",
+      "h1": "Observability",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/scripting/",
+      "h1": "Scripting",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/docs/status/current-system-usability/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/accuracy/"
+      ]
+    },
+    {
+      "route": "/downloads/",
+      "h1": "Download Emu198x",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/emulators/",
+      "h1": "Emu198x browser player",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/",
+      "h1": "Emu198x",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/acorn-atom/",
+      "h1": "acorn-atom",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/acorn-bbc-master-128/",
+      "h1": "acorn-bbc-master-128",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/acorn-bbc-micro/",
+      "h1": "acorn-bbc-micro",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/acorn-bbc-micro-b-plus/",
+      "h1": "acorn-bbc-micro-b-plus",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/acorn-electron/",
+      "h1": "acorn-electron",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/amstrad-cpc/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/amstrad-cpc464/"
+      ]
+    },
+    {
+      "route": "/systems/amstrad-cpc464/",
+      "h1": "amstrad-cpc464",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/amstrad-cpc6128/",
+      "h1": "amstrad-cpc6128",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/amstrad-cpc664/",
+      "h1": "amstrad-cpc664",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-1040st-ntsc/",
+      "h1": "atari-1040st-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-1040st-pal/",
+      "h1": "atari-1040st-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-130xe-ntsc/",
+      "h1": "atari-130xe-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-130xe-pal/",
+      "h1": "atari-130xe-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-2600/",
+      "h1": "atari-2600",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-2600-pal/",
+      "h1": "atari-2600-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-5200/",
+      "h1": "atari-5200",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-520st-ntsc/",
+      "h1": "atari-520st-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-520st-pal/",
+      "h1": "atari-520st-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-7800/",
+      "h1": "atari-7800",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-7800-pal/",
+      "h1": "atari-7800-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-800xl/",
+      "h1": "atari-800xl",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-800xl-pal/",
+      "h1": "atari-800xl-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/atari-st/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/atari-520st-pal/"
+      ]
+    },
+    {
+      "route": "/systems/coleco-colecovision/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/coleco-colecovision-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/coleco-colecovision-ntsc/",
+      "h1": "coleco-colecovision-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/coleco-colecovision-pal/",
+      "h1": "coleco-colecovision-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga/",
+      "h1": "commodore-amiga",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a1200-ntsc/",
+      "h1": "commodore-amiga-a1200-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a1200-pal/",
+      "h1": "commodore-amiga-a1200-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a500-plus-ntsc/",
+      "h1": "commodore-amiga-a500-plus-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a500-plus-pal/",
+      "h1": "commodore-amiga-a500-plus-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a600-ntsc/",
+      "h1": "commodore-amiga-a600-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-amiga-a600-pal/",
+      "h1": "commodore-amiga-a600-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c128/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/commodore-c128-pal/"
+      ]
+    },
+    {
+      "route": "/systems/commodore-c128-ntsc/",
+      "h1": "commodore-c128-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c128-pal/",
+      "h1": "commodore-c128-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c64/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/commodore-c64-pal-breadbin/"
+      ]
+    },
+    {
+      "route": "/systems/commodore-c64-ntsc-breadbin/",
+      "h1": "commodore-c64-ntsc-breadbin",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c64-pal-breadbin/",
+      "h1": "commodore-c64-pal-breadbin",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c64c-ntsc/",
+      "h1": "commodore-c64c-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-c64c-pal/",
+      "h1": "commodore-c64c-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-pet/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/commodore-pet-2001n-32k/"
+      ]
+    },
+    {
+      "route": "/systems/commodore-pet-2001n-32k/",
+      "h1": "commodore-pet-2001n-32k",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-pet-4032/",
+      "h1": "commodore-pet-4032",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-pet-8032/",
+      "h1": "commodore-pet-8032",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-vic-20/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/commodore-vic-20-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/commodore-vic-20-ntsc/",
+      "h1": "commodore-vic-20-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/commodore-vic-20-pal/",
+      "h1": "commodore-vic-20-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/dragon/",
+      "h1": "dragon",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/dragon-64/",
+      "h1": "dragon-64",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/",
+      "h1": "System matrix",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/jupiter-ace/",
+      "h1": "jupiter-ace",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/mattel-aquarius/",
+      "h1": "mattel-aquarius",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/mattel-aquarius-pal/",
+      "h1": "mattel-aquarius-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/memotech-mtx/",
+      "h1": "memotech-mtx",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/microsoft-msx1/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/"
+      ]
+    },
+    {
+      "route": "/systems/microsoft-msx2/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/"
+      ]
+    },
+    {
+      "route": "/systems/mitsubishi-ml-f80/",
+      "h1": "mitsubishi-ml-f80",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/mitsubishi-ml-fx1/",
+      "h1": "mitsubishi-ml-fx1",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-game-boy/",
+      "h1": "nintendo-game-boy",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-game-boy-advance/",
+      "h1": "nintendo-game-boy-advance",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-game-boy-color/",
+      "h1": "nintendo-game-boy-color",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-game-boy-pocket/",
+      "h1": "nintendo-game-boy-pocket",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-nes/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/nintendo-nes-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/nintendo-nes-ntsc/",
+      "h1": "nintendo-nes-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-nes-pal/",
+      "h1": "nintendo-nes-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-snes/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/nintendo-snes-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/nintendo-snes-ntsc/",
+      "h1": "nintendo-snes-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-snes-pal/",
+      "h1": "nintendo-snes-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy/",
+      "h1": "nintendo-super-game-boy",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/nintendo-super-game-boy-2/",
+      "h1": "nintendo-super-game-boy-2",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/oric/",
+      "h1": "oric",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/panasonic-fs-a1/",
+      "h1": "panasonic-fs-a1",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/philips-vg-8235-00/",
+      "h1": "philips-vg-8235-00",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-game-gear/",
+      "h1": "sega-game-gear",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-genesis/",
+      "h1": "sega-genesis",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-mark-iii/",
+      "h1": "sega-mark-iii",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system/",
+      "h1": "sega-master-system",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-1-ntsc/",
+      "h1": "sega-master-system-1-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-1-pal/",
+      "h1": "sega-master-system-1-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-2-ntsc/",
+      "h1": "sega-master-system-2-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-2-pal/",
+      "h1": "sega-master-system-2-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-japan/",
+      "h1": "sega-master-system-japan",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-master-system-pal/",
+      "h1": "sega-master-system-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-mega-drive/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/sega-genesis/"
+      ]
+    },
+    {
+      "route": "/systems/sega-mega-drive-europe/",
+      "h1": "sega-mega-drive-europe",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-mega-drive-japan/",
+      "h1": "sega-mega-drive-japan",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-sg-1000/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/sega-sg-1000-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/sega-sg-1000-ii-ntsc/",
+      "h1": "sega-sg-1000-ii-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-sg-1000-ntsc/",
+      "h1": "sega-sg-1000-ntsc",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sega-sg-1000-pal/",
+      "h1": "sega-sg-1000-pal",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sinclair-zx-spectrum/",
+      "h1": "sinclair-zx-spectrum",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sinclair-zx80/",
+      "h1": "sinclair-zx80",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sinclair-zx80-usa/",
+      "h1": "sinclair-zx80-usa",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sinclair-zx81/",
+      "h1": "sinclair-zx81",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/snk-neo-geo/",
+      "h1": "snk-neo-geo",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sony-hb-10/",
+      "h1": "sony-hb-10",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sony-hb-10p/",
+      "h1": "sony-hb-10p",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sony-hb-f1/",
+      "h1": "sony-hb-f1",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sord-m5/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/sord-m5-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/sord-m5-ntsc/",
+      "h1": "sord-m5-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/sord-m5-pal/",
+      "h1": "sord-m5-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/spectravideo-svi-328/",
+      "h1": "",
+      "players": 0,
+      "redirects": [
+        "0;url=/systems/spectravideo-svi-328-ntsc/"
+      ]
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-ntsc/",
+      "h1": "spectravideo-svi-328-ntsc",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/spectravideo-svi-328-pal/",
+      "h1": "spectravideo-svi-328-pal",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/tandy-coco/",
+      "h1": "tandy-coco",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/tandy-coco-2/",
+      "h1": "tandy-coco-2",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/tatung-einstein/",
+      "h1": "tatung-einstein",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/timex-tc2068/",
+      "h1": "timex-tc2068",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/timex-ts1000/",
+      "h1": "timex-ts1000",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/timex-ts2068/",
+      "h1": "timex-ts2068",
+      "players": 1,
+      "redirects": []
+    },
+    {
+      "route": "/systems/toshiba-hx-10/",
+      "h1": "toshiba-hx-10",
+      "players": 0,
+      "redirects": []
+    },
+    {
+      "route": "/systems/yamaha-cx5m/",
+      "h1": "yamaha-cx5m",
+      "players": 0,
+      "redirects": []
+    }
+  ]
+}

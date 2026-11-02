@@ -1,0 +1,49 @@
+{
+  "site_head": "4d678740752df67c2829ad71ef40afad9b294ffc",
+  "routes": 125,
+  "boards": [
+    {
+      "owner": "commodore-amiga-a500-plus-pal",
+      "h1": "commodore-amiga-a500-plus-pal",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a500-plus-pal.png",
+      "image_sha256": "155bc232f9aed6d3681d3bb6fe528796019eee54ae80cb9fbd7c8a5ef68404b3"
+    },
+    {
+      "owner": "commodore-amiga-a500-plus-ntsc",
+      "h1": "commodore-amiga-a500-plus-ntsc",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a500-plus-ntsc.png",
+      "image_sha256": "5ef1c4a840a1b2fa7e4a46714090ceccf7cd03448c99bb15fd4b117e0d39b11d"
+    },
+    {
+      "owner": "commodore-amiga-a600-pal",
+      "h1": "commodore-amiga-a600-pal",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a600-pal.png",
+      "image_sha256": "1bfd6d82958b2e57d98e5038ad7dff769cc1ed7dd3cc4b2356cd0f9d4c488ea9"
+    },
+    {
+      "owner": "commodore-amiga-a600-ntsc",
+      "h1": "commodore-amiga-a600-ntsc",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a600-ntsc.png",
+      "image_sha256": "084215c4c22fc386eb09a08f471e15bf3a54584efa98e265c9b62e0cedfb5040"
+    },
+    {
+      "owner": "commodore-amiga-a1200-pal",
+      "h1": "commodore-amiga-a1200-pal",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a1200-pal.png",
+      "image_sha256": "b4232cb6d12b0658ede06efe24423854ced5979907e7feecd5229d69324d0936"
+    },
+    {
+      "owner": "commodore-amiga-a1200-ntsc",
+      "h1": "commodore-amiga-a1200-ntsc",
+      "players": 0,
+      "image": "/media/boot/commodore-amiga-a1200-ntsc.png",
+      "image_sha256": "7559d66076333794874d40d99c135ec1fb4375348c68090e8ebae93a0579d257"
+    }
+  ],
+  "aggregate_player_count": 1
+}

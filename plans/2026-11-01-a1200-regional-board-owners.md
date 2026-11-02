@@ -205,3 +205,12 @@ The site blocker is recorded in
 [PR #43's retry comment](https://github.com/emu198x/emu198x.github.io/pull/43#issuecomment-6562868660).
 The docs task worktree will be removed after its exact-head merge; no workspace
 is required to retry the pushed site branch when the release becomes public.
+
+
+## Publication follow-up — 2026-11-02
+
+The public v0.46.1 release manifest resolved the former v0.46.0 gate. Site
+PR #43 is now merged and deployed, including both original A1200 captures and
+four new ECS pages. The [ECS continuation receipts](2026-11-02-amiga-ecs-board-owners.md)
+record passing site CI, all 125 live route checks and six byte-identical image
+checks. The A1200 pages still omit embeds for the A500+A501-only player.

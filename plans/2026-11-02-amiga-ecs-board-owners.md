@@ -101,3 +101,36 @@ checks remain to finish.
 The combined site's local accessibility sweep passed across 109 content routes
 in both themes, with zero defects and 16 redirect stubs excluded. The six-page
 site update can proceed after source merge: v0.46.1's public manifest is valid.
+
+
+## Source merged
+
+Exact-head run 41426792660 passed, including doctests, browser parity, private
+firmware checks and platform builds. The ledger gives each new owner seven
+exclusive passes, zero failures, skips or ignores; the frozen baseline, migration
+and dispatch binaries completed. PR #2230 merged linearly as
+`d01ec24c01aa734484c69976379b514450e371e1`; its tree is exactly the tested tree
+`8f76120cc179b8b64513cf007827231ed216e5b2`. The tested history is retained in
+remote tag `evidence/amiga-ecs-verified`. The source worktree and build cache
+were removed after inspection. Tracker #2144 records the four owners and keeps
+remaining board work open.
+
+
+## Published and verified
+
+Site PR #43 passed exact-head run 41430710183 with 134 passing tests, all
+125 routes built, and 109 content routes audited in both themes with zero
+accessibility defects. It merged linearly as
+`8c551a81190a2cfd5b3829c414e36274564eb508`; its tree matches the tested head.
+Deployment run 41431061358 passed. All 125 live routes match the expected
+headings, players and redirects; the six ECS/AGA image files match the
+committed bytes exactly. Each board page omits an embed, while the aggregate
+OCS page retains its player. `live.json` and the retained verifier record the
+checks. This also resolves the prior A1200 publication blocker.
+
+Source and site worktrees were inspected and removed; their verified remote
+evidence tags retain the tested histories. The clean shared-UI clone matched
+remote tag v0.5.0 before removal. The task build cache was removed, with before
+and after `df` receipts. Final docs receipts are merged before removing the
+docs worktree and the remaining disposable diagnostics. Primary checkouts,
+unrelated edits and locked worktrees are preserved.

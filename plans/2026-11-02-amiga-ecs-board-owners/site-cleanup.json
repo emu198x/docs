@@ -1,0 +1,19 @@
+{
+  "site_head": "4d678740752df67c2829ad71ef40afad9b294ffc",
+  "merge": "8c551a81190a2cfd5b3829c414e36274564eb508",
+  "remote_tag": "evidence/amiga-six-board-pages-verified",
+  "ignored_directories": [
+    ".astro/",
+    ".emu198x-source",
+    ".vale/",
+    "_198x-ui/",
+    "dist/",
+    "node_modules/",
+    "public/emulators/",
+    "public/fonts/",
+    "src/content/"
+  ],
+  "ui_verified_remote_tag": "v0.5.0",
+  "ui_clean": true,
+  "site_worktree_removed": true
+}

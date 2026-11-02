@@ -1,0 +1,216 @@
+{
+  "conclusion": "success",
+  "headSha": "8c551a81190a2cfd5b3829c414e36274564eb508",
+  "jobs": [
+    {
+      "completedAt": "2026-11-02T10:45:32Z",
+      "conclusion": "success",
+      "databaseId": 125229458445,
+      "name": "Pages / Build Astro site",
+      "startedAt": "2026-11-02T10:43:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-02T10:43:26Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-02T10:43:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:27Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-02T10:43:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:31Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v6",
+          "number": 3,
+          "startedAt": "2026-11-02T10:43:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:36Z",
+          "conclusion": "success",
+          "name": "Run npm ci",
+          "number": 4,
+          "startedAt": "2026-11-02T10:43:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:40Z",
+          "conclusion": "success",
+          "name": "Check before the build",
+          "number": 5,
+          "startedAt": "2026-11-02T10:43:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:46Z",
+          "conclusion": "success",
+          "name": "Run npm run build",
+          "number": 6,
+          "startedAt": "2026-11-02T10:43:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:44:20Z",
+          "conclusion": "success",
+          "name": "Install the browser the checks drive",
+          "number": 7,
+          "startedAt": "2026-11-02T10:43:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:45:26Z",
+          "conclusion": "success",
+          "name": "Check the built site in a browser",
+          "number": 8,
+          "startedAt": "2026-11-02T10:44:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:45:29Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-pages-artifact@v5",
+          "number": 9,
+          "startedAt": "2026-11-02T10:45:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:45:29Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v6",
+          "number": 17,
+          "startedAt": "2026-11-02T10:45:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:45:29Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 18,
+          "startedAt": "2026-11-02T10:45:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:45:29Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "startedAt": "2026-11-02T10:45:29Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41431061358/job/125229458445"
+    },
+    {
+      "completedAt": "2026-11-02T10:43:29Z",
+      "conclusion": "success",
+      "databaseId": 125229458831,
+      "name": "Pages / Workflows / actionlint",
+      "startedAt": "2026-11-02T10:43:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-02T10:43:25Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-02T10:43:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:26Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-02T10:43:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:26Z",
+          "conclusion": "success",
+          "name": "Install actionlint",
+          "number": 3,
+          "startedAt": "2026-11-02T10:43:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:27Z",
+          "conclusion": "success",
+          "name": "Install shellcheck",
+          "number": 4,
+          "startedAt": "2026-11-02T10:43:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:27Z",
+          "conclusion": "success",
+          "name": "Every workflow must pass actionlint",
+          "number": 5,
+          "startedAt": "2026-11-02T10:43:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:27Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 10,
+          "startedAt": "2026-11-02T10:43:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:43:27Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 11,
+          "startedAt": "2026-11-02T10:43:27Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41431061358/job/125229458831"
+    },
+    {
+      "completedAt": "2026-11-02T10:46:07Z",
+      "conclusion": "success",
+      "databaseId": 125230419646,
+      "name": "Pages / Deploy GitHub Pages",
+      "startedAt": "2026-11-02T10:45:47Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-02T10:45:59Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-02T10:45:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:46:06Z",
+          "conclusion": "success",
+          "name": "Deploy to GitHub Pages",
+          "number": 2,
+          "startedAt": "2026-11-02T10:45:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-02T10:46:06Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 3,
+          "startedAt": "2026-11-02T10:46:06Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x.github.io/actions/runs/41431061358/job/125230419646"
+    }
+  ],
+  "status": "completed"
+}

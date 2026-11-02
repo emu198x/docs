@@ -1,0 +1,7400 @@
+{
+  "ignored_reasons": [
+    {
+      "reason": "FIXTURE: ROM run \u2014 requires test-suites/nes-test-roms",
+      "tests": 38
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic; requires local nes-test-roms",
+      "tests": 32
+    },
+    {
+      "reason": "FIXTURE: blargg ROM run \u2014 requires test-suites/nes-test-roms",
+      "tests": 24
+    },
+    {
+      "reason": "FIXTURE: requires local nes-test-roms; run with --ignored",
+      "tests": 21
+    },
+    {
+      "reason": "FIXTURE: needs the 48K Spectrum ROM \u2014 run with --ignored",
+      "tests": 20
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-sid",
+      "tests": 14
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM at ~/.emu198x/roms/sinclair-zx-spectrum-48k/48.rom",
+      "tests": 10
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_SPECTRUM_48K_ROM",
+      "tests": 9
+    },
+    {
+      "reason": "FIXTURE: needs local kick12.rom",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: needs an 8 KB ZX81 ROM \u2014 run with --ignored",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: needs VIC-20 ROM set \u2014 run with --ignored",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: needs the C128 ROMs \u2014 run with --ignored",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs, 1541 ROM, and Bruce Lee D64 archive",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: differential harness; needs EMU198X_SPECTRUM_48K_ROM",
+      "tests": 7
+    },
+    {
+      "reason": "FIXTURE: requires local OS + BASIC ROMs at ~/.emu198x/roms/atari-800xl/",
+      "tests": 6
+    },
+    {
+      "reason": "FIXTURE: needs PET kernal/basic/editor/char ROMs \u2014 run with --ignored",
+      "tests": 6
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs plus 1541, 1571, and 1581 DOS ROMs",
+      "tests": 6
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-cia",
+      "tests": 6
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and the z80test corpus; runs for ~minute",
+      "tests": 6
+    },
+    {
+      "reason": "FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom",
+      "tests": 5
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs 48K ROM and Op Wolf SpeedLock 7 TZX",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: requires local +3 ROMs at ~/.emu198x/roms/amstrad-zx-spectrum-plus3/{plus3-0..3}.rom",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: needs the CPC464 firmware \u2014 run with --ignored",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: needs a 4 KB ZX80 ROM \u2014 run with --ignored",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: needs the real Atom ROM",
+      "tests": 5
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic harness; needs EMU198X_SPECTRUM_48K_ROM",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: needs local A1000 bootstrap ROM and Kickstart disk",
+      "tests": 5
+    },
+    {
+      "reason": "FIXTURE: needs KS 1.3 ROM \u2014 run with --ignored",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: needs BBC MOS + BASIC + SAA5050 ROMs \u2014 run with --ignored",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: needs BBC Micro MOS + BASIC ROMs \u2014 run with --ignored",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: needs Sord M5 BIOS + Dig Dug cart \u2014 run with --ignored",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: hash-pinned Acid800 standalone XEX/symbols and Atari XL OS/BASIC ROMs",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: needs an 8 KB ZX81 ROM \u2014 set EMU198X_ZX81_ROM",
+      "tests": 4
+    },
+    {
+      "reason": "FIXTURE: requires configured local Spectrum 48K ROM",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: needs the Jupiter Ace ROM \u2014 run with --ignored",
+      "tests": 3
+    },
+    {
+      "reason": "DIAGNOSTIC: capture original board states into an explicit empty directory",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: needs local Blargg Game Boy ROMs",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: needs the 32 KB CPC464 firmware \u2014 run with --ignored",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: needs shaker26.dsk and the CPC464 firmware \u2014 run with --ignored",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: differential harness; needs EMU198X_SPECTRUM_128K_ROM0 / ROM1",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: needs KS 1.3 ROM + Workbench 1.3 ADF locally",
+      "tests": 3
+    },
+    {
+      "reason": "FIXTURE: explicit Amiga Test Kit v1.12 accuracy gate",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-amiga/kick204.rom (KS 2.04 r37.175)",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-amiga/kick204.rom and ~/.emu198x/media/commodore-amiga/workbench-2.04.adf",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs the C64 ROMs \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs Oric Atmos / Oric-1 ROM (16 KB) \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs the VIC-20 VICE survey (EMU198X_VIC20_VICE_SURVEY_DIR) and VIC-20 ROMs (EMU198X_VIC20_ROM_DIR)",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs the Master 128 MOS 3.20 ROM set \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs ColecoVision BIOS \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local Pentagon ROMs at ~/.emu198x/roms/pentagon-128/pentagon-{0,1}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs 48K ROM and Head over Heels SpeedLock 2 TZX",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs at ~/.emu198x/roms/sinclair-zx-spectrum-128k/{128-0,128-1}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local +2 ROMs at ~/.emu198x/roms/amstrad-zx-spectrum-plus2/{plus2-0,plus2-1}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs Sord M5 BIOS + cart \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs Sord M5 BIOS \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs SVI-328 system ROM (32 KB) \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs VIC-20 KERNAL/BASIC/char ROMs \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs a 24 KB Acorn Atom combined ROM \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs a real Atom ROM \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs Aquarius BIOS + char + cart",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs Aquarius BASIC ROM (8 KB) \u2014 run with --ignored",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs AltirraOS at <EMU198X_ROMS_ROOT>/atari-800xl/{altirraos_xl,altirra_basic}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_ATARI_800XL_OS (official XL OS) and EMU198X_ATARI_800XL_OSS_DIR (TOSEC OSS dumps)",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_ZX_SPECTRUM_TESTS_DIR",
+      "tests": 2
+    },
+    {
+      "reason": "DIAGNOSTIC: capture original hardware only into a new explicit directory",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs at ~/.emu198x/roms/commodore-c64/",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-c64/{kernal,basic,chargen}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs and Thing on a Spring TAP archive",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs, 1541 ROM, and Bomb Jack D64 archive",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-c64 + ~/.emu198x/test-suites/c64-vicii",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local C64 + 1541 ROMs at ~/.emu198x/roms/commodore-c64/",
+      "tests": 2
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints the ROM's measured clock table",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local TC2048 ROM at ~/.emu198x/roms/timex-tc2048/tc2048.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: requires local TS2068 ROMs at ~/.emu198x/roms/timex-ts2068/{ts2068,exrom}.rom",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs AROS at <EMU198X_ROMS_ROOT>/commodore-amiga/aros-amiga-m68k-{rom,ext}.bin",
+      "tests": 2
+    },
+    {
+      "reason": "FIXTURE: needs the SingleStepTests 680x0 corpus; see fixture_root",
+      "tests": 2
+    },
+    {
+      "reason": "SLOW: the always-on subset covers every mode/model; run for full sweeps",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: explicit 900-frame Workbench 1.3 boot diagnostic",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local kick12.rom and workbench-1.2.adf",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: explicit programmable-HBLANK corpus consensus and measurement gate",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local A1000 bootstrap ROM, Kickstart disk, and Workbench 1.2 disk",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-amiga/kick13.rom",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 disassemble KS 2.04 cold-boot from $F800D2",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/commodore-amiga/kick13.rom and ~/.emu198x/media/commodore-amiga/workbench-1.3.adf",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: explicit Amiga Test Kit v1.21 A1200 AGA reference-pattern gate",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: explicit Amiga Test Kit v1.21 reference-pattern gate",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local KS 1.3 ROM + WB 1.3 disk",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: explicit project-authored Paula waveform corpus gate",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: explicit 900-frame no-disk PC diagnostic",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: explicit ten-run programmable-HBLANK write-timing UAE-family compatibility gate",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 + 1541/1571/1581 DOS ROMs at ~/.emu198x/roms/commodore-c64/",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: aes.zip and mslug.zip in EMU198X_NEOGEO_MAME_ROMS; exact identities in the #2133 receipt",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Einstein MOS \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local Aquarius BIOS and character ROM in ~/.emu198x/roms/mattel-aquarius",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an Atari 5200 cart \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: writes original pre-split states to EMU198X_DRAGON_BOARD_CAPTURE; replay runs normally",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Color BASIC 1.2 and Extended Color BASIC 1.1 in EMU198X_COCO_BOARD_ROM_DIR",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Color BASIC 1.3 and Extended Color BASIC 1.1 in EMU198X_COCO_BOARD_ROM_DIR",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the stock 4 KiB ZX80 ROM \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: set EMU198X_ATARI_XEX and EMU198X_ATARI_OS",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local OS and BASIC ROMs in ~/.emu198x/roms/atari-800xl",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a real .atm \u2014 set EMU198X_ATOM_ATM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires original ColecoVision BIOS in EMU198X_COLECO_BIOS",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the SVI-328 BIOS and a real CAS/TOSEC title ZIP",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the 32 KB SVI-328 BIOS/BASIC \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an 8 KB Jupiter Ace Forth ROM \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs MTX OS+BASIC+ASSEM ROM \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a Memotech MTX ROM set \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs VIC-20 ROMs \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: set VIC20_SURVEY_CASE=<id> and VIC20_SURVEY_OUT=<dir>",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: needs VIC-20 survey/ROM fixtures and VIC20_TIMING_OUT=<new directory>",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs MSX BIOS \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_{main_msx2,main_msx2_eu,sub}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs identified f1bios.rom and f1ext.rom in EMU198X_MSX_HBF1_ROM_DIR",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the Electron OS, BASIC and ADFS 1.00 ROMs \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the Electron OS+BASIC ROMs and a UEF (ACORN_UEF) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Acorn Electron OS ROM + BASIC ROM (16 KB each) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Tatung Einstein X-TAL MOS ROM (8 KB) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the Einstein MOS and a bootable CPCEMU .dsk \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Tatung Einstein X-TAL MOS ROM \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the B+ OS 2.00, BASIC and Acorn DFS 2.26 ROMs \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the BBC MOS+BASIC ROMs \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an Atari 7800 cart \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the Supercharger Phaser Patrol proto \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an Atari 2600 cart \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local Manic Miner TZX zip",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and Jet Set Willy TZX zip",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and Manic Miner TZX zip",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the zx-spectrum-tests corpus and 128K ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the zx-spectrum-tests corpus and 128K ROMs; ~5 min",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the zx-spectrum-tests corpus and grey +2 ROMs; ~8 min",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 pin the instruction that writes the diverging $74A4-$74A5 word in Rainbow Islands",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/sinclair-zx-spectrum-48k/48.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires genuine 48K ROM; explicitly fails if unavailable",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 boots six variants from ~/.emu198x/roms and prints banners",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 TS2068 screen-RAM dump (standard + high-res addresses)",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires ~/.emu198x/roms/scorpion-zs256/scorpion-{0..3}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local Spectrum 128K ROMs at ~/.emu198x/roms/sinclair-zx-spectrum-128k/128-{0,1}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local +3 ROMs at ~/.emu198x/roms/amstrad-zx-spectrum-plus3/plus3-{0..3}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local Timex TC2048 ROM at ~/.emu198x/roms/timex-tc2048/tc2048.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the 128K ROMs and the Manic Miner TZX \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the +3 ROMs and the Manic Miner TZX \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs +3 ROMs and a local DSK reference library",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs +3 ROMs and a +3 DSK (default: Chase H.Q.)",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires the ZXSpectrum4.net suite and a 48K ROM; several minutes",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 direct N\u00d7IN A,($FE) timing audit against spec",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs 48K ROM and Bubble Bobble SpeedLock 5 TZX",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 are bytes $90ef-$90fe actually written, or leftover memory?",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 dump ALL Green Beret spans",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 needs Op Wolf SpeedLock 7 TZX",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 find what writes $01 to $feb3 in Green Beret",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 sweep verification for Speedlock-7 Green Beret",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 does Green Beret load if we lengthen its pause?",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs 48K ROM and the Head over Heels SpeedLock-2 TZX",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 Speedlock-2 is a known separate investigation",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 measure exact T-state offsets for block-7 end vs fill start",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 measure byte-decoder loop cost vs documented 54T/iter spec",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 measure fill duration end-to-end",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 try every Green Beret TZX rip in the archive",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 Green Beret black-screen investigation",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 probe Speedlock-7 titles with near-Green-Beret calibration pauses",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 comparison probe for working title (Op Wolf)",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 survey block-7 pause across all Speedlock-7 TZXs",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 log every $fd5f bit-shift hit + wipe trigger for Green Beret",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 what does HL contain at $fe9d for Green Beret vs Op Wolf?",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 log every $fd5f bit-shift hit + wipe trigger for Op Wolf (baseline)",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local +2B ROMs at ~/.emu198x/roms/amstrad-zx-spectrum-plus2b/{plus3-0..3}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic \u2014 trace IFF1 over time from a SkoolKit Rainbow Islands snapshot",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the 48K ROM and the Spectrum test-data set",
+      "tests": 1
+    },
+    {
+      "reason": "KNOWN LIMITATION: #324 full interrupt_time requires CGB; needs local Blargg ROM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local Blargg interrupt_time ROM; checks normal speed only",
+      "tests": 1
+    },
+    {
+      "reason": "KNOWN DIVERGENCE: #1728 DMG OAM corruption; needs local Blargg ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local dmg-acid2 ROM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local mooneye-gb acceptance ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: reports broad local mooneye coverage without gating CI",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: identified Super Mario Land Rev 1 and original DMG boot ROM; see commercial-screens README",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: identified Tetris Rev 1 and original DMG boot ROM; see commercial-screens README",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs European M5 BIOS and BASIC-I cartridge",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs European M5 BIOS and Dig Dug cartridge",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the CPC6128 firmware and AMSDOS \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the CPC664 firmware and AMSDOS \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the CPC464 firmware and a .cdt \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs shaker26.dsk and the CPC6128 firmware \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs shaker26.dsk \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the Atom ROM + a UEF \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Acorn Atom ROM \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: exact PET BASIC 2/4 firmware required",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Commodore PET ROM set \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an SG-1000 / Othello Multivision .sg cart \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs identified Sonic Rev 0 at EMU198X_GG_SONIC_REV0_ROM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an Atari 800XL OS ROM (atarixl.rom) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an 800XL OS ROM at <EMU198X_ROMS_ROOT>/atari-800xl/",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a ZX81 ROM and a .p image \u2014 set EMU198X_ZX81_P and run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a ZX80 .o in EMU198X_ZX80_TAPE \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an 8 KB ZX81 ROM and a WRX .p \u2014 set EMU198X_ZX81_WRX_P",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a ZX81 ROM and a capture from tools/zx8x-zesarux-capture/wrx-fixture.sh",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs an SMS cart \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires nestest.nes \u2014 set NES_TEST_DATA or place under ~/Projects/Emu198x-Unclean/...",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: uses local NES reference ROM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs, 1581 DOS ROM, and a D81 game archive",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires genuine C64 ROMs; explicitly fails if unavailable",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 + 1541 ROMs and a real G64 from the Time Capsule TOSEC",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs Open ROMs at <EMU198X_ROMS_ROOT>/commodore-c64/{kernal_generic,basic_generic,chargen_openroms}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs + 1581 DOS ROM + Batman D81 \u2014 run with --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs and Ghostbusters TAP archive",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs and Thinker TAP archive",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs and Thomas the Tank Engine TAP archive",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs at ~/.emu198x/roms/commodore-c64",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 and 1541 ROMs at ~/.emu198x/roms/commodore-c64",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs, 1541 ROM, and Aztec Challenge D64 archive",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: calibration aid: derives crop offset + palette match vs VICE reference",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: calibration aid: NTSC crop offset + match vs VICE 6567R8 reference",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: strict colour-fetch parity requires C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: colour-register pipeline parity requires C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: reports CPU store phases for one register",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: CPU store phases require C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: oracle: per-scanline match % vs VICE for VICII_DIFF_CAT (sprite-chain rebuild)",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: dumps framebuffer for the VICII_DUMP_PRG program",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: light-pen native parity requires C64 ROMs and VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: light-pen normalization requires VIC-II physical dumps",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: NTSC greydot phases require C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: sequencer-bug CPU phases require C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: strict sequencer-bug parity requires C64 ROMs + VIC-II testbench",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: sequencer: spritedma floor vs VICE (requires ROMs + testbench)",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: measure sprite split references across chip models",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: survey aid: measures match % across VICII testbench categories",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs + the Wolfgang Lorenz suite",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local C64 ROMs + 1541 ROM + Aztec D64 \u2014 run with --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the real 1571 DOS ROM at ~/.emu198x/roms/commodore-c64/1571.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs a 32 KB MSX1 BIOS (real or C-BIOS) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires real C64 BASIC/KERNAL/CHARGEN ROMs at ~/.emu198x/roms/commodore-c64",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_{main_msx2_eu,logo_msx2,sub}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: reads a real .uef from the vendored emulators tree \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs original DMG0/DMG/MGB boot ROMs via EMU198X_GB_BOOT_ROM_DIR",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_GB_BLARGG_DMG_SOUND (blargg dmg_sound/rom_singles) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: per-ROM pixel diff vs Mealybug DMG references (EMU198X_GB_MEALYBUG_ROOT)",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: searches skipped-boot DIV phase against local mooneye ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces boot_hwio reads against local mooneye ROMs",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces mooneye HBlank LY/SCX timing",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces mooneye PPU STAT interrupt timing",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces mooneye PPU mode0 timing with sprites",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: dumps mooneye LCD-on timing result arrays",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: dumps mooneye LCD-on write timing result table",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces mooneye STAT LYC LCD on/off behavior",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: traces mooneye VBlank/STAT interrupt ordering",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_GB_DMG_ACID2 (dmg-acid2.gb) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_GB_MEALYBUG_ROOT (mealybug ppu/ dir) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_GB_MOONEYE_ROOT (mooneye-test-suite) \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local Scorpion ROMs at ~/.emu198x/roms/scorpion-zs256/{scorpion-0..3}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs nestest.nes + nestest.log \u2014 run with --ignored",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints cpu_timing_test's on-screen result",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: lists DMA episodes bracketing the first OAM transfers",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: $4015 re-arms interleaved with DMC sample fetches",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints dmc_tests on-screen text",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints the DMA bus-op trace for diffing against Mesen2",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: survey: requires local nes-test-roms; run with --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: shows which PAL ROMs discriminate by region",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: find frame alignment against the golden",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: local cpu_interrupts_v2 ROMs; run with --release --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints screen text for triage",
+      "tests": 1
+    },
+    {
+      "reason": "SLOW: long survey; run with --release --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local Pentagon ROMs at ~/.emu198x/roms/pentagon-128/{pentagon-0,pentagon-1}.rom",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: differential harness; needs the +3 ROM set",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs the +3 ROM set",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: run a directory of blargg NES test ROMs (EMU198X_NES_SUITE)",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints combined OAM+DMC stall per DMC offset",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints DMC DMA length at each get/put alignment",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: diagnostic: prints OAM DMA length at each get/put alignment",
+      "tests": 1
+    },
+    {
+      "reason": "SLOW: full-frame arrival sweep; run with --release --ignored --nocapture",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs EMU198X_SPECTRUM_128K_ROM0 / ROM1",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local 128K ROMs and Float128k.tap; ~50 s at cycle-accurate tape speed",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and btime.tap",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128k ROM and eihalt.tap",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and floatspy.tap",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and floatspy.tap; long-running self-test",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and halt2int128.tap; ~100 s wall time",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and ptime.tap",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 128K ROMs and Super HALT Invaders TAP; ~120 s wall time",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and btime.tap; ~100 s wall time",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48k ROM and eihalt.tap",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and floatspy.tap; ~100 s wall time at cycle-accurate tape speed",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM, floatspy.tap, and EMU198X_SPECTRON_RESULTS_DIR; ~370 s",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and halt2int.tap; ~100 s wall time",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and ptime.tap; ~100 s wall time",
+      "tests": 1
+    },
+    {
+      "reason": "KNOWN LIMITATION (knowledge/decisions/io-contention-is-a-count-not-a-level.md): a withheld *run* merges charges landing one T-state apart, so this reports 1 where the gate charges 2 and 2 where it charges 4. Score I/O contention with io_contention_oracle, which is at zero. See the tables on this test. Also needs EMU198X_SPECTRUM_48K_ROM",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: requires local 48K ROM and Float48k.tap; ~50 s wall time at cycle-accurate tape speed",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: explicit 4,000-frame A1200 boot investigation",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs local A1000 bootstrap ROM, Kickstart disk, and kick12.rom",
+      "tests": 1
+    },
+    {
+      "reason": "SLOW: spins the drive a full revolution (~5M machine ticks); run with --include-ignored",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs KS 1.3 ROM locally",
+      "tests": 1
+    },
+    {
+      "reason": "FIXTURE: needs KS 1.2 ROM locally",
+      "tests": 1
+    },
+    {
+      "reason": "KNOWN DIVERGENCE (#856): the +2A mask yields at most 1 T-state, the declared pattern needs 7 \u2014 no alignment reconciles them",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: reports bus-sequence agreement per fixture file; needs the SingleStepTests 680x0 corpus",
+      "tests": 1
+    },
+    {
+      "reason": "DIAGNOSTIC: explicit wall-clock benchmark; not a correctness gate",
+      "tests": 1
+    }
+  ],
+  "packages": {
+    "common-acorn-bbc-micro": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 72,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-acorn-cassette": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-amstrad-cpc": {
+      "failed": 0,
+      "ignored": 16,
+      "passed": 49,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-atari-2600": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 70,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "common-atari-7800": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 49,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-atari-800xl": {
+      "failed": 0,
+      "ignored": 13,
+      "passed": 75,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-atari-st": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 25,
+      "skipped": 4,
+      "unexplained_ignored": 0
+    },
+    "common-coleco-colecovision": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-amiga": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 166,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-amiga-aga": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 47,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-amiga-ecs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 44,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-c128": {
+      "failed": 0,
+      "ignored": 4,
+      "passed": 23,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-c64": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 177,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-drive-gcr": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-iec": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-iec-drive": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 0,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-pet": {
+      "failed": 0,
+      "ignored": 7,
+      "passed": 29,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-commodore-vic-20": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 27,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-dragon": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 82,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-mattel-aquarius": {
+      "failed": 0,
+      "ignored": 4,
+      "passed": 27,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-msx": {
+      "failed": 0,
+      "ignored": 6,
+      "passed": 55,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-nintendo-game-boy": {
+      "failed": 0,
+      "ignored": 15,
+      "passed": 63,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-nintendo-nes": {
+      "failed": 0,
+      "ignored": 133,
+      "passed": 43,
+      "skipped": 2,
+      "unexplained_ignored": 0
+    },
+    "common-nintendo-snes": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 21,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sega-master-system": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 62,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sega-mega-drive": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 30,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sega-sg-1000": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 18,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx-spectrum": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 82,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx-spectrum-128k-class": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx-spectrum-48k-class": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 42,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx-spectrum-amstrad-class": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 47,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx80": {
+      "failed": 0,
+      "ignored": 7,
+      "passed": 25,
+      "skipped": 5,
+      "unexplained_ignored": 0
+    },
+    "common-sinclair-zx81": {
+      "failed": 0,
+      "ignored": 14,
+      "passed": 45,
+      "skipped": 3,
+      "unexplained_ignored": 0
+    },
+    "common-sord-m5": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-spectravideo-svi-328": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 22,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "common-timex-2068": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-acorn-atom": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-acorn-bbc-micro": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-acorn-electron": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-amiga": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 43,
+      "skipped": 7,
+      "unexplained_ignored": 0
+    },
+    "emu198x-amstrad-cpc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 19,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-amstrad-gate-array": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 24,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-app-icon": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 3,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-apple": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 20,
+      "skipped": 2,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-2600": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-5200": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-7800": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-800xl": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-antic": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 54,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-gtia": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 70,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-maria": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 65,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-pokey": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 47,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-sio": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-st": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-st-glue-mmu": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-st-shifter": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 8,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-atari-tia": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 51,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-c64": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-catalogue": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 44,
+      "skipped": 0,
+      "unexplained_ignored": 2
+    },
+    "emu198x-colecovision": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-agnus-aga": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-agnus-ecs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 78,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-agnus-ocs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 181,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-amiga-autoconfig": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 17,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-denise-aga": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 83,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-denise-ecs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 19,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-denise-ocs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 136,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-gary": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 39,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-gayle": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-paula-8364": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 120,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-pet": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-vic-20": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-commodore-web": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-dragon": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 74,
+      "skipped": 5,
+      "unexplained_ignored": 0
+    },
+    "emu198x-esp-at-modem": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-fleet-web": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 3,
+      "unexplained_ignored": 0
+    },
+    "emu198x-game-boy": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-game-boy-web": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 2,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-jupiter-ace": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-konami-scc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 18,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-mattel-aquarius": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-memotech-mtx": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-mos-sid-6581": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 84,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-msx": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-native-video": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 2,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nes": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 20,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nes-web": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 0,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nintendo-game-boy-apu": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 88,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nintendo-game-boy-mbc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 32,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nintendo-game-boy-ppu": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 26,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nintendo-game-boy-timer": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 19,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-nintendo-s-ppu": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-oric-atmos": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-peripheral-commodore-amiga-floppy": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 62,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-peripheral-commodore-amiga-keyboard": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 19,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-peripheral-ultimate-uci-net": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-pointer": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-ricoh-apu-2a03": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 77,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-ricoh-ppu-2c02": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 112,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-ricoh-rp5c01": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-315-5124": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 105,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-315-5313": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 88,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-game-gear": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-master-system": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-mega-drive": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sega-sg-1000": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-shell": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 295,
+      "skipped": 7,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sinclair-zx80": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sinclair-zx81": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sinclair-zx81-ula": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 2,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-snes": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-snk-lspc2": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 26,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-snk-neo-geo": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sony-s-dsp": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sony-spc700": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 9,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "emu198x-sord-m5": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-spectravideo-svi-328": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-spectrum": {
+      "failed": 0,
+      "ignored": 4,
+      "passed": 54,
+      "skipped": 5,
+      "unexplained_ignored": 0
+    },
+    "emu198x-spectrum-web": {
+      "failed": 0,
+      "ignored": 8,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-tape-playback": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 23,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-tatung-einstein": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-test-skip": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-ui": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 43,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-web": {
+      "failed": 0,
+      "ignored": 11,
+      "passed": 25,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-win-menu": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 2,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-yamaha-v9938": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 35,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-yamaha-ym2413": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-yamaha-ym2610": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "emu198x-yamaha-ym2612": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-acorn-adfs": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-acorn-uef": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 18,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-amstrad-cpc-cdt": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-amstrad-dsk": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-atari-st-msa": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-atari-st-st": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-nintendo-famicom-fds": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-nintendo-game-boy-cartridge": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-nintendo-nes-ines": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-nintendo-snes-sfc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-mdr": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-sna": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-snapshot": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 0,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-szx": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 8,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-tzx": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 1,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-sinclair-zx-spectrum-z80": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-snk-neo-geo-romset": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "format-tzx": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 30,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "gvp-a530": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-acorn-atom": {
+      "failed": 0,
+      "ignored": 11,
+      "passed": 37,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-acorn-bbc-master-128": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-acorn-bbc-micro": {
+      "failed": 0,
+      "ignored": 9,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-acorn-bbc-micro-b-plus": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-acorn-electron": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 37,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-amstrad-cpc464": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-amstrad-cpc6128": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-amstrad-cpc664": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-1040st-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-1040st-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-130xe-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-130xe-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-2600": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-2600-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-5200": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 45,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-520st-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-520st-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-7800": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-7800-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-800xl": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-atari-800xl-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-coleco-colecovision-ntsc": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-coleco-colecovision-pal": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-1541": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 71,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-1571": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 74,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-1581": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a1200-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a1200-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-plus-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a500-plus-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a600-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-a600-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-amiga-ocs": {
+      "failed": 0,
+      "ignored": 90,
+      "passed": 203,
+      "skipped": 33,
+      "unexplained_ignored": 76
+    },
+    "machine-commodore-c128-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-c128-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-c64-ntsc-breadbin": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-c64-pal-breadbin": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-c64c-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-c64c-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-pet-2001n-32k": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-pet-4032": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-pet-8032": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-vic-20-ntsc": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-commodore-vic-20-pal": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-dragon-32": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-dragon-64": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-jupiter-ace": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-mattel-aquarius": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-mattel-aquarius-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-memotech-mtx": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 23,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-mitsubishi-ml-f80": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-mitsubishi-ml-fx1": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-game-boy": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-game-boy-advance": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-game-boy-color": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-game-boy-pocket": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-nes-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-nes-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-snes-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-snes-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-super-game-boy": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-nintendo-super-game-boy-2": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-oric-atmos": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 46,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-panasonic-fs-a1": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-pentagon-128": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-philips-vg-8235-00": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-scorpion-zs256": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-game-gear": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-genesis": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-mark-iii": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-1-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-1-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-2-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-2-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-japan": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-master-system-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-mega-drive-europe": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-mega-drive-japan": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-sg-1000-ii-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-sg-1000-ntsc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sega-sg-1000-pal": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-128k": {
+      "failed": 0,
+      "ignored": 14,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-16k": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 9,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-48k": {
+      "failed": 0,
+      "ignored": 37,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-plus": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-plus2": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-plus2a": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-plus2b": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 5,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx-spectrum-plus3": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 6,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx80": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx80-usa": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sinclair-zx81": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-snk-neo-geo": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 16,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sony-hb-10": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sony-hb-10p": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sony-hb-f1": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sord-m5-ntsc": {
+      "failed": 0,
+      "ignored": 4,
+      "passed": 8,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-sord-m5-pal": {
+      "failed": 0,
+      "ignored": 6,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-spectravideo-svi-328-ntsc": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-spectravideo-svi-328-pal": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-tandy-coco-1": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-tandy-coco-2": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-tatung-einstein": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 26,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-timex-tc2048": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 8,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-timex-tc2068": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-timex-ts1000": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-timex-ts2068": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-toshiba-hx-10": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "machine-yamaha-cx5m": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "motorola-68000": {
+      "failed": 0,
+      "ignored": 9,
+      "passed": 100,
+      "skipped": 0,
+      "unexplained_ignored": 6
+    },
+    "motorola-68010": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 11,
+      "skipped": 0,
+      "unexplained_ignored": 3
+    },
+    "motorola-68020": {
+      "failed": 0,
+      "ignored": 5,
+      "passed": 301,
+      "skipped": 0,
+      "unexplained_ignored": 5
+    },
+    "motorola-68030": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 62,
+      "skipped": 0,
+      "unexplained_ignored": 2
+    },
+    "motorola-68040": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 7,
+      "skipped": 0,
+      "unexplained_ignored": 2
+    },
+    "motorola-68k-common": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 132,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "nintendo-nes-cartridge": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 150,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-acorn-atom": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 28,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-acorn-bbc-micro": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 27,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-acorn-electron": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 18,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-amstrad-cpc": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 29,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-atari-2600": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 27,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-atari-5200": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-atari-7800": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-atari-800xl": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 33,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-atari-st": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 30,
+      "skipped": 1,
+      "unexplained_ignored": 0
+    },
+    "runtime-coleco-colecovision": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 21,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-commodore-amiga": {
+      "failed": 0,
+      "ignored": 31,
+      "passed": 345,
+      "skipped": 2,
+      "unexplained_ignored": 0
+    },
+    "runtime-commodore-c64": {
+      "failed": 0,
+      "ignored": 78,
+      "passed": 145,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-commodore-pet": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 15,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-commodore-vic-20": {
+      "failed": 0,
+      "ignored": 10,
+      "passed": 25,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-dragon": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 40,
+      "skipped": 25,
+      "unexplained_ignored": 0
+    },
+    "runtime-jupiter-ace": {
+      "failed": 0,
+      "ignored": 3,
+      "passed": 12,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-mattel-aquarius": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 18,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-memotech-mtx": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 14,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-msx": {
+      "failed": 0,
+      "ignored": 4,
+      "passed": 40,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-nintendo-game-boy": {
+      "failed": 0,
+      "ignored": 11,
+      "passed": 66,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-nintendo-nes": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 82,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-nintendo-snes": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 31,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-oric-atmos": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 19,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-game-gear": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 4,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-master-system": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 20,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-master-system-class": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 10,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-mega-drive": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 34,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sega-sg-1000": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 22,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sinclair-zx-spectrum": {
+      "failed": 0,
+      "ignored": 62,
+      "passed": 379,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sinclair-zx80": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 22,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sinclair-zx81": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 25,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-snk-neo-geo": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 17,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-sord-m5": {
+      "failed": 0,
+      "ignored": 0,
+      "passed": 25,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-spectravideo-svi-328": {
+      "failed": 0,
+      "ignored": 2,
+      "passed": 21,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    },
+    "runtime-tatung-einstein": {
+      "failed": 0,
+      "ignored": 1,
+      "passed": 13,
+      "skipped": 0,
+      "unexplained_ignored": 0
+    }
+  },
+  "systems": [
+    {
+      "crate": "emu198x-acorn-atom",
+      "machine_crate": null,
+      "machine_id": "acorn-atom",
+      "own": {
+        "failed": 0,
+        "ignored": 12,
+        "passed": 77,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-acorn-atom",
+        "machine-acorn-atom",
+        "runtime-acorn-atom"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 394,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-acorn-cassette",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-acorn-uef"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-acorn-bbc-micro",
+      "machine_crate": "machine-acorn-bbc-master-128",
+      "machine_id": "acorn-bbc-master-128",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-acorn-bbc-master-128"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 507,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-acorn-bbc-micro",
+        "common-acorn-cassette",
+        "emu198x-acorn-bbc-micro",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-acorn-uef",
+        "runtime-acorn-bbc-micro"
+      ],
+      "shares_crate_with": [
+        "acorn-bbc-micro",
+        "acorn-bbc-micro-b-plus"
+      ]
+    },
+    {
+      "crate": "emu198x-acorn-bbc-micro",
+      "machine_crate": "machine-acorn-bbc-micro",
+      "machine_id": "acorn-bbc-micro",
+      "own": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-acorn-bbc-micro"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 507,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-acorn-bbc-micro",
+        "common-acorn-cassette",
+        "emu198x-acorn-bbc-micro",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-acorn-uef",
+        "runtime-acorn-bbc-micro"
+      ],
+      "shares_crate_with": [
+        "acorn-bbc-master-128",
+        "acorn-bbc-micro-b-plus"
+      ]
+    },
+    {
+      "crate": "emu198x-acorn-bbc-micro",
+      "machine_crate": "machine-acorn-bbc-micro-b-plus",
+      "machine_id": "acorn-bbc-micro-b-plus",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-acorn-bbc-micro-b-plus"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 507,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-acorn-bbc-micro",
+        "common-acorn-cassette",
+        "emu198x-acorn-bbc-micro",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-acorn-uef",
+        "runtime-acorn-bbc-micro"
+      ],
+      "shares_crate_with": [
+        "acorn-bbc-master-128",
+        "acorn-bbc-micro"
+      ]
+    },
+    {
+      "crate": "emu198x-acorn-electron",
+      "machine_crate": null,
+      "machine_id": "acorn-electron",
+      "own": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 71,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-acorn-electron",
+        "format-acorn-adfs",
+        "machine-acorn-electron",
+        "runtime-acorn-electron"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 394,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-acorn-cassette",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-acorn-uef"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-amstrad-cpc",
+      "machine_crate": "machine-amstrad-cpc464",
+      "machine_id": "amstrad-cpc464",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-amstrad-cpc464"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 16,
+        "passed": 552,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-amstrad-cpc",
+        "emu198x-amstrad-cpc",
+        "emu198x-amstrad-gate-array",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-cpc-cdt",
+        "format-amstrad-dsk",
+        "format-tzx",
+        "runtime-amstrad-cpc"
+      ],
+      "shares_crate_with": [
+        "amstrad-cpc6128",
+        "amstrad-cpc664"
+      ]
+    },
+    {
+      "crate": "emu198x-amstrad-cpc",
+      "machine_crate": "machine-amstrad-cpc6128",
+      "machine_id": "amstrad-cpc6128",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-amstrad-cpc6128"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 16,
+        "passed": 552,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-amstrad-cpc",
+        "emu198x-amstrad-cpc",
+        "emu198x-amstrad-gate-array",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-cpc-cdt",
+        "format-amstrad-dsk",
+        "format-tzx",
+        "runtime-amstrad-cpc"
+      ],
+      "shares_crate_with": [
+        "amstrad-cpc464",
+        "amstrad-cpc664"
+      ]
+    },
+    {
+      "crate": "emu198x-amstrad-cpc",
+      "machine_crate": "machine-amstrad-cpc664",
+      "machine_id": "amstrad-cpc664",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-amstrad-cpc664"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 16,
+        "passed": 552,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-amstrad-cpc",
+        "emu198x-amstrad-cpc",
+        "emu198x-amstrad-gate-array",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-cpc-cdt",
+        "format-amstrad-dsk",
+        "format-tzx",
+        "runtime-amstrad-cpc"
+      ],
+      "shares_crate_with": [
+        "amstrad-cpc464",
+        "amstrad-cpc6128"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-st",
+      "machine_crate": "machine-atari-1040st-ntsc",
+      "machine_id": "atari-1040st-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-1040st-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 693,
+        "skipped": 14,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-atari-st",
+        "emu198x-atari-st",
+        "emu198x-atari-st-glue-mmu",
+        "emu198x-atari-st-shifter",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-atari-st-msa",
+        "format-atari-st-st",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-atari-st"
+      ],
+      "shares_crate_with": [
+        "atari-1040st-pal",
+        "atari-520st-ntsc",
+        "atari-520st-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-st",
+      "machine_crate": "machine-atari-1040st-pal",
+      "machine_id": "atari-1040st-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-1040st-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 693,
+        "skipped": 14,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-atari-st",
+        "emu198x-atari-st",
+        "emu198x-atari-st-glue-mmu",
+        "emu198x-atari-st-shifter",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-atari-st-msa",
+        "format-atari-st-st",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-atari-st"
+      ],
+      "shares_crate_with": [
+        "atari-1040st-ntsc",
+        "atari-520st-ntsc",
+        "atari-520st-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-800xl",
+      "machine_crate": "machine-atari-130xe-ntsc",
+      "machine_id": "atari-130xe-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-130xe-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 19,
+        "passed": 676,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-800xl",
+        "emu198x-atari-800xl",
+        "emu198x-atari-antic",
+        "emu198x-atari-gtia",
+        "emu198x-atari-pokey",
+        "emu198x-atari-sio",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-800xl"
+      ],
+      "shares_crate_with": [
+        "atari-130xe-pal",
+        "atari-800xl",
+        "atari-800xl-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-800xl",
+      "machine_crate": "machine-atari-130xe-pal",
+      "machine_id": "atari-130xe-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-130xe-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 19,
+        "passed": 676,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-800xl",
+        "emu198x-atari-800xl",
+        "emu198x-atari-antic",
+        "emu198x-atari-gtia",
+        "emu198x-atari-pokey",
+        "emu198x-atari-sio",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-800xl"
+      ],
+      "shares_crate_with": [
+        "atari-130xe-ntsc",
+        "atari-800xl",
+        "atari-800xl-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-2600",
+      "machine_crate": "machine-atari-2600",
+      "machine_id": "atari-2600",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-2600"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 527,
+        "skipped": 10,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-2600",
+        "emu198x-atari-2600",
+        "emu198x-atari-tia",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-2600"
+      ],
+      "shares_crate_with": [
+        "atari-2600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-2600",
+      "machine_crate": "machine-atari-2600-pal",
+      "machine_id": "atari-2600-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-2600-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 527,
+        "skipped": 10,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-2600",
+        "emu198x-atari-2600",
+        "emu198x-atari-tia",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-2600"
+      ],
+      "shares_crate_with": [
+        "atari-2600"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-5200",
+      "machine_crate": null,
+      "machine_id": "atari-5200",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 67,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-atari-5200",
+        "machine-atari-5200",
+        "runtime-atari-5200"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 537,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-atari-antic",
+        "emu198x-atari-gtia",
+        "emu198x-atari-pokey",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-atari-st",
+      "machine_crate": "machine-atari-520st-ntsc",
+      "machine_id": "atari-520st-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-520st-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 693,
+        "skipped": 14,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-atari-st",
+        "emu198x-atari-st",
+        "emu198x-atari-st-glue-mmu",
+        "emu198x-atari-st-shifter",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-atari-st-msa",
+        "format-atari-st-st",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-atari-st"
+      ],
+      "shares_crate_with": [
+        "atari-1040st-ntsc",
+        "atari-1040st-pal",
+        "atari-520st-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-st",
+      "machine_crate": "machine-atari-520st-pal",
+      "machine_id": "atari-520st-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-520st-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 693,
+        "skipped": 14,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-atari-st",
+        "emu198x-atari-st",
+        "emu198x-atari-st-glue-mmu",
+        "emu198x-atari-st-shifter",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-atari-st-msa",
+        "format-atari-st-st",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-atari-st"
+      ],
+      "shares_crate_with": [
+        "atari-1040st-ntsc",
+        "atari-1040st-pal",
+        "atari-520st-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-7800",
+      "machine_crate": "machine-atari-7800",
+      "machine_id": "atari-7800",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-7800"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 604,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-7800",
+        "emu198x-atari-7800",
+        "emu198x-atari-maria",
+        "emu198x-atari-pokey",
+        "emu198x-atari-tia",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-7800"
+      ],
+      "shares_crate_with": [
+        "atari-7800-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-7800",
+      "machine_crate": "machine-atari-7800-pal",
+      "machine_id": "atari-7800-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-7800-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 604,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-7800",
+        "emu198x-atari-7800",
+        "emu198x-atari-maria",
+        "emu198x-atari-pokey",
+        "emu198x-atari-tia",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-7800"
+      ],
+      "shares_crate_with": [
+        "atari-7800"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-800xl",
+      "machine_crate": "machine-atari-800xl",
+      "machine_id": "atari-800xl",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-800xl"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 19,
+        "passed": 676,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-800xl",
+        "emu198x-atari-800xl",
+        "emu198x-atari-antic",
+        "emu198x-atari-gtia",
+        "emu198x-atari-pokey",
+        "emu198x-atari-sio",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-800xl"
+      ],
+      "shares_crate_with": [
+        "atari-130xe-ntsc",
+        "atari-130xe-pal",
+        "atari-800xl-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-atari-800xl",
+      "machine_crate": "machine-atari-800xl-pal",
+      "machine_id": "atari-800xl-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-atari-800xl-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 19,
+        "passed": 676,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-atari-800xl",
+        "emu198x-atari-800xl",
+        "emu198x-atari-antic",
+        "emu198x-atari-gtia",
+        "emu198x-atari-pokey",
+        "emu198x-atari-sio",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-atari-800xl"
+      ],
+      "shares_crate_with": [
+        "atari-130xe-ntsc",
+        "atari-130xe-pal",
+        "atari-800xl"
+      ]
+    },
+    {
+      "crate": "emu198x-colecovision",
+      "machine_crate": "machine-coleco-colecovision-ntsc",
+      "machine_id": "coleco-colecovision-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-coleco-colecovision-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 413,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-coleco-colecovision",
+        "emu198x-colecovision",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-coleco-colecovision"
+      ],
+      "shares_crate_with": [
+        "coleco-colecovision-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-colecovision",
+      "machine_crate": "machine-coleco-colecovision-pal",
+      "machine_id": "coleco-colecovision-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-coleco-colecovision-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 413,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-coleco-colecovision",
+        "emu198x-colecovision",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-coleco-colecovision"
+      ],
+      "shares_crate_with": [
+        "coleco-colecovision-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": null,
+      "machine_id": "commodore-amiga",
+      "own": {
+        "failed": 0,
+        "ignored": 134,
+        "passed": 2060,
+        "skipped": 43,
+        "unexplained_ignored": 88
+      },
+      "own_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-aga",
+        "common-commodore-amiga-ecs",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-aga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-aga",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "gvp-a530",
+        "machine-commodore-amiga-a1200-ntsc",
+        "machine-commodore-amiga-a1200-pal",
+        "machine-commodore-amiga-a500-plus-ntsc",
+        "machine-commodore-amiga-a500-plus-pal",
+        "machine-commodore-amiga-a600-ntsc",
+        "machine-commodore-amiga-a600-pal",
+        "machine-commodore-amiga-ocs",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "runtime-commodore-amiga"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 598,
+        "skipped": 9,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "motorola-68000",
+        "motorola-68k-common"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-ntsc",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a1200-ntsc",
+      "machine_id": "commodore-amiga-a1200-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a1200-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 143,
+        "passed": 2572,
+        "skipped": 52,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-aga",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-aga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-aga",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-ntsc",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a1200-pal",
+      "machine_id": "commodore-amiga-a1200-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a1200-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 143,
+        "passed": 2572,
+        "skipped": 52,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-aga",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-aga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-aga",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-ntsc",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a500-plus-ntsc",
+      "machine_id": "commodore-amiga-a500-plus-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a500-plus-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 142,
+        "passed": 2471,
+        "skipped": 51,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-ecs",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-ntsc",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a500-plus-pal",
+      "machine_id": "commodore-amiga-a500-plus-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a500-plus-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 142,
+        "passed": 2471,
+        "skipped": 51,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-ecs",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a600-ntsc",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a600-ntsc",
+      "machine_id": "commodore-amiga-a600-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a600-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 142,
+        "passed": 2471,
+        "skipped": 51,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-ecs",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-amiga",
+      "machine_crate": "machine-commodore-amiga-a600-pal",
+      "machine_id": "commodore-amiga-a600-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a600-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 142,
+        "passed": 2471,
+        "skipped": 51,
+        "unexplained_ignored": 94
+      },
+      "shared_crates": [
+        "common-commodore-amiga",
+        "common-commodore-amiga-ecs",
+        "emu198x-amiga",
+        "emu198x-commodore-agnus-ecs",
+        "emu198x-commodore-agnus-ocs",
+        "emu198x-commodore-amiga-autoconfig",
+        "emu198x-commodore-denise-ecs",
+        "emu198x-commodore-denise-ocs",
+        "emu198x-commodore-gary",
+        "emu198x-commodore-gayle",
+        "emu198x-commodore-paula-8364",
+        "emu198x-native-video",
+        "emu198x-peripheral-commodore-amiga-floppy",
+        "emu198x-peripheral-commodore-amiga-keyboard",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "gvp-a530",
+        "machine-commodore-amiga-ocs",
+        "motorola-68000",
+        "motorola-68010",
+        "motorola-68020",
+        "motorola-68030",
+        "motorola-68040",
+        "motorola-68k-common",
+        "runtime-commodore-amiga"
+      ],
+      "shares_crate_with": [
+        "commodore-amiga",
+        "commodore-amiga-a1200-ntsc",
+        "commodore-amiga-a1200-pal",
+        "commodore-amiga-a500-plus-ntsc",
+        "commodore-amiga-a500-plus-pal",
+        "commodore-amiga-a600-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c128-ntsc",
+      "machine_id": "commodore-c128-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c128-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 88,
+        "passed": 1024,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c128",
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-pal",
+        "commodore-c64-ntsc-breadbin",
+        "commodore-c64-pal-breadbin",
+        "commodore-c64c-ntsc",
+        "commodore-c64c-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c128-pal",
+      "machine_id": "commodore-c128-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c128-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 88,
+        "passed": 1024,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c128",
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-ntsc",
+        "commodore-c64-ntsc-breadbin",
+        "commodore-c64-pal-breadbin",
+        "commodore-c64c-ntsc",
+        "commodore-c64c-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c64-ntsc-breadbin",
+      "machine_id": "commodore-c64-ntsc-breadbin",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c64-ntsc-breadbin"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 84,
+        "passed": 1001,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-ntsc",
+        "commodore-c128-pal",
+        "commodore-c64-pal-breadbin",
+        "commodore-c64c-ntsc",
+        "commodore-c64c-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c64-pal-breadbin",
+      "machine_id": "commodore-c64-pal-breadbin",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c64-pal-breadbin"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 84,
+        "passed": 1001,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-ntsc",
+        "commodore-c128-pal",
+        "commodore-c64-ntsc-breadbin",
+        "commodore-c64c-ntsc",
+        "commodore-c64c-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c64c-ntsc",
+      "machine_id": "commodore-c64c-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c64c-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 84,
+        "passed": 1001,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-ntsc",
+        "commodore-c128-pal",
+        "commodore-c64-ntsc-breadbin",
+        "commodore-c64-pal-breadbin",
+        "commodore-c64c-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-c64",
+      "machine_crate": "machine-commodore-c64c-pal",
+      "machine_id": "commodore-c64c-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-c64c-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 84,
+        "passed": 1001,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-c64",
+        "common-commodore-drive-gcr",
+        "common-commodore-iec",
+        "common-commodore-iec-drive",
+        "emu198x-c64",
+        "emu198x-esp-at-modem",
+        "emu198x-mos-sid-6581",
+        "emu198x-native-video",
+        "emu198x-peripheral-ultimate-uci-net",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "machine-commodore-1541",
+        "machine-commodore-1571",
+        "machine-commodore-1581",
+        "runtime-commodore-c64"
+      ],
+      "shares_crate_with": [
+        "commodore-c128-ntsc",
+        "commodore-c128-pal",
+        "commodore-c64-ntsc-breadbin",
+        "commodore-c64-pal-breadbin",
+        "commodore-c64c-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-commodore-pet",
+      "machine_crate": "machine-commodore-pet-2001n-32k",
+      "machine_id": "commodore-pet-2001n-32k",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-pet-2001n-32k"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 8,
+        "passed": 421,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-pet",
+        "emu198x-commodore-pet",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-commodore-pet"
+      ],
+      "shares_crate_with": [
+        "commodore-pet-4032",
+        "commodore-pet-8032"
+      ]
+    },
+    {
+      "crate": "emu198x-commodore-pet",
+      "machine_crate": "machine-commodore-pet-4032",
+      "machine_id": "commodore-pet-4032",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-pet-4032"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 8,
+        "passed": 421,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-pet",
+        "emu198x-commodore-pet",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-commodore-pet"
+      ],
+      "shares_crate_with": [
+        "commodore-pet-2001n-32k",
+        "commodore-pet-8032"
+      ]
+    },
+    {
+      "crate": "emu198x-commodore-pet",
+      "machine_crate": "machine-commodore-pet-8032",
+      "machine_id": "commodore-pet-8032",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-pet-8032"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 8,
+        "passed": 421,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-pet",
+        "emu198x-commodore-pet",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-commodore-pet"
+      ],
+      "shares_crate_with": [
+        "commodore-pet-2001n-32k",
+        "commodore-pet-4032"
+      ]
+    },
+    {
+      "crate": "emu198x-commodore-vic-20",
+      "machine_crate": "machine-commodore-vic-20-ntsc",
+      "machine_id": "commodore-vic-20-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-vic-20-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 443,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-vic-20",
+        "emu198x-commodore-vic-20",
+        "emu198x-esp-at-modem",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-commodore-vic-20"
+      ],
+      "shares_crate_with": [
+        "commodore-vic-20-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-commodore-vic-20",
+      "machine_crate": "machine-commodore-vic-20-pal",
+      "machine_id": "commodore-vic-20-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-vic-20-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 443,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-commodore-vic-20",
+        "emu198x-commodore-vic-20",
+        "emu198x-esp-at-modem",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-commodore-vic-20"
+      ],
+      "shares_crate_with": [
+        "commodore-vic-20-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-dragon",
+      "machine_crate": "machine-dragon-32",
+      "machine_id": "dragon",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-dragon-32"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 562,
+        "skipped": 39,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-dragon",
+        "emu198x-dragon",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-dragon"
+      ],
+      "shares_crate_with": [
+        "dragon-64",
+        "tandy-coco",
+        "tandy-coco-2"
+      ]
+    },
+    {
+      "crate": "emu198x-dragon",
+      "machine_crate": "machine-dragon-64",
+      "machine_id": "dragon-64",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-dragon-64"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 562,
+        "skipped": 39,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-dragon",
+        "emu198x-dragon",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-dragon"
+      ],
+      "shares_crate_with": [
+        "dragon",
+        "tandy-coco",
+        "tandy-coco-2"
+      ]
+    },
+    {
+      "crate": "emu198x-jupiter-ace",
+      "machine_crate": null,
+      "machine_id": "jupiter-ace",
+      "own": {
+        "failed": 0,
+        "ignored": 4,
+        "passed": 55,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-jupiter-ace",
+        "machine-jupiter-ace",
+        "runtime-jupiter-ace"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 366,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-mattel-aquarius",
+      "machine_crate": "machine-mattel-aquarius",
+      "machine_id": "mattel-aquarius",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-mattel-aquarius"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 5,
+        "passed": 424,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-mattel-aquarius",
+        "emu198x-mattel-aquarius",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-mattel-aquarius"
+      ],
+      "shares_crate_with": [
+        "mattel-aquarius-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-mattel-aquarius",
+      "machine_crate": "machine-mattel-aquarius-pal",
+      "machine_id": "mattel-aquarius-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 5,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-mattel-aquarius-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 5,
+        "passed": 424,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-mattel-aquarius",
+        "emu198x-mattel-aquarius",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-mattel-aquarius"
+      ],
+      "shares_crate_with": [
+        "mattel-aquarius"
+      ]
+    },
+    {
+      "crate": "emu198x-memotech-mtx",
+      "machine_crate": null,
+      "machine_id": "memotech-mtx",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 49,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-memotech-mtx",
+        "machine-memotech-mtx",
+        "runtime-memotech-mtx"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 366,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-mitsubishi-ml-f80",
+      "machine_id": "mitsubishi-ml-f80",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-mitsubishi-ml-f80"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-mitsubishi-ml-fx1",
+      "machine_id": "mitsubishi-ml-fx1",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-mitsubishi-ml-fx1"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-game-boy",
+      "machine_id": "nintendo-game-boy",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-game-boy"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy-advance",
+        "nintendo-game-boy-color",
+        "nintendo-game-boy-pocket",
+        "nintendo-super-game-boy",
+        "nintendo-super-game-boy-2"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-game-boy-advance",
+      "machine_id": "nintendo-game-boy-advance",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-game-boy-advance"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy",
+        "nintendo-game-boy-color",
+        "nintendo-game-boy-pocket",
+        "nintendo-super-game-boy",
+        "nintendo-super-game-boy-2"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-game-boy-color",
+      "machine_id": "nintendo-game-boy-color",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 1,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-game-boy-color"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy",
+        "nintendo-game-boy-advance",
+        "nintendo-game-boy-pocket",
+        "nintendo-super-game-boy",
+        "nintendo-super-game-boy-2"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-game-boy-pocket",
+      "machine_id": "nintendo-game-boy-pocket",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-game-boy-pocket"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy",
+        "nintendo-game-boy-advance",
+        "nintendo-game-boy-color",
+        "nintendo-super-game-boy",
+        "nintendo-super-game-boy-2"
+      ]
+    },
+    {
+      "crate": "emu198x-nes",
+      "machine_crate": "machine-nintendo-nes-ntsc",
+      "machine_id": "nintendo-nes-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-nes-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 135,
+        "passed": 873,
+        "skipped": 11,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-nes",
+        "emu198x-native-video",
+        "emu198x-nes",
+        "emu198x-pointer",
+        "emu198x-ricoh-apu-2a03",
+        "emu198x-ricoh-ppu-2c02",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "format-nintendo-famicom-fds",
+        "format-nintendo-nes-ines",
+        "nintendo-nes-cartridge",
+        "runtime-nintendo-nes"
+      ],
+      "shares_crate_with": [
+        "nintendo-nes-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-nes",
+      "machine_crate": "machine-nintendo-nes-pal",
+      "machine_id": "nintendo-nes-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-nes-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 135,
+        "passed": 873,
+        "skipped": 11,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-nes",
+        "emu198x-native-video",
+        "emu198x-nes",
+        "emu198x-pointer",
+        "emu198x-ricoh-apu-2a03",
+        "emu198x-ricoh-ppu-2c02",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "format-nintendo-famicom-fds",
+        "format-nintendo-nes-ines",
+        "nintendo-nes-cartridge",
+        "runtime-nintendo-nes"
+      ],
+      "shares_crate_with": [
+        "nintendo-nes-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-snes",
+      "machine_crate": "machine-nintendo-snes-ntsc",
+      "machine_id": "nintendo-snes-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-snes-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 467,
+        "skipped": 10,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-snes",
+        "emu198x-native-video",
+        "emu198x-nintendo-s-ppu",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-snes",
+        "emu198x-sony-s-dsp",
+        "emu198x-sony-spc700",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-snes-sfc",
+        "runtime-nintendo-snes"
+      ],
+      "shares_crate_with": [
+        "nintendo-snes-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-snes",
+      "machine_crate": "machine-nintendo-snes-pal",
+      "machine_id": "nintendo-snes-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-snes-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 467,
+        "skipped": 10,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-snes",
+        "emu198x-native-video",
+        "emu198x-nintendo-s-ppu",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-snes",
+        "emu198x-sony-s-dsp",
+        "emu198x-sony-spc700",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-snes-sfc",
+        "runtime-nintendo-snes"
+      ],
+      "shares_crate_with": [
+        "nintendo-snes-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-super-game-boy",
+      "machine_id": "nintendo-super-game-boy",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-super-game-boy"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy",
+        "nintendo-game-boy-advance",
+        "nintendo-game-boy-color",
+        "nintendo-game-boy-pocket",
+        "nintendo-super-game-boy-2"
+      ]
+    },
+    {
+      "crate": "emu198x-game-boy",
+      "machine_crate": "machine-nintendo-super-game-boy-2",
+      "machine_id": "nintendo-super-game-boy-2",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-nintendo-super-game-boy-2"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 26,
+        "passed": 689,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-nintendo-game-boy",
+        "emu198x-game-boy",
+        "emu198x-native-video",
+        "emu198x-nintendo-game-boy-apu",
+        "emu198x-nintendo-game-boy-mbc",
+        "emu198x-nintendo-game-boy-ppu",
+        "emu198x-nintendo-game-boy-timer",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-nintendo-game-boy-cartridge",
+        "runtime-nintendo-game-boy"
+      ],
+      "shares_crate_with": [
+        "nintendo-game-boy",
+        "nintendo-game-boy-advance",
+        "nintendo-game-boy-color",
+        "nintendo-game-boy-pocket",
+        "nintendo-super-game-boy"
+      ]
+    },
+    {
+      "crate": "emu198x-oric-atmos",
+      "machine_crate": null,
+      "machine_id": "oric",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 76,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-oric-atmos",
+        "machine-oric-atmos",
+        "runtime-oric-atmos"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 366,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-panasonic-fs-a1",
+      "machine_id": "panasonic-fs-a1",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-panasonic-fs-a1"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-philips-vg-8235-00",
+      "machine_id": "philips-vg-8235-00",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-philips-vg-8235-00"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-game-gear",
+      "machine_crate": "machine-sega-game-gear",
+      "machine_id": "sega-game-gear",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 612,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-game-gear",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-mark-iii",
+        "machine-sega-master-system",
+        "machine-sega-master-system-1-ntsc",
+        "machine-sega-master-system-1-pal",
+        "machine-sega-master-system-2-ntsc",
+        "machine-sega-master-system-2-pal",
+        "machine-sega-master-system-japan",
+        "machine-sega-master-system-pal",
+        "runtime-sega-game-gear",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-sega-mega-drive",
+      "machine_crate": "machine-sega-genesis",
+      "machine_id": "sega-genesis",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 6,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-genesis"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 776,
+        "skipped": 9,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-sega-mega-drive",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5313",
+        "emu198x-sega-mega-drive",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2612",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-sega-mega-drive"
+      ],
+      "shares_crate_with": [
+        "sega-mega-drive-europe",
+        "sega-mega-drive-japan"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-mark-iii",
+      "machine_id": "sega-mark-iii",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-mark-iii",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system",
+      "machine_id": "sega-master-system",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 604,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-1-ntsc",
+      "machine_id": "sega-master-system-1-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-1-ntsc",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-1-pal",
+      "machine_id": "sega-master-system-1-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-1-pal",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-2-ntsc",
+      "machine_id": "sega-master-system-2-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-2-ntsc",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-2-pal",
+      "machine_id": "sega-master-system-2-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-2-pal",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-japan",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-japan",
+      "machine_id": "sega-master-system-japan",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-japan",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-master-system",
+      "machine_crate": "machine-sega-master-system-pal",
+      "machine_id": "sega-master-system-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 0,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 596,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-master-system",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5124",
+        "emu198x-sega-master-system",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2413",
+        "machine-sega-game-gear",
+        "machine-sega-master-system-pal",
+        "runtime-sega-master-system",
+        "runtime-sega-master-system-class"
+      ],
+      "shares_crate_with": [
+        "sega-mark-iii",
+        "sega-master-system",
+        "sega-master-system-1-ntsc",
+        "sega-master-system-1-pal",
+        "sega-master-system-2-ntsc",
+        "sega-master-system-2-pal",
+        "sega-master-system-japan"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-mega-drive",
+      "machine_crate": "machine-sega-mega-drive-europe",
+      "machine_id": "sega-mega-drive-europe",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 6,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-mega-drive-europe"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 776,
+        "skipped": 9,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-sega-mega-drive",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5313",
+        "emu198x-sega-mega-drive",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2612",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-sega-mega-drive"
+      ],
+      "shares_crate_with": [
+        "sega-genesis",
+        "sega-mega-drive-japan"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-mega-drive",
+      "machine_crate": "machine-sega-mega-drive-japan",
+      "machine_id": "sega-mega-drive-japan",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 6,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-mega-drive-japan"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 776,
+        "skipped": 9,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "common-sega-mega-drive",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-315-5313",
+        "emu198x-sega-mega-drive",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2612",
+        "motorola-68000",
+        "motorola-68k-common",
+        "runtime-sega-mega-drive"
+      ],
+      "shares_crate_with": [
+        "sega-genesis",
+        "sega-mega-drive-europe"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-sg-1000",
+      "machine_crate": "machine-sega-sg-1000-ii-ntsc",
+      "machine_id": "sega-sg-1000-ii-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-sg-1000-ii-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 420,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-sg-1000",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-sg-1000",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sega-sg-1000"
+      ],
+      "shares_crate_with": [
+        "sega-sg-1000-ntsc",
+        "sega-sg-1000-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-sg-1000",
+      "machine_crate": "machine-sega-sg-1000-ntsc",
+      "machine_id": "sega-sg-1000-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-sg-1000-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 420,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-sg-1000",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-sg-1000",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sega-sg-1000"
+      ],
+      "shares_crate_with": [
+        "sega-sg-1000-ii-ntsc",
+        "sega-sg-1000-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sega-sg-1000",
+      "machine_crate": "machine-sega-sg-1000-pal",
+      "machine_id": "sega-sg-1000-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sega-sg-1000-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 420,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sega-sg-1000",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-sega-sg-1000",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sega-sg-1000"
+      ],
+      "shares_crate_with": [
+        "sega-sg-1000-ii-ntsc",
+        "sega-sg-1000-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-spectrum",
+      "machine_crate": null,
+      "machine_id": "sinclair-zx-spectrum",
+      "own": {
+        "failed": 0,
+        "ignored": 135,
+        "passed": 830,
+        "skipped": 5,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "common-sinclair-zx-spectrum",
+        "common-sinclair-zx-spectrum-128k-class",
+        "common-sinclair-zx-spectrum-48k-class",
+        "common-sinclair-zx-spectrum-amstrad-class",
+        "common-timex-2068",
+        "emu198x-spectrum",
+        "format-sinclair-zx-spectrum-mdr",
+        "format-sinclair-zx-spectrum-sna",
+        "format-sinclair-zx-spectrum-snapshot",
+        "format-sinclair-zx-spectrum-szx",
+        "format-sinclair-zx-spectrum-tzx",
+        "format-sinclair-zx-spectrum-z80",
+        "machine-pentagon-128",
+        "machine-scorpion-zs256",
+        "machine-sinclair-zx-spectrum-128k",
+        "machine-sinclair-zx-spectrum-16k",
+        "machine-sinclair-zx-spectrum-48k",
+        "machine-sinclair-zx-spectrum-plus",
+        "machine-sinclair-zx-spectrum-plus2",
+        "machine-sinclair-zx-spectrum-plus2a",
+        "machine-sinclair-zx-spectrum-plus2b",
+        "machine-sinclair-zx-spectrum-plus3",
+        "machine-timex-tc2048",
+        "machine-timex-tc2068",
+        "machine-timex-ts2068",
+        "runtime-sinclair-zx-spectrum"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 426,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-dsk",
+        "format-tzx"
+      ],
+      "shares_crate_with": [
+        "timex-tc2068",
+        "timex-ts2068"
+      ]
+    },
+    {
+      "crate": "emu198x-sinclair-zx80",
+      "machine_crate": "machine-sinclair-zx80",
+      "machine_id": "sinclair-zx80",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sinclair-zx80"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 8,
+        "passed": 430,
+        "skipped": 14,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx80",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sinclair-zx80",
+        "emu198x-sinclair-zx81-ula",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sinclair-zx80"
+      ],
+      "shares_crate_with": [
+        "sinclair-zx80-usa"
+      ]
+    },
+    {
+      "crate": "emu198x-sinclair-zx80",
+      "machine_crate": "machine-sinclair-zx80-usa",
+      "machine_id": "sinclair-zx80-usa",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sinclair-zx80-usa"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 8,
+        "passed": 430,
+        "skipped": 14,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx80",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sinclair-zx80",
+        "emu198x-sinclair-zx81-ula",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sinclair-zx80"
+      ],
+      "shares_crate_with": [
+        "sinclair-zx80"
+      ]
+    },
+    {
+      "crate": "emu198x-sinclair-zx81",
+      "machine_crate": "machine-sinclair-zx81",
+      "machine_id": "sinclair-zx81",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sinclair-zx81"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 15,
+        "passed": 449,
+        "skipped": 12,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx81",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sinclair-zx81",
+        "emu198x-sinclair-zx81-ula",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sinclair-zx81"
+      ],
+      "shares_crate_with": [
+        "timex-ts1000"
+      ]
+    },
+    {
+      "crate": "emu198x-snk-neo-geo",
+      "machine_crate": null,
+      "machine_id": "snk-neo-geo",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 88,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-snk-lspc2",
+        "emu198x-snk-neo-geo",
+        "emu198x-yamaha-ym2610",
+        "format-snk-neo-geo-romset",
+        "machine-snk-neo-geo",
+        "runtime-snk-neo-geo"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 9,
+        "passed": 610,
+        "skipped": 9,
+        "unexplained_ignored": 6
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-ym2612",
+        "motorola-68000",
+        "motorola-68k-common"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-sony-hb-10",
+      "machine_id": "sony-hb-10",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sony-hb-10"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-sony-hb-10p",
+      "machine_id": "sony-hb-10p",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sony-hb-10p"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-f1",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-sony-hb-f1",
+      "machine_id": "sony-hb-f1",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sony-hb-f1"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "toshiba-hx-10",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-sord-m5",
+      "machine_crate": "machine-sord-m5-ntsc",
+      "machine_id": "sord-m5-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 4,
+        "passed": 8,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sord-m5-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 415,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sord-m5",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sord-m5",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sord-m5"
+      ],
+      "shares_crate_with": [
+        "sord-m5-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-sord-m5",
+      "machine_crate": "machine-sord-m5-pal",
+      "machine_id": "sord-m5-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 6,
+        "passed": 10,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-sord-m5-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 415,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sord-m5",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sord-m5",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sord-m5"
+      ],
+      "shares_crate_with": [
+        "sord-m5-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-spectravideo-svi-328",
+      "machine_crate": "machine-spectravideo-svi-328-ntsc",
+      "machine_id": "spectravideo-svi-328-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-spectravideo-svi-328-ntsc"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 423,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-spectravideo-svi-328",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-spectravideo-svi-328",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-spectravideo-svi-328"
+      ],
+      "shares_crate_with": [
+        "spectravideo-svi-328-pal"
+      ]
+    },
+    {
+      "crate": "emu198x-spectravideo-svi-328",
+      "machine_crate": "machine-spectravideo-svi-328-pal",
+      "machine_id": "spectravideo-svi-328-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 1,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-spectravideo-svi-328-pal"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 423,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-spectravideo-svi-328",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-spectravideo-svi-328",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-spectravideo-svi-328"
+      ],
+      "shares_crate_with": [
+        "spectravideo-svi-328-ntsc"
+      ]
+    },
+    {
+      "crate": "emu198x-dragon",
+      "machine_crate": "machine-tandy-coco-1",
+      "machine_id": "tandy-coco",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-tandy-coco-1"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 562,
+        "skipped": 39,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-dragon",
+        "emu198x-dragon",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-dragon"
+      ],
+      "shares_crate_with": [
+        "dragon",
+        "dragon-64",
+        "tandy-coco-2"
+      ]
+    },
+    {
+      "crate": "emu198x-dragon",
+      "machine_crate": "machine-tandy-coco-2",
+      "machine_id": "tandy-coco-2",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-tandy-coco-2"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 3,
+        "passed": 562,
+        "skipped": 39,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-dragon",
+        "emu198x-dragon",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-dragon"
+      ],
+      "shares_crate_with": [
+        "dragon",
+        "dragon-64",
+        "tandy-coco"
+      ]
+    },
+    {
+      "crate": "emu198x-tatung-einstein",
+      "machine_crate": null,
+      "machine_id": "tatung-einstein",
+      "own": {
+        "failed": 0,
+        "ignored": 4,
+        "passed": 49,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "emu198x-tatung-einstein",
+        "machine-tatung-einstein",
+        "runtime-tatung-einstein"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 366,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu"
+      ],
+      "shares_crate_with": []
+    },
+    {
+      "crate": "emu198x-spectrum",
+      "machine_crate": "machine-timex-tc2068",
+      "machine_id": "timex-tc2068",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-timex-tc2068"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 133,
+        "passed": 1242,
+        "skipped": 14,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx-spectrum",
+        "common-sinclair-zx-spectrum-128k-class",
+        "common-sinclair-zx-spectrum-48k-class",
+        "common-sinclair-zx-spectrum-amstrad-class",
+        "common-timex-2068",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-spectrum",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-dsk",
+        "format-sinclair-zx-spectrum-mdr",
+        "format-sinclair-zx-spectrum-sna",
+        "format-sinclair-zx-spectrum-snapshot",
+        "format-sinclair-zx-spectrum-szx",
+        "format-sinclair-zx-spectrum-tzx",
+        "format-sinclair-zx-spectrum-z80",
+        "format-tzx",
+        "machine-pentagon-128",
+        "machine-scorpion-zs256",
+        "machine-sinclair-zx-spectrum-128k",
+        "machine-sinclair-zx-spectrum-16k",
+        "machine-sinclair-zx-spectrum-48k",
+        "machine-sinclair-zx-spectrum-plus",
+        "machine-sinclair-zx-spectrum-plus2",
+        "machine-sinclair-zx-spectrum-plus2a",
+        "machine-sinclair-zx-spectrum-plus2b",
+        "machine-sinclair-zx-spectrum-plus3",
+        "machine-timex-tc2048",
+        "runtime-sinclair-zx-spectrum"
+      ],
+      "shares_crate_with": [
+        "sinclair-zx-spectrum",
+        "timex-ts2068"
+      ]
+    },
+    {
+      "crate": "emu198x-sinclair-zx81",
+      "machine_crate": "machine-timex-ts1000",
+      "machine_id": "timex-ts1000",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-timex-ts1000"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 15,
+        "passed": 449,
+        "skipped": 12,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx81",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-sinclair-zx81",
+        "emu198x-sinclair-zx81-ula",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "runtime-sinclair-zx81"
+      ],
+      "shares_crate_with": [
+        "sinclair-zx81"
+      ]
+    },
+    {
+      "crate": "emu198x-spectrum",
+      "machine_crate": "machine-timex-ts2068",
+      "machine_id": "timex-ts2068",
+      "own": {
+        "failed": 0,
+        "ignored": 2,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-timex-ts2068"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 133,
+        "passed": 1242,
+        "skipped": 14,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-sinclair-zx-spectrum",
+        "common-sinclair-zx-spectrum-128k-class",
+        "common-sinclair-zx-spectrum-48k-class",
+        "common-sinclair-zx-spectrum-amstrad-class",
+        "common-timex-2068",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-shell",
+        "emu198x-spectrum",
+        "emu198x-tape-playback",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "format-amstrad-dsk",
+        "format-sinclair-zx-spectrum-mdr",
+        "format-sinclair-zx-spectrum-sna",
+        "format-sinclair-zx-spectrum-snapshot",
+        "format-sinclair-zx-spectrum-szx",
+        "format-sinclair-zx-spectrum-tzx",
+        "format-sinclair-zx-spectrum-z80",
+        "format-tzx",
+        "machine-pentagon-128",
+        "machine-scorpion-zs256",
+        "machine-sinclair-zx-spectrum-128k",
+        "machine-sinclair-zx-spectrum-16k",
+        "machine-sinclair-zx-spectrum-48k",
+        "machine-sinclair-zx-spectrum-plus",
+        "machine-sinclair-zx-spectrum-plus2",
+        "machine-sinclair-zx-spectrum-plus2a",
+        "machine-sinclair-zx-spectrum-plus2b",
+        "machine-sinclair-zx-spectrum-plus3",
+        "machine-timex-tc2048",
+        "runtime-sinclair-zx-spectrum"
+      ],
+      "shares_crate_with": [
+        "sinclair-zx-spectrum",
+        "timex-tc2068"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-toshiba-hx-10",
+      "machine_id": "toshiba-hx-10",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-toshiba-hx-10"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "yamaha-cx5m"
+      ]
+    },
+    {
+      "crate": "emu198x-msx",
+      "machine_crate": "machine-yamaha-cx5m",
+      "machine_id": "yamaha-cx5m",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 4,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-yamaha-cx5m"
+      ],
+      "shared": {
+        "failed": 0,
+        "ignored": 10,
+        "passed": 555,
+        "skipped": 9,
+        "unexplained_ignored": 0
+      },
+      "shared_crates": [
+        "common-msx",
+        "emu198x-konami-scc",
+        "emu198x-msx",
+        "emu198x-native-video",
+        "emu198x-pointer",
+        "emu198x-ricoh-rp5c01",
+        "emu198x-shell",
+        "emu198x-ui",
+        "emu198x-win-menu",
+        "emu198x-yamaha-v9938",
+        "emu198x-yamaha-ym2413",
+        "runtime-msx"
+      ],
+      "shares_crate_with": [
+        "mitsubishi-ml-f80",
+        "mitsubishi-ml-fx1",
+        "panasonic-fs-a1",
+        "philips-vg-8235-00",
+        "sony-hb-10",
+        "sony-hb-10p",
+        "sony-hb-f1",
+        "toshiba-hx-10"
+      ]
+    }
+  ],
+  "unattributed_packages": [
+    "emu198x-app-icon",
+    "emu198x-apple",
+    "emu198x-catalogue",
+    "emu198x-commodore-web",
+    "emu198x-fleet-web",
+    "emu198x-game-boy-web",
+    "emu198x-nes-web",
+    "emu198x-spectrum-web",
+    "emu198x-test-skip",
+    "emu198x-web"
+  ]
+}

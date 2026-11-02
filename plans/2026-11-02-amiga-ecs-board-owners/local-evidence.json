@@ -36,5 +36,83 @@
     "themes": 2,
     "redirect_stubs_skipped": 16,
     "defects": 0
+  },
+  "source_ci": {
+    "run": 41426792660,
+    "head": "2a6df1b9bfcec0b6718eac5355598b3f7c81c388",
+    "conclusion": "success",
+    "merge": "d01ec24c01aa734484c69976379b514450e371e1",
+    "tree": "8f76120cc179b8b64513cf007827231ed216e5b2",
+    "verified_remote_tag": "evidence/amiga-ecs-verified"
+  },
+  "ci_test_ledger_totals": {
+    "passed": 8485,
+    "failed": 0,
+    "ignored": 713,
+    "skipped": 110
+  },
+  "ci_owner_results": [
+    {
+      "machine_id": "commodore-amiga-a500-plus-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a500-plus-ntsc"
+      ]
+    },
+    {
+      "machine_id": "commodore-amiga-a500-plus-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a500-plus-pal"
+      ]
+    },
+    {
+      "machine_id": "commodore-amiga-a600-ntsc",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a600-ntsc"
+      ]
+    },
+    {
+      "machine_id": "commodore-amiga-a600-pal",
+      "own": {
+        "failed": 0,
+        "ignored": 0,
+        "passed": 7,
+        "skipped": 0,
+        "unexplained_ignored": 0
+      },
+      "own_crates": [
+        "machine-commodore-amiga-a600-pal"
+      ]
+    }
+  ],
+  "site_ci": {
+    "run": 41430710183,
+    "head": "4d678740752df67c2829ad71ef40afad9b294ffc",
+    "conclusion": "success",
+    "merge": "8c551a81190a2cfd5b3829c414e36274564eb508",
+    "deployment_run": 41431061358,
+    "deployed": true,
+    "live_routes_checked": 125,
+    "live_exact_images": 6
   }
 }
