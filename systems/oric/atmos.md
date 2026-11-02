@@ -7,6 +7,23 @@ A de-facto French home computer (Loriciels, ESAT). Cold-starts cleanly to
 extended system. 6502 + VIA-6522 + AY-3-8912 + custom video ULA (inline) — no new
 chip crate.
 
+## Board identity
+
+The manufacturer's *Service Manual for the Oric-1 and Oric Atmos
+Microcomputers* (1984), pp. 10–11 and 46, identifies BN0130 as the main PCB
+assembly for both 48K Oric-1 and Atmos. Both contain 64 KiB of physical DRAM,
+with ROM selected over the upper 16 KiB. The 16K Oric-1 uses the different
+BN0135 assembly and is not an implemented profile.
+
+A product name or ROM revision does not identify every physical board.
+Pages 22–23 distinguish PCB layout issues from electrical circuit issues;
+leaflets 52/53/56/63(b), pp. 69–72, document fitted changes including cassette
+loading and power-up initialization. The present ROM profiles do not qualify
+every such population. Revision-specific owners remain open under #2144.
+
+The [primary-source audit](https://github.com/stevehill1981/198x/pull/294)
+records the assembly numbers, fitted changes and transcription ambiguities.
+
 ## What works
 
 - **Boot to BASIC** (2026-06-04) with BASIC 1.1 UK (16K, md5 `3202…b629`, MAME

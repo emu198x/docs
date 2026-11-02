@@ -128,7 +128,7 @@ Documentation completion updates `systems/atari/5200.md` only for the corrected
 controller paths, snapshot writer and unresolved board owners. It also adds
 the manufacturer-backed board-identity boundary to `systems/oric/atmos.md`.
 Other historical accuracy claims in these pages are outside this correction.
-Commit current-behaviour wording only after the source changes merge.
+Keep the proposed current-behaviour status changes in draft until the source changes merge.
 
 
 Scanner correction #2239 merged as `4a253729351e010c4a1846f96c6e37d5ba1b7d57`.
@@ -165,3 +165,17 @@ workflow showed its validation is exactly `cargo check --workspace
 hosted-check snapshot as the fresh Mac validation; do not report the queued
 hosted job as a passing run. No test was disabled, no check status overridden,
 and shared history or protection rules were not changed.
+
+
+## Handoff — CI handled separately
+
+The normal merge attempt for #2241 was blocked by the base-branch policy;
+no administrator override was used. It remains open while the hosted check
+is handled in another session. Local CI observation has stopped. Docs #176
+remains draft, with the proposed status changes ready to merge after #2241.
+The scanner correction and Oric primary-source audit are already merged.
+
+All task changes and evidence are retained on verified remote PR refs.
+Remove the task worktrees and disposable build caches after the final clean
+status/retention checks. Preserve the earlier locked Atari/PET investigations
+and every unrelated primary-checkout file.
