@@ -1,0 +1,13 @@
+   Compiling common-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/common-msx)
+   Compiling machine-sony-hb-10p v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sony-hb-10p)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.89s
+     Running tests/board_decode.rs (/private/tmp/198x-qualification-target/debug/deps/board_decode-cbf777d566191027)
+
+running 4 tests
+test slot_zero_page_three_and_slot_three_share_the_same_ram ... ok
+test s3527_ignores_a2_on_ppi_and_psg_ports ... ok
+test vdp_strobes_cover_the_eight_port_block ... ok
+test neighbouring_pages_and_cartridge_slots_do_not_gain_the_mirror ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

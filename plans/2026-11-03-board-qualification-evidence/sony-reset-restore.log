@@ -1,0 +1,12 @@
+   Compiling runtime-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-msx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 23.72s
+     Running tests/sony_snapshot_version.rs (/private/tmp/198x-qualification-target/debug/deps/sony_snapshot_version-537b8ccfd12e4ae4)
+
+running 4 tests
+test aliased_sony_region_does_not_invent_another_sixteen_kib_of_ram ... ok
+test all_nine_boards_keep_the_selected_version_and_reject_other_versions_atomically ... ok
+test original_sony_specimens_are_immutable_and_v10_states_reject_before_decode ... ok
+test sony_decoder_is_reattached_for_restore_and_reset ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.74s
+
