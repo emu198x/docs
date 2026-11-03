@@ -294,13 +294,13 @@ byte-identical PNG and WAV outputs. The Timex fix does not introduce these
 differences. The retained JSON ledgers identify both binaries, exact entries,
 all hashes and byte comparisons. No current expected hash is replaced.
 
-Proposed bounded landing policy: advance the global routing marker to 6 after
-this complete recapture, retain all ten existing expected hashes so real-ROM
-catalogue verification continues to fail for those cases, and track diagnosis
-separately. This records the tested renderer without blessing unexpected
-software behaviour or suppressing the catalogue's failures. The alternative
-is to fix/classify the ten pre-existing +3 differences before landing #52.
-This is a sequencing choice; the existing oracle-integrity guard stays in place.
+Steve approved advancing the global routing marker to 6 after this complete
+recapture, retaining all ten existing expected hashes so real-ROM catalogue
+verification continues to fail for those cases. Diagnosis is tracked in
+[emu198x #2265](https://github.com/emu198x/emu198x/issues/2265). This records the
+tested renderer without accepting unexpected software behaviour as an oracle.
+The exact failed fixture-free routing-version test now passes with marker 6;
+the retained mismatch runner still returns failure for the ten real-ROM cases.
 
 Steve approved the original PET owner and family v6 rejection policy, plus
 test-only sha2 for both runtime-msx and runtime-commodore-pet. The original
