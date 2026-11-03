@@ -1,0 +1,29 @@
+    Updating crates.io index
+     Locking 9 packages to highest compatible versions
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling emu198x-bus-sinclair-zx-spectrum v0.1.1
+   Compiling syn v3.0.9
+   Compiling serde_derive v1.0.229
+   Compiling emu198x-sinclair-zx-spectrum-ula v0.2.1
+   Compiling emu198x-timex-scld v0.2.0 (/private/tmp/198x-qualification-scld/crates/emu198x-timex-scld)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.34s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-scld-target/debug/deps/emu198x_timex_scld-088b8c46e3e50de9)
+
+running 4 tests
+test tests::a_committed_access_suppresses_contention_that_would_otherwise_fire ... ignored, KNOWN DIVERGENCE: passes only with the MREQT23 latch wired into the gate; blocked on the floating-bus derivation — see knowledge/decisions/spectrum-contention-vs-floating-bus.md
+test tests::reattached_configuration_changes_metadata_without_resetting_the_register ... ok
+test tests::port_fe_reads_bits_7_and_5_as_zero ... ok
+test tests::selected_timing_metadata_matches_the_observed_counter_period ... ok
+
+test result: ok. 3 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests emu198x_timex_scld
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

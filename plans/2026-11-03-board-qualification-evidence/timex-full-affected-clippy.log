@@ -1,0 +1,145 @@
+    Checking emu198x-bus-sinclair-zx-spectrum v0.1.1
+    Checking format-sinclair-zx-spectrum-snapshot v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-snapshot)
+    Checking bitflags v2.11.1
+    Checking cfg-if v1.0.4
+    Checking simd-adler32 v0.3.9
+    Checking serde_core v1.0.229
+    Checking libc v0.2.186
+    Checking objc2-encode v4.1.0
+    Checking adler2 v2.0.1
+    Checking zlib-rs v0.6.3
+    Checking thiserror v2.0.21
+    Checking memchr v2.8.0
+    Checking crc32fast v1.5.0
+    Checking zmij v1.0.21
+    Checking log v0.4.29
+    Checking itoa v1.0.18
+    Checking emu198x-test-skip v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-test-skip)
+    Checking miniz_oxide v0.9.1
+    Checking fdeflate v0.3.7
+    Checking miniz_oxide v0.8.9
+    Checking objc2 v0.6.5
+    Checking equivalent v1.0.2
+    Checking uuid v1.23.1
+    Checking typenum v1.20.1
+    Checking bumpalo v3.20.2
+    Checking hashbrown v0.17.1
+    Checking vec_map v0.8.2
+    Checking zopfli v0.8.3
+    Checking zerocopy v0.8.48
+    Checking cobs v0.3.0
+    Checking isa198x v0.1.0
+    Checking mach2 v0.6.0
+    Checking dasp_sample v0.11.0
+    Checking fnv v1.0.7
+    Checking nix v0.31.3
+    Checking getrandom v0.4.3
+    Checking format198x-sinclair-zx-spectrum-z80 v0.1.0
+    Checking typed-path v0.13.0
+    Checking clap_lex v1.1.0
+    Checking indexmap v2.14.0
+    Checking format-sinclair-zx-spectrum-z80 v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-z80)
+    Checking anstyle v1.0.14
+    Checking either v1.16.0
+    Checking ciborium-io v0.2.2
+    Checking format198x-tzx v0.1.0
+    Checking regex-syntax v0.8.10
+    Checking itertools v0.13.0
+    Checking clap_builder v4.6.0
+    Checking flate2 v1.1.10
+    Checking hybrid-array v0.4.14
+    Checking format198x-deflate v0.1.0
+    Checking block2 v0.6.2
+    Checking dispatch2 v0.3.1
+    Checking png v0.18.1
+    Checking objc2-foundation v0.3.2
+    Checking objc2-core-audio-types v0.3.2
+    Checking objc2-core-foundation v0.3.2
+    Checking zip v9.1.2
+    Checking crypto-common v0.2.2
+    Checking block-buffer v0.12.1
+    Checking serde v1.0.229
+    Checking serde_json v1.0.154
+    Checking isa198x-disasm v0.1.0
+    Checking regex-automata v0.4.14
+    Checking format198x-amstrad-cpc-dsk v0.1.2
+    Checking const-oid v0.10.2
+    Checking same-file v1.0.6
+    Checking cast v0.3.0
+    Checking emu198x-sinclair-zx-spectrum-ula v0.2.1
+    Checking emu198x-tape-playback v0.1.1 (/private/tmp/198x-qualification-source/crates/emu198x-tape-playback)
+    Checking emu198x-gi-ay-3-8910 v0.6.1
+    Checking emu198x-zilog-z80 v0.8.0
+    Checking serde-big-array v0.5.1
+    Checking emu198x-peripheral-kempston-sinclair-zx-spectrum-joystick v0.1.0
+    Checking emu198x-timex-scld v0.2.1
+    Checking emu198x-peripheral-sinclair-zx-spectrum-divmmc v0.1.0
+    Checking emu198x-peripheral-romantic-robot-sinclair-zx-spectrum-multiface v0.1.0
+    Checking emu198x-gi-ay-3-8912 v0.1.0
+    Checking emu198x-peripheral-kempston-sinclair-zx-spectrum-mouse v0.1.0
+    Checking emu198x-peripheral-sinclair-zx-spectrum-interface1 v0.1.0
+    Checking emu198x-nec-upd765a v0.1.0
+    Checking emu198x-amstrad-ula-40077 v0.2.0
+    Checking emu198x-ferranti-ula-6c001e v0.2.0
+    Checking emu198x-sinclair-ula-7k010e v0.2.0
+    Checking debug198x v0.1.0
+    Checking emu198x-peripheral-sinclair-zx-spectrum-beta-disk v0.1.0
+    Checking postcard v1.1.3
+    Checking emu198x-scorpion-ula v0.2.0
+    Checking emu198x-pentagon-ula v0.2.1
+    Checking format-tzx v0.46.2 (/private/tmp/198x-qualification-source/crates/format-tzx)
+    Checking digest v0.11.3
+    Checking tinytemplate v1.2.1
+    Checking clap v4.6.1
+    Checking criterion-plot v0.8.2
+    Checking walkdir v2.5.0
+    Checking format198x-sinclair-zx-spectrum-szx v0.1.0
+    Checking num-traits v0.2.19
+    Checking alloca v0.4.0
+    Checking page_size v0.6.0
+    Checking cpufeatures v0.3.0
+    Checking format-sinclair-zx-spectrum-mdr v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-mdr)
+    Checking anes v0.1.6
+    Checking oorandom v11.1.5
+    Checking format198x-sinclair-zx-spectrum-tap v0.1.1
+    Checking format198x-sinclair-zx-spectrum-sna v0.1.0
+    Checking format198x-sinclair-zx-spectrum-bas v0.1.3
+    Checking format-amstrad-dsk v0.46.2 (/private/tmp/198x-qualification-source/crates/format-amstrad-dsk)
+    Checking sha2 v0.11.1
+    Checking format-sinclair-zx-spectrum-szx v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-szx)
+    Checking format-sinclair-zx-spectrum-sna v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-sna)
+    Checking twox-hash v2.1.5
+    Checking common-sinclair-zx-spectrum v0.46.2 (/private/tmp/198x-qualification-source/crates/common-sinclair-zx-spectrum)
+    Checking regex v1.12.3
+    Checking common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+    Checking common-sinclair-zx-spectrum-48k-class v0.46.2 (/private/tmp/198x-qualification-source/crates/common-sinclair-zx-spectrum-48k-class)
+    Checking common-sinclair-zx-spectrum-amstrad-class v0.46.2 (/private/tmp/198x-qualification-source/crates/common-sinclair-zx-spectrum-amstrad-class)
+    Checking common-sinclair-zx-spectrum-128k-class v0.46.2 (/private/tmp/198x-qualification-source/crates/common-sinclair-zx-spectrum-128k-class)
+    Checking machine-timex-tc2048 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2048)
+    Checking format-sinclair-zx-spectrum-tzx v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-tzx)
+    Checking machine-pentagon-128 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-pentagon-128)
+    Checking machine-scorpion-zs256 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-scorpion-zs256)
+    Checking objc2-core-audio v0.3.2
+    Checking objc2-io-kit v0.3.2
+    Checking objc2-audio-toolbox v0.3.2
+    Checking machine-timex-ts2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-ts2068)
+    Checking machine-timex-tc2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2068)
+    Checking machine-sinclair-zx-spectrum-128k v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-128k)
+    Checking machine-sinclair-zx-spectrum-plus2 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-plus2)
+    Checking machine-sinclair-zx-spectrum-plus v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-plus)
+    Checking machine-sinclair-zx-spectrum-16k v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-16k)
+    Checking machine-sinclair-zx-spectrum-plus3 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-plus3)
+    Checking machine-sinclair-zx-spectrum-plus2b v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-plus2b)
+    Checking machine-sinclair-zx-spectrum-plus2a v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-plus2a)
+    Checking gilrs-core v0.6.8
+    Checking coreaudio-rs v0.14.2
+    Checking half v2.7.1
+    Checking gilrs v0.11.2
+    Checking cpal v0.18.2
+    Checking ciborium-ll v0.2.2
+    Checking ciborium v0.2.2
+    Checking emu198x-shell v0.44.2 (/private/tmp/198x-qualification-source/crates/emu198x-shell)
+    Checking criterion v0.8.2
+    Checking machine-sinclair-zx-spectrum-48k v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sinclair-zx-spectrum-48k)
+    Checking runtime-sinclair-zx-spectrum v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-sinclair-zx-spectrum)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 17.60s

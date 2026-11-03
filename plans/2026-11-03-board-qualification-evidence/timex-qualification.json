@@ -1,0 +1,21 @@
+{
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2263",
+  "ula_pr": "https://github.com/emu198x/sinclair-zx-spectrum-ula/pull/7",
+  "scld_pr": "https://github.com/emu198x/timex-scld/pull/3",
+  "published_packages": {
+    "emu198x-sinclair-zx-spectrum-ula": "0.2.1",
+    "emu198x-timex-scld": "0.2.1"
+  },
+  "firmware_sha256": {
+    "main": "6338f94b2ee5000b81a64a4f055b8f1d2db6e669e52cafc11233ff63896fae13",
+    "exrom": "e52e861bd30c144f174a596233c6f3e5804cff170fdc50d44ba61a1683b8174c"
+  },
+  "capture_sha256": {
+    "timex-tc2068-basic.png": "59b1ec4bd31e35f2ba572ea7fc6b5bbfbbffe574326d762ceda93c38755f4738",
+    "timex-tc2068-boot.png": "63a984195fce161463ffcc19d038aad7317a1dc6f5717feda0bee841fd72cedc",
+    "timex-ts2068-basic.png": "f5e61494bd060f027a12a09a7cd3aad670dd44be057d94ee7e5fad98960ba2ef",
+    "timex-ts2068-boot.png": "2f012320c5f92ff4917efb0b7c2e25ef99aca2e909deb3e434ec04398effc944",
+    "ts2068-original-stripe-golden.png": "1560b59b0d35b21e829d21ba036f2296c04202e0817b75cbc52f8c79f7fcafd4"
+  },
+  "note": "Native original-ROM boot and typed BASIC captures. No ROMs or ROM-bearing snapshots included."
+}

@@ -1,0 +1,67 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+   Compiling runtime-sinclair-zx-spectrum v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-sinclair-zx-spectrum)
+    Finished `test` profile [optimized] target(s) in 1.92s
+     Running tests/timex_board_baseline.rs (/private/tmp/198x-qualification-target/debug/deps/timex_board_baseline-eca321d20934a4b7)
+
+running 2 tests
+test original_v17_fixtures_remain_intact_and_saves_reject_before_decode ... ok
+test v18_saves_keep_pixels_audio_time_and_paging_on_both_boards ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/timex_board_identity.rs (/private/tmp/198x-qualification-target/debug/deps/timex_board_identity-49c0b8eeee85e1bd)
+
+running 4 tests
+test profiles_match_the_fixed_hardware_and_its_clock ... ok
+test malformed_geometry_and_clock_phase_are_rejected_atomically ... ok
+test other_board_payload_is_rejected_before_time_or_hardware_changes ... ok
+test active_tape_held_keys_and_firmware_survive_restore_and_reset ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/timex_cycle_profile.rs (/private/tmp/198x-qualification-target/debug/deps/timex_cycle_profile-690e6221696227a3)
+
+running 7 tests
+test every_chunk_mask_combines_with_the_selected_external_source ... ok
+test tc2048_reuses_flat_costs_and_every_family_model_advertises_profiling ... ok
+test enabling_exrom_keeps_base_rom_costs_separate ... ok
+test paging_out_own_home_code_preserves_the_out_instruction_source ... ok
+test home_ram_windows_join_by_eight_k_page_on_pal_and_ntsc ... ok
+test every_empty_dock_window_is_unmapped_execution_not_home_ram ... ok
+test pal_and_ntsc_profile_preserves_machine_and_snapshot_state ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/timex_original_boot.rs (/private/tmp/198x-qualification-target/debug/deps/timex_original_boot-9a680d25025a14aa)
+
+running 2 tests
+TimexTS2068: exact ROMs; both banners; typed PRINT 3+4 = 7; exact snapshot continuation; wrong-ROM/mutation controls
+test ts2068_boots_and_executes_typed_basic ... ok
+TimexTC2068: exact ROMs; both banners; typed PRINT 3+4 = 7; exact snapshot continuation; wrong-ROM/mutation controls
+test tc2068_boots_and_executes_typed_basic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running tests/timex_snapshot_version.rs (/private/tmp/198x-qualification-target/debug/deps/timex_snapshot_version-924e430b1de3252c)
+
+running 1 test
+test every_current_profile_keeps_its_selected_save_version ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/timex_timing_contract.rs (/private/tmp/198x-qualification-target/debug/deps/timex_timing_contract-55259291d9426e47)
+
+running 1 test
+test native_fields_and_restored_metadata_agree_on_all_three_timex_boards ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/video_pipeline_restore.rs (/private/tmp/198x-qualification-target/debug/deps/video_pipeline_restore-e4a6fd7e4a908675)
+
+running 3 tests
+test original_complete_v16_envelopes_are_rejected_atomically ... ok
+test legacy_v16_is_rejected_before_payload_decode_without_mutation ... ok
+test every_family_profile_resumes_exact_pixels_audio_clock_and_state ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.26s
+

@@ -1,0 +1,51 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+     Locking 1 package to highest compatible version
+      Adding emu198x-sinclair-zx-spectrum-ula v0.2.1
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling emu198x-bus-sinclair-zx-spectrum v0.1.1
+   Compiling thiserror v2.0.21
+   Compiling simd-adler32 v0.3.9
+   Compiling adler2 v2.0.1
+   Compiling crc32fast v1.5.0
+   Compiling format-sinclair-zx-spectrum-snapshot v0.46.2 (/private/tmp/198x-qualification-source/crates/format-sinclair-zx-spectrum-snapshot)
+   Compiling cfg-if v1.0.4
+   Compiling bitflags v2.11.1
+   Compiling emu198x-test-skip v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-test-skip)
+   Compiling miniz_oxide v0.9.1
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling flate2 v1.1.10
+   Compiling png v0.18.1
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.21
+   Compiling emu198x-sinclair-zx-spectrum-ula v0.2.1
+   Compiling emu198x-gi-ay-3-8910 v0.6.1
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-zilog-z80 v0.8.0
+   Compiling emu198x-tape-playback v0.1.1 (/private/tmp/198x-qualification-source/crates/emu198x-tape-playback)
+   Compiling emu198x-peripheral-kempston-sinclair-zx-spectrum-joystick v0.1.0
+   Compiling emu198x-timex-scld v0.2.0 (/private/tmp/198x-qualification-scld/crates/emu198x-timex-scld)
+   Compiling emu198x-gi-ay-3-8912 v0.1.0
+   Compiling common-sinclair-zx-spectrum v0.46.2 (/private/tmp/198x-qualification-source/crates/common-sinclair-zx-spectrum)
+   Compiling common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+   Compiling machine-timex-ts2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-ts2068)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 15.77s
+     Running tests/boot_test.rs (/private/tmp/198x-qualification-target/debug/deps/boot_test-0f4f2a7dfa28974a)
+
+running 1 test
+test boot_to_basic_renders_screen_content ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.21s
+
+     Running tests/golden.rs (/private/tmp/198x-qualification-target/debug/deps/golden-79c4d4770f61977c)
+
+running 1 test
+test golden_ts2068_boot ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.40s
+

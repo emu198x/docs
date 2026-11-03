@@ -1,0 +1,12 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+   Compiling common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+    Finished `test` profile [optimized] target(s) in 1.92s
+     Running tests/external_selection.rs (/private/tmp/198x-qualification-target/debug/deps/external_selection-af9adbbdd76824a5)
+
+running 3 tests
+test external_windows_are_readonly_and_do_not_change_hidden_home_ram ... ok
+test video_fetches_keep_home_ram_when_the_cpu_selects_external_memory ... ok
+test all_chunk_selectors_combine_with_the_external_source_bit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,9 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.53s
+     Running tests/timex_original_boot.rs (/private/tmp/198x-qualification-target/debug/deps/timex_original_boot-27cb370b3754fb24)
+
+running 2 tests
+test ts2068_boots_and_executes_typed_basic ... ok
+test tc2068_boots_and_executes_typed_basic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.88s
+
