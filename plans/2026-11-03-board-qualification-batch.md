@@ -218,3 +218,22 @@ No manufacturer ROM is committed.
    printer peripherals or all integrated-SSG differences. Record any concrete
    remaining defect separately rather than treating generic PAL or C-BIOS as
    manufacturer qualification.
+
+### Timex downstream catalogue gate
+
+CI #2263 caught spectrum.toml still declaring frame routing 5 after published
+ULA 0.2.1 advances it to 6. Do not bypass the guard or advance that declaration
+without evidence. Build the normal optimized catalogue binary, freeze its
+identity and the original manifest, and capture all 103 entries with original
+firmware/media (preflight: all inputs present). Run at most three captures
+concurrently, bounded to 300 seconds each and 90 minutes for the wave. Retain
+per-entry output hashes, logs and captures, and require the set of completed
+IDs to equal the complete nonempty manifest. Compare both frame and audio
+hashes with the existing expectations. If any differs, diagnose it before
+changing an oracle. Only after successful captures update the routing
+metadata and rerun the exact failed catalogue gate; all fixture-free CI remains
+required. The first optimized Manic Miner capture took 38.56 seconds and
+matched both existing hashes.
+
+Sony compatibility approved: write/reject at version 11 for HB-10P, reject
+its version 10 before decoding, and retain version 10 for other named boards.
