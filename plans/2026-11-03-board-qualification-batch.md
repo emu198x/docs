@@ -321,3 +321,9 @@ existing owners retain their original-ROM VICE screen/pixel matches.
 Clippy/fmt and generated registry checks pass. Public receipts and captures
 are in the pet-original evidence folder; ROMs/states remain private. #2269
 is progress on #355/#349, not closure of either broader issue.
+
+PET CI caught a stale native-window catalogue assertion (four profiles versus
+its old three-profile count). The test now asserts every stable ID, including
+the original board. All 12 window-enabled unit/integration tests pass locally,
+as does all-target Clippy. Commit 058813a3a retains the correction; CI reruns
+on that exact head before merge.

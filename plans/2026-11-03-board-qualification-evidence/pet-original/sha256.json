@@ -1,5 +1,5 @@
 {
-  "README.md": "04e323fddbbc0ac20947733844e24cea3202d74d6e7d65e62eb486403f083e05",
+  "README.md": "50ff3447555cef3d880a23bc2311d891f2f46ed31c2ccc839584ea0bd9415bc9",
   "pet-cli-build.log": "00effee90763aa66e65167c8af39ed38427eee88af658d0328735d2673f61f9a",
   "pet-cli-tests.log": "47d319e1fd8152475ed2214d4943c32a923f639419bb4f7de25106903bdf01d0",
   "pet-existing-original-roms.log": "ed2ace3d4f3475fbbd9ea2653c4f1b48fd30f68ac40301851f1f19c772f59580",
@@ -24,5 +24,8 @@
   "pet-pia-v6-tests.log": "caf48c16406661b6c7a09191f0d465f2246f933ed8e90be3498726dac6d6712f",
   "pet-registry.log": "e07045d9fbcbce739a49cdf15a70e289421a33acabf337e45a56e81d3ba9ad47",
   "pet-retained-boards/verification.json": "d85295a3bc3334e5ae02346e77b0d7bb4074430a43292309dee308d837390c20",
-  "pet-second-pia-green.log": "4d574fcb56dc03d7f8f5d0fc0aea4b84efaf148e1b8f8c41d32cb3c7074c4a5e"
+  "pet-second-pia-green.log": "4d574fcb56dc03d7f8f5d0fc0aea4b84efaf148e1b8f8c41d32cb3c7074c4a5e",
+  "pet-window-ci-failure.log": "aef9b9cd2f273a888958704a7a04b19665b8422a3896e879edf6c87c235f1c4a",
+  "pet-window-clippy.log": "2a50ac6f5a1137490672d4f51acf8dc844f2612deb51fa4d6ce0f0c138c9f9dc",
+  "pet-window-tests.log": "2d38af2ae18e57aa3801f3dfbf9db00b3475f96ecc1e692872b64509c49ef042"
 }
