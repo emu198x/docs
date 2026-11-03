@@ -52,3 +52,29 @@ and outstanding limit in durable docs/issues. Commit and push each completed
 correction; merge only after required checks pass. Retain diagnostic evidence
 and verified remote commits before removing worktrees/caches. Do not delete
 unrelated work or the earlier locked investigations.
+
+## #2237: the original capture already contains the graphic
+
+No production hardware or runtime correction is needed. The unchanged source
+reproduces RGBA SHA-256
+`f28bfeb54f3397f7983077641057b561e150627267c133eaeafbd7552624d436`,
+the very value previously labelled white. Both an independent stdlib
+zlib/PNG-filter decoder and ImageMagick decode four colours: 21,212 black,
+15,200 purple (119/119/204), 3,628 grey (187/187/187), and 402,328 white pixels.
+The purple disk body occupies x=294..493, y=142..305. Native ARGB, captured RGBA
+and the decoded PNG agree. The inspection viewer shows the original PNG as
+white but displays a lossless re-encoding correctly. This is an inspection-path
+failure; its decoder mechanism is not established. No emulator fault has been
+reproduced. The original files and their hashes must remain intact.
+
+The two strict `kick13_pal_mixed_boot` tests pass for the A500 rev-6a PAL and
+A2000CR rev-6 PAL at 650 fields, checking the full original firmware hash,
+full-frame identity, actual coloured pixels, native/capture/PNG agreement,
+white-frame and one-byte-mutation rejection, and two exact resumed fields plus
+complete state equality. A fixture-free test decodes the exact original PNG,
+checks the graphic and executes both rejection controls on normal CI runs.
+No dependency, CPU/chip behaviour or save-layout change is introduced.
+
+[Evidence](2026-11-03-board-qualification-evidence/) retains the original capture,
+its receipt, strict test output and the lossless inspection copy. The older
+native evidence's white-screen wording is historical and disproven here.
