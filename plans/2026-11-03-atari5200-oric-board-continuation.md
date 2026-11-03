@@ -53,3 +53,13 @@ Source: `/private/tmp/198x-5200-board-source`; docs:
 cache. Preserve unrelated primary checkouts and the earlier locked Atari/PET
 investigations. Verify task commits/evidence on remote refs before removing
 finished worktrees, caches and renderings.
+
+## Approved profile policy
+
+Steve chose **retire the generic profile** on 2026-11-03. Remove
+`atari-5200-ntsc` instead of assigning an uncertain legacy identity to
+CA018087. Expose explicit assembly IDs for all three owners and require an
+explicit native launch selection. Existing generic snapshots must reject
+atomically with a clear model/profile error. Retain the v20 hardware payload
+layout; compare frozen original continuations after changing only the test
+fixture's envelope model ID, never as a production migration path.
