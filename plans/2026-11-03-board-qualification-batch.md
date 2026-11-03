@@ -338,3 +338,10 @@ T6950/sound qualification is #2270. The repository permits rebase merges only,
 so the dependent histories were replaced by focused branches on current main
 without force-pushing old refs. PET #2272 carries its three verified commits
 on that main, with the 107-machine generated registry still current.
+
+PET #2272 merged as b004289c3275aa57e75fa0ff37fc0f3e4cf6c668 after CI
+41649872938 passed all four shards, the aggregate Test job and every applicable
+check at 3bbd5e6bc4a65e8c0b3dbed4a7dffa3028f5803c. The merged main tree is
+byte-identical to that tested head. The final exact-head CI ledger is pet-ci.json.
+The original 320008 addition and missing-PIA/v6 correction are complete;
+#349 retains pulse/handshake work, and #355 retains wider family coverage.
