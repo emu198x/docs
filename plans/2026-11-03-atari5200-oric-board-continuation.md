@@ -63,3 +63,27 @@ explicit native launch selection. Existing generic snapshots must reject
 atomically with a clear model/profile error. Retain the v20 hardware payload
 layout; compare frozen original continuations after changing only the test
 fixture's envelope model ID, never as a production migration path.
+
+
+## Verification and source qualification
+
+Source #2253 implements the three explicit 5200 owners. The original v20
+payload remains byte-identical under explicit four-port fixture envelopes;
+retired generic and foreign-board saves reject atomically. The two-port
+probe checks all 80 connected/missing-input cases, and changing its owner to
+four ports makes the independent physical-port test fail. A separate red
+restore test exposed the absent lower-fire case; validation now checks GTIA
+as well as the held controller matrix before installation.
+
+All three owners boot the verified real BIOS/Pac-Man inputs, produce six
+colours and 90,240 non-background pixels, and preserve the complete next-frame
+state after restore. Detailed logs and the private-asset probe source are in
+[the evidence folder](2026-11-03-atari5200-board-evidence/README.md).
+The initial hosted registry failure was stale generated pages; regeneration
+and the existing checks fix it without weakening the gate. Full source CI
+must still pass before the proposed status changes leave draft.
+
+Oric qualification identified the original circuit issue 7 drawing and
+archived both halves. Physical PCB issue and fitted-population mapping remain
+open; the [matrix](2026-11-03-oric-board-qualification.md) names the concrete
+source requirements. No additional Oric machine is counted.
