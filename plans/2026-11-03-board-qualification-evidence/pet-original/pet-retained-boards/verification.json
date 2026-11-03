@@ -1,0 +1,23 @@
+[
+  {
+    "board": "3032",
+    "screen_bytes": 1000,
+    "screen_differences": 0,
+    "active_pixels": 64000,
+    "pixel_differences": 0
+  },
+  {
+    "board": "4032",
+    "screen_bytes": 1000,
+    "screen_differences": 0,
+    "active_pixels": 64000,
+    "pixel_differences": 0
+  },
+  {
+    "board": "8032",
+    "screen_bytes": 2000,
+    "screen_differences": 0,
+    "active_pixels": 160000,
+    "pixel_differences": 0
+  }
+]

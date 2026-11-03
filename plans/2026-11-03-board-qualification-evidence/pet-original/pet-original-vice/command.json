@@ -1,0 +1,32 @@
+{
+  "args": [
+    "/opt/homebrew/bin/xpet",
+    "-default",
+    "-console",
+    "-model",
+    "2001",
+    "+basic1",
+    "-kernal",
+    "/private/tmp/198x-qualification-evidence/pet-2001/assembled/kernal-1.901447-06-07.bin",
+    "-basic",
+    "/private/tmp/198x-qualification-evidence/pet-2001/assembled/basic-1.901447-09-02-03-04.bin",
+    "-editor",
+    "/private/tmp/198x-qualification-evidence/pet-2001/assembled/edit-1-n.901447-05.bin",
+    "-chargen",
+    "/private/tmp/198x-qualification-evidence/pet-2001/assembled/characters-1.901447-08.bin",
+    "-sounddev",
+    "dummy",
+    "-warp",
+    "-limitcycles",
+    "10000000",
+    "-initbreak",
+    "reset",
+    "-monlog",
+    "-monlogname",
+    "/private/tmp/198x-qualification-evidence/pet-original-vice/monitor.log",
+    "-moncommands",
+    "/private/tmp/198x-qualification-evidence/pet-original-vice/typed.mon"
+  ],
+  "exit": 0,
+  "ROM_patches": "disabled explicitly with +basic1"
+}

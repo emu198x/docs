@@ -1,0 +1,47 @@
+   Compiling common-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/common-commodore-pet)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.22s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/common_commodore_pet-f68b0f5ea6940dc6)
+
+running 4 tests
+test hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection ... FAILED
+test hardware_tests::second_pia_live_driver_and_pending_irq_survive_exact_restore ... FAILED
+test hardware_tests::second_pia_is_visible_to_a_real_6502_guest ... FAILED
+test hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus ... FAILED
+
+failures:
+
+---- hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection stdout ----
+
+thread 'hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection' (232746989) panicked at crates/common-commodore-pet/src/hardware_tests.rs:205:5:
+PIA2 contributes to the CPU IRQ input
+
+---- hardware_tests::second_pia_live_driver_and_pending_irq_survive_exact_restore stdout ----
+
+thread 'hardware_tests::second_pia_live_driver_and_pending_irq_survive_exact_restore' (232746992) panicked at crates/common-commodore-pet/src/hardware_tests.rs:253:5:
+assertion failed: m.pia2.irq_pending()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- hardware_tests::second_pia_is_visible_to_a_real_6502_guest stdout ----
+
+thread 'hardware_tests::second_pia_is_visible_to_a_real_6502_guest' (232746991) panicked at crates/common-commodore-pet/src/hardware_tests.rs:233:5:
+assertion `left == right` failed: guest reads own IEEE data driver
+  left: 255
+ right: 245
+
+---- hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus stdout ----
+
+thread 'hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus' (232746990) panicked at crates/common-commodore-pet/src/hardware_tests.rs:174:9:
+assertion `left == right` failed: PIA2 DDRA resets as input
+  left: 255
+ right: 0
+
+
+failures:
+    hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection
+    hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus
+    hardware_tests::second_pia_is_visible_to_a_real_6502_guest
+    hardware_tests::second_pia_live_driver_and_pending_irq_survive_exact_restore
+
+test result: FAILED. 0 passed; 4 failed; 0 ignored; 0 measured; 27 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p common-commodore-pet --lib`
