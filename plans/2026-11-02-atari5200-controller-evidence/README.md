@@ -38,7 +38,8 @@ head `1e25636aa`, records **8,573 passes, zero failures, 713 ignored and 110
 skipped tests**. The collector executed 1,155 test binaries. Free disk was
 84 GB after cache restoration and 78 GB after the test build. This is one
 cold-build observation, not a worst-case capacity bound. The full ledger and
-test-job log are retained here; the media follow-up still needs its gates.
+test-job log are retained here. The media follow-up subsequently passed its
+required gates and merged as recorded below.
 
 A local comparison also detected a shared-target Cargo cache collision
 between worktrees. The definitive corrected captures were taken only after
@@ -60,9 +61,8 @@ capacity constraints. The ledger is retained separately. After the parent
 merged by rebase, the private media branch was rebased with an exact lease;
 the original head was first preserved in a verified remote evidence tag.
 The old and new heads have identical tree
-`1107a75b0078ff70489b365c0b003c90de5191d4`. Fresh checks on `701667175` are
-required before merging; this old ledger is not a claim that those checks
-have finished.
+`1107a75b0078ff70489b365c0b003c90de5191d4`. The fresh checks on `701667175` are recorded below; this older ledger
+remains evidence for its original source identity.
 
 
 The fresh full suite on `701667175` again records **8,574 passes, zero
@@ -75,3 +75,11 @@ OS and tree identities are in `mac-workspace-check.log.gz`. This substitutes
 executed platform validation for the unavailable hosted runner; it does not
 claim the hosted check ran or passed. The before-merge check snapshot and
 fresh complete test ledger are retained separately.
+
+
+The media correction merged on 2026-11-03 as
+`d97b0d6f25b7128a2642309685823e7e6b06ad84`. All retained required checks
+passed. The family separately removed macOS and Windows PR build requirements
+under its Linux-only PR policy; the cancelled hosted macOS check remains a
+cancelled check, independently of the successful native local validation.
+Neither this merge nor the controller correction qualifies additional boards.
