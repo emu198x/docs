@@ -319,7 +319,7 @@ disabled agrees on all 1,000 screen bytes and 64,000 active pixels for the
 revised C000 ROM. Actual CLI RGBA matches the runtime exactly. All three
 existing owners retain their original-ROM VICE screen/pixel matches.
 Clippy/fmt and generated registry checks pass. Public receipts and captures
-are in the pet-original evidence folder; ROMs/states remain private. #2269
+are in the pet-original evidence folder; ROMs/states remain private. #2272
 is progress on #355/#349, not closure of either broader issue.
 
 PET CI caught a stale native-window catalogue assertion (four profiles versus
@@ -327,3 +327,14 @@ its old three-profile count). The test now asserts every stable ID, including
 the original board. All 12 window-enabled unit/integration tests pass locally,
 as does all-target Clippy. Commit 058813a3a retains the correction; CI reruns
 on that exact head before merge.
+
+### Current-main integration
+
+Timex #2263 merged as 6038bfb54c7cf75377867f6b81390d334d2059b8; docs #180
+are merged. Sony #2271 merged as 507557416bf4943c82bc8ef45b74faf19119eca2
+after a fresh current-main CI run, with all four shards and applicable checks
+passing. Sony docs #183 are merged; #2200 is complete and remaining exact
+T6950/sound qualification is #2270. The repository permits rebase merges only,
+so the dependent histories were replaced by focused branches on current main
+without force-pushing old refs. PET #2272 carries its three verified commits
+on that main, with the 107-machine generated registry still current.
