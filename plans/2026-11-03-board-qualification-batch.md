@@ -307,3 +307,17 @@ test-only sha2 for both runtime-msx and runtime-commodore-pet. The original
 owner uses assembly-based naming (`machine-commodore-pet-2001-320008`, profile
 `commodore-pet-2001-320008-8k`) so later RAM fittings can share its physical
 owner. This remains the single private owner addition in the agreed scope.
+
+### Original PET 2001 qualification completed locally
+
+Source commits 8cff0375b and 58ffdfddb implement the approved missing-PIA/v6
+fix and assembly-320008 owner. The focused old-decoder control fails, while
+current guest/IRQ/restore and full PET suites pass. Both complete original
+BASIC-1 ROM sets boot, type arithmetic, exercise all 63 printable contacts
+plus Space, run a PRG and preserve exact continuation. VICE with ROM patches
+disabled agrees on all 1,000 screen bytes and 64,000 active pixels for the
+revised C000 ROM. Actual CLI RGBA matches the runtime exactly. All three
+existing owners retain their original-ROM VICE screen/pixel matches.
+Clippy/fmt and generated registry checks pass. Public receipts and captures
+are in the pet-original evidence folder; ROMs/states remain private. #2267
+is progress on #355/#349, not closure of either broader issue.
