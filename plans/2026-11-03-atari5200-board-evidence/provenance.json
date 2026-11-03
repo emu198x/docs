@@ -1,0 +1,17 @@
+{
+  "source_pr": 2253,
+  "tested_head": "48539e4cf288a3082ce786c46a2e54b39a976729",
+  "merge_commit": "43964e7098dca1d659113a1a5a2d48bf3181a778",
+  "ci_run": 41611788101,
+  "status_evidence_sha256": "cca69407743891b5b51ff2da9c8db134cebbed46a08d78e5d02cd7e0fbaacb8d",
+  "suite": {
+    "passed": 8597,
+    "failed": 0,
+    "ignored": 713,
+    "skipped": 110
+  },
+  "private_input_sha256": {
+    "pacman": "5097b4763eefd8650781698e36b68bc0c9ae0863916312e6fa4364e4da104080",
+    "bios": "06b250f18983d058c0f156ce7ee88ae48b6eaf11e6f10f21dccf6ac7ffb6a6af"
+  }
+}
