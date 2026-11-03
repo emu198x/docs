@@ -50,3 +50,6 @@ SUB-ROM, RAM-mapper and RTC wiring. Sound cartridge regressions cover SCC,
 FM-PAC and Sound Cartridge paths; this is separate from manufacturer-specific
 SSG qualification. External disk hardware and the CX5M SFG-01 remain distinct
 board work.
+
+Exact HB-10P T6950 timing, integrated sound and port-direction qualification
+remain tracked in [#2270](https://github.com/emu198x/emu198x/issues/2270).
