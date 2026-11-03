@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "a7536e6d7400d5aad51b4f9cecdf7456c5bca3cb",
+  "binary_sha256": "3b5a30da5c1456318e7ff08dd997c379547607dd72b026a7a627959866c8aaf4",
+  "ids": [
+    "chase-hq-plus3",
+    "cybernoid-plus3",
+    "dragon-ninja-plus3",
+    "lotus-esprit-plus3",
+    "rainbow-islands-plus3",
+    "robocop-plus3",
+    "starglider-2-plus3",
+    "stormlord-plus3",
+    "tetris-plus3",
+    "where-time-stood-still-plus3",
+    "cybernoid-2-plus3"
+  ],
+  "unchanged_control": "cybernoid-2-plus3"
+}
