@@ -2,9 +2,9 @@
 
 ## Status: Boots to BASIC `Ready`; keyboard types
 
-A de-facto French home computer (Loriciels, ESAT). Cold-starts cleanly to
-`ORIC EXTENDED BASIC V1.1uk / 1983 TANGERINE / 37631 BYTES FREE / Ready`. Headless
-extended system. 6502 + VIA-6522 + AY-3-8912 + custom video ULA (inline) — no new
+Oric-1 BASIC 1.0 and Atmos BASIC 1.1 both reach their distinct banners and
+`Ready`. The [firmware correction evidence](../../plans/2026-11-03-oric1-firmware-correction.md)
+records exact ROM identities and the ROM-specific STR$ behaviour. 6502 + VIA-6522 + AY-3-8912 + custom video ULA (inline) — no new
 chip crate.
 
 ## Board identity
@@ -103,7 +103,23 @@ records what is established and what remains before fixed owners can be named.
 
 ## ROMs
 
-BASIC 1.1 (16K) at `~/.emu198x/roms/oric/oric.rom`.
+Both profiles need a 16 KiB BASIC/OS image. Oric-1 requires `oric1-rom`,
+uses `EMU198X_ORIC1_ROM`, and searches `oric-1.rom`, `oric1.rom`, then
+`basic10.rom`. Atmos retains `oric-rom`, `EMU198X_ORIC_ROM`, and searches
+`atmos.rom`, `oric.rom`, then `basic11b.rom`. The shared directory remains
+`~/.emu198x/roms/oric/` (or `--rom-dir` / `EMU198X_ORIC_ROM_DIR`).
+
+A directory containing only `oric.rom` no longer satisfies Oric-1. A bare
+`--rom PATH` binds to the final `--model` in either argument order; explicit
+`--rom ID=PATH` must name that model's firmware ID. Custom/localised ROMs
+remain accepted. These ROM profiles do not identify physical PCB revisions.
+
+The opt-in `runtime-oric-atmos` real-ROM tests require
+`EMU198X_ORIC_REFERENCE_ROM_DIR` containing `basic10.rom` and `basic11b.rom`.
+They check complete SHA-256 identities before boot, then the exact BASIC
+version banner, `Ready`, and keyboard-entered `PRINTASC(STR$(1))`: BASIC 1.0
+returns `2`, BASIC 1.1 returns `32`. Wrong-ROM, mutated-byte and incorrect
+behaviour controls must reject. No firmware bytes are bundled.
 
 ## Launch
 

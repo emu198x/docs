@@ -1,0 +1,208 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-oric-firmware-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/b9f939f586fab584: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling objc2 v0.6.5
+   Compiling bitflags v2.11.1
+   Compiling serde_core v1.0.229
+   Compiling objc2-encode v4.1.0
+   Compiling libc v0.2.186
+   Compiling serde v1.0.229
+   Compiling simd-adler32 v0.3.9
+   Compiling cfg-if v1.0.4
+   Compiling crc32fast v1.5.0
+   Compiling adler2 v2.0.1
+   Compiling log v0.4.29
+   Compiling cfg_aliases v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling zmij v1.0.21
+   Compiling nix v0.31.3
+   Compiling miniz_oxide v0.9.1
+   Compiling memchr v2.8.0
+   Compiling getrandom v0.4.3
+   Compiling zlib-rs v0.6.3
+   Compiling serde_json v1.0.154
+   Compiling itoa v1.0.18
+   Compiling gilrs v0.11.2
+   Compiling equivalent v1.0.2
+   Compiling bumpalo v3.20.2
+   Compiling hashbrown v0.17.1
+   Compiling cpal v0.18.2
+   Compiling vec_map v0.8.2
+   Compiling uuid v1.23.1
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling fnv v1.0.7
+   Compiling zopfli v0.8.3
+   Compiling typed-path v0.13.0
+   Compiling mach2 v0.6.0
+   Compiling dasp_sample v0.11.0
+   Compiling syn v3.0.3
+   Compiling isa198x v0.1.0
+   Compiling format198x-tangerine-oric-tap v0.1.0
+   Compiling indexmap v2.14.0
+   Compiling dispatch2 v0.3.1
+   Compiling block2 v0.6.2
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-core-audio-types v0.3.2
+   Compiling objc2-core-foundation v0.3.2
+   Compiling isa198x-disasm v0.1.0
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.21
+   Compiling objc2-core-audio v0.3.2
+   Compiling objc2-io-kit v0.3.2
+   Compiling cobs v0.3.0
+   Compiling objc2-audio-toolbox v0.3.2
+   Compiling gilrs-core v0.6.8
+   Compiling coreaudio-rs v0.14.2
+   Compiling flate2 v1.1.10
+   Compiling emu198x-gi-ay-3-8910 v0.6.1
+   Compiling debug198x v0.1.0
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-mos-via-6522 v0.1.0
+   Compiling emu198x-mos-acia-6551 v0.1.0
+   Compiling emu198x-mos-6502 v0.6.1
+   Compiling postcard v1.1.3
+   Compiling zip v9.1.2
+   Compiling png v0.18.1
+   Compiling emu198x-gi-ay-3-8912 v0.1.0
+   Compiling machine-oric-atmos v0.46.2 (/private/tmp/198x-oric-firmware-source/crates/machine-oric-atmos)
+   Compiling emu198x-shell v0.44.2 (/private/tmp/198x-oric-firmware-source/crates/emu198x-shell)
+   Compiling runtime-oric-atmos v0.46.2 (/private/tmp/198x-oric-firmware-source/crates/runtime-oric-atmos)
+    Finished `test` profile [unoptimized] target(s) in 20.06s
+     Running tests/reproduce_firmware.rs (/private/tmp/198x-oric-firmware-target/debug/deps/reproduce_firmware-fb0ab7a1030a7507)
+
+running 1 test
+explicit oric-1 basic10.rom
+                                        
+  ORIC EXTENDED BASIC V1.0              
+  ` 1983 TANGERINE                      
+                                        
+                                        
+  47870 BYTES FREE                      
+                                        
+  Ready                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+explicit atmos basic11b.rom
+                                    CAPS
+  ORIC EXTENDED BASIC V1.1              
+  ` 1983 TANGERINE                      
+                                        
+                                        
+   37631 BYTES FREE                     
+                                        
+  Ready                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+generic-only oric-1
+                                    CAPS
+  ORIC EXTENDED BASIC V1.1              
+  ` 1983 TANGERINE                      
+                                        
+                                        
+   37631 BYTES FREE                     
+                                        
+  Ready                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+generic-only atmos
+                                    CAPS
+  ORIC EXTENDED BASIC V1.1              
+  ` 1983 TANGERINE                      
+                                        
+                                        
+   37631 BYTES FREE                     
+                                        
+  Ready                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+wrong-model boots=1
+
+thread 'generic_firmware_must_not_misidentify_oric1' (231212919) panicked at crates/runtime-oric-atmos/tests/reproduce_firmware.rs:37:5:
+assertion `left == right` failed: selected Oric-1 must not automatically boot Atmos BASIC 1.1
+  left: 1
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test generic_firmware_must_not_misidentify_oric1 ... FAILED
+
+failures:
+
+failures:
+    generic_firmware_must_not_misidentify_oric1
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.77s
+
+error: test failed, to rerun pass `-p runtime-oric-atmos --test reproduce_firmware`

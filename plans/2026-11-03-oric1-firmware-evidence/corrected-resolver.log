@@ -1,0 +1,13 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-oric-firmware-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/b9f939f586fab584: Operation not permitted (os error 1)
+   Compiling runtime-oric-atmos v0.46.2 (/private/tmp/198x-oric-firmware-source/crates/runtime-oric-atmos)
+    Finished `test` profile [unoptimized] target(s) in 2.40s
+     Running tests/verify_resolver.rs (/private/tmp/198x-oric-firmware-target/debug/deps/verify_resolver-e381f9655cfd0321)
+
+running 1 test
+oric-1: shared resolver selected ORIC EXTENDED BASIC V1.0 and reached Ready
+atmos: shared resolver selected ORIC EXTENDED BASIC V1.1 and reached Ready
+generic-only Atmos directory rejects Oric-1 with its own missing-firmware ID
+test model_specific_resolver_boots_and_generic_only_rejects_oric1 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.25s
+

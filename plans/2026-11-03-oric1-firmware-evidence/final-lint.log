@@ -1,0 +1,2 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-oric-firmware-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/b9f939f586fab584: Operation not permitted (os error 1)
+    Finished `dev` profile [unoptimized] target(s) in 1.94s
