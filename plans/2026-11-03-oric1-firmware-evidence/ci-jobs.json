@@ -1,0 +1,1707 @@
+{
+  "conclusion": "success",
+  "headSha": "70f1d2f4dd44d092bba40a81fe06e9d57ed73ca4",
+  "jobs": [
+    {
+      "completedAt": "2026-11-03T10:34:23Z",
+      "conclusion": "success",
+      "databaseId": 125862994979,
+      "name": "Browser parity",
+      "startedAt": "2026-11-03T10:31:43Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:45Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:01Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:09Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:12Z",
+          "conclusion": "success",
+          "name": "Check the browser crates build for wasm",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:12Z",
+          "conclusion": "success",
+          "name": "Install wasm-pack",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:12Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:44Z",
+          "conclusion": "success",
+          "name": "Native and browser must draw the same pixels",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:12Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:49Z",
+          "conclusion": "success",
+          "name": "Browser player sharp pixels, aspect and fallback",
+          "number": 9,
+          "startedAt": "2026-11-03T10:32:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:15Z",
+          "conclusion": "success",
+          "name": "The GPU presenter must draw on a browser canvas",
+          "number": 10,
+          "startedAt": "2026-11-03T10:32:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:21Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 19,
+          "startedAt": "2026-11-03T10:34:15Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:21Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 20,
+          "startedAt": "2026-11-03T10:34:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:21Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 21,
+          "startedAt": "2026-11-03T10:34:21Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862994979"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:04Z",
+      "conclusion": "success",
+      "databaseId": 125862995340,
+      "name": "System registry",
+      "startedAt": "2026-11-03T10:31:43Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:44Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check the system registry",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check the machine dependency gate",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check generated evidence keeps canonical machine IDs",
+          "number": 5,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check separate board evidence ownership",
+          "number": 6,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:02Z",
+          "conclusion": "success",
+          "name": "Check the status pages are current",
+          "number": 7,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:03Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 14,
+          "startedAt": "2026-11-03T10:32:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:03Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-11-03T10:32:03Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995340"
+    },
+    {
+      "completedAt": "2026-11-03T10:31:53Z",
+      "conclusion": "success",
+      "databaseId": 125862995376,
+      "name": "Synthetic cartridges",
+      "startedAt": "2026-11-03T10:31:43Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:44Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:49Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Install asm198x",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed cartridges match their source",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed Sega cartridges match their source",
+          "number": 5,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed Atari P/M DMA probe matches its source",
+          "number": 6,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed Atari GTIA mode probe matches its source",
+          "number": 7,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed Atari DLI timing probe matches its source",
+          "number": 8,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed VIC-20 survey raster programs match their source",
+          "number": 9,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check the committed GTIA palette matches its generator",
+          "number": 10,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 20,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 21,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995376"
+    },
+    {
+      "completedAt": "2026-11-03T10:31:58Z",
+      "conclusion": "success",
+      "databaseId": 125862995415,
+      "name": "Rust / Workflows / actionlint",
+      "startedAt": "2026-11-03T10:31:49Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:55Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:55Z",
+          "conclusion": "success",
+          "name": "Install actionlint",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:55Z",
+          "conclusion": "success",
+          "name": "Install shellcheck",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:56Z",
+          "conclusion": "success",
+          "name": "Every workflow must pass actionlint",
+          "number": 5,
+          "startedAt": "2026-11-03T10:31:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:56Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 10,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:56Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 11,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995415"
+    },
+    {
+      "completedAt": "2026-11-03T10:34:39Z",
+      "conclusion": "success",
+      "databaseId": 125862995437,
+      "name": "Firmware boot evidence",
+      "startedAt": "2026-11-03T10:31:44Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:45Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:51Z",
+          "conclusion": "success",
+          "name": "Check the corpora store is configured",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:59Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:59Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:31:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:07Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 6,
+          "startedAt": "2026-11-03T10:31:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:19Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:20Z",
+          "conclusion": "success",
+          "name": "Provision the redistributable firmware from the store",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:29Z",
+          "conclusion": "success",
+          "name": "Run the tests the provisioned firmware unlocks",
+          "number": 9,
+          "startedAt": "2026-11-03T10:32:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:37Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 17,
+          "startedAt": "2026-11-03T10:34:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:37Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 18,
+          "startedAt": "2026-11-03T10:34:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:37Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "startedAt": "2026-11-03T10:34:37Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995437"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:09Z",
+      "conclusion": "success",
+      "databaseId": 125862995516,
+      "name": "Test hygiene",
+      "startedAt": "2026-11-03T10:31:55Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:56Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:00Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:00Z",
+          "conclusion": "success",
+          "name": "Check no fixture guard passes in silence",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:01Z",
+          "conclusion": "success",
+          "name": "Check every",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:02Z",
+          "conclusion": "success",
+          "name": "Check doc references resolve",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:02Z",
+          "conclusion": "success",
+          "name": "Check every workflow bounds apt",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:05Z",
+          "conclusion": "success",
+          "name": "Check test collector progress and deadlines",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:05Z",
+          "conclusion": "success",
+          "name": "Check Homebrew publication reads large plans from disk",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:05Z",
+          "conclusion": "success",
+          "name": "Check Apple TV content bootstrap refuses bad inputs",
+          "number": 9,
+          "startedAt": "2026-11-03T10:32:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:05Z",
+          "conclusion": "success",
+          "name": "Check crate extraction rewrites manifests and lists movable crates",
+          "number": 10,
+          "startedAt": "2026-11-03T10:32:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:06Z",
+          "conclusion": "success",
+          "name": "Check crates.io probes identify themselves",
+          "number": 11,
+          "startedAt": "2026-11-03T10:32:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:06Z",
+          "conclusion": "success",
+          "name": "Check --help lists the flags the binaries accept",
+          "number": 12,
+          "startedAt": "2026-11-03T10:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:06Z",
+          "conclusion": "success",
+          "name": "Check the firmware guards refuse a patched 48K ROM",
+          "number": 13,
+          "startedAt": "2026-11-03T10:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:06Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 26,
+          "startedAt": "2026-11-03T10:32:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:06Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 27,
+          "startedAt": "2026-11-03T10:32:06Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995516"
+    },
+    {
+      "completedAt": "2026-11-03T10:33:35Z",
+      "conclusion": "success",
+      "databaseId": 125862995525,
+      "name": "Rust / Clippy",
+      "startedAt": "2026-11-03T10:31:44Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:46Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:52Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:00Z",
+          "conclusion": "success",
+          "name": "Install Linux packages",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:00Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:09Z",
+          "conclusion": "success",
+          "name": "Run dtolnay/rust-toolchain@master",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:18Z",
+          "conclusion": "success",
+          "name": "Run Swatinem/rust-cache@v2",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:23Z",
+          "conclusion": "success",
+          "name": "Run Clippy",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:23Z",
+          "conclusion": "skipped",
+          "name": "Run Clippy with all features",
+          "number": 8,
+          "startedAt": "2026-11-03T10:33:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:32Z",
+          "conclusion": "success",
+          "name": "Post Run Swatinem/rust-cache@v2",
+          "number": 15,
+          "startedAt": "2026-11-03T10:33:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:33Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 16,
+          "startedAt": "2026-11-03T10:33:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:33Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-03T10:33:33Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995525"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:59Z",
+      "conclusion": "success",
+      "databaseId": 125862995538,
+      "name": "Shell semver",
+      "startedAt": "2026-11-03T10:31:44Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:47Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:56Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:10Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:10Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:10Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:20Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:10Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:27Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:28Z",
+          "conclusion": "success",
+          "name": "Install cargo-semver-checks",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:49Z",
+          "conclusion": "success",
+          "name": "Compare the shell with the base branch",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:57Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 15,
+          "startedAt": "2026-11-03T10:32:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:57Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 16,
+          "startedAt": "2026-11-03T10:32:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:57Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-03T10:32:57Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995538"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:52Z",
+      "conclusion": "success",
+      "databaseId": 125862995574,
+      "name": "GTK host",
+      "startedAt": "2026-11-03T10:31:44Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:45Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:50Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:07Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:07Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:17Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:29Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:17Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:34Z",
+          "conclusion": "success",
+          "name": "Lint the GTK host",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:41Z",
+          "conclusion": "success",
+          "name": "Test the GTK host",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:51Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 15,
+          "startedAt": "2026-11-03T10:32:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:51Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 16,
+          "startedAt": "2026-11-03T10:32:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:51Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 17,
+          "startedAt": "2026-11-03T10:32:51Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995574"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:12Z",
+      "conclusion": "success",
+      "databaseId": 125862995592,
+      "name": "Rust / Format",
+      "startedAt": "2026-11-03T10:31:44Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:46Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:45Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:52Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v7",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:31:52Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 3,
+          "startedAt": "2026-11-03T10:31:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:01Z",
+          "conclusion": "success",
+          "name": "Run dtolnay/rust-toolchain@master",
+          "number": 4,
+          "startedAt": "2026-11-03T10:31:52Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:09Z",
+          "conclusion": "success",
+          "name": "Run cargo fmt --all --check",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:01Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:10Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v7",
+          "number": 10,
+          "startedAt": "2026-11-03T10:32:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:10Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 11,
+          "startedAt": "2026-11-03T10:32:10Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995592"
+    },
+    {
+      "completedAt": "2026-11-03T10:32:20Z",
+      "conclusion": "success",
+      "databaseId": 125862995692,
+      "name": "Test plan",
+      "startedAt": "2026-11-03T10:31:56Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:31:57Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:31:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:04Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:31:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:04Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:04Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:13Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:04Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:17Z",
+          "conclusion": "success",
+          "name": "Check the test selection never skips a reachable crate",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:13Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:18Z",
+          "conclusion": "success",
+          "name": "Choose what to test",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:17Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:18Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 12,
+          "startedAt": "2026-11-03T10:32:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:18Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 13,
+          "startedAt": "2026-11-03T10:32:18Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125862995692"
+    },
+    {
+      "completedAt": "2026-11-03T10:33:56Z",
+      "conclusion": "success",
+      "databaseId": 125863306837,
+      "name": "Test shard (2/4)",
+      "startedAt": "2026-11-03T10:32:23Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:32:24Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:28Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:32:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:37Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:37Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:46Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:37Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:46Z",
+          "conclusion": "success",
+          "name": "Measure free disk before restoring test artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:55Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:55Z",
+          "conclusion": "success",
+          "name": "Measure free disk after restoring test artifacts",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:47Z",
+          "conclusion": "success",
+          "name": "Run this shard's test binaries",
+          "number": 9,
+          "startedAt": "2026-11-03T10:32:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:47Z",
+          "conclusion": "success",
+          "name": "Measure remaining test disk",
+          "number": 10,
+          "startedAt": "2026-11-03T10:33:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:47Z",
+          "conclusion": "skipped",
+          "name": "Run doctests",
+          "number": 11,
+          "startedAt": "2026-11-03T10:33:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:48Z",
+          "conclusion": "success",
+          "name": "Upload this shard's results",
+          "number": 12,
+          "startedAt": "2026-11-03T10:33:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:54Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 23,
+          "startedAt": "2026-11-03T10:33:48Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:54Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 24,
+          "startedAt": "2026-11-03T10:33:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:55Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-11-03T10:33:54Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863306837"
+    },
+    {
+      "completedAt": "2026-11-03T10:35:04Z",
+      "conclusion": "success",
+      "databaseId": 125863306964,
+      "name": "Test shard (1/4)",
+      "startedAt": "2026-11-03T10:32:23Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:32:25Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:29Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:32:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:44Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:44Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:53Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:53Z",
+          "conclusion": "success",
+          "name": "Measure free disk before restoring test artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:53Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:03Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:53Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:03Z",
+          "conclusion": "success",
+          "name": "Measure free disk after restoring test artifacts",
+          "number": 8,
+          "startedAt": "2026-11-03T10:33:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:54Z",
+          "conclusion": "success",
+          "name": "Run this shard's test binaries",
+          "number": 9,
+          "startedAt": "2026-11-03T10:33:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:54Z",
+          "conclusion": "success",
+          "name": "Measure remaining test disk",
+          "number": 10,
+          "startedAt": "2026-11-03T10:34:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:54Z",
+          "conclusion": "success",
+          "name": "Run doctests",
+          "number": 11,
+          "startedAt": "2026-11-03T10:34:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:56Z",
+          "conclusion": "success",
+          "name": "Upload this shard's results",
+          "number": 12,
+          "startedAt": "2026-11-03T10:34:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:02Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 23,
+          "startedAt": "2026-11-03T10:34:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:02Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 24,
+          "startedAt": "2026-11-03T10:35:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:02Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-11-03T10:35:02Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863306964"
+    },
+    {
+      "completedAt": "2026-11-03T10:33:41Z",
+      "conclusion": "success",
+      "databaseId": 125863307013,
+      "name": "Test shard (3/4)",
+      "startedAt": "2026-11-03T10:32:23Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:32:24Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:32:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:27Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:32:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:35Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:35Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:42Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:42Z",
+          "conclusion": "success",
+          "name": "Measure free disk before restoring test artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:50Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:50Z",
+          "conclusion": "success",
+          "name": "Measure free disk after restoring test artifacts",
+          "number": 8,
+          "startedAt": "2026-11-03T10:32:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:30Z",
+          "conclusion": "success",
+          "name": "Run this shard's test binaries",
+          "number": 9,
+          "startedAt": "2026-11-03T10:32:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:30Z",
+          "conclusion": "success",
+          "name": "Measure remaining test disk",
+          "number": 10,
+          "startedAt": "2026-11-03T10:33:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:30Z",
+          "conclusion": "skipped",
+          "name": "Run doctests",
+          "number": 11,
+          "startedAt": "2026-11-03T10:33:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:32Z",
+          "conclusion": "success",
+          "name": "Upload this shard's results",
+          "number": 12,
+          "startedAt": "2026-11-03T10:33:30Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:39Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 23,
+          "startedAt": "2026-11-03T10:33:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:39Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 24,
+          "startedAt": "2026-11-03T10:33:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:39Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-11-03T10:33:39Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863307013"
+    },
+    {
+      "completedAt": "2026-11-03T10:34:07Z",
+      "conclusion": "success",
+      "databaseId": 125863307048,
+      "name": "Test shard (4/4)",
+      "startedAt": "2026-11-03T10:32:23Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:32:25Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:32:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:29Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-11-03T10:32:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:39Z",
+          "conclusion": "success",
+          "name": "Install Linux build dependencies",
+          "number": 3,
+          "startedAt": "2026-11-03T10:32:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:39Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:32:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:49Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:32:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:32:50Z",
+          "conclusion": "success",
+          "name": "Measure free disk before restoring test artifacts",
+          "number": 6,
+          "startedAt": "2026-11-03T10:32:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:00Z",
+          "conclusion": "success",
+          "name": "Cache Rust build artifacts",
+          "number": 7,
+          "startedAt": "2026-11-03T10:32:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:00Z",
+          "conclusion": "success",
+          "name": "Measure free disk after restoring test artifacts",
+          "number": 8,
+          "startedAt": "2026-11-03T10:33:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:57Z",
+          "conclusion": "success",
+          "name": "Run this shard's test binaries",
+          "number": 9,
+          "startedAt": "2026-11-03T10:33:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:57Z",
+          "conclusion": "success",
+          "name": "Measure remaining test disk",
+          "number": 10,
+          "startedAt": "2026-11-03T10:33:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:57Z",
+          "conclusion": "skipped",
+          "name": "Run doctests",
+          "number": 11,
+          "startedAt": "2026-11-03T10:33:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:33:58Z",
+          "conclusion": "success",
+          "name": "Upload this shard's results",
+          "number": 12,
+          "startedAt": "2026-11-03T10:33:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:05Z",
+          "conclusion": "success",
+          "name": "Post Cache Rust build artifacts",
+          "number": 23,
+          "startedAt": "2026-11-03T10:33:58Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:05Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 24,
+          "startedAt": "2026-11-03T10:34:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:34:05Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-11-03T10:34:05Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863307048"
+    },
+    {
+      "completedAt": "2026-11-03T10:33:35Z",
+      "conclusion": "skipped",
+      "databaseId": 125863906568,
+      "name": "Rust / Coverage",
+      "startedAt": "2026-11-03T10:33:36Z",
+      "status": "completed",
+      "steps": [],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863906568"
+    },
+    {
+      "completedAt": "2026-11-03T10:33:35Z",
+      "conclusion": "skipped",
+      "databaseId": 125863906956,
+      "name": "Rust / Build (${{ matrix.os }})",
+      "startedAt": "2026-11-03T10:33:36Z",
+      "status": "completed",
+      "steps": [],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125863906956"
+    },
+    {
+      "completedAt": "2026-11-03T10:35:35Z",
+      "conclusion": "success",
+      "databaseId": 125864607955,
+      "name": "Test",
+      "startedAt": "2026-11-03T10:35:07Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-11-03T10:35:09Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-11-03T10:35:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:09Z",
+          "conclusion": "skipped",
+          "name": "Nothing a test reads changed",
+          "number": 2,
+          "startedAt": "2026-11-03T10:35:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:15Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 3,
+          "startedAt": "2026-11-03T10:35:09Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:15Z",
+          "conclusion": "success",
+          "name": "Read pinned toolchain",
+          "number": 4,
+          "startedAt": "2026-11-03T10:35:15Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:25Z",
+          "conclusion": "success",
+          "name": "Install Rust toolchain",
+          "number": 5,
+          "startedAt": "2026-11-03T10:35:15Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:26Z",
+          "conclusion": "success",
+          "name": "Fetch every shard's results",
+          "number": 6,
+          "startedAt": "2026-11-03T10:35:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:31Z",
+          "conclusion": "success",
+          "name": "Merge the shards into the evidence ledger",
+          "number": 7,
+          "startedAt": "2026-11-03T10:35:26Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:31Z",
+          "conclusion": "success",
+          "name": "Publish the evidence summary",
+          "number": 8,
+          "startedAt": "2026-11-03T10:35:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:32Z",
+          "conclusion": "success",
+          "name": "Upload the evidence ledger",
+          "number": 9,
+          "startedAt": "2026-11-03T10:35:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:32Z",
+          "conclusion": "success",
+          "name": "Fail unless the plan and every shard passed",
+          "number": 10,
+          "startedAt": "2026-11-03T10:35:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:33Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 20,
+          "startedAt": "2026-11-03T10:35:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-11-03T10:35:33Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 21,
+          "startedAt": "2026-11-03T10:35:33Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/emu198x/emu198x/actions/runs/41619994789/job/125864607955"
+    }
+  ],
+  "status": "completed"
+}

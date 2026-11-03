@@ -23,3 +23,5 @@ Firmware bytes are private inputs and are not included here. Production accepts
 explicit custom/localised firmware; these exact identities gate reference
 regressions only. The resolver probes are diagnostic source copies, not CI
 fixture tests: their temporary paths must be supplied locally.
+
+`ci-jobs.json` records the successful exact-head CI run 41619994789.
