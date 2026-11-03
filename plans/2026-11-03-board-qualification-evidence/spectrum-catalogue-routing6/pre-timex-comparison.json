@@ -1,0 +1,104 @@
+{
+  "baseline_commit": "a7536e6d7400d5aad51b4f9cecdf7456c5bca3cb",
+  "entries": [
+    {
+      "id": "chase-hq-plus3",
+      "seconds": 29.0,
+      "frame_hash": "xxh64:47fda6722c6032b2",
+      "audio_hash": "xxh64:8cf6e4f0d3029c45",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "cybernoid-plus3",
+      "seconds": 29.03,
+      "frame_hash": "xxh64:0caaf697001fbddb",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "dragon-ninja-plus3",
+      "seconds": 28.04,
+      "frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio_hash": "xxh64:21baa3d69a4ed94d",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "seconds": 27.39,
+      "frame_hash": "xxh64:bfa8481a6e3a2d39",
+      "audio_hash": "xxh64:c1c8799faf7145f6",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "rainbow-islands-plus3",
+      "seconds": 24.6,
+      "frame_hash": "xxh64:5ba13cc089e4d2a8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "robocop-plus3",
+      "seconds": 24.38,
+      "frame_hash": "xxh64:3f225520cedc41e9",
+      "audio_hash": "xxh64:0a89e8f7b9e4f692",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "starglider-2-plus3",
+      "seconds": 23.86,
+      "frame_hash": "xxh64:5c8dc6f976335002",
+      "audio_hash": "xxh64:0558458ef5994a48",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "stormlord-plus3",
+      "seconds": 23.29,
+      "frame_hash": "xxh64:14fe1d566e90d1a2",
+      "audio_hash": "xxh64:c26fc1ce9583a0eb",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "tetris-plus3",
+      "seconds": 26.94,
+      "frame_hash": "xxh64:cfa3bf1290e416aa",
+      "audio_hash": "xxh64:3c2f51da1155b4c4",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "seconds": 27.79,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:db820fd9e95a4b8b",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    },
+    {
+      "id": "cybernoid-2-plus3",
+      "seconds": 23.54,
+      "frame_hash": "xxh64:75af0c3a8272b1e8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "hashes_equal": true,
+      "png_bytes_equal": true,
+      "wav_bytes_equal": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "source_commit": "3a736b014f697cd8f87387f8e7ea766c62e1305d",
+  "binary_sha256": "bd29db9ca18f268e964793f21398f63b0a93dc1f023b98557e9e007bd43d8b5b",
+  "manifest_sha256": "66358471bbba3215fcd1023d58c1a7a0ded215426e9704952a1f201e9f0e2ad6",
+  "entry_count": 103,
+  "concurrency": 3,
+  "timeout_seconds": 300
+}
