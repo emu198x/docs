@@ -26,3 +26,8 @@ references, also with zero differences.
 
 External IEEE devices, shared PIA pulse/handshake phases, cassette, other
 original assemblies and complete CRTC personalities remain separate work.
+
+CI also exposed the window catalogue test's stale three-profile count. It
+reported left 4 / right 3; the test now asserts all four stable profile IDs.
+The default window-enabled suite passes all 12 tests, and its all-target
+Clippy run passes. The failed CI excerpt and corrected logs are retained.

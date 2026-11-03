@@ -1,0 +1,28 @@
+=== emu198x-commodore-pet (emu198x-commodore-pet): 1 failed ===
+2026-11-03T13:42:21.5455097Z running 7 tests
+2026-11-03T13:42:21.5460775Z test app::tests::flags_set_roms_columns_scale_video ... ok
+2026-11-03T13:42:21.5461289Z test app::tests::a_bad_column_count_is_a_usage_error ... ok
+2026-11-03T13:42:21.5461691Z test app::tests::defaults_to_forty_columns ... ok
+2026-11-03T13:42:21.5462169Z test app::tests::original_static_board_has_an_explicit_profile_choice ... ok
+2026-11-03T13:42:21.5462658Z test ui::tests::maps_letters_digits_and_return ... ok
+2026-11-03T13:42:21.5463046Z test app::tests::model_selects_by_columns ... ok
+2026-11-03T13:42:21.5463576Z test ui::tests::window_constructor_installs_catalogue_roms_and_sizes_both_profiles ... FAILED
+2026-11-03T13:42:21.5464019Z 
+2026-11-03T13:42:21.5464115Z failures:
+2026-11-03T13:42:21.5464235Z 
+2026-11-03T13:42:21.5464543Z ---- ui::tests::window_constructor_installs_catalogue_roms_and_sizes_both_profiles stdout ----
+2026-11-03T13:42:21.5464943Z 
+2026-11-03T13:42:21.5465450Z thread 'ui::tests::window_constructor_installs_catalogue_roms_and_sizes_both_profiles' (5953) panicked at crates/emu198x-commodore-pet/src/ui.rs:208:13:
+2026-11-03T13:42:21.5466163Z assertion `left == right` failed
+2026-11-03T13:42:21.5466426Z   left: 4
+2026-11-03T13:42:21.5466632Z  right: 3
+2026-11-03T13:42:21.5466971Z note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+2026-11-03T13:42:21.5467516Z 
+2026-11-03T13:42:21.5467520Z 
+2026-11-03T13:42:21.5467615Z failures:
+2026-11-03T13:42:21.5467967Z     ui::tests::window_constructor_installs_catalogue_roms_and_sizes_both_profiles
+2026-11-03T13:42:21.5468321Z 
+2026-11-03T13:42:21.5468597Z test result: FAILED. 6 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+2026-11-03T13:42:21.5469271Z 
+2026-11-03T13:42:21.5469372Z FAILED: 1 tests across 1 binaries
+2026-11-03T13:42:21.5546336Z ##[error]Process 
