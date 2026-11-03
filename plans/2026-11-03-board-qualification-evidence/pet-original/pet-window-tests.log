@@ -1,0 +1,132 @@
+   Compiling unicode-ident v1.0.24
+   Compiling foldhash v0.2.0
+   Compiling libm v0.2.16
+   Compiling num-traits v0.2.19
+   Compiling raw-window-handle v0.6.2
+   Compiling block2 v0.6.2
+   Compiling rustc-hash v1.1.0
+   Compiling naga v30.0.0
+   Compiling parking_lot_core v0.9.12
+   Compiling objc-sys v0.3.5
+   Compiling unicode-width v0.1.14
+   Compiling bit-vec v0.9.1
+   Compiling proc-macro2 v1.0.106
+   Compiling dispatch2 v0.3.1
+   Compiling hashbrown v0.17.1
+   Compiling bit-set v0.10.0
+   Compiling codespan-reporting v0.13.1
+   Compiling scopeguard v1.2.0
+   Compiling smallvec v1.15.1
+   Compiling once_cell v1.21.4
+   Compiling arrayvec v0.7.6
+   Compiling static_assertions v1.1.0
+   Compiling lock_api v0.4.14
+   Compiling wgpu-hal v30.0.0
+   Compiling profiling v1.0.18
+   Compiling quote v1.0.45
+   Compiling objc2-core-foundation v0.3.2
+   Compiling core-foundation-sys v0.8.7
+   Compiling wgpu-core v30.0.0
+   Compiling indexmap v2.14.0
+   Compiling objc2 v0.5.2
+   Compiling dispatch v0.2.0
+   Compiling litrs v1.0.0
+   Compiling syn v3.0.3
+   Compiling syn v2.0.117
+   Compiling parking_lot v0.12.5
+   Compiling core-foundation v0.9.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling foreign-types-shared v0.3.1
+   Compiling bitflags v1.3.2
+   Compiling winit v0.30.13
+   Compiling wgpu v30.0.1
+   Compiling core-graphics-types v0.1.3
+   Compiling pin-project-lite v0.2.17
+   Compiling document-features v0.2.12
+   Compiling tracing-core v0.1.36
+   Compiling rfd v0.17.2
+   Compiling muda v0.21.2
+   Compiling zip v9.1.2
+   Compiling keyboard-types v0.8.3
+   Compiling pollster v1.0.1
+   Compiling emu198x-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/emu198x-commodore-pet)
+   Compiling block2 v0.5.1
+   Compiling tracing v0.1.44
+   Compiling emu198x-pointer v0.46.2 (/private/tmp/198x-qualification-source/crates/emu198x-pointer)
+   Compiling objc2-foundation v0.2.2
+   Compiling crossbeam-channel v0.5.15
+   Compiling objc2-foundation v0.3.2
+   Compiling objc2-core-graphics v0.3.2
+   Compiling objc2-io-kit v0.3.2
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.21
+   Compiling gilrs-core v0.6.8
+   Compiling zerocopy-derive v0.8.48
+   Compiling bytemuck_derive v1.10.2
+   Compiling foreign-types-macros v0.2.3
+   Compiling gilrs v0.11.2
+   Compiling foreign-types v0.5.0
+   Compiling thiserror v2.0.21
+   Compiling core-graphics v0.23.2
+   Compiling naga-types v30.0.0
+   Compiling cobs v0.3.0
+   Compiling bytemuck v1.25.2
+   Compiling wgpu-types v30.0.0
+   Compiling zerocopy v0.8.48
+   Compiling serde v1.0.229
+   Compiling objc2-app-kit v0.2.2
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-mos-via-6522 v0.1.0
+   Compiling emu198x-mos-6502 v0.6.1
+   Compiling emu198x-motorola-6845 v0.1.0
+   Compiling emu198x-mos-pia-6520 v0.1.0
+   Compiling debug198x v0.1.0
+   Compiling dpi v0.1.2
+   Compiling postcard v1.1.3
+   Compiling cursor-icon v1.2.0
+   Compiling objc2-metal v0.3.2
+   Compiling objc2-core-audio v0.3.2
+   Compiling objc2-app-kit v0.3.2
+   Compiling smol_str v0.2.2
+   Compiling objc2-audio-toolbox v0.3.2
+   Compiling common-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/common-commodore-pet)
+   Compiling coreaudio-rs v0.14.2
+   Compiling machine-commodore-pet-4032 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-commodore-pet-4032)
+   Compiling machine-commodore-pet-2001-320008 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-commodore-pet-2001-320008)
+   Compiling machine-commodore-pet-8032 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-commodore-pet-8032)
+   Compiling machine-commodore-pet-2001n-32k v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-commodore-pet-2001n-32k)
+   Compiling cpal v0.18.2
+   Compiling emu198x-shell v0.44.2 (/private/tmp/198x-qualification-source/crates/emu198x-shell)
+   Compiling half v2.7.1
+   Compiling objc2-quartz-core v0.3.2
+   Compiling raw-window-metal v1.1.0
+   Compiling runtime-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-commodore-pet)
+   Compiling wgpu-naga-bridge v30.0.0
+   Compiling wgpu-core-deps-apple v30.0.0
+   Compiling emu198x-native-video v0.46.2 (/private/tmp/198x-qualification-source/crates/emu198x-native-video)
+   Compiling emu198x-ui v0.46.2 (/private/tmp/198x-qualification-source/crates/emu198x-ui)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 22.44s
+     Running unittests src/main.rs (/private/tmp/198x-qualification-target/debug/deps/emu198x_commodore_pet-a41bc4df0452f405)
+
+running 7 tests
+test ui::tests::maps_letters_digits_and_return ... ok
+test app::tests::model_selects_by_columns ... ok
+test app::tests::defaults_to_forty_columns ... ok
+test app::tests::a_bad_column_count_is_a_usage_error ... ok
+test app::tests::original_static_board_has_an_explicit_profile_choice ... ok
+test app::tests::flags_set_roms_columns_scale_video ... ok
+test ui::tests::window_constructor_installs_catalogue_roms_and_sizes_every_board ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/catalogue.rs (/private/tmp/198x-qualification-target/debug/deps/catalogue-3622eb40ff8d2854)
+
+running 5 tests
+test all_roms_resolve_with_pins_and_legacy_flags ... ok
+test explicit_errors_fail_in_both_modes_and_absent_conventions_allow_blank_mcp ... ok
+test failed_firmware_switch_preserves_the_running_machine_and_queued_prg ... ok
+test mcp_loads_prg_and_switches_profiles_without_changing_existing_tools ... ok
+test scripts_report_live_columns_and_switch_clears_queued_program ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.48s
+
