@@ -125,3 +125,9 @@ Expected exits on the recorded source: 1, 0, 101 for the three probe runs.
 The profile probe deliberately demonstrates the current bug; after the fix,
 replace its assumption that generic-only lookup succeeds with a regression
 requiring a missing-firmware error for Oric-1 and a working Atmos boot.
+
+## Approved continuation — 2026-11-03
+
+The distinct Oric-1 firmware contract is approved. The implementation and
+verification order are in [the continuation plan](2026-11-03-oric1-firmware-correction.md).
+The original reproduction remains historical evidence, not a current result.
