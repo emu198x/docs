@@ -319,5 +319,5 @@ disabled agrees on all 1,000 screen bytes and 64,000 active pixels for the
 revised C000 ROM. Actual CLI RGBA matches the runtime exactly. All three
 existing owners retain their original-ROM VICE screen/pixel matches.
 Clippy/fmt and generated registry checks pass. Public receipts and captures
-are in the pet-original evidence folder; ROMs/states remain private. #2267
+are in the pet-original evidence folder; ROMs/states remain private. #2269
 is progress on #355/#349, not closure of either broader issue.
