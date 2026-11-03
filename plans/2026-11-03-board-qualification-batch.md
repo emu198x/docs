@@ -130,3 +130,34 @@ checks and all four shards passed on reviewed head
 `8d2adfd679d6979e879af9bad399a98ebd713c69`, CI run 41626779886. The retained
 `amiga-ci.json` records the exact-head conclusions. The final local suite
 passed all three tests, with no failed or ignored tests in the explicit run.
+
+### Shared SCLD video and timing correction
+
+The manufacturer manual Table 3.2.2-1 and §5.2.3 define mode 6 as alternating
+**eight-pixel columns** from the primary/secondary files, complementary
+ink/paper, bright/flash fixed at zero, and border fixed to paper. The engine
+currently alternates individual bits and hardcodes clear pixels to black.
+Fuse independently assembles `(data << 8) + data2` for its 16-pixel output,
+but sets bright in its colour conversion. For this bounded correction use
+the explicit manufacturer bright=0 statement; document the reference-emulator
+discrepancy and leave analogue brightness calibration unclaimed.
+
+In sinclair-zx-spectrum-ula, add a read-only `UlaEngine::config` accessor
+(no serialized field), correct the documented mode-6 serial ordering, paper
+and border, and increment the frame routing version for this rendering change.
+Tests cover all eight inks, both bit values, contiguous 8+8 output, complete
+512-pixel ordering, all documented mode addresses, timed mode/colour changes,
+and unchanged ordinary Spectrum output. Reserved modes 3/4/5/7 retain their
+existing unqualified bit decoding; do not claim them as documented modes.
+Preserve every causal shifter/latch in saves; no new mutable field is needed.
+
+In timex-scld, derive frame-timing metadata from the selected immutable timing
+configuration, expose the existing TS2068 timing constants for the family
+wiring to reuse, and correct the stale mode documentation. Test PAL and NTSC
+metadata against full counter periods and restore-config selection. Publish
+normal stable patch releases through each repository's established release
+workflow after CI/review; the main source uses the published versions, with
+local Cargo patches only for pre-publication testing. Main integration verifies
+v18 phase continuations for all three Timex profiles and retains the existing
+non-Timex v17 fidelity suite. Correct stale rule-6 guidance in the extracted
+repositories as required by #2178; no interface-shape ban is reintroduced.
