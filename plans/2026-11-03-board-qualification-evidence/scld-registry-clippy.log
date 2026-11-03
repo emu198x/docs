@@ -1,0 +1,6 @@
+    Checking emu198x-bus-sinclair-zx-spectrum v0.1.1
+    Checking serde_core v1.0.229
+    Checking serde v1.0.229
+    Checking emu198x-sinclair-zx-spectrum-ula v0.2.1
+    Checking emu198x-timex-scld v0.2.0 (/private/tmp/198x-qualification-scld/crates/emu198x-timex-scld)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.73s

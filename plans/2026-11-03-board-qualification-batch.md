@@ -161,3 +161,25 @@ local Cargo patches only for pre-publication testing. Main integration verifies
 v18 phase continuations for all three Timex profiles and retains the existing
 non-Timex v17 fidelity suite. Correct stale rule-6 guidance in the extracted
 repositories as required by #2178; no interface-shape ban is reintroduced.
+
+### Timex verification and releases
+
+ULA fix [#7](https://github.com/emu198x/sinclair-zx-spectrum-ula/pull/7)
+and release #8, plus SCLD fix
+[#3](https://github.com/emu198x/timex-scld/pull/3) and release #4, passed
+required checks and were rebase-merged. Both packages are published as 0.2.1;
+Cargo downloaded the registry packages and the main lock contains their
+registry checksums. Source integration is
+[#2263](https://github.com/emu198x/emu198x/pull/2263).
+
+The broad affected suite passed 416 test functions with 68 ignored fixture,
+diagnostic or known-divergence functions in its default run. Explicit strict
+runs passed both original-ROM runtime tests and both TS2068 machine banner/
+golden tests. Registry-only tests passed the all-profile 176-case video
+continuation matrix, the thirteen-profile version matrix, exhaustive F4/FF
+selection, owner rejection and native frame metadata checks. Clippy and
+formatting pass. The manufacturer-defined pixel tests failed against the old
+ULA; the memory truth table failed against the old paging. Original Timex v17
+specimens remain byte-identical. The old stripe golden is retained alongside
+native TC2068/TS2068 boot and BASIC captures, firmware identities, logs and
+exact-head chip CI ledgers in the qualification evidence directory.

@@ -1,0 +1,122 @@
+   Compiling emu198x-timex-scld v0.2.1
+   Compiling common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+   Compiling machine-timex-tc2048 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2048)
+   Compiling machine-timex-ts2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-ts2068)
+   Compiling machine-timex-tc2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2068)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.56s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/common_timex_2068-2be72f044489d8e4)
+
+running 9 tests
+test tests::ntsc_variant_uses_ts2068_timing ... ok
+test tests::pal_variant_uses_48k_timing ... ok
+test tests::write_to_port_f5_then_read_via_f5_round_trips_ay_register ... ok
+test tests::audio_controls_passthrough_round_trips ... ok
+test tests::held_io_write_is_dispatched_once ... ok
+test tests::port_fe_bit_6_follows_the_tape_input ... ok
+test tests::port_fe_bit_6_with_no_tape_signal ... ok
+test tests::run_frame_returns_to_origin ... ok
+test tests::tape_input_is_released_one_frame_after_the_tape_stops ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/external_selection.rs (/private/tmp/198x-qualification-target/debug/deps/external_selection-60800c82b0720c1a)
+
+running 3 tests
+test video_fetches_keep_home_ram_when_the_cpu_selects_external_memory ... ok
+test external_windows_are_readonly_and_do_not_change_hidden_home_ram ... ok
+test all_chunk_selectors_combine_with_the_external_source_bit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/machine_timex_tc2048-73af7945e97fd4b8)
+
+running 8 tests
+test tests::audio_controls_passthrough_round_trips ... ok
+test tests::defaults_are_sane ... ok
+test tests::held_io_write_is_dispatched_once ... ok
+test tests::write_to_port_ff_updates_video_mode ... ok
+test tests::port_fe_bit_6_follows_the_tape_input ... ok
+test tests::port_fe_bit_6_with_no_tape_signal ... ok
+test tests::run_frame_returns_to_origin ... ok
+test tests::tape_input_is_released_one_frame_after_the_tape_stops ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/boot_test.rs (/private/tmp/198x-qualification-target/debug/deps/boot_test-af29799f49ce3b2a)
+
+running 1 test
+test boot_to_basic_renders_screen_content ... ignored, FIXTURE: requires local TC2048 ROM at ~/.emu198x/roms/timex-tc2048/tc2048.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/golden.rs (/private/tmp/198x-qualification-target/debug/deps/golden-75d70fd7f9d4d13b)
+
+running 1 test
+test golden_tc2048_boot ... ignored, FIXTURE: requires local TC2048 ROM at ~/.emu198x/roms/timex-tc2048/tc2048.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/machine_timex_tc2068-d453c3cb3f5429d3)
+
+running 7 tests
+test tests::home_exrom_and_empty_dock_remain_distinct ... ok
+test tests::reset_keeps_this_board_and_loaded_rom_ram ... ok
+test tests::ay_register_ports_and_beeper_remain_live ... ok
+test tests::fixed_owner_keeps_its_identity_clock_and_native_boundary ... ok
+test tests::guest_keyboard_scan_tracks_press_and_release ... ok
+test tests::guest_executes_and_paints_standard_video ... ok
+test tests::partial_fields_match_whole_fields ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/machine_timex_ts2068-6f85591444cc61e0)
+
+running 7 tests
+test tests::home_exrom_and_empty_dock_remain_distinct ... ok
+test tests::reset_keeps_this_board_and_loaded_rom_ram ... ok
+test tests::fixed_owner_keeps_its_identity_clock_and_native_boundary ... ok
+test tests::ay_register_ports_and_beeper_remain_live ... ok
+test tests::guest_executes_and_paints_standard_video ... ok
+test tests::partial_fields_match_whole_fields ... ok
+test tests::guest_keyboard_scan_tracks_press_and_release ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/boot_test.rs (/private/tmp/198x-qualification-target/debug/deps/boot_test-cf537d41b03965ef)
+
+running 1 test
+test boot_to_basic_renders_screen_content ... ignored, FIXTURE: requires local TS2068 ROMs at ~/.emu198x/roms/timex-ts2068/{ts2068,exrom}.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/golden.rs (/private/tmp/198x-qualification-target/debug/deps/golden-850c9361c38950f7)
+
+running 1 test
+test golden_ts2068_boot ... ignored, FIXTURE: requires local TS2068 ROMs at ~/.emu198x/roms/timex-ts2068/{ts2068,exrom}.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests common_timex_2068
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_timex_tc2048
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_timex_tc2068
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_timex_ts2068
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

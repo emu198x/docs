@@ -45,18 +45,19 @@ and **the peripheral catalogue** — plus a few accuracy edges.
 
 ## Native save states
 
-The Spectrum family writes version-17 native saves, preserving pending video
-fetches, the border output latch and the in-flight rendering phase. Restoring
-these saves retains the first resumed frame, audio and machine clock rather
-than waiting for a rendering transient to settle. This applies to all 13
-family profiles, including the three Timex models.
+The three Timex profiles write and require version-18 native saves. The other
+ten Spectrum-family profiles retain version 17. Both preserve pending video
+fetches, the border output latch and the in-flight rendering phase, including
+the first resumed pixels, audio and machine clock.
 
-Version-16 native saves are rejected before decoding because they omit pipeline
-state needed for exact continuation. Earlier native versions retain their
-existing rejection policy. SNA and Z80 imports use their separate format readers.
-The [save-state decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/spectrum-video-pipeline-snapshots.md)
-records the contract and regression evidence; independent Timex rendering and
-ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/52).
+Timex v17 is rejected before payload decoding: its continued execution used
+the incorrect external-memory selection and mode-6 rendering. The retained
+v17 fixtures are historical evidence. Version 16 and earlier retain their
+existing rejection policy. SNA and Z80 imports use separate format readers.
+The [Timex save decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/timex-v18-paging-and-video.md)
+records the scoped version change; the shared
+[pipeline decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/spectrum-video-pipeline-snapshots.md)
+records the live state required for exact continuation.
 
 ## Models
 
@@ -67,9 +68,9 @@ ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/5
 | +2A / +2B / +3 | 40078 (Amstrad class) | 4 | `$7FFD`+`$1FFD` | Tape (+3: 3″ FDC) | Playable; disk read-only |
 | Pentagon 128 | pentagon-ula | 2 | `$7FFD` | Tape; Beta (not wired) | Boots; no TRD load yet |
 | Scorpion ZS-256 | scorpion-ula | — | `$7FFD`+`$1FFD` | Tape; Beta | **No screen output** (bug) |
-| Timex TC2048 | SCLD | 1 | none | Tape | Extended-rendering qualification remains #52 |
-| Timex TC2068 (PAL) | SCLD; fixed TC2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; matching-firmware BASIC boot unqualified (#52) |
-| Timex TS2068 (NTSC) | SCLD; fixed TS2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Synthetic wiring validated; local ROM check matches diagnostic stripes (#52) |
+| Timex TC2048 | SCLD | 1 | none | Tape | Documented modes 0/1/2/6 pixel-qualified |
+| Timex TC2068 (PAL) | SCLD; fixed TC2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Original-ROM startup, typed BASIC and exact restore qualified |
+| Timex TS2068 (NTSC) | SCLD; fixed TS2068 owner | 2 | HOME / EXROM / empty DOCK | Tape | Original-ROM startup, typed BASIC and exact restore qualified |
 
 ## Fixed Timex 2068 owners
 
@@ -82,16 +83,18 @@ ROM boot qualification remains [#52](https://github.com/emu198x/emu198x/issues/5
 Both retain the legacy firmware slot IDs `timex-ts2068-rom-0` (16 KiB HOME ROM)
 and `timex-ts2068-rom-1` (8 KiB EXROM). Those slot names do not identify a ROM
 dump. The selected profile owns the board; a saved payload naming the other
-board is rejected before changing time or hardware. Correctly labelled version-17
-saves retain their bytes and continued pixels, audio and clocks. Tape playback,
+board is rejected before changing time or hardware. Current version-18 saves
+retain their bytes and continued pixels, audio and clocks. Tape playback,
 held-key release, loaded firmware and reset retention have separate regressions.
 The native save filenames remain based on the unchanged profile IDs.
 
-Seven exclusive synthetic tests per owner establish construction, guest video
-and keyboard execution, ports, paging, partial-field equivalence and reset
-retention. They preserve the existing model; they do not qualify its clocks or
-ROM boot against hardware. The known stripe captures are diagnostics rather than
-public boot evidence, and DOCK cartridge images remain unimplemented.
+Both original-ROM tests identify the complete HOME ROM and EXROM, reach both
+copyright banners, and enter `PRINT 3+4` through the keyboard with an asserted
+`7` result. Native framebuffer pixels agree with independently decoded screen
+RAM. The TS2068 boot golden contains the normal startup screen; equivalent
+TC2068 captures and the original failed stripe capture are retained in the
+[qualification evidence](../../../plans/2026-11-03-board-qualification-evidence/).
+DOCK cartridge images remain unimplemented.
 
 ## Not implemented / accuracy gaps
 
@@ -114,12 +117,14 @@ public boot evidence, and DOCK cartridge images remain unimplemented.
   `$4000–$5AFF`; three coupled memory-map bugs identified vs FUSE
   (`machine-scorpion-zs256/src/memory.rs`: `$1FFD` page-select bit, ROM-select
   logic, ROM 3 / Beta overlay).
-- **Timex SCLD qualification** — standard, alternate-screen, hi-colour and
-  hi-res rendering paths exist. Ink/paper/border correctness and real-ROM BASIC
-  startup still need independent qualification ([#52](https://github.com/emu198x/emu198x/issues/52)).
-  The TC2068 and TS2068 drivers use their selected PAL/NTSC timing; the SCLD's
-  separate ULA-trait timing accessor still reports PAL. That metadata discrepancy
-  remains part of #52 and is not the active machine clock path.
+- **Timex remaining limits** — documented modes 0/1/2/6 have independent pixel
+  tests, including all eight mode-6 inks, complementary paper/border, full
+  512-pixel column order and timed changes. The manufacturer specifies bright
+  and flash off; this takes precedence over Fuse's bright colour conversion.
+  Reserved encodings 3/4/5/7 retain unqualified compatibility output. Analogue
+  colour calibration, DOCK cartridges and the existing contention divergence
+  remain outside this qualification. SCLD, machine and runtime timing metadata
+  now agree with the selected PAL/NTSC counter period.
 
 ### Peripherals (none of these are architecturally blocked — the `Peripheral`
 trait + the proven ROM-paging precedent pave the road)
@@ -233,9 +238,8 @@ goldens** and the per-machine-crate ULA/contention/floating-bus TAP smokes
 (btime/ptime/halt2int/floatspy, speedlock, rainbow-islands).
 
 Genuine coverage holes (not counting artifacts): Scorpion (liveness-only, no
-golden), TC2068/TS2068 (golden locks a known-wrong stripe state, honestly), Timex
-extended video modes (unimplemented → untested), Pentagon/Scorpion TRD (not
-wired), +3 FDC write/format (unimplemented).
+golden), reserved Timex video encodings and DOCK cartridges, Pentagon/Scorpion
+TRD (not wired), and +3 FDC write/format (unimplemented).
 
 ## ROMs
 

@@ -1,0 +1,145 @@
+   Compiling emu198x-timex-scld v0.2.1
+   Compiling common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+   Compiling machine-timex-tc2048 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2048)
+   Compiling machine-timex-tc2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-tc2068)
+   Compiling machine-timex-ts2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-timex-ts2068)
+   Compiling runtime-sinclair-zx-spectrum v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-sinclair-zx-spectrum)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.28s
+     Running tests/pixel_geometry.rs (/private/tmp/198x-qualification-target/debug/deps/pixel_geometry-faa5107b3cf3e1a5)
+
+running 3 tests
+test the_ts2068_is_ntsc_and_narrower_than_its_pal_siblings ... ok
+test the_48k_and_128k_classes_run_at_different_pixel_clocks ... ok
+test no_variant_has_square_pixels ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/timex_board_baseline.rs (/private/tmp/198x-qualification-target/debug/deps/timex_board_baseline-8bb8e2b538d1bcea)
+
+running 2 tests
+test original_v17_fixtures_remain_intact_and_saves_reject_before_decode ... ok
+test v18_saves_keep_pixels_audio_time_and_paging_on_both_boards ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.23s
+
+     Running tests/timex_board_identity.rs (/private/tmp/198x-qualification-target/debug/deps/timex_board_identity-434ba7f2257f9804)
+
+running 4 tests
+test profiles_match_the_fixed_hardware_and_its_clock ... ok
+test malformed_geometry_and_clock_phase_are_rejected_atomically ... ok
+test other_board_payload_is_rejected_before_time_or_hardware_changes ... ok
+test active_tape_held_keys_and_firmware_survive_restore_and_reset ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.46s
+
+     Running tests/timex_cycle_profile.rs (/private/tmp/198x-qualification-target/debug/deps/timex_cycle_profile-f5a901e80366143f)
+
+running 7 tests
+test every_chunk_mask_combines_with_the_selected_external_source ... ok
+test tc2048_reuses_flat_costs_and_every_family_model_advertises_profiling ... ok
+test enabling_exrom_keeps_base_rom_costs_separate ... ok
+test paging_out_own_home_code_preserves_the_out_instruction_source ... ok
+test home_ram_windows_join_by_eight_k_page_on_pal_and_ntsc ... ok
+test every_empty_dock_window_is_unmapped_execution_not_home_ram ... ok
+test pal_and_ntsc_profile_preserves_machine_and_snapshot_state ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+     Running tests/timex_original_boot.rs (/private/tmp/198x-qualification-target/debug/deps/timex_original_boot-27cb370b3754fb24)
+
+running 2 tests
+test tc2068_boots_and_executes_typed_basic ... ignored, FIXTURE: original TS2068/TC2068 ROM pair in EMU198X_TIMEX_REFERENCE_ROM_DIR or conventional TS2068 directory
+test ts2068_boots_and_executes_typed_basic ... ignored, FIXTURE: original TS2068/TC2068 ROM pair in EMU198X_TIMEX_REFERENCE_ROM_DIR or conventional TS2068 directory
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/timex_snapshot_version.rs (/private/tmp/198x-qualification-target/debug/deps/timex_snapshot_version-b59b77e6e5c50a90)
+
+running 1 test
+test every_current_profile_keeps_its_selected_save_version ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.40s
+
+     Running tests/timex_timing_contract.rs (/private/tmp/198x-qualification-target/debug/deps/timex_timing_contract-935f6a3b682689c2)
+
+running 1 test
+test native_fields_and_restored_metadata_agree_on_all_three_timex_boards ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/variants.rs (/private/tmp/198x-qualification-target/debug/deps/variants-508fd0212f76d625)
+
+running 61 tests
+test pentagon_128_boot_banner_is_detected_with_real_rom ... ignored, FIXTURE: requires local Pentagon ROMs at ~/.emu198x/roms/pentagon-128/pentagon-{0,1}.rom
+test probe_all_variant_banners ... ignored, DIAGNOSTIC: diagnostic — boots six variants from ~/.emu198x/roms and prints banners
+test probe_ts2068_screen_ram ... ignored, DIAGNOSTIC: diagnostic — TS2068 screen-RAM dump (standard + high-res addresses)
+test pentagon_128_runtime_rejects_disk_slot_via_default_supports_disk_slot ... ok
+test pentagon_128_runtime_exposes_ay_register_queries ... ok
+test pentagon_128_runtime_exposes_kempston_state_query ... ok
+test scorpion_boot_status_is_not_detected_before_the_menu_draws ... ok
+test scorpion_runtime_exposes_ay_register_queries ... ok
+test scorpion_runtime_exposes_kempston_state_query ... ok
+test non_ay_variants_do_not_advertise_ay_paths ... ok
+test each_variant_accepts_tzx_via_runtime ... ok
+test scorpion_zs256_boot_banner_is_detected_with_real_rom ... ignored, FIXTURE: requires ~/.emu198x/roms/scorpion-zs256/scorpion-{0..3}.rom
+test spectrum_128k_boot_banner_is_detected_with_real_rom ... ignored, FIXTURE: requires local Spectrum 128K ROMs at ~/.emu198x/roms/sinclair-zx-spectrum-128k/128-{0,1}.rom
+test spectrum_128k_runtime_exposes_shared_and_variant_query_paths ... ok
+test spectrum_128k_runtime_exposes_ay_register_queries ... ok
+test spectrum_128k_runtime_loads_tap_and_drives_transport ... ok
+test spectrum_128k_runtime_loads_tzx_via_runtime ... ok
+test pentagon_128_runtime_emits_frame_at_pentagon_dimensions ... ok
+test keyboard_input_updates_machine_matrix ... ok
+test pentagon_restore_keeps_pentagon_ula_timing ... ok
+test scorpion_runtime_loads_tape_drives_transport_and_resets ... ok
+test spectrum_128k_runtime_emits_frame_and_audio ... ok
+test spectrum_128k_runtime_resets_via_machine_core ... ok
+test spectrum_plus2a_rejects_disk_slot ... ok
+test spectrum_plus2a_runtime_exposes_ay_register_queries ... ok
+test spectrum_plus2_runtime_emits_frame_at_128k_dimensions ... ok
+test spectrum_16k_runtime_emits_frame_and_audio_at_48k_dimensions ... ok
+test spectrum_plus2_and_128k_snapshots_are_type_distinct ... ok
+test spectrum_plus3_accepts_disk_slot_via_machine_core ... ok
+test spectrum_plus3_boot_banner_is_detected_with_real_rom ... ignored, FIXTURE: requires local +3 ROMs at ~/.emu198x/roms/amstrad-zx-spectrum-plus3/plus3-{0..3}.rom
+test spectrum_plus3_runtime_rejects_malformed_disk_image ... ok
+test spectrum_plus2b_runtime_runs_frame_and_resets ... ok
+test spectrum_plus2a_runtime_runs_frame_loads_tape_and_resets ... ok
+test spectrum_plus_runtime_resolves_disk_slot_query ... ok
+test spectrum_plus_runtime_emits_frame_at_48k_dimensions ... ok
+test tc2048_boot_banner_is_detected_with_real_rom ... ignored, FIXTURE: requires local Timex TC2048 ROM at ~/.emu198x/roms/timex-tc2048/tc2048.rom
+test spectrum_plus3_runtime_runs_frame_loads_tape_and_resets ... ok
+test timex_tc2048_runtime_exposes_kempston_state_query ... ok
+test timex_tc2048_runtime_emits_hires_dimensions ... ok
+test spectrum_16k_runtime_round_trips_through_snapshot ... ok
+test timex_ts2068_runtime_exposes_ay_register_queries ... ok
+test snapshot_refuses_to_restore_across_variants ... ok
+test timex_ts2068_runtime_exposes_model_query_alongside_kempston ... ok
+test pentagon_128_runtime_loads_tape_resets_and_round_trips ... ok
+test spectrum_plus_runtime_round_trips_through_snapshot ... ok
+test variant_query_paths_include_boot_paths ... ok
+test variant_runtime_capabilities_reflects_profile ... ok
+test variant_runtime_rejects_unknown_tape_slot ... ok
+test variant_runtime_rejects_unknown_transport_slot ... ok
+test variant_runtime_rejects_unsupported_media_kind ... ok
+test timex_ts2068_runtime_uses_ntsc_frame_length_for_ts ... ok
+test ts2068_restore_keeps_ntsc_ula_timing ... ok
+test scorpion_runtime_round_trips_through_snapshot ... ok
+test spectrum_plus2a_runtime_round_trips_through_snapshot ... ok
+test spectrum_plus2_runtime_round_trips_through_snapshot ... ok
+test timex_tc2048_runtime_loads_tape_resets_and_round_trips ... ok
+test spectrum_128k_runtime_round_trips_through_snapshot ... ok
+test timex_ts2068_runtime_loads_tape_resets_and_round_trips ... ok
+test timex_tc2068_runtime_runs_pal_frame_length_and_round_trips ... ok
+test spectrum_plus3_runtime_round_trips_through_snapshot ... ok
+test every_variant_rewinds_and_searches_its_tape ... ok
+
+test result: ok. 54 passed; 0 failed; 7 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests/video_pipeline_restore.rs (/private/tmp/198x-qualification-target/debug/deps/video_pipeline_restore-a8c7a9f40bf76a7a)
+
+running 3 tests
+test original_complete_v16_envelopes_are_rejected_atomically ... ok
+test legacy_v16_is_rejected_before_payload_decode_without_mutation ... ok
+test every_family_profile_resumes_exact_pixels_audio_clock_and_state ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 29.80s
+

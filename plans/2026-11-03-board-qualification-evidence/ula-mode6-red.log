@@ -1,0 +1,46 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-ula/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/8342604ba8b45ade: Operation not permitted (os error 1)
+    Updating crates.io index
+     Locking 8 packages to highest compatible versions
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling emu198x-bus-sinclair-zx-spectrum v0.1.1
+   Compiling syn v3.0.9
+   Compiling serde_derive v1.0.229
+   Compiling emu198x-sinclair-zx-spectrum-ula v0.2.0 (/private/tmp/198x-qualification-ula/crates/emu198x-sinclair-zx-spectrum-ula)
+    Finished `test` profile [unoptimized] target(s) in 8.03s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-ula-target/debug/deps/emu198x_sinclair_zx_spectrum_ula-bef76b836bdb0935)
+
+running 3 tests
+
+thread 'engine_paths::mode6_has_complementary_paper_and_border_for_every_unbright_ink' (232198605) panicked at crates/emu198x-sinclair-zx-spectrum-ula/src/lib.rs:1771:13:
+assertion `left == right` failed: ink 0: fixed paper-coloured border
+  left: [7, 7, 7, 7, 7, 7, 7, 7, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+ right: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'engine_paths::mode6_border_tracks_the_mode_colour_without_overwriting_fe_border' (232198604) panicked at crates/emu198x-sinclair-zx-spectrum-ula/src/lib.rs:1785:9:
+assertion `left == right` failed
+  left: [7, 7]
+ right: [6, 6]
+
+thread 'engine_paths::mode6_reads_complete_alternating_columns_across_all_512_pixels' (232198606) panicked at crates/emu198x-sinclair-zx-spectrum-ula/src/lib.rs:1760:9:
+assertion `left == right` failed
+  left: [2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0]
+ right: [2, 5, 5, 5, 5, 5, 5, 2, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 5, 2, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 2, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 5, 2, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 2, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 5, 2, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 2, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 2, 2, 5, 5, 5, 5, 2, 2, 2, 5, 5, 5, 5, 2, 5, 2, 2, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5, 5, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 5, 5, 5]
+test engine_paths::mode6_border_tracks_the_mode_colour_without_overwriting_fe_border ... FAILED
+test engine_paths::mode6_has_complementary_paper_and_border_for_every_unbright_ink ... FAILED
+test engine_paths::mode6_reads_complete_alternating_columns_across_all_512_pixels ... FAILED
+
+failures:
+
+failures:
+    engine_paths::mode6_border_tracks_the_mode_colour_without_overwriting_fe_border
+    engine_paths::mode6_has_complementary_paper_and_border_for_every_unbright_ink
+    engine_paths::mode6_reads_complete_alternating_columns_across_all_512_pixels
+
+test result: FAILED. 0 passed; 3 failed; 0 ignored; 0 measured; 28 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`

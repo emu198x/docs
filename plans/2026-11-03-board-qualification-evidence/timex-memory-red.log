@@ -1,0 +1,43 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+   Compiling common-timex-2068 v0.46.2 (/private/tmp/198x-qualification-source/crates/common-timex-2068)
+    Finished `test` profile [optimized] target(s) in 1.40s
+     Running tests/external_selection.rs (/private/tmp/198x-qualification-target/debug/deps/external_selection-af9adbbdd76824a5)
+
+running 3 tests
+test all_chunk_selectors_combine_with_the_external_source_bit ... FAILED
+test external_windows_are_readonly_and_do_not_change_hidden_home_ram ... FAILED
+test video_fetches_keep_home_ram_when_the_cpu_selects_external_memory ... FAILED
+
+failures:
+
+---- all_chunk_selectors_combine_with_the_external_source_bit stdout ----
+
+thread 'all_chunk_selectors_combine_with_the_external_source_bit' (231985055) panicked at crates/common-timex-2068/tests/external_selection.rs:21:4:
+assertion `left == right` failed: F4=00, FF7=true, addr=0000
+  left: Exrom
+ right: HomeRom
+
+---- external_windows_are_readonly_and_do_not_change_hidden_home_ram stdout ----
+
+thread 'external_windows_are_readonly_and_do_not_change_hidden_home_ram' (231985056) panicked at crates/common-timex-2068/tests/external_selection.rs:33:25:
+assertion `left == right` failed
+  left: 224
+ right: 16
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- video_fetches_keep_home_ram_when_the_cpu_selects_external_memory stdout ----
+
+thread 'video_fetches_keep_home_ram_when_the_cpu_selects_external_memory' (231985057) panicked at crates/common-timex-2068/tests/external_selection.rs:45:4:
+assertion `left == right` failed: ULA fetch 4000
+  left: 255
+ right: 34
+
+
+failures:
+    all_chunk_selectors_combine_with_the_external_source_bit
+    external_windows_are_readonly_and_do_not_change_hidden_home_ram
+    video_fetches_keep_home_ram_when_the_cpu_selects_external_memory
+
+test result: FAILED. 0 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p common-timex-2068 --test external_selection`
