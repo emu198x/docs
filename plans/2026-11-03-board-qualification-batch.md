@@ -123,3 +123,10 @@ Affected files: runtime-sinclair-zx-spectrum/src/snapshot.rs,
 tests/timex_board_baseline.rs, tests/timex_board_identity.rs, the new strict
 original-ROM tests and a binding decision recording this scoped override of
 the v17 output guarantee. No non-Timex reader/version change is intended.
+
+Amiga qualification merged in source [#2262](https://github.com/emu198x/emu198x/pull/2262)
+as `a7536e6d7400d5aad51b4f9cecdf7456c5bca3cb`; #2237 is closed. All required
+checks and all four shards passed on reviewed head
+`8d2adfd679d6979e879af9bad399a98ebd713c69`, CI run 41626779886. The retained
+`amiga-ci.json` records the exact-head conclusions. The final local suite
+passed all three tests, with no failed or ignored tests in the explicit run.
