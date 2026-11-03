@@ -1,0 +1,299 @@
+   Compiling common-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/common-msx)
+   Compiling machine-sony-hb-10p v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sony-hb-10p)
+   Compiling runtime-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-msx)
+warning: function `sony_current_continuation` is never used
+   --> crates/runtime-msx/examples/../tests/common/board_baseline.rs:163:8
+    |
+163 | pub fn sony_current_continuation() -> Result<(), Box<dyn Error>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `runtime-msx` (example "board_baseline") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.65s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/common_msx-2e9b25013f874450)
+
+running 52 tests
+test note_tests::a_cpu_read_of_the_deformation_register_writes_ff ... ok
+test note_tests::msx_music_maps_its_rom_in_its_own_slot ... ok
+test note_tests::the_fm_pac_keeps_pac_data_in_sram ... ok
+test note_tests::the_scc_megarom_mirrors_pages_0_and_3 ... ok
+test board::tests::binding_checks_the_video_chip_as_well_as_msx2_parts ... ok
+test note_tests::the_scc_window_opens_only_with_3f ... ok
+test sound::tests::levels_are_scaled_to_a_psg_channel ... ok
+test sound::tests::msx_music_maps_its_rom_into_page_1 ... ok
+test note_tests::a_frame_of_audio_is_the_psg_cadence_long ... ok
+test sound::tests::the_fm_pac_switches_rom_banks ... ok
+test sound::tests::the_fm_pac_unlocks_its_sram_with_4d_69 ... ok
+test sound::tests::the_mixer_emits_on_the_psg_cadence ... ok
+test sound::tests::the_sound_cartridge_moves_the_scc_in_plus_mode ... ok
+test sound::tests::the_sound_cartridge_writes_ram_where_its_mode_allows ... ok
+test tests::a_long_bios_maps_its_logo_rom_at_8000 ... ok
+test tests::an_msx1_has_no_msx2_parts ... ok
+test tests::an_msx2_has_a_v9938_and_a_sub_rom ... ok
+test tests::an_unexpanded_slot_has_no_subslot_register ... ok
+test tests::ay_watch_captures_psg_data_writes ... ok
+test tests::cart_plain_mapper_reads_at_0x4000 ... ok
+test tests::default_slot_layout_reads_bios_then_ram ... ok
+test tests::joystick_reads_through_psg_port_a ... ok
+test tests::keyboard_io_returns_selected_row ... ok
+test tests::keyboard_press_and_release_round_trip ... ok
+test tests::mapper_detection_keeps_small_and_unrecognised_images_plain ... ok
+test tests::mapper_detection_scores_each_supported_register_family ... ok
+test tests::mapper_ports_read_ff_without_a_mapper ... ok
+test tests::click_integrates_both_halfcycles_and_preserves_mid_sample_history ... ok
+test tests::ntsc_frame_returns_expected_tstates ... ok
+test tests::pal_frame_returns_expected_tstates ... ok
+test tests::ppi_click_reaches_generated_audio_and_is_not_applied_at_drain ... ok
+test tests::ppi_output_controls_follow_direction_bsr_and_mode_reset ... ok
+test tests::ram_answers_only_in_its_subslot ... ok
+test tests::ram_beside_the_bios_covers_only_its_pages ... ok
+test tests::slot_select_routes_pages ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::the_mapper_selects_a_segment_a_page ... ok
+test tests::an_msx2_snapshot_round_trips ... ok
+test tests::the_subslot_register_reads_back_complemented ... ok
+test tests::the_v9938_takes_palette_and_indirect_writes ... ok
+test tests::vdp_dot_ratio_is_three_per_two_tstates ... ok
+test note_tests::a_snapshot_carries_the_sound_chips ... ok
+test tests::native_frame_stops_at_the_chip_wrap_after_partial_stepping ... ok
+test note_tests::scc_and_psg_mix ... ok
+test note_tests::scc_volume_scales_the_note ... ok
+test note_tests::the_sound_cartridge_plays_channel_5_in_scc_plus_mode ... ok
+test note_tests::the_fm_pac_plays_through_its_memory_mapped_registers ... ok
+test tests::many_frames_complete_without_panic ... ok
+test note_tests::msx_music_plays_a_440_hz_note ... ok
+test note_tests::the_scc_plays_a_440_hz_note ... ok
+test note_tests::the_fm_pac_plays_through_its_ports_once_enabled ... ok
+test tests::the_rtc_answers_on_b4_and_b5 ... ok
+
+test result: ok. 52 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.38s
+
+     Running tests/bios_boot.rs (/private/tmp/198x-qualification-target/debug/deps/bios_boot-f5fc2aef0f3c8dd3)
+
+running 1 test
+test bios_boots_to_initial_screen ... ignored, FIXTURE: needs a 32 KB MSX1 BIOS (real or C-BIOS) — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cbios_boot.rs (/private/tmp/198x-qualification-target/debug/deps/cbios_boot-ddf536ef793b696b)
+
+running 4 tests
+test cbios_boots_with_32k_beside_the_bios ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom
+test cbios_boots_with_ram_in_an_expanded_slot ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom
+test cbios_boots_with_ram_in_slot_2 ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom
+test cbios_cold_starts_and_renders_its_screen ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom
+
+test result: ok. 0 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cbios_msx2_boot.rs (/private/tmp/198x-qualification-target/debug/deps/cbios_msx2_boot-bc32ab9c4d51ba2a)
+
+running 1 test
+test cbios_msx2_draws_its_logo_then_its_text_screen ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_{main_msx2_eu,logo_msx2,sub}.rom
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cpu_rate.rs (/private/tmp/198x-qualification-target/debug/deps/cpu_rate-01f304b4bbd9d07b)
+
+running 1 test
+test a_nop_costs_five_tstates_on_msx ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-qualification-target/debug/deps/synthetic_firmware_boot-d34d8e3b948d330c)
+
+running 2 tests
+test firmware_that_programs_nothing_does_not_look_like_a_boot ... ok
+test the_msx_runs_firmware_and_paints_its_backdrop ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/machine_sony_hb_10p-6b0701198cd75b1e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_decode.rs (/private/tmp/198x-qualification-target/debug/deps/board_decode-a7396d657b017415)
+
+running 4 tests
+test neighbouring_pages_and_cartridge_slots_do_not_gain_the_mirror ... ok
+test slot_zero_page_three_and_slot_three_share_the_same_ram ... ok
+test vdp_strobes_cover_the_eight_port_block ... ok
+test s3527_ignores_a2_on_ppi_and_psg_ports ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/board_identity.rs (/private/tmp/198x-qualification-target/debug/deps/board_identity-30bea7cefa03e8b6)
+
+running 2 tests
+test fixed_constructor_and_legacy_binding_reject_foreign_hardware ... ok
+test partial_cpu_stepping_stops_at_the_next_real_video_boundary ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-qualification-target/debug/deps/synthetic_firmware_boot-52dd1fadf25c8094)
+
+running 2 tests
+test unexecuted_firmware_does_not_pass_the_boot_check ... ok
+test named_board_runs_firmware_and_paints_its_display ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/runtime_msx-f9d2c1d602e946aa)
+
+running 19 tests
+test input::tests::button_event_targets_the_named_port ... ok
+test input::tests::key_release_event_sets_matrix_cell_high ... ok
+test input::tests::key_press_event_pulls_matrix_cell_low ... ok
+test input::tests::key_a_lands_on_row_2_bit_6 ... ok
+test input::tests::return_lands_on_row_7_bit_7 ... ok
+test input::tests::space_lands_on_row_8_bit_0 ... ok
+test input::tests::unknown_key_returns_none ... ok
+test profiles::tests::every_model_round_trips_its_variant_id ... ok
+test input::tests::button_event_drives_joystick_port_one ... ok
+test profiles::tests::msx2_models_carry_their_layouts ... ok
+test profiles::tests::each_named_board_has_its_own_machine ... ok
+test profiles::tests::msx2_models_need_a_sub_rom ... ok
+test profiles::tests::ntsc_profile_declares_bios_firmware ... ok
+test profiles::tests::pal_profile_uses_pal_region ... ok
+test profiles::tests::profile_ids_are_unique ... ok
+test profiles::tests::real_models_carry_their_ram ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test snapshot::tests::msx2_snapshots_are_keyed_by_model_not_machine ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_baseline.rs (/private/tmp/198x-qualification-target/debug/deps/board_baseline-1c0577c2777f2d5c)
+
+running 2 tests
+test sony_v11_continues_complete_native_output ... ok
+test original_version_10_profiles_continue_identically ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.21s
+
+     Running tests/board_identity.rs (/private/tmp/198x-qualification-target/debug/deps/board_identity-0dc73adf535543c7)
+
+running 3 tests
+test all_named_profiles_preserve_their_physical_owner_and_bytes ... ok
+test all_retired_generic_selections_and_saves_fail_explicitly ... ok
+test wrong_named_envelopes_and_embedded_hardware_reject_atomically ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.33s
+
+     Running tests/catalogue.rs (/private/tmp/198x-qualification-target/debug/deps/catalogue-bf1fa38a50f18953)
+
+running 1 test
+test regional_replacement_retains_restored_cartridges_and_cold_boots ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.43s
+
+     Running tests/debug_target.rs (/private/tmp/198x-qualification-target/debug/deps/debug_target-dd2a477ada620394)
+
+running 2 tests
+test debug_surface_works_on_z80 ... ignored, FIXTURE: needs MSX BIOS — run with --ignored
+test z80_disasm_is_wired ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/media.rs (/private/tmp/198x-qualification-target/debug/deps/media-a7bfa3b7b199712e)
+
+running 2 tests
+test explicit_mapper_selection_remains_an_override ... ok
+test standard_media_path_detects_megarom_mapper ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/models_boot.rs (/private/tmp/198x-qualification-target/debug/deps/models_boot-2c2dfd0dac61db8d)
+
+running 2 tests
+test every_msx1_model_boots_cbios_to_its_screen ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_main_msx1.rom
+test every_msx2_model_boots_cbios_to_its_screen ... ignored, FIXTURE: needs C-BIOS at <EMU198X_ROMS_ROOT>/microsoft-msx/cbios_{main_msx2,main_msx2_eu,sub}.rom
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/msx2.rs (/private/tmp/198x-qualification-target/debug/deps/msx2-4243a9e29d8ff92f)
+
+running 5 tests
+test from_firmware_reads_the_sub_rom ... ok
+test an_msx2_needs_both_roms ... ok
+test the_v9938_framebuffer_has_half_width_pixels ... ok
+test queries_name_the_chip_and_the_msx2_parts ... ok
+test an_msx2_snapshot_restores_its_sub_rom ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/ppi_outputs.rs (/private/tmp/198x-qualification-target/debug/deps/ppi_outputs-c15501dc900d8ae0)
+
+running 1 test
+test guest_ppi_controls_reach_queries_and_the_host_audio_packet ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/queries.rs (/private/tmp/198x-qualification-target/debug/deps/queries-ac46cd39e602aeda)
+
+running 4 tests
+test psg_is_exposed_under_the_canonical_ay_namespace ... ok
+test query_paths_lists_the_folded_chip_paths ... ok
+test vdp_resolves_grouped_object_and_matching_leaf ... ok
+test ppi_resolves_grouped_object_and_leaves ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-qualification-target/debug/deps/snapshot_roundtrip-abf83585c348eb15)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sony_hb10p_boot.rs (/private/tmp/198x-qualification-target/debug/deps/sony_hb10p_boot-3348a0de80f654c7)
+
+running 1 test
+test original_hb10p_boots_accepts_basic_and_resumes_native_output ... ignored, FIXTURE: identified original HB-10P ROM at EMU198X_MSX_HB10P_ROM
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sony_hbf1_boot.rs (/private/tmp/198x-qualification-target/debug/deps/sony_hbf1_boot-16885effe8bde744)
+
+running 1 test
+test original_sony_hbf1_reaches_msx_basic_2_and_ok ... ignored, FIXTURE: needs identified f1bios.rom and f1ext.rom in EMU198X_MSX_HBF1_ROM_DIR
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sony_snapshot_version.rs (/private/tmp/198x-qualification-target/debug/deps/sony_snapshot_version-537b8ccfd12e4ae4)
+
+running 3 tests
+test aliased_sony_region_does_not_invent_another_sixteen_kib_of_ram ... ok
+test all_nine_boards_keep_the_selected_version_and_reject_other_versions_atomically ... ok
+test original_sony_specimens_are_immutable_and_v10_states_reject_before_decode ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/sound_carts.rs (/private/tmp/198x-qualification-target/debug/deps/sound_carts-65f5329b91cccd1f)
+
+running 2 tests
+test the_media_path_detects_an_fm_pac ... ok
+test an_scc_note_reaches_the_host ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.88s
+
+   Doc-tests common_msx
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_sony_hb_10p
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_msx
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

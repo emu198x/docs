@@ -1,0 +1,27 @@
+   Compiling runtime-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-msx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.53s
+     Running tests/board_baseline.rs (/private/tmp/198x-qualification-target/debug/deps/board_baseline-1c0577c2777f2d5c)
+
+running 1 test
+test eight_v10_boards_and_corrected_sony_v11_continue_exactly ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.43s
+
+     Running tests/board_identity.rs (/private/tmp/198x-qualification-target/debug/deps/board_identity-0dc73adf535543c7)
+
+running 3 tests
+test all_named_profiles_preserve_their_physical_owner_and_bytes ... ok
+test all_retired_generic_selections_and_saves_fail_explicitly ... ok
+test wrong_named_envelopes_and_embedded_hardware_reject_atomically ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.74s
+
+     Running tests/sony_snapshot_version.rs (/private/tmp/198x-qualification-target/debug/deps/sony_snapshot_version-537b8ccfd12e4ae4)
+
+running 3 tests
+test aliased_sony_region_does_not_invent_another_sixteen_kib_of_ram ... ok
+test all_nine_boards_keep_the_selected_version_and_reject_other_versions_atomically ... ok
+test original_sony_specimens_are_immutable_and_v10_states_reject_before_decode ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
