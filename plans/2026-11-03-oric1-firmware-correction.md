@@ -54,3 +54,14 @@ exact red/green resolver probes, logs and independently checked identities.
 No CPU, ULA or snapshot schema/version changes were needed. The already
 correct 64 KiB physical RAM profile descriptions were retained. This closes
 the firmware fault only; physical PCB/fitting qualification remains open.
+
+## Merged outcome
+
+Source PR #2257 merged as `08c91234372dfb8a8d507bbe060077e396c2f7d7`.
+[CI run 41619994789](https://github.com/emu198x/emu198x/actions/runs/41619994789)
+passed for the exact reviewed head above: all four test shards, the aggregate
+Test gate, Clippy, format, browser parity, firmware evidence, GTK host, registry,
+workflow lint, test hygiene, test plan, synthetic cartridges and shell semver.
+The [job ledger](2026-11-03-oric1-firmware-evidence/ci-jobs.json) retains the
+conclusions and step records. Issue #345 is closed. Physical board qualification
+remains open under #2144.
