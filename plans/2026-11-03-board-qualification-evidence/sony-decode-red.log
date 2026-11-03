@@ -1,0 +1,60 @@
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling emu198x-z80-cadence v0.1.0
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling serde v1.0.229
+   Compiling emu198x-gi-ay-3-8910 v0.6.1
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-ricoh-rp5c01 v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-ricoh-rp5c01)
+   Compiling emu198x-konami-scc v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-konami-scc)
+   Compiling emu198x-intel-8255 v0.1.0
+   Compiling emu198x-zilog-z80 v0.8.0
+   Compiling emu198x-yamaha-ym2413 v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-yamaha-ym2413)
+   Compiling emu198x-yamaha-v9938 v0.1.0 (/private/tmp/198x-qualification-source/crates/emu198x-yamaha-v9938)
+   Compiling emu198x-ti-tms9918 v0.1.0
+   Compiling emu198x-gi-ay-3-8912 v0.1.0
+   Compiling common-msx v0.46.2 (/private/tmp/198x-qualification-source/crates/common-msx)
+   Compiling machine-sony-hb-10p v0.46.2 (/private/tmp/198x-qualification-source/crates/machine-sony-hb-10p)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.13s
+     Running tests/board_decode.rs (/private/tmp/198x-qualification-target/debug/deps/board_decode-cbf777d566191027)
+
+running 4 tests
+test slot_zero_page_three_and_slot_three_share_the_same_ram ... FAILED
+test vdp_strobes_cover_the_eight_port_block ... FAILED
+test s3527_ignores_a2_on_ppi_and_psg_ports ... FAILED
+test neighbouring_pages_and_cartridge_slots_do_not_gain_the_mirror ... ok
+
+failures:
+
+---- slot_zero_page_three_and_slot_three_share_the_same_ram stdout ----
+
+thread 'slot_zero_page_three_and_slot_three_share_the_same_ram' (232629278) panicked at crates/machine-sony-hb-10p/tests/board_decode.rs:30:5:
+assertion `left == right` failed
+  left: (255, 255, 60, 150)
+ right: (60, 150, 85, 170)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- vdp_strobes_cover_the_eight_port_block stdout ----
+
+thread 'vdp_strobes_cover_the_eight_port_block' (232629279) panicked at crates/machine-sony-hb-10p/tests/board_decode.rs:67:5:
+assertion `left == right` failed
+  left: 0
+ right: 244
+
+---- s3527_ignores_a2_on_ppi_and_psg_ports stdout ----
+
+thread 's3527_ignores_a2_on_ppi_and_psg_ports' (232629277) panicked at crates/machine-sony-hb-10p/tests/board_decode.rs:54:5:
+assertion `left == right` failed
+  left: (0, 255, 255)
+ right: (192, 192, 0)
+
+
+failures:
+    s3527_ignores_a2_on_ppi_and_psg_ports
+    slot_zero_page_three_and_slot_three_share_the_same_ram
+    vdp_strobes_cover_the_eight_port_block
+
+test result: FAILED. 1 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p machine-sony-hb-10p --test board_decode`

@@ -1,81 +1,52 @@
-# MSX1
+# MSX family
 
-## Status: Boots to MSX BASIC, clean
+The family runtime has nine named MSX1/MSX2 board owners. Generic MSX presets
+are retired; choose a physical board and its matching firmware. The
+[source profile catalogue](https://github.com/emu198x/emu198x/blob/main/crates/runtime-msx/src/profiles.rs)
+provides the current IDs, fitted memory layouts and firmware requirements.
 
-Boots the Microsoft MSX BASIC prompt cleanly. Headless extended system. Z80 +
-TMS9918A + AY-3-8910 (PSG) + Intel 8255 PPI — the MSX1 standard. (This folder is
-the MSX family home; MSX2/2+/TurboR would be siblings.)
+## Sony HB-10P PU-37
 
-## What works
+The identified original 32 KiB Sony ROM reaches `MSX BASIC version 1.0`,
+`28815 Bytes free` and `Ok`. Keyboard-entered `PRINT 3+4` returns `7`.
+The regression verifies the entire ROM identity before execution, checks
+native framebuffer glyphs for the banners and result, and compares exact
+continued output after restore. C-BIOS checks alone do not establish this
+manufacturer-specific result.
 
-- **Boot to BASIC** — `MSX BASIC version 1.0 / Copyright 1983 by Microsoft /
-  28815 Bytes free / Ok` on light blue. Slot 0 BIOS read, slot 3 RAM, PPI port A
-  slot select, TMS9918A text render all exercised by real BIOS code. Smoke
-  `tests/bios_boot.rs` (1/1).
-- **Memory-slot system** — PPI port A → primary slot per 16K page.
-- **MegaROM mappers** — Plain / Konami / Konami SCC / ASCII 8 / ASCII 16.
-- **Correct 3:2 VDP-dot phase clock.**
+The board has 64 KiB of physical RAM in slot 3. Slot-0 C000–FFFF selects the
+same RAM, rather than adding another 16 KiB. Its S3527 has no A2 address input:
+PPI and PSG ports have their documented A2 aliases, and VDP strobes cover
+98–9F. Guest regressions exercise both directions of the RAM mirror, port
+aliases and neighbouring non-alias controls. Restore and reset reattach the
+immutable board decoder; other owners keep their own decoding.
 
-## Not implemented / accuracy gaps
+Sony service documentation identifies a Toshiba T6950 video part and Yamaha
+S3527 integrated SSG. The current implementation uses common TMS9918-family
+video and AY/PPI components. The decoding and BASIC evidence do not qualify
+all T6950 timing, integrated-SSG differences or analogue colours. Printer
+peripherals and cassette media handling also remain incomplete.
 
-- **Subslot expansion** — MSX1 doesn't need it; MSX2+ uses `$FFFF` writes.
-  Recognised in the spec, disabled.
-- **Cassette / printer** — via PPI port C, unwired. (Joystick is wired — see
-  "What works".)
-- **Snapshot** — deferred. **No native window.**
-- **MSX2 / 2+ / TurboR** — out of scope (V9938/V9958, mapped RAM, FM-PAC).
+Primary source and wiring audit:
+[PU-37 manufacturer evidence](https://github.com/stevehill1981/198x/blob/main/reference/by-system/msx/sony-hb10p-pu37-decoding.md).
+Original-ROM tests are `runtime-msx/tests/sony_hb10p_boot.rs`; captures and
+verification logs are retained with the
+[qualification evidence](../../plans/2026-11-03-board-qualification-evidence/).
 
-## Known unknowns / disproven hypotheses
+## Native saves
 
-- **Verification targets** — VDP per-dot timing; mapper edge behaviour against
-  openMSX / blueMSX.
+HB-10P writes and requires v11. Its v10 saves are rejected before decoding or
+mutation under the approved corrected-execution contract. The other eight
+named boards retain v10, including their frozen state bytes and native
+video/audio/clock continuations. The original HB-10P v10 specimens remain
+immutable historical evidence. Foreign board topology is rejected before
+changing the receiver.
 
-## Validated against
+## Shared hardware and remaining work
 
-- Microsoft US MSX System v1.0 + BASIC BIOS (32K, SHA-256 `3b33…d417`) → BASIC;
-  `tests/bios_boot.rs`. MSX Nemesis validated clean (PSG-port-A joystick drives
-  the menu).
-
-## Timing & cycle-accuracy
-
-- **Master clock & dividers** — 10.738635 MHz. CPU = ÷3 ≈ 3.58 MHz; VDP dot ÷2.
-- **Timing model realised** — the **correct 3:2 VDP-dot phase clock** **and** the
-  shared **per-dot** VDP render (each pixel drawn at its dot; `ti-tms9918::tick`).
-- **CPU timing** — Z80 cycle-accurate (§62); no Z80 bus-timing oracle.
-- **Distance to full cycle-accuracy** — VDP render and phase are both in place;
-  remaining gaps are CPU bus-cycle timing.
-
-## Tooling & drivability
-
-- **Script / MCP** — `--script` + `--mcp` (operational-parity rollout).
-- **Native window** — headless only (extended tier).
-- **Disassembler** — pending the Asm198x shared Z80 disassembler.
-
-## Peripherals & connectivity
-
-- **Emulated now** — cartridge, keyboard, joystick (PSG port A; Nemesis
-  validated, `bca5802f`).
-- **Period peripherals (emulatable)** — disk drives (FDC), cassette, printer,
-  joysticks, mouse, the MSX-Audio / Music (FM) cartridges, RS-232 cartridges.
-- **Internet-capable** — **Yes**: period RS-232 cartridges + modems; strong modern
-  emulatable options — **ObsoNET** / **GR8NET** (Ethernet/WiFi cartridges with
-  documented TCP stacks). One of the better-supported retro net scenes.
-
-## Crates
-
-| Crate | Role |
-|-------|------|
-| `zilog-z80` | CPU |
-| `ti-tms9918` / `gi-ay-3-8912` / `intel-8255` | VDP · PSG · PPI |
-| `machine-msx` / `runtime-msx` / `emu198x-msx` | wiring + runner |
-
-## ROMs
-
-32K BIOS at `~/.emu198x/roms/microsoft-msx/msx.rom` (real BIOS from TOSEC) or
-`cbios_main_msx1.rom` (free C-BIOS).
-
-## Launch
-
-```sh
-cargo run --release -p emu198x-msx -- --bios msx.rom --frames 200 --screenshot msx.png
-```
+The runtime covers primary/expanded slots, cartridge mappers, keyboard and
+joystick input, native saves and shared debugging. MSX2 owners add V9938 video,
+SUB-ROM, RAM-mapper and RTC wiring. Sound cartridge regressions cover SCC,
+FM-PAC and Sound Cartridge paths; this is separate from manufacturer-specific
+SSG qualification. External disk hardware and the CX5M SFG-01 remain distinct
+board work.
