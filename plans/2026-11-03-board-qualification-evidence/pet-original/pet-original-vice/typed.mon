@@ -1,0 +1,8 @@
+step 100000
+sw
+keybuf print3+4\n
+step 100000
+sw
+bsave "/private/tmp/198x-qualification-evidence/pet-original-vice/screen.bin" 0 8000 83e7
+screenshot "/private/tmp/198x-qualification-evidence/pet-original-vice/typed.png" 2
+quit

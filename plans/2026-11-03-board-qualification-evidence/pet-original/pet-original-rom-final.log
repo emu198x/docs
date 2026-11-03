@@ -1,0 +1,119 @@
+   Compiling runtime-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-commodore-pet)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.20s
+     Running tests/original_2001.rs (/private/tmp/198x-qualification-target/debug/deps/original_2001-2bd494df2372bf22)
+
+running 3 tests
+BOOT first=true
+*** COMMODORE BASIC ***                 
+                                        
+ 7167 BYTES FREE                        
+                                        
+READY.                                  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+BOOT first=false
+*** COMMODORE BASIC ***                 
+                                        
+ 7167 BYTES FREE                        
+                                        
+READY.                                  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+CAPTURE first=true boot: cc34f71b5e40a08bf17647994a458f315514bb3593aac4c8f7254f087762f930
+CAPTURE first=false boot: cc34f71b5e40a08bf17647994a458f315514bb3593aac4c8f7254f087762f930
+RESULT
+*** COMMODORE BASIC ***                 
+                                        
+ 7167 BYTES FREE                        
+                                        
+READY.                                  
+PRINT3+4                                
+ 7                                      
+                                        
+READY.                                  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+CAPTURE first=false basic: 03b8221cdf4501a8dd097d9012360dc2301db7e59ba77488dd3611817b3807ae
+RESULT
+*** COMMODORE BASIC ***                 
+                                        
+ 7167 BYTES FREE                        
+                                        
+READY.                                  
+PRINT3+4                                
+ 7                                      
+                                        
+READY.                                  
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+CAPTURE first=true basic: 03b8221cdf4501a8dd097d9012360dc2301db7e59ba77488dd3611817b3807ae
+test revised_c000_basic_one_boots_and_types ... ok
+test initial_basic_one_boots_and_types ... ok
+test original_basic_one_confirms_every_printable_chiclet_contact ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.93s
+

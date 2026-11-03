@@ -1,0 +1,23 @@
+{
+  "screen_bytes": 1000,
+  "screen_differences": 0,
+  "active_pixels": 64000,
+  "pixel_differences": 0,
+  "apertures": {
+    "emu198x": [
+      32,
+      24,
+      320,
+      200
+    ],
+    "vice": [
+      32,
+      8,
+      320,
+      200
+    ]
+  },
+  "note": "Full screen RAM and every active monochrome pixel; host palette and presentation borders excluded. VICE ROM patches explicitly disabled.",
+  "ours_screen_sha256": "177c489e50e48be0803bf5014faf7ea0b8ee33558baf17bc5a5199dbdbe7cc51",
+  "vice_screen_sha256": "177c489e50e48be0803bf5014faf7ea0b8ee33558baf17bc5a5199dbdbe7cc51"
+}

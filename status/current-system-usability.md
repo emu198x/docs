@@ -106,27 +106,26 @@ host audio-device output remain unverified here. See
 and the [verification receipt](../plans/2026-10-31-commodore-regional-board-owners/verification.json).
 
 
-## PET 2001N/3032, 4032 and 8032
+## PET 2001 assembly 320008, 2001N/3032, 4032 and 8032
 
-Three fixed owners replace the former CRTC/BASIC-2 hybrid. The discrete 32K
-2001N/3032 uses BASIC 2; the 50 Hz 4032 and 8032 use matching BASIC-4 editors
-and graphics/business keyboards. Existing 40/80 profile IDs remain assigned to
-the CRTC boards, with a new explicit discrete profile. Each owner has seven
-direct tests. Shared state/video/input regressions remain common evidence.
+Four fixed owners cover the original 8 KiB assembly-320008 BASIC-1 board and
+three later 32 KiB boards. All reach READY and execute typed arithmetic with
+identified original firmware. Their full screen RAM and active monochrome
+pixels match VICE; the original-board comparison disables VICE ROM patches.
+The original owner also passes 63 printable contacts plus Space, BASIC-1 PRG
+autoload and exact runtime/CLI native-frame comparison.
 
-All three original firmware sets reach READY and execute typed arithmetic.
-Complete screen RAM and active monochrome pixels match VICE after that command.
-Native frame clocks are 16,640 / 20,000 / 19,992 for these exact editors; the
-8032 displays all 250 active text lines. Version-5 saves include pending PRGs,
-undelivered audio and the complete board/video phase. Version 4 is rejected
-before decoding under the approved exact-restore policy.
+Version-6 saves preserve both onboard 6520 PIAs, video phase, inputs, pending
+PRGs and undelivered audio. Version 5 is rejected before decoding because it
+omits live second-PIA state; its specimens remain hash-checked. The three later
+owners retain their frozen native-output and ROM-backed comparisons.
 
-Second PIA, IEEE-488/cassette and full 6545/interlace remain incomplete. Native
-menu interaction and host audio-device output remain unverified. The pinned
-browser package predates this correction, so the new pages omit its hybrid
-PET player. See the [current PET contract](../systems/commodore/pet.md),
-[source PR #2219](https://github.com/emu198x/emu198x/pull/2219) and
-[comparison evidence](../plans/2026-10-31-pet-board-owners/README.md).
+Shared PIA pulse/handshake phases, external IEEE devices, cassette and full
+6545/interlace remain incomplete. Native menu interaction and host audio-device
+output remain unverified. The pinned browser package predates this contract;
+the corrected pages omit its player. See the [current PET contract](../systems/commodore/pet.md),
+[source PR #2267](https://github.com/emu198x/emu198x/pull/2267) and
+[original-board evidence](../plans/2026-11-03-board-qualification-evidence/pet-original/README.md).
 
 
 ## Super NES NTSC and PAL

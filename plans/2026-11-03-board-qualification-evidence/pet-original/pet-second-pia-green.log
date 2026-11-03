@@ -1,0 +1,10 @@
+   Compiling common-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/common-commodore-pet)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.58s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/common_commodore_pet-f68b0f5ea6940dc6)
+
+running 2 tests
+test hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection ... ok
+test hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 27 filtered out; finished in 0.00s
+

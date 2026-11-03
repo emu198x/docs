@@ -1,0 +1,132 @@
+   Compiling common-commodore-pet v0.46.2 (/private/tmp/198x-qualification-source/crates/common-commodore-pet)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.86s
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/common_commodore_pet-277ed4cf37c34feb)
+
+running 31 tests
+test hardware_tests::ieee_atn_from_the_via_reaches_second_pia_edge_detection ... ok
+test hardware_tests::malformed_framebuffer_is_refused_before_owner_binding ... ok
+test hardware_tests::business_symbol_release_does_not_release_an_independently_held_shift ... ok
+test hardware_tests::basic_four_maps_the_extra_b000_socket ... ok
+test hardware_tests::second_pia_has_real_registers_and_reads_back_the_disconnected_ieee_data_bus ... ok
+test hardware_tests::second_pia_is_visible_to_a_real_6502_guest ... ok
+test hardware_tests::small_video_ram_mirrors_but_8032_has_two_kilobytes ... ok
+test hardware_tests::display_start_changes_fetch_not_beam_position ... ok
+test hardware_tests::discrete_video_on_has_the_reference_edges_and_no_crtc_registers ... ok
+test input::tests::keypad_minus_sits_beside_equals ... ok
+test input::tests::key_matrix_valid ... ok
+test input::tests::no_two_keys_share_a_matrix_cell ... ok
+test input::tests::only_the_undriven_cells_are_empty ... ok
+test hardware_tests::via_pb5_obeys_the_real_input_and_direction_register ... ok
+test hardware_tests::ca2_selects_the_character_bank_and_bit_seven_inverts ... ok
+test tests::a_pcr_driven_cb2_clicks_the_piezo ... ok
+test hardware_tests::paired_8032_fetches_and_blank_tenth_rows_reach_last_text_row ... ok
+test tests::a_frame_yields_close_to_the_declared_sample_rate ... ok
+test tests::framebuffer_correct_size_40_col ... ok
+test tests::frame_advances_frame_count ... ok
+test tests::a_silent_machine_emits_a_constant_level ... ok
+test tests::ram_round_trips ... ok
+test tests::rom_writes_ignored ... ok
+test tests::framebuffer_correct_size_80_col ... ok
+test tests::video_ram_round_trips ... ok
+test tests::the_audio_buffer_drains ... ok
+test tests::frame_matches_the_901498_01_editor_in_vice ... ok
+test tests::paired_fetches_do_not_double_the_crtc_clock ... ok
+test tests::the_shift_register_tone_reaches_the_piezo ... ok
+test hardware_tests::second_pia_live_driver_and_pending_irq_survive_exact_restore ... ok
+test tests::snapshot_round_trips_live_state ... ok
+
+test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/correct_boards.rs (/private/tmp/198x-qualification-target/debug/deps/correct_boards-da3b64f3789ad237)
+
+running 1 test
+test three_real_boards_boot_and_type ... ignored, FIXTURE: exact PET BASIC 2/4 firmware required
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/keyboard_type.rs (/private/tmp/198x-qualification-target/debug/deps/keyboard_type-fd52c7087d13fb31)
+
+running 5 tests
+test cursor_right_moves_the_cursor_instead_of_typing ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test stop_breaks_a_running_basic_program ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_basic_line_and_prints_the_result ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_a_subtraction_through_the_keypad_minus ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test types_the_bracket_and_arrow_keys ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rom_boot.rs (/private/tmp/198x-qualification-target/debug/deps/rom_boot-0af1b2962c3b3599)
+
+running 1 test
+test rom_set_boots_without_panic ... ignored, FIXTURE: needs Commodore PET ROM set — run with --ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_firmware_boot.rs (/private/tmp/198x-qualification-target/debug/deps/synthetic_firmware_boot-4db0ee1c891f380f)
+
+running 2 tests
+test synthetic_firmware_fills_the_screen_with_a_solid_glyph ... ok
+test the_control_image_lights_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running unittests src/lib.rs (/private/tmp/198x-qualification-target/debug/deps/runtime_commodore_pet-53590e14318e25fd)
+
+running 11 tests
+test profiles::tests::profile_declares_four_roms ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test snapshot::tests::decode_rejects_old_schema_before_reading_payload ... ok
+test save_regressions::queued_audio_all_boards ... ok
+test save_regressions::replacement_firmware_resets_the_clock_and_survives_restore_and_reset ... ok
+test snapshot::tests::malformed_or_foreign_payload_does_not_mutate_live_runtime ... ok
+test save_regressions::arbitrary_phase_continuations_preserve_first_pixels_audio_and_clocks ... ok
+test board_baseline_tests::original_v5_specimens_stay_intact_and_reject_before_payload_decoding ... ok
+test board_baseline_tests::current_v6_states_resume_every_native_pixel_sample_clock_and_state ... ok
+test board_baseline_tests::existing_three_boards_keep_their_frozen_native_picture_audio_and_clocks ... ok
+test save_regressions::queued_program_all_boards ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.72s
+
+     Running tests/audio.rs (/private/tmp/198x-qualification-target/debug/deps/audio-e68bcf7e35ed522a)
+
+running 2 tests
+test an_idle_machine_still_reports_the_declared_format ... ok
+test a_shift_register_tone_produces_a_non_empty_waveform ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/catalogue.rs (/private/tmp/198x-qualification-target/debug/deps/catalogue-28b9584b3a94d8a2)
+
+running 1 test
+test catalogue_installs_all_firmware_and_snapshot_reset_retains_it ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/program.rs (/private/tmp/198x-qualification-target/debug/deps/program-0089edd37705689f)
+
+running 3 tests
+test a_basic_program_loads_and_runs_itself ... ignored, FIXTURE: needs PET kernal/basic/editor/char ROMs — run with --ignored
+test a_short_image_is_rejected_at_the_slot_boundary ... ok
+test autoload_sets_the_basic_pointers_and_queues_run ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-qualification-target/debug/deps/snapshot_roundtrip-3ee7844bc991618e)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests common_commodore_pet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_commodore_pet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

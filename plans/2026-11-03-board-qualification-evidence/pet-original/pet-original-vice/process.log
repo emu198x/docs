@@ -1,0 +1,100 @@
+Error - failed to retrieve executable path, falling back to getcwd() + argv[0]
+Opening monitor command playback file: /private/tmp/198x-qualification-evidence/pet-original-vice/typed.mon
+ 
+*** VICE Version 3.10 ***
+ 
+This is the condensed log, for the full log use --verbose or --debug.
+ 
+Main: random seed was: 0x6ae9e014
+Main: command line was: /opt/homebrew/bin/xpet -default -console -model 2001 +basic1 -kernal /private/tmp/198x-qualification-evidence/pet-2001/assembled/kernal-1.901447-06-07.bin -basic /private/tmp/198x-qualification-evidence/pet-2001/assembled/basic-1.901447-09-02-03-04.bin -editor /private/tmp/198x-qualification-evidence/pet-2001/assembled/edit-1-n.901447-05.bin -chargen /private/tmp/198x-qualification-evidence/pet-2001/assembled/characters-1.901447-08.bin -sounddev dummy -warp -limitcycles 10000000 -initbreak reset -monlog -monlogname /private/tmp/198x-qualification-evidence/pet-original-vice/monitor.log -moncommands /private/tmp/198x-qualification-evidence/pet-original-vice/typed.mon
+Main: VICE system file directory: '/opt/homebrew/Cellar/vice/3.10/share/vice'.
+Main: VICE system file search path: '/Users/stevehill/.local/share/vice:/opt/homebrew/bin:/opt/homebrew/Cellar/vice/3.10/share/vice'.
+Sysfile: Loading `/private/tmp/198x-qualification-evidence/pet-2001/assembled/characters-1.901447-08.bin'.
+Sysfile: Loading `/private/tmp/198x-qualification-evidence/pet-2001/assembled/basic-1.901447-09-02-03-04.bin'.
+Sysfile: Loading `/private/tmp/198x-qualification-evidence/pet-2001/assembled/kernal-1.901447-06-07.bin'.
+PETMEM: Warning - PET2001 ROM loaded, but patches not enabled! IEEE488 will not work.
+PETMEM: Identified Kernal 1 ROM by checksum.
+Sysfile: Loading `/private/tmp/198x-qualification-evidence/pet-2001/assembled/edit-1-n.901447-05.bin'.
+PETMEM: ROM screen width is 40.
+PET: Initializing IEEE488 bus...
+Palette: Loading palette `/opt/homebrew/Cellar/vice/3.10/share/vice/PET/2001-blueish.vpl'.
+Sysfile: Loading `/opt/homebrew/Cellar/vice/3.10/share/vice/DRIVES/dos2031-901484-03+05.bin'.
+Sound: Available sound devices: coreaudio dummy dump fs wav voc iff aiff flac ogg soundmovie
+Joystick: Warning - using minimal default mapping.
+Keymap: Loading keymap `/opt/homebrew/Cellar/vice/3.10/share/vice/PET/gtk3_grus_sym.vkm'.
+Keymap: Warning - gtk3_grus_sym.vkm: !LCBM !VCBM !LCTRL !VCTRL not defined.
+
+Main CPU: starting at ($FFFC).
+Main CPU: RESET.
+Unit 8: RESET.
+Monitor playback command: step 100000
+Sound: Opened device `dummy', speed 48000Hz, fragment size 0.67ms, buffer size 20.00ms
+Sound: reSID: MOS6581, filter on, sampling rate 48000Hz - resampling, pass to 21600Hz
+VSync: Sync reset
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Sound buffer overflow (cycle based)
+Sound: Warning - Buffer overflow warning repeated 25 times, will now be ignored
+Unit 8: RESET.
+PET: cycles per frame set to 16633, refresh to 60.121Hz
+VSync: Sync reset
+PET: cycles per frame set to 16640, refresh to 60.096Hz
+VSync: Sync reset
+Monitor playback command: sw
+Monitor playback command: keybuf print3+4\n
+Monitor playback command: step 100000
+VSync: Sync reset
+Monitor playback command: sw
+Monitor playback command: bsave "/private/tmp/198x-qualification-evidence/pet-original-vice/screen.bin" 0 8000 83e7
+Monitor playback command: screenshot "/private/tmp/198x-qualification-evidence/pet-original-vice/typed.png" 2
+Monitor playback command: quit
+
+Configure Flags:
+--disable-arch --disable-pdf-docs --enable-gtk3ui --enable-midi --enable-lame --enable-ethernet --enable-cpuhistory --with-flac --with-vorbis --with-gif --with-png --disable-debug --disable-dependency-tracking --prefix=/opt/homebrew/Cellar/vice/3.10 --libdir=/opt/homebrew/Cellar/vice/3.10/lib
+
+Resources with non default values:
+SoundDeviceName="dummy"
+KeymapSymFile="gtk3_grus_sym.vkm"
+KeyboardType=4
+ChargenName="/private/tmp/198x-qualification-evidence/pet-2001/assembled/characters-1.901447-08.bin"
+KernalName="/private/tmp/198x-qualification-evidence/pet-2001/assembled/kernal-1.901447-06-07.bin"
+EditorName="/private/tmp/198x-qualification-evidence/pet-2001/assembled/edit-1-n.901447-05.bin"
+BasicName="/private/tmp/198x-qualification-evidence/pet-2001/assembled/basic-1.901447-09-02-03-04.bin"
+RamSize=8
+IOSize=2048
+Crtc=0
+VideoSize=40
+Basic1=0
+EoiBlank=1
+Screen2001=1
+CrtcPaletteFile="2001-blueish.vpl"
+CrtcExternalPalette=1
+MonitorLogFileName="/private/tmp/198x-qualification-evidence/pet-original-vice/monitor.log"
+MonitorLogEnabled=1
+
+reconstructed commandline options (might be incomplete):
+-default -monlogname "/private/tmp/198x-qualification-evidence/pet-original-vice/monitor.log" -monlog -sounddev "dummy" -keyboardtype "4" -kernal "/private/tmp/198x-qualification-evidence/pet-2001/assembled/kernal-1.901447-06-07.bin" -basic "/private/tmp/198x-qualification-evidence/pet-2001/assembled/basic-1.901447-09-02-03-04.bin" -editor "/private/tmp/198x-qualification-evidence/pet-2001/assembled/edit-1-n.901447-05.bin" -chargen "/private/tmp/198x-qualification-evidence/pet-2001/assembled/characters-1.901447-08.bin" +basic1 -eoiblank -screen2001 -ramsize "8" -iosize "2048" +crtc -videosize "40" -CRTCextpal -CRTCpalette "2001-blueish.vpl"
+
+Closed monitor command playback file: /private/tmp/198x-qualification-evidence/pet-original-vice/typed.mon
