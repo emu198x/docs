@@ -78,3 +78,30 @@ No dependency, CPU/chip behaviour or save-layout change is introduced.
 [Evidence](2026-11-03-board-qualification-evidence/) retains the original capture,
 its receipt, strict test output and the lossless inspection copy. The older
 native evidence's white-screen wording is historical and disproven here.
+
+## Timex: first demonstrated boot fault and bounded correction
+
+The unchanged TS2068 reaches PC $0038 with F4=$01 and reads only $FF from
+chunk 0. `MemoryTimex` treats every selected chunk as empty DOCK, even when
+FF bit 7 selects EXROM. It also overlays low HOME ROM when FF7 is set without
+a matching F4 bit. Both contradict the manufacturer TS2068 Technical Manual
+sections 2.1.8.1 and 2.1.13.5 (held PDF and Docling extract). Fuse's TS2068
+mapping independently maps the 8 KiB extension across every selected chunk.
+
+First fix only `common-timex-2068/src/memory.rs`: combine F4 chunk selection
+with FF7 for CPU reads, mirror the existing EXROM over selected 8 KiB windows,
+ignore writes to selected external windows, and override `read_screen` so ULA
+fetches continue seeing HOME RAM. Keep existing register fields and save
+layout; their saved bits already identify both selections. No DOCK cartridge
+implementation or speculative contention change. Add independent truth-table
+checks for all 256 selectors, both sources, all chunk edges, readonly external
+mapping, hidden HOME RAM and independent screen fetches. Reproduce red first,
+then boot the original ROM again and diagnose any remaining failure separately.
+Video/brightness and timing metadata remain later parts of #52; no new golden
+is accepted until boot and typed BASIC are independently established.
+
+Temporary read-only source clones for later video work:
+/private/tmp/198x-qualification-scld and /private/tmp/198x-qualification-ula.
+Both still carry retired rule-6 wording; #2178 requires correcting that
+wording when those repositories are changed. The current parent decision
+retiring the interface-shape ban takes precedence over that stale text.
