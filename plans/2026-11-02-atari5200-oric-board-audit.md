@@ -161,7 +161,7 @@ The fresh suite on `701667175` passed 8,574 tests with zero failures. The
 only unavailable hosted gate was macOS runner acquisition. Inspecting the
 workflow showed its validation is exactly `cargo check --workspace
 --all-targets`. That full check passed locally on native ARM64, pinned Rust
-1.99.0, with the same clean source tree. Retain its log and the complete
+1.99.1, with the same clean source tree. Retain its log and the complete
 hosted-check snapshot as the fresh Mac validation; do not report the queued
 hosted job as a passing run. No test was disabled, no check status overridden,
 and shared history or protection rules were not changed.
@@ -179,3 +179,16 @@ All task changes and evidence are retained on verified remote PR refs.
 Remove the task worktrees and disposable build caches after the final clean
 status/retention checks. Preserve the earlier locked Atari/PET investigations
 and every unrelated primary-checkout file.
+
+
+## Completion — 2026-11-03
+
+The restored-media fix #2241 merged as
+`d97b0d6f25b7128a2642309685823e7e6b06ad84` after all retained required
+checks passed. The family-wide Linux-only PR policy removed the obsolete
+hosted macOS requirement; no check result was overridden. The proposed system
+status pages now describe merged source, so docs #176 can leave draft.
+
+The next implementation is the three 5200 physical-board owners. Oric still
+requires a qualified PCB issue plus fitted modification state before owners
+can be named. The continuation plan records those boundaries separately.
