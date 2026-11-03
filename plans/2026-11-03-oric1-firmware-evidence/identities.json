@@ -1,0 +1,18 @@
+{
+  "source": "https://www.petergordon.org.uk/oricutron/files/Oricutron_win32_v12.zip",
+  "independent_manifest": "MAME src/mame/tangerine/oric.cpp",
+  "roms": [
+    {
+      "file": "basic10.rom",
+      "size": 16384,
+      "sha1": "333116e6884d85aaa4dfc7578a91cceeea66d016",
+      "sha256": "83d341dab126092f7a6d56f6a92bca0643ff3aa6529d896085004f958c9be2ff"
+    },
+    {
+      "file": "basic11b.rom",
+      "size": 16384,
+      "sha1": "9451a1a09d8f75944dbd6f91193fc360f1de80ac",
+      "sha256": "ed28568574716eef5d7c0fde2568d7a47a6e4b1fbca81daff3be05e45723466d"
+    }
+  ]
+}

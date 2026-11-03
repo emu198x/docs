@@ -1,0 +1,14 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-oric-firmware-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/b9f939f586fab584: Operation not permitted (os error 1)
+   Compiling runtime-oric-atmos v0.46.2 (/private/tmp/198x-oric-firmware-source/crates/runtime-oric-atmos)
+    Finished `test` profile [unoptimized] target(s) in 8.83s
+     Running tests/real_rom_firmware.rs (/private/tmp/198x-oric-firmware-target/debug/deps/real_rom_firmware-d46458a0ec8d06a7)
+
+running 2 tests
+wrong-ROM identity, one-byte mutation and incorrect STR$ expectation all rejected
+test wrong_rom_and_mutated_images_cannot_pass_the_oric1_reference ... ok
+basic10.rom: exact identity, ORIC EXTENDED BASIC V1.0, Ready and STR$ result 2 verified
+basic11b.rom: exact identity, ORIC EXTENDED BASIC V1.1, Ready and STR$ result 32 verified
+test original_rom_profiles_boot_and_preserve_their_distinct_str_behaviour ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.97s
+

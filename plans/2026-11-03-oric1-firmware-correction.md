@@ -32,3 +32,25 @@ Source worktree: /private/tmp/198x-oric-firmware-source; docs worktree:
 /private/tmp/198x-oric-firmware-assets. Preserve unrelated primary checkouts
 and earlier locked Atari/PET investigations. Retain exact task commits and
 useful evidence before removing worktrees, caches and transient copies.
+
+## Implemented correction
+
+[Source PR #2257](https://github.com/emu198x/emu198x/pull/2257), head
+`70f1d2f4dd44d092bba40a81fe06e9d57ed73ca4`, implements the approved contract.
+The pre-fix probe fails because a generic-only BASIC 1.1 directory boots
+Oric-1. The corrected shared resolver rejects that directory for Oric-1,
+retains it for Atmos, and selects each original author filename correctly.
+
+Local verification: 81 affected machine/runtime/native tests passed, with
+four fixture tests ignored in the default run. The two new strict original-ROM
+tests were then run explicitly and both passed. The no-default-features
+native build passed four unit and eight integration tests. Clippy with warnings
+denied, formatting, registry validation and generated-status checks passed.
+The initial Clippy single-element-loop failure was corrected without a lint
+suppression; its failed output and the successful final run are both retained.
+
+[Evidence index](2026-11-03-oric1-firmware-evidence/README.md) contains the
+exact red/green resolver probes, logs and independently checked identities.
+No CPU, ULA or snapshot schema/version changes were needed. The already
+correct 64 KiB physical RAM profile descriptions were retained. This closes
+the firmware fault only; physical PCB/fitting qualification remains open.
