@@ -1,5 +1,12 @@
 # Native original-firmware evidence
 
+**Qualification, 2026-11-03:** the PAL 1.3 images below already contain the
+complete disk/hand graphic. Their white-screen interpretation came from the
+inspection viewer and is disproven by native/captured/decoded-pixel agreement.
+See [the qualification and strict regressions](../2026-11-03-board-qualification-batch.md).
+The original captures and receipts remain unchanged; the older negative
+interpretation below is historical.
+
 The new captures use the working tree committed as source `015808f53` (PR #2236).
 `fixed_ocs_boot_capture` runs complete native fields through the shared session,
 checks RGBA framing, writes unaltered PNGs and records input/output SHA-256,

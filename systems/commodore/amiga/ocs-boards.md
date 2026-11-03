@@ -86,11 +86,13 @@ PAL/NTSC and A2000CR rev-6 PAL/NTSC reach the 2.04 r37.175 screen at 650 fields.
 The rev-6a captures explicitly fit factory 512 KiB, rather than its legacy
 maxed runtime preset.
 
-Kickstart 1.3 remains a known gap on the PAL 8372A/OCS Denise configurations:
-both remain white at the same bound. The untouched pre-extraction engine
-reproduces the same complete framebuffer hashes. NTSC 1.3 and regional 2.04
-are positive controls. The cause remains under investigation in [#2237](https://github.com/emu198x/emu198x/issues/2237); successful 2.04
-captures do not qualify 1.3. See the [native receipts and scope](../../../plans/2026-11-02-amiga-remaining-board-owners/native-evidence.md)
+The PAL 8372A/OCS Denise configurations also reach the 1.3 disk/hand screen
+at 650 native fields: rev-6a with 512 KiB chip RAM and A2000CR rev-6 with
+1 MiB. Exact firmware identities, complete native/captured/decoded-pixel
+agreement and save continuation are verified. A white-frame control rejects.
+The [qualification evidence](../../../plans/2026-11-03-board-qualification-batch.md)
+records why the earlier thumbnail-based white-screen conclusion was wrong;
+the original captured pixels are unchanged. See the [native receipts](../../../plans/2026-11-02-amiga-remaining-board-owners/native-evidence.md)
 and [source PR #2236](https://github.com/emu198x/emu198x/pull/2236).
 
 The published player’s Model selector also overflows a 390 px viewport to

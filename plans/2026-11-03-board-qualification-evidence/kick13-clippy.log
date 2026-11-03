@@ -1,0 +1,3 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+    Checking runtime-commodore-amiga v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-commodore-amiga)
+    Finished `dev` profile [optimized] target(s) in 1.07s

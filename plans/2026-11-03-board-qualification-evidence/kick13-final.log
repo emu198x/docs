@@ -1,0 +1,14 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-qualification-source/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/ed2e104df0a851ba: Operation not permitted (os error 1)
+   Compiling runtime-commodore-amiga v0.46.2 (/private/tmp/198x-qualification-source/crates/runtime-commodore-amiga)
+    Finished `test` profile [optimized] target(s) in 2.76s
+     Running tests/kick13_pal_mixed_boot.rs (/private/tmp/198x-qualification-target/debug/deps/kick13_pal_mixed_boot-89fe4bb01e7ec265)
+
+running 3 tests
+test original_capture_contains_the_disk_graphic_even_when_a_thumbnail_hides_it ... ok
+commodore-amiga-a500-rev6a-pal: exact original identity; live/captured/decoded disk graphic; white/mutation controls; exact continuation
+commodore-amiga-a2000cr-rev6-pal: exact original identity; live/captured/decoded disk graphic; white/mutation controls; exact continuation
+test a500_rev6a_pal_kick13_boot_pixels_and_restore ... ok
+test a2000cr_rev6_pal_kick13_boot_pixels_and_restore ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.14s
+
