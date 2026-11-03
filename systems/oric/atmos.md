@@ -24,6 +24,13 @@ every such population. Revision-specific owners remain open under #2144.
 The [primary-source audit](https://github.com/stevehill1981/198x/pull/294)
 records the assembly numbers, fitted changes and transcription ambiguities.
 
+The [complete original schematic audit](https://github.com/stevehill1981/198x/pull/297)
+identifies BN0130 **circuit issue 7**, C/N63, dated 24-2-84, and supplies the
+R26-to-IC22-pin-8 connection for that drawing. It still does not identify the
+physical PCB issue or every fitted amplifier/modification population. The
+[qualification matrix](../../plans/2026-11-03-oric-board-qualification.md)
+records what is established and what remains before fixed owners can be named.
+
 ## What works
 
 - **Boot to BASIC** (2026-06-04) with BASIC 1.1 UK (16K, md5 `3202…b629`, MAME
