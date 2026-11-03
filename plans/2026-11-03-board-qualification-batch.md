@@ -183,3 +183,38 @@ ULA; the memory truth table failed against the old paging. Original Timex v17
 specimens remain byte-identical. The old stripe golden is retained alongside
 native TC2068/TS2068 boot and BASIC captures, firmware identities, logs and
 exact-head chip CI ledgers in the qualification evidence directory.
+
+## Sony bounded implementation design
+
+Primary audit: umbrella PR #298, original Sony HB-10P/HB-10B AE/UK manual,
+PU-37 schematic 5-11/12/13 and Yamaha S3527 datasheet pages 4 and 8.
+The original local MAME `hb10p.zip` contains `10pbios.ic12`, 32 KiB,
+SHA-1 `5e7c8eab238712d1e18b0219c0f4d4dae180420d`, matching the independent
+openMSX HB-10P manifest. SHA-256 is
+`88eff516d7d706b8a4e5a512697444bd5a851e403c82006bcbfc537be3c47976`.
+No manufacturer ROM is committed.
+
+1. Add guest-executed red tests in machine-sony-hb-10p/tests/board_decode.rs:
+   slot-3 and slot-0 C000/FFFF share bytes in both directions; slot-0 BFFF
+   and slot-1/2 remain independent; A2 aliases PPI/PSG and VDP block addresses,
+   with adjacent-block negative controls.
+2. machine-sony-hb-10p/src/lib.rs adds the slot-0 C000–FFFF RamRegion to the
+   existing same-address backing store. common-msx/src/board.rs gains a default
+   discrete decoder choice on MsxBoard; only this owner selects S3527 decoding.
+   common-msx/src/lib.rs stores that immutable choice outside serde and
+   reattaches it through construction/from_state, preserving all live fields.
+   Decode supported PPI/PSG/VDP aliases before dispatch while trace records
+   keep the original guest port. Do not globally widen other boards' ports.
+3. Proposed compatibility choice: Sony writes/requires v11 and rejects v10
+   before decoding or mutation; other eight named MSX profiles retain v10.
+   Preserve all frozen v10 specimens. Add current v11 round-trip, foreign-board,
+   rejection, reset and exact native-video/audio/clock continuation tests.
+   This changes execution and topology, so approval precedes production edits.
+4. Add strict identified-ROM boot/BASIC/native-output tests in runtime-msx;
+   request the existing workspace sha2 as test-only dependency before adding.
+   Re-run common-msx, the Sony owner and all runtime-msx suites/Clippy/fmt.
+5. Report fitted T6950 and integrated S3527 SSG accurately. This bounded decode
+   fix does not establish analogue calibration, a complete T6950 personality,
+   printer peripherals or all integrated-SSG differences. Record any concrete
+   remaining defect separately rather than treating generic PAL or C-BIOS as
+   manufacturer qualification.
