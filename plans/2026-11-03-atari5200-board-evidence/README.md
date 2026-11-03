@@ -29,4 +29,8 @@ Verified private inputs:
 
 The first hosted registry check caught stale generated status pages. They
 were regenerated, checked locally and committed; no registry gate changed.
-Full applicable hosted CI remains required before merging the source PR.
+All applicable hosted checks passed on `48539e4cf`. The complete ledger records
+8,597 passes, zero failures, 713 ignored and 110 skipped tests. It includes
+all 82 affected common/owner/runtime tests. Source #2253 merged as
+`43964e7098dca1d659113a1a5a2d48bf3181a778`; the exact tested head and
+artifact identity are retained in `provenance.json`.

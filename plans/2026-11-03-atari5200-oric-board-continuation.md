@@ -87,3 +87,24 @@ Oric qualification identified the original circuit issue 7 drawing and
 archived both halves. Physical PCB issue and fitted-population mapping remain
 open; the [matrix](2026-11-03-oric-board-qualification.md) names the concrete
 source requirements. No additional Oric machine is counted.
+
+
+## Source completion
+
+Source #2253 merged as `43964e7098dca1d659113a1a5a2d48bf3181a778` after every
+applicable hosted check passed. Its full suite records 8,597 passes, zero
+failures, 713 ignored and 110 skipped tests. The status pages now describe
+landed owners. Reference audits #296 and #297 are merged; extraction fix
+#2252 and the prerequisite media/docs PRs #2241/#176 are also merged.
+
+The original baseline worktree was removed after its exact generator and
+all sixteen raw outputs were verified against the source commit retained
+on the remote. Its disposable build cache was removed. The isolated primary
+reference worktree was also verified clean and retained at the exact remote
+PR ref before removal. The earlier locked investigations remain untouched.
+
+Oric #345 still has the shared-firmware fallback fault. Its distinct
+firmware-ID correction remains behind the existing explicit contract
+approval; it is not silently folded into a board-name change. Physical PCB
+issue and fitting qualification remain separate, even after firmware lookup
+is corrected.
