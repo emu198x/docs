@@ -128,6 +128,6 @@ frame byte-for-byte. Native menu interaction and analogue output are not
 established by this check.
 
 Use `--model commodore-pet-2001-320008-8k` with the assembled firmware directory.
-See [source PR #2267](https://github.com/emu198x/emu198x/pull/2267) and the
+See [source PR #2269](https://github.com/emu198x/emu198x/pull/2269) and the
 [qualification evidence](../../plans/2026-11-03-board-qualification-evidence/pet-original/README.md).
 This advances #355 and #349; neither broader family/device issue is complete.
