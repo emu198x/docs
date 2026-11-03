@@ -277,3 +277,33 @@ Proposed bounded implementation, before production edits:
    boot/typed BASIC, Clippy/fmt and generated registry checks. Do not close all
    of #355: other original board layouts, CRTC personalities, external IEEE
    devices and wider family coverage remain separate.
+
+### Complete catalogue recapture: ten differences predate Timex
+
+All 103 entries completed in 2,936.18 seconds with every declared firmware and
+media input present. 93 match both stored hashes; ten +3 disk entries differ.
+No capture timed out or failed to execute. The runner returns failure for the
+ten mismatches; no oracle has been changed. Cybernoid's current capture remains
+on a loader-like display and has silent audio, so accepting all new values
+would risk encoding a fault as expected behaviour.
+
+A separately built pre-Timex checkout at
+`a7536e6d7400d5aad51b4f9cecdf7456c5bca3cb`, using registry ULA/SCLD 0.2.0,
+reproduces **all ten changed entries and one matching +3 control** with
+byte-identical PNG and WAV outputs. The Timex fix does not introduce these
+differences. The retained JSON ledgers identify both binaries, exact entries,
+all hashes and byte comparisons. No current expected hash is replaced.
+
+Proposed bounded landing policy: advance the global routing marker to 6 after
+this complete recapture, retain all ten existing expected hashes so real-ROM
+catalogue verification continues to fail for those cases, and track diagnosis
+separately. This records the tested renderer without blessing unexpected
+software behaviour or suppressing the catalogue's failures. The alternative
+is to fix/classify the ten pre-existing +3 differences before landing #52.
+This is a sequencing choice; the existing oracle-integrity guard stays in place.
+
+Steve approved the original PET owner and family v6 rejection policy, plus
+test-only sha2 for both runtime-msx and runtime-commodore-pet. The original
+owner uses assembly-based naming (`machine-commodore-pet-2001-320008`, profile
+`commodore-pet-2001-320008-8k`) so later RAM fittings can share its physical
+owner. This remains the single private owner addition in the agreed scope.

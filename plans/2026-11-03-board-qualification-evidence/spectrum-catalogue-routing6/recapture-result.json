@@ -1,0 +1,912 @@
+{
+  "elapsed_seconds": 2936.18,
+  "completed": 103,
+  "failed": [
+    {
+      "id": "chase-hq-plus3",
+      "seconds": 30.74,
+      "frame_hash": "xxh64:47fda6722c6032b2",
+      "audio_hash": "xxh64:8cf6e4f0d3029c45",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "rainbow-islands-plus3",
+      "seconds": 27.55,
+      "frame_hash": "xxh64:5ba13cc089e4d2a8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": false,
+      "audio_matches": true
+    },
+    {
+      "id": "cybernoid-plus3",
+      "seconds": 36.08,
+      "frame_hash": "xxh64:0caaf697001fbddb",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "stormlord-plus3",
+      "seconds": 28.9,
+      "frame_hash": "xxh64:14fe1d566e90d1a2",
+      "audio_hash": "xxh64:c26fc1ce9583a0eb",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "starglider-2-plus3",
+      "seconds": 29.22,
+      "frame_hash": "xxh64:5c8dc6f976335002",
+      "audio_hash": "xxh64:0558458ef5994a48",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "seconds": 33.43,
+      "frame_hash": "xxh64:bfa8481a6e3a2d39",
+      "audio_hash": "xxh64:c1c8799faf7145f6",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "tetris-plus3",
+      "seconds": 28.09,
+      "frame_hash": "xxh64:cfa3bf1290e416aa",
+      "audio_hash": "xxh64:3c2f51da1155b4c4",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "robocop-plus3",
+      "seconds": 28.49,
+      "frame_hash": "xxh64:3f225520cedc41e9",
+      "audio_hash": "xxh64:0a89e8f7b9e4f692",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "seconds": 37.42,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:db820fd9e95a4b8b",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "dragon-ninja-plus3",
+      "seconds": 35.73,
+      "frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio_hash": "xxh64:21baa3d69a4ed94d",
+      "frame_matches": true,
+      "audio_matches": false
+    }
+  ],
+  "records": [
+    {
+      "id": "jet-set-willy",
+      "seconds": 42.08,
+      "frame_hash": "xxh64:db47c647e9188f6c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "manic-miner",
+      "seconds": 44.15,
+      "frame_hash": "xxh64:3849ef196db5a88f",
+      "audio_hash": "xxh64:6d792f2d2ceb0599",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "knight-lore",
+      "seconds": 54.53,
+      "frame_hash": "xxh64:074e242db0720e42",
+      "audio_hash": "xxh64:f399edb14f150a40",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chuckie-egg",
+      "seconds": 31.61,
+      "frame_hash": "xxh64:3523e9cc4d817ded",
+      "audio_hash": "xxh64:d397fd68c546570f",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "atic-atac",
+      "seconds": 61.62,
+      "frame_hash": "xxh64:df593b7c8ee0ce3c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "skool-daze",
+      "seconds": 69.59,
+      "frame_hash": "xxh64:31f18ede38504e5b",
+      "audio_hash": "xxh64:68afa2e77f120d89",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "saboteur",
+      "seconds": 66.95,
+      "frame_hash": "xxh64:731e3797e105ed73",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "sabre-wulf",
+      "seconds": 64.6,
+      "frame_hash": "xxh64:0b7b5824e73f88e3",
+      "audio_hash": "xxh64:1f5ec3216ebddf8c",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-midnight",
+      "seconds": 72.9,
+      "frame_hash": "xxh64:7c4d050a81b56d1c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "head-over-heels",
+      "seconds": 79.01,
+      "frame_hash": "xxh64:3d36372a6034bc91",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "back-to-skool-tape-microsphere",
+      "seconds": 82.96,
+      "frame_hash": "xxh64:ce3545bb0a6c8172",
+      "audio_hash": "xxh64:c7a871c4f5c1c697",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "ace-of-aces-tape-alkatraz",
+      "seconds": 174.0,
+      "frame_hash": "xxh64:8e063f13a212b240",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "back-to-the-future-tape-bleepload",
+      "seconds": 128.3,
+      "frame_hash": "xxh64:08e038c859ba3364",
+      "audio_hash": "xxh64:6e9f8c9625bc69e8",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "operation-wolf-tape-speedlock",
+      "seconds": 175.9,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop-tape-speedlock",
+      "seconds": 161.65,
+      "frame_hash": "xxh64:3f225520cedc41e9",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "dragon-ninja-tape-speedlock",
+      "seconds": 161.99,
+      "frame_hash": "xxh64:1d7411eccce6eccb",
+      "audio_hash": "xxh64:b803395f82e87e9b",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "renegade-tape-speedlock",
+      "seconds": 98.09,
+      "frame_hash": "xxh64:805174e353503a99",
+      "audio_hash": "xxh64:4dcf926d1df91296",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rambo-tape-speedlock",
+      "seconds": 98.89,
+      "frame_hash": "xxh64:0ef5c4d4a22f56fb",
+      "audio_hash": "xxh64:8e0a319635d2a85f",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "combat-school-tape-speedlock",
+      "seconds": 207.54,
+      "frame_hash": "xxh64:9555472c791e2e9a",
+      "audio_hash": "xxh64:a81e6b371e275dbe",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "star-wars-tape-speedlock",
+      "seconds": 171.32,
+      "frame_hash": "xxh64:1361c56d5e7e733e",
+      "audio_hash": "xxh64:7ca4185448186860",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "mikie-tape-speedlock",
+      "seconds": 150.71,
+      "frame_hash": "xxh64:d19ca545b9a8386f",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "salamander-tape-speedlock",
+      "seconds": 92.11,
+      "frame_hash": "xxh64:95c2a0a05d1d025d",
+      "audio_hash": "xxh64:4a4c0322a984d488",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "nemesis-tape-speedlock",
+      "seconds": 96.48,
+      "frame_hash": "xxh64:85bb2d88174c407f",
+      "audio_hash": "xxh64:2386dbf59f2e2182",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "bubble-bobble-tape-speedlock",
+      "seconds": 97.3,
+      "frame_hash": "xxh64:efbc1a70201a1b87",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "arkanoid-tape",
+      "seconds": 73.1,
+      "frame_hash": "xxh64:c9a50ee6e7a62080",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "green-beret-tape-speedlock",
+      "seconds": 95.52,
+      "frame_hash": "xxh64:71f988e0154d825f",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "manic-miner-plus",
+      "seconds": 46.59,
+      "frame_hash": "xxh64:3849ef196db5a88f",
+      "audio_hash": "xxh64:6d792f2d2ceb0599",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "knight-lore-plus",
+      "seconds": 58.19,
+      "frame_hash": "xxh64:074e242db0720e42",
+      "audio_hash": "xxh64:f399edb14f150a40",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "jet-set-willy-plus",
+      "seconds": 43.07,
+      "frame_hash": "xxh64:db47c647e9188f6c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chuckie-egg-plus",
+      "seconds": 28.22,
+      "frame_hash": "xxh64:3523e9cc4d817ded",
+      "audio_hash": "xxh64:d397fd68c546570f",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "atic-atac-plus",
+      "seconds": 59.03,
+      "frame_hash": "xxh64:df593b7c8ee0ce3c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "skool-daze-plus",
+      "seconds": 64.39,
+      "frame_hash": "xxh64:31f18ede38504e5b",
+      "audio_hash": "xxh64:68afa2e77f120d89",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "sabre-wulf-plus",
+      "seconds": 58.65,
+      "frame_hash": "xxh64:0b7b5824e73f88e3",
+      "audio_hash": "xxh64:1f5ec3216ebddf8c",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "saboteur-plus",
+      "seconds": 61.9,
+      "frame_hash": "xxh64:731e3797e105ed73",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-midnight-plus",
+      "seconds": 66.82,
+      "frame_hash": "xxh64:7c4d050a81b56d1c",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "head-over-heels-plus",
+      "seconds": 71.06,
+      "frame_hash": "xxh64:3d36372a6034bc91",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop",
+      "seconds": 114.44,
+      "frame_hash": "xxh64:4c33e2c06bca96e0",
+      "audio_hash": "xxh64:2af23ca455d773e3",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chase-hq",
+      "seconds": 154.96,
+      "frame_hash": "xxh64:920da4ca7b1f875d",
+      "audio_hash": "xxh64:c07b0f9dabad1ac4",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "out-run",
+      "seconds": 46.14,
+      "frame_hash": "xxh64:1838727d99e21182",
+      "audio_hash": "xxh64:265d2accded98a57",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "operation-wolf",
+      "seconds": 155.53,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "bubble-bobble",
+      "seconds": 72.12,
+      "frame_hash": "xxh64:efbc1a70201a1b87",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rainbow-islands",
+      "seconds": 116.23,
+      "frame_hash": "xxh64:2248714b958d34ed",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "total-eclipse",
+      "seconds": 58.61,
+      "frame_hash": "xxh64:139aaf56e6c27028",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "castle-master",
+      "seconds": 61.14,
+      "frame_hash": "xxh64:915844668f32246e",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "where-time-stood-still",
+      "seconds": 131.89,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:f506c442d633547a",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-chaos",
+      "seconds": 102.6,
+      "frame_hash": "xxh64:954a541d8b19ddc8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop-plus2",
+      "seconds": 102.61,
+      "frame_hash": "xxh64:4c33e2c06bca96e0",
+      "audio_hash": "xxh64:1dbf7ea0f8f457cd",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chase-hq-plus2",
+      "seconds": 138.1,
+      "frame_hash": "xxh64:920da4ca7b1f875d",
+      "audio_hash": "xxh64:48cc692724505906",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "out-run-plus2",
+      "seconds": 47.3,
+      "frame_hash": "xxh64:1838727d99e21182",
+      "audio_hash": "xxh64:84ab980a74f21690",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "operation-wolf-plus2",
+      "seconds": 150.12,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "bubble-bobble-plus2",
+      "seconds": 76.23,
+      "frame_hash": "xxh64:efbc1a70201a1b87",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rainbow-islands-plus2",
+      "seconds": 123.11,
+      "frame_hash": "xxh64:2248714b958d34ed",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "total-eclipse-plus2",
+      "seconds": 137.15,
+      "frame_hash": "xxh64:139aaf56e6c27028",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "castle-master-plus2",
+      "seconds": 157.37,
+      "frame_hash": "xxh64:915844668f32246e",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "where-time-stood-still-plus2",
+      "seconds": 274.38,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:efdeaa28b1af47dd",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-chaos-plus2",
+      "seconds": 170.35,
+      "frame_hash": "xxh64:954a541d8b19ddc8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chase-hq-plus2a",
+      "seconds": 215.12,
+      "frame_hash": "xxh64:1c267694361cef31",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop-plus2a",
+      "seconds": 138.61,
+      "frame_hash": "xxh64:587a604f94d1ff74",
+      "audio_hash": "xxh64:d175d0946abcd29d",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "out-run-plus2a",
+      "seconds": 49.99,
+      "frame_hash": "xxh64:1838727d99e21182",
+      "audio_hash": "xxh64:56e8f046d843cf21",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "operation-wolf-plus2a",
+      "seconds": 186.3,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "bubble-bobble-plus2a",
+      "seconds": 79.48,
+      "frame_hash": "xxh64:184d0e0c05bd8db9",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rainbow-islands-plus2a",
+      "seconds": 129.92,
+      "frame_hash": "xxh64:bf9f85666def053c",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "total-eclipse-plus2a",
+      "seconds": 74.41,
+      "frame_hash": "xxh64:139aaf56e6c27028",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "castle-master-plus2a",
+      "seconds": 75.53,
+      "frame_hash": "xxh64:915844668f32246e",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "where-time-stood-still-plus2a",
+      "seconds": 150.56,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:72247e53c91f6a20",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-chaos-plus2a",
+      "seconds": 105.97,
+      "frame_hash": "xxh64:954a541d8b19ddc8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop-plus2b",
+      "seconds": 113.75,
+      "frame_hash": "xxh64:587a604f94d1ff74",
+      "audio_hash": "xxh64:d175d0946abcd29d",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chase-hq-plus2b",
+      "seconds": 148.1,
+      "frame_hash": "xxh64:1c267694361cef31",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "out-run-plus2b",
+      "seconds": 46.09,
+      "frame_hash": "xxh64:1838727d99e21182",
+      "audio_hash": "xxh64:56e8f046d843cf21",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "operation-wolf-plus2b",
+      "seconds": 155.21,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "bubble-bobble-plus2b",
+      "seconds": 70.03,
+      "frame_hash": "xxh64:184d0e0c05bd8db9",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rainbow-islands-plus2b",
+      "seconds": 115.52,
+      "frame_hash": "xxh64:bf9f85666def053c",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "total-eclipse-plus2b",
+      "seconds": 63.39,
+      "frame_hash": "xxh64:139aaf56e6c27028",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "castle-master-plus2b",
+      "seconds": 64.62,
+      "frame_hash": "xxh64:915844668f32246e",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "chase-hq-plus3",
+      "seconds": 30.74,
+      "frame_hash": "xxh64:47fda6722c6032b2",
+      "audio_hash": "xxh64:8cf6e4f0d3029c45",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "where-time-stood-still-plus2b",
+      "seconds": 136.11,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:72247e53c91f6a20",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "rainbow-islands-plus3",
+      "seconds": 27.55,
+      "frame_hash": "xxh64:5ba13cc089e4d2a8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": false,
+      "audio_matches": true
+    },
+    {
+      "id": "cybernoid-plus3",
+      "seconds": 36.08,
+      "frame_hash": "xxh64:0caaf697001fbddb",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "cybernoid-2-plus3",
+      "seconds": 31.72,
+      "frame_hash": "xxh64:75af0c3a8272b1e8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "lords-of-chaos-plus2b",
+      "seconds": 115.88,
+      "frame_hash": "xxh64:954a541d8b19ddc8",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "saboteur-ii-plus3",
+      "seconds": 33.97,
+      "frame_hash": "xxh64:7d472737af467c03",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "sim-city-plus3",
+      "seconds": 27.53,
+      "frame_hash": "xxh64:0c6fa6a0c1e30127",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "stormlord-plus3",
+      "seconds": 28.9,
+      "frame_hash": "xxh64:14fe1d566e90d1a2",
+      "audio_hash": "xxh64:c26fc1ce9583a0eb",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "starglider-2-plus3",
+      "seconds": 29.22,
+      "frame_hash": "xxh64:5c8dc6f976335002",
+      "audio_hash": "xxh64:0558458ef5994a48",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "seconds": 33.43,
+      "frame_hash": "xxh64:bfa8481a6e3a2d39",
+      "audio_hash": "xxh64:c1c8799faf7145f6",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "turrican-plus3",
+      "seconds": 25.87,
+      "frame_hash": "xxh64:cb20ab0177ff27ff",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "combat-school-plus3",
+      "seconds": 30.05,
+      "frame_hash": "xxh64:57dcd2c21787f26b",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "tetris-plus3",
+      "seconds": 28.09,
+      "frame_hash": "xxh64:cfa3bf1290e416aa",
+      "audio_hash": "xxh64:3c2f51da1155b4c4",
+      "frame_matches": false,
+      "audio_matches": false
+    },
+    {
+      "id": "operation-wolf-plus3",
+      "seconds": 29.49,
+      "frame_hash": "xxh64:43f4dd995e59fabe",
+      "audio_hash": "xxh64:7d335937455497a1",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "robocop-plus3",
+      "seconds": 28.49,
+      "frame_hash": "xxh64:3f225520cedc41e9",
+      "audio_hash": "xxh64:0a89e8f7b9e4f692",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "seconds": 37.42,
+      "frame_hash": "xxh64:076876874e1f4725",
+      "audio_hash": "xxh64:db820fd9e95a4b8b",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "dragon-ninja-plus3",
+      "seconds": 35.73,
+      "frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio_hash": "xxh64:21baa3d69a4ed94d",
+      "frame_matches": true,
+      "audio_matches": false
+    },
+    {
+      "id": "jet-pac",
+      "seconds": 35.99,
+      "frame_hash": "xxh64:18f261b5e0277a4e",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "pssst",
+      "seconds": 35.23,
+      "frame_hash": "xxh64:4cb69ba95ba20ab3",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "tranz-am",
+      "seconds": 31.64,
+      "frame_hash": "xxh64:9196ee8a9192195f",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "cookie",
+      "seconds": 33.84,
+      "frame_hash": "xxh64:de288bc8f0834cbb",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "hungry-horace",
+      "seconds": 23.94,
+      "frame_hash": "xxh64:56f8baad6167e79b",
+      "audio_hash": "xxh64:c7a21db33bdf164a",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "horace-goes-skiing",
+      "seconds": 25.75,
+      "frame_hash": "xxh64:e02315419c67b1bd",
+      "audio_hash": "xxh64:6ea59d87aa95e1f8",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "penetrator",
+      "seconds": 47.47,
+      "frame_hash": "xxh64:d949ce8028ea7cd1",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "football-manager",
+      "seconds": 39.34,
+      "frame_hash": "xxh64:03bb0fe89ecfd233",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "gulpman",
+      "seconds": 13.84,
+      "frame_hash": "xxh64:79b364aada20e54f",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "time-gate",
+      "seconds": 66.45,
+      "frame_hash": "xxh64:a0650d47e35c0faa",
+      "audio_hash": "xxh64:2f99db11eda56a85",
+      "frame_matches": true,
+      "audio_matches": true
+    },
+    {
+      "id": "sabre-wulf-kempston-start",
+      "seconds": 61.52,
+      "frame_hash": "xxh64:e6adcf39203e06db",
+      "audio_hash": "xxh64:8c7753ee7d9e7c77",
+      "frame_matches": true,
+      "audio_matches": true
+    }
+  ]
+}
