@@ -237,3 +237,43 @@ matched both existing hashes.
 
 Sony compatibility approved: write/reject at version 11 for HB-10P, reject
 its version 10 before decoding, and retain version 10 for other named boards.
+
+## Original PET 2001: concrete board and proposed contract
+
+The manufacturer schematic 320026 sheets 2/3 explicitly identifies board
+assembly 320008: 6540 ROMs and 6550 SRAM, with the 8 KiB population jumpers.
+Sheet 1 is the common 320130 logic sheet. Original parts lists independently
+identify both 6520 PIAs, 6522 VIA and the ROM sockets. The local MAME
+pet2001.zip contains the complete original seven-ROM set and character ROM.
+VICE's 2001 configuration independently selects 8 KiB, no CRTC, graphics
+keyboard, original screen mirrors and CA2/EOI video blanking. Do not call this
+board a 2001N, and do not merge the four different static-RAM board layouts.
+
+Proposed bounded implementation, before production edits:
+1. Add the missing onboard second 6520 PIA to common-commodore-pet/src/lib.rs
+   before adding the original owner. Decode its physical E820 registers,
+   preserve its register/interrupt state, and wire the disconnected IEEE bus
+   input/readback lines and IRQ. External IEEE devices remain #349. Qualify
+   exact port selections and neighbouring non-selected controls from sheet 1.
+2. Add one private machine-commodore-pet-2001-8k owner for assembly 320008,
+   using existing common wiring. Append its board identity to the enum so
+   old discriminants stay intact. Implement 8 KiB RAM selection, the original
+   1 KiB display aliases over 8000–8FFF, original BASIC/editor/KERNAL/character
+   socket map and CA2 video blanking. Shared video.rs owns its non-CRTC
+   counters. Qualify the graphics contacts through original BASIC 1 firmware;
+   a case label does not establish the keyboard matrix.
+3. Extend runtime-commodore-pet/src/{machine,profiles,runtime,snapshot}.rs and
+   the family CLI/catalogue registry. Use an explicit new board/profile ID,
+   keep all existing IDs, and require identified original firmware. Add
+   constructor/topology rejection, guest bus/keyboard tests, BASIC boot,
+   exact native video/audio/clock continuation and reset tests.
+4. Proposed snapshot policy: v6 for the PET family and reject v5 before
+   positional decoding. The added second PIA is live state absent from v5;
+   do not invent its history. Retain all v5 specimens as immutable evidence.
+   Existing three owners must retain their current boot/video/keyboard
+   behaviour except the evidence-backed missing-chip correction. This schema
+   policy and the private owner dependency need approval before edits.
+5. Run focused red/green regressions, existing PET suites, original-ROM
+   boot/typed BASIC, Clippy/fmt and generated registry checks. Do not close all
+   of #355: other original board layouts, CRTC personalities, external IEEE
+   devices and wider family coverage remain separate.
