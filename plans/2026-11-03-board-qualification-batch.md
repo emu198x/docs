@@ -105,3 +105,21 @@ Temporary read-only source clones for later video work:
 Both still carry retired rule-6 wording; #2178 requires correcting that
 wording when those repositories are changed. The current parent decision
 retiring the interface-shape ban takes precedence over that stale text.
+
+### Approved Timex v18 contract
+
+Steve chose **write v18 and reject Timex v17** on 2026-11-03. All three Timex
+profiles (TC2048, TC2068, TS2068) use v18 for the completed paging/video
+correction; other Spectrum-family profiles continue writing/reading v17.
+Reject older Timex versions before positional decoding and before mutation.
+The byte-identical v17 fixtures stay unchanged as historical evidence of the
+old decoder/shifter; do not replace them with new goldens. Current v18 tests
+must compare uninterrupted and restored full video/audio/clocks/state, and
+must exercise actual board-mismatch rejection with current v18 payloads.
+The approved test-only sha2 dependency in runtime-sinclair-zx-spectrum verifies
+complete original firmware inputs and the retained historical fixtures.
+
+Affected files: runtime-sinclair-zx-spectrum/src/snapshot.rs,
+tests/timex_board_baseline.rs, tests/timex_board_identity.rs, the new strict
+original-ROM tests and a binding decision recording this scoped override of
+the v17 output guarantee. No non-Timex reader/version change is intended.
