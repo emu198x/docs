@@ -1,6 +1,6 @@
 # Original PET 2001 assembly 320008 qualification
 
-Source PR [#2269](https://github.com/emu198x/emu198x/pull/2269) adds the 8 KiB
+Source PR [#2272](https://github.com/emu198x/emu198x/pull/2272) adds the 8 KiB
 owner after restoring the missing second onboard PIA. PET v6 rejects v5;
 legacy specimens stay immutable. Both original C000 firmware revisions are
 identified by complete SHA-256 in the strict source tests before assembly.

@@ -61,15 +61,18 @@ also rejected. Reset uses the firmware restored with the machine.
 
 ## Evidence and limits
 
-The original owner has five direct tests; each later owner has seven. Shared tests cover memory decode,
+The original owner has five direct tests; each later owner has seven.
+Shared tests cover memory decode,
 character banks/inversion, paired fetches, retrace wiring, business modifiers,
-malformed saves and exact continuations. Current v6 tests compare native fields, sample bits, clocks and final state.
+malformed saves and exact continuations. Current v6 tests compare native
+fields, sample bits, clocks and final state.
 The three later owners retain their frozen native output comparisons, while
 legacy state bytes are rejected rather than decoded as current.
 A corrupt continuation fails that gate.
 
 Exact original ROM sets reach READY within the existing 120-frame budget.
-After `PRINT3+4`, the three later owners match VICE's complete screen RAM and every active
+After `PRINT3+4`, the three later owners match VICE's complete screen RAM and
+every active
 monochrome pixel: 64,000 for each 40-column board and 160,000 for the 8032.
 Host palette and presentation borders are outside that comparison. Original
 BASIC-2 keyboard tests and PRG autoload pass on the explicitly discrete board.
@@ -81,7 +84,8 @@ inputs, disconnected-bus NDAC/DAV/NRFD/EOI resolution and IRQ wiring are
 implemented and guest/restore tested. Shared PIA pulse/handshake output phases,
 external IEEE-488 devices and cassette remain incomplete. The validated CRTC
 rasters use the existing counter stages; full MOS 6545 personality/interlace is
-not qualified. Other original static-RAM assemblies and RAM fittings, 60 Hz CRTC models,
+not qualified. Other original static-RAM assemblies and RAM fittings,
+60 Hz CRTC models,
 SuperPET and other family members remain separate work in #355 and related
 issues. Native menu interaction and host audio-device output were not tested
 in this slice.
@@ -128,6 +132,6 @@ frame byte-for-byte. Native menu interaction and analogue output are not
 established by this check.
 
 Use `--model commodore-pet-2001-320008-8k` with the assembled firmware directory.
-See [source PR #2269](https://github.com/emu198x/emu198x/pull/2269) and the
+See [source PR #2272](https://github.com/emu198x/emu198x/pull/2272) and the
 [qualification evidence](../../plans/2026-11-03-board-qualification-evidence/pet-original/README.md).
 This advances #355 and #349; neither broader family/device issue is complete.

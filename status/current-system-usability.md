@@ -124,7 +124,7 @@ Shared PIA pulse/handshake phases, external IEEE devices, cassette and full
 6545/interlace remain incomplete. Native menu interaction and host audio-device
 output remain unverified. The pinned browser package predates this contract;
 the corrected pages omit its player. See the [current PET contract](../systems/commodore/pet.md),
-[source PR #2269](https://github.com/emu198x/emu198x/pull/2269) and
+[source PR #2272](https://github.com/emu198x/emu198x/pull/2272) and
 [original-board evidence](../plans/2026-11-03-board-qualification-evidence/pet-original/README.md).
 
 

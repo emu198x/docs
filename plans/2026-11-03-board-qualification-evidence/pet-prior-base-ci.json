@@ -1,0 +1,116 @@
+{
+  "repository": "emu198x/emu198x",
+  "pr": 2269,
+  "head": "058813a3adc48242203c09e69665a2a9f68278cc",
+  "run": 41647247607,
+  "jobs": [
+    {
+      "id": 125955707738,
+      "name": "Synthetic cartridges",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708019,
+      "name": "System registry",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708140,
+      "name": "Shell semver",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708155,
+      "name": "Test hygiene",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708194,
+      "name": "Browser parity",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708247,
+      "name": "Rust / Workflows / actionlint",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708270,
+      "name": "GTK host",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708286,
+      "name": "Rust / Format",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708380,
+      "name": "Test plan",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708386,
+      "name": "Firmware boot evidence",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955708754,
+      "name": "Rust / Clippy",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955996144,
+      "name": "Test shard (3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955996292,
+      "name": "Test shard (1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955996300,
+      "name": "Test shard (2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125955996331,
+      "name": "Test shard (4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 125956520757,
+      "name": "Rust / Build (${{ matrix.os }})",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "id": 125956521559,
+      "name": "Rust / Coverage",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "id": 125957356269,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}
