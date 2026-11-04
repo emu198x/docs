@@ -1,176 +1,176 @@
 {
-  "head_sha": "241166e71fbf365a7d326ea0403e665637950894",
+  "head_sha": "22e3b59d07d923461c2e37cb144e7002847515b1",
+  "pull_request": 2288,
   "checks": [
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523738222",
-      "name": "Test",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523743948",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126542630026",
       "name": "Rust / Build (${{ matrix.os }})",
       "state": "SKIPPED"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523631209",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126542629470",
       "name": "Rust / Coverage",
       "state": "SKIPPED"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523289816",
-      "name": "custom-notify-discord",
-      "state": "SKIPPED"
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126542525495",
+      "name": "Test",
+      "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523290596",
-      "name": "custom-qualify-packages",
-      "state": "SKIPPED"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523287989",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541987421",
       "name": "announce",
       "state": "SKIPPED"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523286599",
-      "name": "host",
-      "state": "SKIPPED"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523284903",
-      "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
-      "state": "SKIPPED"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523286276",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541985799",
       "name": "build-global-artifacts",
       "state": "SKIPPED"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523287106",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541987520",
       "name": "publish-homebrew-formula",
       "state": "SKIPPED"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523252849",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541988098",
+      "name": "custom-notify-discord",
+      "state": "SKIPPED"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541985555",
+      "name": "custom-qualify-packages",
+      "state": "SKIPPED"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541985412",
+      "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+      "state": "SKIPPED"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541986399",
+      "name": "host",
+      "state": "SKIPPED"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541906139",
       "name": "Test shard (1/4)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523230103",
-      "name": "Test shard (2/4)",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523231374",
-      "name": "Test shard (4/4)",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523229988",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541906474",
       "name": "Test shard (3/4)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814889238/job/126523166906",
-      "name": "Analyze (python)",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541907630",
+      "name": "Test shard (2/4)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523066561",
-      "name": "Browser parity",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541907347",
+      "name": "Test shard (4/4)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056585",
-      "name": "Firmware boot evidence",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056716",
-      "name": "System registry",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523057692",
-      "name": "Test hygiene",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056810",
-      "name": "Shell semver",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056756",
-      "name": "GTK host",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056690",
-      "name": "Published crates match their versions",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523057459",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541833341",
       "name": "Rust / Clippy",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056697",
-      "name": "Rust / Format",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820365006/job/126541711256",
+      "name": "Analyze (python)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056910",
-      "name": "Rust / Workflows / actionlint",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716146",
+      "name": "GTK host",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523056468",
-      "name": "Test plan",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893975/job/126523054433",
-      "name": "PR title / Conventional title",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894323/job/126523057056",
-      "name": "Synthetic cartridges",
-      "state": "SUCCESS"
-    },
-    {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893968/job/126523051467",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820369066/job/126541739535",
       "name": "plan",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893038/job/126523047627",
-      "name": "C64 sprites against VICE (private firmware)",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541724537",
+      "name": "System registry",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893975/job/126523051706",
-      "name": "PR title / Conventional commits",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716144",
+      "name": "Shell semver",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814893067/job/126523049705",
-      "name": "A500 Paula sample (private firmware)",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716791",
+      "name": "Test hygiene",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814889238/job/126523043000",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716459",
+      "name": "Published crates match their versions",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820365006/job/126541711465",
       "name": "Analyze (javascript-typescript)",
       "state": "SUCCESS"
     },
     {
-      "link": "https://github.com/emu198x/emu198x/actions/runs/41814894023/job/126523057054",
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716205",
+      "name": "Firmware boot evidence",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820367841/job/126541714213",
+      "name": "A500 Paula sample (private firmware)",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368830/job/126541716011",
+      "name": "PR title / Conventional commits",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716337",
+      "name": "Synthetic cartridges",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716848",
+      "name": "Browser parity",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716866",
+      "name": "Rust / Workflows / actionlint",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541716608",
+      "name": "Rust / Format",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820367666/job/126541710544",
+      "name": "C64 sprites against VICE (private firmware)",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368892/job/126541715879",
+      "name": "Test plan",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368830/job/126541716087",
+      "name": "PR title / Conventional title",
+      "state": "SUCCESS"
+    },
+    {
+      "link": "https://github.com/emu198x/emu198x/actions/runs/41820368615/job/126541717131",
       "name": "Release PR / Released versions have changelog entries",
       "state": "SKIPPED"
     }
-  ],
-  "final_head_ci": "Await GitHub PR synchronization to 22e3b59d07d923461c2e37cb144e7002847515b1; no checks reported for it yet."
+  ]
 }

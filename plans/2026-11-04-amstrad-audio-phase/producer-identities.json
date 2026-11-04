@@ -18,5 +18,9 @@
   "clean-current-producer": {
     "bytes": 6750864,
     "sha256": "dec13b9cf8fd6a729f33a7b0e1adb7c32ab8b2bddeafe540d64056fa02058b3c"
+  },
+  "rainbow-observer-producer": {
+    "bytes": 7294176,
+    "sha256": "a3f7e2391edca8b6715172c21fcb098f83ff9c09575e98b6dbd6f77f1893602e"
   }
 }
