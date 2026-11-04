@@ -1,0 +1,128 @@
+{
+  "producer_sha256": "2a3abf352ea7d73b226f424d887f4d61d5a250b6421b79dbec7782551c275b6b",
+  "fresh_results": [
+    {
+      "id": "cybernoid-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "observed": {
+        "boot.frame_hash": "xxh64:5a92a361551b3961",
+        "audio.hash": "xxh64:2117ceda81474346"
+      },
+      "log": "[PASS] cybernoid-plus3 (Cybernoid - The Fighting Machine (+3))\n[SNAP-PASS] cybernoid-plus3\n1 entries run, 0 failure(s)\n",
+      "negatives": [
+        {
+          "control": "old-pair",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:5a92a361551b3961",
+            "audio.hash": "xxh64:2117ceda81474346"
+          },
+          "log": "[FAIL] cybernoid-plus3 (Cybernoid - The Fighting Machine (+3))\ncybernoid-plus3:\n  boot.frame_hash = \"xxh64:5a92a361551b3961\"\n  audio.hash      = \"xxh64:2117ceda81474346\"\n  outcome         = boot mismatch (expected xxh64:e3379987c3c223df)\n[SNAP-PASS] cybernoid-plus3\n1 entries run, 1 failure(s)\n"
+        },
+        {
+          "control": "old-audio",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:5a92a361551b3961",
+            "audio.hash": "xxh64:2117ceda81474346"
+          },
+          "log": "[FAIL] cybernoid-plus3 (Cybernoid - The Fighting Machine (+3))\ncybernoid-plus3:\n  boot.frame_hash = \"xxh64:5a92a361551b3961\"\n  audio.hash      = \"xxh64:2117ceda81474346\"\n  outcome         = audio mismatch (expected xxh64:41c9777709cb116f)\n[SNAP-PASS] cybernoid-plus3\n1 entries run, 1 failure(s)\n"
+        }
+      ]
+    },
+    {
+      "id": "stormlord-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "observed": {
+        "boot.frame_hash": "xxh64:3cee50fc8c327c09",
+        "audio.hash": "xxh64:11e62250c0cb3a26"
+      },
+      "log": "[PASS] stormlord-plus3 (Stormlord (+3))\n[SNAP-PASS] stormlord-plus3\n1 entries run, 0 failure(s)\n",
+      "negatives": [
+        {
+          "control": "old-pair",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:3cee50fc8c327c09",
+            "audio.hash": "xxh64:11e62250c0cb3a26"
+          },
+          "log": "[FAIL] stormlord-plus3 (Stormlord (+3))\nstormlord-plus3:\n  boot.frame_hash = \"xxh64:3cee50fc8c327c09\"\n  audio.hash      = \"xxh64:11e62250c0cb3a26\"\n  outcome         = boot mismatch (expected xxh64:fab02300caa68380)\n[SNAP-PASS] stormlord-plus3\n1 entries run, 1 failure(s)\n"
+        },
+        {
+          "control": "old-audio",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:3cee50fc8c327c09",
+            "audio.hash": "xxh64:11e62250c0cb3a26"
+          },
+          "log": "[FAIL] stormlord-plus3 (Stormlord (+3))\nstormlord-plus3:\n  boot.frame_hash = \"xxh64:3cee50fc8c327c09\"\n  audio.hash      = \"xxh64:11e62250c0cb3a26\"\n  outcome         = audio mismatch (expected xxh64:8f0493c37029a296)\n[SNAP-PASS] stormlord-plus3\n1 entries run, 1 failure(s)\n"
+        }
+      ]
+    },
+    {
+      "id": "tetris-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "observed": {
+        "boot.frame_hash": "xxh64:cfa3bf1290e416aa",
+        "audio.hash": "xxh64:53e4ede68348fb44"
+      },
+      "log": "[PASS] tetris-plus3 (Tetris (+3))\n[SNAP-PASS] tetris-plus3\n1 entries run, 0 failure(s)\n",
+      "negatives": [
+        {
+          "control": "old-pair",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:cfa3bf1290e416aa",
+            "audio.hash": "xxh64:53e4ede68348fb44"
+          },
+          "log": "[FAIL] tetris-plus3 (Tetris (+3))\ntetris-plus3:\n  boot.frame_hash = \"xxh64:cfa3bf1290e416aa\"\n  audio.hash      = \"xxh64:53e4ede68348fb44\"\n  outcome         = boot mismatch (expected xxh64:0116d9b1a459a4bb)\n[SNAP-PASS] tetris-plus3\n1 entries run, 1 failure(s)\n"
+        },
+        {
+          "control": "old-audio",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:cfa3bf1290e416aa",
+            "audio.hash": "xxh64:53e4ede68348fb44"
+          },
+          "log": "[FAIL] tetris-plus3 (Tetris (+3))\ntetris-plus3:\n  boot.frame_hash = \"xxh64:cfa3bf1290e416aa\"\n  audio.hash      = \"xxh64:53e4ede68348fb44\"\n  outcome         = audio mismatch (expected xxh64:4b1a41a4f2feeae8)\n[SNAP-PASS] tetris-plus3\n1 entries run, 1 failure(s)\n"
+        }
+      ]
+    },
+    {
+      "id": "dragon-ninja-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "observed": {
+        "boot.frame_hash": "xxh64:5befda7713e336ff",
+        "audio.hash": "xxh64:c6aa83617ef4f88f"
+      },
+      "log": "[PASS] dragon-ninja-plus3 (Bad Dudes vs. Dragon Ninja (+3))\n[SNAP-PASS] dragon-ninja-plus3\n1 entries run, 0 failure(s)\n",
+      "negatives": [
+        {
+          "control": "old-pair",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:5befda7713e336ff",
+            "audio.hash": "xxh64:c6aa83617ef4f88f"
+          },
+          "log": "[FAIL] dragon-ninja-plus3 (Bad Dudes vs. Dragon Ninja (+3))\ndragon-ninja-plus3:\n  boot.frame_hash = \"xxh64:5befda7713e336ff\"\n  audio.hash      = \"xxh64:c6aa83617ef4f88f\"\n  outcome         = boot mismatch (expected xxh64:188ca8e8398eb8b5)\n[SNAP-PASS] dragon-ninja-plus3\n1 entries run, 1 failure(s)\n"
+        },
+        {
+          "control": "old-audio",
+          "exit_code": 1,
+          "observed": {
+            "boot.frame_hash": "xxh64:5befda7713e336ff",
+            "audio.hash": "xxh64:c6aa83617ef4f88f"
+          },
+          "log": "[FAIL] dragon-ninja-plus3 (Bad Dudes vs. Dragon Ninja (+3))\ndragon-ninja-plus3:\n  boot.frame_hash = \"xxh64:5befda7713e336ff\"\n  audio.hash      = \"xxh64:c6aa83617ef4f88f\"\n  outcome         = audio mismatch (expected xxh64:051d6003230710b4)\n[SNAP-PASS] dragon-ninja-plus3\n1 entries run, 1 failure(s)\n"
+        }
+      ]
+    }
+  ],
+  "catalogue_tests": 45,
+  "clippy_pass": true,
+  "control_note": "The CLI reports the first mismatch: separate stale-pair and stale-audio controls test both branches."
+}

@@ -1,0 +1,56 @@
+{
+  "inputs": {
+    "media": [
+      {
+        "id": "cybernoid-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Cybernoid - The Fighting Machine (1988)(Hewson Consultants)(+3).zip",
+        "archive_sha256": "935a499b10ff1ecf86ba9275909e19aa9ee5f351a3cefc41d732ee962627fef6",
+        "member": "Cybernoid - The Fighting Machine (1988)(Hewson Consultants)(+3).dsk",
+        "disk_sha256": "840b39c2e2cfa40320f471de9c5ebbe10915c0d4cabd52b68616fe03191fbdf8"
+      },
+      {
+        "id": "stormlord-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Stormlord (1989)(Hewson Consultants)(+3).zip",
+        "archive_sha256": "bb53c343146027f7ac0de5ae9a285ba9b5f0f0806265d5cbd9f2985f9291c0c9",
+        "member": "Stormlord (1989)(Hewson Consultants)(+3).dsk",
+        "disk_sha256": "55900f0a76016f82978ecfeb483b6912621ac1e5379eebdace6185d6384246e1"
+      },
+      {
+        "id": "tetris-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Tetris (1988)(Mirrorsoft)(+3).zip",
+        "archive_sha256": "241b55d13ccbb6be8334a490b4b43e5774f75e3a8fa1bf9f21289271b8d36c85",
+        "member": "Tetris (1988)(Mirrorsoft)(+3).dsk",
+        "disk_sha256": "e6f953443a9e1ad0d4f4e04afee4b4cc3266e33d0f2f8516dcffc5ac4651990f"
+      },
+      {
+        "id": "dragon-ninja-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Bad Dudes vs. Dragon Ninja (1988)(Imagine)(+3).zip",
+        "archive_sha256": "759dbea2d810716d4c98cee77213a125f39603f71f70b08415c4041fdd1abd37",
+        "member": "Bad Dudes vs. Dragon Ninja (1988)(Imagine)(+3).dsk",
+        "disk_sha256": "ec51e115a0415c303a38dfc7ee5c8f393c8a6ca316ed1ed65ee67450b9e7f9b3"
+      }
+    ],
+    "firmware": [
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-0",
+        "path": "amstrad-zx-spectrum-plus3/plus3-0.rom",
+        "sha256": "841d54545c743a7202fb9b068534ed906a08cc657a19955ae20a8de5af8ab185"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-1",
+        "path": "amstrad-zx-spectrum-plus3/plus3-1.rom",
+        "sha256": "6d6ccab28f255b01c8cd89ceab9e7b60247f4610471118092f290f6c7768b7e3"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-2",
+        "path": "amstrad-zx-spectrum-plus3/plus3-2.rom",
+        "sha256": "c5590212a269117657ce611acbac582e41e9db87dc78db480da2615e413b2da6"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-3",
+        "path": "amstrad-zx-spectrum-plus3/plus3-3.rom",
+        "sha256": "8ec5cb9fd7ec24a041800314bb5a2c99be02f7e50745194eb649ed6d9085bd1f"
+      }
+    ]
+  }
+}

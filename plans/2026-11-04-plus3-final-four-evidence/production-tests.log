@@ -1,0 +1,89 @@
+   Compiling common-sinclair-zx-spectrum-amstrad-class v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-sinclair-zx-spectrum-amstrad-class)
+   Compiling machine-sinclair-zx-spectrum-plus3 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus3)
+   Compiling machine-sinclair-zx-spectrum-plus2b v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus2b)
+   Compiling machine-sinclair-zx-spectrum-plus2a v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus2a)
+   Compiling runtime-sinclair-zx-spectrum v0.47.0 (/private/tmp/198x-plus3-four-current/crates/runtime-sinclair-zx-spectrum)
+   Compiling emu198x-catalogue v0.47.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-catalogue)
+    Finished `release` profile [optimized] target(s) in 1m 14s
+     Running unittests src/lib.rs (/private/tmp/198x-plus3-four-current-target/release/deps/emu198x_catalogue-ce2dbb8916e4b8ad)
+
+running 36 tests
+test tests::amiga_variant_names_cover_the_supported_catalogue_profiles ... ok
+test tests::c64_catalogue_variants_select_the_expected_video_standard ... ok
+test tests::hash_xxh64_format_is_stable ... ok
+test tests::adjacent_startup_inputs_observe_release_before_the_next_press ... ok
+test tests::lookup_firmware_finds_variant ... ok
+test tests::manifest_parses_variant_firmware_layout ... ok
+test tests::boot_ignore_rectangle_zeroes_only_selected_rgba_pixels_before_hashing ... ok
+test tests::boot_ignore_rectangle_must_fit_the_captured_frame ... ok
+test tests::boot_ignore_rectangles_are_optional_and_parse_with_pixel_geometry ... ok
+test tests::catalogue_media_is_read_only_unless_the_entry_opts_in ... ok
+test tests::manifest_rejects_mixed_legacy_and_startup_navigation ... ok
+test tests::manifest_rejects_malformed_boot_ignore_rectangles ... ok
+test tests::legacy_script_entries_remain_valid ... ok
+test tests::manifest_rejects_zero_or_excessive_startup_frame_counts ... ok
+test tests::manifest_rejects_unknown_startup_fields ... ok
+test tests::routing_version_check_fails_loud_on_audio_mismatch ... ok
+test tests::manifest_rejects_zero_sized_or_overflowing_boot_ignore_rectangles ... ok
+test tests::routing_version_check_fails_loud_on_c64_audio_mismatch ... ok
+test tests::routing_version_check_fails_loud_on_c64_frame_mismatch ... ok
+test tests::routing_version_check_fails_loud_on_frame_mismatch ... ok
+test tests::routing_version_check_fails_loud_on_nes_audio_mismatch ... ok
+test tests::routing_version_check_fails_loud_on_nes_frame_mismatch ... ok
+test tests::routing_version_check_passes_for_c64_when_manifest_matches_runtime ... ok
+test tests::routing_version_check_passes_for_nes_when_manifest_matches_runtime ... ok
+test tests::routing_version_check_passes_when_manifest_matches_runtime ... ok
+test tests::routing_version_check_passes_when_manifest_omits_versions ... ok
+test tests::routing_version_error_message_includes_recapture_instruction ... ok
+test tests::run_entry_for_capture_bypasses_routing_version_check ... ok
+test tests::spectrum_catalogue_routes_every_explicit_board_profile ... ok
+test tests::startup_actions_expand_only_to_shared_time_and_input_steps ... ok
+test tests::startup_actions_parse_as_strictly_tagged_sequential_steps ... ok
+test tests::checked_in_manifests_record_the_current_routing_versions ... ok
+test tests::amiga_new_catalogue_profiles_construct_from_firmware ... ok
+test tests::amiga_catalogue_profiles_dispatch_to_their_native_chipset_tiers ... ok
+test tests::c64_catalogue_replays_from_the_boot_waypoint ... ok
+test tests::amiga_new_catalogue_profiles_replay_from_the_boot_waypoint ... ok
+
+test result: ok. 36 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s
+
+     Running unittests src/bin/catalogue.rs (/private/tmp/198x-plus3-four-current-target/release/deps/catalogue-aaebd83b6df5b3e6)
+
+running 4 tests
+test tests::entry_and_shard_cannot_be_combined ... ok
+test tests::shard_spec_must_name_a_shard_that_exists ... ok
+test tests::shards_deal_round_robin_and_stay_balanced ... ok
+test tests::shards_cover_every_entry_exactly_once ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/amiga_manifest.rs (/private/tmp/198x-plus3-four-current-target/release/deps/amiga_manifest-f0b2bfde651bdbc7)
+
+running 5 tests
+test workbench_13_excludes_only_the_volatile_free_memory_readout ... ok
+test release_screens_and_trainer_prompts_use_sequential_startup_navigation ... ok
+test arkanoid_uses_bounded_sequential_startup_navigation ... ok
+test closure_catalogue_has_ten_entries_across_ocs_ecs_and_aga ... ok
+test joystick_scripts_use_labelled_amiga_control_ports ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/plus3_disk_entries.rs (/private/tmp/198x-plus3-four-current-target/release/deps/plus3_disk_entries-fe8ca8ef514f29a3)
+
+running 1 test
+test plus3_disk_entries_load_and_match ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/run.rs (/private/tmp/198x-plus3-four-current-target/release/deps/run-ebeb543468956b4d)
+
+running 1 test
+test catalogue_passes_every_entry ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests emu198x_catalogue
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

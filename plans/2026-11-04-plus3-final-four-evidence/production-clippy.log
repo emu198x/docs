@@ -1,0 +1,206 @@
+    Checking emu198x-bus-sinclair-zx-spectrum v0.1.1
+    Checking format-sinclair-zx-spectrum-snapshot v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-sinclair-zx-spectrum-snapshot)
+    Checking format198x-commodore-amiga-adf v0.3.4
+    Checking bitflags v2.11.1
+    Checking objc2-encode v4.1.0
+    Checking serde_core v1.0.229
+    Checking libc v0.2.186
+    Checking simd-adler32 v0.3.9
+    Checking cfg-if v1.0.4
+    Checking emu198x-mullard-zx8401 v0.1.0
+    Checking thiserror v2.0.21
+    Checking adler2 v2.0.1
+    Checking crc32fast v1.5.0
+    Checking memchr v2.8.0
+    Checking format198x-commodore-c64-tap v0.1.0
+    Checking emu198x-peripheral-ultimate-uci-net v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-peripheral-ultimate-uci-net)
+    Checking format198x-commodore-c64-prg v0.1.0
+    Checking log v0.4.29
+    Checking format198x-commodore-c64-crt v0.1.0
+    Checking miniz_oxide v0.9.1
+    Checking zmij v1.0.21
+    Checking zlib-rs v0.6.3
+    Checking itoa v1.0.18
+    Checking objc2 v0.6.5
+    Checking uuid v1.23.1
+    Checking bumpalo v3.20.2
+    Checking hashbrown v0.17.1
+    Checking equivalent v1.0.2
+    Checking vec_map v0.8.2
+    Checking fdeflate v0.3.7
+    Checking miniz_oxide v0.8.9
+    Checking zopfli v0.8.3
+    Checking cobs v0.3.0
+    Checking mach2 v0.6.0
+    Checking isa198x v0.1.11
+    Checking dasp_sample v0.11.0
+    Checking typed-path v0.13.0
+    Checking fnv v1.0.7
+    Checking format-nintendo-famicom-fds v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-nintendo-famicom-fds)
+    Checking format198x-commodore-c64-g64 v0.1.0
+    Checking format198x-commodore-c64-d64 v0.1.0
+    Checking format-nintendo-nes-ines v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-nintendo-nes-ines)
+    Checking format198x-sinclair-zx-spectrum-z80 v0.1.0
+    Checking nix v0.31.3
+    Checking getrandom v0.4.3
+    Checking indexmap v2.14.0
+    Checking format198x-tzx v0.1.0
+    Checking format198x-commodore-c128-d71 v0.1.0
+    Checking format-sinclair-zx-spectrum-z80 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-sinclair-zx-spectrum-z80)
+    Checking winnow v1.0.3
+    Checking format198x-commodore-c64-d81 v0.1.0
+    Checking format198x-amstrad-cpc-dsk v0.1.2
+    Checking format198x-sinclair-zx-spectrum-tap v0.1.1
+    Checking format198x-sinclair-zx-spectrum-bas v0.1.3
+    Checking format-sinclair-zx-spectrum-mdr v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-sinclair-zx-spectrum-mdr)
+    Checking toml_writer v1.1.2+spec-1.1.0
+    Checking format198x-commodore-c64-t64 v0.1.0
+    Checking toml_parser v1.1.2+spec-1.1.0
+    Checking format198x-commodore-c64-bas v0.1.1
+    Checking flate2 v1.1.10
+    Checking format198x-commodore-c64-p00 v0.1.0
+    Checking twox-hash v2.1.5
+    Checking png v0.18.1
+    Checking zip v9.3.0
+    Checking dispatch2 v0.3.1
+    Checking block2 v0.6.2
+    Checking objc2-foundation v0.3.2
+    Checking objc2-core-audio-types v0.3.2
+    Checking serde v1.0.229
+    Checking serde_json v1.0.154
+    Checking toml_datetime v1.1.1+spec-1.1.0
+    Checking serde_spanned v1.1.1
+    Checking objc2-core-foundation v0.3.2
+    Checking toml v1.1.3+spec-1.1.0
+    Checking isa198x-disasm v0.1.7
+    Checking serde-big-array v0.5.1
+    Checking emu198x-gi-ay-3-8910 v0.6.1
+    Checking emu198x-sinclair-zx-spectrum-ula v0.2.1
+    Checking emu198x-tape-playback v0.1.1 (/private/tmp/198x-plus3-four-current/crates/emu198x-tape-playback)
+    Checking emu198x-zilog-z80 v0.9.0
+    Checking motorola-68k-common v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68k-common)
+    Checking emu198x-commodore-agnus-ocs v0.1.1 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-agnus-ocs)
+    Checking emu198x-commodore-denise-ocs v0.1.1 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-denise-ocs)
+    Checking emu198x-peripheral-kempston-sinclair-zx-spectrum-joystick v0.1.0
+    Checking emu198x-peripheral-commodore-amiga-keyboard v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-peripheral-commodore-amiga-keyboard)
+    Checking emu198x-commodore-paula-8364 v0.7.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-paula-8364)
+    Checking emu198x-gi-ay-3-8912 v0.1.0
+    Checking emu198x-peripheral-commodore-amiga-floppy v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-peripheral-commodore-amiga-floppy)
+    Checking emu198x-commodore-amiga-autoconfig v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-amiga-autoconfig)
+    Checking emu198x-mos-cia-8520 v0.1.0
+    Checking emu198x-commodore-gary v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-gary)
+    Checking emu198x-peripheral-sinclair-zx-spectrum-divmmc v0.1.0
+    Checking emu198x-peripheral-romantic-robot-sinclair-zx-spectrum-multiface v0.1.0
+    Checking emu198x-mos-6502 v0.6.1
+    Checking emu198x-sinclair-zx-spectrum-ula v0.3.0
+    Checking common-sinclair-zx-spectrum v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-sinclair-zx-spectrum)
+    Checking emu198x-peripheral-kempston-sinclair-zx-spectrum-mouse v0.1.0
+    Checking emu198x-peripheral-sinclair-zx-spectrum-interface1 v0.1.0
+    Checking common-commodore-iec v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-iec)
+    Checking emu198x-mos-cia-6526 v0.1.0
+    Checking motorola-68000 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68000)
+    Checking emu198x-ferranti-ula-6c001e v0.3.0
+    Checking gvp-a530 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/gvp-a530)
+    Checking emu198x-mos-vic-ii v0.1.0
+    Checking emu198x-wdc-65c816 v0.1.0
+    Checking emu198x-mos-sid-6581 v0.9.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-mos-sid-6581)
+    Checking emu198x-commodore-gayle v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-gayle)
+    Checking emu198x-nec-upd765a v0.1.0
+    Checking debug198x v0.1.0
+    Checking emu198x-timex-scld v0.2.1
+    Checking common-sinclair-zx-spectrum-48k-class v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-sinclair-zx-spectrum-48k-class)
+    Checking emu198x-commodore-denise-ecs v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-denise-ecs)
+    Checking emu198x-amstrad-ula-40077 v0.3.0
+    Checking emu198x-ricoh-ppu-2c02 v0.1.1 (/private/tmp/198x-plus3-four-current/crates/emu198x-ricoh-ppu-2c02)
+    Checking postcard v1.1.3
+    Checking emu198x-yamaha-ym2413 v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-yamaha-ym2413)
+    Checking emu198x-commodore-denise-aga v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-denise-aga)
+    Checking emu198x-sinclair-ula-7k010e v0.3.0
+    Checking emu198x-mos-via-6522 v0.1.0
+    Checking emu198x-ricoh-apu-2a03 v0.6.1 (/private/tmp/198x-plus3-four-current/crates/emu198x-ricoh-apu-2a03)
+    Checking common-commodore-drive-gcr v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-drive-gcr)
+    Checking emu198x-zilog-z80 v0.8.0
+    Checking common-sinclair-zx-spectrum-128k-class v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-sinclair-zx-spectrum-128k-class)
+    Checking common-timex-2068 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-timex-2068)
+    Checking common-commodore-iec-drive v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-iec-drive)
+    Checking common-sinclair-zx-spectrum-amstrad-class v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-sinclair-zx-spectrum-amstrad-class)
+    Checking emu198x-western-digital-wd1770 v0.1.0
+    Checking emu198x-peripheral-sinclair-zx-spectrum-beta-disk v0.1.0
+    Checking emu198x-scorpion-ula v0.2.0
+    Checking nintendo-nes-cartridge v0.47.0 (/private/tmp/198x-plus3-four-current/crates/nintendo-nes-cartridge)
+    Checking emu198x-pentagon-ula v0.2.1
+    Checking format-tzx v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-tzx)
+    Checking machine-sinclair-zx-spectrum-plus3 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus3)
+    Checking machine-sinclair-zx-spectrum-plus2b v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus2b)
+    Checking machine-scorpion-zs256 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-scorpion-zs256)
+    Checking machine-pentagon-128 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-pentagon-128)
+    Checking common-commodore-c64 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-c64)
+    Checking machine-sinclair-zx-spectrum-plus2a v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus2a)
+    Checking format-sinclair-zx-spectrum-tzx v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-sinclair-zx-spectrum-tzx)
+    Checking machine-commodore-1581 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-1581)
+    Checking objc2-core-audio v0.3.2
+    Checking objc2-io-kit v0.3.2
+    Checking machine-commodore-1571 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-1571)
+    Checking machine-sinclair-zx-spectrum-plus2 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-plus2)
+    Checking machine-sinclair-zx-spectrum-128k v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-128k)
+    Checking machine-timex-ts2068 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-timex-ts2068)
+    Checking objc2-audio-toolbox v0.3.2
+    Checking machine-timex-tc2068 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-timex-tc2068)
+    Checking machine-commodore-1541 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-1541)
+    Checking format-amstrad-dsk v0.47.0 (/private/tmp/198x-plus3-four-current/crates/format-amstrad-dsk)
+    Checking machine-sinclair-zx-spectrum-issue4a v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue4a)
+    Checking machine-sinclair-zx-spectrum-issue1 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue1)
+    Checking machine-sinclair-zx-spectrum-issue5-6c001e7 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue5-6c001e7)
+    Checking machine-sinclair-zx-spectrum-issue3b v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue3b)
+    Checking machine-sinclair-zx-spectrum-issue5-6c001e6 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue5-6c001e6)
+    Checking machine-sinclair-zx-spectrum-issue3 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue3)
+    Checking machine-sinclair-zx-spectrum-issue4b v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue4b)
+    Checking machine-sinclair-zx-spectrum-issue2 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue2)
+    Checking machine-sinclair-zx-spectrum-issue6a v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-sinclair-zx-spectrum-issue6a)
+    Checking machine-timex-tc2048 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-timex-tc2048)
+    Checking emu198x-esp-at-modem v0.47.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-esp-at-modem)
+    Checking motorola-68010 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68010)
+    Checking motorola-68020 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68020)
+    Checking coreaudio-rs v0.14.2
+    Checking gilrs-core v0.6.8
+    Checking emu198x-commodore-agnus-ecs v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-agnus-ecs)
+    Checking motorola-68030 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68030)
+    Checking gilrs v0.11.2
+    Checking common-commodore-c128 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-c128)
+    Checking machine-commodore-c64c-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c64c-ntsc)
+    Checking machine-commodore-c64-pal-breadbin v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c64-pal-breadbin)
+    Checking machine-commodore-c64-ntsc-breadbin v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c64-ntsc-breadbin)
+    Checking machine-commodore-c64c-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c64c-pal)
+    Checking emu198x-commodore-agnus-aga v0.1.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-commodore-agnus-aga)
+    Checking cpal v0.18.2
+    Checking machine-commodore-c128-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c128-ntsc)
+    Checking machine-commodore-c128-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-c128-pal)
+    Checking motorola-68040 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/motorola-68040)
+    Checking common-nintendo-nes v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-nintendo-nes)
+    Checking common-commodore-amiga v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-amiga)
+    Checking emu198x-shell v0.44.2 (/private/tmp/198x-plus3-four-current/crates/emu198x-shell)
+    Checking machine-nintendo-nes-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-nintendo-nes-ntsc)
+    Checking machine-nintendo-nes-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-nintendo-nes-pal)
+    Checking common-commodore-amiga-ocs v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-amiga-ocs)
+    Checking common-commodore-amiga-ecs v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-amiga-ecs)
+    Checking common-commodore-amiga-aga v0.47.0 (/private/tmp/198x-plus3-four-current/crates/common-commodore-amiga-aga)
+    Checking machine-commodore-amiga-a600-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a600-pal)
+    Checking machine-commodore-amiga-a600-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a600-ntsc)
+    Checking machine-commodore-amiga-a500-plus-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-plus-pal)
+    Checking machine-commodore-amiga-a500-plus-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-plus-ntsc)
+    Checking machine-commodore-amiga-a1200-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a1200-pal)
+    Checking machine-commodore-amiga-a1200-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a1200-ntsc)
+    Checking machine-commodore-amiga-a500-rev5-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-rev5-pal)
+    Checking machine-commodore-amiga-a2000cr-rev6-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a2000cr-rev6-pal)
+    Checking machine-commodore-amiga-a1000-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a1000-pal)
+    Checking machine-commodore-amiga-a500-rev5-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-rev5-ntsc)
+    Checking machine-commodore-amiga-a2000cr-rev6-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a2000cr-rev6-ntsc)
+    Checking machine-commodore-amiga-a1000-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a1000-ntsc)
+    Checking machine-commodore-amiga-a500-rev6a-pal v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-rev6a-pal)
+    Checking machine-commodore-amiga-a500-rev6a-ntsc v0.47.0 (/private/tmp/198x-plus3-four-current/crates/machine-commodore-amiga-a500-rev6a-ntsc)
+    Checking runtime-nintendo-nes v0.47.0 (/private/tmp/198x-plus3-four-current/crates/runtime-nintendo-nes)
+    Checking runtime-commodore-c64 v0.47.0 (/private/tmp/198x-plus3-four-current/crates/runtime-commodore-c64)
+    Checking runtime-commodore-amiga v0.47.0 (/private/tmp/198x-plus3-four-current/crates/runtime-commodore-amiga)
+    Checking runtime-sinclair-zx-spectrum v0.47.0 (/private/tmp/198x-plus3-four-current/crates/runtime-sinclair-zx-spectrum)
+    Checking emu198x-catalogue v0.47.0 (/private/tmp/198x-plus3-four-current/crates/emu198x-catalogue)
+    Finished `release` profile [optimized] target(s) in 10.05s

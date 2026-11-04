@@ -1,0 +1,16 @@
+{
+  "full_pixels_exact_per_producer": 104192,
+  "indexed_pixels_differ": 45,
+  "rgba_pixels_differ": 45,
+  "identical_changed_coordinates": true,
+  "observed_palette_mapping_agrees": true,
+  "same_boundary_screen_bytes": 6912,
+  "renderer": "current published 40077 and ULA, CPU inactive, only original observed write times differ",
+  "black_border_latch_settle_fields": 1,
+  "negative_swapped_timing_exit": 101,
+  "negative_swapped_timing_pixel_differences": 45,
+  "replayed_sha256": [
+    "63235bb2e2cc82a2c01497057d023ff309db06c4b18f8529053e6dc6c146fd75",
+    "3b4a014b8048f66d3b55b642c8a4d7c715dd79763409c3f983fe65563b1b37a5"
+  ]
+}
