@@ -1,0 +1,43 @@
+{
+  "producer_sha256": "18bfd96ba9505115629f082753c842fa6c669ae3bf57f661a58768ad85450242",
+  "fresh_results": [
+    {
+      "id": "chase-hq-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "log": "[PASS] chase-hq-plus3 (Chase H.Q. (+3))\n[SNAP-PASS] chase-hq-plus3\n1 entries run, 0 failure(s)\n"
+    },
+    {
+      "id": "starglider-2-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "log": "[PASS] starglider-2-plus3 (Starglider 2 (+3))\n[SNAP-PASS] starglider-2-plus3\n1 entries run, 0 failure(s)\n"
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "log": "[PASS] lotus-esprit-plus3 (Lotus Esprit Turbo Challenge (+3))\n[SNAP-PASS] lotus-esprit-plus3\n1 entries run, 0 failure(s)\n"
+    },
+    {
+      "id": "robocop-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "log": "[PASS] robocop-plus3 (RoboCop (+3))\n[SNAP-PASS] robocop-plus3\n1 entries run, 0 failure(s)\n"
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "pass": true,
+      "snapshot_replay_pass": true,
+      "log": "[PASS] where-time-stood-still-plus3 (Where Time Stood Still (+3))\n[SNAP-PASS] where-time-stood-still-plus3\n1 entries run, 0 failure(s)\n"
+    }
+  ],
+  "negative_stale_manifest": {
+    "exit_code": 1,
+    "log": "[FAIL] chase-hq-plus3 (Chase H.Q. (+3))\nchase-hq-plus3:\n  boot.frame_hash = \"xxh64:47fda6722c6032b2\"\n  audio.hash      = \"xxh64:4d025de7d2a76994\"\n  outcome         = audio mismatch (expected xxh64:1173a13fcb7720a2)\n[SNAP-PASS] chase-hq-plus3\n1 entries run, 1 failure(s)\n"
+  },
+  "shipping_files": [
+    "crates/emu198x-catalogue/CHANGELOG.md",
+    "crates/emu198x-catalogue/manifest/spectrum.toml"
+  ]
+}

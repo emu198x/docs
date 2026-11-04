@@ -1,0 +1,305 @@
+{
+  "chase-hq-plus3": {
+    "frame_hash_unchanged": true,
+    "old_audio_hash": "xxh64:1173a13fcb7720a2",
+    "current_audio_hash": "xxh64:4d025de7d2a76994",
+    "capture_start_delta_ticks": 354540,
+    "music_pc": 60638,
+    "first_music_write_old_ticks": 573250727,
+    "first_music_write_current_ticks": 631040755,
+    "music_start_frame_delta": 163,
+    "whole_command_prefix": 40676,
+    "muted_startup_extra": 0,
+    "music_commands_compared": 40620,
+    "write_edge_deltas": {
+      "57786838": 24,
+      "57789913": 2904,
+      "57790028": 30852,
+      "57793103": 12,
+      "58144453": 564,
+      "58144568": 6264
+    },
+    "global_prescaler_and_sample_error_predicted": true,
+    "replay": [
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "6b9bcc3474ad49a3d68c093f626172a7af43a09196abdb5071f5c4447f634f84",
+        "complete_pcm_reconstructed": false
+      },
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "bc43710461c6741cbbce44ded523c8fea3f7347180bf8b083b6e5cda06d65b59",
+        "complete_pcm_reconstructed": false
+      }
+    ],
+    "reference": [
+      {
+        "complete_command_window_matches": true,
+        "commands": 1200,
+        "reference_start_seconds": 175.246891933363
+      },
+      {
+        "complete_command_window_matches": true,
+        "commands": 1200,
+        "reference_start_seconds": 174.546899827583
+      }
+    ]
+  },
+  "starglider-2-plus3": {
+    "frame_hash_unchanged": true,
+    "old_audio_hash": "xxh64:f42fcebdf253d1b1",
+    "current_audio_hash": "xxh64:818ec2364d7b17f3",
+    "capture_start_delta_ticks": 354540,
+    "music_pc": 49175,
+    "first_music_write_old_ticks": 580314942,
+    "first_music_write_current_ticks": 606196370,
+    "music_start_frame_delta": 73,
+    "whole_command_prefix": 51273,
+    "muted_startup_extra": 4,
+    "music_commands_compared": 49223,
+    "write_edge_deltas": {
+      "25881428": 49223
+    },
+    "global_prescaler_and_sample_error_predicted": true,
+    "replay": [
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "dcead54d3429db043947c2d3c4428b33b0ca8f8f9bd76865c58ac95587a99290",
+        "complete_pcm_reconstructed": true
+      },
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "0f45ef02c152c5a5e8831a981a5d0d7e3a09e12a213dd8c746f191f8361b3190",
+        "complete_pcm_reconstructed": true
+      }
+    ],
+    "reference": [
+      {
+        "complete_command_window_matches": true,
+        "commands": 958,
+        "reference_start_seconds": 71.110248667673
+      },
+      {
+        "complete_command_window_matches": true,
+        "commands": 974,
+        "reference_start_seconds": 69.670857650168
+      }
+    ]
+  },
+  "lotus-esprit-plus3": {
+    "frame_hash_unchanged": true,
+    "old_audio_hash": "xxh64:4677446a6698a8be",
+    "current_audio_hash": "xxh64:254a1bc10fa235a9",
+    "capture_start_delta_ticks": 354540,
+    "music_pc": 63581,
+    "first_music_write_old_ticks": 354825822,
+    "first_music_write_current_ticks": 386025320,
+    "music_start_frame_delta": 88,
+    "whole_command_prefix": 61639,
+    "muted_startup_extra": 0,
+    "music_commands_compared": 61637,
+    "write_edge_deltas": {
+      "31199438": 33,
+      "31199443": 33,
+      "31199448": 121,
+      "31199453": 22,
+      "31199458": 55,
+      "31199463": 165,
+      "31199468": 341,
+      "31199473": 627,
+      "31199478": 198,
+      "31199483": 2079,
+      "31199488": 2057,
+      "31199493": 1782,
+      "31199498": 1542,
+      "31199503": 1496,
+      "31199508": 4114,
+      "31199513": 3938,
+      "31199518": 5984,
+      "31199523": 3599,
+      "31199528": 16181,
+      "31199533": 3069,
+      "31199538": 5412,
+      "31199543": 1936,
+      "31199548": 1001,
+      "31199553": 1529,
+      "31199558": 297,
+      "31199563": 1408,
+      "31199568": 880,
+      "31199573": 517,
+      "31199578": 495,
+      "31199583": 165,
+      "31199588": 231,
+      "31199593": 99,
+      "31199598": 121,
+      "31199603": 77,
+      "31199608": 22,
+      "31199613": 11
+    },
+    "global_prescaler_and_sample_error_predicted": true,
+    "replay": [
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "694ef4c64f4a796bd808493648e01ab6b69106ceec917c8e09e98726c91c0e64",
+        "complete_pcm_reconstructed": true
+      },
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "eb7d07a0612cdaaa311059594a03b52d010ec22d776a78adc706d647f136d2b7",
+        "complete_pcm_reconstructed": true
+      }
+    ],
+    "reference": [
+      {
+        "complete_command_window_matches": true,
+        "commands": 1100,
+        "reference_start_seconds": 65.33313851516
+      },
+      {
+        "complete_command_window_matches": true,
+        "commands": 1100,
+        "reference_start_seconds": 68.711680622344
+      }
+    ]
+  },
+  "robocop-plus3": {
+    "frame_hash_unchanged": true,
+    "old_audio_hash": "xxh64:0358393c6b155f61",
+    "current_audio_hash": "xxh64:df7c2c10ba78103c",
+    "capture_start_delta_ticks": 354540,
+    "music_pc": 49529,
+    "first_music_write_old_ticks": 175818627,
+    "first_music_write_current_ticks": 216945270,
+    "music_start_frame_delta": 116,
+    "whole_command_prefix": 87738,
+    "muted_startup_extra": 0,
+    "music_commands_compared": 72960,
+    "write_edge_deltas": {
+      "41126563": 12,
+      "41126583": 12,
+      "41126598": 24,
+      "41126618": 12,
+      "41126623": 5664,
+      "41126628": 12468,
+      "41126633": 18684,
+      "41126638": 12,
+      "41126643": 17976,
+      "41126648": 12132,
+      "41126653": 5964
+    },
+    "global_prescaler_and_sample_error_predicted": true,
+    "replay": [
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "af070d9be9f320571276099b24d154ecf03a02a2c71f1f7fbe7079fb84304194",
+        "complete_pcm_reconstructed": true
+      },
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "2b3c528c898fc47952d5beb12c530caada621d68a53cb6d4954041d8166a16b2",
+        "complete_pcm_reconstructed": true
+      }
+    ],
+    "reference": [
+      {
+        "complete_command_window_matches": false,
+        "commands": 1200,
+        "reference_start_seconds": null
+      },
+      {
+        "complete_command_window_matches": false,
+        "commands": 1200,
+        "reference_start_seconds": null
+      }
+    ]
+  },
+  "where-time-stood-still-plus3": {
+    "frame_hash_unchanged": true,
+    "old_audio_hash": "xxh64:b89c6f95d98b7924",
+    "current_audio_hash": "xxh64:530fff8f06271e68",
+    "capture_start_delta_ticks": 354540,
+    "music_pc": 31591,
+    "first_music_write_old_ticks": 178989642,
+    "first_music_write_current_ticks": 224370835,
+    "music_start_frame_delta": 128,
+    "whole_command_prefix": 66651,
+    "muted_startup_extra": 0,
+    "music_commands_compared": 66649,
+    "write_edge_deltas": {
+      "45381063": 2068,
+      "45381068": 11,
+      "45381078": 2244,
+      "45381083": 1364,
+      "45381088": 4697,
+      "45381093": 8657,
+      "45381098": 1430,
+      "45381103": 3377,
+      "45381113": 6248,
+      "45381118": 8580,
+      "45381123": 1485,
+      "45381128": 4125,
+      "45381138": 5973,
+      "45381143": 3,
+      "45381148": 6900,
+      "45381153": 7502,
+      "45381168": 3,
+      "45381178": 1606,
+      "45381193": 11,
+      "45381198": 341,
+      "45381208": 2,
+      "45381248": 1,
+      "45381253": 1,
+      "45381273": 1,
+      "45381288": 1,
+      "45381298": 1,
+      "45381313": 1,
+      "45381318": 1,
+      "45381333": 1,
+      "45381338": 5,
+      "45381353": 1,
+      "45381408": 1,
+      "45381418": 1,
+      "45381458": 1,
+      "45381488": 1,
+      "45381503": 1,
+      "45381508": 1,
+      "45381518": 1,
+      "45381553": 1
+    },
+    "global_prescaler_and_sample_error_predicted": true,
+    "replay": [
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "69ad4c902c9c35ede769f441cc7bcff2bacdccf0b400df09d568912d0cb95d82",
+        "complete_pcm_reconstructed": false
+      },
+      {
+        "same_f32_on_both_versions": true,
+        "samples": 88200,
+        "f32_sha256": "ce70e25d7592ef3d7dc8d76720dbd9ed9d1bcb45433c423382797e138f43d6f9",
+        "complete_pcm_reconstructed": false
+      }
+    ],
+    "reference": [
+      {
+        "complete_command_window_matches": false,
+        "commands": 1100,
+        "reference_start_seconds": null
+      },
+      {
+        "complete_command_window_matches": false,
+        "commands": 1100,
+        "reference_start_seconds": null
+      }
+    ]
+  }
+}
