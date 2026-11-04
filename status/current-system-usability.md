@@ -22,11 +22,14 @@ Use these source-repository records:
   external-input checks were skipped before using a green run as evidence.
 
 The separate [Apple II family repository](https://github.com/emu198x/apple-ii)
-owns the original NTSC revision-0 machine library. Its
+owns the published original NTSC revision-0 machine and runtime libraries. The
+suite's [Apple II runner](https://github.com/emu198x/emu198x/tree/main/crates/emu198x-apple-ii)
+uses the shared launcher for JSON scripts and live stdio MCP. Its
 [verification record](https://github.com/emu198x/apple-ii/blob/main/docs/verification.md)
-qualifies original-ROM graphics and slot-6 Disk II/DOS 3.3, including exported
-work-disk reloads. It remains a headless library, outside the flagship's native
-shipping list; later Apple II boards need separate machine implementations.
+qualifies original-ROM graphics and slot-6 Disk II/DOS 3.3, including a scripted
+work-disk export loaded and run in a fresh MCP process. Script/MCP observations,
+negative waits, firmware failures and PNG capture are checked through the actual
+binary. Native windows, save states and later boards remain future work.
 
 For a launch, use the selected shipping binary's `--help` and its source/runtime
 profile at the revision being tested. For a boot or accuracy claim, retain the
