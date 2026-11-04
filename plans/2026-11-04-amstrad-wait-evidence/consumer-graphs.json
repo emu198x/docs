@@ -1,0 +1,8 @@
+{
+  "runtime-amstrad-cpc": [
+    "0.8.0"
+  ],
+  "runtime-sinclair-zx-spectrum": [
+    "0.9.0"
+  ]
+}

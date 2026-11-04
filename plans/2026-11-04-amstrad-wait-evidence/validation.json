@@ -1,0 +1,56 @@
+{
+  "source_pr": "https://github.com/emu198x/emu198x/pull/2285",
+  "source_head": "75e2f4bf37ca4db37a5ad1920465b80bb1ac0dfc",
+  "cpu": {
+    "num": "0.9.0",
+    "checksum": "bb7caf1f7f56be3bbbc5315162fda69cf0c30cd32701b75f3a607af612359b99",
+    "yanked": false,
+    "created_at": "2026-11-04T07:54:27.718627Z"
+  },
+  "chip": {
+    "version": "0.3.0",
+    "registry_package_sha256": "d9a613f051383a4c637d9b93eb317d99d5173d086f20655ee1c1bf604cd5a719",
+    "source_sha256": "d10a213196f899de2fccba1159e72ffce2997a01db08ce93d39ee1f03ac8ad38",
+    "source_matches_reviewed_chip": true,
+    "consumer_uses_published_chip": true
+  },
+  "consumer_graphs": {
+    "runtime-amstrad-cpc": [
+      "0.8.0"
+    ],
+    "runtime-sinclair-zx-spectrum": [
+      "0.9.0"
+    ]
+  },
+  "original_input_stream": {
+    "reference": "MAME 0.289",
+    "bytes": 49152,
+    "sha256": "f55ada06cff6f6f87f501f9acd3fea7525f7a87dec0bd1021619ec0e0cc188ff",
+    "native_trace_sha256": "8d6be4105b7bb7f907c3237cd0622fedbc207c8f6179255b533a9eff0df6fe11",
+    "test": "original_loader_reads_every_byte_seen_on_the_independent_reference_bus",
+    "result": "pass",
+    "mutated_rom_negative_control": "rejects before execution"
+  },
+  "native_sds": {
+    "case_count": 1024,
+    "snapshot_version": 20,
+    "artifact_sha256": "2548d861e3ad05e52280ace05408a9ffda7fc92766e3df54dde981ab36f14071"
+  },
+  "native_restore": {
+    "original_baseline_cases": 192,
+    "comparisons": 352,
+    "amstrad_boundary_cases": 24,
+    "profile_version_cases": 28,
+    "pipeline_cases": 296,
+    "wait_models": 3,
+    "wait_offsets": 8,
+    "resumed_frames_per_wait_case": 3
+  },
+  "manifest_expectations_changed": false,
+  "replacement_catalogue_oracles_qualified": false,
+  "images_sha256": {
+    "cybernoid-before.png": "a80204ba0d5e5143ef7e73ad09e9ab11d8e426c8271d99c1e5717b3d4cbb424b",
+    "cybernoid-mame20.png": "cc2447a9fbb3f3ba61d2ea9f4f586ecd8455b2b2b4c2aa49a8836cb9ad71e27a",
+    "cybernoid-after.png": "90c9bec6921740faecc8b2365a20ad9ad0d66d351e0d3d65f077b3a665f042ac"
+  }
+}

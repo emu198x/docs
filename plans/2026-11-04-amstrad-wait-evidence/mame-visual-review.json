@@ -1,0 +1,16 @@
+{
+  "observation": "manual inspection of native 120-second captures, not a cycle-aligned pixel oracle",
+  "cases": {
+    "chase-hq-plus3": "recognizable title/options screen",
+    "cybernoid-plus3": "recognizable hall-of-fame screen",
+    "stormlord-plus3": "recognizable hall-of-fame screen",
+    "starglider-2-plus3": "recognizable title/demo screen",
+    "lotus-esprit-plus3": "recognizable car specification screen",
+    "tetris-plus3": "recognizable logo and scrolling text",
+    "robocop-plus3": "striped loader-like display; successful boot not established",
+    "where-time-stood-still-plus3": "striped loader-like display; successful boot not established",
+    "dragon-ninja-plus3": "striped loader-like display; successful boot not established",
+    "rainbow-islands-plus3": "reference drive refuses unchanged 45-track image; configured maximum is 42"
+  },
+  "qualified_replacement_oracles": false
+}
