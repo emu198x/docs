@@ -1,0 +1,101 @@
+{
+  "robocop": {
+    "frame_hash": "xxh64:587a604f94d1ff74",
+    "old_audio_hash": "xxh64:d175d0946abcd29d",
+    "qualified_audio_hash": "xxh64:75dc5b625c861ae6",
+    "start_time_delta": 354540,
+    "duration": 35454000,
+    "extra_ay_input_clocks": 35454,
+    "sample_error_prediction_matches": true,
+    "prescaler_prediction_matches": true,
+    "command_field_shift": 0,
+    "first_field_matches_old_stored_registers": null,
+    "matching_fields": 100,
+    "compared_commands": 1200,
+    "write_edge_deltas_master_ticks": {
+      "-17": 216,
+      "3": 984
+    },
+    "old_one_field_delay_audio_hash": "xxh64:3237ee51c5d1510a",
+    "delayed_initial_chip_difference_fields": [],
+    "zero_delay_control_matches": true
+  },
+  "out-run": {
+    "frame_hash": "xxh64:1838727d99e21182",
+    "old_audio_hash": "xxh64:56e8f046d843cf21",
+    "qualified_audio_hash": "xxh64:b9409931fe776915",
+    "start_time_delta": 354540,
+    "duration": 35454000,
+    "extra_ay_input_clocks": 35454,
+    "sample_error_prediction_matches": true,
+    "prescaler_prediction_matches": true,
+    "command_field_shift": 1,
+    "first_field_matches_old_stored_registers": true,
+    "matching_fields": 99,
+    "compared_commands": 1287,
+    "write_edge_deltas_master_ticks": {
+      "-57": 182,
+      "-52": 13,
+      "-47": 65,
+      "-42": 13,
+      "-32": 117,
+      "-22": 91,
+      "-17": 208,
+      "-7": 104,
+      "-2": 117,
+      "3": 26,
+      "8": 156,
+      "13": 26,
+      "18": 52,
+      "23": 39,
+      "28": 52,
+      "38": 26
+    },
+    "old_one_field_delay_audio_hash": "xxh64:5b0d2419e9f3a589",
+    "delayed_initial_chip_difference_fields": [
+      "regs",
+      "tone_counter",
+      "noise_counter",
+      "noise_output",
+      "noise_lfsr",
+      "noise_prescale"
+    ],
+    "zero_delay_control_matches": true
+  },
+  "where-time-stood-still": {
+    "frame_hash": "xxh64:076876874e1f4725",
+    "old_audio_hash": "xxh64:72247e53c91f6a20",
+    "qualified_audio_hash": "xxh64:520fd8f8ff2724d4",
+    "start_time_delta": 354540,
+    "duration": 35454000,
+    "extra_ay_input_clocks": 35454,
+    "sample_error_prediction_matches": true,
+    "prescaler_prediction_matches": true,
+    "command_field_shift": 0,
+    "first_field_matches_old_stored_registers": null,
+    "matching_fields": 100,
+    "compared_commands": 1100,
+    "write_edge_deltas_master_ticks": {
+      "-72": 44,
+      "-37": 44,
+      "-32": 55,
+      "-22": 44,
+      "-17": 11,
+      "-12": 253,
+      "-7": 66,
+      "-2": 44,
+      "3": 99,
+      "13": 77,
+      "18": 132,
+      "28": 77,
+      "38": 88,
+      "48": 66
+    },
+    "old_one_field_delay_audio_hash": "xxh64:102bb60ee089b294",
+    "delayed_initial_chip_difference_fields": [
+      "tone_counter",
+      "tone_output"
+    ],
+    "zero_delay_control_matches": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "stage": "Initial PCM comparison, before AY observation qualified the replacements",
+  "lag_search_bounds_samples": [
+    -128,
+    128
+  ],
+  "games": {
+    "robocop": {
+      "id": "robocop",
+      "samples": 88200,
+      "sample_rate": 44100,
+      "before_wav_sha256": "0f158ec9475f27b90a381270c8cb594dca34d2d45f4ad4f1918dd80d3602b1a5",
+      "after_wav_sha256": "2f9807a7d3b787e0e30b0c259225a408a2eac320cca371e7de56dccacadf2ddc",
+      "identical_pcm_samples": 74625,
+      "changed_pcm_samples": 13575,
+      "max_absolute_difference_lsb": 6401,
+      "rms_difference_lsb": 752.157632748039,
+      "zero_lag_correlation": 0.9656581496353674,
+      "best_lag_samples": 0,
+      "best_lag_correlation": 0.9656581496353674,
+      "before_peak": 13426,
+      "after_peak": 13426
+    },
+    "out-run": {
+      "id": "out-run",
+      "samples": 88200,
+      "sample_rate": 44100,
+      "before_wav_sha256": "86ca9158228b0d88a9f17e248532917f0b4ba92e9dd8b6954cb512b80bfc7286",
+      "after_wav_sha256": "bd173eb58aa334d3ff851cb935f341f9dcbfff5d39f13a24986a34b0360d4945",
+      "identical_pcm_samples": 5361,
+      "changed_pcm_samples": 82839,
+      "max_absolute_difference_lsb": 12089,
+      "rms_difference_lsb": 2933.04537488878,
+      "zero_lag_correlation": 0.14471178903626739,
+      "best_lag_samples": -128,
+      "best_lag_correlation": 0.29814166728451214,
+      "before_peak": 12089,
+      "after_peak": 12089
+    },
+    "where-time-stood-still": {
+      "id": "where-time-stood-still",
+      "samples": 88200,
+      "sample_rate": 44100,
+      "before_wav_sha256": "028b88c5c2ca37cef7e13ea327bb0e1e4f7f7e9934175b92a8fc4a4d807247c6",
+      "after_wav_sha256": "dd3bcd31a149ce694b293a8340a7798bfdf3aea7067aa511e7aaa96d6f7962a3",
+      "identical_pcm_samples": 1106,
+      "changed_pcm_samples": 87094,
+      "max_absolute_difference_lsb": 12970,
+      "rms_difference_lsb": 5186.904127702509,
+      "zero_lag_correlation": 0.10616774131887177,
+      "best_lag_samples": 32,
+      "best_lag_correlation": 0.6383544732866074,
+      "before_peak": 32767,
+      "after_peak": 32445
+    }
+  }
+}
