@@ -1,0 +1,25 @@
+{
+  "id": "rainbow-islands-plus3",
+  "positive_run": {
+    "exit_code": 0,
+    "seconds": 19.909,
+    "log": "[PASS] rainbow-islands-plus3 (Rainbow Islands (+3))\n[SNAP-PASS] rainbow-islands-plus3\n1 entries run, 0 failure(s)\n"
+  },
+  "negative_old_waypoint": {
+    "exit_code": 1,
+    "seconds": 39.839,
+    "log": "[FAIL] rainbow-islands-plus3 (Rainbow Islands (+3))\nrainbow-islands-plus3:\n  boot.frame_hash = \"xxh64:c5a96435f59811ff\"\n  audio.hash      = \"xxh64:7d335937455497a1\"\n  outcome         = boot mismatch (expected xxh64:9c88024738effebd)\n[SNAP-PASS] rainbow-islands-plus3\n1 entries run, 1 failure(s)\n"
+  },
+  "capture": {
+    "exit_code": 0,
+    "seconds": 12.169,
+    "log": "rainbow-islands-plus3:\n  boot.frame_hash = \"xxh64:9c88024738effebd\"\n  audio.hash      = \"xxh64:7d335937455497a1\"\n  outcome         = pass\n  saved screenshot  = /private/tmp/198x-rainbow-guest-evidence/new-waypoint.png\n  saved audio       = /private/tmp/198x-rainbow-guest-evidence/new-waypoint.wav\n"
+  },
+  "observed": {
+    "boot.frame_hash": "xxh64:9c88024738effebd",
+    "audio.hash": "xxh64:7d335937455497a1"
+  },
+  "producer_sha256": "bec747d1eba7022d87406b58cdab49f97a430f9da87ae63bd7bda98842337edc",
+  "old_manifest_sha256": "baca2832623f884029d42c4c50df1a1b5a921dfa7423f27a93b659ef7ab74948",
+  "new_manifest_sha256": "b7dce197c34850a702fb866e3cbc14adb642694d95e566cf6b441f23a7a9d1d6"
+}

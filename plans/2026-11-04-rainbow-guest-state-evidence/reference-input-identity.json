@@ -1,0 +1,36 @@
+{
+  "id": "rainbow-islands-plus3",
+  "binary_sha256": "6d40df87963c58cdd3857d203e186af854fea49ae03b2ab555e30ef1029636d9",
+  "firmware_sha1": {
+    "40092.ic7": "5992daf925f6e225fc0d01f7640282954d092ef4",
+    "40093.ic8": "a0432adcca03f849fb39b6dce6414740cf4aecd2"
+  },
+  "media_archive_sha256": "db49591884050f59d4b83b5eb6cdf894ea43f831ee1cf1b32842843a7c698cc3",
+  "member": "Rainbow Islands - The Story of Bubble Bobble 2 (1990)(Ocean)(+3).dsk",
+  "disk_sha256": "6e1c1e936adab2973ebf738f333380fbee2be1e07b6b97c55164b0dd9b868bec",
+  "argv": [
+    "/opt/homebrew/bin/mame",
+    "specpls3",
+    "-bios",
+    "en",
+    "-rompath",
+    "/private/tmp/198x-mame-disk-boot-fvsqfjj6",
+    "-flop1",
+    "/private/tmp/198x-mame-disk-boot-fvsqfjj6/original.dsk",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-noreadconfig",
+    "-nowriteconfig",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/private/tmp/198x-runtime-state-evidence/plus3-mame-original-ten-complete/rainbow-islands-plus3/boot.lua",
+    "-seconds_to_run",
+    "130"
+  ],
+  "scope": "ordinary firmware boot, ENTER at 4.9 s, native screenshots at 4.9/20/120 s; no memory or register writes; not a cycle-aligned catalogue oracle"
+}

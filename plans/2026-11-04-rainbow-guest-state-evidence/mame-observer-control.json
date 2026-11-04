@@ -1,0 +1,6 @@
+{
+  "fields": 64,
+  "registers_exact": true,
+  "physical_ram_equal": 64,
+  "pixels_equal": 64
+}

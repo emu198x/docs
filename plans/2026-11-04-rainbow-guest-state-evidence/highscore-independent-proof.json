@@ -1,0 +1,15 @@
+{
+  "screen_bank": 5,
+  "displayed_bytes": 6912,
+  "screen_sha256": "21f2afed962ea4d29f2fb5c4985162c54791a97f5ffcc942067b04b134767c93",
+  "independent_fields_byte_identical": 64,
+  "native_reference_rgb_hash": "xxh64:9c88024738effebd",
+  "reference_milestone": "original code CFC9, saved BC D000, caller return CFAD",
+  "checkpoint_ram_unchanged": true,
+  "checkpoint_pixels_unchanged": true,
+  "first_stable_highscore_window": [
+    1535,
+    1976
+  ],
+  "selected_midpoint": 1755
+}

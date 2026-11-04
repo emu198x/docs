@@ -1,0 +1,133 @@
+{
+  "source": "cf6ee98c2857c37b0683945107c695c316a49fcc",
+  "producer_sha256": "84d67a49c0f5d7ad2a159584578c220b08a63b2c67edf698679d51e6e776fd2a",
+  "results": [
+    {
+      "id": "chase-hq-plus3",
+      "observed": {
+        "boot.frame_hash": "xxh64:47fda6722c6032b2",
+        "audio.hash": "xxh64:1173a13fcb7720a2"
+      },
+      "expected": {
+        "boot.frame_hash": "xxh64:47fda6722c6032b2",
+        "audio.hash": "xxh64:1173a13fcb7720a2"
+      },
+      "seconds": 24.953,
+      "matches": true
+    },
+    {
+      "id": "starglider-2-plus3",
+      "observed": {
+        "boot.frame_hash": "xxh64:5c8dc6f976335002",
+        "audio.hash": "xxh64:f42fcebdf253d1b1"
+      },
+      "expected": {
+        "boot.frame_hash": "xxh64:5c8dc6f976335002",
+        "audio.hash": "xxh64:f42fcebdf253d1b1"
+      },
+      "seconds": 21.067,
+      "matches": true
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "observed": {
+        "boot.frame_hash": "xxh64:bfa8481a6e3a2d39",
+        "audio.hash": "xxh64:4677446a6698a8be"
+      },
+      "expected": {
+        "boot.frame_hash": "xxh64:bfa8481a6e3a2d39",
+        "audio.hash": "xxh64:4677446a6698a8be"
+      },
+      "seconds": 24.181,
+      "matches": true
+    },
+    {
+      "id": "robocop-plus3",
+      "observed": {
+        "boot.frame_hash": "xxh64:3f225520cedc41e9",
+        "audio.hash": "xxh64:0358393c6b155f61"
+      },
+      "expected": {
+        "boot.frame_hash": "xxh64:3f225520cedc41e9",
+        "audio.hash": "xxh64:0358393c6b155f61"
+      },
+      "seconds": 21.485,
+      "matches": true
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "observed": {
+        "boot.frame_hash": "xxh64:076876874e1f4725",
+        "audio.hash": "xxh64:b89c6f95d98b7924"
+      },
+      "expected": {
+        "boot.frame_hash": "xxh64:076876874e1f4725",
+        "audio.hash": "xxh64:b89c6f95d98b7924"
+      },
+      "seconds": 26.186,
+      "matches": true
+    }
+  ],
+  "all_match": true,
+  "inputs": {
+    "media": [
+      {
+        "id": "chase-hq-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Chase H.Q. (1989)(Ocean)(+3).zip",
+        "archive_sha256": "6e084e3b7fb96c7c5c7dd6cbafbe555dea0192305271360c522848a6a435e1b6",
+        "member": "Chase H.Q. (1989)(Ocean)(+3).dsk",
+        "disk_sha256": "f73ec321ac2095771dc6e4b8b923b811f285d2d7534c82643b4a7b342b246810"
+      },
+      {
+        "id": "starglider-2-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Starglider 2 - The Egrons Strike Back (1989)(Rainbird)(+3).zip",
+        "archive_sha256": "84d1159af04245531c5fcf83a77cd5b0a82f062ce10aefe9bd7163305d8e3bd9",
+        "member": "Starglider 2 - The Egrons Strike Back (1989)(Rainbird)(+3).dsk",
+        "disk_sha256": "4219a2ba11d84f388fb13fd2e4871c254543afed87a83857e461912ce15c8bd0"
+      },
+      {
+        "id": "lotus-esprit-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Lotus Esprit Turbo Challenge (1990)(Gremlin Graphics)(+3).zip",
+        "archive_sha256": "90143842df837241714c8423b45cabf6eff29f12535496d0302e1e3f2cd16ba1",
+        "member": "Lotus Esprit Turbo Challenge (1990)(Gremlin Graphics)(+3).dsk",
+        "disk_sha256": "2a658d94f20f6d98168d3d79e7d1b7a49463de2796175ac68dbcd3cc33ad2c4e"
+      },
+      {
+        "id": "robocop-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/RoboCop (1988)(Ocean)(+3).zip",
+        "archive_sha256": "ce92aa442c4d726f55d43221a68ac0ca1e70689d114ee01be0a244ffed92725d",
+        "member": "RoboCop (1988)(Ocean)(+3).dsk",
+        "disk_sha256": "8fbda95e32655f2ebfe297a24a22f8cf19c252e9dc865453fe24c8f143f561ab"
+      },
+      {
+        "id": "where-time-stood-still-plus3",
+        "path": "Sinclair/ZX Spectrum/Games/[DSK]/Where Time Stood Still (1988)(Ocean)(+3)[aka Land That Time Forgot, The][aka Tibet].zip",
+        "archive_sha256": "4a39a94302cce17c16b549ab3cc104498b26ded34ab9bff5122705c7eb6147d2",
+        "member": "Where Time Stood Still (1988)(Ocean)(+3)[aka Land That Time Forgot, The][aka Tibet].dsk",
+        "disk_sha256": "1ac8643f501db1dd51bd857248adb932fa3d7c1570e8d99a8d607e589feac49f"
+      }
+    ],
+    "firmware": [
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-0",
+        "path": "amstrad-zx-spectrum-plus3/plus3-0.rom",
+        "sha256": "841d54545c743a7202fb9b068534ed906a08cc657a19955ae20a8de5af8ab185"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-1",
+        "path": "amstrad-zx-spectrum-plus3/plus3-1.rom",
+        "sha256": "6d6ccab28f255b01c8cd89ceab9e7b60247f4610471118092f290f6c7768b7e3"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-2",
+        "path": "amstrad-zx-spectrum-plus3/plus3-2.rom",
+        "sha256": "c5590212a269117657ce611acbac582e41e9db87dc78db480da2615e413b2da6"
+      },
+      {
+        "id": "amstrad-zx-spectrum-plus3-rom-3",
+        "path": "amstrad-zx-spectrum-plus3/plus3-3.rom",
+        "sha256": "8ec5cb9fd7ec24a041800314bb5a2c99be02f7e50745194eb649ed6d9085bd1f"
+      }
+    ]
+  }
+}
