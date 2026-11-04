@@ -1,0 +1,63 @@
+[
+  {
+    "action": "run_frames",
+    "frames": 16000
+  },
+  {
+    "action": "save_snapshot",
+    "path": "128k-16000.state"
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "query",
+    "path": "tape.progress"
+  },
+  {
+    "action": "query",
+    "path": "screen.text.lines"
+  },
+  {
+    "action": "save_screenshot",
+    "path": "128k-16000.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 4000
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "query",
+    "path": "tape.progress"
+  },
+  {
+    "action": "query",
+    "path": "screen.text.lines"
+  },
+  {
+    "action": "save_screenshot",
+    "path": "128k-20000.png"
+  },
+  {
+    "action": "run_frames",
+    "frames": 20000
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "query",
+    "path": "tape.progress"
+  },
+  {
+    "action": "query",
+    "path": "screen.text.lines"
+  },
+  {
+    "action": "save_screenshot",
+    "path": "128k-40000.png"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "source_revision": "b4c26f0baf2e3620f7203a20326b0f98fdfcb9a8",
+  "tape": {
+    "name": "Dizzy - The Ultimate Cartoon Adventure (1987)(Code Masters).tzx",
+    "sha256": "37752e39f97c1388f50613c276fa1a93df1473e0172495c807bdeca6010cfc76"
+  },
+  "roms": {
+    "128-0.rom": {
+      "sha1": "4f4b11ec22326280bdb96e3baf9db4b4cb1d02c5",
+      "sha256": "3ba308f23b9471d13d9ba30c23030059a9ce5d4b317b85b86274b132651d1425"
+    },
+    "128-1.rom": {
+      "sha1": "80080644289ed93d71a1103992a154cc9802b2fa",
+      "sha256": "8d93c3342321e9d1e51d60afcd7d15f6a7afd978c231b43435a7c0757c60b9a3"
+    }
+  },
+  "reference": {
+    "fuse": "vendored fuse-1.7.0",
+    "libspectrum": "vendored libspectrum-1.6.0",
+    "observer_sha256": "afc1853e519aab6a34dd2a9849099d3c5ab513a38d8d4848b3c2fa3419a7d3f1",
+    "traps": false,
+    "fastload": false,
+    "detect_loader": false,
+    "accelerate_loader": false,
+    "frames": 17000
+  },
+  "emulator_build": [
+    "cargo",
+    "build",
+    "--release",
+    "-p",
+    "emu198x-spectrum",
+    "--no-default-features"
+  ]
+}

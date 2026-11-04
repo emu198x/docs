@@ -1,0 +1,42 @@
+--- a/ui/null/null_ui.c
++++ b/ui/null/null_ui.c
+@@ -26,0 +27,9 @@
++#include "screenshot.h"
++#include "snapshot.h"
++#include "tape.h"
++#include "spectrum.h"
++#include "fuse.h"
++#include "z80/z80.h"
++#include "z80/z80_macros.h"
++#include <stdio.h>
++#include <stdlib.h>
+@@ -113 +122,28 @@
+-  /* No error */
++  static unsigned long calls = 0;
++  static unsigned long limit = 0;
++  if( !limit ) limit = getenv("DIZZY_FRAMES") ? strtoul(getenv("DIZZY_FRAMES"), NULL, 10) : 40000;
++  ++calls;
++  if( getenv("DIZZY_48BASIC") ) {
++    if( calls == 200 || calls == 220 || calls == 240 ) { keyboard_press(KEYBOARD_Caps); keyboard_press(KEYBOARD_6); }
++    if( calls == 210 || calls == 230 || calls == 250 ) { keyboard_release(KEYBOARD_6); keyboard_release(KEYBOARD_Caps); }
++    if( calls == 260 || calls == 600 || calls == 680 ) keyboard_press(KEYBOARD_Enter);
++    if( calls == 270 || calls == 610 || calls == 690 ) keyboard_release(KEYBOARD_Enter);
++    if( calls == 620 ) keyboard_press(KEYBOARD_j);
++    if( calls == 630 ) keyboard_release(KEYBOARD_j);
++    if( calls == 640 || calls == 660 ) { keyboard_press(KEYBOARD_Symbol); keyboard_press(KEYBOARD_p); }
++    if( calls == 650 || calls == 670 ) { keyboard_release(KEYBOARD_p); keyboard_release(KEYBOARD_Symbol); }
++    if( calls == 700 && tape_do_play(0) ) exit(3);
++  } else {
++    if( calls == 200 ) keyboard_press(KEYBOARD_Enter);
++    if( calls == 210 ) keyboard_release(KEYBOARD_Enter);
++    if( calls == 220 && tape_do_play(0) ) exit(3);
++  }
++  if( calls == 190 || calls == 280 || calls == 410 || calls == 4000 || calls == 8000 ) {
++    char path[256]; snprintf(path,sizeof(path),"%s-%lu.scr",getenv("DIZZY_SCR"),calls); screenshot_scr_write(path);
++    fprintf(stdout,"checkpoint=%lu pc=%04x sp=%04x tape=%d\n",calls,PC,SP,tape_playing);
++  }
++  if( calls >= limit ) {
++    fprintf(stdout, "frames=%lu pc=%04x sp=%04x\n", calls, PC, SP);
++    if( screenshot_scr_write( getenv("DIZZY_SCR") ) || snapshot_write( getenv("DIZZY_SNAP") ) ) exit(2);
++    fuse_exiting = 1;
++  }

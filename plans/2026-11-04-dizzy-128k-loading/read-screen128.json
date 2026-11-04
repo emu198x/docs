@@ -1,0 +1,141 @@
+[
+  {
+    "action": "load_snapshot",
+    "path": "128k-48basic-title.state"
+  },
+  {
+    "action": "memory_read",
+    "addr": 16384,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 16640,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 16896,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 17152,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 17408,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 17664,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 17920,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 18176,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 18432,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 18688,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 18944,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 19200,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 19456,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 19712,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 19968,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 20224,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 20480,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 20736,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 20992,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 21248,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 21504,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 21760,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 22016,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 22272,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 22528,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 22784,
+    "len": 256
+  },
+  {
+    "action": "memory_read",
+    "addr": 23040,
+    "len": 256
+  }
+]

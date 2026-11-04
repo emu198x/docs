@@ -1,0 +1,43 @@
+[
+  {
+    "action": "load_snapshot",
+    "path": "128k-48basic-title.state"
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "k",
+          "pressed": true
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 4
+  },
+  {
+    "action": "input",
+    "events": [
+      {
+        "Key": {
+          "name": "k",
+          "pressed": false
+        }
+      }
+    ]
+  },
+  {
+    "action": "run_frames",
+    "frames": 100
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "save_screenshot",
+    "path": "128k-48basic-game.png"
+  }
+]

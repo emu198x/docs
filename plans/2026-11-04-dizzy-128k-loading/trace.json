@@ -1,0 +1,51 @@
+[
+  {
+    "action": "run_until_pc",
+    "addr": 23296,
+    "max_steps": 20000000
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "memory_read",
+    "addr": 23296,
+    "len": 62
+  },
+  {
+    "action": "watch_memory_start",
+    "addr": 23296,
+    "len": 62
+  },
+  {
+    "action": "run_until_pc",
+    "addr": 1366,
+    "max_steps": 2000000
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "memory_read",
+    "addr": 23296,
+    "len": 62
+  },
+  {
+    "action": "run_until_pc",
+    "addr": 23335,
+    "max_steps": 10000000
+  },
+  {
+    "action": "query_cpu"
+  },
+  {
+    "action": "memory_read",
+    "addr": 23296,
+    "len": 62
+  },
+  {
+    "action": "watch_memory_log",
+    "limit": 100,
+    "unique": true
+  }
+]

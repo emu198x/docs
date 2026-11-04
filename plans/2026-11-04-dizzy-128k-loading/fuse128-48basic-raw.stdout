@@ -1,0 +1,19 @@
+
+The Free Unix Spectrum Emulator (Fuse) version 1.7.0.
+(c) 1999-2026 Philip Kendall and others; see the file
+'AUTHORS' for more details.
+
+For help, please mail <fuse-emulator-devel@lists.sf.net> or use
+the forums at <http://sourceforge.net/p/fuse-emulator/discussion/>.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+checkpoint=190 pc=0038 sp=5bf9 tape=0
+checkpoint=280 pc=11dc sp=5bf3 tape=0
+checkpoint=410 pc=0038 sp=ff48 tape=0
+checkpoint=4000 pc=05fa sp=5bf7 tape=1
+checkpoint=8000 pc=05ea sp=5bf7 tape=1
+frames=17000 pc=fdfd sp=fffc
