@@ -1,0 +1,52 @@
+{
+  "native_fields": 64,
+  "physical_ram_identical": 64,
+  "pixels_identical": 64,
+  "milestone_identical": true,
+  "later_control_identical": true,
+  "identity": {
+    "scope": "Read-only guest-state observer; derived geometry diagnostic",
+    "archive_sha256": "db49591884050f59d4b83b5eb6cdf894ea43f831ee1cf1b32842843a7c698cc3",
+    "original_disk_sha256": "6e1c1e936adab2973ebf738f333380fbee2be1e07b6b97c55164b0dd9b868bec",
+    "derived_disk_sha256": "5ee0c759ff7ac6b8dcaf7e789fc60a2d591d15d92ab66318e3b99aaa842a938a",
+    "track_payload_sha256": "69a236355ca39f2d2cfc2fc5016cea7c0551a9f9c20b2d890ea821f62a0231df",
+    "changed_offsets": [
+      48
+    ],
+    "mame_sha256": "6d40df87963c58cdd3857d203e186af854fea49ae03b2ab555e30ef1029636d9",
+    "firmware_sha1": {
+      "40092.ic7": "5992daf925f6e225fc0d01f7640282954d092ef4",
+      "40093.ic8": "a0432adcca03f849fb39b6dce6414740cf4aecd2"
+    },
+    "script_sha256": "1ed5d7afdc0eeceac1dc0b481223870ff58531846b664da6a6656273ec51caab",
+    "argv": [
+      "/opt/homebrew/bin/mame",
+      "specpls3",
+      "-bios",
+      "en",
+      "-rompath",
+      "/private/tmp/198x-rainbow-guest-evidence/public-reference-reproduction/native-run-bki78kyn",
+      "-flop1",
+      "/private/tmp/198x-rainbow-guest-evidence/public-reference-reproduction/native-run-bki78kyn/rainbow-declared-42-diagnostic-only.dsk",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-nothrottle",
+      "-skip_gameinfo",
+      "-noreadconfig",
+      "-nowriteconfig",
+      "-autoboot_delay",
+      "0",
+      "-autoboot_script",
+      "/private/tmp/198x-rainbow-guest-evidence/public-reference-reproduction/probe.lua",
+      "-seconds_to_run",
+      "140"
+    ],
+    "timeout_seconds": 90,
+    "exit_code": 0,
+    "seconds": 5.849,
+    "source_unchanged": true,
+    "diagnostic_input_unchanged": true
+  }
+}
