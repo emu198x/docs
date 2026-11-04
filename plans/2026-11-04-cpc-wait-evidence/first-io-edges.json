@@ -1,0 +1,45 @@
+{
+  "applies_to": [
+    "Cpc464",
+    "Cpc664",
+    "Cpc6128"
+  ],
+  "cpu_0_8": [
+    "73 IoWrite(T1Rise) PC=0009 addr=0005 in=79 out=79 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=true retired=4",
+    "74 IoWrite(T1Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=4",
+    "75 IoWrite(T2Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=4",
+    "76 IoWrite(T2Fall) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "77 IoWrite(T3Rise) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "78 IoWrite(T3Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "79 IoWrite(T4Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "80 IoWrite(T4Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "81 M1(T1Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=5",
+    "82 M1(T1Fall) PC=0009 addr=0009 in=79 out=00 wait=true irq=false m1=true mreq=false iorq=false rd=false wr=false rfsh=false retired=5",
+    "83 M1(T2Rise) PC=0009 addr=0009 in=06 out=00 wait=true irq=false m1=true mreq=true iorq=false rd=true wr=false rfsh=false retired=5",
+    "84 M1(T2Fall) PC=0009 addr=0009 in=06 out=00 wait=false irq=false m1=true mreq=true iorq=false rd=true wr=false rfsh=false retired=5",
+    "85 M1(T3Rise) PC=000a addr=0009 in=06 out=06 wait=false irq=false m1=true mreq=true iorq=false rd=true wr=false rfsh=false retired=5",
+    "86 M1(T3Fall) PC=000a addr=0006 in=06 out=06 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=true retired=5",
+    "87 M1(T4Rise) PC=000a addr=0006 in=06 out=06 wait=true irq=false m1=false mreq=true iorq=false rd=false wr=false rfsh=true retired=5",
+    "88 M1(T4Fall) PC=000a addr=0006 in=06 out=06 wait=true irq=false m1=false mreq=true iorq=false rd=false wr=false rfsh=true retired=5",
+    "89 MemRead(T1Rise) PC=000a addr=0006 in=06 out=06 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=true retired=5"
+  ],
+  "cpu_0_9": [
+    "73 IoWrite(T1Rise) PC=0009 addr=0005 in=79 out=79 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=true retired=4",
+    "74 IoWrite(T1Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=4",
+    "75 IoWrite(T2Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=4",
+    "76 IoWrite(T2Fall) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "77 IoWrite(T3Rise) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "78 IoWrite(T3Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "79 IoWrite(T3Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "80 IoWrite(T3Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "81 IoWrite(T3Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "82 IoWrite(T3Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "83 IoWrite(T3Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "84 IoWrite(T3Fall) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "85 IoWrite(T4Rise) PC=0009 addr=bc00 in=79 out=00 wait=false irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "86 IoWrite(T4Fall) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=true rd=false wr=true rfsh=false retired=4",
+    "87 M1(T1Rise) PC=0009 addr=bc00 in=79 out=00 wait=true irq=false m1=false mreq=false iorq=false rd=false wr=false rfsh=false retired=5",
+    "88 M1(T1Fall) PC=0009 addr=0009 in=79 out=00 wait=true irq=false m1=true mreq=false iorq=false rd=false wr=false rfsh=false retired=5",
+    "89 M1(T2Rise) PC=0009 addr=0009 in=06 out=00 wait=true irq=false m1=true mreq=true iorq=false rd=true wr=false rfsh=false retired=5"
+  ]
+}
