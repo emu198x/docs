@@ -1,0 +1,5 @@
+{
+  "exit_code": 1,
+  "seconds": 67.55,
+  "log": "[FAIL] out-run-plus2a (Out Run)\nout-run-plus2a:\n  boot.frame_hash = \"xxh64:1838727d99e21182\"\n  audio.hash      = \"xxh64:b9409931fe776915\"\n  outcome         = audio mismatch (expected xxh64:56e8f046d843cf21)\n[SNAP-PASS] out-run-plus2a\n1 entries run, 1 failure(s)\n"
+}

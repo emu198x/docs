@@ -1,0 +1,22 @@
+{
+  "plus3-first-bad-catalogue": {
+    "bytes": 4949520,
+    "sha256": "abc5928750fc5f9305ee359dc123b0cd2f3790eadfb6032e43c863a4a290d176"
+  },
+  "plus3-first-bad-manifest.toml": {
+    "bytes": 85508,
+    "sha256": "6ae938c58cd993594a89dcd67593defcd5e814f4cfd0a99e87db7f5f07dbda05"
+  },
+  "registry-catalogue-producer": {
+    "bytes": 6750704,
+    "sha256": "942be5a14b7b30a7ee6bdfa0625b4071dcff28b2be740c430cc166823fc3ad6d"
+  },
+  "before-observer-producer": {
+    "bytes": 7333776,
+    "sha256": "f1c1b2c0e04352451ddfb95e0ac2b97ad7f673f6f42eefba8b8a7115efc49948"
+  },
+  "clean-current-producer": {
+    "bytes": 6750864,
+    "sha256": "dec13b9cf8fd6a729f33a7b0e1adb7c32ab8b2bddeafe540d64056fa02058b3c"
+  }
+}
