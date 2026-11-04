@@ -1,0 +1,22 @@
+{
+  "native_frames_each": 64,
+  "emu_period": null,
+  "mame_period": 1,
+  "emu_unique_images": 11,
+  "mame_unique_images": 1,
+  "image_set_intersection": 0,
+  "image_sets_equal": false,
+  "emu_unique_masks": 7,
+  "mame_unique_masks": 1,
+  "equal_masks_by_field": 2,
+  "first_masks_equal": true,
+  "reference_channel_values": [
+    0,
+    255
+  ],
+  "replacement_oracle_qualified": false,
+  "ordinary_capture_hash_preserved": "xxh64:c5a96435f59811ff",
+  "emu_tick_step": 354540,
+  "reference_frame_step": 1,
+  "inference": "One still shares the foreground layout, but the 64-field sequences do not match; cause not established."
+}

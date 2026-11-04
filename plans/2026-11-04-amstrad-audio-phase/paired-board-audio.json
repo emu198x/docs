@@ -1,0 +1,17 @@
+{
+  "robocop": {
+    "bytes": 176444,
+    "sha256": "2f9807a7d3b787e0e30b0c259225a408a2eac320cca371e7de56dccacadf2ddc",
+    "plus2a_plus2b_byte_identical": true
+  },
+  "out-run": {
+    "bytes": 176444,
+    "sha256": "bd173eb58aa334d3ff851cb935f341f9dcbfff5d39f13a24986a34b0360d4945",
+    "plus2a_plus2b_byte_identical": true
+  },
+  "where-time-stood-still": {
+    "bytes": 176444,
+    "sha256": "dd3bcd31a149ce694b293a8340a7798bfdf3aea7067aa511e7aaa96d6f7962a3",
+    "plus2a_plus2b_byte_identical": true
+  }
+}

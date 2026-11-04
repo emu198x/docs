@@ -139,8 +139,82 @@ retains the source-backed timing diagnosis and full original 103-entry run.
 ## Integration verification
 
 Source PR: [emu198x/emu198x#2287](https://github.com/emu198x/emu198x/pull/2287),
-reviewed source head `241166e71fbf365a7d326ea0403e665637950894`.
+capture source head `241166e71fbf365a7d326ea0403e665637950894`; final reviewed
+head `22e3b59d07d923461c2e37cb144e7002847515b1`. The final commit only clarifies
+two comments. [Identity proof](source-identity-proof.json) verifies unchanged
+parsed catalogue data and no shipping Rust changes.
 [Local checks](local-validation.json), [stale-oracle rejection](stale-oracle-control.json)
 and [altered-command rejection](altered-command-control.json) are complete.
-The full 103-entry recapture is still running; the source PR remains a draft
-until its complete results and CI are retained here. This does not close #2265.
+The [complete recapture](recapture.json) ran all **103 entries** in 2,872.57
+seconds, with **zero errors or timeouts**. **93 match both expectations**;
+only the original ten +3 cases remain. Five frame and nine audio expectations
+still differ. [The completion check](recapture-comparison.json) verifies every
+observed frame/audio pair is unchanged from the previous post-WAIT run, every
+frame expectation is untouched, and exactly the six investigated audio
+expectations changed. The [paired-board recordings](paired-board-audio.json)
+are byte-identical for each game. Original inputs and the producer binary
+remain unchanged throughout the run. This does not close #2265.
+
+`check_recapture.py --self-test` rejects incomplete, empty, duplicate and
+failed capture sets. The real completion check requires exactly the six
+qualified IDs and exactly the ten retained failures; it cannot pass a partial
+or empty report.
+
+## Separate lead: Rainbow Islands' rejected reference image
+
+The original Rainbow Islands EDSK declares 45 tracks, but tracks 39–44 have
+zero size in the size table. Its entire file ends exactly after the declared
+track bodies; no trailing track data is omitted. MAME's configured drive
+rejects the declared count before booting it.
+
+A separately named **derived diagnostic copy** changes only header byte 48
+from 45 to 42. Every other byte, including all track payloads and the size
+table, remains identical. This is not an unchanged-image reference boot.
+[Input/binary identities and the complete command](rainbow-geometry.json)
+record the original/derived SHA-256 and the preserved payload SHA-256. The
+original ZIP and the mounted diagnostic copy are verified unchanged after
+execution. The temporary reference ROM/disk directory is removed.
+
+With the same MAME binary, original firmware, ordinary ENTER key and
+[existing bounded boot script](rainbow-reference-boot.lua), the reference now
+boots and shows the Rainbow Islands title page at 120 emulated seconds. The
+post-WAIT Emu198x capture shows the credits page. This is a useful reference
+path for aligning the attract sequence; it does **not** qualify a replacement
+frame oracle, and Rainbow Islands' current expectation stays unchanged.
+The MAME 20-second image is black; we do not count that as a completed boot.
+
+![Rainbow Islands title page in MAME, derived geometry control at 120 seconds](rainbow-mame-derived-120s.png)
+
+![Rainbow Islands credits in the retained post-WAIT Emu198x capture](rainbow-emu-post-wait.png)
+
+These diagnostic captures show Taito's Rainbow Islands and Graftgold's
+Spectrum conversion. The software and screen content remain their owners'
+work. Only diagnostic images and hashes are published here, not the disk.
+
+A coarse elapsed-after-ENTER control captures at **125.35 seconds**, calculated
+before execution as `4.9 + (6000 + 5 + 20) * 354540 / 17734475`. It reaches the
+same credits **layout** shown by Emu198x, with different colours. The
+[control identity](rainbow-coarse-alignment.json) records this separately;
+it does not align natural-keyboard duration or native frame phase.
+
+![Rainbow Islands credits in MAME at the precomputed elapsed-after-ENTER time](rainbow-mame-derived-125s.png)
+
+The subsequent [64-native-field comparison](rainbow-native-comparison.json)
+**does not qualify Rainbow's frame oracle**. Our temporary
+[ordinary-path observer](rainbow-observer.rs) reproduces the normal post-WAIT
+frame hash before collecting 64 indexed frames, with exactly 354,540 master
+ticks between them. The [reference probe](rainbow-native-reference.lua)
+asserts 64 consecutive native frame numbers and records both native pixels
+and screenshots. All buffers are required; a successful process or advancing
+counter alone is insufficient.
+
+The first foreground mask matches exactly, but only two of the 64 paired
+foreground masks agree. The observed logical-colour image sets do not match.
+MAME has one unique image in the window; Emu198x has eleven, including seven
+foreground masks. A [software-video/SDL-dummy backend control](rainbow-video-backend-control.json)
+reproduces all 64 MAME buffers byte-for-byte. It does not establish the cause
+of the sequence difference, or independently prove video freshness; neither
+backend provides a matching sequence here. We stop this investigation at
+that measured limit. There is no basis for calling it a pure colour-cycle
+phase difference or changing the expected hash. The original disk remains
+unchanged throughout. All temporary Rust observer code is removed afterward.

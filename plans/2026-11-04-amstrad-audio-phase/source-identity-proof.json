@@ -1,0 +1,10 @@
+{
+  "capture_source_head": "241166e71fbf365a7d326ea0403e665637950894",
+  "capture_base": "e125cf697505f19243f8fdfb74a3412affb0bb30",
+  "captured_patch_matches_reviewed_commit": true,
+  "capture_manifest_sha256": "a2de73f5b825320c24b190f1eab214a977266f80f8eb3921e1b711e557fa81a0",
+  "final_manifest_sha256": "baca2832623f884029d42c4c50df1a1b5a921dfa7423f27a93b659ef7ab74948",
+  "parsed_manifest_unchanged_after_comment_clarification": true,
+  "shipping_rust_diff_files": [],
+  "final_reviewed_source_head": "22e3b59d07d923461c2e37cb144e7002847515b1"
+}

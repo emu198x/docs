@@ -1,0 +1,15 @@
+{
+  "runs": [
+    {
+      "backend": "none",
+      "native_fields": 64,
+      "unique_raw_buffers": 1
+    },
+    {
+      "backend": "soft/dummy",
+      "native_fields": 64,
+      "unique_raw_buffers": 1
+    }
+  ],
+  "identical_corresponding_buffers": 64
+}

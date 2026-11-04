@@ -57,3 +57,43 @@ exactly predict prescaler and sample-error differences. Test the causal
 hypothesis once: delay ordinary tape start on the old build by one native
 field, recording firmware-menu, tape-start and tape-stop times. Retain a zero
 delay control. Do not sweep delays, edit chip state or tune phase to fit a hash.
+
+While the complete catalogue run finishes, investigate the separate Rainbow
+Islands reference blocker without changing its source expectation. Read-only
+inventory found 45 declared EDSK tracks, with 39–44 unformatted (zero size).
+Preserve the original ZIP/disk SHA-256. Create a separately named private
+42-track diagnostic view by changing only byte 48 (45 to 42), assert every
+other byte and every track body is identical, and retain both identities.
+Run the existing bounded MAME observer against that view with separate output.
+Record it explicitly as a derived diagnostic input, never an unchanged-image
+reference boot. Do not edit vendored code or the canonical media. This is a
+lead for the ten retained +3 failures, not part of the six audio-oracle edits.
+
+The derived image boots in MAME; at 120 seconds it shows the title while the
+Emu waypoint shows credits. One additional coarse elapsed-after-ENTER control
+is calculated before execution: MAME posts ENTER at 4.9 seconds; our waypoint
+is 6000 + 5 + 20 native fields after key-down, or 120.4492 seconds. Capture at
+125.35 seconds, using the existing Lua wait/snapshot calls. This does not align
+native fields or natural-keyboard hold duration and cannot qualify pixel hashes.
+
+The precomputed 125.35-second MAME control shows the same credits layout with
+different text colours. Collect 64 consecutive native frames in each emulator:
+our existing +3 catalogue boot/media/waypoint (unchanged original disk and 6000
+frames), and MAME's derived geometry view at the precomputed time. Assert
+MAME's native frame number increments by one and our master time by 354,540.
+Compare all native foreground masks and colour variation, without selecting a
+best frame or changing any oracle/mask/capture time. Our observer must first
+reproduce the ordinary post-WAIT frame hash. Archive and remove its temporary
+Rust module. Only consider extending qualification to Rainbow's frame after
+these outcome checks explain the difference; otherwise retain it unchanged.
+
+The first 64-field comparison does not justify Rainbow's replacement: only
+two foreground masks agree, and MAME's native pixel buffer and screenshots
+remain constant while our indexed frames vary. Do not assume those MAME
+pixels refreshed merely because its frame counter advanced. Vendored MAME
+`screen.cpp::update_partial` skips non-live screens. Run one bounded control
+with `-video soft -window` and SDL's dummy driver, all guest inputs/times and
+native-frame assertions unchanged. Compare every raw buffer and image to the
+`-video none` run. If this does not establish live rendering, record the limit
+rather than fit an oracle. Also retain the observer source and remove it from
+the shipping source after the investigation.
