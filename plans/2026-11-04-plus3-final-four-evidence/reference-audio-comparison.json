@@ -1,0 +1,70 @@
+{
+  "cybernoid-plus3": {
+    "reference_commands": 139092,
+    "comparisons": [
+      {
+        "source": "original",
+        "commands": 1400,
+        "complete_window_matches": true,
+        "reference_first_seconds": 129.945133778468
+      },
+      {
+        "source": "current",
+        "commands": 1400,
+        "complete_window_matches": true,
+        "reference_first_seconds": 129.465336772633
+      }
+    ]
+  },
+  "stormlord-plus3": {
+    "reference_commands": 48229,
+    "comparisons": [
+      {
+        "source": "original",
+        "commands": 550,
+        "complete_window_matches": true,
+        "reference_first_seconds": 148.118067607964
+      },
+      {
+        "source": "current",
+        "commands": 550,
+        "complete_window_matches": true,
+        "reference_first_seconds": 139.501650454979
+      }
+    ]
+  },
+  "tetris-plus3": {
+    "reference_commands": 104246,
+    "comparisons": [
+      {
+        "source": "original",
+        "commands": 1200,
+        "complete_window_matches": true,
+        "reference_first_seconds": 57.516471002704
+      },
+      {
+        "source": "current",
+        "commands": 1200,
+        "complete_window_matches": true,
+        "reference_first_seconds": 56.596906876286
+      }
+    ]
+  },
+  "dragon-ninja-plus3": {
+    "reference_commands": 2,
+    "comparisons": [
+      {
+        "source": "original",
+        "commands": 1200,
+        "complete_window_matches": false,
+        "reference_first_seconds": null
+      },
+      {
+        "source": "current",
+        "commands": 1200,
+        "complete_window_matches": false,
+        "reference_first_seconds": null
+      }
+    ]
+  }
+}

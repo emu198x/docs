@@ -1,0 +1,66 @@
+[
+  {
+    "label": "current",
+    "id": "cybernoid-plus3",
+    "audio_hash": "xxh64:2117ceda81474346",
+    "boot_hash": "xxh64:5a92a361551b3961",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "current",
+    "id": "stormlord-plus3",
+    "audio_hash": "xxh64:11e62250c0cb3a26",
+    "boot_hash": "xxh64:3cee50fc8c327c09",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "current",
+    "id": "tetris-plus3",
+    "audio_hash": "xxh64:53e4ede68348fb44",
+    "boot_hash": "xxh64:cfa3bf1290e416aa",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "current",
+    "id": "dragon-ninja-plus3",
+    "audio_hash": "xxh64:c6aa83617ef4f88f",
+    "boot_hash": "xxh64:5befda7713e336ff",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "original",
+    "id": "cybernoid-plus3",
+    "audio_hash": "xxh64:41c9777709cb116f",
+    "boot_hash": "xxh64:e3379987c3c223df",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "original",
+    "id": "stormlord-plus3",
+    "audio_hash": "xxh64:8f0493c37029a296",
+    "boot_hash": "xxh64:fab02300caa68380",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "original",
+    "id": "tetris-plus3",
+    "audio_hash": "xxh64:4b1a41a4f2feeae8",
+    "boot_hash": "xxh64:0116d9b1a459a4bb",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  },
+  {
+    "label": "original",
+    "id": "dragon-ninja-plus3",
+    "audio_hash": "xxh64:051d6003230710b4",
+    "boot_hash": "xxh64:188ca8e8398eb8b5",
+    "audio_fields": 100,
+    "continuation_fields": 400
+  }
+]

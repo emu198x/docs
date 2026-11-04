@@ -1,0 +1,7 @@
+{
+  "binary": "/Applications/Fuse.app/Contents/MacOS/Fuse",
+  "pid": 71389,
+  "result": "Original disk opened through native UI; application became unresponsive. No reference boot qualification claimed.",
+  "copy_sha256_unchanged": "ec51e115a0415c303a38dfc7ee5c8f393c8a6ca316ed1ed65ee67450b9e7f9b3",
+  "task_process_stopped": true
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "source": "original",
+    "id": "cybernoid-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "4dfde24c9a084327fab5576d83af1d280171c683980ce7794394b56f32f66e6b"
+  },
+  {
+    "source": "original",
+    "id": "stormlord-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "93a512459b24e831dca937fd6a1c2764996115abfc41a49e4dab9d6b71a491c4"
+  },
+  {
+    "source": "original",
+    "id": "tetris-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "fba6ad7b9fb9a6173412f04e95d884df43792f078fd2da27c10b38d022b1a156"
+  },
+  {
+    "source": "original",
+    "id": "dragon-ninja-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "10c7dcaf4d6bc55a1ed4248829213b7f824c0e6c97dcaf52ad558119e28290a4"
+  },
+  {
+    "source": "current",
+    "id": "cybernoid-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "0ca7fce75196ba809b7ac2e35913b1a9db110b5602b5cccbc000d10d18fe0630"
+  },
+  {
+    "source": "current",
+    "id": "stormlord-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "9d352fcf0487c7efecdbc3a8c5f6654858afbc218bc12db54ace1719289a2de9"
+  },
+  {
+    "source": "current",
+    "id": "tetris-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "93a32e9ec17cc196036c26cb29d55c908d4149a545e5a4f12fe8d9567e1defd5"
+  },
+  {
+    "source": "current",
+    "id": "dragon-ninja-plus3",
+    "samples": 88200,
+    "complete_pcm_reconstructed": true,
+    "ay_versions_bit_identical": true,
+    "speaker_versions_bit_identical": true,
+    "speaker_silent_throughout_window": false,
+    "pcm_sha256": "1b0d82ecab7050b7d695257ef2a2534ca618982263417c15f82aa904247e18a2"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "label": "original",
+    "id": "cybernoid-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:e3379987c3c223df",
+      "audio.hash": "xxh64:41c9777709cb116f"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:e3379987c3c223df",
+      "audio.hash": "xxh64:41c9777709cb116f"
+    },
+    "producer_sha256": "84d67a49c0f5d7ad2a159584578c220b08a63b2c67edf698679d51e6e776fd2a",
+    "archive_sha256": "935a499b10ff1ecf86ba9275909e19aa9ee5f351a3cefc41d732ee962627fef6",
+    "member": "Cybernoid - The Fighting Machine (1988)(Hewson Consultants)(+3).dsk",
+    "disk_sha256": "840b39c2e2cfa40320f471de9c5ebbe10915c0d4cabd52b68616fe03191fbdf8",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "current",
+    "id": "cybernoid-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:e3379987c3c223df",
+      "audio.hash": "xxh64:41c9777709cb116f"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:5a92a361551b3961",
+      "audio.hash": "xxh64:2117ceda81474346"
+    },
+    "producer_sha256": "18bfd96ba9505115629f082753c842fa6c669ae3bf57f661a58768ad85450242",
+    "archive_sha256": "935a499b10ff1ecf86ba9275909e19aa9ee5f351a3cefc41d732ee962627fef6",
+    "member": "Cybernoid - The Fighting Machine (1988)(Hewson Consultants)(+3).dsk",
+    "disk_sha256": "840b39c2e2cfa40320f471de9c5ebbe10915c0d4cabd52b68616fe03191fbdf8",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "original",
+    "id": "stormlord-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:fab02300caa68380",
+      "audio.hash": "xxh64:8f0493c37029a296"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:fab02300caa68380",
+      "audio.hash": "xxh64:8f0493c37029a296"
+    },
+    "producer_sha256": "84d67a49c0f5d7ad2a159584578c220b08a63b2c67edf698679d51e6e776fd2a",
+    "archive_sha256": "bb53c343146027f7ac0de5ae9a285ba9b5f0f0806265d5cbd9f2985f9291c0c9",
+    "member": "Stormlord (1989)(Hewson Consultants)(+3).dsk",
+    "disk_sha256": "55900f0a76016f82978ecfeb483b6912621ac1e5379eebdace6185d6384246e1",
+    "declared_geometry": [
+      40,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "current",
+    "id": "stormlord-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:fab02300caa68380",
+      "audio.hash": "xxh64:8f0493c37029a296"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:3cee50fc8c327c09",
+      "audio.hash": "xxh64:11e62250c0cb3a26"
+    },
+    "producer_sha256": "18bfd96ba9505115629f082753c842fa6c669ae3bf57f661a58768ad85450242",
+    "archive_sha256": "bb53c343146027f7ac0de5ae9a285ba9b5f0f0806265d5cbd9f2985f9291c0c9",
+    "member": "Stormlord (1989)(Hewson Consultants)(+3).dsk",
+    "disk_sha256": "55900f0a76016f82978ecfeb483b6912621ac1e5379eebdace6185d6384246e1",
+    "declared_geometry": [
+      40,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "original",
+    "id": "tetris-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:0116d9b1a459a4bb",
+      "audio.hash": "xxh64:4b1a41a4f2feeae8"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:0116d9b1a459a4bb",
+      "audio.hash": "xxh64:4b1a41a4f2feeae8"
+    },
+    "producer_sha256": "84d67a49c0f5d7ad2a159584578c220b08a63b2c67edf698679d51e6e776fd2a",
+    "archive_sha256": "241b55d13ccbb6be8334a490b4b43e5774f75e3a8fa1bf9f21289271b8d36c85",
+    "member": "Tetris (1988)(Mirrorsoft)(+3).dsk",
+    "disk_sha256": "e6f953443a9e1ad0d4f4e04afee4b4cc3266e33d0f2f8516dcffc5ac4651990f",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "current",
+    "id": "tetris-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:0116d9b1a459a4bb",
+      "audio.hash": "xxh64:4b1a41a4f2feeae8"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:cfa3bf1290e416aa",
+      "audio.hash": "xxh64:53e4ede68348fb44"
+    },
+    "producer_sha256": "18bfd96ba9505115629f082753c842fa6c669ae3bf57f661a58768ad85450242",
+    "archive_sha256": "241b55d13ccbb6be8334a490b4b43e5774f75e3a8fa1bf9f21289271b8d36c85",
+    "member": "Tetris (1988)(Mirrorsoft)(+3).dsk",
+    "disk_sha256": "e6f953443a9e1ad0d4f4e04afee4b4cc3266e33d0f2f8516dcffc5ac4651990f",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "original",
+    "id": "dragon-ninja-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio.hash": "xxh64:051d6003230710b4"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio.hash": "xxh64:051d6003230710b4"
+    },
+    "producer_sha256": "84d67a49c0f5d7ad2a159584578c220b08a63b2c67edf698679d51e6e776fd2a",
+    "archive_sha256": "759dbea2d810716d4c98cee77213a125f39603f71f70b08415c4041fdd1abd37",
+    "member": "Bad Dudes vs. Dragon Ninja (1988)(Imagine)(+3).dsk",
+    "disk_sha256": "ec51e115a0415c303a38dfc7ee5c8f393c8a6ca316ed1ed65ee67450b9e7f9b3",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  },
+  {
+    "label": "current",
+    "id": "dragon-ninja-plus3",
+    "expected": {
+      "boot.frame_hash": "xxh64:188ca8e8398eb8b5",
+      "audio.hash": "xxh64:051d6003230710b4"
+    },
+    "observed": {
+      "boot.frame_hash": "xxh64:5befda7713e336ff",
+      "audio.hash": "xxh64:c6aa83617ef4f88f"
+    },
+    "producer_sha256": "18bfd96ba9505115629f082753c842fa6c669ae3bf57f661a58768ad85450242",
+    "archive_sha256": "759dbea2d810716d4c98cee77213a125f39603f71f70b08415c4041fdd1abd37",
+    "member": "Bad Dudes vs. Dragon Ninja (1988)(Imagine)(+3).dsk",
+    "disk_sha256": "ec51e115a0415c303a38dfc7ee5c8f393c8a6ca316ed1ed65ee67450b9e7f9b3",
+    "declared_geometry": [
+      42,
+      1
+    ],
+    "input_unchanged": true
+  }
+]

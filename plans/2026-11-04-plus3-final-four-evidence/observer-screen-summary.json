@@ -1,0 +1,58 @@
+[
+  {
+    "label": "current",
+    "id": "cybernoid-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 72901
+  },
+  {
+    "label": "current",
+    "id": "stormlord-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 4100
+  },
+  {
+    "label": "current",
+    "id": "tetris-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 69000
+  },
+  {
+    "label": "current",
+    "id": "dragon-ninja-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 160000
+  },
+  {
+    "label": "original",
+    "id": "cybernoid-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 73016
+  },
+  {
+    "label": "original",
+    "id": "stormlord-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 4100
+  },
+  {
+    "label": "original",
+    "id": "tetris-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 69000
+  },
+  {
+    "label": "original",
+    "id": "dragon-ninja-plus3",
+    "fields": 100,
+    "continuation": 400,
+    "screen_writes": 160000
+  }
+]

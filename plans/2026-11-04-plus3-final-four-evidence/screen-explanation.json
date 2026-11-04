@@ -1,0 +1,216 @@
+{
+  "cybernoid-plus3": {
+    "observed_fields_per_producer": 500,
+    "guest_screen_writes": 729125,
+    "distinct_written_bytes": 1440,
+    "changed_boundary_screen_bytes": 784,
+    "every_changed_byte_written_by_original_program": true,
+    "changed_pixels": 2587,
+    "pixels_in_observed_guest_write_footprint": 12416,
+    "unchanged_pixels_outside_footprint": 91776,
+    "unchanged_active_pixels_outside_footprint": 36736,
+    "every_changed_pixel_in_guest_write_footprint": true,
+    "identical_writer_code_windows": [
+      33536,
+      34053,
+      34056,
+      34059,
+      34062,
+      34065,
+      34068,
+      34071,
+      34079,
+      34103,
+      34105,
+      34120,
+      34122,
+      34133,
+      34135,
+      34163,
+      34166,
+      34169,
+      34172,
+      34175,
+      34178,
+      34181,
+      34189
+    ],
+    "different_writer_code_windows": [
+      33544
+    ],
+    "all_writer_instruction_suffixes_identical": true,
+    "neighboring_state_changes_in_wide_windows": [
+      {
+        "writer_pc": 33544,
+        "relative_byte": 3,
+        "old": 154,
+        "current": 142
+      }
+    ],
+    "current_fields_exactly_observed_in_old_timeline": 260,
+    "old_fields_exactly_observed_in_current_timeline": 330,
+    "best_constant_field_alignment": [
+      [
+        249,
+        493,
+        -7
+      ],
+      [
+        237,
+        475,
+        25
+      ],
+      [
+        235,
+        461,
+        -39
+      ]
+    ],
+    "boundary_screen_sha256": [
+      "c696314a430c67a2d90ad6a4ea2c0bd42c029da0ad5a323cbdf2c329a5f4ab4a",
+      "499f71efed6a274def55ace06cb53461469135a7a84c5e39e4a5da5df26045ae"
+    ]
+  },
+  "stormlord-plus3": {
+    "observed_fields_per_producer": 500,
+    "guest_screen_writes": 47666,
+    "distinct_written_bytes": 6912,
+    "changed_boundary_screen_bytes": 69,
+    "every_changed_byte_written_by_original_program": true,
+    "changed_pixels": 334,
+    "pixels_in_observed_guest_write_footprint": 49152,
+    "unchanged_pixels_outside_footprint": 55040,
+    "unchanged_active_pixels_outside_footprint": 0,
+    "every_changed_pixel_in_guest_write_footprint": true,
+    "identical_writer_code_windows": [
+      28913,
+      28918,
+      28920,
+      28925,
+      29799,
+      29807,
+      29813,
+      58013,
+      58017,
+      58034,
+      58041,
+      58082,
+      58098
+    ],
+    "different_writer_code_windows": [
+      29821
+    ],
+    "all_writer_instruction_suffixes_identical": true,
+    "neighboring_state_changes_in_wide_windows": [
+      {
+        "writer_pc": 29821,
+        "relative_byte": 2,
+        "old": 147,
+        "current": 121
+      }
+    ],
+    "current_fields_exactly_observed_in_old_timeline": 493,
+    "old_fields_exactly_observed_in_current_timeline": 493,
+    "best_constant_field_alignment": [
+      [
+        442,
+        449,
+        51
+      ],
+      [
+        360,
+        465,
+        35
+      ],
+      [
+        328,
+        433,
+        67
+      ]
+    ],
+    "boundary_screen_sha256": [
+      "98f86dfe9b27a30404b0e229f7a6f2029414993f0ea10391bae1969c5a0a24a7",
+      "35926b78a56fa467787572c5dffa1e51ede387c1ba3e914a92905cc7f9ccd8fa"
+    ]
+  },
+  "tetris-plus3": {
+    "observed_fields_per_producer": 500,
+    "guest_screen_writes": 690000,
+    "distinct_written_bytes": 852,
+    "changed_boundary_screen_bytes": 617,
+    "every_changed_byte_written_by_original_program": true,
+    "changed_pixels": 10482,
+    "pixels_in_observed_guest_write_footprint": 26624,
+    "unchanged_pixels_outside_footprint": 77568,
+    "unchanged_active_pixels_outside_footprint": 22528,
+    "every_changed_pixel_in_guest_write_footprint": true,
+    "identical_writer_code_windows": [
+      32523,
+      32565,
+      32566,
+      32774,
+      32794,
+      32814,
+      32831,
+      32876
+    ],
+    "different_writer_code_windows": [],
+    "all_writer_instruction_suffixes_identical": true,
+    "neighboring_state_changes_in_wide_windows": [],
+    "current_fields_exactly_observed_in_old_timeline": 450,
+    "old_fields_exactly_observed_in_current_timeline": 449,
+    "best_constant_field_alignment": [
+      [
+        449,
+        454,
+        46
+      ],
+      [
+        2,
+        455,
+        45
+      ],
+      [
+        2,
+        453,
+        47
+      ]
+    ],
+    "boundary_screen_sha256": [
+      "714a31d440f99def06b2a34b1b517552e6307bfe2807e2000d58596ddf84af31",
+      "4705f8e1613b8aa974db9563b2f862ea15417c77c3b433686801c89e9cfcbac3"
+    ]
+  },
+  "dragon-ninja-plus3": {
+    "observed_fields_per_producer": 500,
+    "guest_screen_writes": 1600000,
+    "distinct_written_bytes": 16,
+    "changed_boundary_screen_bytes": 0,
+    "every_changed_byte_written_by_original_program": true,
+    "changed_pixels": 45,
+    "pixels_in_observed_guest_write_footprint": 1024,
+    "unchanged_pixels_outside_footprint": 103168,
+    "unchanged_active_pixels_outside_footprint": 48128,
+    "every_changed_pixel_in_guest_write_footprint": true,
+    "identical_writer_code_windows": [
+      59689,
+      59690,
+      59691,
+      59692,
+      59693,
+      59694,
+      59695,
+      59696
+    ],
+    "different_writer_code_windows": [],
+    "all_writer_instruction_suffixes_identical": true,
+    "neighboring_state_changes_in_wide_windows": [],
+    "current_fields_exactly_observed_in_old_timeline": 0,
+    "old_fields_exactly_observed_in_current_timeline": 0,
+    "best_constant_field_alignment": [],
+    "boundary_screen_sha256": [
+      "7dd77c7aa221783e04f6981f6e9d35b91a375e5c6e661e5ca040325e4cc259ac",
+      "7dd77c7aa221783e04f6981f6e9d35b91a375e5c6e661e5ca040325e4cc259ac"
+    ]
+  }
+}

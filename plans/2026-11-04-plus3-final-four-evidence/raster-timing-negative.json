@@ -1,0 +1,7 @@
+{
+  "exit_code": 101,
+  "swapped_timing_rejected": true,
+  "different_pixels": 45,
+  "expected_current_pixels_retained": true,
+  "positive_replay_pixels_per_producer": 104192
+}
