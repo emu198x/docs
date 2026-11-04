@@ -1,5 +1,10 @@
 {
   "headRefOid": "75e2f4bf37ca4db37a5ad1920465b80bb1ac0dfc",
+  "mergeCommit": {
+    "oid": "1ed01dc6fbe0f6bddbbe66e8210ca976dacab268"
+  },
+  "mergedAt": "2026-11-04T08:53:22Z",
+  "state": "MERGED",
   "statusCheckRollup": [
     {
       "__typename": "CheckRun",
@@ -8,6 +13,16 @@
       "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41799753013/job/126472340477",
       "name": "Release PR / Released versions have changelog entries",
       "startedAt": "2026-11-04T08:28:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Release PR"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-04T08:51:46Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41802760559/job/126482285697",
+      "name": "Release PR / Released versions have changelog entries",
+      "startedAt": "2026-11-04T08:51:47Z",
       "status": "COMPLETED",
       "workflowName": "Release PR"
     },
@@ -63,6 +78,16 @@
     },
     {
       "__typename": "CheckRun",
+      "completedAt": "2026-11-04T08:51:53Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41802760546/job/126482283430",
+      "name": "PR title / Conventional title",
+      "startedAt": "2026-11-04T08:51:50Z",
+      "status": "COMPLETED",
+      "workflowName": "PR title"
+    },
+    {
+      "__typename": "CheckRun",
       "completedAt": "2026-11-04T08:28:56Z",
       "conclusion": "SUCCESS",
       "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41799753019/job/126472339574",
@@ -108,6 +133,16 @@
       "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41799753083/job/126472337775",
       "name": "PR title / Conventional commits",
       "startedAt": "2026-11-04T08:28:23Z",
+      "status": "COMPLETED",
+      "workflowName": "PR title"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-04T08:51:58Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/41802760546/job/126482283719",
+      "name": "PR title / Conventional commits",
+      "startedAt": "2026-11-04T08:51:49Z",
       "status": "COMPLETED",
       "workflowName": "PR title"
     },

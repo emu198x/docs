@@ -3,8 +3,9 @@
 The corrected path keeps the 40077 CPU clock running and feeds its physical
 WAIT output to Z80 0.9. It fixes the reproduced refresh-bank slowdown and the
 original Cybernoid loader now receives all 49,152 fast-loader bytes exactly as
-observed independently in MAME. The source change is
-[emu198x#2285](https://github.com/emu198x/emu198x/pull/2285).
+observed independently in MAME. The source fix is merged in
+[emu198x#2285](https://github.com/emu198x/emu198x/pull/2285), commit
+`1ed01dc6fbe0f6bddbbe66e8210ca976dacab268`.
 
 The complete registry-only catalogue run captures **103/103 entries, with zero
 errors or timeouts**. **87 match both unchanged expectations; 16 differ**.
@@ -113,5 +114,5 @@ python3 recapture.py --binary /absolute/path/to/catalogue \
 [mame-visual-review.json](mame-visual-review.json) retain the scope and limits of
 the native checks. Source-backed hardware reasoning and the explicit override
 of Ferranti clock-gating rules live in the source repository's
-[decision](https://github.com/emu198x/emu198x/blob/docs/amstrad-wait-diagnosis/knowledge/decisions/amstrad-wait-contention.md)
-and [plan](https://github.com/emu198x/emu198x/blob/docs/amstrad-wait-diagnosis/docs/plans/2026-11-03-amstrad-wait-contention.md).
+[decision](https://github.com/emu198x/emu198x/blob/main/knowledge/decisions/amstrad-wait-contention.md)
+and [plan](https://github.com/emu198x/emu198x/blob/main/docs/plans/2026-11-03-amstrad-wait-contention.md).
