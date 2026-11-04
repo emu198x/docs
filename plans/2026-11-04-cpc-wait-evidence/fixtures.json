@@ -1,0 +1,20 @@
+{
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc464.output": "fc2f04c1f7021ae976119b350297e7b70de7be0a0e42c1c04b140cf30a360378",
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc464.state": "7110e2068dd25245654cb1828c831e95db4cb759ab61500a268dc34115eaf3e2",
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc6128.output": "7c532beba8f675c9014692bd3b86b2079ad3e5f9864c75fea4887d8c6e1db358",
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc6128.state": "7529cea8cdceffcf3ee3bb8b95c0f1beae40a52bfed1fbd757592f30684316ef",
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc664.output": "0ad5709b29e4f3c0756bbe48d125cd6d4ad6b942a28822e9f60daf51a2ecabad",
+  "test-data/amstrad-cpc/board-split-v4/amstrad-cpc664.state": "8b4156c0612bd519befbd12fa762bb1b5ebde158ee763c98b7da2bda8cd822ed",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc464.output": "42ff2b56b8e923989b0191d7878adbd343311a2a32690b3fc26b24753e902d14",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc464.state": "6a27266f3b597eb57db9d1a443dd007e632eb0cc68da7662c4ad1bab75e9481b",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc6128.output": "ac7a9f02fcfe0a109b798db549207e7d345597ba07f4e5d5cbfd8b0f68b2eb6b",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc6128.state": "63496cdc2b5fa0c3b12b362153adeaa6d2cab19a90526a39cc97ed7a46cb0146",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc664.output": "9db1c8ca5b5609311b6f27f8fad090b82f77342a08a2b29a6a943f097180f954",
+  "test-data/amstrad-cpc/save-v5/amstrad-cpc664.state": "5954246eee59a82e1ec3101ce9ccbf76790e45622b0b6599d628574fbd450af5",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc464.output": "719b20a1559586f6155dd019dbaa627ab0d69a12baea05485d87436e06aeec48",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc464.state": "02513eb7d9986e37a6e6e99565936344189396b14f53d5408c9105ae829a625f",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc6128.output": "b7d0006e01394e93cb000f3751b45235c88f963e97ee1c7112c1abe41857b773",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc6128.state": "fe6d67cd6bc1d7735cf0e8db12817c89cb359cdaffc0573d7b9e866ff94c2de7",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc664.output": "9775ee1b8431f415d044d9f9a0470051b6b5d8faf3ffc0745757f1c10087a068",
+  "test-data/amstrad-cpc/save-v6/amstrad-cpc664.state": "9f859630513c05167a7c9eac93544e99ce2df3be090ac8b0b4bbf6bbc41fbfb0"
+}
