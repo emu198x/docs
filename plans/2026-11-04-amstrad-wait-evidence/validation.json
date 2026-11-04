@@ -52,5 +52,6 @@
     "cybernoid-before.png": "a80204ba0d5e5143ef7e73ad09e9ab11d8e426c8271d99c1e5717b3d4cbb424b",
     "cybernoid-mame20.png": "cc2447a9fbb3f3ba61d2ea9f4f586ecd8455b2b2b4c2aa49a8836cb9ad71e27a",
     "cybernoid-after.png": "90c9bec6921740faecc8b2365a20ad9ad0d66d351e0d3d65f077b3a665f042ac"
-  }
+  },
+  "merged_source_commit": "1ed01dc6fbe0f6bddbbe66e8210ca976dacab268"
 }
