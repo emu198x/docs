@@ -1,0 +1,103 @@
+{
+  "expected": [
+    "chase-hq-plus3",
+    "rainbow-islands-plus3",
+    "cybernoid-plus3",
+    "stormlord-plus3",
+    "starglider-2-plus3",
+    "lotus-esprit-plus3",
+    "tetris-plus3",
+    "robocop-plus3",
+    "where-time-stood-still-plus3",
+    "dragon-ninja-plus3"
+  ],
+  "completed": [
+    {
+      "id": "chase-hq-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "260804382decdfc1cb4b3fd8a9a9af3dcace73f15cf8a955c515cf2ea8be6cf5",
+        "two-minutes": "c193c9b475a29095245c813b702be4249285877993890b29c225e45f5066fb05"
+      }
+    },
+    {
+      "id": "rainbow-islands-plus3",
+      "native_capture": "reference-refused",
+      "return_code": 4,
+      "diagnostic": "dsk: Floppy disk has too many tracks for this drive (floppy tracks=45, drive tracks=42).\nFatal error: Device 3\" single-sided double density floppy drive load failed: Incompatible image file format or corrupted data\n"
+    },
+    {
+      "id": "cybernoid-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "cc2447a9fbb3f3ba61d2ea9f4f586ecd8455b2b2b4c2aa49a8836cb9ad71e27a",
+        "two-minutes": "a247156da06317af02b77110217b590dabcf9d97fdf1bde87a93627920c50607"
+      }
+    },
+    {
+      "id": "stormlord-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "dd1970d51dcedd2b10ec0d5a99f895b73b01fb35b2a08f4366795748af4eecee",
+        "two-minutes": "1c53fa3bf2b9363410d0d71dea000b4f1ecb2bca06816b8eef352924a51c7c0d"
+      }
+    },
+    {
+      "id": "starglider-2-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "c4e295f6075a3b023338b4bfa6345ff33e31877e7a4730f1c34b840017e51795",
+        "two-minutes": "c4e295f6075a3b023338b4bfa6345ff33e31877e7a4730f1c34b840017e51795"
+      }
+    },
+    {
+      "id": "lotus-esprit-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "93556e042a7cff59c630ab7e4022c6ba54dbec956b096f0363cbd06197a0a1fe",
+        "two-minutes": "52af7b4b6df2d16c820abb36149341f35da5bb2c8fa4b70b4c509eab57fa96a8"
+      }
+    },
+    {
+      "id": "tetris-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "00c445cff6dc4278b501f39388a23a7e4440f21f6c25e6b662b3257d51145b72",
+        "two-minutes": "6e3c613a03385513eeae952f909ad41084dc640b43f71c8b132fc73a6fdd5d68"
+      }
+    },
+    {
+      "id": "robocop-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b",
+        "two-minutes": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b"
+      }
+    },
+    {
+      "id": "where-time-stood-still-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b",
+        "two-minutes": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b"
+      }
+    },
+    {
+      "id": "dragon-ninja-plus3",
+      "native_capture": "complete",
+      "images_sha256": {
+        "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+        "twenty-seconds": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b",
+        "two-minutes": "d15e9f893495f8e090a3e13223f665b482bdccaba709e5665dd251d04bc0d49b"
+      }
+    }
+  ]
+}
