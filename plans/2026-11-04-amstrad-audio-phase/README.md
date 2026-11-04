@@ -131,14 +131,15 @@ the rejected-delay results and successful zero-delay controls.
 
 Raw musical command streams, recordings, original media and firmware are not
 published here. The private, fully hashed recovery archive retains these
-observations, probe sources/patches, exact binaries and full logs. Public
+observations, probe sources/patches, retained capture/observer binaries and full logs. The current audio observer
+is reproducible from its source, patch, build log and normal-capture controls. Public
 records contain aggregate counts, identities and the reproducible analysis.
 The preceding [WAIT evidence](../2026-11-04-amstrad-wait-evidence/README.md)
 retains the source-backed timing diagnosis and full original 103-entry run.
 
 ## Integration verification
 
-Source PR: [emu198x/emu198x#2287](https://github.com/emu198x/emu198x/pull/2287),
+Source PR: [emu198x/emu198x#2288](https://github.com/emu198x/emu198x/pull/2288),
 capture source head `241166e71fbf365a7d326ea0403e665637950894`; final reviewed
 head `22e3b59d07d923461c2e37cb144e7002847515b1`. The final commit only clarifies
 two comments. [Identity proof](source-identity-proof.json) verifies unchanged
@@ -218,3 +219,16 @@ backend provides a matching sequence here. We stop this investigation at
 that measured limit. There is no basis for calling it a pure colour-cycle
 phase difference or changing the expected hash. The original disk remains
 unchanged throughout. All temporary Rust observer code is removed afterward.
+
+
+Fresh CI on the final head passed **24 checks**, with ten expected
+release/build skips; [the complete check record](source-ci.json) identifies
+the exact head and replacement PR. The original draft #2287 is superseded by
+#2288 after GitHub failed its draft transition. Both use the same final signed
+commit; the replacement ran ordinary CI with no check changes.
+
+[Private retention record](retention.json) identifies the completed raw archive:
+933 files, every decompressed byte checked against its internal SHA-256
+manifest. Capture producers, recordings, native-frame observations, temporary
+probe sources/patches and full logs are preserved there. The original capture
+head's checks are retained separately in [their own record](source-ci-capture-head.json).
