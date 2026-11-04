@@ -24,12 +24,18 @@ Use these source-repository records:
 The separate [Apple II family repository](https://github.com/emu198x/apple-ii)
 owns the published original NTSC revision-0 machine and runtime libraries. The
 suite's [Apple II runner](https://github.com/emu198x/emu198x/tree/main/crates/emu198x-apple-ii)
-uses the shared launcher for JSON scripts and live stdio MCP. Its
+uses the shared native UI and launcher for windowed use, JSON scripts and live
+stdio MCP. Its
 [verification record](https://github.com/emu198x/apple-ii/blob/main/docs/verification.md)
 qualifies original-ROM graphics and slot-6 Disk II/DOS 3.3, including a scripted
 work-disk export loaded and run in a fresh MCP process. Script/MCP observations,
 negative waits, firmware failures and PNG capture are checked through the actual
-binary. Native windows, save states and later boards remain future work.
+binary. The macOS window has exercised BASIC arithmetic, quoted text, lo-res,
+mixed and hi-res output, shared pause/reset controls and DOS 3.3 startup.
+Runtime 0.1.1 exposes NTSC display geometry across all hosts. The verification
+record distinguishes adapter Ctrl-chord tests from physical-keyboard testing,
+and speaker packets/device opening from audible output. Save states and later
+boards remain future work.
 
 For a launch, use the selected shipping binary's `--help` and its source/runtime
 profile at the revision being tested. For a boot or accuracy claim, retain the
