@@ -41,3 +41,11 @@ After the complete fix:
 The changes are limited to shared step deserialization and its regressions in
 `crates/emu198x-shell/src/script.rs`. Scripts containing previously ignored
 fields now fail to load; valid scripts retain their defaults and aliases.
+
+The published-crate CI gate required a patch bump so the fix would actually
+ship: shell 0.44.3, its workspace requirement and lockfile, plus a changelog
+entry. The gate's self-test and comparison then passed for all 49 existing
+published crates, with shell 0.44.3 correctly identified as awaiting publication.
+All PR checks, including the full workspace test shards, passed.
+[PR #2297](https://github.com/emu198x/emu198x/pull/2297) merged on 2026-11-04,
+closing #2207; main retains the change at `4d470e4ed8f9b4ff9202366c6ee81a7d9d60c1d0`.

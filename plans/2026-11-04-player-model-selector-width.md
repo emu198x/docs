@@ -47,3 +47,10 @@ rejects its corrupt-source negative control. `node --check`, workflow
 `actionlint` and `git diff --check` pass.
 
 The site pin remains unchanged until a producer release publishes the fix.
+
+All PR checks passed, including the Linux browser job and all four workspace
+test shards. [PR #2298](https://github.com/emu198x/emu198x/pull/2298) merged on
+2026-11-04; main retains the change at
+`2f8ca932f4e88153b60ba6bfef6cae9794535338`. Issue #2238 remains open for the
+versioned release and site-pin follow-through. Task-owned Chrome profiles,
+screenshots and processes were removed after verification.
