@@ -1,0 +1,28 @@
+{
+  "entries": 103,
+  "matching_pairs": 93,
+  "capture_errors": 0,
+  "qualified_ids": [
+    "out-run-plus2a",
+    "out-run-plus2b",
+    "robocop-plus2a",
+    "robocop-plus2b",
+    "where-time-stood-still-plus2a",
+    "where-time-stood-still-plus2b"
+  ],
+  "remaining_ids": [
+    "chase-hq-plus3",
+    "cybernoid-plus3",
+    "dragon-ninja-plus3",
+    "lotus-esprit-plus3",
+    "rainbow-islands-plus3",
+    "robocop-plus3",
+    "starglider-2-plus3",
+    "stormlord-plus3",
+    "tetris-plus3",
+    "where-time-stood-still-plus3"
+  ],
+  "unchanged_observed_frame_audio_pairs": 103,
+  "frame_disagreements": 5,
+  "audio_disagreements": 9
+}

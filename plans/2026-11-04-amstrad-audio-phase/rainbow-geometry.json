@@ -1,0 +1,57 @@
+{
+  "scope": "Derived geometry diagnostic; not an unchanged-image reference boot or a replacement catalogue oracle",
+  "archive_sha256": "db49591884050f59d4b83b5eb6cdf894ea43f831ee1cf1b32842843a7c698cc3",
+  "original_disk_sha256": "6e1c1e936adab2973ebf738f333380fbee2be1e07b6b97c55164b0dd9b868bec",
+  "derived_disk_sha256": "5ee0c759ff7ac6b8dcaf7e789fc60a2d591d15d92ab66318e3b99aaa842a938a",
+  "track_payload_sha256": "69a236355ca39f2d2cfc2fc5016cea7c0551a9f9c20b2d890ea821f62a0231df",
+  "disk_bytes": 175360,
+  "changed_offsets": [
+    48
+  ],
+  "declared_tracks_before": 45,
+  "declared_tracks_after": 42,
+  "unformatted_tracks": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "all_track_bytes_preserved": true,
+  "mame_sha256": "6d40df87963c58cdd3857d203e186af854fea49ae03b2ab555e30ef1029636d9",
+  "firmware_sha1": {
+    "40092.ic7": "5992daf925f6e225fc0d01f7640282954d092ef4",
+    "40093.ic8": "a0432adcca03f849fb39b6dce6414740cf4aecd2"
+  },
+  "argv": [
+    "/opt/homebrew/bin/mame",
+    "specpls3",
+    "-bios",
+    "en",
+    "-rompath",
+    "/private/tmp/198x-amstrad-oracle-evidence/rainbow-geometry-control/native-run-51xs2cgj",
+    "-flop1",
+    "/private/tmp/198x-amstrad-oracle-evidence/rainbow-geometry-control/native-run-51xs2cgj/rainbow-declared-42-diagnostic-only.dsk",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-noreadconfig",
+    "-nowriteconfig",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/private/tmp/198x-amstrad-oracle-evidence/rainbow-geometry-control/boot.lua",
+    "-seconds_to_run",
+    "130"
+  ],
+  "exit_code": 0,
+  "images_sha256": {
+    "menu": "9a40e34a0470f4f451899244f6709825646f3c50b91b6dce1df3694e729745a9",
+    "twenty-seconds": "260804382decdfc1cb4b3fd8a9a9af3dcace73f15cf8a955c515cf2ea8be6cf5",
+    "two-minutes": "d71b8f51ef3e2aadad4bed088b8e4986d03995dc7a6b791dc005175135cb9c24"
+  }
+}

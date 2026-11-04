@@ -1,0 +1,16 @@
+-- Ordinary original-firmware boot and keyboard input; no memory/register writes.
+local out=assert(os.getenv("PROBE_OUTPUT"))
+local screen=assert(manager.machine.screens[":screen"])
+local function shot(name)
+ assert(screen:snapshot(out.."/"..name..".png")==nil,"snapshot failed")
+ print("captured "..name.." at "..emu.time())
+end
+emu.wait(4.9)
+shot("menu")
+assert(manager.machine.natkeyboard.can_post,"keyboard unavailable")
+manager.machine.natkeyboard:post_coded("{ENTER}")
+emu.wait(15.1)
+shot("twenty-seconds")
+emu.wait(100)
+shot("two-minutes")
+manager.machine:exit()
