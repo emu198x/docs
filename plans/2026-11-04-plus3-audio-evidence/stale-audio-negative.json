@@ -1,0 +1,6 @@
+{
+  "exit_code": 101,
+  "retained_old_expectation_rejected": true,
+  "observed": "xxh64:4d025de7d2a76994",
+  "stale": "xxh64:1173a13fcb7720a2"
+}

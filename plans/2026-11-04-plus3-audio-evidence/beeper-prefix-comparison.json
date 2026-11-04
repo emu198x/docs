@@ -1,0 +1,25 @@
+{
+  "chase-hq-plus3": {
+    "complete_current_transition_prefix_matches": true,
+    "compared_transitions": 63662,
+    "old_transitions": 66422,
+    "current_transitions": 63662,
+    "pc_counts": {
+      "995": 2,
+      "64094": 13526,
+      "64100": 13526,
+      "63706": 36608
+    }
+  },
+  "where-time-stood-still-plus3": {
+    "complete_current_transition_prefix_matches": true,
+    "compared_transitions": 240,
+    "old_transitions": 246,
+    "current_transitions": 240,
+    "pc_counts": {
+      "995": 2,
+      "30132": 119,
+      "31068": 119
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "producer": "original",
+    "id": "chase-hq-plus3",
+    "complete_pcm_reconstructed": true,
+    "samples": 88200,
+    "pcm_sha256": "3f508599749a95b7b2e03db8c1d07862bf9085c31e2a2fb4315d01cb95e337fd",
+    "beeper_versions_bit_identical": true
+  },
+  {
+    "producer": "original",
+    "id": "where-time-stood-still-plus3",
+    "complete_pcm_reconstructed": true,
+    "samples": 88200,
+    "pcm_sha256": "d1751fe174b2cba04e98a807db1fee2779c1a2c8ccb2d5b06de424453bb2f3d4",
+    "beeper_versions_bit_identical": true
+  },
+  {
+    "producer": "current",
+    "id": "chase-hq-plus3",
+    "complete_pcm_reconstructed": true,
+    "samples": 88200,
+    "pcm_sha256": "9c71f772a365eb46ea51beed2d9382934d1d83472e1d07c5c14142a2e96056b7",
+    "beeper_versions_bit_identical": true
+  },
+  {
+    "producer": "current",
+    "id": "where-time-stood-still-plus3",
+    "complete_pcm_reconstructed": true,
+    "samples": 88200,
+    "pcm_sha256": "a7cbd157441780894fc84b12ea93e66ad8ebd101e4c895498e5049429f845b91",
+    "beeper_versions_bit_identical": true
+  }
+]

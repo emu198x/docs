@@ -1,0 +1,72 @@
+[
+  {
+    "label": "current",
+    "id": "chase-hq-plus3",
+    "audio_hash": "xxh64:4d025de7d2a76994",
+    "fields": 100,
+    "writes": 1200
+  },
+  {
+    "label": "current",
+    "id": "starglider-2-plus3",
+    "audio_hash": "xxh64:818ec2364d7b17f3",
+    "fields": 100,
+    "writes": 974
+  },
+  {
+    "label": "current",
+    "id": "lotus-esprit-plus3",
+    "audio_hash": "xxh64:254a1bc10fa235a9",
+    "fields": 100,
+    "writes": 1100
+  },
+  {
+    "label": "current",
+    "id": "robocop-plus3",
+    "audio_hash": "xxh64:df7c2c10ba78103c",
+    "fields": 100,
+    "writes": 1200
+  },
+  {
+    "label": "current",
+    "id": "where-time-stood-still-plus3",
+    "audio_hash": "xxh64:530fff8f06271e68",
+    "fields": 100,
+    "writes": 1100
+  },
+  {
+    "label": "original",
+    "id": "chase-hq-plus3",
+    "audio_hash": "xxh64:1173a13fcb7720a2",
+    "fields": 100,
+    "writes": 1200
+  },
+  {
+    "label": "original",
+    "id": "starglider-2-plus3",
+    "audio_hash": "xxh64:f42fcebdf253d1b1",
+    "fields": 100,
+    "writes": 958
+  },
+  {
+    "label": "original",
+    "id": "lotus-esprit-plus3",
+    "audio_hash": "xxh64:4677446a6698a8be",
+    "fields": 100,
+    "writes": 1100
+  },
+  {
+    "label": "original",
+    "id": "robocop-plus3",
+    "audio_hash": "xxh64:0358393c6b155f61",
+    "fields": 100,
+    "writes": 1200
+  },
+  {
+    "label": "original",
+    "id": "where-time-stood-still-plus3",
+    "audio_hash": "xxh64:b89c6f95d98b7924",
+    "fields": 100,
+    "writes": 1100
+  }
+]

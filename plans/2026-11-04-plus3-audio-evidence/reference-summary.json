@@ -1,0 +1,62 @@
+[
+  {
+    "id": "chase-hq-plus3",
+    "path": "Sinclair/ZX Spectrum/Games/[DSK]/Chase H.Q. (1989)(Ocean)(+3).zip",
+    "archive_sha256": "6e084e3b7fb96c7c5c7dd6cbafbe555dea0192305271360c522848a6a435e1b6",
+    "member": "Chase H.Q. (1989)(Ocean)(+3).dsk",
+    "disk_sha256": "f73ec321ac2095771dc6e4b8b923b811f285d2d7534c82643b4a7b342b246810",
+    "commands": 33848,
+    "source_unchanged": true,
+    "mounted_bytes_unchanged": true,
+    "derived_geometry": false,
+    "probe_sha256": "a7bdeefcebaa3deb0065a8a4c1b81f907d8643b559d839034914a8eca0912a78"
+  },
+  {
+    "id": "starglider-2-plus3",
+    "path": "Sinclair/ZX Spectrum/Games/[DSK]/Starglider 2 - The Egrons Strike Back (1989)(Rainbird)(+3).zip",
+    "archive_sha256": "84d1159af04245531c5fcf83a77cd5b0a82f062ce10aefe9bd7163305d8e3bd9",
+    "member": "Starglider 2 - The Egrons Strike Back (1989)(Rainbird)(+3).dsk",
+    "disk_sha256": "4219a2ba11d84f388fb13fd2e4871c254543afed87a83857e461912ce15c8bd0",
+    "commands": 55671,
+    "source_unchanged": true,
+    "mounted_bytes_unchanged": true,
+    "derived_geometry": false,
+    "probe_sha256": "a7bdeefcebaa3deb0065a8a4c1b81f907d8643b559d839034914a8eca0912a78"
+  },
+  {
+    "id": "lotus-esprit-plus3",
+    "path": "Sinclair/ZX Spectrum/Games/[DSK]/Lotus Esprit Turbo Challenge (1990)(Gremlin Graphics)(+3).zip",
+    "archive_sha256": "90143842df837241714c8423b45cabf6eff29f12535496d0302e1e3f2cd16ba1",
+    "member": "Lotus Esprit Turbo Challenge (1990)(Gremlin Graphics)(+3).dsk",
+    "disk_sha256": "2a658d94f20f6d98168d3d79e7d1b7a49463de2796175ac68dbcd3cc33ad2c4e",
+    "commands": 52993,
+    "source_unchanged": true,
+    "mounted_bytes_unchanged": true,
+    "derived_geometry": false,
+    "probe_sha256": "a7bdeefcebaa3deb0065a8a4c1b81f907d8643b559d839034914a8eca0912a78"
+  },
+  {
+    "id": "robocop-plus3",
+    "path": "Sinclair/ZX Spectrum/Games/[DSK]/RoboCop (1988)(Ocean)(+3).zip",
+    "archive_sha256": "ce92aa442c4d726f55d43221a68ac0ca1e70689d114ee01be0a244ffed92725d",
+    "member": "RoboCop (1988)(Ocean)(+3).dsk",
+    "disk_sha256": "8fbda95e32655f2ebfe297a24a22f8cf19c252e9dc865453fe24c8f143f561ab",
+    "commands": 2,
+    "source_unchanged": true,
+    "mounted_bytes_unchanged": true,
+    "derived_geometry": false,
+    "probe_sha256": "a7bdeefcebaa3deb0065a8a4c1b81f907d8643b559d839034914a8eca0912a78"
+  },
+  {
+    "id": "where-time-stood-still-plus3",
+    "path": "Sinclair/ZX Spectrum/Games/[DSK]/Where Time Stood Still (1988)(Ocean)(+3)[aka Land That Time Forgot, The][aka Tibet].zip",
+    "archive_sha256": "4a39a94302cce17c16b549ab3cc104498b26ded34ab9bff5122705c7eb6147d2",
+    "member": "Where Time Stood Still (1988)(Ocean)(+3)[aka Land That Time Forgot, The][aka Tibet].dsk",
+    "disk_sha256": "1ac8643f501db1dd51bd857248adb932fa3d7c1570e8d99a8d607e589feac49f",
+    "commands": 2,
+    "source_unchanged": true,
+    "mounted_bytes_unchanged": true,
+    "derived_geometry": false,
+    "probe_sha256": "a7bdeefcebaa3deb0065a8a4c1b81f907d8643b559d839034914a8eca0912a78"
+  }
+]

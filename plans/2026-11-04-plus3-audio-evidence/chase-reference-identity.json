@@ -1,0 +1,12 @@
+{
+  "id": "chase-hq-plus3",
+  "path": "Sinclair/ZX Spectrum/Games/[DSK]/Chase H.Q. (1989)(Ocean)(+3).zip",
+  "archive_sha256": "6e084e3b7fb96c7c5c7dd6cbafbe555dea0192305271360c522848a6a435e1b6",
+  "member": "Chase H.Q. (1989)(Ocean)(+3).dsk",
+  "disk_sha256": "f73ec321ac2095771dc6e4b8b923b811f285d2d7534c82643b4a7b342b246810",
+  "commands": 55964,
+  "source_unchanged": true,
+  "mounted_bytes_unchanged": true,
+  "derived_geometry": false,
+  "probe_sha256": "f449c9abf21633b0629ba02075bc9510eb8ee0fd06fa3114ebdb16a670a99c94"
+}
