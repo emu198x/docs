@@ -21,6 +21,13 @@ Use these source-repository records:
   publish revision-specific `status-evidence` artifacts. Read what ran and which
   external-input checks were skipped before using a green run as evidence.
 
+The separate [Apple II family repository](https://github.com/emu198x/apple-ii)
+owns the original NTSC revision-0 machine library. Its
+[verification record](https://github.com/emu198x/apple-ii/blob/main/docs/verification.md)
+qualifies original-ROM graphics and slot-6 Disk II/DOS 3.3, including exported
+work-disk reloads. It remains a headless library, outside the flagship's native
+shipping list; later Apple II boards need separate machine implementations.
+
 For a launch, use the selected shipping binary's `--help` and its source/runtime
 profile at the revision being tested. For a boot or accuracy claim, retain the
 firmware/media identities, configuration, command, and observed result. A window
