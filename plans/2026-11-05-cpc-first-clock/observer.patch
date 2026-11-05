@@ -1,0 +1,39 @@
+diff --git i/crates/common-amstrad-cpc/src/lib.rs w/crates/common-amstrad-cpc/src/lib.rs
+index b1f947966..399d7d503 100644
+--- i/crates/common-amstrad-cpc/src/lib.rs
++++ w/crates/common-amstrad-cpc/src/lib.rs
+@@ -1358,6 +1358,14 @@ impl Z80Machine for AmstradCpc {
+ 
+     fn tick_cpu_and_bus(&mut self) {
+         self.cpu.tick();
++        #[cfg(test)]
++        if std::env::var_os("CPC_WAIT_OBSERVE").is_some() && self.cadence_hc < 100 {
++            let c = &self.cpu;
++            eprintln!("CPC_WAIT model={:?} hc={} phase={:?} pc={:04x} addr={:04x} input={:02x} data={:02x} wait={} irq={} m1={} mreq={} iorq={} rd={} wr={} rfsh={} retired={} crtc_phase={} tstates={}",
++                self.model, self.cadence_hc, c.phase, c.regs.pc, c.addr, c.data_in, c.data,
++                c.wait, c.irq, c.m1, c.mreq, c.iorq, c.rd, c.wr, c.rfsh,
++                c.instructions_retired(), self.crtc_phase, self.cpu_tstates);
++        }
+         self.handle_bus();
+     }
+ 
+@@ -2215,3 +2223,19 @@ mod tests {
+ 
+ mod board;
+ pub use board::{CpcBoard, CpcCore};
++
++#[cfg(test)]
++mod wait_observer {
++    use super::*;
++
++    #[test]
++    fn observe_first_hundred_cpu_edges() {
++        let firmware = include_bytes!("../../../test-data/synthetic-firmware/amstrad-cpc.rom");
++        for model in [CpcModel::Cpc464, CpcModel::Cpc664, CpcModel::Cpc6128] {
++            let mut machine = AmstradCpc::with_model(firmware, model).expect("synthetic firmware");
++            machine.advance_halfcycles(100);
++            assert_eq!(machine.cadence_hc, 100);
++            assert_eq!(machine.cpu_tstates, 50);
++        }
++    }
++}

@@ -1,0 +1,21 @@
+{
+  "baseline": "79b5fc12ed2b3fb884686600579edad6795c148f",
+  "integration": "06be84c7fc7ea704b9ef2ee9e0503f90ae64bdd3",
+  "original_pr": "322c672fbd7765aa91c4b4271849795a803ae3bc",
+  "observation": "Immediately after the existing CPU tick, before the existing handle_bus call; hc is the zero-based edge index. No clocks or signal writes added.",
+  "edges_per_model_and_cpu": 100,
+  "cpus": [
+    {
+      "name": "emu198x-zilog-z80",
+      "version": "0.8.0",
+      "checksum": "e8d2e3e41d96d4e0b7ce4f508dc193d394d12cfed9388cd8c74b7f388ade04f5"
+    },
+    {
+      "name": "emu198x-zilog-z80",
+      "version": "0.9.0",
+      "checksum": "bb7caf1f7f56be3bbbc5315162fda69cf0c30cd32701b75f3a607af612359b99"
+    }
+  ],
+  "firmware_sha256": "b7ced996800be6c846a3b18797c918660a272983ec14de0ea6b91caa6edbfc09",
+  "observer_sha256": "01bc0539af2a2a141004b87e4143ca02443166b03020f0c45ec94d1ca2ec7e8e"
+}

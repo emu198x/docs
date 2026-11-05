@@ -1,0 +1,20 @@
+{
+  "positive": "Cpc464: internal edge 2; bus edge 81; write releases 81/87\nCpc6128: internal edge 2; bus edge 81; write releases 81/87\nCpc664: internal edge 2; bus edge 81; write releases 81/87\n600 edges checked; machine clocks and WAIT/IRQ inputs agree\n",
+  "negative_controls": [
+    {
+      "control": "missing-edge",
+      "exit": 1,
+      "diagnostic": "ValueError: 0.9/Cpc464: expected exactly 100 edges"
+    },
+    {
+      "control": "same-cpu",
+      "exit": 1,
+      "diagnostic": "ValueError: Cpc464: changed divergence (None, None, [81, 81])"
+    },
+    {
+      "control": "changed-wait",
+      "exit": 1,
+      "diagnostic": "ValueError: WAIT waveform changed"
+    }
+  ]
+}
