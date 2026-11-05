@@ -47,3 +47,13 @@ commercial screenshot/replay tests pass: 2 passed, 0 failed, 0 ignored.
 The source worktree has no tracked, untracked or ignored changes. Its base
 commit remains the actual main HEAD. All diagnostic changes are retained as
 an observer patch and example in the docs evidence, not in shipping source.
+
+## Cleanup
+
+Evidence commit `33593eb` is pushed and verified on `origin/main`. The source
+worktree was inspected for tracked, untracked and ignored files (none), with
+its base commit retained on main. Removed it through `git worktree remove`
+and deleted its empty task branch. Verified no task-owned probe/build process
+remained, then removed the build cache and local-only capture/input directory.
+All three declared task paths are absent. Unrelated worktrees and local files
+are preserved. #2182 remains open pending a qualified production fix.
