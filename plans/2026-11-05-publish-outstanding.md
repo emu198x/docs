@@ -48,3 +48,20 @@ archive positively contains the final-line LY correction. Exact hashes and
 publication times are in `2026-11-05-publish-outstanding-crates.json`.
 Published: emu198x-esp-at-modem 0.48.3 and emu198x-nintendo-game-boy-ppu 0.1.1.
 All other discovered current Emu198x library versions were already present.
+
+Native v0.48.3 became public at 2026-11-05 14:29:05 UTC with 564 assets.
+Tagged run 42040767564 passed in full: five native platforms, both Mac
+notarisations, global installer generation, ARM/x86-64 Linux installation
+qualification and Homebrew publication. Downloaded actual Apple silicon Game
+Boy, CPC and Spectrum release archives. Each archive SHA-256 matches both
+its public checksum sidecar and GitHub asset digest; extracted executable
+architecture and SHA-256 match its producer receipt, whose source commit and
+all three lockfile hashes match the tagged source. Exact records are in
+`2026-11-05-publish-outstanding-native.json`.
+
+A strict local comparison first rejected cargo-dist's conventional `*filename`
+checksum marker; accepting that marker as the existing producer verifier does
+resolved it. Subsequent public-download requests returned HTTP 504. Downloading
+the same immutable release assets through GitHub's asset API succeeded and
+all independent byte/receipt checks passed. No release bytes were changed.
+Task cache: `/private/tmp/198x-outstanding-release-verification`.

@@ -1,0 +1,128 @@
+{
+  "tag": "v0.48.3",
+  "source": {
+    "commit": "32c46c10f2b4777ad63d4d12f1ac9b65451c731c",
+    "cargo_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0"
+  },
+  "published_at": "2026-11-05T14:29:05Z",
+  "asset_count": 564,
+  "verified_downloads": [
+    {
+      "package": "emu198x-game-boy",
+      "version": "0.48.3",
+      "archive": "emu198x-game-boy-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "56faa157bae30f7d51c8b5a75832f3f1529a2e01ca898a0259cf57b141ebe2d9",
+      "executable_sha256": "4e78afe449b71f0f54f00da105434583a13d153c5b71a824eca99beb32b51c4b",
+      "receipt": {
+        "schema_version": 1,
+        "kind": "producer-source-lock",
+        "signed": false,
+        "source_commit": "32c46c10f2b4777ad63d4d12f1ac9b65451c731c",
+        "committed_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "before_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "after_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "package": "emu198x-game-boy",
+        "version": "0.48.3",
+        "archive": "emu198x-game-boy-aarch64-apple-darwin.tar.gz",
+        "target": "aarch64-apple-darwin",
+        "archive_sha256": "56faa157bae30f7d51c8b5a75832f3f1529a2e01ca898a0259cf57b141ebe2d9",
+        "executable_sha256": "4e78afe449b71f0f54f00da105434583a13d153c5b71a824eca99beb32b51c4b",
+        "build": {
+          "job": "build-local-artifacts",
+          "run_id": "42040767564",
+          "run_attempt": "1"
+        },
+        "command": [
+          "dist",
+          "build",
+          "--tag=v0.48.3",
+          "--print=linkage",
+          "--output-format=json",
+          "--artifacts=local",
+          "--target=aarch64-apple-darwin"
+        ],
+        "compiled_dependency_graph": "unknown"
+      },
+      "public_checksum_and_asset_digest_match": true
+    },
+    {
+      "package": "emu198x-amstrad-cpc",
+      "version": "0.48.3",
+      "archive": "emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "3f809477de9af538a81e6078329f210c5487fa915e1279b80d2059659e363184",
+      "executable_sha256": "af98bd19dfef3f901ad67f7077f7e801b45ee2c12a6b3d73aed37611eebcb43f",
+      "receipt": {
+        "schema_version": 1,
+        "kind": "producer-source-lock",
+        "signed": false,
+        "source_commit": "32c46c10f2b4777ad63d4d12f1ac9b65451c731c",
+        "committed_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "before_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "after_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "package": "emu198x-amstrad-cpc",
+        "version": "0.48.3",
+        "archive": "emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz",
+        "target": "aarch64-apple-darwin",
+        "archive_sha256": "3f809477de9af538a81e6078329f210c5487fa915e1279b80d2059659e363184",
+        "executable_sha256": "af98bd19dfef3f901ad67f7077f7e801b45ee2c12a6b3d73aed37611eebcb43f",
+        "build": {
+          "job": "build-local-artifacts",
+          "run_id": "42040767564",
+          "run_attempt": "1"
+        },
+        "command": [
+          "dist",
+          "build",
+          "--tag=v0.48.3",
+          "--print=linkage",
+          "--output-format=json",
+          "--artifacts=local",
+          "--target=aarch64-apple-darwin"
+        ],
+        "compiled_dependency_graph": "unknown"
+      },
+      "public_checksum_and_asset_digest_match": true
+    },
+    {
+      "package": "emu198x-spectrum",
+      "version": "0.48.3",
+      "archive": "emu198x-spectrum-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "archive_sha256": "a9d0bd074e8299628a16e50404b5e2a3f2c5942137065676c84c7cf03dedff15",
+      "executable_sha256": "bc6187d4d6deb2205b8049e29e7283bfa254f6507b2a6ed553ae567e85ad2167",
+      "receipt": {
+        "schema_version": 1,
+        "kind": "producer-source-lock",
+        "signed": false,
+        "source_commit": "32c46c10f2b4777ad63d4d12f1ac9b65451c731c",
+        "committed_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "before_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "after_lock_sha256": "d072997f27fa38f1a50dc16ecf96a767ef15ff8f26e3c9329d3347193112e0a0",
+        "package": "emu198x-spectrum",
+        "version": "0.48.3",
+        "archive": "emu198x-spectrum-aarch64-apple-darwin.tar.gz",
+        "target": "aarch64-apple-darwin",
+        "archive_sha256": "a9d0bd074e8299628a16e50404b5e2a3f2c5942137065676c84c7cf03dedff15",
+        "executable_sha256": "bc6187d4d6deb2205b8049e29e7283bfa254f6507b2a6ed553ae567e85ad2167",
+        "build": {
+          "job": "build-local-artifacts",
+          "run_id": "42040767564",
+          "run_attempt": "1"
+        },
+        "command": [
+          "dist",
+          "build",
+          "--tag=v0.48.3",
+          "--print=linkage",
+          "--output-format=json",
+          "--artifacts=local",
+          "--target=aarch64-apple-darwin"
+        ],
+        "compiled_dependency_graph": "unknown"
+      },
+      "public_checksum_and_asset_digest_match": true
+    }
+  ]
+}
