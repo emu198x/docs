@@ -232,3 +232,35 @@ with 44 px heights. The checker first assumed a visible default A500 media
 control; its zero bounds identified an intentionally hidden control. The
 final check selects the A1200 normally and positively checks both controls.
 Live verification and issue closure follow deployment.
+
+## Completed rollout
+
+Site PR #48 merged as `11f185f79ecb45dd00daee66fe1ae14427006522`.
+Enabling rebase auto-merge merged it immediately because the site build was
+not a required check; this was earlier than intended. Local verification
+was already green. Subsequently PR CI 42017882156 and main build/deployment
+42017933681 both completed successfully; no failing check was bypassed.
+
+Verified the actual deployed A500 page with Chrome at 320/390/1280 CSS px
+in light and dark themes. All six cases pass: document width equals the
+viewport, Tab reaches visibly focused model selection, native typeahead
+selects the A1200, and both resulting model/media selects stay within the
+viewport with 44 px heights. Live build metadata matches the registry
+package at exact tagged revision `79b5fc12ed2b3fb884686600579edad6795c148f`.
+Live player.css is byte-identical to the verified registry archive:
+SHA-256 `dad64f828ce836ea50bda4fd3d1efb204173a5a447ab772c68275595b2a1db2c`.
+Closed issue #2238 as completed at 11:22:29 UTC with this evidence.
+
+Cleanup is complete. Verified the original site task commits against remote
+PR refs and their identical merged trees before removing their branches.
+Inspected tracked, untracked and ignored files, and verified the nested UI
+clone's clean revision against remote v0.5.0. Removed only task-owned
+generated content, then removed the linked worktree with `git worktree remove`.
+Both original source/site checkouts are on their released/merged main heads.
+The task-owned build/browser commands have exited, and all named temporary
+workspaces, build caches, downloads and logs are verified absent. Unrelated
+source `tools/__pycache__/`, the older ZIP compatibility draft and original
+site build assets remain preserved.
+
+Published results: suite v0.48.2, emu198x-shell 0.44.3 and
+@emu198x/player 0.48.2. The public site pins player 0.48.2 exactly.
