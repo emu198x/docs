@@ -1,0 +1,16 @@
+[
+  {
+    "name": "emu198x-esp-at-modem",
+    "version": "0.48.3",
+    "sha256": "f2296d854f3fbe89c42b29607d0f2672993120c7eba2c449d7279033e00df3d7",
+    "created_at": "2026-11-05T14:00:32.523066Z",
+    "published_lib_matches_tag": true
+  },
+  {
+    "name": "emu198x-nintendo-game-boy-ppu",
+    "version": "0.1.1",
+    "sha256": "4bc5966376af686df5df841f602de8bb6ed19a40b0f58e00580aba36c0a50058",
+    "created_at": "2026-11-05T14:00:39.624452Z",
+    "published_lib_matches_tag": true
+  }
+]
