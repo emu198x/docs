@@ -143,3 +143,28 @@ Stopped npm run 42003489432 because it contains the reproduced fixture bug.
 PR #2301 holds the checked correction and has rebase auto-merge enabled.
 The final player publication therefore targets the next normal patch,
 v0.48.2, rather than rebuilding or retargeting either existing tag.
+
+The first PR #2301 browser CI run failed compiling its new native probe:
+`failed to run custom build command for libudev-sys v0.1.4`. The formerly
+WASM-only job had no native library prerequisites. Added the existing bounded
+pkg-config/ALSA/udev installation to that job; local runtime regression,
+actionlint and apt-policy self-tests pass. The complete player preflight
+already passed with the corrected fixtures; no runtime or fixture change was
+needed for this CI prerequisite.
+
+Site prerequisite commit `f4ffdae` passed 140 tests and its full build:
+147 routes, browser-module verification, spacing, internal links and prose.
+The route update adds 14 positively identified registry board pages and
+removes none. Accessibility passed 129 content routes in both themes;
+18 redirect stubs were explicitly skipped. This prerequisite is a separate
+site PR so it can restore the public build while the player correction runs
+through the checked release pipeline. The exact player pin follows later.
+
+Site PR #47 merged with green CI as `87e95be3abb7c69716561108dc1ed13358a7899a`.
+Deployment run 42005542019 passed. Verified the live CA018087 board page,
+BIOS rights note, redirect from `/systems/atari-5200/`, v0.48.1 download URLs
+and the exact recaptured PNG bytes (SHA-256
+`b4b4240a2c59ca245e84da35ac4eac6ecb7cf92ae91c59ce106a5d59474a92c3`).
+The live player remains 0.44.2 pending qualified npm publication. Reused the
+same isolated worktree on branch `fix/published-player-pin` from the merged
+site main; no package pin has been changed prematurely.
