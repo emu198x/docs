@@ -185,3 +185,11 @@ Removed the completed local player build cache and output on 2026-11-05;
 both paths above are verified absent. `df` available space increased from
 104,000,000 to 106,800,000 KiB (about 2.8 GB). Source changes are retained
 on main and full preflight results remain recorded here.
+
+PR #2302 passed every check in CI run 42007100070 and merged at
+10:19:46 UTC as `79b5fc12ed2b3fb884686600579edad6795c148f`. The v0.48.2
+tag resolves to that exact commit. Tagged release run: 42009837730.
+Cancelled duplicate main packaging 42009799292 and duplicate main CI
+42009799828 after verifying its tree matches the successful PR tree
+`48e2d8a0200878a46c66e34384ab90f5f695f770`. The complete tagged
+publication qualification remains enabled.
