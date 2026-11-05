@@ -43,3 +43,11 @@ new version (`published-version-red.log`). Follow-up commit raises the PPU
 to 0.1.1; registry API confirms that version is new. The final explicit
 commercial run (3 tests) and PPU run (29 tests) pass again at the updated
 version. Hosted checks rerun on that final head.
+
+Additional reference scope check: `reference_mono.c` repeats the same bounded
+probe for DMG-B, MGB, SGB and SGB2. Invoke it with zero, one, two or three dummy
+arguments respectively. SGB uses the documented NO_SFC model to isolate its
+Game Boy PPU, with border disabled and a valid pixel sink. All four runs
+report the identical four-dot readable-153 interval and continued mode 1;
+the separate `reference-{dmg,mgb,sgb,sgb2}.jsonl` files retain the outputs.
+This checks the shared monochrome path without expanding the production fix.
