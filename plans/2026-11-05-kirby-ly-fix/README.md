@@ -63,3 +63,10 @@ All hosted checks passed on tested head `f3d10a7d95d4d5ba19d6a735ea2453ecf0274ab
 ([CI run](https://github.com/emu198x/emu198x/actions/runs/42026477721)).
 The merged and tested Git trees are identical:
 `d343cc7a9fa9aaf597e6cae382b26683bd882e5d`.
+
+Cleanup completed after evidence was pushed and merged-tree retention was
+verified. Inspected the worktree including ignored files; its only generated
+Python cache was removed. No task-owned processes remained. Removed the linked
+worktree `/private/tmp/198x-kirby-ly-fix` with `git worktree remove`, then removed
+`/private/tmp/198x-kirby-ly-target` and `/private/tmp/198x-kirby-ly-evidence`.
+Verified all three paths are absent. Unrelated workspaces and files remain.
