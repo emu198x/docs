@@ -205,3 +205,30 @@ platform builds, both Mac notarisation paths, global packaging and real
 ARM/x86-64 Linux installer jobs passed. The public Spectrum asset digest
 and downloaded checksum sidecar both match the tested tagged archive above.
 Homebrew publication remains in progress before the npm workflow starts.
+
+Tagged native release run 42009837730 completed successfully, including
+Homebrew publication. The actual npm release run is 42016081528, started
+11:05:31 UTC. Its Spectrum job confirms `@emu198x/zx-spectrum@0.7.0`
+is already published; the independently versioned package needs no bump.
+The player job runs its complete build and publication parity checks.
+
+Npm run 42016081528 passed. The published player log confirms native/WASM
+parity for 85 variants (52 explicitly need additional local firmware),
+including all four PETs, followed by `+ @emu198x/player@0.48.2`. Downloaded
+the actual registry tarball and verified its SHA-512 integrity:
+`sha512-kHkwBAJBtVpCMHLhYID9pOXG98yqqfl+duQTY1hruYIKcXKhFaElbq04QSczvV8z/IN7IQIjYLtOupLw/Dma/Q==`.
+The attestation subject digest matches those bytes and names this workflow
+run and the exact tagged commit. `build.json` reports version 0.48.2,
+revision `79b5fc12ed2b3fb884686600579edad6795c148f`, `modified: false`
+and bundled Spectrum firmware. The archive CSS contains both shrink rules.
+
+Site pin PR #48 changes only package.json and package-lock.json, at
+`a3fa81062f1de008dd1aa9317b0d7732a0a710dd`. Local validation passed:
+140 tests, full build, 147 routes, 89 board embeds and all browser modules,
+plus accessibility on 129 content routes in both themes with zero defects.
+Production-page Chrome checks pass at 320/390/1280 CSS px in both themes,
+including Tab/focus, native A1200 selection and visible model/media bounds
+with 44 px heights. The checker first assumed a visible default A500 media
+control; its zero bounds identified an intentionally hidden control. The
+final check selects the A1200 normally and positively checks both controls.
+Live verification and issue closure follow deployment.
