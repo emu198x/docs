@@ -193,3 +193,15 @@ Cancelled duplicate main packaging 42009799292 and duplicate main CI
 42009799828 after verifying its tree matches the successful PR tree
 `48e2d8a0200878a46c66e34384ab90f5f695f770`. The complete tagged
 publication qualification remains enabled.
+
+Downloaded v0.48.2 Apple silicon artifact 13406463548 and checked its
+Spectrum executable directly. Archive SHA-256:
+`98b6f61c092441420da8062a8f71a4a542789bb454f33c89c76e5456984871fb`.
+All three bad-field scripts exit 1 with their field names; the valid synthetic
+NOP-ROM script reports PCs 1–16 and both observation paths agree on `$0010`.
+
+Native v0.48.2 is public at 11:00:55 UTC with all 564 assets. All five
+platform builds, both Mac notarisation paths, global packaging and real
+ARM/x86-64 Linux installer jobs passed. The public Spectrum asset digest
+and downloaded checksum sidecar both match the tested tagged archive above.
+Homebrew publication remains in progress before the npm workflow starts.
