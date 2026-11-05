@@ -1,5 +1,5 @@
 {
-  "source_head": "18720ec98ed27ed8de10fb47a9df5421e788d2cc",
+  "source_head": "f3d10a7d95d4d5ba19d6a735ea2453ecf0274ab3",
   "base": "9d9f756a681c9a04a64f44fbd18ad05f52e82895",
   "reference_commit": "208ba4afabffab9edde416f2dbb8ae459e34adb8",
   "frozen_specimens": {
@@ -51,5 +51,8 @@
   "boundary_red_exit": 101,
   "kirby_red_exit": 101,
   "reference_interval_dots": 4,
-  "probe_sha256": "fc65e47ac60bb7f186656cba56717fe7fd6ec7c6642facd4001185ff8af3e6ac"
+  "probe_sha256": "fc65e47ac60bb7f186656cba56717fe7fd6ec7c6642facd4001185ff8af3e6ac",
+  "ppu_version": "0.1.1",
+  "final_ppu_passed": 29,
+  "final_commercial_passed": 3
 }

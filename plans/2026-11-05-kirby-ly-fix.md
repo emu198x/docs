@@ -40,3 +40,10 @@ all 3 explicitly enabled commercial tests, Clippy and formatting pass.
 Pinned SameBoy source identities rechecked. Evidence is in the adjacent
 `2026-11-05-kirby-ly-fix/` folder. Shared reference note is pushed at umbrella
 commit `588b4fe4`. Hosted PR checks are running.
+
+The published-code check identified the missing PPU version bump in the first
+head. Final head `f3d10a7d9` gives it compatible patch version 0.1.1, a
+changelog entry and the common crate's matching requirement. No new dependency.
+The checker self-test passes and registry API confirms 0.1.1 is not published.
+All three explicit commercial and 29 PPU tests pass again at this version.
+The original 183-test family run's hardware code is unchanged.

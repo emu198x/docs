@@ -1,0 +1,2 @@
+2026-11-05T12:20:35.1801692Z emu198x-nintendo-game-boy-ppu 0.1.0 differs from its published version: src/lib.rs differs, src/tests.rs differs
+2026-11-05T12:20:35.1802768Z 1 crate(s) changed without a new version, so the change would never be released. Raise each version, add a changelog entry, and update the crates that need it (see this script's docstring).

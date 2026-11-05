@@ -33,5 +33,13 @@ Clippy with `-D warnings`, formatting and diff whitespace checks pass.
 
 `verification.json` records the source head, 33 unchanged frozen specimen
 hashes, unchanged original Tetris/Mario expected cases and checked pinned
-reference identity. No dependencies, specimen bytes or save schemas change.
+reference identity. The published PPU receives patch version 0.1.1, a changelog entry and an
+updated consumer requirement. No new dependencies, specimen bytes or save
+schemas change.
 All original game/boot bytes stay local and are removed with the task cache.
+
+The first hosted run correctly rejected editing published 0.1.0 without a
+new version (`published-version-red.log`). Follow-up commit raises the PPU
+to 0.1.1; registry API confirms that version is new. The final explicit
+commercial run (3 tests) and PPU run (29 tests) pass again at the updated
+version. Hosted checks rerun on that final head.

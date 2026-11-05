@@ -1,0 +1,20 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-kirby-ly-fix/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/61106b1b0ef9fb26: Operation not permitted (os error 1)
+   Compiling emu198x-nintendo-game-boy-ppu v0.1.1 (/private/tmp/198x-kirby-ly-fix/crates/emu198x-nintendo-game-boy-ppu)
+   Compiling common-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/common-nintendo-game-boy)
+   Compiling machine-nintendo-super-game-boy-2 v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-super-game-boy-2)
+   Compiling machine-nintendo-game-boy-pocket v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-pocket)
+   Compiling machine-nintendo-game-boy-advance v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-advance)
+   Compiling machine-nintendo-super-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-super-game-boy)
+   Compiling machine-nintendo-game-boy-color v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-color)
+   Compiling machine-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy)
+   Compiling runtime-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/runtime-nintendo-game-boy)
+    Finished `release` profile [optimized] target(s) in 5.11s
+     Running tests/commercial_screens.rs (/private/tmp/198x-kirby-ly-target/release/deps/commercial_screens-09fc25c9099cd72b)
+
+running 3 tests
+test mario_real_game_screens_match_sameboy_and_replay ... ok
+test tetris_real_game_screens_match_sameboy_and_replay ... ok
+test kirby_real_game_screens_match_sameboy_and_replay ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.66s
+
