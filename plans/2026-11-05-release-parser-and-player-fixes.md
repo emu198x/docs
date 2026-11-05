@@ -11,7 +11,7 @@ authorised on 2026-11-05 following merged PRs #2297 and #2298.
    path. Verify the registry's `emu198x-shell` 0.44.3 archive contains strict
    script parsing, rather than trusting only the workflow result.
 3. Follow the suite release and `.github/workflows/publish-npm.yml`. Verify
-   `@emu198x/player` 0.48.1 provenance/build revision, bundled firmware flag
+   `@emu198x/player` 0.48.2 provenance/build revision, bundled firmware flag
    and the corrected CSS in the actual published tarball.
 4. Update only the exact player pin and lockfile in `emu198x.github.io`, using
    its existing tests/build and browser checks. Commit, push and merge with
@@ -168,3 +168,20 @@ and the exact recaptured PNG bytes (SHA-256
 The live player remains 0.44.2 pending qualified npm publication. Reused the
 same isolated worktree on branch `fix/published-player-pin` from the merged
 site main; no package pin has been changed prematurely.
+
+PR #2301 passed CI run 42003869842 and merged as
+`7ca5fff3578182345d07fbcd5f18a35d39bc4ba2`. The browser job's log positively
+shows all four PET profiles passing the new runtime fixture check.
+Stopped the redundant main packaging run 42006495311; the next tag still
+runs the complete native publication qualification. Maintain release run:
+42006493986.
+
+Release PR #2302 prepares v0.48.2 at
+`18575d9d455f3229862a44759e6fe44d8e090e6d`. Confirmed its only files are
+the generated changelog, root manifest and lockfile; all 262 changed lockfile
+entries alter only the suite patch version. Rebase auto-merge waits for CI.
+
+Removed the completed local player build cache and output on 2026-11-05;
+both paths above are verified absent. `df` available space increased from
+104,000,000 to 106,800,000 KiB (about 2.8 GB). Source changes are retained
+on main and full preflight results remain recorded here.
