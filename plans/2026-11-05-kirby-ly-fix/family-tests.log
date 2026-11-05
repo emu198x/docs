@@ -1,0 +1,491 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-kirby-ly-fix/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/61106b1b0ef9fb26: Operation not permitted (os error 1)
+   Compiling common-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/common-nintendo-game-boy)
+   Compiling emu198x-nintendo-game-boy-ppu v0.1.0 (/private/tmp/198x-kirby-ly-fix/crates/emu198x-nintendo-game-boy-ppu)
+   Compiling machine-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy)
+   Compiling machine-nintendo-super-game-boy-2 v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-super-game-boy-2)
+   Compiling machine-nintendo-game-boy-color v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-color)
+   Compiling machine-nintendo-game-boy-advance v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-advance)
+   Compiling runtime-nintendo-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/runtime-nintendo-game-boy)
+   Compiling machine-nintendo-super-game-boy v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-super-game-boy)
+   Compiling machine-nintendo-game-boy-pocket v0.48.2 (/private/tmp/198x-kirby-ly-fix/crates/machine-nintendo-game-boy-pocket)
+    Finished `release` profile [optimized] target(s) in 32.31s
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/common_nintendo_game_boy-14a6c13d290e08ba)
+
+running 78 tests
+test joypad::tests::pressing_a_with_action_group_selected_pulls_bit_low ... ok
+test joypad::tests::any_selected_pressed_tracks_active_group_only ... ok
+test joypad::tests::select_both_combines_groups_via_and_of_pressed_state ... ok
+test joypad::tests::read_p1_returns_no_press_with_no_select ... ok
+test joypad::tests::write_p1_preserves_high_bits_as_one ... ok
+test joypad::tests::release_clears_button_bit ... ok
+test palette::tests::from_bits_decodes_each_shade ... ok
+test joypad::tests::pressing_a_with_direction_group_selected_does_not_show ... ok
+test palette::tests::palette_from_byte_decodes_four_slots ... ok
+test palette::tests::pixel_to_rgba_handles_remapping ... ok
+test palette::tests::pixel_to_rgba_matches_table ... ok
+test timing::tests::frame_layout_is_self_consistent ... ok
+test timing::tests::refresh_rate_matches_documented_value ... ok
+test timing::tests::screen_dimensions_match_dmg_lcd ... ok
+test wiring::cgb_tests::a_dmg_cartridge_runs_in_compatibility_mode_with_the_default_palettes ... ok
+test wiring::cgb_tests::a_cgb_cartridge_starts_in_cgb_mode ... ok
+test wiring::cgb_tests::a_monochrome_model_has_no_cgb_registers ... ok
+test wiring::cgb_tests::a_pending_interrupt_cuts_the_speed_switch_halt_short ... ok
+test wiring::cgb_tests::clearing_hdma5_bit_7_stops_an_hblank_transfer ... ok
+test wiring::cgb_tests::compatibility_mode_locks_the_cgb_only_registers ... ok
+test wiring::cgb_tests::general_purpose_dma_at_double_speed_copies_one_byte_per_m_cycle ... ok
+test wiring::cgb_tests::general_purpose_dma_copies_everything_and_holds_the_cpu ... ok
+test wiring::cgb_tests::hblank_dma_copies_one_block_per_hblank ... ok
+test wiring::cgb_tests::hblank_dma_started_during_hblank_copies_a_block_at_once ... ok
+test wiring::cgb_tests::hdma_cannot_read_vram_or_the_high_page ... ok
+test wiring::cgb_tests::opri_reorders_objects_only_while_the_boot_rom_runs ... ok
+test wiring::cgb_tests::palette_data_auto_increments_through_palette_ram ... ok
+test wiring::cgb_tests::palette_data_is_out_of_reach_in_mode_3 ... ok
+test wiring::cgb_tests::stop_with_a_button_held_halts_instead ... ok
+test wiring::cgb_tests::stop_without_a_switch_waits_for_a_button ... ok
+test wiring::cgb_tests::svbk_selects_the_high_wram_bank_and_zero_means_one ... ok
+test wiring::cgb_tests::the_agb_differs_only_in_its_registers ... ok
+test wiring::cgb_tests::the_boot_rom_maps_until_ff50_and_key0_picks_the_mode ... ok
+test wiring::cgb_tests::the_timer_runs_on_the_cpu_clock_at_double_speed ... ok
+test wiring::mono_boot_tests::original_firmware_checks_logo_checksum_and_hands_off_with_hardware_registers ... ignored, FIXTURE: needs original DMG0/DMG/MGB boot ROMs via EMU198X_GB_BOOT_ROM_DIR
+test wiring::tests::blargg_dmg_sound_suite_passes ... ignored, FIXTURE: needs EMU198X_GB_BLARGG_DMG_SOUND (blargg dmg_sound/rom_singles) — run with --ignored
+test wiring::cgb_tests::vbk_selects_the_vram_bank_the_cpu_sees ... ok
+test wiring::tests::construction_rejects_bad_header ... ok
+test wiring::tests::diagnostic_mealybug_dmg ... ignored, DIAGNOSTIC: diagnostic: per-ROM pixel diff vs Mealybug DMG references (EMU198X_GB_MEALYBUG_ROOT)
+test wiring::tests::diagnostic_mooneye_boot_div_counter_phase_search ... ignored, DIAGNOSTIC: diagnostic: searches skipped-boot DIV phase against local mooneye ROMs
+test wiring::tests::construction_validates_header ... ok
+test wiring::tests::diagnostic_mooneye_boot_hwio_read_trace ... ignored, DIAGNOSTIC: diagnostic: traces boot_hwio reads against local mooneye ROMs
+test wiring::cgb_tests::snapshots_round_trip_the_cgb_state ... ok
+test wiring::tests::diagnostic_mooneye_ppu_hblank_ly_scx_trace ... ignored, DIAGNOSTIC: diagnostic: traces mooneye HBlank LY/SCX timing
+test wiring::tests::diagnostic_mooneye_ppu_intr_2_0_trace ... ignored, DIAGNOSTIC: diagnostic: traces mooneye PPU STAT interrupt timing
+test wiring::tests::diagnostic_mooneye_ppu_intr_2_mode0_sprites_trace ... ignored, DIAGNOSTIC: diagnostic: traces mooneye PPU mode0 timing with sprites
+test wiring::tests::diagnostic_mooneye_ppu_lcdon_timing_results ... ignored, DIAGNOSTIC: diagnostic: dumps mooneye LCD-on timing result arrays
+test wiring::tests::diagnostic_mooneye_ppu_lcdon_write_timing_results ... ignored, DIAGNOSTIC: diagnostic: dumps mooneye LCD-on write timing result table
+test wiring::tests::diagnostic_mooneye_ppu_stat_lyc_onoff_trace ... ignored, DIAGNOSTIC: diagnostic: traces mooneye STAT LYC LCD on/off behavior
+test wiring::tests::diagnostic_mooneye_ppu_vblank_stat_intr_trace ... ignored, DIAGNOSTIC: diagnostic: traces mooneye VBlank/STAT interrupt ordering
+test wiring::tests::dmg_acid2_renders_reference ... ignored, FIXTURE: needs EMU198X_GB_DMG_ACID2 (dmg-acid2.gb) — run with --ignored
+test wiring::tests::echo_ram_mirrors_wram ... ok
+test wiring::tests::every_header_board_maps_to_its_controller ... ok
+test wiring::tests::header_decoded_at_construction_time ... ok
+test wiring::tests::hram_round_trips ... ok
+test wiring::tests::ie_register_round_trips ... ok
+test wiring::tests::if_register_high_bits_read_high ... ok
+test wiring::tests::mealybug_dmg_ppu_gate ... ignored, FIXTURE: needs EMU198X_GB_MEALYBUG_ROOT (mealybug ppu/ dir) — run with --ignored
+test wiring::tests::joypad_press_with_action_group_selected_latches_joypad_irq ... ok
+test wiring::tests::mooneye_dmg_acceptance_suite_passes ... ignored, FIXTURE: needs EMU198X_GB_MOONEYE_ROOT (mooneye-test-suite) — run with --ignored
+test wiring::tests::oam_dma_bus_conflict_is_bus_aware ... ok
+test wiring::tests::jr_loop_runs_indefinitely_without_diag_unimplemented ... ok
+test wiring::tests::oam_dma_copies_160_bytes_from_source_page ... ok
+test wiring::tests::serial_external_clock_does_not_capture ... ok
+test wiring::tests::skipped_bootrom_leaves_the_header_logo_and_trademark_in_vram ... ok
+test wiring::tests::skipped_bootrom_profiles_set_model_specific_cpu_and_io_state ... ok
+test wiring::tests::serial_transfer_with_internal_clock_captures_byte_and_latches_irq ... ok
+test wiring::tests::skipped_bootrom_sets_dmg_io_register_state ... ok
+test wiring::tests::timer_div_writeable_via_bus_resets_to_zero ... ok
+test wiring::tests::step_m_cycle_advances_timer_by_four_t_cycles ... ok
+test wiring::tests::unusable_region_reads_high ... ok
+test wiring::tests::timer_overflow_sets_if_timer_bit ... ok
+test wiring::tests::vram_round_trips ... ok
+test wiring::tests::wram_round_trips ... ok
+test wiring::cgb_tests::bg_attributes_pick_the_palette_and_the_tile_bank ... ok
+test wiring::tests::run_frame_completes_within_safety_limit ... ok
+test wiring::cgb_tests::stop_with_key1_armed_switches_to_double_speed ... ok
+test wiring::tests::vblank_irq_eventually_fires_during_a_frame ... ok
+
+test result: ok. 63 passed; 0 failed; 15 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/emu198x_nintendo_game_boy_ppu-97d06b5396323290)
+
+running 29 tests
+test fifo::tests::a_flipped_bg_row_pops_its_rightmost_pixel_first ... ok
+test fifo::tests::bg_row_pops_leftmost_pixel_first ... ok
+test fifo::tests::index_priority_lets_a_lower_oam_entry_cover_an_earlier_fetch ... ok
+test fifo::tests::object_overlay_honours_x_flip ... ok
+test fifo::tests::object_overlay_keeps_the_first_opaque_pixel ... ok
+test fifo::tests::overlay_pads_a_partly_drained_fifo ... ok
+test tests::apply_palette_decodes_each_slot ... ok
+test tests::bg_disable_forces_color_zero ... ok
+test tests::dmg_ly_resets_early_without_ending_the_last_vblank_line ... ok
+test tests::final_line_ly_read_keeps_cgb_modes_outside_the_dmg_fix ... ok
+test tests::lcd_disable_clears_internal_and_readable_final_line_ly ... ok
+test tests::lcd_off_freezes_timing ... ok
+test tests::ly_increments_every_456_dots ... ok
+test tests::mode_transitions_within_a_visible_scanline ... ok
+test tests::read_stat_reports_current_mode ... ok
+test tests::read_stat_reports_lyc_match ... ok
+test tests::renders_solid_index_one_when_tile_bytes_set_low_only ... ok
+test tests::sprite_overlays_bg_when_priority_clear ... ok
+test tests::sprite_priority_lets_bg_show_when_attr_bit_7_set_and_bg_nonzero ... ok
+test tests::stat_irq_does_not_fire_when_lyc_enable_clear ... ok
+test tests::stat_irq_fires_on_lyc_match_when_enabled ... ok
+test tests::turning_lcd_back_on_resumes_from_zero ... ok
+test tests::write_stat_only_keeps_writable_bits ... ok
+test tests::window_enable_with_wy_zero_advances_window_y ... ok
+test tests::window_disabled_does_not_advance_window_y ... ok
+test tests::frame_ready_set_at_start_of_vblank ... ok
+test tests::ly_wraps_at_154 ... ok
+test tests::stat_irq_fires_on_mode1_entry ... ok
+test tests::vblank_irq_latches_once_per_frame ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_game_boy-330eefde7ab8eb37)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-07c33846d4399da1)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-d54aabff7158ee3a)
+
+running 2 tests
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_game_boy_advance-23143e3f4ab81a31)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-b4977d01820a35a2)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-4e567e40024d6b0b)
+
+running 2 tests
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_game_boy_color-1b53ac8317754653)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-190ec09542b366ba)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cgb_acid2.rs (/private/tmp/198x-kirby-ly-target/release/deps/cgb_acid2-0e3a927db656ac40)
+
+running 1 test
+test cgb_acid2_matches_reference ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-849e7f9d07410da5)
+
+running 2 tests
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_game_boy_pocket-c897249b1be69ac3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-b4da0afb27d4a997)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-98b29c9d6b72a9ef)
+
+running 2 tests
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_super_game_boy-8883e300bcfb8438)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-d3b79525aafd9e95)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-502d72bd0f4dc3b7)
+
+running 2 tests
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/machine_nintendo_super_game_boy_2-c8d731a60154a2e4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-d35ea0871d6dc2a4)
+
+running 2 tests
+test constructor_cannot_select_another_physical_board ... ok
+test native_game_boy_fields_have_the_ppus_complete_dot_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/synthetic_cart_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cart_boot-1aa25e9963f46de8)
+
+running 2 tests
+test a_cartridge_that_sets_no_palette_does_not_look_like_a_boot ... ok
+test the_game_boy_boots_a_cartridge_and_sets_its_palette ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/release/deps/runtime_nintendo_game_boy-daad97e99d100a5f)
+
+running 15 tests
+test input::tests::every_joypad_button_has_a_name ... ok
+test profiles::tests::dmg_profile_offers_optional_boot_firmware ... ok
+test profiles::tests::colour_models_offer_an_optional_boot_rom ... ok
+test queries::tests::advertised_query_paths_are_unique ... ok
+test profiles::tests::every_model_has_consistent_metadata ... ok
+test queries::tests::cpu_pc_without_cartridge_reports_unavailable ... ok
+test queries::tests::query_paths_with_no_match_returns_empty ... ok
+test queries::tests::query_paths_without_prefix_returns_full_catalogue ... ok
+test queries::tests::unknown_query_path_returns_none ... ok
+test profiles::tests::profiles_returns_full_catalogue ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test runtime::tests::reset_clears_state_when_cartridge_bytes_no_longer_parse ... ok
+test snapshot::tests::malformed_v4_firmware_and_trailing_data_do_not_replace_live_state ... ok
+test snapshot::tests::firmware_cache_and_machine_cannot_disagree_on_restore ... ok
+test snapshot::tests::machine_hardware_must_match_the_envelope_profile ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/board_identity.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_identity-e01944e8640422b2)
+
+running 2 tests
+test saved_profiles_select_their_physical_owner_without_guessing_from_registers ... ok
+test every_wrong_declared_profile_rejects_without_changing_an_occupied_receiver ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/board_split_compatibility.rs (/private/tmp/198x-kirby-ly-target/release/deps/board_split_compatibility-a8c86b83bcfcf2ab)
+
+running 1 test
+test original_states_replay_every_frame_palette_and_audio_sample ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/catalogue.rs (/private/tmp/198x-kirby-ly-target/release/deps/catalogue-b1ed2cefc6ad8b15)
+
+running 1 test
+test every_profile_keeps_ram_rtc_and_audio_controls_but_restarts_the_machine ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commercial_screens.rs (/private/tmp/198x-kirby-ly-target/release/deps/commercial_screens-caba8415400fdf99)
+
+running 3 tests
+test kirby_real_game_screens_match_sameboy_and_replay ... ignored, FIXTURE: identified Kirby Rev 0 and original DMG boot ROM; see commercial-screens README
+test mario_real_game_screens_match_sameboy_and_replay ... ignored, FIXTURE: identified Super Mario Land Rev 1 and original DMG boot ROM; see commercial-screens README
+test tetris_real_game_screens_match_sameboy_and_replay ... ignored, FIXTURE: identified Tetris Rev 1 and original DMG boot ROM; see commercial-screens README
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/debug_surface.rs (/private/tmp/198x-kirby-ly-target/release/deps/debug_surface-7e7a22a3bdfedff3)
+
+running 6 tests
+test debug_target_present_once_a_cartridge_is_loaded ... ok
+test poke_writes_through_to_wram ... ok
+test peek_and_disassemble_read_the_cartridge ... ok
+test step_advances_by_whole_m_cycles ... ok
+test io_trace_unsupported_for_memory_mapped_io ... ok
+test cpu_state_reports_the_sm83_register_set ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/game_boy_color.rs (/private/tmp/198x-kirby-ly-target/release/deps/game_boy_color-10b749a6f6ca1b5e)
+
+running 5 tests
+test the_boot_rom_must_be_2304_bytes ... ok
+test a_supplied_boot_rom_runs_from_zero ... ok
+test a_cgb_emits_rgba_frames_and_a_dmg_indexed_ones ... ok
+test a_cgb_snapshot_round_trips ... ok
+test double_speed_keeps_real_time ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/lifecycle.rs (/private/tmp/198x-kirby-ly-target/release/deps/lifecycle-729bfe1f0e6d6fce)
+
+running 20 tests
+test blank_runtime_has_dmg_profile_and_no_machine ... ok
+test capabilities_reports_family_capability_set ... ok
+test load_media_rejects_unknown_slot ... ok
+test load_media_rejects_wrong_kind ... ok
+test audio_controls_mutate_loaded_machine_mixer ... ok
+test command_returns_unsupported_for_media_transport ... ok
+test load_media_rejects_unparseable_cartridge_bytes ... ok
+test machine_core_profile_and_time_match_inherent_accessors ... ok
+test battery_backed_ram_can_be_restored_and_exported ... ok
+test loading_a_valid_cartridge_constructs_the_machine ... ok
+test reset_blank_runtime_is_a_noop ... ok
+test machine_mut_tracks_cartridge_lifecycle ... ok
+test reset_preserves_external_ram ... ok
+test restore_cartridge_ram_rejects_size_mismatch ... ok
+test restore_cartridge_ram_rejects_when_no_cartridge ... ok
+test restore_cartridge_ram_rejects_when_cartridge_has_no_ram ... ok
+test run_until_without_cartridge_reports_waiting_for_input ... ok
+test set_audio_controls_replaces_loaded_mixer ... ok
+test run_until_advances_machine_time_and_emits_one_frame ... ok
+test key_input_event_presses_joypad_button ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/monochrome_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/monochrome_boot-0891b38d9a6363d3)
+
+running 3 tests
+test optional_monochrome_firmware_is_executed_and_unmapped ... ok
+test wrong_firmware_sizes_are_errors_and_no_firmware_keeps_skipped_boot ... ok
+test boot_mapping_and_latch_survive_snapshot_and_cold_reset ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/native_frames.rs (/private/tmp/198x-kirby-ly-target/release/deps/native_frames-85403ceed6f85c81)
+
+running 1 test
+test lcd_off_stops_without_a_fake_frame_and_resumes_after_restore ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/phase2_verification.rs (/private/tmp/198x-kirby-ly-target/release/deps/phase2_verification-d49c429c0a69df7b)
+
+running 11 tests
+test blargg_cpu_instrs_passes_all_11_subtests ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_instr_timing_passes ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_interrupt_time_full_rom_passes ... ignored, KNOWN LIMITATION: #324 full interrupt_time requires CGB; needs local Blargg ROM
+test blargg_interrupt_time_normal_speed_passes ... ignored, FIXTURE: needs local Blargg interrupt_time ROM; checks normal speed only
+test blargg_mem_timing_v1_and_v2_pass ... ignored, FIXTURE: needs local Blargg Game Boy ROMs
+test blargg_oam_bug_passes_aggregate_and_all_singles ... ignored, KNOWN DIVERGENCE: #1728 DMG OAM corruption; needs local Blargg ROMs
+test dmg_acid2_renders_non_trivial_frame ... ignored, FIXTURE: needs local dmg-acid2 ROM
+test mooneye_acceptance_gate_set_passes ... ignored, FIXTURE: needs local mooneye-gb acceptance ROMs
+test mooneye_broad_acceptance_sweep_reports_baseline ... ignored, DIAGNOSTIC: reports broad local mooneye coverage without gating CI
+test blargg_ram_report_keeps_final_text_and_status ... ok
+test interrupt_measurement_check_rejects_incomplete_and_wrong_counts ... ok
+
+test result: ok. 2 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/queries.rs (/private/tmp/198x-kirby-ly-target/release/deps/queries-3b22a85227ffaa1f)
+
+running 3 tests
+test query_provider_lists_gameboy_paths ... ok
+test headless_session_exposes_gameboy_queries ... ok
+test query_provider_reports_loaded_state_and_cpu_pc ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-kirby-ly-target/release/deps/snapshot_roundtrip-77fd93d7a3081fd6)
+
+running 3 tests
+test restore_rejects_corrupt_postcard_bytes ... ok
+test restore_rejects_snapshot_from_different_profile ... ok
+test snapshot_round_trip_preserves_state ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/snapshot_v3.rs (/private/tmp/198x-kirby-ly-target/release/deps/snapshot_v3-9fea67eee2d882f3)
+
+running 3 tests
+test legacy_wrong_profile_and_truncation_leave_live_state_unchanged ... ok
+test genuine_v3_states_load_for_every_existing_profile ... ok
+test migrated_execution_agrees_with_independent_baseline_continuations ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/synthetic_cartridge_boot.rs (/private/tmp/198x-kirby-ly-target/release/deps/synthetic_cartridge_boot-38c304b827959212)
+
+running 1 test
+test the_synthetic_cartridge_boots_and_draws_the_plate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+   Doc-tests common_nintendo_game_boy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests emu198x_nintendo_game_boy_ppu
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_game_boy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_game_boy_advance
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_game_boy_color
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_game_boy_pocket
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_super_game_boy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests machine_nintendo_super_game_boy_2
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests runtime_nintendo_game_boy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

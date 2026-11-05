@@ -1,0 +1,33 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-kirby-ly-fix/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/61106b1b0ef9fb26: Operation not permitted (os error 1)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling syn v3.0.3
+   Compiling serde_derive v1.0.229
+   Compiling serde-big-array v0.5.1
+   Compiling emu198x-nintendo-game-boy-ppu v0.1.0 (/private/tmp/198x-kirby-ly-fix/crates/emu198x-nintendo-game-boy-ppu)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.73s
+     Running unittests src/lib.rs (/private/tmp/198x-kirby-ly-target/debug/deps/emu198x_nintendo_game_boy_ppu-d1a1ee9612f69362)
+
+running 1 test
+test tests::dmg_ly_resets_early_without_ending_the_last_vblank_line ... FAILED
+
+failures:
+
+---- tests::dmg_ly_resets_early_without_ending_the_last_vblank_line stdout ----
+
+thread 'tests::dmg_ly_resets_early_without_ending_the_last_vblank_line' (1825740) panicked at crates/emu198x-nintendo-game-boy-ppu/src/tests.rs:328:9:
+assertion `left == right` failed: dot 4
+  left: 153
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    tests::dmg_ly_resets_early_without_ending_the_last_vblank_line
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 28 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p emu198x-nintendo-game-boy-ppu --lib`

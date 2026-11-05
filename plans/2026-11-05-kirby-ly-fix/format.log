@@ -1,0 +1,1 @@
+mise WARN  tracking config: failed to ln -sf /private/tmp/198x-kirby-ly-fix/rust-toolchain.toml /Users/stevehill/.local/state/mise/tracked-configs/61106b1b0ef9fb26: Operation not permitted (os error 1)
