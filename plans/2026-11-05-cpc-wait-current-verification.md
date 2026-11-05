@@ -56,7 +56,9 @@ PR #2296 merged at 11:36:18 UTC as
 `9d9f756a681c9a04a64f44fbd18ad05f52e82895`; #2284 closed automatically.
 The merged tree exactly equals the verified integration tree above. The
 public specimen/CPU-graph verifier also passes on the actual merged checkout.
-Post-merge CI run: 42020321431.
+[Post-merge CI run 42020321431](https://github.com/emu198x/emu198x/actions/runs/42020321431)
+completed successfully on that exact merged commit, including all four test
+shards and the final Test check. No failed jobs remain.
 
 All three task-owned temporary paths are removed and verified absent. Before
 removing the linked worktree, inspected tracked/untracked/ignored files (none),
