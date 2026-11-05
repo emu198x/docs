@@ -1,0 +1,41 @@
+diff --git i/crates/common-nintendo-game-boy/src/wiring.rs w/crates/common-nintendo-game-boy/src/wiring.rs
+index 1ad3039a0..42232023c 100644
+--- i/crates/common-nintendo-game-boy/src/wiring.rs
++++ w/crates/common-nintendo-game-boy/src/wiring.rs
+@@ -804,9 +804,35 @@ impl GameBoyState {
+     }
+ 
+     fn service_cpu(&mut self, ppu_took_write: bool) {
++        if std::env::var_os("KIRBY_CPU_TRACE").is_some()
++            && self.peek(0xFF50) & 1 != 0 && self.cpu.m_cycle == 0
++            && !self.cpu.halt_mode && !self.cpu.dispatching
++        {
++            use std::sync::atomic::{AtomicU64, Ordering};
++            static COUNT: AtomicU64 = AtomicU64::new(0);
++            let n = COUNT.fetch_add(1, Ordering::Relaxed);
++            if n < 150_000 {
++                let c = &self.cpu;
++                eprintln!("CPU {n} {:04x} {:02x} {:02x}{:02x} {:02x}{:02x} {:02x}{:02x} {:02x}{:02x} {:04x} ly={:02x} div={:04x}", c.pc, self.peek(c.pc), c.a,c.f,c.b,c.c,c.d,c.e,c.h,c.l,c.sp,self.peek(0xFF44), self.timer.counter);
++            }
++        }
+         if self.cpu.mreq {
+             if self.cpu.rd {
+-                let value = self.read(self.cpu.addr);
++                let mut value = self.read(self.cpu.addr);
++                if self.cpu.addr == 0xFF44 && self.peek(0xFF50) & 1 != 0 {
++                    if std::env::var_os("KIRBY_FORCE_FINAL_LY_ZERO").is_some() && self.ppu.ly == 153 && self.ppu.dot() >= 16 {
++                        value = 0;
++                    }
++                    if std::env::var_os("KIRBY_LY_TRACE").is_some() {
++                        use std::sync::atomic::{AtomicU64, Ordering};
++                        static COUNT: AtomicU64 = AtomicU64::new(0);
++                        let n = COUNT.fetch_add(1, Ordering::Relaxed);
++                        if n < 32 { eprintln!("LY {n} pc={:04x} value={value:02x} internal={} dot={}", self.cpu.pc, self.ppu.ly, self.ppu.dot()); }
++                    }
++                }
++                if self.cpu.addr == 0xFF04 && std::env::var_os("KIRBY_BUS_TRACE").is_some() {
++                    eprintln!("DIV pc={:04x} value={:02x} counter={:04x} ly={:02x} boot={:02x}", self.cpu.pc, value, self.timer.counter, self.peek(0xFF44), self.peek(0xFF50));
++                }
+                 self.cpu.data_in = value;
+             } else if self.cpu.wr && !ppu_took_write {
+                 let addr = self.cpu.addr;

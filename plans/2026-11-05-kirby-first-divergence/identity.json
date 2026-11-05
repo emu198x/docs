@@ -1,0 +1,13 @@
+{
+  "source_commit": "9d9f756a681c9a04a64f44fbd18ad05f52e82895",
+  "original_source_sha256": {
+    "crates/common-nintendo-game-boy/src/wiring.rs": "ac9a287114a114c8e384d3dc1ae27e99aa42be82807e64bbf34d7d978d36e3eb",
+    "crates/emu198x-nintendo-game-boy-ppu/src/lib.rs": "d4c295763f166a57639f9dcd8dcdcc8bc159836383c95f8d87499aeba088a987"
+  },
+  "probe_sha256": {
+    "observer.patch": "f5bc76f88e6b304600bb23e4036e5d5effc0c3ba7c31ca028cf0d5881c68d86d",
+    "emu_probe.rs": "13495a2d6466e5c7334dac91ce569bfb7d3d0087d1cacea98959d217b5939a6f",
+    "sameboy_probe.c": "e8e4547193b649f158417c840ddc7fb09d423e8cd78c47385514c37d5d4a956a"
+  },
+  "boot_sha256": "cf053eccb4ccafff9e67339d4e78e98dce7d1ed59be819d2a1ba2232c6fce1c7"
+}

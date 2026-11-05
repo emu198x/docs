@@ -1,0 +1,17 @@
+[
+  {
+    "mutation": "counterfactual_hash",
+    "exit_code": 1,
+    "error": "AssertionError"
+  },
+  {
+    "mutation": "missing_field",
+    "exit_code": 1,
+    "error": "AssertionError"
+  },
+  {
+    "mutation": "matching_ly",
+    "exit_code": 1,
+    "error": "AssertionError"
+  }
+]
