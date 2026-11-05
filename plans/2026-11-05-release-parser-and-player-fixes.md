@@ -92,3 +92,54 @@ Release PR #2300 prepares v0.48.1 at
 entries change only the workspace version, retaining dependencies and
 checksums. The only other changes are the root suite version and generated
 changelog. Rebase auto-merge waits for the required checks.
+
+All checks passed (CI run 41996155409). PR #2300 merged at 08:56:59 UTC as
+`6366b15babc91e1566a8d2af62885a893885e67c`; the v0.48.1 tag resolves to that
+exact commit. Tagged release run: 41998443790. The old main build was
+superseded normally by the new main push.
+
+Downloaded the tagged run's Apple silicon Spectrum artifact (artifact
+13401184671). Archive SHA-256:
+`58ed60d96fe2bb284bfd8fa862232016182c37486204f13b075a529694759114`.
+The executable rejects `run_until_pc.max_ticks`, `step.count` and fieldless
+`query_cpu.unexpected` with exit 1 and the offending field name. Against a
+synthetic NOP ROM, a valid 16-instruction script reports PCs 1 through 16;
+the final step and CPU query independently agree on PC `$0010`.
+
+## Player publication prerequisite
+
+While native qualification ran, checked the previous npm failure (run
+41662776592, player job 126010123131). The original PET profile was added
+without extending `web-player/fixtures.mjs`'s BASIC-ROM selection, so the
+full publication parity check supplies 12 KB where the runtime requires
+8 KB. The regular CI browser job does not run this full fleet check.
+
+Reproduce the fixture's wrong size for the real four PET profiles; change only
+the selection so BASIC 4's 12 KB image serves the two BASIC 4 profiles, and
+the existing 8 KB image serves both earlier profiles. Add a regression that
+checks actual fixture bytes against each runtime's declared BASIC size,
+including the original PET. Run that check in the existing browser CI job,
+and retain the complete native/WASM publication parity gate. Cut the next
+normal patch release with the checked correction; do not retarget v0.48.1.
+The site pin and live verifier must use that resulting published version.
+
+The regression reproduced the exact 12,288/8,192-byte runtime error before
+the change, then passed for all four PET profiles. A complete local player
+build passed every gate, including native/WASM parity for 85 variants; 52
+variants explicitly require additional local firmware. Workflow lint passed.
+The correction and regular-CI regression are commit `4bf5fb57d`, on
+`fix/player-pet-publication`. Local wasm-pack 0.15.0 reports 0.15.1 available;
+no tooling upgrade is part of the fix.
+
+Task-owned build output: `/private/tmp/codex-player-fixture-target`,
+`/private/tmp/codex-player-fixture-output`, and its bounded log
+`/private/tmp/codex-player-fixture-build.log`. The build's temporary stage in
+the pre-existing source `target/` was removed by its `finally` block.
+
+Native v0.48.1 is published (564 assets; publication time 09:29:41 UTC).
+Release run 41998443790 finished successfully, including Homebrew publication.
+The public Spectrum checksum sidecar matches the tested tag artifact above.
+Stopped npm run 42003489432 because it contains the reproduced fixture bug.
+PR #2301 holds the checked correction and has rebase auto-merge enabled.
+The final player publication therefore targets the next normal patch,
+v0.48.2, rather than rebuilding or retargeting either existing tag.
