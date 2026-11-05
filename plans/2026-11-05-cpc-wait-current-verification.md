@@ -49,3 +49,19 @@ hashes and the CPU graph pass the existing public verifier. Fresh 104
 common/runtime/board tests, 14 headless-runner tests, Clippy and formatting
 pass. The PR remains at checked head `322c672fbd7765aa91c4b4271849795a803ae3bc`;
 all hosted checks passed and GitHub reports it mergeable/CLEAN.
+
+## Merge and cleanup
+
+PR #2296 merged at 11:36:18 UTC as
+`9d9f756a681c9a04a64f44fbd18ad05f52e82895`; #2284 closed automatically.
+The merged tree exactly equals the verified integration tree above. The
+public specimen/CPU-graph verifier also passes on the actual merged checkout.
+Post-merge CI run: 42020321431.
+
+All three task-owned temporary paths are removed and verified absent. Before
+removing the linked worktree, inspected tracked/untracked/ignored files (none),
+rechecked all twelve old specimen hashes and confirmed its integration commit
+is retained by `verify/cpc-wait-current` in the main repository. No build/test
+process remains. The bounded trace, observer and controls are committed in
+the docs repo. Source `tools/__pycache__/`, the unrelated ZIP draft, and the
+other locked worktrees are preserved.

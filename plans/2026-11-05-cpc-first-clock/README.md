@@ -96,3 +96,7 @@ pass, along with Clippy (warnings denied), formatting and diff checks. The
 16 fixture-gated tests remain explicitly ignored in this ordinary run; their
 earlier explicit firmware/disc/tape/SHAKER results are retained in yesterday's
 qualification and are not counted as newly rerun tests.
+
+PR #2296 merged as `9d9f756a681c9a04a64f44fbd18ad05f52e82895`. Its tree
+exactly matches the tested integration tree; the public verifier also passes
+on the merged source. Issue #2284 is closed.

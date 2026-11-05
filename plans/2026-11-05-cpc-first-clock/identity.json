@@ -17,5 +17,7 @@
     }
   ],
   "firmware_sha256": "b7ced996800be6c846a3b18797c918660a272983ec14de0ea6b91caa6edbfc09",
-  "observer_sha256": "01bc0539af2a2a141004b87e4143ca02443166b03020f0c45ec94d1ca2ec7e8e"
+  "observer_sha256": "01bc0539af2a2a141004b87e4143ca02443166b03020f0c45ec94d1ca2ec7e8e",
+  "merged_commit": "9d9f756a681c9a04a64f44fbd18ad05f52e82895",
+  "verified_tree": "2e46a049d10aaf8e31e92f3e39c99163e44cbd59"
 }
