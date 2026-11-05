@@ -51,3 +51,15 @@ Game Boy PPU, with border disabled and a valid pixel sink. All four runs
 report the identical four-dot readable-153 interval and continued mode 1;
 the separate `reference-{dmg,mgb,sgb,sgb2}.jsonl` files retain the outputs.
 This checks the shared monochrome path without expanding the production fix.
+
+Standalone delivery check: `cargo publish --locked --dry-run` for PPU 0.1.1
+packages and verifies successfully. Inspected the generated `.crate` archive:
+its manifest says 0.1.1 and its `src/lib.rs` exactly matches the tested source.
+`package-verification.json` retains both hashes. This was a dry run; no crate
+was uploaded and no suite release was cut as part of this fix.
+
+PR #2304 merged at `161a6ce00b9f830640fef75101a29d71561ea75f`; #2182 is closed.
+All hosted checks passed on tested head `f3d10a7d95d4d5ba19d6a735ea2453ecf0274ab3`
+([CI run](https://github.com/emu198x/emu198x/actions/runs/42026477721)).
+The merged and tested Git trees are identical:
+`d343cc7a9fa9aaf597e6cae382b26683bd882e5d`.

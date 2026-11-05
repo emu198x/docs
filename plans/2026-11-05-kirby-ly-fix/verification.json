@@ -54,5 +54,10 @@
   "probe_sha256": "fc65e47ac60bb7f186656cba56717fe7fd6ec7c6642facd4001185ff8af3e6ac",
   "ppu_version": "0.1.1",
   "final_ppu_passed": 29,
-  "final_commercial_passed": 3
+  "final_commercial_passed": 3,
+  "merged_commit": "161a6ce00b9f830640fef75101a29d71561ea75f",
+  "tested_and_merged_tree": "d343cc7a9fa9aaf597e6cae382b26683bd882e5d",
+  "ci_run": "https://github.com/emu198x/emu198x/actions/runs/42026477721",
+  "ci_conclusion": "success",
+  "issue_state": "CLOSED"
 }

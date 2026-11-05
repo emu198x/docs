@@ -1,0 +1,9 @@
+{
+  "package": "emu198x-nintendo-game-boy-ppu",
+  "version": "0.1.1",
+  "archive_sha256": "062dc9856f687c131500e2023599bd9f5e4349b4ddd64c39b392811ce3e3f366",
+  "packaged_source_sha256": "169445e40e087127dc20a634e4599de489d05fd1e16f8c1f635ed94e35e7d6f7",
+  "matches_verified_source": true,
+  "cargo_publish_dry_run_exit": 0,
+  "published": false
+}
