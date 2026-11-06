@@ -1,0 +1,396 @@
+[
+  {
+    "headRefOid": "0292045f9a11a7488b5939e499a61e967b17adab",
+    "mergeCommit": {
+      "oid": "f8d7c7227199c1afe34ea07e1f4b5cccad33f693"
+    },
+    "number": 2167,
+    "state": "MERGED",
+    "statusCheckRollup": [
+      {
+        "name": "Release PR / Released versions have changelog entries",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237216/job/122362318851"
+      },
+      {
+        "name": "A500 Paula sample (private firmware)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553236526/job/122362312613"
+      },
+      {
+        "name": "C64 sprites against VICE (private firmware)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553236285/job/122362311868"
+      },
+      {
+        "name": "Rust / Format",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376839152"
+      },
+      {
+        "name": "Analyze (javascript-typescript)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553232199/job/122362303974"
+      },
+      {
+        "name": "PR title / Conventional title",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237506/job/122362317596"
+      },
+      {
+        "name": "plan",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362316032"
+      },
+      {
+        "name": "Analyze (python)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553232199/job/122362303488"
+      },
+      {
+        "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362654330"
+      },
+      {
+        "name": "Rust / Clippy",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376814190"
+      },
+      {
+        "name": "PR title / Conventional commits",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237506/job/122362318401"
+      },
+      {
+        "name": "build-global-artifacts",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362656159"
+      },
+      {
+        "name": "Rust / Workflows / actionlint",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376796272"
+      },
+      {
+        "name": "Rust / Coverage",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376743397"
+      },
+      {
+        "name": "custom-qualify-packages",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362658179"
+      },
+      {
+        "name": "Rust / Build (${{ matrix.os }})",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376744934"
+      },
+      {
+        "name": "Test hygiene",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376829449"
+      },
+      {
+        "name": "System registry",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376832348"
+      },
+      {
+        "name": "Shell semver",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376743326"
+      },
+      {
+        "name": "Synthetic cartridges",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376829437"
+      },
+      {
+        "name": "Firmware boot evidence",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376742445"
+      },
+      {
+        "name": "host",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362659675"
+      },
+      {
+        "name": "Build (macos-latest)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376837060"
+      },
+      {
+        "name": "Build (windows-latest)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376798307"
+      },
+      {
+        "name": "publish-homebrew-formula",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362660249"
+      },
+      {
+        "name": "Test",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376825341"
+      },
+      {
+        "name": "announce",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362660934"
+      },
+      {
+        "name": "Browser parity",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376793670"
+      },
+      {
+        "name": "custom-notify-discord",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237233/job/122362662044"
+      },
+      {
+        "name": "Apple hosts",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376797356"
+      },
+      {
+        "name": "GTK host",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553237793/job/122376739485"
+      }
+    ],
+    "url": "https://github.com/emu198x/emu198x/pull/2167"
+  },
+  {
+    "headRefOid": "9a976505f33bbfcc39966eac0a20346ca7f0cab1",
+    "mergeCommit": {
+      "oid": "6b8d0a87e1544166f57104b25af00177b52c6fa0"
+    },
+    "number": 2168,
+    "state": "MERGED",
+    "statusCheckRollup": [
+      {
+        "name": "Release PR / Released versions have changelog entries",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414494/job/122362949142"
+      },
+      {
+        "name": "A500 Paula sample (private firmware)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553413852/job/122362943933"
+      },
+      {
+        "name": "C64 sprites against VICE (private firmware)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553413383/job/122362942595"
+      },
+      {
+        "name": "Rust / Format",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948796"
+      },
+      {
+        "name": "Analyze (javascript-typescript)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553409678/job/122362949050"
+      },
+      {
+        "name": "PR title / Conventional title",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414430/job/122362945582"
+      },
+      {
+        "name": "plan",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122362946956"
+      },
+      {
+        "name": "Analyze (python)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553409678/job/122362949258"
+      },
+      {
+        "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363478861"
+      },
+      {
+        "name": "Rust / Clippy",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948858"
+      },
+      {
+        "name": "PR title / Conventional commits",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414430/job/122362946105"
+      },
+      {
+        "name": "build-global-artifacts",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363480917"
+      },
+      {
+        "name": "Rust / Workflows / actionlint",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362949244"
+      },
+      {
+        "name": "Rust / Coverage",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122365348598"
+      },
+      {
+        "name": "custom-qualify-packages",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363481804"
+      },
+      {
+        "name": "Rust / Build (${{ matrix.os }})",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122365348466"
+      },
+      {
+        "name": "Test hygiene",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362949019"
+      },
+      {
+        "name": "System registry",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948661"
+      },
+      {
+        "name": "Shell semver",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948999"
+      },
+      {
+        "name": "Synthetic cartridges",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948563"
+      },
+      {
+        "name": "Firmware boot evidence",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948179"
+      },
+      {
+        "name": "host",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363482447"
+      },
+      {
+        "name": "Build (macos-latest)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948636"
+      },
+      {
+        "name": "Build (windows-latest)",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948562"
+      },
+      {
+        "name": "publish-homebrew-formula",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363485786"
+      },
+      {
+        "name": "Test",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362949034"
+      },
+      {
+        "name": "announce",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363487746"
+      },
+      {
+        "name": "Browser parity",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948737"
+      },
+      {
+        "name": "custom-notify-discord",
+        "status": "COMPLETED",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553414501/job/122363489158"
+      },
+      {
+        "name": "Apple hosts",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948686"
+      },
+      {
+        "name": "GTK host",
+        "status": "COMPLETED",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/emu198x/emu198x/actions/runs/40553415057/job/122362948782"
+      }
+    ],
+    "url": "https://github.com/emu198x/emu198x/pull/2168"
+  }
+]

@@ -1,0 +1,69 @@
+
+running 1 test
+test pot_scan_public_registers ... FAILED
+
+failures:
+
+failures:
+    pot_scan_public_registers
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.82s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running src/bin/pokey_pot.rs (<target>/debug/deps/pokey_pot-78e1062023b434e6)
+clock=1789772 pot=0 case=0 actual=(228, 255)
+clock=1789772 pot=0 case=1 actual=(228, 255)
+clock=1789772 pot=0 case=2 actual=(228, 255)
+clock=1789772 pot=1 case=0 actual=(228, 255)
+clock=1789772 pot=1 case=1 actual=(228, 255)
+clock=1789772 pot=1 case=2 actual=(228, 255)
+clock=1789772 pot=2 case=0 actual=(228, 255)
+clock=1789772 pot=2 case=1 actual=(228, 255)
+clock=1789772 pot=2 case=2 actual=(228, 255)
+clock=1789772 pot=3 case=0 actual=(228, 255)
+clock=1789772 pot=3 case=1 actual=(228, 255)
+clock=1789772 pot=3 case=2 actual=(228, 255)
+clock=1789772 pot=4 case=0 actual=(228, 255)
+clock=1789772 pot=4 case=1 actual=(228, 255)
+clock=1789772 pot=4 case=2 actual=(228, 255)
+clock=1789772 pot=5 case=0 actual=(228, 255)
+clock=1789772 pot=5 case=1 actual=(228, 255)
+clock=1789772 pot=5 case=2 actual=(228, 255)
+clock=1789772 pot=6 case=0 actual=(228, 255)
+clock=1789772 pot=6 case=1 actual=(228, 255)
+clock=1789772 pot=6 case=2 actual=(228, 255)
+clock=1789772 pot=7 case=0 actual=(228, 255)
+clock=1789772 pot=7 case=1 actual=(228, 255)
+clock=1789772 pot=7 case=2 actual=(228, 255)
+clock=1773447 pot=0 case=0 actual=(228, 255)
+clock=1773447 pot=0 case=1 actual=(228, 255)
+clock=1773447 pot=0 case=2 actual=(228, 255)
+clock=1773447 pot=1 case=0 actual=(228, 255)
+clock=1773447 pot=1 case=1 actual=(228, 255)
+clock=1773447 pot=1 case=2 actual=(228, 255)
+clock=1773447 pot=2 case=0 actual=(228, 255)
+clock=1773447 pot=2 case=1 actual=(228, 255)
+clock=1773447 pot=2 case=2 actual=(228, 255)
+clock=1773447 pot=3 case=0 actual=(228, 255)
+clock=1773447 pot=3 case=1 actual=(228, 255)
+clock=1773447 pot=3 case=2 actual=(228, 255)
+clock=1773447 pot=4 case=0 actual=(228, 255)
+clock=1773447 pot=4 case=1 actual=(228, 255)
+clock=1773447 pot=4 case=2 actual=(228, 255)
+clock=1773447 pot=5 case=0 actual=(228, 255)
+clock=1773447 pot=5 case=1 actual=(228, 255)
+clock=1773447 pot=5 case=2 actual=(228, 255)
+clock=1773447 pot=6 case=0 actual=(228, 255)
+clock=1773447 pot=6 case=1 actual=(228, 255)
+clock=1773447 pot=6 case=2 actual=(228, 255)
+clock=1773447 pot=7 case=0 actual=(228, 255)
+clock=1773447 pot=7 case=1 actual=(228, 255)
+clock=1773447 pot=7 case=2 actual=(228, 255)
+counts=[16, 16, 16, 16] failures=[16, 16, 16, 0]
+
+thread 'pot_scan_public_registers' (198659845) panicked at src/bin/pokey_pot.rs:44:5:
+assertion `left == right` failed: pot scans must expose live counts and honour their clock source
+  left: [16, 16, 16, 0]
+ right: [0, 0, 0, 0]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test pokey_pot`

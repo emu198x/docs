@@ -1,0 +1,16 @@
+   Compiling emu198x-spectrum-web v0.45.0 (/private/tmp/198x-triage-source/crates/emu198x-spectrum-web)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.31s
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/emu198x_spectrum_web-6d4f11ad570619ee)
+
+running 8 tests
+test launcher_tests::launcher_reserves_code_and_preserves_the_requested_entry ... ok
+test basic_tape_tests::tape_header_starts_at_first_sorted_line_and_has_no_variables ... ok
+test tests::a_full_length_sna_parses ... ok
+test tests::a_truncated_sna_is_rejected ... ok
+test tests::an_unknown_snapshot_format_is_named_rather_than_guessed ... ok
+test tests::ordinary_keys_are_left_to_the_generic_mapping ... ok
+test tests::control_and_alt_both_reach_symbol_shift ... ok
+test tests::shift_reaches_caps_shift_because_the_spectrum_has_no_plain_shift ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

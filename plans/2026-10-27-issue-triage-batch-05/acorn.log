@@ -1,0 +1,92 @@
+ Downloading crates ...
+  Downloaded emu198x-mos-via-6522 v0.1.0
+  Downloaded format198x-acorn-uef v0.1.0
+   Compiling format198x-deflate v0.1.0
+   Compiling common-acorn-cassette v0.45.0 (/private/tmp/198x-triage-source/crates/common-acorn-cassette)
+   Compiling emu198x-western-digital-wd1770 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-western-digital-wd1770)
+   Compiling emu198x-motorola-6845 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-motorola-6845)
+   Compiling emu198x-mos-via-6522 v0.1.0
+   Compiling format-acorn-adfs v0.45.0 (/private/tmp/198x-triage-source/crates/format-acorn-adfs)
+   Compiling machine-acorn-bbc-micro v0.45.0 (/private/tmp/198x-triage-source/crates/machine-acorn-bbc-micro)
+   Compiling format198x-acorn-uef v0.1.0
+   Compiling format-acorn-uef v0.45.0 (/private/tmp/198x-triage-source/crates/format-acorn-uef)
+   Compiling machine-acorn-electron v0.45.0 (/private/tmp/198x-triage-source/crates/machine-acorn-electron)
+   Compiling runtime-acorn-bbc-micro v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-acorn-bbc-micro)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.14s
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/machine_acorn_electron-9140165d82f92f1b)
+
+running 35 tests
+test plus3::tests::mr_low_resets_the_1770_and_locks_its_registers ... ok
+test plus3::tests::a_sector_reads_through_the_latch_and_registers ... ok
+test plus3::tests::the_1770_registers_sit_at_fcc4_to_fcc7 ... ok
+test plus3::tests::the_latch_selects_drive_side_and_density ... ok
+test plus3::tests::the_rom_latch_follows_fe05_writes_with_a_clear_top_nibble ... ok
+test plus3::tests::no_drive_selected_finds_no_sector ... ok
+test tests::a_fitted_plus_3_pages_adfs_into_rom_4_and_decodes_its_registers ... ok
+test tests::basic_answers_only_in_pages_10_and_11_and_empty_pages_float_high ... ok
+test plus3::tests::adfs_disk_pads_and_protects ... ok
+test tests::communications_mode_gates_sound_and_zero_is_a_valid_pitch ... ok
+test tests::display_halt_only_bites_ram_in_modes_0_3_fetch_window ... ok
+test tests::keyboard_paged_rom_is_contended ... ok
+test tests::keyboard_press_and_release_round_trip ... ok
+test tests::interrupt_control_write_gates_master_irq ... ok
+test tests::from_pages_8_to_11_only_a_write_with_bit_3_changes_the_page ... ok
+test tests::keyboard_reads_active_high_through_paged_rom ... ok
+test tests::palette_decodes_mode6_black_on_white ... ok
+test tests::palette_register_write_inverts_and_stores ... ok
+test tests::ram_access_costs_two_master_ticks_rom_one ... ok
+test tests::memory_map_routes_pages ... ok
+test tests::sound_counter_uses_documented_eight_bit_pitch ... ok
+test tests::sound_toggles_after_eight_times_counter_plus_one_master_ticks ... ok
+test tests::the_cpu_sees_the_irq_line_fall_within_a_scanline ... ok
+test tests::ula_screen_start_decodes_mode6_base ... ok
+test tests::vblank_signal_sets_status_and_master_irq ... ok
+test tests::ula_misc_control_sets_display_mode ... ok
+test tests::frame_runs_expected_cycles ... ok
+test tests::ram_bound_code_fits_fewer_cpu_cycles_than_rom_bound ... ok
+test tests::ram_resident_loop_crawls_in_mode0_versus_mode4 ... ok
+test tests::stepping_a_frames_worth_of_instructions_raises_what_running_raises ... ok
+test tests::a_6502_program_reads_a_sector_from_a_plus_3_disc_by_polling ... ok
+test tests::cassette_delivers_a_byte_and_raises_then_clears_the_interrupts ... ok
+test tests::cassette_does_not_play_while_the_motor_is_off ... ok
+test tests::snapshot_round_trips_live_state ... ok
+test tests::many_frames_complete_without_panic ... ok
+
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/runtime_acorn_bbc_micro-96ff64a08279acb9)
+
+running 10 tests
+test input::tests::axis_scales_to_the_12bit_pot_range ... ok
+test profiles::tests::profile_declares_mos_firmware ... ok
+test profiles::tests::the_b_plus_adds_its_mos_the_dfs_and_two_drives ... ok
+test profiles::tests::the_master_names_its_mos_and_rom_set_and_two_drives ... ok
+test snapshot::tests::decode_rejects_old_schema_before_reading_payload ... ok
+test input::tests::keyboard_matrix_is_the_authoritative_bbc_layout ... ok
+test snapshot::tests::decode_rejects_unsupported_version ... ok
+test input::tests::axes_route_to_the_right_adc_channels ... ok
+test input::tests::unknown_axis_name_is_ignored ... ok
+test runtime::catalogue_tests::firmware_constructor_installs_font_and_language_policy_survives_reset ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/bplus_disc_media.rs (/private/tmp/198x-triage-target/debug/deps/bplus_disc_media-ba1638e00540ce8f)
+
+running 5 tests
+test the_catalogue_names_the_b_plus_and_its_mos ... ok
+test a_model_b_has_no_disc_slots ... ok
+test the_b_plus_fits_its_dfs_in_bank_14 ... ok
+test a_disc_loads_survives_a_reset_exports_and_ejects ... ok
+test a_disc_snapshot_restores ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.90s
+
+     Running tests/master_runtime.rs (/private/tmp/198x-triage-target/debug/deps/master_runtime-1696a1b9a0611d91)
+
+running 3 tests
+test the_catalogue_offers_the_master ... ok
+test the_rom_set_fills_banks_9_to_15_and_4_to_7_are_ram ... ok
+test a_disc_loads_and_a_snapshot_keeps_the_65c12 ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.83s
+

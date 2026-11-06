@@ -1,0 +1,113 @@
+ Downloading crates ...
+  Downloaded format198x-sinclair-zx-spectrum-z80 v0.1.0
+  Downloaded format198x-sinclair-zx-spectrum-sna v0.1.0
+  Downloaded format198x-sinclair-zx-spectrum-szx v0.1.0
+   Compiling emu198x-bus-sinclair-zx-spectrum v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-bus-sinclair-zx-spectrum)
+   Compiling format-sinclair-zx-spectrum-snapshot v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-snapshot)
+   Compiling syn v2.0.117
+   Compiling zerocopy v0.8.48
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.9
+   Compiling format198x-sinclair-zx-spectrum-z80 v0.1.0
+   Compiling autocfg v1.5.0
+   Compiling regex-syntax v0.8.10
+   Compiling clap_lex v1.1.0
+   Compiling ciborium-io v0.2.2
+   Compiling either v1.16.0
+   Compiling emu198x-sinclair-zx-spectrum-ula v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-sinclair-zx-spectrum-ula)
+   Compiling emu198x-peripheral-romantic-robot-sinclair-zx-spectrum-multiface v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-romantic-robot-sinclair-zx-spectrum-multiface)
+   Compiling emu198x-peripheral-kempston-sinclair-zx-spectrum-joystick v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-kempston-sinclair-zx-spectrum-joystick)
+   Compiling emu198x-peripheral-sinclair-zx-spectrum-divmmc v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-sinclair-zx-spectrum-divmmc)
+   Compiling emu198x-peripheral-sinclair-zx-spectrum-interface1 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-sinclair-zx-spectrum-interface1)
+   Compiling emu198x-peripheral-kempston-sinclair-zx-spectrum-mouse v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-kempston-sinclair-zx-spectrum-mouse)
+   Compiling cc v1.2.62
+   Compiling format-sinclair-zx-spectrum-z80 v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-z80)
+   Compiling emu198x-peripheral-sinclair-zx-spectrum-beta-disk v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-peripheral-sinclair-zx-spectrum-beta-disk)
+   Compiling common-sinclair-zx-spectrum v0.45.0 (/private/tmp/198x-triage-source/crates/common-sinclair-zx-spectrum)
+   Compiling emu198x-amstrad-ula-40077 v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-amstrad-ula-40077)
+   Compiling emu198x-ferranti-ula-6c001e v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-ferranti-ula-6c001e)
+   Compiling emu198x-sinclair-ula-7k010e v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-sinclair-ula-7k010e)
+   Compiling num-traits v0.2.19
+   Compiling emu198x-timex-scld v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-timex-scld)
+   Compiling anstyle v1.0.14
+   Compiling emu198x-pentagon-ula v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-pentagon-ula)
+   Compiling emu198x-scorpion-ula v0.1.0 (/private/tmp/198x-triage-source/crates/emu198x-scorpion-ula)
+   Compiling itertools v0.13.0
+   Compiling cast v0.3.0
+   Compiling same-file v1.0.6
+   Compiling format198x-sinclair-zx-spectrum-szx v0.1.0
+   Compiling tinytemplate v1.2.1
+   Compiling clap_builder v4.6.0
+   Compiling walkdir v2.5.0
+   Compiling regex-automata v0.4.14
+   Compiling page_size v0.6.0
+   Compiling common-sinclair-zx-spectrum-amstrad-class v0.45.0 (/private/tmp/198x-triage-source/crates/common-sinclair-zx-spectrum-amstrad-class)
+   Compiling common-sinclair-zx-spectrum-48k-class v0.45.0 (/private/tmp/198x-triage-source/crates/common-sinclair-zx-spectrum-48k-class)
+   Compiling common-sinclair-zx-spectrum-128k-class v0.45.0 (/private/tmp/198x-triage-source/crates/common-sinclair-zx-spectrum-128k-class)
+   Compiling format-sinclair-zx-spectrum-tzx v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-tzx)
+   Compiling machine-sinclair-zx-spectrum-plus v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-plus)
+   Compiling machine-sinclair-zx-spectrum-16k v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-16k)
+   Compiling machine-sinclair-zx-spectrum-plus3 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-plus3)
+   Compiling machine-sinclair-zx-spectrum-plus2a v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-plus2a)
+   Compiling machine-sinclair-zx-spectrum-plus2b v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-plus2b)
+   Compiling alloca v0.4.0
+   Compiling machine-sinclair-zx-spectrum-plus2 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-plus2)
+   Compiling machine-sinclair-zx-spectrum-128k v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-128k)
+   Compiling machine-sinclair-zx-spectrum-48k v0.45.0 (/private/tmp/198x-triage-source/crates/machine-sinclair-zx-spectrum-48k)
+   Compiling machine-timex-tc2048 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-timex-tc2048)
+   Compiling machine-scorpion-zs256 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-scorpion-zs256)
+   Compiling machine-pentagon-128 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-pentagon-128)
+   Compiling criterion-plot v0.8.2
+   Compiling machine-timex-ts2068 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-timex-ts2068)
+   Compiling format-sinclair-zx-spectrum-mdr v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-mdr)
+   Compiling oorandom v11.1.5
+   Compiling format198x-sinclair-zx-spectrum-bas v0.1.3
+   Compiling format198x-sinclair-zx-spectrum-sna v0.1.0
+   Compiling anes v0.1.6
+   Compiling regex v1.12.3
+   Compiling format198x-sinclair-zx-spectrum-tap v0.1.1
+   Compiling format-sinclair-zx-spectrum-sna v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-sna)
+   Compiling format-sinclair-zx-spectrum-szx v0.45.0 (/private/tmp/198x-triage-source/crates/format-sinclair-zx-spectrum-szx)
+   Compiling twox-hash v2.1.5
+   Compiling runtime-sinclair-zx-spectrum v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-sinclair-zx-spectrum)
+   Compiling clap v4.6.1
+   Compiling zerocopy-derive v0.8.48
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.85s
+     Running tests/cycle_profile.rs (/private/tmp/198x-triage-target/debug/deps/cycle_profile-7eab547d35fb0c77)
+
+running 14 tests
+test block_repeat_charges_both_iterations_to_the_opcode ... ok
+test indexed_bit_instruction_has_one_retirement_at_its_first_prefix ... ok
+test invalid_budgets_do_not_advance ... ok
+test measured_loop_has_taken_and_untaken_costs_and_separate_halt_waiting ... ok
+test partial_start_is_not_charged_as_a_complete_instruction ... ok
+test prefixes_belong_to_the_first_byte_and_capture_can_end_mid_instruction ... ok
+test profiling_consumes_queued_keyboard_input_before_running ... ok
+test nmi_entry_is_a_separate_interval_too ... ok
+test active_recording_is_refused_without_advancing ... ok
+test every_start_phase_preserves_complete_nop_costs ... ok
+test source_totals_preserve_unmapped_execution ... ok
+test real_assembler_sidecar_joins_costs_and_mcp_matches_script ... ok
+test interrupt_entry_is_not_charged_to_the_interrupted_pc ... ok
+test capture_is_observational_across_contention_frame_wrap_and_snapshot_restore ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/routine_cycle_profile.rs (/private/tmp/198x-triage-target/debug/deps/routine_cycle_profile-f2b86053948014bf)
+
+running 8 tests
+test misspelled_page_fields_cannot_silently_become_flat_ranges ... ok
+test call_at_capture_end_does_not_invent_a_callee_duration ... ok
+test recursive_program_counts_invocations_without_multiplying_ticks ... ok
+test declared_routines_exclude_callee_costs_and_match_mcp ... ok
+test asm_listing_compares_execution_weighted_exclusive_costs_in_script_and_mcp ... ok
+test interrupt_inside_a_call_suspends_its_cost_without_changing_execution ... ok
+test static_comparison_refuses_wrong_cpu_and_missing_sidecar_before_execution ... ok
+test invalid_routines_refuse_before_machine_advances ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+

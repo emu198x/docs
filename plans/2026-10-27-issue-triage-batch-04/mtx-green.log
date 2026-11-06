@@ -1,0 +1,46 @@
+   Compiling runtime-memotech-mtx v0.45.0 (/private/tmp/198x-triage-source/crates/runtime-memotech-mtx)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.30s
+     Running unittests src/lib.rs (/private/tmp/198x-triage-target/debug/deps/runtime_memotech_mtx-a5d93ab534801045)
+
+running 10 tests
+test input::tests::releasing_a_key_restores_its_sense_line ... ok
+test input::tests::key_names_close_their_real_hardware_matrix_cells ... ok
+test runtime::tests::every_legend_names_a_key_this_machine_has ... ok
+test runtime::tests::keys_shift_does_not_change_are_not_legends ... ok
+test profiles::tests::profile_declares_rom_firmware ... ok
+test runtime::tests::legends_are_one_to_one ... ok
+test runtime::tests::the_operators_that_were_unreachable_are_reachable ... ok
+test input::tests::button_events_drive_the_joystick_matrix_lines ... ok
+test snapshot::tests::decode_rejects_future_version_before_payload_decode ... ok
+test snapshot::tests::decode_rejects_version_2_before_payload_decode ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/media.rs (/private/tmp/198x-triage-target/debug/deps/media-9304188cb8dbc30c)
+
+running 2 tests
+test an_empty_media_set_preserves_the_live_machine ... ok
+test unsupported_media_does_not_report_success_or_change_live_state ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/snapshot_roundtrip.rs (/private/tmp/198x-triage-target/debug/deps/snapshot_roundtrip-f22b892a9f9a4649)
+
+running 1 test
+test snapshot_round_trip_preserves_live_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/variants.rs (/private/tmp/198x-triage-target/debug/deps/variants-1b32a8be18fbc11f)
+
+running 1 test
+test every_preset_switches_with_its_real_memory_map_and_frame_budget ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests runtime_memotech_mtx
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

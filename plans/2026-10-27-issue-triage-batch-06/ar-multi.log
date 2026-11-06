@@ -1,0 +1,9 @@
+   Compiling machine-atari-2600 v0.45.0 (/private/tmp/198x-triage-source/crates/machine-atari-2600)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.70s
+     Running tests/supercharger_multiload.rs (/private/tmp/198x-triage-target/debug/deps/supercharger_multiload-e8fa74c120ac3ba0)
+
+running 1 test
+test multi_load_advances_to_the_next_load_on_the_machine ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.82s
+

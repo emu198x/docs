@@ -1,0 +1,1746 @@
+{
+  "measured_at": "2026-10-27T18:17:45.744820+00:00",
+  "total_reviewed": 248,
+  "open": 237,
+  "completed": 9,
+  "consolidated": 2,
+  "queue_coverage": "246 unique open-at-start entries plus 2 batch-1 closures; no gaps or duplicate identities",
+  "issues": [
+    {
+      "repository": "emu198x/docs",
+      "number": 2,
+      "title": "Give each machine a stable page, so other projects have somewhere to link",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/docs/issues/2"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 35,
+      "title": "Amiga: horizontal DIW fetch trimming + ECS programmable sync",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/35"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 43,
+      "title": "Amiga: Gayle PCMCIA path for A600/A1200",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/43"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 46,
+      "title": "Spectrum: Beta WD1793 writes, save-state persistence and TRD export",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/46"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 47,
+      "title": "Spectrum: load TRD disks through TR-DOS on Pentagon and Scorpion",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/47"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 49,
+      "title": "Spectrum: track CSW, PZX and SCL media support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/49"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 52,
+      "title": "Spectrum: correct Timex SCLD rendering and complete TS2068/TC2068 boot",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/52"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 53,
+      "title": "Spectrum: support direct BASIC loading in 128K-family editors",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/53"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 55,
+      "title": "Spectrum: ZX Printer ($FB)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/55"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 56,
+      "title": "Spectrum: ULAplus ($BF3B/$FF3B)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/56"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 57,
+      "title": "Spectrum: Interface 2 ROM cartridge support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/57"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 60,
+      "title": "Spectrum: Spectranet hardware and host networking",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/60"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 61,
+      "title": "Spectrum: Interface 1 ZX Net",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/61"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 78,
+      "title": "NES: MMC2 (9) + MMC4 (10) mappers",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/78"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 79,
+      "title": "NES: GxROM (66) mapper",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/79"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 80,
+      "title": "NES: PAL/Dendy selectable",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/80"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 81,
+      "title": "NES: NES 2.0 header completion",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/81"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 86,
+      "title": "NES: Sunsoft 5B (69) audio + IRQ",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/86"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 87,
+      "title": "NES: Namco 163 (19)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/87"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 88,
+      "title": "NES: VRC7 FM (85)",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/88"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 90,
+      "title": "NES: UNIF parsing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/90"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 91,
+      "title": "NES: niche controllers (Power Pad, Arkanoid paddle, R.O.B.)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/91"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 92,
+      "title": "[Epic] NES mapper coverage and hardware-test ledger",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/92"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 100,
+      "title": "Amiga: serial baud timing + host transport",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/100"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 101,
+      "title": "Amiga: POT analog ramp",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/101"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 102,
+      "title": "Amiga: Hardfile/HDF + RDB + Gayle IDE drive",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/102"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 103,
+      "title": "Amiga: prove A500+ full-ECS boot with Kickstart 2.04",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/103"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 104,
+      "title": "Amiga: Extended ADF",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/104"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 105,
+      "title": "Amiga: IPF (SPS)",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/105"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 106,
+      "title": "Amiga: DMS / ADZ",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/106"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 107,
+      "title": "Amiga: RF5C01A RTC",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/107"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 108,
+      "title": "Amiga: Zorro-II multi-board chaining",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/108"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 109,
+      "title": "Amiga: parallel port data, handshake and host integration",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/109"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 110,
+      "title": "Amiga: A3000 (68030)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/110"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 111,
+      "title": "Amiga: A4000 (68040)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/111"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 113,
+      "title": "Amiga: MMU decode + bus integration",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/113"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 115,
+      "title": "Amiga: CDTV",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/115"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 116,
+      "title": "Amiga: CD32 (+Akiko)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/116"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 117,
+      "title": "[Epic] Amiga expansion breadth: PCMCIA, networking, and RTG",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/117"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 118,
+      "title": "[Epic] Amiga software validation matrix across OCS, ECS, and AGA",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/118"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 130,
+      "title": "6809: model documented illegal-opcode behaviour instead of halting",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/130"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 132,
+      "title": "Game Boy: qualify remaining STOP edge cases and speed-switch timing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/132"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 149,
+      "title": "SN76489: Game Gear stereo panning stored but never applied to output",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/149"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 158,
+      "title": "MC6847: model RG6 colourburst-suppression artifact colours",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/158"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 166,
+      "title": "6845: complete interlace timing and HD6845S skew",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/166"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 191,
+      "title": "POKEY pot scanner is scan-line granular; fast-pot mode not modelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/191"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 192,
+      "title": "POKEY: qualify active high-pass timing and audio phases",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/192"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 193,
+      "title": "Atari 7800: mix cartridge POKEY into the host audio stream",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/193"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 196,
+      "title": "MARIA: validate native DMA timing against a hardware-qualified ROM",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/196"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 197,
+      "title": "MARIA: qualify physical NMI timing across production revisions",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/197"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 211,
+      "title": "SN76489: qualify zero-period behaviour by chip variant and noise mode",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/211"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 215,
+      "title": "SMS: Korean mapper variants unsupported",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/215"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 216,
+      "title": "SMS: expose BIOS firmware profiles and validate boot/checksum/built-in paths",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/216"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 220,
+      "title": "Game Gear: route stereo runtime output and add a real `.gg` cartridge smoke",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/220"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 221,
+      "title": "SMS: TH-driven peripherals (Sports Pad, Paddle, Handle, SegaScope 3-D) unsupported",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/221"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 223,
+      "title": "SG-1000 has no cartridge mapper support; bank-switched and on-cart-RAM carts cannot run",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/223"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 224,
+      "title": "SC-3000: implement its machine crate, keyboard/PPI and BASIC input",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/224"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 225,
+      "title": "SC-3000: provide the correct RAM in its own machine implementation",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/225"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 228,
+      "title": "SG-1000 SF-7000 disk subsystem (SC-3000 expansion) unsupported",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/228"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 229,
+      "title": "ColecoVision: cartridge ROM mapped flat \u2014 no megacart bankswitching",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/229"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 231,
+      "title": "ColecoVision: no Super Action Controller (spinner + extra buttons)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/231"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 232,
+      "title": "ColecoVision: no Roller Controller (trackball) support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/232"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 233,
+      "title": "ColecoVision: cartridge images loaded with no header/format validation",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/233"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 234,
+      "title": "ColecoVision: Expansion Module #1 (Atari 2600 adapter) unsupported",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/234"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 235,
+      "title": "ColecoVision: Expansion Module #2 (Turbo driving module) unsupported",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/235"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 240,
+      "title": "MSX1: cassette support \u2014 CAS load + PPI/PSG bit-bang transport",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/240"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 241,
+      "title": "MSX1: disk support \u2014 FAT12 DSK image + FDC + disk-BIOS cartridge",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/241"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 242,
+      "title": "MSX1: wire PPI port C outputs \u2014 keyboard click, CAPS LED, cassette",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/242"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 244,
+      "title": "MSX: configurable primary and secondary slot expansion",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/244"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 245,
+      "title": "MSX1: rarer cartridge mappers + battery-backed SRAM persistence",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/245"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 249,
+      "title": "Sord M5: cartridge is flat-mapped to 20 KB \u2014 no bank-switching / $30 paging latch",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/249"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 250,
+      "title": "Sord M5: cassette and Centronics printer ports unmodelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/250"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 252,
+      "title": "Sord M5: reconcile legacy PAL saves and qualify reference timing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/252"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 258,
+      "title": "SVI-328: add cassette SAVE/writeback for the working CAS transport",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/258"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 259,
+      "title": "SVI-318: implement its distinct board and 16 KiB user-RAM map",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/259"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 260,
+      "title": "SVI-318/328: implement the SVI-801 FD1793 disk-controller expansion",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/260"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 261,
+      "title": "MTX: file loading remains unwired after .mtx/.run parsers landed",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/261"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 263,
+      "title": "MTX: cassette in/out (port $03) unwired \u2014 no tape load/save",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/263"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 264,
+      "title": "MTX: Centronics printer (port $00 in / $04) not implemented",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/264"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 267,
+      "title": "MTX: verify CTC interrupt timing and PSG clock cadence against MEMU",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/267"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 268,
+      "title": "MTX: CP/M mode has no disk subsystem (FDX/HDX/SDX) behind RELCPMH",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/268"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 269,
+      "title": "MTX: model + firmware breadth \u2014 RS128 variant and optional paged ROMs",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/269"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 271,
+      "title": "Einstein: implement the Z80 CTC channels (currently a single-register stub at $28)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/271"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 275,
+      "title": "Einstein: peripheral breadth \u2014 cassette load, printer/RS-232 (8251), second floppy",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/275"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 276,
+      "title": "Einstein: export modified DSK media safely and qualify raw-MFM/LOST DATA",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/276"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 277,
+      "title": "Einstein: reject malformed DSK images and consolidate container parsing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/277"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 281,
+      "title": "Jupiter Ace: load native .tap tapes (bulk of the surviving library)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/281"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 282,
+      "title": "Jupiter Ace: model tape I/O on port $FE (MIC bit 3 + EAR bit 5)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/282"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 283,
+      "title": "Jupiter Ace: tape SAVE with explicit image export",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/283"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 286,
+      "title": "Jupiter Ace: cite or record the deliberate warm-white CRT colour",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/286"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 288,
+      "title": "Jupiter Ace: preservation tail \u2014 Forth-toolkit ROM carts, RAM-pack variants, timed tapes",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/288"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 311,
+      "title": "Aquarius: display is painted once at end-of-frame \u2014 no mid-frame (per-scanline) fidelity",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/311"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 312,
+      "title": "Aquarius: establish video encoder identity and derive a sourced palette",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/312"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 313,
+      "title": "Aquarius: cassette signal input and CAQ loading",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/313"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 316,
+      "title": "Game Boy PPU: resolve the remaining Mealybug DMG-CPU B pixels",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/316"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 320,
+      "title": "Game Boy: lock real-game screenshot smoke regressions",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/320"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 323,
+      "title": "Game Boy: add optional monochrome boot-ROM execution (CGB path exists)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/323"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 326,
+      "title": "Game Boy: Super Game Boy super functions",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/326"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 327,
+      "title": "Game Boy: link-cable / serial peer transport",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/327"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 328,
+      "title": "Game Boy: long-tail mapper support (MBC6, MBC7+sensor, HuC1/HuC3, MMM01, Pocket Camera, TAMA5)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/328"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 329,
+      "title": "Game Boy: surface MBC5 rumble as a host output event",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/329"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 333,
+      "title": "DragonDOS: cross-check WD2797 DRQ/INTRQ cadence against XRoar or hardware",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/333"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 334,
+      "title": "Dragon: cassette SAVE capture and explicit CAS export",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/334"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 335,
+      "title": "Dragon: add JVC sector images and DMK raw-track disk support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/335"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 336,
+      "title": "Cartridge banking limited to plain ROM + Games Master; wider banked carts unmodelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/336"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 342,
+      "title": "Oric: capture VIA PB7 cassette output and export recorded TAP files",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/342"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 343,
+      "title": "Oric: Microdisc 3-inch floppy (WD1793 + Sedoric ROM overlay) and .dsk format",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/343"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 345,
+      "title": "Oric-1: require a distinct BASIC 1.0 firmware profile and validate its boot",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/345"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 349,
+      "title": "PET: wire the second 6520 PIA at $E820 (IEEE-488 data + handshake)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/349"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 350,
+      "title": "PET: implement the IEEE-488 bus and an IEEE disk drive (LOAD/SAVE)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/350"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 351,
+      "title": "PET: datassette LOAD and tape SAVE are unwired",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/351"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 355,
+      "title": "PET: correct board/firmware models and extend family coverage",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/355"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 356,
+      "title": "PET: SuperPET 6809 second CPU",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/356"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 364,
+      "title": "VIC-20: no cassette or disk media \u2014 TAP/T64/D64 + IEC unwired",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/364"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 380,
+      "title": "BBC Model B: implement the 8271 disk/DFS path (B+/Master disks exist)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/380"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 386,
+      "title": "BBC Micro: add CSW cassette-container support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/386"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 387,
+      "title": "BBC Micro: expose the modelled 6850 through an RS-423 serial endpoint",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/387"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 388,
+      "title": "BBC Micro: User VIA peripherals (Centronics printer, user port) not consumed",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/388"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 389,
+      "title": "BBC Micro: Econet LAN not modelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/389"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 390,
+      "title": "BBC Micro: Tube second-processor interface not modelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/390"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 391,
+      "title": "BBC Micro: speech (TMS5220) not modelled",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/391"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 395,
+      "title": "Electron: general expansion-ROM insertion beyond the Plus 3",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/395"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 399,
+      "title": "Electron: Plus 1 expansion - joystick ADC, Centronics printer, cartridge ROM slots",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/399"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 401,
+      "title": "Electron: cassette recording/export and CSW breadth",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/401"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 412,
+      "title": "Atari 2600: CRC override for carts the detection heuristics misclassify",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/412"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 418,
+      "title": "Atari 5200: AtariMax flash cartridges unsupported (Bounty Bob done in #1190)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/418"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 421,
+      "title": "Atari 5200: only one fire button on one controller is wired (no second button, no ports 2-4)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/421"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 431,
+      "title": "Atari 7800: build a MARIA per-line oracle / visual-diff harness",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/431"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 433,
+      "title": "Atari 7800: cartridge supports only Flat + plain SuperGame \u2014 add SuperGame-RAM, POKEY-on-cart, Absolute, Activision schemes",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/433"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 434,
+      "title": "Atari 7800: only the P0 controller is exposed \u2014 add second controller and keypad/console input",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/434"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 436,
+      "title": "Atari 7800: add the BIOS overlay (authenticity, not a boot blocker)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/436"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 437,
+      "title": "Atari 7800: add High-Score Cartridge (HSC) support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/437"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 438,
+      "title": "Atari 7800: add light-gun (XG-1) and paddle peripherals",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/438"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 444,
+      "title": "Atari 800XL: wire paddle pots and the second joystick port",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/444"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 449,
+      "title": "Atari 800XL: model breadth \u2014 130XE extended RAM and 400/800 variants",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/449"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 456,
+      "title": "[Epic] Shell capability parity across MCP, script, and UI",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/456"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 461,
+      "title": "Conformance: validate palette tables and mode geometry against the mediaspec crate",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/461"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 462,
+      "title": "Smoke-load: render build198x converter output and compare losslessly",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/462"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 496,
+      "title": "Sega Mega Drive core (68000 + VDP + YM2612/PSG)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/496"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 497,
+      "title": "Super Nintendo (SNES) core (65816 + PPU + SPC700)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/497"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 499,
+      "title": "Amstrad CPC core (Z80 + CRTC 6845 + Gate Array + AY-3-8912)",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/499"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 500,
+      "title": "Sharp X68000 core (68000 + custom video + YM2151)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/500"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 501,
+      "title": "Apple II core (6502 + hi-res framebuffer + Disk II)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/501"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 502,
+      "title": "SAM Coup\u00e9 core (Z80B + ASIC video + SAA1099)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/502"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 503,
+      "title": "Atari Lynx core (65SC02 + Suzy/Mikey)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/503"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 504,
+      "title": "Virtual network bridge between cores (cross-platform netplay testing)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/504"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 546,
+      "title": "Atari 2600: Starpath Supercharger (AR) format support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/546"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 720,
+      "title": "Capability declarations aren't conformance-checked \u2014 declared-but-unwired features report success",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/720"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 807,
+      "title": "common-commodore-drive-gcr: thread DriveGeometry through the track builders (gated on an 8050-class drive)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/807"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 808,
+      "title": "1571: support G71 (double-sided raw-GCR) images",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/808"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 810,
+      "title": "C64 drives: hoist the shared IO-trace scaffold onto IecDriveBoard (#806 residual)",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/810"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 823,
+      "title": "Amiga DOSLab: add a bounded semantic Exec/DOS event trace",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/823"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 824,
+      "title": "Amiga DOSLab: deterministic Kickstart 1.3 OFS boot/probe regression",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/824"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 826,
+      "title": "[Epic] Amiga fidelity programme and executable verification matrix",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/826"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 827,
+      "title": "Amiga docs: correct and source-pin future-family architecture",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/827"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 828,
+      "title": "Amiga conformance: versioned manifest, trace import and differential runner",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/828"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 829,
+      "title": "Amiga firmware: Kickstart/Workbench/extension-ROM catalogue and compatibility matrix",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/829"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 830,
+      "title": "Amiga profiles: silicon/board revisions, PAL/NTSC and truthful support status",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/830"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 831,
+      "title": "[Epic] Amiga accelerators: clock domains, CPU boards, local RAM, caches and DMA",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/831"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 832,
+      "title": "[Epic] Amiga expansion fabric: typed connectors, Zorro II/III and AutoConfig",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/832"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 833,
+      "title": "[Epic] Amiga RTG: multi-display contract, real-board and synthetic P96 personalities",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/833"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 834,
+      "title": "[Epic] Apollo 68080/Vampire/SAGA: versioned CPU, accelerator and standalone personalities",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/834"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 835,
+      "title": "[Epic] PiStorm/Emu68: versioned guest-visible accelerator and service personalities",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/835"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 938,
+      "title": "No conditional breakpoint: run_until_pc cannot stop on a flag, so \"the call that failed\" is unreachable",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/938"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1042,
+      "title": "On-screen clickable keyboard, shared across every machine",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1042"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1194,
+      "title": "Acorn: TIBET tape format has no parser, and it is where new BBC preservation is landing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1194"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1284,
+      "title": "Amiga: load preservation-grade IPF disks through the standard media path",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1284"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1355,
+      "title": "Query layer: let attached peripherals register and deregister their own query paths",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1355"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1358,
+      "title": "Ultimate-II: emulate the UCI control target, mostly by wiring to hardware we already have",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1358"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1359,
+      "title": "Ultimate-II: emulate the UCI SoftIEC target, which needs multi-part replies and a host-directory decision",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1359"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1372,
+      "title": "Source-level cycle profiling: join per-address cycle counts to Debug198x line records",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1372"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1414,
+      "title": "WASM: publish an embeddable browser build, starting with the Spectrum",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1414"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1423,
+      "title": "Code198x embed: run a learner's own program in a lesson page",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1423"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1424,
+      "title": "emu198x-native-video renders the browser too, so its name is now wrong",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1424"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1427,
+      "title": "video: mp4 capture shells out to ffmpeg, which a browser build cannot do",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1427"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1444,
+      "title": "WASM: run BASIC in the embedded emulator, not only machine code",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1444"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1476,
+      "title": "Find and verify firmware by hash in the variant catalogue",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1476"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1514,
+      "title": "Paula stereo routing: primary sources contradict each other",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1514"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1563,
+      "title": "Offer Open ROMs and AROS as a one-click second choice after asking for the visitor's C64/Amiga ROMs",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1563"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1630,
+      "title": "C64 VIC-II: finish HMOS-II sprite multicolour timing",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1630"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1644,
+      "title": "VIC-20: VIC-I mid-line register writes \u2014 fetch pipeline, display flip-flops and colour output delay",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1644"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1673,
+      "title": "BBC Micro: R2 / sync-relative horizontal position is not modelled, so MODE 7 sits 16 px left of hardware",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1673"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1678,
+      "title": "VIC-20: unmapped reads in the VIA pages return $FF instead of the last byte on the bus",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1678"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1681,
+      "title": "C64 VIC-II: mid-line sprite X-position and X-expand writes take effect at the wrong dot",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1681"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1713,
+      "title": "C64: CPU reads miss VIC-II Phi1 data in colour RAM and unclaimed cartridge I/O",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1713"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1728,
+      "title": "Game Boy: model DMG OAM corruption exposed by five Blargg failures",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1728"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1739,
+      "title": "Spectrum: load CSW v1/v2 tapes through the shared pulse player",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1739"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1740,
+      "title": "Spectrum: load PZX tapes through the shared pulse player",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1740"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1741,
+      "title": "Spectrum: load SCL archives through the Beta Disk TRD route",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1741"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1763,
+      "title": "Consider bounded bulk memory reads with explicit oversized-request behaviour",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1763"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1770,
+      "title": "[Epic] Deliver an exceptional cross-platform emulator host, UX and development environment",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1770"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1771,
+      "title": "[UX] Audit first-launch, media, input and save workflows across desktop hosts",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1771"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1772,
+      "title": "[UX] Define shared debugger and hardware-inspection contracts",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1772"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1773,
+      "title": "[Quality] Test distributed emulator host audio, video, input and state on each major OS",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1773"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1774,
+      "title": "[Performance] Profile and optimise emulator cores and hosts to expand qualified WebAssembly support",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1774"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1775,
+      "title": "A500 browser worker exceeds its frame budget before canvas and audio presentation",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1775"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1794,
+      "title": "Spectrum in the browser: tape can't be stopped, restarted or rewound",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/1794"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1813,
+      "title": "Validate Scan semantics against an independent reference with known disagreements recorded",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1813"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1814,
+      "title": "Resolve no-TC disk-write result CHRN disagreement between MAME and Fuse",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1814"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1831,
+      "title": "Complete read service timing and interrupted-result tracking",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1831"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1838,
+      "title": "Atari 800XL: investigate M.U.L.E. display loss after the landing message",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1838"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1858,
+      "title": "C64 MCP startup silently ignores --load PRG imports",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1858"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1870,
+      "title": "Compare Read Track size, DTL and represented field boundaries",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1870"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1876,
+      "title": "Sense Drive Status derives TS from image presence without modelling +3 WP/TS wiring",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1876"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1895,
+      "title": "Explore running Emu198x directly on smart TVs",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1895"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1896,
+      "title": "Prepare a shared Rust\u2013Swift bridge for native Apple hosts",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1896"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1897,
+      "title": "Explore a native macOS Spectrum interface over the Rust runtime",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1897"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1898,
+      "title": "Explore a native Apple TV Spectrum app and distribution path",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1898"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1906,
+      "title": "Render every pixel the same width at the machine's true aspect",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1906"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1922,
+      "title": "Model Read ID search on the emulated clock and index events",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1922"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1924,
+      "title": "Spectrum 128K: Dizzy (1987) loads but never reaches its title screen",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1924"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1932,
+      "title": "Game Gear: The Excellent Dizzy Collection shows only the middle of its picture",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1932"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1947,
+      "title": "Establish N-zero DTL-zero read encoding on identified controller hardware",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1947"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1949,
+      "title": "Establish all-skipped Read Data final-status oracle",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1949"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1962,
+      "title": "Format Track ignores independent READY on mounted media",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1962"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1966,
+      "title": "Amiga: five Dizzy disks go black after their crack intro",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1966"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1983,
+      "title": "Explain safe recovery when release retries retain earlier producer receipts",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/1983"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1993,
+      "title": "Audit the 32 format crates for a second reader",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1993"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1994,
+      "title": "Move the Commodore .prg layout to Format198x",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1994"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1995,
+      "title": "Move the Spectrum snapshot layouts (.sna and the shared snapshot model) to Format198x",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1995"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1997,
+      "title": "Extract the CPU cores, one repository each",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1997"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1998,
+      "title": "Extract chips, buses, board protocols and peripherals into their own repositories",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1998"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 1999,
+      "title": "Extract the system families, one repository each",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/1999"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2007,
+      "title": "Debugger: follow execution across CPUs, starting with the C64 and 1541",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2007"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2032,
+      "title": "Mega Drive 1: Yamaha YM2612 (OPN2) FM chip crate",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/2032"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2033,
+      "title": "Mega Drive 2: VDP 315-5313 (Mode 5) chip crate",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2033"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2034,
+      "title": "Mega Drive 3: machine \u2014 68000 bus, Z80 sub-system, I/O, cartridge",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2034"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2039,
+      "title": "SNES 4: machine \u2014 5A22 bus, DMA/HDMA, cartridge mappers",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2039"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2040,
+      "title": "SNES 5: runtime, app, regional models",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2040"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2060,
+      "title": "Tandy Color Computer 1/2 as a Dragon-family variant",
+      "state": "CLOSED",
+      "url": "https://github.com/emu198x/emu198x/issues/2060"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2105,
+      "title": "WD1770: does a Restore run when MR rises?",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2105"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2107,
+      "title": "Apple hosts: runsInRealTime fails on loaded macOS runners",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2107"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2133,
+      "title": "Neo Geo: Metal Slug shows only a blue screen after the AES BIOS hands over",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2133"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2134,
+      "title": "CoCo: --rom-dir finds the 8 KB BASIC ROMs and then rejects them for not being 16 KB",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2134"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2135,
+      "title": "Dragon/CoCo: --type-command drops * and +",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2135"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2136,
+      "title": "SNES: headless --frames N runs 2N frames",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2136"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2137,
+      "title": "Native UI audit says it covers all 30 binaries but leaves out the ST, SNES, Mega Drive and Neo Geo",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2137"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2138,
+      "title": "Give the CoCo 1 and 2 their own machine crate",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2138"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2139,
+      "title": "Give the MSX2 its own machine crate",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2139"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2140,
+      "title": "Give the Game Gear its own machine crate",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2140"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2141,
+      "title": "Give the Game Boy Color its own machine crate and machine id",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2141"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2142,
+      "title": "Give the BBC Master 128 its own machine crate and machine id",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2142"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2143,
+      "title": "SG-1000 crates claim the SC-3000 but nothing emulates it",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2143"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2144,
+      "title": "Split every machine crate that holds more than one machine",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2144"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2147,
+      "title": "A2000 profile text gives the early A2000 the wrong Agnus",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2147"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2148,
+      "title": "BBC: without the SAA5050 font, MODE 7 shows only the cursor and nothing says why",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2148"
+    },
+    {
+      "repository": "emu198x/emu198x",
+      "number": 2149,
+      "title": "Accept firmware in the form the chips were dumped",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x/issues/2149"
+    },
+    {
+      "repository": "emu198x/emu198x.github.io",
+      "number": 6,
+      "title": "The homepage publishes run output that nothing re-measures",
+      "state": "OPEN",
+      "url": "https://github.com/emu198x/emu198x.github.io/issues/6"
+    }
+  ]
+}

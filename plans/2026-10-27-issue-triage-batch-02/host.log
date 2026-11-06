@@ -1,0 +1,85 @@
+
+running 1 test
+test cartridge_pokey_reaches_the_host_audio_sink ... FAILED
+
+failures:
+
+failures:
+    cartridge_pokey_reaches_the_host_audio_sink
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 37.28s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running src/bin/host.rs (<target>/debug/deps/host-c46f3053d5554b47)
+model=A7800Ntsc header=3 base=0440 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0440 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0440 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=0440 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=0450 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0450 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0450 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=0450 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=0800 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0800 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=0800 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=0800 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=4000 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=4000 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=3 base=4000 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=3 base=4000 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0440 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0440 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0440 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0440 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0450 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0450 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0450 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0450 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0800 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0800 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=0800 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=0800 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=4000 mode=0 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=4000 mode=1 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=false
+model=A7800Ntsc header=4 base=4000 mode=2 host_samples=2095 rate=Some(31400) host_audible=false queued_pokey=3202 chip_audible=true
+model=A7800Ntsc header=4 base=4000 mode=3 host_samples=2095 rate=Some(31400) host_audible=true queued_pokey=3202 chip_audible=true
+model=A7800Pal header=3 base=0440 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0440 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0440 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=0440 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=0450 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0450 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0450 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=0450 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=0800 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0800 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=0800 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=0800 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=4000 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=4000 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=3 base=4000 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=3 base=4000 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0440 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0440 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0440 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0440 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0450 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0450 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0450 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0450 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0800 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0800 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=0800 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=0800 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=4000 mode=0 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=4000 mode=1 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=false
+model=A7800Pal header=4 base=4000 mode=2 host_samples=2493 rate=Some(31113) host_audible=false queued_pokey=3846 chip_audible=true
+model=A7800Pal header=4 base=4000 mode=3 host_samples=2493 rate=Some(31113) host_audible=true queued_pokey=3846 chip_audible=true
+cases=64 host_failures=32 undrained_chip_cases=64
+
+thread 'cartridge_pokey_reaches_the_host_audio_sink' (198659985) panicked at src/bin/host.rs:145:5:
+assertion `left == right` failed: cartridge POKEY must contribute to host audio
+  left: 32
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test host`

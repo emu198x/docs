@@ -1,0 +1,22 @@
+[
+  {
+    "file": "cpc664.rom",
+    "bytes": 32768,
+    "sha256": "1fcb20cf169f170774bf94954db9372c95edd038a5cb8e5199774552b93f8747"
+  },
+  {
+    "file": "cpc6128.rom",
+    "bytes": 32768,
+    "sha256": "31c3668c67bea027dab698ece233c9434d9324f9ba7dac84db58f400b6689562"
+  },
+  {
+    "file": "cpcados.rom",
+    "bytes": 16384,
+    "sha256": "ea65e0fb44ee93ede4b6c507509b7e5ddf497fb7155023bea91ef229469fa04d"
+  },
+  {
+    "file": "Phaser Patrol.a26",
+    "bytes": 8448,
+    "sha256": "908fac52c3f9ef03a04c844c6e3170a3d8aba8ce59940ebd62b1a6cfa6addb3d"
+  }
+]
